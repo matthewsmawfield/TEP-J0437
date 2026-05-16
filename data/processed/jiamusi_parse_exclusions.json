@@ -1,0 +1,9 @@
+{
+  "n_excluded": 1,
+  "exclusions": [
+    {
+      "file": "B2351_201608110515d.dat",
+      "reason": "parse_error: cannot reshape array of size 25600 into shape (100,267)"
+    }
+  ]
+}

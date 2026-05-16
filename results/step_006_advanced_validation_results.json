@@ -1,0 +1,94 @@
+{
+  "systematic_offset": {
+    "n_offsets_stable": 61,
+    "robust_small": true,
+    "test_passed": true
+  },
+  "epoch_consistency": {
+    "n_epochs": 1391,
+    "n_negative": 699,
+    "frac_negative": 0.5025161754133717,
+    "mean_abs_ns": 12.008183109347561,
+    "t_abs": 21.55626211139246,
+    "mean_signed_ns": 0.6859936764646858,
+    "t_signed": 1.066516748311219,
+    "test_passed": true
+  },
+  "stratification": {
+    "quartiles": [
+      {
+        "label": "Q1 (low n)",
+        "n": 380,
+        "mean_ns": 29.26322836065394,
+        "t": 16.057688375512814
+      },
+      {
+        "label": "Q2",
+        "n": 1011,
+        "mean_ns": 27.603382872867794,
+        "t": 31.282467374689038
+      }
+    ],
+    "n_significant": 2,
+    "test_passed": false
+  },
+  "bootstrap_ci": {
+    "triplet_mean_abs_ns": 27.071072111273885,
+    "ci_lower": 26.522387623253284,
+    "ci_upper": 27.648862964563357,
+    "trim_mean_abs_ns": 17.669674810735767,
+    "trim_ci_lower": 17.31068062359577,
+    "trim_ci_upper": 18.029454682369074,
+    "zero_excluded": true,
+    "test_passed": true
+  },
+  "geom_sign_bias": {
+    "n_pos": 9449,
+    "n_neg": 9718,
+    "frac_pos": 0.49298273073511767,
+    "binomial_p": 0.052890876723037564,
+    "unbiased": true,
+    "test_passed": true
+  },
+  "snr_sensitivity": {
+    "thresholds": [
+      {
+        "threshold": 0,
+        "n": 19167,
+        "mean_ns": 27.071072111273885,
+        "t": 91.75579014652595,
+        "significant": true
+      },
+      {
+        "threshold": 50,
+        "n": 9808,
+        "mean_ns": 18.066848081975234,
+        "t": 75.65391022984063,
+        "significant": true
+      },
+      {
+        "threshold": 100,
+        "n": 8326,
+        "mean_ns": 17.486379316254283,
+        "t": 69.36246460451771,
+        "significant": true
+      },
+      {
+        "threshold": 500,
+        "n": 5581,
+        "mean_ns": 15.88253999466393,
+        "t": 58.60143130163173,
+        "significant": true
+      },
+      {
+        "threshold": 1000,
+        "n": 4691,
+        "mean_ns": 15.442251273501583,
+        "t": 53.35468543413812,
+        "significant": true
+      }
+    ],
+    "all_thresholds_significant": true,
+    "test_passed": true
+  }
+}

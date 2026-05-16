@@ -1,0 +1,102 @@
+{
+  "evaluation": {
+    "criterion_1": {
+      "name": "Phase Closure significance (primary)",
+      "threshold": "(Rayleigh p < 1e-06 OR V-test p < 1e-06) AND bootstrap CI excludes 0",
+      "observed": {
+        "phase_closure_mean_rad": 0.9840495457197854,
+        "phase_closure_circ_se_rad": 0.04644694692483576,
+        "rayleigh_p": 1.3864824207812792e-13,
+        "v_p": 2.0406376031625597e-05,
+        "bootstrap_ci_95": [
+          0.7412846805632585,
+          1.2308015762374724
+        ]
+      },
+      "passed": true
+    },
+    "criterion_2": {
+      "name": "Phase-scramble specificity (diagnostic)",
+      "threshold": "Step 047 phase_scramble p < 0.05",
+      "observed": {
+        "p_observed_concentration_by_chance": 0.0
+      },
+      "passed": true,
+      "status": "ok"
+    },
+    "criterion_3": {
+      "name": "Unweighted \u03c8 frame invariance (diagnostic)",
+      "threshold": "Step 048 unweighted \u03c8 invariant under bulk-vector substitutions",
+      "observed": {
+        "unweighted_psi_invariant_all_directions": true,
+        "unweighted_psi_max_abs_delta_rad": 0.0
+      },
+      "passed": true,
+      "status": "ok"
+    },
+    "criterion_4": {
+      "name": "Velocity-label permutation control (diagnostic)",
+      "threshold": "Step 047 should report pass only when unique-best; N=2 typically inconclusive",
+      "observed": {
+        "test_status": "inconclusive",
+        "test_passed": null
+      },
+      "passed": null,
+      "status": "ok"
+    },
+    "criterion_5": {
+      "name": "Signed-mean bipolar cancellation (diagnostic)",
+      "threshold": "|t_signed| < 3",
+      "observed": {
+        "H_signed_mean_ns": -0.18369435483279536,
+        "H_signed_sem_ns": 0.10194563966559812,
+        "H_signed_t_statistic": -1.8018853521871971
+      },
+      "passed": true
+    }
+  },
+  "n_passed": 4,
+  "tep_not_falsified": true,
+  "summary": {
+    "criteria_evaluated": 5,
+    "criteria_passed": 4,
+    "criteria_failed": 0,
+    "criteria_inconclusive": 1,
+    "overall_status": "TEP NOT FALSIFIED"
+  },
+  "statistics": {
+    "phase_primary": {
+      "phase_closure_mean_rad": 0.9840495457197854,
+      "phase_closure_circ_se_rad": 0.04644694692483576,
+      "phase_closure_rbar": 0.30759393239598287,
+      "phase_closure_rayleigh_p": 1.3864824207812792e-13,
+      "phase_closure_v_p": 2.0406376031625597e-05,
+      "phase_closure_p_values_prefer_unweighted": true,
+      "phase_closure_bootstrap_ci_95": [
+        0.7412846805632585,
+        1.2308015762374724
+      ]
+    },
+    "H_diagnostics": {
+      "H_magnitude_ns": 8.100162219444181,
+      "H_sem_ns": 0.10194563966559812,
+      "H_noise_bias_ns": 6.810334179171245,
+      "H_excess_ns": 1.289828040272936,
+      "H_excess_t_statistic": 12.652115818820965,
+      "H_trim_magnitude_ns": 21.990938799984754,
+      "H_trim_sem_ns": 0.48295424604362086
+    },
+    "signed_diagnostic": {
+      "H_signed_mean_ns": -0.18369435483279536,
+      "H_signed_sem_ns": 0.10194563966559812,
+      "H_signed_t_statistic": -1.8018853521871971,
+      "signed_threshold": 3.0
+    },
+    "note_criterion_design": "Criteria designed per current repo inference: Phase Closure \u03c8 (circular statistics) is the primary falsification gate; other controls are diagnostic. |H| magnitude diagnostics are reported but are not used as primary detection gates because they are noise-floor dominated.",
+    "linked_outputs": {
+      "step_003_summary_j0437": "results/step_003_closure_final_summary_j0437.json",
+      "step_047_velocity_controls": "results/step_047_velocity_direction_controls_results.json",
+      "step_048_frame_analysis": "results/step_048_cmb_dipole_frame_analysis.json"
+    }
+  }
+}

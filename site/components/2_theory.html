@@ -1,0 +1,184 @@
+<h2>2. Synchronization Holonomy in Pulsar Scintillation</h2>
+
+<h3>2.1 The Closure Delay Observable</h3>
+
+<p>
+    When pulsar signals traverse the interstellar medium, scattering from plasma
+    inhomogeneities creates multiple propagation paths. These paths interfere in
+    the observer's dynamic spectrum, producing characteristic patterns that
+    encode information about the scattering geometry. In standard scintillation theory, each scattered propagation path is
+    assigned a scalar delay. Differential delays between paths are simply
+    differences of these scalars, so the closure sum around any triplet vanishes
+    identically by arithmetic—a property termed synchronization consistency.
+</p>
+
+<p>
+    The closure delay \(\tau_{\text{closure}}\) is the sum of differential
+    delays around a triplet of scattered propagation paths through the
+    interstellar medium. Consider a triplet of scintillation arclets indexed by
+    \(i, j, k\) forming a closed loop. The differential delay between paths
+    \(i\) and \(j\) is \(\tau_{ij} = \tau_j - \tau_i\), representing the
+    difference in propagation time. The closure delay for the loop \(i \to j \to
+    k \to i\) is defined as:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:closure_delay} \tau_{\text{closure}} = \tau_{ij}
+    + \tau_{jk} + \tau_{ki} \end{equation}
+</div>
+
+<p>
+    where \(\tau_{ki} = \tau_i - \tau_k = -\tau_{ik}\) completes the closed
+    path. Geometrically, this sums the differential delays around the complete
+    loop, independent of absolute arrival times.
+</p>
+
+<p>
+    In standard scintillation theory, \(\tau_{\text{closure}}\) serves as a null test of
+    the additive scalar path-delay model. The closure delay construction cancels
+    common-mode contributions—including standard relativistic effects that apply
+    equally to all scattered paths—by design, isolating only path-dependent
+    contributions. TEP predicts a non-zero synchronization holonomy \(H\), which
+    is the line integral of the disformal potential along the closed path in
+    spacetime. This holonomy—a geometric phase for clocks—arises because
+    non-gravitational fields couple to the physical or matter metric
+    \(\tilde{g}_{\mu\nu}\), for which the 1-form \(d\tilde{\tau}\) is
+    non-integrable in the presence of a gradient in the time field \(\phi\). The
+    observed closure delay relates to the holonomy magnitude as:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:holonomy_magnitude} |H| = |\langle
+    \tau_{\text{closure}} \rangle_{\text{aligned}}| \end{equation}
+</div>
+
+<p>
+    where \(\langle \cdot \rangle_{\text{aligned}}\) denotes the Stokes-aligned
+    average accounting for the relative orientation of the path triplet and the
+    observer's velocity (see Section 4.7 for the alignment algorithm
+    specification). The alignment ensures that delays correlate with geometric
+    orientation as predicted by TEP.
+</p>
+
+<p>
+    The primary detection statistic is the <em>Phase Closure</em> \(\psi\), constructed from the geometric phase of the closure delay triplet. The absolute magnitude \(|H|\) is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation \(\sigma\), the expectation of the absolute value is \(\sigma\sqrt{2/\pi}\). For J0437-4715 the per-epoch noise floor is quantified at \(E[|H|] = 6.810 \pm 0.102\) ns, which saturates the raw unsigned mean (\(8.100 \pm 0.102\) ns), leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The Phase Closure \(\psi\) is an odd-parity metric that cancels to zero in the absence of path-dependent proper time and is immune to this bias:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:phase_closure} \psi = \frac{1}{3}\left(\phi_{ij} + \phi_{jk} + \phi_{ki}\right) \end{equation}
+</div>
+
+<p>
+    where \(\phi_{ij}\) represents the phase of the correlation between scattered
+    paths \(i\) and \(j\). TEP predicts \(\psi \neq 0\) while the additive-delay null hypothesis
+    predicts \(\psi = 0\).
+</p>
+
+<h4>2.1.1 Statistical Motivation for Phase Closure</h4>
+
+<p>
+    The choice of \(\psi\) as the primary detection statistic follows from the
+    symmetry properties of the closure delay distribution, independent of any
+    specific theoretical framework. The closure delay \(\tau_{\text{closure}}\)
+    can be represented as a complex quantity \(Z = \tau_{\text{closure}} + i
+    \cdot f_{D,\text{closure}}\), where the real part is the group-delay closure
+    and the imaginary part is the Doppler-frequency closure. The Phase Closure
+    is then \(\psi = \arg(Z) = \arctan2(f_{D,\text{closure}},
+    \tau_{\text{closure}})\).
+</p>
+
+<p>
+    Under the null hypothesis of additive delays (standard physics), both
+    \(\tau_{\text{closure}}\) and \(f_{D,\text{closure}}\) are identically zero
+    in the absence of measurement noise. Measurement noise produces a symmetric
+    cloud around the origin in the complex plane, yielding \(\langle \psi
+    \rangle = 0\) because \(\arctan2(y, x)\) is an odd function of both
+    arguments for uncorrelated noise. The absolute magnitude \(|H| = \langle
+    |\tau_{\text{closure}}| \rangle\), however, is strictly positive under any
+    noise model—it measures the mean absolute deviation, not a physical
+    holonomy. This is the Rice-distribution bias: \(|H| > 0\) even when no
+    signal is present.
+</p>
+
+<p>
+    The Phase Closure \(\psi\) is therefore the appropriate zero-centered test
+    statistic: it cancels to zero for additive delays regardless of noise level,
+    while any physical mechanism producing correlated delay-Doppler structure
+    (including but not limited to TEP) yields \(\langle \psi \rangle \neq 0\).
+    The Rayleigh Z = 59.21 (p = 1.39 \times 10^{-13}) detection of non-zero \(\psi\) reported in this work
+    constitutes a model-independent rejection of the additive-delay null
+    hypothesis. The interpretation of this rejection as synchronization holonomy
+    follows from the TEP framework, but the statistical significance of the
+    rejection itself does not depend on TEP.
+</p>
+
+<h3>2.2 TEP Predictions for Closure Delays</h3>
+
+<p>
+    The TEP framework—a two-metric scalar-tensor theory introduced in Paper
+    0—makes a central prediction that directly contrasts with the standard
+    additive-delay model: the synchronization holonomy must be non-zero. Where the
+    single-metric null hypothesis requires the closure residual to vanish, TEP
+    predicts path-dependent proper time accumulation as a consequence of disformal
+    coupling in low-density environments where Temporal Shear remains
+    unsuppressed. The Phase Closure \(\psi\) provides a zero-centered test:
+    \(\psi = 0\) under the additive-delay null hypothesis, \(\psi \neq 0\) for TEP.
+</p>
+
+<p>
+    This non-zero holonomy manifests with specific geometric properties. In a
+    Stokes-aligned distribution, delays converge to a consistently negative mean
+    ($-H$) when aligned with the orientation kinematics vector, while the
+    magnitude $|H|$ remains invariant regardless of specific triplet geometry.
+    The sign of the holonomy correlates with geometric orientation, defined by
+    clockwise versus counter-clockwise configurations.
+</p>
+
+<p>
+    A critical consequence of this sign-geometry correlation is that simple
+    aggregate averaging over all orientations yields $\langle \tau \rangle
+    \approx 0$. This bipolar cancellation is expected by construction, not
+    evidence against TEP. Analysis by orientation is therefore required to
+    reveal the underlying signal, with the effect manifesting maximally in
+    low-density environments where Temporal Shear is unsuppressed, such as the
+    interstellar medium.
+</p>
+
+<p>
+    Key distinction: TEP predicts a <em>bipolar</em> signal where the holonomy sign flips with velocity projection. The primary detection statistic is the Phase Closure \(\psi\), which represents the physical holonomy phase and is immune to noise-floor bias. The absolute magnitude \(|H|\) is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation \(\sigma\), the folded-normal expectation is \(E[|X|] = \sigma\sqrt{2/\pi}\). For J0437-4715 the per-epoch noise floor is quantified at \(E[|H|] = 6.810 \pm 0.102\) ns, which saturates the raw unsigned mean (\(8.100 \pm 0.102\) ns), leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The signed mean serves as a diagnostic quantity expected near zero due to bipolar cancellation, but the Phase Closure provides the primary test of TEP.
+</p>
+
+<h3>2.3 The ISM as an Unscreened Laboratory</h3>
+
+<p>
+    The interstellar medium toward PSR J0437-4715 provides a suitable testbed
+    for TEP effects. With typical densities $\rho \sim 10^{-24} \text{ g/cm}^3$,
+    the ISM is a low-density environment where Temporal Shear $\nabla\phi$ is
+    unsuppressed and TEP effects manifest maximally. The scattering screens at
+    $\sim 89.8$ pc and $\sim 124$ pc (Gwinn et al. 2006) create multiple path
+    configurations that enable closure delay measurements around closed loops
+    through the Galactic plasma.
+</p>
+
+<p>
+    The anisotropic nature of scattering toward J0437-4715, documented by
+    previous studies (Walker et al. 2004; Coles et al. 2011), naturally
+    introduces preferred orientations that may affect the distribution of
+    clockwise versus counter-clockwise triplet configurations. This ISM
+    anisotropy does not invalidate the TEP test; rather, it provides a physical
+    explanation for orientation asymmetries while preserving the core prediction
+    of magnitude equality between orientations.
+</p>
+
+<p>
+    It is important to distinguish the unscreened ISM scattering screens from
+    the pulsar's immediate binary environment. The white dwarf companion to
+    J0437-4715 generates a deep gravitational potential that locally suppresses
+    Temporal Shear through conformal-sector self-screening (screening axiom A4,
+    Section&nbsp;1).
+    Within the companion's screening radius, the scalar field gradient flattens
+    toward its minimum, attenuating the locally observable Temporal Shear.
+    Consequently, orbital-scale kinematics are expected to be partially shielded,
+    while proper-motion-scale kinematics—sampling the unscreened ISM at much
+    larger distances—remain the dominant TEP channel.
+</p>

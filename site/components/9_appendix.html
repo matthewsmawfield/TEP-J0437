@@ -1,0 +1,168 @@
+<h2>Appendix A. Derivation of Synchronization Holonomy from Disformal Coupling</h2>
+
+<p>
+    This appendix provides a self-contained derivation of the observable
+    synchronization holonomy from the two-metric scalar-tensor structure defined
+    in Section&nbsp;1. No result from external theoretical works is required.
+</p>
+
+<h3>A.1 Propagation metric for non-gravitational fields</h3>
+
+<p>
+    TEP posits that all non-gravitational fields couple to the matter metric
+    \(\tilde{g}_{\mu\nu}\), related to the gravitational metric
+    \(g_{\mu\nu}\) by the disformal map
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:app_disformal}
+    \tilde{g}_{\mu\nu} = A^2(\phi)\,g_{\mu\nu} + B(\phi)\,\nabla_{\mu}\phi\,\nabla_{\nu}\phi .
+    \end{equation}
+</div>
+
+<p>
+    In the weak-field, static limit the gravitational metric is written as
+    \(g_{00}=-(1+2\Phi)\), \(g_{ij}=(1-2\Phi)\delta_{ij}\) with
+    \(|\Phi|\ll 1\), and assume the scalar field \(\phi\) is time-independent
+    so that \(\nabla_{0}\phi=0\). The matter-metric components are then
+</p>
+
+<div class="equation">
+    \begin{align}
+    \tilde{g}_{00} &= -A^2(\phi)\,(1+2\Phi), \\
+    \tilde{g}_{ij} &= A^2(\phi)\,(1-2\Phi)\,\delta_{ij} + B(\phi)\,\partial_i\phi\,\partial_j\phi .
+    \end{align}
+</div>
+
+<h3>A.2 Coordinate time delay along a scattered path</h3>
+
+<p>
+    For a photon, the null condition on the matter metric reads
+    \(\tilde{g}_{\mu\nu}\,dx^\mu dx^\nu = 0\). In the static geometry this gives
+    the coordinate time increment along a spatial path element \(dl\) with unit
+    tangent \(\hat{n}^i = dx^i/dl\):
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:app_dt}
+    dt = \frac{1}{c}\sqrt{\frac{-\tilde{g}_{ij}\,dx^i dx^j}{-\tilde{g}_{00}}}
+    = \frac{dl}{c}\sqrt{\frac{1-2\Phi}{1+2\Phi} + \frac{B(\phi)}{A^2(\phi)(1+2\Phi)}(\nabla\phi\cdot\hat{n})^2 } .
+    \end{equation}
+</div>
+
+<p>
+    To leading order in \(\Phi\) and the disformal perturbation,
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:app_dt_approx}
+    dt \approx \frac{dl}{c}\Bigl[\,1 - 2\Phi + \frac{B(\phi)}{2A^2(\phi)}(\nabla\phi\cdot\hat{n})^2\Bigr].
+    \end{equation}
+</div>
+
+<p>
+    The term \(-2\Phi\) is the usual gravitational potential; it is a scalar
+    function of position and therefore yields a vanishing line integral around
+    any closed loop once common-mode contributions are removed. The second term,
+    proportional to \(B(\phi)\), depends on the projection of the spatial gradient
+    \(\nabla\phi\) onto the path direction \(\hat{n}\). It is not the gradient of
+    any scalar potential.
+</p>
+
+<h3>A.3 Closure holonomy</h3>
+
+<p>
+    Consider a closed scattering loop \(C\) formed by three arclets. The physical
+    coordinate time accumulated around the loop is
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:app_closure_time}
+    \Delta t_{\rm closure} = \oint_C dt
+    = \frac{1}{c}\oint_C \Bigl[\frac{B(\phi)}{2A^2(\phi)}(\nabla\phi\cdot\hat{n})^2\Bigr]\,dl ,
+    \end{equation}
+</div>
+
+<p>
+    where the \(-2\Phi\) term has dropped out because it is exact. The remaining
+    integrand is a path-dependent scalar. In the geometric-optics limit
+    appropriate for interstellar scintillation, the loop is confined to a thin
+    plasma screen and the gradient \(\nabla\phi\) is approximately constant
+    across the loop. Parameterizing the loop by its spatial coordinate and writing
+    \(\hat{e}_\phi = \nabla\phi/|\nabla\phi|\), the integral reduces to
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:app_holonomy}
+    H \equiv c\,\Delta t_{\rm closure}
+    = \frac{B(\phi)}{2A^2(\phi)}\,(\nabla\phi)^2\,\oint_C (\hat{n}\cdot\hat{e}_\phi)^2\,dl .
+    \end{equation}
+</div>
+
+<p>
+    For a non-degenerate loop the integral is a positive geometric factor
+    \(L_C\) with dimensions of length. Therefore
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:app_holonomy_final}
+    H = \frac{B(\phi)}{2A^2(\phi)}\,(\nabla\phi)^2\,L_C .
+    \end{equation}
+</div>
+
+<p>
+    Equation&nbsp;\ref{eq:app_holonomy_final} is the central result:
+    <em>the closure holonomy vanishes if and only if the disformal coupling is
+    zero</em>, \(B(\phi)=0\). In purely conformal theories (\(B=0\)) the loop
+    integral is identically zero, recovering the standard additive-delay null
+    hypothesis. A non-zero holonomy at leading order is therefore a direct,
+    unavoidable consequence of \(B(\phi)\neq 0\).
+</p>
+
+<h3>A.4 Mapping to the measured closure observables</h3>
+
+<p>
+    Section&nbsp;1 writes synchronization holonomy as \(H \equiv \oint_C
+    d\tilde{\tau}\), the loop integral of matter-metric proper time. The
+    coordinate-time derivation above expresses the same closure content for
+    photons on \(\tilde{g}_{\mu\nu}\): the holonomy variable \(H\) in
+    Equation&nbsp;\ref{eq:app_holonomy_final} is \(c\) times the net coordinate
+    delay accumulated around the loop after the piece driven by the
+    single-valued Newtonian potential \(\Phi\) drops from the closure sum, as in
+    Equation&nbsp;\ref{eq:app_closure_time}. Section&nbsp;2 defines the measured
+    closure delay \(\tau_{\text{closure}}\) (Equation&nbsp;\ref{eq:closure_delay})
+    and the Stokes-aligned aggregate used for \(|H|\)
+    (Equation&nbsp;\ref{eq:holonomy_magnitude}). The complex closure
+    \(Z=\tau_{\text{closure}}+i f_{D,\text{closure}}\) and \(\psi=\arg(Z)\) are
+    fixed operationally in Section&nbsp;2.1. Appendix&nbsp;A motivates why
+    \(B(\phi)\neq 0\) forbids an additive-delay representation in which both
+    \(\tau_{\text{closure}}\) and \(f_{D,\text{closure}}\) vanish up to noise,
+    biasing \(\psi\) away from a uniform circular null.
+</p>
+
+<h3>A.5 From holonomy to the Phase Closure \(\psi\)</h3>
+
+<p>
+    The delay-domain observable is the closure delay
+    \(\tau_{\rm closure}\), which is proportional to \(H\). Because the
+    scintillation loop carries a natural orientation in the
+    \((\tau,f_D)\) plane, the delay and Doppler closures define a complex number
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:app_complex}
+    Z = \tau_{\rm closure} + i\,f_{D,\rm closure} .
+    \end{equation}
+</div>
+
+<p>
+    The Phase Closure is \(\psi = \arg(Z)\). Under the additive-delay null
+    hypothesis both \(\tau_{\rm closure}\) and \(f_{D,\rm closure}\) are zero
+    (up to measurement noise), so \(\psi\) is uniformly distributed. When
+    \(B(\phi)\neq 0\), Equation&nbsp;\ref{eq:app_holonomy_final} imprints a
+    non-zero mean on both the real and imaginary parts of \(Z\) with a ratio
+    fixed by the geometric orientation of the triplet relative to the effective
+    velocity vector. The angular distribution of \(\psi\) therefore clusters
+    around a non-zero mean, providing the circular statistic used as the primary
+    detection test in this work.
+</p>

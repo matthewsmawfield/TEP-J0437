@@ -1,0 +1,162 @@
+{
+  "observed_ratio": 0.3157033032997268,
+  "observed_ratio_error": 0.015304208014619703,
+  "H_j1603_ns": 2.5572479699421744,
+  "velocity_results": {
+    "v_j0437": 104.39257025257886,
+    "v_j1603": 31.675466173341803,
+    "v_ratio": 0.3034264420993055,
+    "angle_j0437": -30.466699559593312,
+    "angle_j1603": -104.29620438602952,
+    "angle_between": 73.8295048264362,
+    "cos_theta": 0.2784965597224581
+  },
+  "distance_results": {
+    "D_p_j0437": 156.3,
+    "D_p_j1603": 250.0,
+    "D_p_ratio": 1.599488163787588,
+    "D_eff_j0437": 37.51200000000001,
+    "D_eff_j1603": 62.5,
+    "D_eff_ratio": 1.6661335039454037,
+    "screen_factor_j0437": 0.24,
+    "screen_factor_j1603": 0.25,
+    "screen_factor_ratio": 1.0416666666666667
+  },
+  "curvature_results": {
+    "eta1_j0437_mean": 0.00815743694086879,
+    "eta1_j1603_mean": 0.008198939891497973,
+    "eta1_ratio": 1.0050877439727732,
+    "eta1_std_ratio": 0.0005973500977523707,
+    "eta1_t_stat": -0.37499523451124867,
+    "eta1_p_val": 0.7076768809544676,
+    "eta2_j0437_mean": 0.007508384758530476,
+    "eta2_j1603_mean": 0.0077994850778896575,
+    "eta2_ratio": 1.0387700322667208
+  },
+  "orbital_results": {
+    "modulation_amplitude": -1.1221377367932024,
+    "modulation_amplitude_err": 0.9346331250783478,
+    "modulation_phase": -0.11263584258569317,
+    "modulation_offset": 0.8171384493512628,
+    "modulation_significance": 0.9471637579119793,
+    "chi2_improvement": 2.212268266072112,
+    "predicted_amplitude": 0.08402251336600301,
+    "observed_to_predicted_ratio": 13.35520316924058,
+    "suppression_explained": false,
+    "naive_scaling_adequate": false
+  },
+  "phase_resolved_orbital": {
+    "quadrants": [
+      {
+        "quadrant": 1,
+        "phase_range": "0-90\u00b0 (approaching)",
+        "n_epochs": 329,
+        "mean_h_ns": -0.5335808531361701,
+        "std_h_ns": 17.736570378835065,
+        "sem_h_ns": 0.9778487784135602
+      },
+      {
+        "quadrant": 2,
+        "phase_range": "90-180\u00b0",
+        "n_epochs": 354,
+        "mean_h_ns": 0.6832658013206615,
+        "std_h_ns": 17.572193655620556,
+        "sem_h_ns": 0.9339515555472501
+      },
+      {
+        "quadrant": 3,
+        "phase_range": "180-270\u00b0 (receding)",
+        "n_epochs": 338,
+        "mean_h_ns": -0.7885935669787127,
+        "std_h_ns": 27.9329329122929,
+        "sem_h_ns": 1.5193512523624007
+      },
+      {
+        "quadrant": 4,
+        "phase_range": "270-360\u00b0",
+        "n_epochs": 370,
+        "mean_h_ns": 3.1200914503120774,
+        "std_h_ns": 29.407311553900897,
+        "sem_h_ns": 1.528813329622997
+      }
+    ],
+    "f_statistic": 1.9707793591929434,
+    "approaching_mean": 1.2932552985879537,
+    "perpendicular_mean": -0.05266388282902562,
+    "velocity_projection_difference": 1.3459191814169793
+  },
+  "time_evolution": {
+    "trend_slope_ns_per_year": -0.17331981175081626,
+    "trend_r": -0.032438844955331614,
+    "trend_p": 0.22663467087649194,
+    "early_mean_ns": 1.2479803995457883,
+    "late_mean_ns": 0.12481440557191836,
+    "early_late_difference_ns": -1.12316599397387,
+    "early_late_t_stat": 0.8730201091431615,
+    "early_late_p_value": 0.38280301247881154,
+    "temporal_stability": "STABLE"
+  },
+  "bootstrap_ratio_ci": {
+    "bootstrap_median": 1.0714375918162027,
+    "bootstrap_mean": 7.3979806830630555,
+    "bootstrap_std": 180.9364439621917,
+    "ci_lower": 0.04779618201854743,
+    "ci_upper": 26.59076038946319,
+    "confidence_level": 0.95,
+    "n_bootstrap": 10000,
+    "direct_ratio": 0.17827311649066924
+  },
+  "higher_order_moments": {
+    "mean_ns": 0.2995802201707903,
+    "std_ns": 49.001871556933274,
+    "skewness": 0.025700473068428462,
+    "excess_kurtosis": 10.861058011954205,
+    "jarque_bera_stat": 94209.9763751438,
+    "jarque_bera_pval": 0.0,
+    "non_gaussian": true
+  },
+  "ism_correlations": {
+    "n_arclets_correlation": {
+      "r": null,
+      "p": null,
+      "skipped_reason": "constant input"
+    },
+    "tep_like": true
+  },
+  "effect_size_robustness": {
+    "cohens_d": 0.006113648533254903,
+    "n_total": 19167,
+    "split_half_d1": 0.014688624086117687,
+    "split_half_d2": -0.013974422950082126,
+    "split_half_consistent": false,
+    "subsample_mean_d": 0.00727582156179206,
+    "subsample_std_d": 0.007199237293533183,
+    "sign_consistency_fraction": 0.81,
+    "robust": false
+  },
+  "differential_refraction": {
+    "test_performed": false,
+    "reason": "insufficient frequency variation",
+    "n_epochs": 0,
+    "frequency_range_mhz": null
+  },
+  "scaling_predictions": {
+    "v_only": 0.3034264420993055,
+    "dv": 0.4853270027180191,
+    "effv": 0.5055489611646031,
+    "vs": 0.31606921052010994,
+    "full": 0.5266135012131283,
+    "eta": 1.0050877439727732
+  },
+  "scaling_sigmas": {
+    "v_only": 0.8021885999388864,
+    "dv": 11.083467975360456,
+    "effv": 12.404801194777399,
+    "vs": 0.023908928840591644,
+    "full": 13.781189965003392,
+    "eta": 45.045417574989564
+  },
+  "best_model": "v x s(1-s)",
+  "best_sigma": 0.023908928840591644,
+  "scaling_interpretation": "Two-pulsar scaling comparison provides limited discriminating power; multiple simple models remain viable within current uncertainty"
+}

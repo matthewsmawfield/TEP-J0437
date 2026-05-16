@@ -1,0 +1,155 @@
+[2026-05-15 13:18:24] [INFO] ================================================================================
+[2026-05-15 13:18:24] [INFO] STEP step_043_definitive_chromatic_test STARTED
+[2026-05-15 13:18:24] [INFO] Description: Chromatic diagnostic (hierarchical model + within-source sub-band)
+[2026-05-15 13:18:24] [INFO] Physics: Audit frequency dependence while keeping unsigned-|H| fits out of primary inference
+[2026-05-15 13:18:24] [INFO] Method: Diagnostic model comparison with explicit boundary and calibration caveats, plus within-source J0437 sub-band test
+[2026-05-15 13:18:24] [INFO] ================================================================================
+[2026-05-15 13:18:24] [INFO]         Including J0437_sb0 as bounding constraint (Rayleigh p=0.502, n_epochs=17)
+[2026-05-15 13:18:24] [INFO]         Including J0437_sb1 as bounding constraint (Rayleigh p=0.554, n_epochs=9)
+[2026-05-15 13:18:24] [INFO]         Including J1603 as bounding constraint (Rayleigh p=0.936, n_epochs=248)
+[2026-05-15 13:18:24] [INFO]         Including B0355 as bounding constraint (Rayleigh p=1.000, n_epochs=1)
+[2026-05-15 13:18:24] [INFO]         Including B0540 as bounding constraint (Rayleigh p=1.000, n_epochs=2)
+[2026-05-15 13:18:24] [INFO]         Including B2154 as bounding constraint (Rayleigh p=1.000, n_epochs=1)
+[2026-05-15 13:18:24] [INFO]         Including B2310 as bounding constraint (Rayleigh p=1.000, n_epochs=1)
+[2026-05-15 13:18:24] [INFO]         Including J1731 as bounding constraint (Rayleigh p=1.000, n_epochs=1)
+[2026-05-15 13:18:24] [INFO]         Loaded 8 pulsars:
+[2026-05-15 13:18:24] [INFO]       
+    Pulsar     Telescope  Freq     eta        |H| (ns)     log(H)    
+[2026-05-15 13:18:24] [INFO]           ----------------------------------------------------------------------
+[2026-05-15 13:18:24] [INFO]           J0437      Parkes     1380     0.0078             8.10     2.0919
+[2026-05-15 13:18:24] [INFO]           J0437_sb0  Parkes     1089     0.0078             8.59     2.1505
+[2026-05-15 13:18:24] [INFO]           J0437_sb1  Parkes     1476     0.0078             9.85     2.2876
+[2026-05-15 13:18:24] [INFO]           J1603      Parkes     1380     0.0080             2.56     0.9389
+[2026-05-15 13:18:24] [INFO]           B0355      Jiamusi    2250     0.0058             1.72     0.5435
+[2026-05-15 13:18:24] [INFO]           B0540      Jiamusi    2250     0.0043             1.95     0.6655
+[2026-05-15 13:18:24] [INFO]           B2154      Jiamusi    2250     0.0046             7.97     2.0755
+[2026-05-15 13:18:24] [INFO]           B2310      Jiamusi    2250     0.0144            15.41     2.7348
+[2026-05-15 13:18:24] [INFO]       
+  [DATA PREPARATION] Computing log-transformed variables:
+[2026-05-15 13:18:24] [INFO]           Pulsar     log(eta)   log(D_eff)   log(v)     log(freq) 
+[2026-05-15 13:18:24] [INFO]           ------------------------------------------------------------
+[2026-05-15 13:18:24] [INFO]           J0437      -4.8494    3.6247       4.6480     7.2298    
+[2026-05-15 13:18:24] [INFO]           J0437_sb0  -4.8494    3.6247       4.6480     6.9930    
+[2026-05-15 13:18:24] [INFO]           J0437_sb1  -4.8494    3.6247       4.6480     7.2971    
+[2026-05-15 13:18:24] [INFO]           J1603      -4.8284    4.1352       3.4554     7.2298    
+[2026-05-15 13:18:24] [INFO]           B0355      -5.1468    5.4635       3.9120     7.7187    
+[2026-05-15 13:18:24] [INFO]           B0540      -5.4443    5.8666       3.9120     7.7187    
+[2026-05-15 13:18:24] [INFO]           B2154      -5.3738    6.4788       3.9120     7.7187    
+[2026-05-15 13:18:24] [INFO]           B2310      -4.2436    5.5397       3.9120     7.7187    
+[2026-05-15 13:18:24] [INFO]       
+[2] Fitting models with maximum likelihood...
+[2026-05-15 13:18:24] [INFO]       
+  Model M_TEP: δ = 0 (achromatic, fixed)
+[2026-05-15 13:18:24] [INFO]           [FIT] Initial parameters: log_α=0.0, β=1.0, γ=1.0, δ=0.0, cal_J=0.0
+[2026-05-15 13:18:24] [INFO]           [FIT] Running L-BFGS-B optimization...
+[2026-05-15 13:18:24] [INFO]           [FIT] Optimization converged: True
+[2026-05-15 13:18:24] [INFO]           [FIT] Optimal parameters: log_α=4.9758, β=-0.2471, γ=-1.1346
+[2026-05-15 13:18:24] [INFO]           [FIT] Fixed δ=0.0, cal_J=1.0000
+[2026-05-15 13:18:24] [INFO]           [RESULT] Maximum log-likelihood: -114.9604
+[2026-05-15 13:18:24] [INFO]           [RESULT] AIC: 237.9208, BIC: 238.2386
+[2026-05-15 13:18:24] [INFO]       
+  Model M_general: δ free (estimated from data)
+[2026-05-15 13:18:24] [INFO]           [FIT] Initial parameters: log_α=0.0, β=1.0, γ=1.0, δ=-1.0, cal_J=0.0
+[2026-05-15 13:18:24] [INFO]           [FIT] Running L-BFGS-B optimization with δ free...
+[2026-05-15 13:18:24] [INFO]           [FIT] Optimization converged: True
+[2026-05-15 13:18:24] [INFO]           [FIT] Optimal parameters: log_α=-5.0000, β=0.4512, γ=-1.4348
+[2026-05-15 13:18:24] [INFO]           [FIT] Fitted δ=2.0000 (KEY PARAMETER), cal_J=1.0000
+[2026-05-15 13:18:24] [INFO]           [RESULT] Maximum log-likelihood: -75.9751
+[2026-05-15 13:18:24] [INFO]           [RESULT] AIC: 161.9502, BIC: 162.3474
+[2026-05-15 13:18:24] [INFO]       
+  Model M_ISM: δ = -2 (chromatic, fixed)
+[2026-05-15 13:18:24] [INFO]           [FIT] Initial parameters: log_α=0.0, β=1.0, γ=1.0, δ=-2.0, cal_J=0.0
+[2026-05-15 13:18:24] [INFO]           [FIT] Running L-BFGS-B optimization...
+[2026-05-15 13:18:24] [INFO]           [FIT] Optimization converged: True
+[2026-05-15 13:18:24] [INFO]           [FIT] Optimal parameters: log_α=5.0000, β=-2.0000, γ=0.4826
+[2026-05-15 13:18:24] [INFO]           [FIT] Fixed δ=-2.0, cal_J=-0.0909
+[2026-05-15 13:18:24] [INFO]           [RESULT] Maximum log-likelihood: -446.8738
+[2026-05-15 13:18:24] [INFO]           [RESULT] AIC: 901.7475, BIC: 902.0653
+[2026-05-15 13:18:24] [INFO]       
+[3] General model best-fit parameters:
+[2026-05-15 13:18:24] [INFO]         log α = -5.000  (α = 0.007)
+[2026-05-15 13:18:24] [INFO]         β (eta exponent)     = 0.451
+[2026-05-15 13:18:24] [INFO]         γ (D_eff exponent) = -1.435
+[2026-05-15 13:18:24] [INFO]         δ (FREQUENCY)      = 2.000  ← KEY PARAMETER
+[2026-05-15 13:18:24] [INFO]         cal_Parkes         = 0.000  (1.000 multiplicative, reference telescope)
+[2026-05-15 13:18:24] [INFO]         cal_Jiamusi        = 1.000  (2.718 multiplicative)
+[2026-05-15 13:18:24] [INFO]       
+[4] Model comparison:
+[2026-05-15 13:18:24] [INFO]         DeltaAIC (M_TEP vs M_general):   +76.0
+[2026-05-15 13:18:24] [INFO]         DeltaAIC (M_ISM vs M_general):   +739.8
+[2026-05-15 13:18:24] [INFO]       
+  Preferred model: M_general
+[2026-05-15 13:18:24] [INFO]         Interpretation: General model with free δ is preferred
+[2026-05-15 13:18:24] [INFO]       
+[5] Evidence for specific δ values:
+[2026-05-15 13:18:24] [INFO]         δ = 0 (TEP):     log-likelihood = -114.96
+[2026-05-15 13:18:24] [INFO]         δ = -2 (ISM):    log-likelihood = -446.87
+[2026-05-15 13:18:24] [INFO]         δ = 2.00 (best-fit): log-likelihood = -75.98
+[2026-05-15 13:18:24] [INFO]       
+  Likelihood ratio: 331.91 in favor of TEP (δ=0)
+[2026-05-15 13:18:24] [INFO]       
+[6] Interpretation of best-fit δ = 2.000:
+[2026-05-15 13:18:24] [INFO]         Unexpected positive frequency dependence; fitted exponent is on an optimizer boundary, so the cross-pulsar frequency exponent is not interpretable as evidence.
+[2026-05-15 13:18:24] [INFO]       
+[7] Model predictions vs observations:
+[2026-05-15 13:18:24] [INFO]         Pulsar       Freq    |H _obs   |H _pred   Residual
+[2026-05-15 13:18:24] [INFO]         ------------------------------------------------------------
+[2026-05-15 13:18:24] [INFO]         J0437        1380       8.10       7.93       0.17
+[2026-05-15 13:18:24] [INFO]         J0437_sb0    1089       8.59       4.94       3.65
+[2026-05-15 13:18:24] [INFO]         J0437_sb1    1476       9.85       9.08       0.77
+[2026-05-15 13:18:24] [INFO]         J1603        1380       2.56       3.85      -1.29
+[2026-05-15 13:18:24] [INFO]         B0355        2250       1.72       3.58      -1.86
+[2026-05-15 13:18:24] [INFO]         B0540        2250       1.95       1.76       0.19
+[2026-05-15 13:18:24] [INFO]         B2154        2250       7.97       0.75       7.21
+[2026-05-15 13:18:24] [INFO]         B2310        2250      15.41       4.83      10.58
+[2026-05-15 13:18:24] [INFO]       
+[8] Within-source chromatic test (J0437 sub-bands)...
+[2026-05-15 13:18:24] [INFO]         J0437 sub-band test (3 frequency points):
+[2026-05-15 13:18:24] [INFO]         Best-fit δ = 0.020
+[2026-05-15 13:18:24] [INFO]         ΔAIC (TEP vs free):   -2.0
+[2026-05-15 13:18:24] [INFO]         ΔAIC (ISM vs free):   +3.7
+[2026-05-15 13:18:24] [INFO]         Conclusion: Achromatic TEP preferred
+[2026-05-15 13:18:24] [INFO]           1089 MHz: |H|_obs = 8.59 ns, |H|_pred = 8.07 ns
+[2026-05-15 13:18:24] [INFO]           1380 MHz: |H|_obs = 8.10 ns, |H|_pred = 8.11 ns
+[2026-05-15 13:18:24] [INFO]           1476 MHz: |H|_obs = 9.85 ns, |H|_pred = 8.12 ns
+[2026-05-15 13:18:24] [INFO]       
+======================================================================
+[2026-05-15 13:18:24] [INFO]       CONCLUSION
+[2026-05-15 13:18:24] [INFO]       ======================================================================
+[2026-05-15 13:18:24] [INFO]       
+HIERARCHICAL DIAGNOSTIC MODEL RESULTS:
+
+Best-fit frequency exponent: δ = 2.000
+
+Interpretation:
+- δ = 0 corresponds to achromatic TEP (no frequency dependence)
+- δ = -2 corresponds to chromatic ISM (nu^-2 scaling)
+- Best-fit δ = 2.000 indicates: Unexpected positive frequency dependence; fitted exponent is on an optimizer boundary, so the cross-pulsar frequency exponent is not interpretable as evidence.
+
+Model comparison (AIC):
+- M_TEP (δ=0):    AIC = 237.9
+- M_ISM (δ=-2):   AIC = 901.7
+- M_general:      AIC = 162.0
+
+Preferred model: M_general
+General model with free δ is preferred
+
+Telescope calibration difference (Parkes/Jiamusi): 0.368
+(Calibration uncertainty is a major limiting factor)
+
+WITHIN-SOURCE J0437 SUB-BAND TEST:
+Achromatic TEP preferred
+Best-fit δ = 0.020
+
+OVERALL ASSESSMENT:
+The cross-pulsar chromatic fit is diagnostic only because it uses unsigned |H|
+amplitudes, includes noise-floor-limited bounding rows, and is strongly limited
+by telescope calibration and geometry differences. The fitted free exponent
+should not be used as primary evidence when it lands on an optimizer boundary.
+The cleaner within-source J0437 sub-band test removes telescope and geometry
+differences, but with only a few frequency points and large sub-band errors it
+is best described as weakly achromatic/inconclusive rather than decisive.
+
+[2026-05-15 13:18:24] [INFO] ================================================================================
+[2026-05-15 13:18:24] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-15 13:18:24] [INFO] ================================================================================

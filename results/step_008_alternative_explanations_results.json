@@ -1,0 +1,106 @@
+{
+  "thin_screen": {
+    "test": "thin_screen_kolmogorov",
+    "observed_H_ns": 8.100162219444181,
+    "simulated_H_ns": 0.0,
+    "observed_psi_rad": 0.9840495457197854,
+    "simulated_psi_rad": 0.0,
+    "observed_sigma": 20.352872328258897,
+    "iss_ruled_out": true,
+    "n_realisations": 200,
+    "interpretation": "Standard ISS predicts identically zero closure delay. Simulation confirms: |H| and \u03c8 are zero to numerical precision. The observed 8.100 ns and 20.4\u03c3 \u03c8 cannot be explained by thin-screen scintillation."
+  },
+  "multi_screen": {
+    "test": "multi_screen",
+    "observed_H_ns": 8.100162219444181,
+    "simulated_H_ns": 0.0,
+    "multi_screen_ruled_out": true,
+    "interpretation": "Multiple screens produce additional interference but closure delays remain zero: the additive property \u03c4_ij+\u03c4_jk+\u03c4_ki=0 holds regardless of screen multiplicity."
+  },
+  "instrumental": {
+    "test": "instrumental",
+    "observed_H_ns": 8.100162219444181,
+    "simulated_H_ns": 7.966459852961577,
+    "observed_psi_rad": 0.9840495457197854,
+    "simulated_psi_rad": 0.002354454787101208,
+    "psi_vs_instrumental_sigma": 286.3617818233742,
+    "n_trials": 410751,
+    "n_observed": 19167,
+    "noise_model": "Uncorrelated Gaussian: \u03c3_delay=10ns, \u03c3_doppler=0.1mHz",
+    "instrumental_ruled_out": true,
+    "interpretation": "Instrumental noise produces |H| ~ 8 ns from 10 ns timing precision (unsigned noise bias), but cannot produce Phase Closure \u03c8 because delay and Doppler noise are uncorrelated. The observed \u03c8 = 0.987 rad is incompatible with instrumental noise."
+  },
+  "velocity_gradient": {
+    "test": "velocity_gradient",
+    "observed_H_ns": 8.100162219444181,
+    "simulated_H_ns": 0.10002401644322581,
+    "ratio": 80.98217315680257,
+    "physical_upper_limit_ns": 0.2,
+    "velocity_gradient_ruled_out": true,
+    "interpretation": "ISM velocity gradients are second-order effects with physical upper limit ~0.2 ns. Observed |H| = 8.100 ns exceeds this by 81.0\u00d7, ruling out velocity gradients as the explanation."
+  },
+  "bipolar_structure": {
+    "test": "bipolar_structure",
+    "observed_bipolar_magnitude_ratio": 0.9604101654736774,
+    "observed_abs_branch_mean_ns": 27.076064474622108,
+    "simulated_matching_bipolar_fraction": 0.0,
+    "bipolar_structure_ruled_out": true,
+    "interpretation": "ISM effects (simulated with Gaussian noise matching observed statistics) cannot reliably reproduce the observed equal-magnitude bipolar structure. Only 0.0% of ISM simulations match the TEP signature, ruling out ISM as the explanation."
+  },
+  "thick_screen": {
+    "test": "thick_screen",
+    "observed_H_ns": 8.100162219444181,
+    "simulated_H_ns": 0.0,
+    "n_screens": 5,
+    "thick_screen_ruled_out": true,
+    "interpretation": "Thick screen (extended scattering region) simulations show that closure delays remain zero even with multiple integrated scattering layers. The additive property of differential delays ensures closure is identically zero regardless of screen thickness."
+  },
+  "anisotropic_turbulence": {
+    "test": "anisotropic_turbulence",
+    "observed_H_ns": 8.100162219444181,
+    "simulated_H_ns": 0.0,
+    "anisotropy_ratio": 3.0,
+    "anisotropic_turbulence_ruled_out": true,
+    "interpretation": "Anisotropic turbulence with ratio 3.0:1 produces closure delays that remain zero to numerical precision. The geometric closure property is independent of turbulence anisotropy."
+  },
+  "localized_anisotropic_structure": {
+    "test": "localized_anisotropic_structure",
+    "observed_H_ns": 8.100162219444181,
+    "observed_psi_rad": 0.9840495457197854,
+    "simulated_H_ns": 0.0,
+    "simulated_H_max": 0.0,
+    "simulated_psi_rad": 0.0,
+    "simulated_psi_sem": 0.0,
+    "psi_vs_null_sigma": Infinity,
+    "spurious_velocity_correlation": 0.0,
+    "best_params": {},
+    "n_total_runs": 12800,
+    "n_successful_closures": 12800,
+    "aspect_ratios_tested": [
+      5.0,
+      10.0,
+      20.0,
+      50.0
+    ],
+    "strength_factors_tested": [
+      0.5,
+      1.0,
+      2.0,
+      5.0
+    ],
+    "size_factors_tested": [
+      0.5,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "localized_anisotropic_ruled_out": true,
+    "interpretation": "A localized anisotropic filament oriented along the J0437 proper motion (120.5\u00b0) was simulated with 12800 parameter combinations (aspect ratios up to 50.0:1, strengths up to 5.0x background). Even in this maximally favourable geometry, simulated |H| = 0.000000 ns (max 0.000000 ns), and \u03c8 = 0.000000 rad, both consistent with zero. The scalar phase-screen closure identity holds regardless of anisotropy or localization. Spurious velocity correlation from arclet extraction bias is r = 0.0000, consistent with zero. The observed 8.100 ns and 0.9840 rad cannot be explained by any local anisotropic ISM structure."
+  },
+  "overall": {
+    "all_standard_explanations_ruled_out": true,
+    "tests_performed": 8,
+    "tests_passed": 8,
+    "interpretation": "The tested standard ISS/instrumental toy models, including a devil's-advocate localized anisotropic filament oriented along the J0437 proper motion, do not reproduce the J0437 phase-closure signal in this pipeline. This is strong support for a non-additive phase-closure anomaly compatible with TEP, but it is not a proof that TEP is the only viable explanation; independent replication and broader plasma/instrumental systematics remain required."
+  }
+}

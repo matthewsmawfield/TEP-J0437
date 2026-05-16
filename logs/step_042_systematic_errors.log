@@ -1,0 +1,83 @@
+[2026-05-15 13:18:24] [INFO] ================================================================================
+[2026-05-15 13:18:24] [INFO] STEP step_042_systematic_errors STARTED
+[2026-05-15 13:18:24] [INFO] Description: Systematic error budget
+[2026-05-15 13:18:24] [INFO] Physics: Comprehensive systematic error assessment
+[2026-05-15 13:18:24] [INFO] Method: Error propagation, instrumental effects, calibration systematics
+[2026-05-15 13:18:24] [INFO] ================================================================================
+[2026-05-15 13:18:24] [INFO]       ================================================================================
+[2026-05-15 13:18:24] [INFO] ═══ STEP 042: SYSTEMATIC ERROR ANALYSIS
+[2026-05-15 13:18:24] [INFO]       ================================================================================
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO]       Purpose: Quantify systematic uncertainties in TEP measurement
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO] >>> 1. LOADING CLOSURE DATA:
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO] >>> 2. ARCLET NUMBER DEPENDENCE:
+[2026-05-15 13:18:24] [INFO]          Correlation: -0.075
+[2026-05-15 13:18:24] [INFO]          Significant: False
+[2026-05-15 13:18:24] [INFO]          H independent of arclet number
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO] >>> 3. SNR DEPENDENCE:
+[2026-05-15 13:18:24] [INFO]          Analysis deferred to steps 025 and 028
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO] >>> 4. TRIPLET NUMBER DEPENDENCE:
+[2026-05-15 13:18:24] [INFO]          Correlation: -0.030
+[2026-05-15 13:18:24] [INFO]          Significant: False
+[2026-05-15 13:18:24] [INFO]          H independent of number of triplets
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO] >>> 5. SELECTION BIAS (from step_041):
+[2026-05-15 13:18:24] [INFO]          Detection robust to SNR threshold: False
+[2026-05-15 13:18:24] [INFO]          Detection robust to arclet threshold: False
+[2026-05-15 13:18:24] [INFO]          Threshold-based selection-bias evidence is limited or mixed in the current dataset
+[2026-05-15 13:18:24] [INFO]          Aggressive SNR cuts change mean |vector area| by +110.4% (baseline vs most aggressive SNR cut tested)
+[2026-05-15 13:18:24] [INFO]          |Unsigned H| robustness across SNR thresholds: ROBUST as a noise-biased diagnostic (36.0sigma minimum across all cuts)
+[2026-05-15 13:18:24] [INFO]          Signed mean robustness: PARTIAL (significant at low SNR cuts, drops at SNR≥5.59 — expected for diagnostic bipolar quantity)
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO] >>> 7. PIXEL DISCRETIZATION ERROR:
+[2026-05-15 13:18:24] [INFO]          d_tau = 1.972 ns, discretization systematic = 0.1972 ns
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO] >>> 8. THERMAL NOISE CONTRIBUTION:
+[2026-05-15 13:18:24] [INFO]          systematic = 0.1369 ns
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO] >>> 9. BANDPASS CALIBRATION ERROR:
+[2026-05-15 13:18:24] [INFO]          systematic = 0.1282 ns
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO] >>> 6. SYSTEMATIC ERROR BUDGET:
+[2026-05-15 13:18:24] [INFO]          Statistical error: 0.102 ns
+[2026-05-15 13:18:24] [INFO]          Systematic error: 0.423 ns
+[2026-05-15 13:18:24] [INFO]          Total error: 0.435 ns
+[2026-05-15 13:18:24] [INFO]          Systematic fraction: 4.146
+[2026-05-15 13:18:24] [INFO]          Core metrology systematic errors exceed statistical error
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO] >>> 10. PHASE CLOSURE ψ CIRCULAR STATISTICS:
+[2026-05-15 13:18:24] [INFO]          Epochs with ψ: 1220, ψ_mean = 0.936 rad, R_bar = 0.288
+[2026-05-15 13:18:24] [INFO]          Rayleigh Z = 202.80 (p = 9.18e-45), V = 8.44 (p = 3.12e-17)
+[2026-05-15 13:18:24] [INFO]          Bootstrap SE = 0.068 rad, 95% CI = [0.807, 1.072] rad
+[2026-05-15 13:18:24] [INFO]          NOTE: ψ is extracted from complex cross-term phases prior to SNR weighting; threshold cuts do not directly affect phase measurement
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO]       ================================================================================
+[2026-05-15 13:18:24] [INFO] ═══ CONCLUSIONS:
+[2026-05-15 13:18:24] [INFO]       ================================================================================
+[2026-05-15 13:18:24] [INFO]         * Arclet number dependence: H independent of arclet number
+[2026-05-15 13:18:24] [INFO]         * SNR dependence: Analysis deferred to steps 025 and 028
+[2026-05-15 13:18:24] [INFO]         * Triplet number dependence: H independent of number of triplets
+[2026-05-15 13:18:24] [INFO]         * Core metrology systematics: Core metrology systematic errors exceed statistical error
+[2026-05-15 13:18:24] [INFO]         * Phase Closure ψ: Rayleigh Z = 202.80 (p = 9.18e-45), circular SE = 0.068 rad
+[2026-05-15 13:18:24] [INFO]         * Threshold-robustness concerns apply to signed-mean diagnostic (expected near zero by bipolar cancellation), not to primary Phase Closure ψ
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO]       ================================================================================
+[2026-05-15 13:18:24] [INFO] ═══ IMPLICATIONS:
+[2026-05-15 13:18:24] [INFO]       ================================================================================
+[2026-05-15 13:18:24] [INFO]         core_systematic_ratio: 2.67
+[2026-05-15 13:18:24] [INFO]         total_systematic_ratio: 4.15
+[2026-05-15 13:18:24] [INFO]         core_systematic_ns: 0.272
+[2026-05-15 13:18:24] [INFO]         threshold_robustness_ns: 0.323
+[2026-05-15 13:18:24] [INFO]         psi_circular_se_rad: 0.068
+[2026-05-15 13:18:24] [INFO]         measurement_status: Core metrology systematic exceeds the delay-domain statistical error; this weakens delay-amplitude claims but does not directly control the phase-closure ψ circular-statistics inference.
+[2026-05-15 13:18:24] [INFO] 
+[2026-05-15 13:18:24] [INFO]       ================================================================================
+[2026-05-15 13:18:24] [INFO] [PASS] Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_042_systematic_error_results.json
+[2026-05-15 13:18:24] [INFO]       ================================================================================
+[2026-05-15 13:18:24] [INFO] ================================================================================
+[2026-05-15 13:18:24] [INFO] STEP COMPLETED SUCCESSFULLY (0.5 seconds)
+[2026-05-15 13:18:24] [INFO] ================================================================================

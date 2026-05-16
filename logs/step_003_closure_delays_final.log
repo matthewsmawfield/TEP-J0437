@@ -1,0 +1,2141 @@
+[2026-05-15 13:07:06] [INFO] ================================================================================
+[2026-05-15 13:07:06] [INFO] STEP step_003_closure_delays_final STARTED
+[2026-05-15 13:07:06] [INFO] Description: Closure delay extraction from arclet triplets (PARALLEL)
+[2026-05-15 13:07:06] [INFO] Physics: Measuring holonomy H = ∮ dτ_prop via triangulation
+[2026-05-15 13:07:06] [INFO] Method: Parabolic fitting to arclets, parallel epoch processing with ProcessPoolExecutor
+[2026-05-15 13:07:06] [INFO] ================================================================================
+[2026-05-15 13:07:06] [INFO] ═══ ============================================================
+[2026-05-15 13:07:06] [INFO] ═══ TEP-J0437 Step 003: Closure Delay Extraction
+[2026-05-15 13:07:06] [INFO] ═══ ============================================================
+[2026-05-15 13:07:06] [INFO]       Method: Sub-pixel cross-term measurement Parallel: 12 workers
+[2026-05-15 13:07:06] [INFO]       Parameters: max_arclets=12, use_snr_threshold=True, min_snr=5.0
+[2026-05-15 13:07:06] [INFO]       
+Processing J0437-4715 (Mode: full)...
+[2026-05-15 13:07:06] [INFO] ═══ 
+Processing J0437-4715...
+[2026-05-15 13:07:06] [INFO] ═══ ============================================================
+[2026-05-15 13:07:06] [INFO]       Processing 9326 epochs with 12 parallel workers...
+[2026-05-15 13:07:07] [INFO]         [OK] a050724_221747.rf.pcm_secondary     Delta=-0.0624 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050725_020414.rf.pcm_secondary     Delta=+0.0040 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050823_164705.rf.pcm_secondary     Delta=-0.0165 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050901_152105.rf.pcm_secondary     Delta=-0.0117 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050823_160709.rf.pcm_secondary     Delta=-0.0479 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050901_174642.rf.pcm_secondary     Delta=-0.0070 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050828_221343.rf.pcm_secondary     Delta=-0.0176 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050907_210833.rf.pcm_secondary     Delta=-0.0156 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050907_200543.rf.pcm_secondary     Delta=+0.0476 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050621_010432.rf.pcm_secondary     Delta=+0.0041 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050829_172307.rf.pcm_secondary     Delta=-0.0019 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050715_011717.rf.pcm_secondary     Delta=-0.0163 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050829_175845.rf.pcm_secondary     Delta=-0.0110 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050901_193603.rf.pcm_secondary     Delta=+0.0185 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050827_201915.rf.pcm_secondary     Delta=-0.0534 us
+[2026-05-15 13:07:07] [INFO]         [OK] a060104_070103.rf.pcm_secondary     Delta=-0.0188 us
+[2026-05-15 13:07:07] [INFO]         [OK] a051111_200822.rf.pcm_secondary     Delta=-0.0105 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050907_231844.rf.pcm_secondary     Delta=+0.0093 us
+[2026-05-15 13:07:07] [INFO]         [OK] a051113_162542.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050827_231156.rf.pcm_secondary     Delta=+0.0531 us
+[2026-05-15 13:07:07] [INFO]         [OK] a060509_043944.rf.pcm_secondary     Delta=-0.0003 us
+[2026-05-15 13:07:07] [INFO]         [OK] a051111_145053.rf.pcm_secondary     Delta=-0.0016 us
+[2026-05-15 13:07:07] [INFO]         [OK] a060527_234613.rf.pcm_secondary     Delta=+0.0165 us
+[2026-05-15 13:07:07] [INFO]         [OK] a060616_001254.rf.pcm_secondary     Delta=+0.0038 us
+[2026-05-15 13:07:07] [INFO]         [OK] a050907_185423.rf.pcm_secondary     Delta=-0.0143 us
+[2026-05-15 13:07:07] [INFO]         [OK] a060104_074153.rf.pcm_secondary     Delta=-0.0260 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060614_213723.rf.pcm_secondary     Delta=-0.0054 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060703_221143.rf.pcm_secondary     Delta=+0.0257 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060528_022603.rf.pcm_secondary     Delta=-0.0098 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060415_035732.rf.pcm_secondary     Delta=-0.0512 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060617_225343.rf.pcm_secondary     Delta=+0.0062 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060915_175029.rf.pcm_secondary     Delta=+0.0021 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060529_214733.rf.pcm_secondary     Delta=-0.0043 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060702_035211.rf.pcm_secondary     Delta=+0.0240 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061228_084759.rf.pcm_secondary     Delta=-0.0070 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061003_201430.rf.pcm_secondary     Delta=+0.0083 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061229_125300.rf.pcm_secondary     Delta=-0.0180 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060616_220457.rf.pcm_secondary     Delta=+0.0454 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061230_103808.rf.pcm_secondary     Delta=+0.0099 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061227_111859.rf.pcm_secondary     Delta=-0.0078 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061005_160059.rf.pcm_secondary     Delta=+0.0042 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060528_033313.rf.pcm_secondary     Delta=+0.0034 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061231_134039.rf.pcm_secondary     Delta=-0.0067 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061004_170309.rf.pcm_secondary     Delta=+0.0233 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061230_112939.rf.pcm_secondary     Delta=-0.0037 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061217_175529.rf.pcm_secondary     Delta=+0.0023 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070227_053246.rf.pcm_secondary     Delta=+0.0027 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061231_154619.rf.pcm_secondary     Delta=+0.0135 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070228_061606.rf.pcm_secondary     Delta=+0.0029 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070311_054257.rf.pcm_secondary     Delta=+0.0210 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070311_065019.rf.pcm_secondary     Delta=+0.0488 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070119_074419.rf.pcm_secondary     Delta=+0.0025 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070120_080030.rf.pcm_secondary     Delta=+0.0029 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061005_145228.rf.pcm_secondary     Delta=-0.0014 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070315_082009.rf.pcm_secondary     Delta=-0.0160 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070411_070502.rf.pcm_secondary     Delta=-0.0326 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070318_090340.rf.pcm_secondary     Delta=-0.0038 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070416_091552.rf.pcm_secondary     Delta=+0.0482 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070301_092218.rf.pcm_secondary     Delta=+0.0275 us
+[2026-05-15 13:07:08] [INFO]         [OK] a060715_230514.rf.pcm_secondary     Delta=-0.0033 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070502_083427.rf.pcm_secondary     Delta=-0.0351 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070303_090726.rf.pcm_secondary     Delta=-0.0316 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070412_085359.rf.pcm_secondary     Delta=+0.0041 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070506_025334.rf.pcm_secondary     Delta=-0.0673 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070413_023416.rf.pcm_secondary     Delta=-0.0298 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070501_232519.rf.pcm_secondary     Delta=+0.0039 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070506_031054.rf.pcm_secondary     Delta=-0.0235 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070506_033935.rf.pcm_secondary     Delta=-0.0036 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070506_034814.rf.pcm_secondary     Delta=+0.0240 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070506_033054.rf.pcm_secondary     Delta=-0.0017 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070506_080815.rf.pcm_secondary     Delta=+0.0388 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070227_064106.rf.pcm_secondary     Delta=+0.0258 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070507_022454.rf.pcm_secondary     Delta=-0.0192 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070507_025334.rf.pcm_secondary     Delta=-0.0003 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070317_034739.rf.pcm_secondary     Delta=-0.0249 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070519_001409.rf.pcm_secondary     Delta=+0.0575 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070507_030214.rf.pcm_secondary     Delta=+0.0034 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070310_032829.rf.pcm_secondary     Delta=-0.0224 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070521_062140.rf.pcm_secondary     Delta=+0.0160 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070313_051717.rf.pcm_secondary     Delta=+0.0039 us
+[2026-05-15 13:07:08] [INFO]         [OK] a061231_071729.rf.pcm_secondary     Delta=-0.0014 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070506_073055.rf.pcm_secondary     Delta=+0.0099 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070521_010858.rf.pcm_secondary     Delta=-0.0042 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070506_024459.rf.pcm_secondary     Delta=-0.0036 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070521_022940.rf.pcm_secondary     Delta=-0.0126 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070506_075939.rf.pcm_secondary     Delta=-0.0265 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070506_072219.rf.pcm_secondary     Delta=+0.0037 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070524_040957.rf.pcm_secondary     Delta=+0.0655 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070601_001307.rf.pcm_secondary     Delta=+0.0560 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070611_010953.rf.pcm_secondary     Delta=-0.0174 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070611_010120.rf.pcm_secondary     Delta=-0.0367 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070603_232134.rf.pcm_secondary     Delta=-0.0033 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070608_005319.rf.pcm_secondary     Delta=-0.0574 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070611_023133.rf.pcm_secondary     Delta=-0.0608 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070611_013643.rf.pcm_secondary     Delta=-0.0155 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070611_020540.rf.pcm_secondary     Delta=-0.0032 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070611_012810.rf.pcm_secondary     Delta=-0.0099 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070521_040327.rf.pcm_secondary     Delta=+0.0045 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070524_224038.rf.pcm_secondary     Delta=+0.0259 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070523_035328.rf.pcm_secondary     Delta=-0.0235 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070611_001049.rf.pcm_secondary     Delta=-0.0092 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070524_062439.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070803_235451.rf.pcm_secondary     Delta=-0.0040 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070715_211727.rf.pcm_secondary     Delta=+0.0215 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070804_010631.rf.pcm_secondary     Delta=-0.0036 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070610_215459.rf.pcm_secondary     Delta=+0.0248 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070915_200627.rf.pcm_secondary     Delta=-0.0017 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070915_161807.rf.pcm_secondary     Delta=-0.0014 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070524_234151.rf.pcm_secondary     Delta=+0.0192 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070916_225342.rf.pcm_secondary     Delta=+0.0246 us
+[2026-05-15 13:07:08] [INFO]         [OK] a071219_134817.rf.pcm_secondary     Delta=+0.0023 us
+[2026-05-15 13:07:08] [INFO]         [OK] a071221_130518.rf.pcm_secondary     Delta=-0.0058 us
+[2026-05-15 13:07:08] [INFO]         [OK] a070803_190816.rf.pcm_secondary     Delta=+0.0030 us
+[2026-05-15 13:07:08] [INFO]         [OK] a071220_173539.rf.pcm_secondary     Delta=+0.0063 us
+[2026-05-15 13:07:09] [INFO]         [OK] a071202_134248.rf.pcm_secondary     Delta=-0.0016 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2002-12-13-11:23:51.rf.pcm_seconda Delta=+0.0335 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2002-12-13-13:39:05.rf.pcm_seconda Delta=+0.0540 us
+[2026-05-15 13:07:09] [INFO]         [OK] a071222_103507.rf.pcm_secondary     Delta=-0.0203 us
+[2026-05-15 13:07:09] [INFO]         [OK] a071220_115408.rf.pcm_secondary     Delta=-0.0125 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-01-12-09:26:00.rf.pcm_seconda Delta=+0.0319 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-02-05-06:26:48.rf.pcm_seconda Delta=+0.0138 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-02-07-06:11:25.rf.pcm_seconda Delta=-0.0090 us
+[2026-05-15 13:07:09] [INFO]         [OK] a071003_152409.rf.pcm_secondary     Delta=-0.0012 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-04-14-06:10:48.rf.pcm_seconda Delta=+0.0612 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-06-06-02:33:11.rf.pcm_seconda Delta=+0.0554 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-07-20-21:30:16.rf.pcm_seconda Delta=-0.0436 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-05-15-02:46:38.rf.pcm_seconda Delta=+0.0125 us
+[2026-05-15 13:07:09] [INFO]         [OK] a071225_101258.rf.pcm_secondary     Delta=-0.0164 us
+[2026-05-15 13:07:09] [INFO]         [OK] a070531_220626.rf.pcm_secondary     Delta=+0.0039 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-01-04-09:28:46.rf.pcm_seconda Delta=-0.0080 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-01-10-13:42:14.rf.pcm_seconda Delta=+0.0101 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-08-31-17:10:53.rf.pcm_seconda Delta=+0.0252 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-07-28-19:49:37.rf.pcm_seconda Delta=-0.0096 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-10-07-19:18:28.rf.pcm_seconda Delta=+0.0090 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-11-01-14:04:26.rf.pcm_seconda Delta=+0.0070 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-10-08-15:53:07.rf.pcm_seconda Delta=-0.0094 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-12-18-10:38:41.rf.pcm_seconda Delta=-0.0066 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-12-18-12:02:22.rf.pcm_seconda Delta=+0.0393 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-02-09-04:52:28.rf.pcm_seconda Delta=-0.0195 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-12-17-12:32:51.rf.pcm_seconda Delta=-0.0084 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-11-02-12:25:19.rf.pcm_seconda Delta=-0.0936 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-04-26-02:35:27.rf.pcm_seconda Delta=-0.0948 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-04-23-23:18:06.rf.pcm_seconda Delta=+0.0130 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-12-04-16:38:28.rf.pcm_seconda Delta=+0.0078 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-12-05-13:23:23.rf.pcm_seconda Delta=+0.0107 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-02-00:30:44.rf.pcm_seconda Delta=+0.0184 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-04-26-03:42:34.rf.pcm_seconda Delta=+0.0493 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-04-06:46:44.rf.pcm_seconda Delta=+0.2305 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-02-02:39:10.rf.pcm_seconda Delta=+0.0185 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-04-07:52:00.rf.pcm_seconda Delta=+0.0433 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2003-11-02-14:14:57.rf.pcm_seconda Delta=+0.0053 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-08-00:34:14.rf.pcm_seconda Delta=-0.1302 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-17-05:01:49.rf.pcm_seconda Delta=-0.0463 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-18-03:50:08.rf.pcm_seconda Delta=+0.2374 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-20-23:28:48.rf.pcm_seconda Delta=+0.0152 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-03-01:28:10.rf.pcm_seconda Delta=-0.0658 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-07-20:28:19.rf.pcm_seconda Delta=-0.0399 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-08-01:38:56.rf.pcm_seconda Delta=+0.1947 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-06-01:52:04.rf.pcm_seconda Delta=+0.1600 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-11-00:01:12.rf.pcm_seconda Delta=+0.0453 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-01-03:21:16.rf.pcm_seconda Delta=+0.1391 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-04-22:55:40.rf.pcm_seconda Delta=+0.1740 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-19-00:26:08.rf.pcm_seconda Delta=+0.0157 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-13-23:05:29.rf.pcm_seconda Delta=-0.0731 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-17-22:47:04.rf.pcm_seconda Delta=+0.0976 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-06-03:08:40.rf.pcm_seconda Delta=+0.0152 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-07-21:01:40.rf.pcm_seconda Delta=+0.2977 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-12-22:45:59.rf.pcm_seconda Delta=-0.1111 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-05-21-03:15:35.rf.pcm_seconda Delta=+0.0448 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-20-21:41:32.rf.pcm_seconda Delta=+0.0486 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-10-21:35:20.rf.pcm_seconda Delta=-0.0149 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-11-22:59:25.rf.pcm_seconda Delta=-0.0163 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-07-16-21:33:31.rf.pcm_seconda Delta=-0.0128 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-19-21:33:50.rf.pcm_seconda Delta=+0.0149 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-07-16-22:34:33.rf.pcm_seconda Delta=-0.2396 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-07-24-20:28:39.rf.pcm_seconda Delta=-0.0111 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-06-20-20:25:12.rf.pcm_seconda Delta=+0.0118 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-08-13-18:42:38.rf.pcm_seconda Delta=+0.0113 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-08-12-19:51:35.rf.pcm_seconda Delta=+0.0148 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-11-18:39:06.rf.pcm_seconda Delta=-0.0096 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-07-23-21:05:29.rf.pcm_seconda Delta=+0.0122 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-12-20:05:48.rf.pcm_seconda Delta=-0.0081 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-12-14:41:25.rf.pcm_seconda Delta=+0.0553 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-08-02-19:38:59.rf.pcm_seconda Delta=+0.0148 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-14-17:47:27.rf.pcm_seconda Delta=+0.0054 us
+[2026-05-15 13:07:09] [INFO]         [OK] a070814_232141.rf.pcm_secondary     Delta=-0.0086 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-08-14-19:21:36.rf.pcm_seconda Delta=-0.0106 us
+[2026-05-15 13:07:09] [INFO]         [OK] a071224_134206.rf.pcm_secondary     Delta=+0.0205 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-08-01-19:23:22.rf.pcm_seconda Delta=+0.0126 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-08-01-18:17:37.rf.pcm_seconda Delta=-0.0119 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-08-14-20:26:46.rf.pcm_seconda Delta=+0.0104 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-12-17:48:46.rf.pcm_seconda Delta=-0.0081 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-28-18:28:37.rf.pcm_seconda Delta=+0.0085 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-28-19:06:15.rf.pcm_seconda Delta=-0.0165 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-01-05-11:04:20.rf.pcm_seconda Delta=-0.0092 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-27-19:05:47.rf.pcm_seconda Delta=-0.0074 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-01-05-09:31:28.rf.pcm_seconda Delta=+0.0853 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-13-20:21:46.rf.pcm_seconda Delta=+0.0063 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-28-19:44:17.rf.pcm_seconda Delta=+0.0649 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-14-18:59:17.rf.pcm_seconda Delta=-0.0057 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-28-21:10:47.rf.pcm_seconda Delta=+0.0085 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-09-28-17:50:57.rf.pcm_seconda Delta=+0.0085 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-01-06-10:18:52.rf.pcm_seconda Delta=-0.0072 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2004-11-27-10:50:05.rf.pcm_seconda Delta=+0.0208 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-01-06-10:51:31.rf.pcm_seconda Delta=-0.1238 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-04-22-02:38:44.rf.pcm_seconda Delta=-0.1368 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-05-28-00:14:36.rf.pcm_seconda Delta=+0.0470 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-07-16-21:37:50.rf.pcm_seconda Delta=-0.0103 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-07-21-18:36:19.rf.pcm_seconda Delta=-0.0118 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-07-20-19:09:35.rf.pcm_seconda Delta=+0.0303 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-09-01-20:12:39.rf.pcm_seconda Delta=-0.0726 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-01-07-09:53:38.rf.pcm_seconda Delta=-0.0068 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-09-01-18:23:27.rf.pcm_seconda Delta=+0.0415 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-09-07-23:35:56.rf.pcm_seconda Delta=+0.0366 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-09-01-19:00:04.rf.pcm_seconda Delta=+0.0922 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-07-23-19:40:00.rf.pcm_seconda Delta=-0.0131 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-07-24-02:47:09.rf.pcm_seconda Delta=+0.0129 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-09-01-17:10:31.rf.pcm_seconda Delta=-0.0814 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-09-01-16:34:30.rf.pcm_seconda Delta=+0.0278 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-10-04-16:06:40.rf.pcm_seconda Delta=+0.0387 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-11-11-14:51:01.rf.pcm_seconda Delta=-0.0132 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-10-04-19:28:44.rf.pcm_seconda Delta=-0.0579 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-09-03-19:18:22.rf.pcm_seconda Delta=+0.0106 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-09-01-20:48:57.rf.pcm_seconda Delta=-0.1115 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-11-11-13:17:11.rf.pcm_seconda Delta=+0.1035 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-11-14-14:13:21.rf.pcm_seconda Delta=+0.0936 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-10-04-13:52:02.rf.pcm_seconda Delta=-0.0201 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-10-04-22:33:30.rf.pcm_seconda Delta=-0.0052 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-10-04-18:21:22.rf.pcm_seconda Delta=+0.0102 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-12-22-13:40:51.rf.pcm_seconda Delta=+0.0244 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-01-04-07:42:01.rf.pcm_seconda Delta=+0.0066 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-01-03-10:28:19.rf.pcm_seconda Delta=+0.0068 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-10-04-14:59:20.rf.pcm_seconda Delta=+0.0049 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-03-04-03:41:03.rf.pcm_seconda Delta=+0.0534 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-03-24-04:06:00.rf.pcm_seconda Delta=-0.0941 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-11-13-16:25:49.rf.pcm_seconda Delta=+0.0043 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-11-14-16:42:20.rf.pcm_seconda Delta=-0.0056 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-05-26-03:20:21.rf.pcm_seconda Delta=+0.0768 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-06-14-23:35:33.rf.pcm_seconda Delta=-0.0202 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-06-17-22:53:51.rf.pcm_seconda Delta=+0.0149 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-12-23-10:38:09.rf.pcm_seconda Delta=+0.0058 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-06-16-01:20:23.rf.pcm_seconda Delta=+0.0976 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-06-16-22:38:09.rf.pcm_seconda Delta=-0.1324 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-12-21-10:35:29.rf.pcm_seconda Delta=-0.0336 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-07-03-01:37:38.rf.pcm_seconda Delta=+0.0546 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-07-03-22:44:18.rf.pcm_seconda Delta=+0.0184 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2005-10-04-17:14:01.rf.pcm_seconda Delta=-0.0048 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-07-25-19:38:14.rf.pcm_seconda Delta=-0.1423 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-07-01-20:28:50.rf.pcm_seconda Delta=-0.0346 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-06-17-22:02:39.rf.pcm_seconda Delta=+0.0195 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-07-26-17:53:03.rf.pcm_seconda Delta=-0.0134 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-04-21-06:56:41.rf.pcm_seconda Delta=+0.1065 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-08-19-17:44:39.rf.pcm_seconda Delta=+0.0102 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-04-22-05:21:03.rf.pcm_seconda Delta=-0.0139 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-12-25-10:14:19.rf.pcm_seconda Delta=+0.0587 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-12-26-12:48:22.rf.pcm_seconda Delta=-0.0450 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-12-30-12:22:11.rf.pcm_seconda Delta=-0.0180 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2007-01-21-10:09:11.rf.pcm_seconda Delta=-0.0322 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-08-19-20:40:31.rf.pcm_seconda Delta=-0.0097 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2007-02-26-09:45:09.rf.pcm_seconda Delta=-0.0112 us
+[2026-05-15 13:07:09] [INFO]         [OK] m2006-12-31-09:20:41.rf.pcm_seconda Delta=-0.0061 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-04-03:24:30.rf.pcm_seconda Delta=-0.0075 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2005-10-04-21:43:22.rf.pcm_seconda Delta=-0.0050 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2006-07-16-00:13:32.rf.pcm_seconda Delta=-0.0150 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-02-08:46:40.rf.pcm_seconda Delta=-0.0145 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-09-02:48:10.rf.pcm_seconda Delta=-0.0134 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-02-26-08:36:50.rf.pcm_seconda Delta=-0.0114 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-14-05:41:39.rf.pcm_seconda Delta=+0.1699 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-03-04:34:10.rf.pcm_seconda Delta=+0.0135 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2006-12-28-13:55:22.rf.pcm_seconda Delta=+0.0554 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-05-07:20:19.rf.pcm_seconda Delta=-0.0334 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-17-08:19:21.rf.pcm_seconda Delta=+0.1507 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-18-09:03:42.rf.pcm_seconda Delta=-0.0443 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-18-10:45:42.rf.pcm_seconda Delta=+0.0448 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-16-09:01:33.rf.pcm_seconda Delta=+0.0411 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-03-09:57:52.rf.pcm_seconda Delta=-0.0629 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-04-17-09:51:15.rf.pcm_seconda Delta=-0.0160 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-04-12-08:54:01.rf.pcm_seconda Delta=-0.0148 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-02-04:13:20.rf.pcm_seconda Delta=+0.3050 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-01-05:57:20.rf.pcm_seconda Delta=-0.0392 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-05-00:04:41.rf.pcm_seconda Delta=-0.0224 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-17-11:42:41.rf.pcm_seconda Delta=-0.0290 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-04-13-02:34:18.rf.pcm_seconda Delta=-0.0176 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-23-01:38:51.rf.pcm_seconda Delta=-0.0276 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-18-07:55:45.rf.pcm_seconda Delta=-0.0148 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-26-00:21:38.rf.pcm_seconda Delta=-0.2016 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-20-02:56:07.rf.pcm_seconda Delta=-0.0452 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-22-23:24:11.rf.pcm_seconda Delta=+0.0427 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-24-23:17:11.rf.pcm_seconda Delta=-0.0134 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-26-23:42:59.rf.pcm_seconda Delta=-0.0525 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-04-12-04:04:09.rf.pcm_seconda Delta=-0.1181 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-17-10:35:22.rf.pcm_seconda Delta=-0.0131 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-03-13-05:17:19.rf.pcm_seconda Delta=-0.0159 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-26-07:11:21.rf.pcm_seconda Delta=+0.0154 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-29-21:12:21.rf.pcm_seconda Delta=+0.2088 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-29-22:19:41.rf.pcm_seconda Delta=+0.0125 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-06-01-23:42:19.rf.pcm_seconda Delta=-0.0486 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-06-02-22:17:00.rf.pcm_seconda Delta=+0.1966 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-06-09-22:05:41.rf.pcm_seconda Delta=-0.1209 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-06-07-22:37:21.rf.pcm_seconda Delta=+0.0159 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-06-08-22:07:42.rf.pcm_seconda Delta=+0.0143 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-31-02:15:23.rf.pcm_seconda Delta=-0.0139 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-25-22:05:41.rf.pcm_seconda Delta=-0.0156 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-23-03:53:30.rf.pcm_seconda Delta=+0.0424 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-07-15-18:41:51.rf.pcm_seconda Delta=-0.0108 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-06-03-23:21:36.rf.pcm_seconda Delta=+0.0388 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-08-14-19:59:41.rf.pcm_seconda Delta=-0.0145 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-23-02:46:13.rf.pcm_seconda Delta=+0.0137 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-09-14-18:16:52.rf.pcm_seconda Delta=-0.0913 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-07-14-00:50:31.rf.pcm_seconda Delta=+0.0147 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-08-11-16:54:19.rf.pcm_seconda Delta=-0.0110 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-05-27-21:49:11.rf.pcm_seconda Delta=-0.3359 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-06-15-23:29:56.rf.pcm_seconda Delta=-0.0119 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-09-30-20:05:50.rf.pcm_seconda Delta=+0.0064 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-21-13:05:19.rf.pcm_seconda Delta=-0.0070 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-19-13:48:19.rf.pcm_seconda Delta=-0.0090 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-22-16:00:20.rf.pcm_seconda Delta=+0.0056 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-23-16:56:12.rf.pcm_seconda Delta=-0.0559 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-21-14:09:40.rf.pcm_seconda Delta=+0.0067 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-23-15:52:50.rf.pcm_seconda Delta=+0.0532 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-22-12:42:20.rf.pcm_seconda Delta=+0.0715 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-25-09:09:20.rf.pcm_seconda Delta=+0.0669 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-01-24-07:12:16.rf.pcm_seconda Delta=+0.1475 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-02-24-09:08:24.rf.pcm_seconda Delta=-0.0156 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-21-11:41:49.rf.pcm_seconda Delta=-0.0526 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-09-15-21:13:53.rf.pcm_seconda Delta=+0.0217 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-09-13-22:09:22.rf.pcm_seconda Delta=+0.0341 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-09-15-18:58:51.rf.pcm_seconda Delta=-0.0168 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-21-10:37:27.rf.pcm_seconda Delta=+0.0945 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-02-26-10:14:24.rf.pcm_seconda Delta=-0.0140 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-22-17:03:52.rf.pcm_seconda Delta=-0.0059 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-02-26-07:55:14.rf.pcm_seconda Delta=+0.1240 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-02-25-10:53:51.rf.pcm_seconda Delta=+0.0231 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-12-00:03:18.rf.pcm_seconda Delta=+0.0734 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-30-09:54:39.rf.pcm_seconda Delta=-0.0133 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2007-12-31-12:19:50.rf.pcm_seconda Delta=-0.2010 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-13-23:30:16.rf.pcm_seconda Delta=+0.0132 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-02-23-07:27:49.rf.pcm_seconda Delta=+0.0440 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-12-05:52:16.rf.pcm_seconda Delta=+0.0468 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-13-03:22:57.rf.pcm_seconda Delta=+0.0142 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-15-21:58:56.rf.pcm_seconda Delta=-0.3243 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-15-05:22:56.rf.pcm_seconda Delta=+0.0425 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-15-04:13:37.rf.pcm_seconda Delta=+0.1011 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-13-04:32:16.rf.pcm_seconda Delta=+0.0117 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-12-01:12:37.rf.pcm_seconda Delta=-0.0184 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-05-06:14:50.rf.pcm_seconda Delta=+0.0711 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-16-05:29:36.rf.pcm_seconda Delta=-0.0163 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-04-14-05:03:16.rf.pcm_seconda Delta=+0.0456 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-17-01:56:16.rf.pcm_seconda Delta=+0.0165 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-16-22:28:56.rf.pcm_seconda Delta=-0.3396 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-14-02:58:16.rf.pcm_seconda Delta=+0.0392 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-16-04:54:16.rf.pcm_seconda Delta=-0.0795 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-17-05:23:36.rf.pcm_seconda Delta=-0.0973 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-13-22:07:57.rf.pcm_seconda Delta=-0.0134 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-18-02:52:16.rf.pcm_seconda Delta=-0.0156 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-25-22:45:57.rf.pcm_seconda Delta=-0.1403 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-17-03:05:17.rf.pcm_seconda Delta=+0.0167 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-25-02:39:17.rf.pcm_seconda Delta=+0.0132 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-17-21:51:57.rf.pcm_seconda Delta=+0.1086 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-06-27-03:51:57.rf.pcm_seconda Delta=+0.0140 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-17-06:33:17.rf.pcm_seconda Delta=+0.0166 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-24-06:43:57.rf.pcm_seconda Delta=+0.0437 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-03-03:15:37.rf.pcm_seconda Delta=+0.2353 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-07-05-21:34:43.rf.pcm_seconda Delta=-0.0186 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-07-09-00:06:42.rf.pcm_seconda Delta=+0.0439 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-05-14-05:28:59.rf.pcm_seconda Delta=+0.0998 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-07-14-03:30:01.rf.pcm_seconda Delta=-0.0406 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-09-05-15:22:36.rf.pcm_seconda Delta=-0.0471 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-07-11-00:27:43.rf.pcm_seconda Delta=-0.0059 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-09-06-20:08:07.rf.pcm_seconda Delta=+0.0441 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-09-06-22:26:56.rf.pcm_seconda Delta=+0.0136 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-07-10-00:37:44.rf.pcm_seconda Delta=-0.0217 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-09-08-17:27:56.rf.pcm_seconda Delta=+0.0133 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-09-08-14:52:36.rf.pcm_seconda Delta=+0.0550 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-10-14-17:50:15.rf.pcm_seconda Delta=-0.0707 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-07-12-01:12:13.rf.pcm_seconda Delta=+0.0251 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-10-12-16:47:16.rf.pcm_seconda Delta=+0.0076 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-10-14-18:59:44.rf.pcm_seconda Delta=+0.0174 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-01-11:58:35.rf.pcm_seconda Delta=-0.0294 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-22-12:08:15.rf.pcm_seconda Delta=+0.0979 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-21-12:42:15.rf.pcm_seconda Delta=-0.0091 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-23-11:27:55.rf.pcm_seconda Delta=-0.0295 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-22-08:22:17.rf.pcm_seconda Delta=+0.0242 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-21-15:08:57.rf.pcm_seconda Delta=-0.0088 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-24-12:58:35.rf.pcm_seconda Delta=-0.0297 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-24-07:52:19.rf.pcm_seconda Delta=-0.0060 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-25-07:40:19.rf.pcm_seconda Delta=-0.0074 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-10-10-17:35:16.rf.pcm_seconda Delta=+0.0189 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-23-10:14:55.rf.pcm_seconda Delta=+0.0184 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-25-08:53:17.rf.pcm_seconda Delta=+0.0078 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-24-10:32:35.rf.pcm_seconda Delta=-0.0234 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-27-15:08:16.rf.pcm_seconda Delta=-0.0092 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-24-16:38:17.rf.pcm_seconda Delta=+0.0851 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-27-16:21:17.rf.pcm_seconda Delta=+0.0094 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-09-07-15:02:56.rf.pcm_seconda Delta=+0.0082 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-22-16:00:35.rf.pcm_seconda Delta=+0.0073 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-27-13:55:16.rf.pcm_seconda Delta=+0.0091 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-03-16-07:05:56.rf.pcm_seconda Delta=-0.0886 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-26-12:34:35.rf.pcm_seconda Delta=+0.0094 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-22-17:13:59.rf.pcm_seconda Delta=-0.0225 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-04-07-08:24:56.rf.pcm_seconda Delta=-0.0410 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-04-17-03:47:31.rf.pcm_seconda Delta=-0.0689 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-02-22-05:27:57.rf.pcm_seconda Delta=+0.1104 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-04-16-06:52:21.rf.pcm_seconda Delta=+0.0201 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-04-17-08:32:25.rf.pcm_seconda Delta=+0.0824 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2008-12-27-09:40:35.rf.pcm_seconda Delta=+0.0347 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-08-27-22:45:22.rf.pcm_seconda Delta=+0.0087 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-01-23-06:06:56.rf.pcm_seconda Delta=-0.0297 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2010-02-15-05:42:42.rf.pcm_seconda Delta=-0.0976 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2002-12-13-13:39:05.rf.pcm_seconda Delta=-0.0099 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2010-05-31-00:05:09.rf.pcm_seconda Delta=+0.1506 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-04-25-03:52:16.rf.pcm_seconda Delta=+0.2074 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2010-05-04-04:40:58.rf.pcm_seconda Delta=-0.1600 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-01-10-13:42:14.rf.pcm_seconda Delta=+0.0094 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-01-11-08:22:28.rf.pcm_seconda Delta=+0.0100 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-08-27-20:56:59.rf.pcm_seconda Delta=+0.0307 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2009-08-22-23:10:42.rf.pcm_seconda Delta=+0.0108 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-06-06-02:33:11.rf.pcm_seconda Delta=-0.0156 us
+[2026-05-15 13:07:10] [INFO]         [OK] m2010-02-16-06:43:49.rf.pcm_seconda Delta=-0.0122 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-08-31-17:10:53.rf.pcm_seconda Delta=-0.0074 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-11-01-16:33:43.rf.pcm_seconda Delta=+0.0636 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-10-27-17:12:01.rf.pcm_seconda Delta=-0.0153 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-11-02-19:13:53.rf.pcm_seconda Delta=-0.0074 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-07-28-19:49:37.rf.pcm_seconda Delta=-0.0091 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-11-13-15:12:08.rf.pcm_seconda Delta=-0.0391 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-12-02-12:06:31.rf.pcm_seconda Delta=-0.0061 us
+[2026-05-15 13:07:10] [INFO]         [OK] n2003-08-29-15:48:58.rf.pcm_seconda Delta=+0.0100 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-05-02-00:30:44.rf.pcm_seconda Delta=-0.0173 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-05-04-23:14:27.rf.pcm_seconda Delta=+0.0162 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2003-09-09-20:02:55.rf.pcm_seconda Delta=+0.0118 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-05-21-03:15:35.rf.pcm_seconda Delta=+0.0173 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-02-10-09:02:13.rf.pcm_seconda Delta=+0.1474 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-05-21-04:07:10.rf.pcm_seconda Delta=+0.0149 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-02-09-11:23:28.rf.pcm_seconda Delta=-0.0110 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-06-19-20:55:42.rf.pcm_seconda Delta=-0.0093 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-07-15-20:46:11.rf.pcm_seconda Delta=+0.0180 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-08-12-21:20:24.rf.pcm_seconda Delta=+0.0826 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-06-20-21:41:32.rf.pcm_seconda Delta=-0.0159 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-05-04-05:42:34.rf.pcm_seconda Delta=-0.0169 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-08-13-19:15:55.rf.pcm_seconda Delta=-0.0113 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-05-15-00:51:57.rf.pcm_seconda Delta=+0.0308 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-08-12-21:53:12.rf.pcm_seconda Delta=+0.0109 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-09-12-15:18:57.rf.pcm_seconda Delta=+0.0303 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-05-15-02:57:58.rf.pcm_seconda Delta=+0.0094 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-09-12-18:59:59.rf.pcm_seconda Delta=+0.0145 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-09-12-14:41:25.rf.pcm_seconda Delta=-0.0292 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-08-31-18:57:17.rf.pcm_seconda Delta=+0.0129 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-08-14-16:50:35.rf.pcm_seconda Delta=+0.0663 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-08-15-21:26:18.rf.pcm_seconda Delta=-0.0478 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2003-05-15-02:46:38.rf.pcm_seconda Delta=-0.0480 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-09-11-19:45:10.rf.pcm_seconda Delta=+0.0234 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-09-14-18:59:17.rf.pcm_seconda Delta=-0.0504 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-11-28-11:13:16.rf.pcm_seconda Delta=-0.0161 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2004-08-01-18:17:37.rf.pcm_seconda Delta=+0.0136 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-01-04-09:13:29.rf.pcm_seconda Delta=-0.0334 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-06-11-23:49:33.rf.pcm_seconda Delta=-0.0536 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-04-25-02:08:59.rf.pcm_seconda Delta=+0.1295 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-07-23-18:24:27.rf.pcm_seconda Delta=+0.0181 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-05-11-01:26:17.rf.pcm_seconda Delta=-0.0523 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-08-03-22:28:00.rf.pcm_seconda Delta=+0.0121 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-01-05-12:22:48.rf.pcm_seconda Delta=+0.0639 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-07-24-01:31:49.rf.pcm_seconda Delta=+0.0121 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-07-25-00:11:22.rf.pcm_seconda Delta=-0.0502 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-09-01-17:10:31.rf.pcm_seconda Delta=+0.0906 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-09-01-20:12:39.rf.pcm_seconda Delta=-0.0648 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-09-01-19:00:04.rf.pcm_seconda Delta=+0.0094 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-04-24-01:50:41.rf.pcm_seconda Delta=+0.0507 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-10-03-21:49:59.rf.pcm_seconda Delta=-0.0138 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-10-03-22:09:30.rf.pcm_seconda Delta=+0.0143 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-09-01-16:34:30.rf.pcm_seconda Delta=-0.0093 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-10-04-17:14:01.rf.pcm_seconda Delta=+0.0321 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-10-04-14:59:20.rf.pcm_seconda Delta=+0.0044 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-08-23-16:07:20.rf.pcm_seconda Delta=-0.0071 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-10-04-20:36:02.rf.pcm_seconda Delta=+0.0052 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-09-03-19:18:22.rf.pcm_seconda Delta=-0.0829 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-10-04-19:28:44.rf.pcm_seconda Delta=+0.0051 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-11-11-18:14:01.rf.pcm_seconda Delta=+0.0552 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-10-04-13:52:02.rf.pcm_seconda Delta=-0.0563 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-09-01-14:45:14.rf.pcm_seconda Delta=-0.0092 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-11-14-16:42:20.rf.pcm_seconda Delta=+0.0172 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-08-23-17:55:47.rf.pcm_seconda Delta=+0.0088 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2006-01-02-12:33:01.rf.pcm_seconda Delta=-0.0062 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2006-01-31-08:40:09.rf.pcm_seconda Delta=-0.0127 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-10-04-22:33:30.rf.pcm_seconda Delta=-0.0051 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-11-14-14:13:21.rf.pcm_seconda Delta=-0.0063 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2006-06-16-22:38:09.rf.pcm_seconda Delta=+0.0917 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2006-03-23-06:19:30.rf.pcm_seconda Delta=+0.0136 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2006-12-16-10:06:39.rf.pcm_seconda Delta=+0.0650 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-12-21-12:51:35.rf.pcm_seconda Delta=+0.0090 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2006-12-28-13:55:22.rf.pcm_seconda Delta=-0.0180 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-01-19-07:44:21.rf.pcm_seconda Delta=-0.0117 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2006-12-29-12:53:02.rf.pcm_seconda Delta=-0.0147 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2003-01-09-11:17:43.rf.pcm_seconda Delta=+0.0074 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2005-10-04-16:06:40.rf.pcm_seconda Delta=+0.0049 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2006-08-19-20:40:31.rf.pcm_seconda Delta=+0.0116 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-03-15-03:06:40.rf.pcm_seconda Delta=+0.1073 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-04-13-02:34:18.rf.pcm_seconda Delta=+0.0548 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2006-08-10-19:48:31.rf.pcm_seconda Delta=-0.0057 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-05-02-08:34:29.rf.pcm_seconda Delta=+0.1049 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-05-25-22:05:41.rf.pcm_seconda Delta=+0.1939 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-03-17-06:03:42.rf.pcm_seconda Delta=+0.0121 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-05-21-05:13:40.rf.pcm_seconda Delta=-0.0810 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-05-28-22:30:32.rf.pcm_seconda Delta=+0.0977 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-08-11-16:54:19.rf.pcm_seconda Delta=-0.0094 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-09-15-20:06:29.rf.pcm_seconda Delta=-0.0256 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-12-24-17:00:11.rf.pcm_seconda Delta=+0.0071 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2008-02-24-09:08:24.rf.pcm_seconda Delta=-0.0175 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2008-07-14-03:30:01.rf.pcm_seconda Delta=-0.0151 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-12-21-10:37:27.rf.pcm_seconda Delta=-0.0312 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2008-10-13-18:08:01.rf.pcm_seconda Delta=+0.0151 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2008-10-14-17:50:15.rf.pcm_seconda Delta=+0.0061 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2007-12-23-13:38:17.rf.pcm_seconda Delta=+0.0282 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2008-10-11-17:17:36.rf.pcm_seconda Delta=+0.0614 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2008-05-19-06:12:21.rf.pcm_seconda Delta=-0.0114 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2008-12-22-13:30:35.rf.pcm_seconda Delta=-0.0083 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2008-07-07-03:13:42.rf.pcm_seconda Delta=-0.0549 us
+[2026-05-15 13:07:11] [INFO]         [OK] n2008-05-25-22:45:57.rf.pcm_seconda Delta=+0.0160 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-04-17-03:47:31.rf.pcm_seconda Delta=-0.0161 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-04-15-05:30:30.rf.pcm_seconda Delta=-0.0217 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-08-21-16:53:02.rf.pcm_seconda Delta=+0.0095 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-08-26-22:18:22.rf.pcm_seconda Delta=-0.0078 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-08-22-17:38:01.rf.pcm_seconda Delta=+0.0067 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-08-27-22:45:22.rf.pcm_seconda Delta=+0.0074 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-05-21-04:24:42.rf.pcm_seconda Delta=-0.0997 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-10-05-19:42:52.rf.pcm_seconda Delta=-0.0222 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-10-07-19:03:12.rf.pcm_seconda Delta=+0.0039 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2010-02-11-06:42:02.rf.pcm_seconda Delta=+0.0397 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2010-02-16-06:43:49.rf.pcm_seconda Delta=-0.0144 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-10-07-20:18:02.rf.pcm_seconda Delta=-0.0046 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2010-04-08-00:25:09.rf.pcm_seconda Delta=+0.0178 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-10-04-15:29:21.rf.pcm_seconda Delta=-0.0081 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100730_194928.rf.pcm_secondary     Delta=+0.0083 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-08-25-23:57:12.rf.pcm_seconda Delta=-0.0108 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2010-02-15-08:13:33.rf.pcm_seconda Delta=+0.0110 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-08-27-18:49:22.rf.pcm_seconda Delta=-0.0074 us
+[2026-05-15 13:07:12] [INFO]         [OK] n2009-10-07-15:24:21.rf.pcm_seconda Delta=+0.0046 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100616_065647.rf.pcm_secondary     Delta=-0.0311 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100802_210952.rf.pcm_secondary     Delta=+0.0101 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100731_185920.rf.pcm_secondary     Delta=+0.0074 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100801_023512.rf.pcm_secondary     Delta=-0.0099 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100731_213040.rf.pcm_secondary     Delta=-0.0030 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100801_204512.rf.pcm_secondary     Delta=+0.0028 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100802_173840.rf.pcm_secondary     Delta=+0.0078 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100803_200736.rf.pcm_secondary     Delta=+0.0098 us
+[2026-05-15 13:07:12] [INFO]         [OK] p101103_163704.rf.pcm_secondary     Delta=+0.0016 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100731_193008.rf.pcm_secondary     Delta=+0.0030 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100801_020416.rf.pcm_secondary     Delta=+0.0026 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100802_200744.rf.pcm_secondary     Delta=+0.0053 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100730_173224.rf.pcm_secondary     Delta=-0.0021 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100804_202624.rf.pcm_secondary     Delta=+0.0091 us
+[2026-05-15 13:07:12] [INFO]         [OK] p101109_173616.rf.pcm_secondary     Delta=-0.0020 us
+[2026-05-15 13:07:12] [INFO]         [OK] p101109_180024.rf.pcm_secondary     Delta=-0.0018 us
+[2026-05-15 13:07:12] [INFO]         [OK] p110203_091128.rf.pcm_secondary     Delta=-0.0356 us
+[2026-05-15 13:07:12] [INFO]         [OK] p100801_215336.rf.pcm_secondary     Delta=+0.0028 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110203_122424.rf.pcm_secondary     Delta=-0.0186 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110203_102944.rf.pcm_secondary     Delta=-0.0061 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110203_124856.rf.pcm_secondary     Delta=-0.0209 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110203_140152.rf.pcm_secondary     Delta=-0.0279 us
+[2026-05-15 13:07:13] [INFO]         [OK] p101109_182128.rf.pcm_secondary     Delta=+0.0020 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110203_084656.rf.pcm_secondary     Delta=-0.0131 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110204_105912.rf.pcm_secondary     Delta=+0.0168 us
+[2026-05-15 13:07:13] [INFO]         [OK] p101221_153320.rf.pcm_secondary     Delta=-0.0059 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110204_095040.rf.pcm_secondary     Delta=+0.0210 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110204_124256.rf.pcm_secondary     Delta=+0.0173 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110207_102608.rf.pcm_secondary     Delta=+0.0122 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110411_031032.rf.pcm_secondary     Delta=-0.0553 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110203_131312.rf.pcm_secondary     Delta=+0.0166 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110411_045000.rf.pcm_secondary     Delta=+0.0203 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110411_012928.rf.pcm_secondary     Delta=+0.0117 us
+[2026-05-15 13:07:13] [INFO]         [OK] p100804_205720.rf.pcm_secondary     Delta=+0.0094 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110411_061416.rf.pcm_secondary     Delta=+0.0123 us
+[2026-05-15 13:07:13] [INFO]         [OK] p101109_134112.rf.pcm_secondary     Delta=-0.0066 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110203_114736.rf.pcm_secondary     Delta=+0.0036 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110203_082136.rf.pcm_secondary     Delta=+0.0208 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110204_121144.rf.pcm_secondary     Delta=+0.0093 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110613_045912.rf.pcm_secondary     Delta=+0.0735 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110411_001632.rf.pcm_secondary     Delta=-0.0187 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110613_051832.rf.pcm_secondary     Delta=-0.0415 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110203_133736.rf.pcm_secondary     Delta=-0.0030 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110411_075832.rf.pcm_secondary     Delta=-0.0740 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110613_040056.rf.pcm_secondary     Delta=-0.0125 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110613_053824.rf.pcm_secondary     Delta=+0.0107 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110802_023752.rf.pcm_secondary     Delta=-0.0116 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110712_042536.rf.pcm_secondary     Delta=-0.0494 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110411_042216.rf.pcm_secondary     Delta=+0.0132 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110924_183456.rf.pcm_secondary     Delta=+0.0102 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110710_210504.rf.pcm_secondary     Delta=+0.0097 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110207_105048.rf.pcm_secondary     Delta=+0.0055 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110411_090832.rf.pcm_secondary     Delta=-0.0168 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110731_181840.rf.pcm_secondary     Delta=-0.0038 us
+[2026-05-15 13:07:13] [INFO]         [OK] p120115_080624.rf.pcm_secondary     Delta=-0.0108 us
+[2026-05-15 13:07:13] [INFO]         [OK] p120302_053224.rf.pcm_secondary     Delta=-0.0043 us
+[2026-05-15 13:07:13] [INFO]         [OK] p110709_225008.rf.pcm_secondary     Delta=+0.0065 us
+[2026-05-15 13:07:13] [INFO]         [OK] p111015_115512.rf.pcm_secondary     Delta=-0.0020 us
+[2026-05-15 13:07:14] [INFO]         [OK] p120615_010312.rf.pcm_secondary     Delta=+0.0186 us
+[2026-05-15 13:07:14] [INFO]         [OK] p120615_053424.rf.pcm_secondary     Delta=-0.0341 us
+[2026-05-15 13:07:14] [INFO]         [OK] p120120_065824.rf.pcm_secondary     Delta=-0.0099 us
+[2026-05-15 13:07:14] [INFO]         [OK] p120319_052152.rf.pcm_secondary     Delta=+0.0317 us
+[2026-05-15 13:07:14] [INFO]         [OK] p120105_141120.rf.pcm_secondary     Delta=+0.0020 us
+[2026-05-15 13:07:14] [INFO]         [OK] p110912_165440.rf.pcm_secondary     Delta=+0.0168 us
+[2026-05-15 13:07:14] [INFO]         [OK] p111220_165000.rf.pcm_secondary     Delta=-0.0017 us
+[2026-05-15 13:07:14] [INFO]         [OK] p120617_010136.rf.pcm_secondary     Delta=-0.0058 us
+[2026-05-15 13:07:14] [INFO]         [OK] p111220_121536.rf.pcm_secondary     Delta=+0.0092 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121020_205600.rf.pcm_secondary     Delta=+0.0067 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121023_141416.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121020_140952.rf.pcm_secondary     Delta=-0.0081 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121020_150752.rf.pcm_secondary     Delta=-0.0054 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121020_185952.rf.pcm_secondary     Delta=-0.0013 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121221_113032.rf.pcm_secondary     Delta=+0.0097 us
+[2026-05-15 13:07:14] [INFO]         [OK] p120502_231216.rf.pcm_secondary     Delta=+0.0044 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121020_201720.rf.pcm_secondary     Delta=-0.0020 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121020_180120.rf.pcm_secondary     Delta=-0.0082 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121020_144832.rf.pcm_secondary     Delta=-0.0192 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121020_174200.rf.pcm_secondary     Delta=+0.0018 us
+[2026-05-15 13:07:14] [INFO]         [OK] p121020_172240.rf.pcm_secondary     Delta=+0.0043 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130411_012448.rf.pcm_secondary     Delta=-0.0131 us
+[2026-05-15 13:07:14] [INFO]         [OK] p120707_003216.rf.pcm_secondary     Delta=+0.0100 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130411_020248.rf.pcm_secondary     Delta=-0.0222 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130113_111040.rf.pcm_secondary     Delta=-0.0022 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130411_034800.rf.pcm_secondary     Delta=-0.0046 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130411_042920.rf.pcm_secondary     Delta=+0.0047 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130411_053320.rf.pcm_secondary     Delta=-0.0040 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130411_050808.rf.pcm_secondary     Delta=-0.0040 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130411_052048.rf.pcm_secondary     Delta=-0.0175 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130411_062320.rf.pcm_secondary     Delta=+0.0570 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130430_061144.rf.pcm_secondary     Delta=-0.0205 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130414_050736.rf.pcm_secondary     Delta=-0.0036 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130411_073824.rf.pcm_secondary     Delta=-0.0047 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130414_045504.rf.pcm_secondary     Delta=-0.0036 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130926_134744.rf.pcm_secondary     Delta=+0.0021 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130824_183544.rf.pcm_secondary     Delta=+0.0062 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130926_170512.rf.pcm_secondary     Delta=-0.0014 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130620_231024.rf.pcm_secondary     Delta=-0.0188 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130825_001048.rf.pcm_secondary     Delta=-0.0021 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130926_201512.rf.pcm_secondary     Delta=-0.0093 us
+[2026-05-15 13:07:14] [INFO]         [OK] p130512_060632.rf.pcm_secondary     Delta=+0.0023 us
+[2026-05-15 13:07:15] [INFO]         [OK] p110616_072840.rf.pcm_secondary     Delta=+0.0040 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130926_162632.rf.pcm_secondary     Delta=-0.0167 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130926_144712.rf.pcm_secondary     Delta=+0.0021 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130926_205352.rf.pcm_secondary     Delta=+0.0098 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130926_195552.rf.pcm_secondary     Delta=-0.0023 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130926_154640.rf.pcm_secondary     Delta=-0.0089 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130926_182240.rf.pcm_secondary     Delta=-0.0020 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130926_211320.rf.pcm_secondary     Delta=+0.0020 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130926_180320.rf.pcm_secondary     Delta=-0.0168 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140131_091544.rf.pcm_secondary     Delta=-0.0024 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140109_094832.rf.pcm_secondary     Delta=+0.0103 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140405_051248.rf.pcm_secondary     Delta=-0.0175 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130711_232848.rf.pcm_secondary     Delta=+0.0213 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140324_023232.rf.pcm_secondary     Delta=+0.0203 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130926_213240.rf.pcm_secondary     Delta=+0.0023 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140415_093848.rf.pcm_secondary     Delta=+0.0180 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130926_230952.rf.pcm_secondary     Delta=-0.0021 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140426_022400.rf.pcm_secondary     Delta=+0.0297 us
+[2026-05-15 13:07:15] [INFO]         [OK] p130126_092056.rf.pcm_secondary     Delta=-0.0044 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140421_042016.rf.pcm_secondary     Delta=+0.0383 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140620_041328.rf.pcm_secondary     Delta=-0.0187 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140605_211504.rf.pcm_secondary     Delta=+0.0177 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140415_101808.rf.pcm_secondary     Delta=+0.0197 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140415_091904.rf.pcm_secondary     Delta=-0.0124 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140714_202920.rf.pcm_secondary     Delta=+0.0299 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140415_083952.rf.pcm_secondary     Delta=-0.0302 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140421_031128.rf.pcm_secondary     Delta=-0.0242 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140520_033136.rf.pcm_secondary     Delta=+0.0036 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140324_082328.rf.pcm_secondary     Delta=-0.0121 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140519_054448.rf.pcm_secondary     Delta=+0.0109 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140415_071232.rf.pcm_secondary     Delta=-0.0416 us
+[2026-05-15 13:07:15] [INFO]         [OK] p140621_045048.rf.pcm_secondary     Delta=+0.0205 us
+[2026-05-15 13:07:15] [INFO]         [OK] p141016_185048.rf.pcm_secondary     Delta=+0.0059 us
+[2026-05-15 13:07:15] [INFO]         [OK] p141201_101648.rf.pcm_secondary     Delta=+0.0060 us
+[2026-05-15 13:07:15] [INFO]         [OK] p141014_141424.rf.pcm_secondary     Delta=+0.0027 us
+[2026-05-15 13:07:15] [INFO]         [OK] p141010_211344.rf.pcm_secondary     Delta=-0.0031 us
+[2026-05-15 13:07:15] [INFO]         [OK] p131128_113904.rf.pcm_secondary     Delta=+0.0026 us
+[2026-05-15 13:07:15] [INFO]         [OK] p150417_021400.rf.pcm_secondary     Delta=+0.0032 us
+[2026-05-15 13:07:15] [INFO]         [OK] p150309_060112.rf.pcm_secondary     Delta=+0.0025 us
+[2026-05-15 13:07:16] [INFO]         [OK] p150615_000456.rf.pcm_secondary     Delta=+0.0097 us
+[2026-05-15 13:07:16] [INFO]         [OK] p150829_010832.rf.pcm_secondary     Delta=-0.0067 us
+[2026-05-15 13:07:16] [INFO]         [OK] p150202_093624.rf.pcm_secondary     Delta=+0.0103 us
+[2026-05-15 13:07:16] [INFO]         [OK] p151006_193352.rf.pcm_secondary     Delta=-0.0022 us
+[2026-05-15 13:07:16] [INFO]         [OK] p150722_221520.rf.pcm_secondary     Delta=+0.0088 us
+[2026-05-15 13:07:16] [INFO]         [OK] p150720_214952.rf.pcm_secondary     Delta=+0.0085 us
+[2026-05-15 13:07:16] [INFO]         [OK] p140926_162136.rf.pcm_secondary     Delta=+0.0112 us
+[2026-05-15 13:07:16] [INFO]         [OK] p150721_184744.rf.pcm_secondary     Delta=-0.0202 us
+[2026-05-15 13:07:16] [INFO]         [OK] p151028_224800.rf.pcm_secondary     Delta=-0.0096 us
+[2026-05-15 13:07:16] [INFO]         [OK] p160129_133840.rf.pcm_secondary     Delta=+0.0126 us
+[2026-05-15 13:07:16] [INFO]         [OK] p151006_204552.rf.pcm_secondary     Delta=+0.0025 us
+[2026-05-15 13:07:16] [INFO]         [OK] p160220_075112.rf.pcm_secondary     Delta=-0.0125 us
+[2026-05-15 13:07:16] [INFO]         [OK] p160223_092944.rf.pcm_secondary     Delta=-0.0037 us
+[2026-05-15 13:07:16] [INFO]         [OK] p151221_101840.rf.pcm_secondary     Delta=-0.0064 us
+[2026-05-15 13:07:16] [INFO]         [OK] p160506_001544.rf.pcm_secondary     Delta=-0.0087 us
+[2026-05-15 13:07:16] [INFO]         [OK] p151120_134824.rf.pcm_secondary     Delta=-0.0043 us
+[2026-05-15 13:07:16] [INFO]         [OK] p160307_070832.rf.pcm_secondary     Delta=+0.0108 us
+[2026-05-15 13:07:16] [INFO]         [OK] p160417_021112.rf.pcm_secondary     Delta=-0.0120 us
+[2026-05-15 13:07:16] [INFO]         [OK] p141128_125832.rf.pcm_secondary     Delta=-0.0032 us
+[2026-05-15 13:07:16] [INFO]         [OK] p160110_091008.rf.pcm_secondary     Delta=-0.0022 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160701_224344.rf.pcm_secondary     Delta=+0.0065 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160515_004032.rf.pcm_secondary     Delta=+0.0264 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160711_002744.rf.pcm_secondary     Delta=-0.0021 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160319_051024.rf.pcm_secondary     Delta=-0.0001 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160505_031800.rf.pcm_secondary     Delta=-0.0498 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160223_074216.rf.pcm_secondary     Delta=+0.0036 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160726_203544.rf.pcm_secondary     Delta=+0.0021 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160812_181904.rf.pcm_secondary     Delta=-0.0029 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160506_014040.rf.pcm_secondary     Delta=+0.0222 us
+[2026-05-15 13:07:17] [INFO]         [OK] p161215_093648.rf.pcm_secondary     Delta=-0.0020 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160507_015432.rf.pcm_secondary     Delta=+0.0126 us
+[2026-05-15 13:07:17] [INFO]         [OK] p150519_053712.rf.pcm_secondary     Delta=-0.0042 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160815_010704.rf.pcm_secondary     Delta=-0.0026 us
+[2026-05-15 13:07:17] [INFO]         [OK] p150830_173904.rf.pcm_secondary     Delta=+0.0010 us
+[2026-05-15 13:07:17] [INFO]         [OK] p161215_081024.rf.pcm_secondary     Delta=+0.0096 us
+[2026-05-15 13:07:17] [INFO]         [OK] p151109_193128.rf.pcm_secondary     Delta=+0.0024 us
+[2026-05-15 13:07:17] [INFO]         [OK] p160624_005744.rf.pcm_secondary     Delta=-0.0076 us
+[2026-05-15 13:07:17] [INFO]         [OK] p170403_022400.rf.pcm_secondary     Delta=-0.0207 us
+[2026-05-15 13:07:17] [INFO]         [OK] p170330_011512.rf.pcm_secondary     Delta=-0.0030 us
+[2026-05-15 13:07:17] [INFO]         [OK] p170209_073856.rf.pcm_secondary     Delta=-0.0155 us
+[2026-05-15 13:07:17] [INFO]         [OK] p170211_042744.rf.pcm_secondary     Delta=-0.0046 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170211_053616.rf.pcm_secondary     Delta=-0.0080 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170304_064152.rf.pcm_secondary     Delta=+0.0120 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170304_075400.rf.pcm_secondary     Delta=+0.0075 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170403_014408.rf.pcm_secondary     Delta=-0.0209 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170428_013424.rf.pcm_secondary     Delta=-0.0166 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170324_040328.rf.pcm_secondary     Delta=+0.0191 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170429_023624.rf.pcm_secondary     Delta=-0.0228 us
+[2026-05-15 13:07:18] [INFO]         [OK] p161001_193016.rf.pcm_secondary     Delta=-0.0025 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170415_035152.rf.pcm_secondary     Delta=-0.0150 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170713_210904.rf.pcm_secondary     Delta=+0.0176 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170430_064400.rf.pcm_secondary     Delta=+0.0137 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170403_071344.rf.pcm_secondary     Delta=-0.0146 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170806_023952.rf.pcm_secondary     Delta=+0.0024 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170625_031320.rf.pcm_secondary     Delta=+0.0112 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170430_025720.rf.pcm_secondary     Delta=-0.0115 us
+[2026-05-15 13:07:18] [INFO]         [OK] p171124_112608.rf.pcm_secondary     Delta=+0.0011 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170625_201624.rf.pcm_secondary     Delta=-0.0108 us
+[2026-05-15 13:07:18] [INFO]         [OK] p171125_120536.rf.pcm_secondary     Delta=-0.0015 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170924_161024.rf.pcm_secondary     Delta=-0.0128 us
+[2026-05-15 13:07:18] [INFO]         [OK] p171209_122304.rf.pcm_secondary     Delta=+0.0055 us
+[2026-05-15 13:07:18] [INFO]         [OK] p161205_105824.rf.pcm_secondary     Delta=-0.0092 us
+[2026-05-15 13:07:18] [INFO]         [OK] p180216_043120.rf.pcm_secondary     Delta=+0.0003 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170823_231520.rf.pcm_secondary     Delta=+0.0118 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170330_054536.rf.pcm_secondary     Delta=-0.0152 us
+[2026-05-15 13:07:18] [INFO]         [OK] p170924_195600.rf.pcm_secondary     Delta=-0.0056 us
+[2026-05-15 13:07:18] [INFO]         [OK] p180415_021112.rf.pcm_secondary     Delta=+0.0134 us
+[2026-05-15 13:07:19] [INFO]         [OK] p171218_090952.rf.pcm_secondary     Delta=-0.0028 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_030616.rf.pcm_secondary     Delta=-0.0225 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180310_055704.rf.pcm_secondary     Delta=+0.0114 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180309_070824.rf.pcm_secondary     Delta=-0.0077 us
+[2026-05-15 13:07:19] [INFO]         [OK] p170926_223520.rf.pcm_secondary     Delta=-0.0035 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_051536.rf.pcm_secondary     Delta=+0.0031 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_053352.rf.pcm_secondary     Delta=-0.0197 us
+[2026-05-15 13:07:19] [INFO]         [OK] p171229_093352.rf.pcm_secondary     Delta=+0.0092 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_022928.rf.pcm_secondary     Delta=+0.0307 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_064720.rf.pcm_secondary     Delta=+0.0029 us
+[2026-05-15 13:07:19] [INFO]         [OK] p170627_042616.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_070544.rf.pcm_secondary     Delta=-0.0028 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_002112.rf.pcm_secondary     Delta=-0.0201 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_015248.rf.pcm_secondary     Delta=-0.0157 us
+[2026-05-15 13:07:19] [INFO]         [OK] p171210_131400.rf.pcm_secondary     Delta=-0.0035 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_024752.rf.pcm_secondary     Delta=-0.0029 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_043856.rf.pcm_secondary     Delta=+0.0332 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_091400.rf.pcm_secondary     Delta=-0.0234 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_042016.rf.pcm_secondary     Delta=-0.0034 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180517_064120.rf.pcm_secondary     Delta=+0.0157 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_055208.rf.pcm_secondary     Delta=+0.0239 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180522_235120.rf.pcm_secondary     Delta=-0.0069 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_062904.rf.pcm_secondary     Delta=+0.0030 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_080040.rf.pcm_secondary     Delta=+0.0441 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_045712.rf.pcm_secondary     Delta=+0.0153 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_081904.rf.pcm_secondary     Delta=-0.0030 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_074224.rf.pcm_secondary     Delta=-0.0140 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180415_083720.rf.pcm_secondary     Delta=+0.0393 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180726_212536.rf.pcm_secondary     Delta=-0.0103 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180522_224552.rf.pcm_secondary     Delta=+0.0143 us
+[2026-05-15 13:07:19] [INFO]         [OK] p181122_123256.rf.pcm_secondary     Delta=-0.0065 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180727_211800.rf.pcm_secondary     Delta=-0.0188 us
+[2026-05-15 13:07:19] [INFO]         [OK] p190210_093040.rf.pcm_secondary     Delta=-0.0022 us
+[2026-05-15 13:07:19] [INFO]         [OK] p181226_122504.rf.pcm_secondary     Delta=-0.0151 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180705_003552.rf.pcm_secondary     Delta=+0.0031 us
+[2026-05-15 13:07:19] [INFO]         [OK] p190324_075008.rf.pcm_secondary     Delta=+0.0123 us
+[2026-05-15 13:07:19] [INFO]         [OK] p181120_125904.rf.pcm_secondary     Delta=-0.0056 us
+[2026-05-15 13:07:19] [INFO]         [OK] p180929_225904.rf.pcm_secondary     Delta=-0.0065 us
+[2026-05-15 13:07:19] [INFO]         [OK] p190130_061928.rf.pcm_secondary     Delta=+0.0290 us
+[2026-05-15 13:07:19] [INFO]         [OK] p190411_011632.rf.pcm_secondary     Delta=+0.0345 us
+[2026-05-15 13:07:20] [INFO]         [OK] p181229_094112.rf.pcm_secondary     Delta=-0.0055 us
+[2026-05-15 13:07:20] [INFO]         [OK] p181230_115256.rf.pcm_secondary     Delta=+0.0100 us
+[2026-05-15 13:07:20] [INFO]         [OK] p181201_131504.rf.pcm_secondary     Delta=+0.0046 us
+[2026-05-15 13:07:20] [INFO]         [OK] p190117_100112.rf.pcm_secondary     Delta=+0.0080 us
+[2026-05-15 13:07:20] [INFO]         [OK] p190727_191736.rf.pcm_secondary     Delta=+0.0451 us
+[2026-05-15 13:07:20] [INFO]         [OK] p180327_100024.rf.pcm_secondary     Delta=+0.0043 us
+[2026-05-15 13:07:20] [INFO]         [OK] p190617_212216.rf.pcm_secondary     Delta=+0.0378 us
+[2026-05-15 13:07:20] [INFO]         [OK] p190717_204456.rf.pcm_secondary     Delta=-0.0112 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk151006_204552.rf.pcm_secondary  Delta=+0.0023 us
+[2026-05-15 13:07:20] [INFO]         [OK] p190524_062000.rf.pcm_secondary     Delta=-0.0208 us
+[2026-05-15 13:07:20] [INFO]         [OK] p190624_205552.rf.pcm_secondary     Delta=+0.0026 us
+[2026-05-15 13:07:20] [INFO]         [OK] p190520_223952.rf.pcm_secondary     Delta=-0.0122 us
+[2026-05-15 13:07:20] [INFO]         [OK] p180929_215224.rf.pcm_secondary     Delta=+0.0206 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk151109_164024.rf.pcm_secondary  Delta=+0.0160 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk151120_132216.rf.pcm_secondary  Delta=-0.0138 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk160110_091008.rf.pcm_secondary  Delta=-0.0087 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk150903_214912.rf.pcm_secondary  Delta=+0.0132 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk151211_151656.rf.pcm_secondary  Delta=-0.0052 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk160223_074216.rf.pcm_secondary  Delta=+0.0036 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk150830_173904.rf.pcm_secondary  Delta=-0.0050 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk160319_051024.rf.pcm_secondary  Delta=+0.0500 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk151009_161424.rf.pcm_secondary  Delta=+0.0075 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk160505_031800.rf.pcm_secondary  Delta=-0.0155 us
+[2026-05-15 13:07:20] [INFO]         [OK] p_sk160316_061944.rf.pcm_secondary  Delta=+0.0272 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk160221_040528.rf.pcm_secondary  Delta=-0.0217 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk160701_213128.rf.pcm_secondary  Delta=-0.0113 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk151028_224800.rf.pcm_secondary  Delta=+0.0120 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk161206_115936.rf.pcm_secondary  Delta=+0.0081 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk151006_193352.rf.pcm_secondary  Delta=+0.0022 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk160515_004032.rf.pcm_secondary  Delta=+0.0972 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170129_083312.rf.pcm_secondary  Delta=+0.0094 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk161215_081024.rf.pcm_secondary  Delta=-0.0085 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk150202_093624.rf.pcm_secondary  Delta=-0.0127 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170304_064152.rf.pcm_secondary  Delta=-0.0404 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170209_073856.rf.pcm_secondary  Delta=-0.0093 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk161205_105824.rf.pcm_secondary  Delta=-0.0065 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk160624_005744.rf.pcm_secondary  Delta=+0.0041 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170330_011512.rf.pcm_secondary  Delta=+0.0154 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk161215_093648.rf.pcm_secondary  Delta=+0.0089 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170105_102520.rf.pcm_secondary  Delta=+0.0140 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170324_054152.rf.pcm_secondary  Delta=-0.0110 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk150904_000832.rf.pcm_secondary  Delta=-0.0012 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170330_054536.rf.pcm_secondary  Delta=+0.0069 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170529_045232.rf.pcm_secondary  Delta=+0.0284 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170305_032648.rf.pcm_secondary  Delta=+0.0124 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170210_045920.rf.pcm_secondary  Delta=-0.0118 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170403_014408.rf.pcm_secondary  Delta=-0.0147 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170712_014952.rf.pcm_secondary  Delta=+0.0155 us
+[2026-05-15 13:07:21] [INFO]         [OK] p_sk170806_023952.rf.pcm_secondary  Delta=-0.0024 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk170324_040328.rf.pcm_secondary  Delta=+0.0139 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk170403_091240.rf.pcm_secondary  Delta=-0.0155 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk170625_201624.rf.pcm_secondary  Delta=-0.0100 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk170729_204520.rf.pcm_secondary  Delta=-0.0360 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk171125_120536.rf.pcm_secondary  Delta=-0.0052 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk171016_132848.rf.pcm_secondary  Delta=-0.0124 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk171228_093352.rf.pcm_secondary  Delta=+0.0080 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk171209_122304.rf.pcm_secondary  Delta=+0.0033 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk171210_131400.rf.pcm_secondary  Delta=-0.0137 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk171229_105824.rf.pcm_secondary  Delta=-0.0027 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk171218_090952.rf.pcm_secondary  Delta=-0.0207 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180112_100824.rf.pcm_secondary  Delta=-0.0065 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk170627_042616.rf.pcm_secondary  Delta=+0.0032 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk170428_013424.rf.pcm_secondary  Delta=-0.0338 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180114_073112.rf.pcm_secondary  Delta=+0.0058 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180309_070824.rf.pcm_secondary  Delta=+0.0353 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk170926_223520.rf.pcm_secondary  Delta=-0.0041 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_013432.rf.pcm_secondary  Delta=-0.0097 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk171104_130712.rf.pcm_secondary  Delta=+0.0038 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_030616.rf.pcm_secondary  Delta=-0.0209 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_032440.rf.pcm_secondary  Delta=+0.0072 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk171208_095752.rf.pcm_secondary  Delta=-0.0091 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_045712.rf.pcm_secondary  Delta=+0.0133 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk171229_093352.rf.pcm_secondary  Delta=+0.0012 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_005752.rf.pcm_secondary  Delta=+0.0206 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_022928.rf.pcm_secondary  Delta=-0.0374 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_051536.rf.pcm_secondary  Delta=-0.0021 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_055208.rf.pcm_secondary  Delta=-0.0158 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_053352.rf.pcm_secondary  Delta=-0.0266 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_034312.rf.pcm_secondary  Delta=-0.0031 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_042016.rf.pcm_secondary  Delta=-0.0092 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180327_100024.rf.pcm_secondary  Delta=-0.0016 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_070544.rf.pcm_secondary  Delta=-0.0091 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_080040.rf.pcm_secondary  Delta=+0.0361 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_091400.rf.pcm_secondary  Delta=-0.0078 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_015248.rf.pcm_secondary  Delta=-0.0042 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_024752.rf.pcm_secondary  Delta=-0.0028 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180526_004208.rf.pcm_secondary  Delta=-0.0528 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk160812_181904.rf.pcm_secondary  Delta=-0.0022 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180705_003552.rf.pcm_secondary  Delta=-0.0078 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_074224.rf.pcm_secondary  Delta=-0.0111 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk161113_104848.rf.pcm_secondary  Delta=-0.0013 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_064720.rf.pcm_secondary  Delta=-0.0029 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_062904.rf.pcm_secondary  Delta=-0.0030 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk180415_083720.rf.pcm_secondary  Delta=+0.0094 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk181122_123256.rf.pcm_secondary  Delta=-0.0062 us
+[2026-05-15 13:07:22] [INFO]         [OK] p_sk181017_153048.rf.pcm_secondary  Delta=-0.0028 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk180415_081904.rf.pcm_secondary  Delta=-0.0030 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk180929_215224.rf.pcm_secondary  Delta=-0.0184 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk190303_121312.rf.pcm_secondary  Delta=+0.0207 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk180727_211800.rf.pcm_secondary  Delta=-0.0112 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk181212_141552.rf.pcm_secondary  Delta=-0.0051 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk180310_055704.rf.pcm_secondary  Delta=+0.0228 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk190324_075008.rf.pcm_secondary  Delta=-0.0139 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk181120_125904.rf.pcm_secondary  Delta=+0.0072 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk190209_080216.rf.pcm_secondary  Delta=-0.0108 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk190429_052448.rf.pcm_secondary  Delta=-0.0859 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk180929_225904.rf.pcm_secondary  Delta=+0.0091 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk190118_113128.rf.pcm_secondary  Delta=+0.0420 us
+[2026-05-15 13:07:23] [INFO]         [OK] r070416_091556.rf.pcm_secondary     Delta=+0.0323 us
+[2026-05-15 13:07:23] [INFO]         [OK] r070318_075544.rf.pcm_secondary     Delta=-0.0125 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk190102_111352.rf.pcm_secondary  Delta=-0.0275 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk190316_062656.rf.pcm_secondary  Delta=-0.0152 us
+[2026-05-15 13:07:23] [INFO]         [OK] r070521_062139.rf.pcm_secondary     Delta=+0.0042 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk190322_055256.rf.pcm_secondary  Delta=-0.0200 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk190411_020240.rf.pcm_secondary  Delta=+0.0089 us
+[2026-05-15 13:07:23] [INFO]         [OK] p_sk180726_212536.rf.pcm_secondary  Delta=+0.0088 us
+[2026-05-15 13:07:23] [INFO]         [OK] r070527_030459.rf.pcm_secondary     Delta=-0.0040 us
+[2026-05-15 13:07:23] [INFO]         [OK] r070524_224038.rf.pcm_secondary     Delta=+0.0509 us
+[2026-05-15 13:07:23] [INFO]         [OK] r070524_231718.rf.pcm_secondary     Delta=+0.0461 us
+[2026-05-15 13:07:23] [INFO]         [OK] r070529_221939.rf.pcm_secondary     Delta=+0.0032 us
+[2026-05-15 13:07:23] [INFO]         [OK] r070528_223029.rf.pcm_secondary     Delta=-0.0035 us
+[2026-05-15 13:07:23] [INFO]         [OK] r071013_175120.rf.pcm_secondary     Delta=-0.0004 us
+[2026-05-15 13:07:23] [INFO]         [OK] r070603_232127.rf.pcm_secondary     Delta=-0.0316 us
+[2026-05-15 13:07:24] [INFO]         [OK] r071107_161614.rf.pcm_secondary     Delta=-0.0059 us
+[2026-05-15 13:07:24] [INFO]         [OK] r071218_131749.rf.pcm_secondary     Delta=-0.0005 us
+[2026-05-15 13:07:24] [INFO]         [OK] r071224_155631.rf.pcm_secondary     Delta=-0.0119 us
+[2026-05-15 13:07:24] [INFO]         [OK] r071003_141909.rf.pcm_secondary     Delta=+0.0003 us
+[2026-05-15 13:07:24] [INFO]         [OK] r071106_194303.rf.pcm_secondary     Delta=-0.0051 us
+[2026-05-15 13:07:24] [INFO]         [OK] r070524_234201.rf.pcm_secondary     Delta=+0.0034 us
+[2026-05-15 13:07:24] [INFO]         [OK] r070602_232426.rf.pcm_secondary     Delta=-0.0036 us
+[2026-05-15 13:07:24] [INFO]         [OK] r070523_035332.rf.pcm_secondary     Delta=-0.0116 us
+[2026-05-15 13:07:24] [INFO]         [OK] r080225_130710.rf.pcm_secondary     Delta=+0.0031 us
+[2026-05-15 13:07:24] [INFO]         [OK] r071008_143319.rf.pcm_secondary     Delta=-0.0003 us
+[2026-05-15 13:07:24] [INFO]         [OK] r080226_075512.rf.pcm_secondary     Delta=-0.0012 us
+[2026-05-15 13:07:24] [INFO]         [OK] r080223_072747.rf.pcm_secondary     Delta=+0.0467 us
+[2026-05-15 13:07:24] [INFO]         [OK] r070527_051939.rf.pcm_secondary     Delta=-0.0479 us
+[2026-05-15 13:07:24] [INFO]         [OK] r080503_031536.rf.pcm_secondary     Delta=+0.0093 us
+[2026-05-15 13:07:25] [INFO]         [OK] r080516_045414.rf.pcm_secondary     Delta=-0.0066 us
+[2026-05-15 13:07:25] [INFO]         [OK] r080515_063214.rf.pcm_secondary     Delta=-0.0001 us
+[2026-05-15 13:07:25] [INFO]         [OK] r080518_011955.rf.pcm_secondary     Delta=-0.0077 us
+[2026-05-15 13:07:25] [INFO]         [OK] r071225_090919.rf.pcm_secondary     Delta=-0.0030 us
+[2026-05-15 13:07:25] [INFO]         [OK] r080519_061219.rf.pcm_secondary     Delta=+0.0505 us
+[2026-05-15 13:07:25] [INFO]         [OK] r071224_170010.rf.pcm_secondary     Delta=-0.0032 us
+[2026-05-15 13:07:25] [INFO]         [OK] r080517_015614.rf.pcm_secondary     Delta=-0.0248 us
+[2026-05-15 13:07:25] [INFO]         [OK] r080614_060150.rf.pcm_secondary     Delta=-0.0037 us
+[2026-05-15 13:07:25] [INFO]         [OK] r071224_103017.rf.pcm_secondary     Delta=-0.0005 us
+[2026-05-15 13:07:25] [INFO]         [OK] r080626_235051.rf.pcm_secondary     Delta=-0.0040 us
+[2026-05-15 13:07:25] [INFO]         [OK] r080101_083548.rf.pcm_secondary     Delta=-0.0175 us
+[2026-05-15 13:07:25] [INFO]         [OK] r100316_052826.rf.pcm_secondary     Delta=+0.0361 us
+[2026-05-15 13:07:25] [INFO]         [OK] r091112_104420.rf.pcm_secondary     Delta=-0.0021 us
+[2026-05-15 13:07:25] [INFO]         [OK] r090521_042440.rf.pcm_secondary     Delta=+0.0256 us
+[2026-05-15 13:07:26] [INFO]         [OK] r2006-10-04-13:46:16.rf.pcm_seconda Delta=+0.0097 us
+[2026-05-15 13:07:26] [INFO]         [OK] r2006-10-05-14:52:30.rf.pcm_seconda Delta=+0.0068 us
+[2026-05-15 13:07:26] [INFO]         [OK] r080224_073858.rf.pcm_secondary     Delta=-0.0279 us
+[2026-05-15 13:07:26] [INFO]         [OK] s080502_050130.rf.pcm_secondary     Delta=-0.0217 us
+[2026-05-15 13:07:26] [INFO]         [OK] s080524_064355.rf.pcm_secondary     Delta=-0.0010 us
+[2026-05-15 13:07:26] [INFO]         [OK] r100109_065443.rf.pcm_secondary     Delta=-0.0043 us
+[2026-05-15 13:07:26] [INFO]         [OK] r080502_050131.rf.pcm_secondary     Delta=-0.0117 us
+[2026-05-15 13:07:26] [INFO]         [OK] r100204_090716.rf.pcm_secondary     Delta=+0.0006 us
+[2026-05-15 13:07:26] [INFO]         [OK] r080515_041335.rf.pcm_secondary     Delta=-0.0028 us
+[2026-05-15 13:07:26] [INFO]         [OK] r080512_022154.rf.pcm_secondary     Delta=-0.0050 us
+[2026-05-15 13:07:26] [INFO]         [OK] r100423_065754.rf.pcm_secondary     Delta=-0.0135 us
+[2026-05-15 13:07:26] [INFO]         [OK] s080812_235700.rf.pcm_secondary     Delta=+0.0065 us
+[2026-05-15 13:07:26] [INFO]         [OK] s080707_214942.rf.pcm_secondary     Delta=+0.0142 us
+[2026-05-15 13:07:26] [INFO]         [OK] s080714_015650.rf.pcm_secondary     Delta=+0.0037 us
+[2026-05-15 13:07:26] [INFO]         [OK] s080728_223659.rf.pcm_secondary     Delta=-0.0028 us
+[2026-05-15 13:07:26] [INFO]         [OK] s080908_205614.rf.pcm_secondary     Delta=-0.0030 us
+[2026-05-15 13:07:26] [INFO]         [OK] s080708_225801.rf.pcm_secondary     Delta=-0.0738 us
+[2026-05-15 13:07:26] [INFO]         [OK] s081012_130414.rf.pcm_secondary     Delta=+0.0050 us
+[2026-05-15 13:07:26] [INFO]         [OK] s080902_173414.rf.pcm_secondary     Delta=+0.0019 us
+[2026-05-15 13:07:26] [INFO]         [OK] s080907_150254.rf.pcm_secondary     Delta=-0.0017 us
+[2026-05-15 13:07:27] [INFO]         [OK] s081018_154639.rf.pcm_secondary     Delta=-0.0157 us
+[2026-05-15 13:07:27] [INFO]         [OK] s081024_162714.rf.pcm_secondary     Delta=-0.0013 us
+[2026-05-15 13:07:27] [INFO]         [OK] s081012_200659.rf.pcm_secondary     Delta=+0.0298 us
+[2026-05-15 13:07:27] [INFO]         [OK] s080708_011540.rf.pcm_secondary     Delta=-0.0039 us
+[2026-05-15 13:07:27] [INFO]         [OK] s081012_202019.rf.pcm_secondary     Delta=+0.0376 us
+[2026-05-15 13:07:27] [INFO]         [OK] s080907_172934.rf.pcm_secondary     Delta=+0.0068 us
+[2026-05-15 13:07:27] [INFO]         [OK] s081222_085556.rf.pcm_secondary     Delta=-0.0033 us
+[2026-05-15 13:07:27] [INFO]         [OK] s081222_171741.rf.pcm_secondary     Delta=-0.0052 us
+[2026-05-15 13:07:27] [INFO]         [OK] s080712_041101.rf.pcm_secondary     Delta=+0.0373 us
+[2026-05-15 13:07:27] [INFO]         [OK] s080908_160556.rf.pcm_secondary     Delta=+0.0024 us
+[2026-05-15 13:07:27] [INFO]         [OK] s090415_005520.rf.pcm_secondary     Delta=+0.0402 us
+[2026-05-15 13:07:27] [INFO]         [OK] s080906_200805.rf.pcm_secondary     Delta=+0.0022 us
+[2026-05-15 13:07:27] [INFO]         [OK] s081226_123434.rf.pcm_secondary     Delta=-0.0057 us
+[2026-05-15 13:07:27] [INFO]         [OK] s081227_151114.rf.pcm_secondary     Delta=-0.0102 us
+[2026-05-15 13:07:27] [INFO]         [OK] s081225_131517.rf.pcm_secondary     Delta=-0.0006 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090810_165510.rf.pcm_secondary     Delta=+0.0021 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090722_051957.rf.pcm_secondary     Delta=-0.0132 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090729_203439.rf.pcm_secondary     Delta=+0.0083 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090729_214619.rf.pcm_secondary     Delta=+0.0634 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090601_025059.rf.pcm_secondary     Delta=-0.0115 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090901_004500.rf.pcm_secondary     Delta=+0.0987 us
+[2026-05-15 13:07:28] [INFO]         [OK] s081223_090137.rf.pcm_secondary     Delta=-0.0004 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090831_224100.rf.pcm_secondary     Delta=-0.0566 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090810_175700.rf.pcm_secondary     Delta=-0.0078 us
+[2026-05-15 13:07:28] [INFO]         [OK] s091004_175420.rf.pcm_secondary     Delta=-0.0351 us
+[2026-05-15 13:07:28] [INFO]         [OK] s091009_141239.rf.pcm_secondary     Delta=-0.0460 us
+[2026-05-15 13:07:28] [INFO]         [OK] s080709_222022.rf.pcm_secondary     Delta=+0.0030 us
+[2026-05-15 13:07:28] [INFO]         [OK] s091029_195926.rf.pcm_secondary     Delta=+0.0011 us
+[2026-05-15 13:07:28] [INFO]         [OK] s091219_113229.rf.pcm_secondary     Delta=-0.1359 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090420_020128.rf.pcm_secondary     Delta=+0.0041 us
+[2026-05-15 13:07:28] [INFO]         [OK] s091221_093037.rf.pcm_secondary     Delta=-0.0059 us
+[2026-05-15 13:07:28] [INFO]         [OK] s091223_100759.rf.pcm_secondary     Delta=+0.0206 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090418_001850.rf.pcm_secondary     Delta=+0.0038 us
+[2026-05-15 13:07:28] [INFO]         [OK] s100204_090709.rf.pcm_secondary     Delta=+0.0089 us
+[2026-05-15 13:07:28] [INFO]         [OK] s100131_065033.rf.pcm_secondary     Delta=-0.0027 us
+[2026-05-15 13:07:28] [INFO]         [OK] s100212_100228.rf.pcm_secondary     Delta=-0.0104 us
+[2026-05-15 13:07:28] [INFO]         [OK] s100105_103527.rf.pcm_secondary     Delta=+0.0125 us
+[2026-05-15 13:07:28] [INFO]         [OK] s100215_092128.rf.pcm_secondary     Delta=+0.0002 us
+[2026-05-15 13:07:28] [INFO]         [OK] s090521_042440.rf.pcm_secondary     Delta=-0.0035 us
+[2026-05-15 13:07:28] [INFO]         [OK] s100217_085309.rf.pcm_secondary     Delta=+0.0301 us
+[2026-05-15 13:07:28] [INFO]         [OK] s100222_054211.rf.pcm_secondary     Delta=+0.0026 us
+[2026-05-15 13:07:29] [INFO]         [OK] s100211_042416.rf.pcm_secondary     Delta=+0.0077 us
+[2026-05-15 13:07:29] [INFO]         [OK] s081227_135735.rf.pcm_secondary     Delta=-0.0006 us
+[2026-05-15 13:07:29] [INFO]         [OK] s100212_055437.rf.pcm_secondary     Delta=-0.0033 us
+[2026-05-15 13:07:29] [INFO]         [OK] s100217_063619.rf.pcm_secondary     Delta=+0.0293 us
+[2026-05-15 13:07:29] [INFO]         [OK] s090827_205657.rf.pcm_secondary     Delta=+0.0018 us
+[2026-05-15 13:07:29] [INFO]         [OK] s100602_215745.rf.pcm_secondary     Delta=+0.0290 us
+[2026-05-15 13:07:29] [INFO]         [OK] s091224_104627.rf.pcm_secondary     Delta=+0.0125 us
+[2026-05-15 13:07:29] [INFO]         [OK] s100317_023929.rf.pcm_secondary     Delta=+0.0809 us
+[2026-05-15 13:07:29] [INFO]         [OK] s100803_180926.rf.pcm_secondary     Delta=+0.0024 us
+[2026-05-15 13:07:29] [INFO]         [OK] s100930_205730.rf.pcm_secondary     Delta=+0.0023 us
+[2026-05-15 13:07:29] [INFO]         [OK] s100414_052947.rf.pcm_secondary     Delta=+0.0392 us
+[2026-05-15 13:07:29] [INFO]         [OK] s101219_160619.rf.pcm_secondary     Delta=+0.0015 us
+[2026-05-15 13:07:29] [INFO]         [OK] s101103_163646.rf.pcm_secondary     Delta=-0.0324 us
+[2026-05-15 13:07:29] [INFO]         [OK] s101102_191622.rf.pcm_secondary     Delta=+0.0007 us
+[2026-05-15 13:07:29] [INFO]         [OK] s100930_212039.rf.pcm_secondary     Delta=+0.0023 us
+[2026-05-15 13:07:29] [INFO]         [OK] s101223_133927.rf.pcm_secondary     Delta=+0.0170 us
+[2026-05-15 13:07:29] [INFO]         [OK] s101023_190838.rf.pcm_secondary     Delta=+0.0085 us
+[2026-05-15 13:07:29] [INFO]         [OK] s110120_113759.rf.pcm_secondary     Delta=+0.1388 us
+[2026-05-15 13:07:29] [INFO]         [OK] s100410_041600.rf.pcm_secondary     Delta=+0.0035 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110203_054757.rf.pcm_secondary     Delta=-0.0029 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110108_075729.rf.pcm_secondary     Delta=+0.0237 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110203_073038.rf.pcm_secondary     Delta=-0.0205 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110203_082116.rf.pcm_secondary     Delta=-0.0334 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110203_091106.rf.pcm_secondary     Delta=-0.0031 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110202_093114.rf.pcm_secondary     Delta=+0.0412 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110203_114720.rf.pcm_secondary     Delta=+0.0505 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110204_103448.rf.pcm_secondary     Delta=+0.0126 us
+[2026-05-15 13:07:30] [INFO]         [OK] s100409_020606.rf.pcm_secondary     Delta=-0.0127 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110121_092929.rf.pcm_secondary     Delta=-0.0159 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110407_094530.rf.pcm_secondary     Delta=+0.1203 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110204_093006.rf.pcm_secondary     Delta=+0.0722 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110203_070629.rf.pcm_secondary     Delta=-0.0117 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110410_045810.rf.pcm_secondary     Delta=+0.0069 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110109_062927.rf.pcm_secondary     Delta=+0.0288 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110411_012250.rf.pcm_secondary     Delta=+0.2347 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110410_075219.rf.pcm_secondary     Delta=-0.0078 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110411_042152.rf.pcm_secondary     Delta=-0.0032 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110410_060611.rf.pcm_secondary     Delta=-0.0073 us
+[2026-05-15 13:07:30] [INFO]         [OK] s100802_173825.rf.pcm_secondary     Delta=-0.0026 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110411_090811.rf.pcm_secondary     Delta=+0.0041 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110411_084531.rf.pcm_secondary     Delta=+0.0745 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110411_031013.rf.pcm_secondary     Delta=-0.0731 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110410_064021.rf.pcm_secondary     Delta=+0.0046 us
+[2026-05-15 13:07:30] [INFO]         [OK] s100216_042657.rf.pcm_secondary     Delta=-0.0026 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110411_061352.rf.pcm_secondary     Delta=+0.0739 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110801_200738.rf.pcm_secondary     Delta=+0.0147 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110801_224419.rf.pcm_secondary     Delta=-0.0659 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110924_183437.rf.pcm_secondary     Delta=-0.0013 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110821_193147.rf.pcm_secondary     Delta=-0.0102 us
+[2026-05-15 13:07:30] [INFO]         [OK] s110928_194856.rf.pcm_secondary     Delta=-0.0071 us
+[2026-05-15 13:07:31] [INFO]         [OK] s110928_205746.rf.pcm_secondary     Delta=+0.0020 us
+[2026-05-15 13:07:31] [INFO]         [OK] s110201_101804.rf.pcm_secondary     Delta=-0.0298 us
+[2026-05-15 13:07:31] [INFO]         [OK] s111119_154539.rf.pcm_secondary     Delta=+0.0119 us
+[2026-05-15 13:07:31] [INFO]         [OK] s120120_065808.rf.pcm_secondary     Delta=+0.0659 us
+[2026-05-15 13:07:31] [INFO]         [OK] s111220_132358.rf.pcm_secondary     Delta=-0.0014 us
+[2026-05-15 13:07:31] [INFO]         [OK] s120302_062947.rf.pcm_secondary     Delta=-0.0033 us
+[2026-05-15 13:07:31] [INFO]         [OK] s110928_220616.rf.pcm_secondary     Delta=+0.0183 us
+[2026-05-15 13:07:31] [INFO]         [OK] s110928_173128.rf.pcm_secondary     Delta=-0.0180 us
+[2026-05-15 13:07:31] [INFO]         [OK] s110622_210816.rf.pcm_secondary     Delta=-0.0038 us
+[2026-05-15 13:07:31] [INFO]         [OK] s120614_215457.rf.pcm_secondary     Delta=+0.0238 us
+[2026-05-15 13:07:31] [INFO]         [OK] s110409_092859.rf.pcm_secondary     Delta=+0.0044 us
+[2026-05-15 13:07:31] [INFO]         [OK] s110207_105027.rf.pcm_secondary     Delta=-0.0024 us
+[2026-05-15 13:07:31] [INFO]         [OK] s110409_065259.rf.pcm_secondary     Delta=+0.0039 us
+[2026-05-15 13:07:31] [INFO]         [OK] s120316_022816.rf.pcm_secondary     Delta=-0.0029 us
+[2026-05-15 13:07:31] [INFO]         [OK] s120727_011829.rf.pcm_secondary     Delta=+0.0528 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_115342.rf.pcm_secondary     Delta=+0.0061 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_140938.rf.pcm_secondary     Delta=+0.0979 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_144818.rf.pcm_secondary     Delta=+0.0062 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_160550.rf.pcm_secondary     Delta=-0.0544 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_150738.rf.pcm_secondary     Delta=+0.0066 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_142858.rf.pcm_secondary     Delta=+0.0067 us
+[2026-05-15 13:07:31] [INFO]         [OK] s120728_224740.rf.pcm_secondary     Delta=+0.0112 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_174147.rf.pcm_secondary     Delta=+0.0214 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_162516.rf.pcm_secondary     Delta=-0.1039 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_180107.rf.pcm_secondary     Delta=+0.0015 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_172229.rf.pcm_secondary     Delta=-0.0181 us
+[2026-05-15 13:07:31] [INFO]         [OK] s120502_231204.rf.pcm_secondary     Delta=+0.0045 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_182027.rf.pcm_secondary     Delta=+0.0046 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_193829.rf.pcm_secondary     Delta=-0.0327 us
+[2026-05-15 13:07:31] [INFO]         [OK] s121020_201709.rf.pcm_secondary     Delta=-0.0048 us
+[2026-05-15 13:07:32] [INFO]         [OK] s120503_234544.rf.pcm_secondary     Delta=+0.0227 us
+[2026-05-15 13:07:32] [INFO]         [OK] s111221_073416.rf.pcm_secondary     Delta=+0.0020 us
+[2026-05-15 13:07:32] [INFO]         [OK] s121023_155549.rf.pcm_secondary     Delta=+0.0109 us
+[2026-05-15 13:07:32] [INFO]         [OK] s121020_213427.rf.pcm_secondary     Delta=+0.0261 us
+[2026-05-15 13:07:32] [INFO]         [OK] s130112_095603.rf.pcm_secondary     Delta=-0.0081 us
+[2026-05-15 13:07:32] [INFO]         [OK] s121020_205547.rf.pcm_secondary     Delta=-0.0027 us
+[2026-05-15 13:07:32] [INFO]         [OK] s121221_113018.rf.pcm_secondary     Delta=+0.0057 us
+[2026-05-15 13:07:32] [INFO]         [OK] s121020_191907.rf.pcm_secondary     Delta=+0.0017 us
+[2026-05-15 13:07:32] [INFO]         [OK] s130512_060618.rf.pcm_secondary     Delta=-0.0777 us
+[2026-05-15 13:07:32] [INFO]         [OK] s121119_122459.rf.pcm_secondary     Delta=+0.0069 us
+[2026-05-15 13:07:32] [INFO]         [OK] s120617_022008.rf.pcm_secondary     Delta=-0.0047 us
+[2026-05-15 13:07:32] [INFO]         [OK] s130711_001218.rf.pcm_secondary     Delta=-0.0306 us
+[2026-05-15 13:07:32] [INFO]         [OK] s130711_232836.rf.pcm_secondary     Delta=+0.0034 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130811_211416.rf.pcm_secondary     Delta=-0.0050 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130128_053518.rf.pcm_secondary     Delta=-0.0031 us
+[2026-05-15 13:07:33] [INFO]         [OK] s121008_140909.rf.pcm_secondary     Delta=+0.0042 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130824_223214.rf.pcm_secondary     Delta=+0.0019 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130824_214637.rf.pcm_secondary     Delta=-0.0019 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130516_223905.rf.pcm_secondary     Delta=+0.0072 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130926_184148.rf.pcm_secondary     Delta=-0.0023 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130926_182228.rf.pcm_secondary     Delta=-0.0076 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130926_203417.rf.pcm_secondary     Delta=-0.0267 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130926_205340.rf.pcm_secondary     Delta=+0.0308 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130926_195539.rf.pcm_secondary     Delta=+0.0254 us
+[2026-05-15 13:07:33] [INFO]         [OK] s120615_031837.rf.pcm_secondary     Delta=-0.0206 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130926_221119.rf.pcm_secondary     Delta=+0.0025 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130926_211309.rf.pcm_secondary     Delta=+0.0022 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130928_151317.rf.pcm_secondary     Delta=-0.0047 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130926_215159.rf.pcm_secondary     Delta=-0.0019 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130517_041946.rf.pcm_secondary     Delta=+0.0170 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130704_014348.rf.pcm_secondary     Delta=-0.0033 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130926_230937.rf.pcm_secondary     Delta=+0.0021 us
+[2026-05-15 13:07:33] [INFO]         [OK] s130926_134728.rf.pcm_secondary     Delta=+0.0022 us
+[2026-05-15 13:07:33] [INFO]         [OK] s140202_065359.rf.pcm_secondary     Delta=-0.0113 us
+[2026-05-15 13:07:33] [INFO]         [OK] s120615_042609.rf.pcm_secondary     Delta=-0.0097 us
+[2026-05-15 13:07:33] [INFO]         [OK] s140314_052058.rf.pcm_secondary     Delta=-0.0020 us
+[2026-05-15 13:07:33] [INFO]         [OK] s100410_031146.rf.pcm_secondary     Delta=-0.0112 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140415_080006.rf.pcm_secondary     Delta=-0.0056 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140324_023208.rf.pcm_secondary     Delta=+0.0038 us
+[2026-05-15 13:07:34] [INFO]         [OK] s130826_230042.rf.pcm_secondary     Delta=+0.0006 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140405_035728.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140415_083927.rf.pcm_secondary     Delta=-0.0176 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140415_085907.rf.pcm_secondary     Delta=-0.0876 us
+[2026-05-15 13:07:34] [INFO]         [OK] s130823_194509.rf.pcm_secondary     Delta=+0.0146 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140415_074026.rf.pcm_secondary     Delta=-0.0469 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140405_051228.rf.pcm_secondary     Delta=+0.0374 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140415_093827.rf.pcm_secondary     Delta=+0.0045 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140416_061037.rf.pcm_secondary     Delta=-0.0141 us
+[2026-05-15 13:07:34] [INFO]         [OK] s131025_142217.rf.pcm_secondary     Delta=-0.0017 us
+[2026-05-15 13:07:34] [INFO]         [OK] t081012_130414.rf.pcm_secondary     Delta=+0.0037 us
+[2026-05-15 13:07:34] [INFO]         [OK] t081012_132415.rf.pcm_secondary     Delta=-0.0078 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140110_093020.rf.pcm_secondary     Delta=-0.0018 us
+[2026-05-15 13:07:34] [INFO]         [OK] t081113_195902.rf.pcm_secondary     Delta=+0.0010 us
+[2026-05-15 13:07:34] [INFO]         [OK] t081115_171215.rf.pcm_secondary     Delta=+0.0009 us
+[2026-05-15 13:07:34] [INFO]         [OK] s140323_040426.rf.pcm_secondary     Delta=+0.0159 us
+[2026-05-15 13:07:35] [INFO]         [OK] t081018_130139.rf.pcm_secondary     Delta=+0.0020 us
+[2026-05-15 13:07:35] [INFO]         [OK] t081015_213720.rf.pcm_secondary     Delta=-0.0034 us
+[2026-05-15 13:07:35] [INFO]         [OK] s131128_113846.rf.pcm_secondary     Delta=+0.0020 us
+[2026-05-15 13:07:35] [INFO]         [OK] t081224_090655.rf.pcm_secondary     Delta=-0.0004 us
+[2026-05-15 13:07:35] [INFO]         [OK] s140416_010506.rf.pcm_secondary     Delta=+0.0351 us
+[2026-05-15 13:07:35] [INFO]         [OK] s130128_075103.rf.pcm_secondary     Delta=+0.0598 us
+[2026-05-15 13:07:35] [INFO]         [OK] t090116_073410.rf.pcm_secondary     Delta=+0.0186 us
+[2026-05-15 13:07:35] [INFO]         [OK] t081226_123433.rf.pcm_secondary     Delta=+0.0041 us
+[2026-05-15 13:07:35] [INFO]         [OK] t081227_162115.rf.pcm_secondary     Delta=+0.0006 us
+[2026-05-15 13:07:35] [INFO]         [OK] t080813_213215.rf.pcm_secondary     Delta=+0.0025 us
+[2026-05-15 13:07:35] [INFO]         [OK] t090810_165511.rf.pcm_secondary     Delta=-0.0021 us
+[2026-05-15 13:07:35] [INFO]         [OK] t090220_090753.rf.pcm_secondary     Delta=-0.0041 us
+[2026-05-15 13:07:35] [INFO]         [OK] s140421_041948.rf.pcm_secondary     Delta=-0.0197 us
+[2026-05-15 13:07:35] [INFO]         [OK] t090810_175700.rf.pcm_secondary     Delta=+0.0061 us
+[2026-05-15 13:07:35] [INFO]         [OK] t081014_164935.rf.pcm_secondary     Delta=-0.0011 us
+[2026-05-15 13:07:35] [INFO]         [OK] t081227_135514.rf.pcm_secondary     Delta=-0.0006 us
+[2026-05-15 13:07:35] [INFO]         [OK] t090426_072910.rf.pcm_secondary     Delta=+0.0075 us
+[2026-05-15 13:07:35] [INFO]         [OK] t090827_205658.rf.pcm_secondary     Delta=-0.0348 us
+[2026-05-15 13:07:36] [INFO]         [OK] t090822_205140.rf.pcm_secondary     Delta=+0.0148 us
+[2026-05-15 13:07:36] [INFO]         [OK] t090411_012115.rf.pcm_secondary     Delta=-0.0039 us
+[2026-05-15 13:07:36] [INFO]         [OK] t090821_213248.rf.pcm_secondary     Delta=-0.0179 us
+[2026-05-15 13:07:36] [INFO]         [OK] t081024_162715.rf.pcm_secondary     Delta=-0.0024 us
+[2026-05-15 13:07:36] [INFO]         [OK] t090821_194418.rf.pcm_secondary     Delta=-0.0019 us
+[2026-05-15 13:07:36] [INFO]         [OK] t091029_195926.rf.pcm_secondary     Delta=+0.0038 us
+[2026-05-15 13:07:36] [INFO]         [OK] t091219_135054.rf.pcm_secondary     Delta=-0.0045 us
+[2026-05-15 13:07:36] [INFO]         [OK] t090827_221223.rf.pcm_secondary     Delta=+0.0017 us
+[2026-05-15 13:07:36] [INFO]         [OK] t100131_065029.rf.pcm_secondary     Delta=-0.0026 us
+[2026-05-15 13:07:36] [INFO]         [OK] t091112_104415.rf.pcm_secondary     Delta=+0.0031 us
+[2026-05-15 13:07:36] [INFO]         [OK] t100211_042434.rf.pcm_secondary     Delta=+0.0302 us
+[2026-05-15 13:07:36] [INFO]         [OK] t100212_100229.rf.pcm_secondary     Delta=-0.0099 us
+[2026-05-15 13:07:36] [INFO]         [OK] t100215_092200.rf.pcm_secondary     Delta=-0.0312 us
+[2026-05-15 13:07:36] [INFO]         [OK] t100217_085309.rf.pcm_secondary     Delta=+0.0028 us
+[2026-05-15 13:07:36] [INFO]         [OK] t100216_042659.rf.pcm_secondary     Delta=+0.0032 us
+[2026-05-15 13:07:36] [INFO]         [OK] t100107_094414.rf.pcm_secondary     Delta=+0.0005 us
+[2026-05-15 13:07:37] [INFO]         [OK] t091224_104630.rf.pcm_secondary     Delta=+0.0125 us
+[2026-05-15 13:07:37] [INFO]         [OK] t090317_081358.rf.pcm_secondary     Delta=+0.0040 us
+[2026-05-15 13:07:37] [INFO]         [OK] t100217_063619.rf.pcm_secondary     Delta=+0.0030 us
+[2026-05-15 13:07:37] [INFO]         [OK] t090827_195749.rf.pcm_secondary     Delta=+0.0016 us
+[2026-05-15 13:07:37] [INFO]         [OK] t100212_055441.rf.pcm_secondary     Delta=+0.0093 us
+[2026-05-15 13:07:37] [INFO]         [OK] t090822_184630.rf.pcm_secondary     Delta=+0.0059 us
+[2026-05-15 13:07:37] [INFO]         [OK] t100711_042742.rf.pcm_secondary     Delta=+0.0014 us
+[2026-05-15 13:07:37] [INFO]         [OK] t100619_004617.rf.pcm_secondary     Delta=-0.0046 us
+[2026-05-15 13:07:37] [INFO]         [OK] t100424_233235.rf.pcm_secondary     Delta=+0.0063 us
+[2026-05-15 13:07:37] [INFO]         [OK] t100930_212041.rf.pcm_secondary     Delta=-0.0039 us
+[2026-05-15 13:07:37] [INFO]         [OK] t101219_160622.rf.pcm_secondary     Delta=+0.0181 us
+[2026-05-15 13:07:37] [INFO]         [OK] t101108_134418.rf.pcm_secondary     Delta=+0.0021 us
+[2026-05-15 13:07:37] [INFO]         [OK] t110203_054801.rf.pcm_secondary     Delta=-0.0254 us
+[2026-05-15 13:07:37] [INFO]         [OK] t110203_061812.rf.pcm_secondary     Delta=-0.0043 us
+[2026-05-15 13:07:37] [INFO]         [OK] t110203_073042.rf.pcm_secondary     Delta=-0.0294 us
+[2026-05-15 13:07:37] [INFO]         [OK] t110203_082116.rf.pcm_secondary     Delta=-0.0271 us
+[2026-05-15 13:07:37] [INFO]         [OK] t101129_100217.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:37] [INFO]         [OK] t110204_093005.rf.pcm_secondary     Delta=-0.0111 us
+[2026-05-15 13:07:37] [INFO]         [OK] t100412_040756.rf.pcm_secondary     Delta=-0.0011 us
+[2026-05-15 13:07:37] [INFO]         [OK] t110204_112610.rf.pcm_secondary     Delta=+0.0109 us
+[2026-05-15 13:07:37] [INFO]         [OK] t110204_103451.rf.pcm_secondary     Delta=-0.0034 us
+[2026-05-15 13:07:37] [INFO]         [OK] t100204_090714.rf.pcm_secondary     Delta=+0.0040 us
+[2026-05-15 13:07:37] [INFO]         [OK] t110207_105057.rf.pcm_secondary     Delta=-0.0133 us
+[2026-05-15 13:07:37] [INFO]         [OK] t110327_030337.rf.pcm_secondary     Delta=+0.0447 us
+[2026-05-15 13:07:37] [INFO]         [OK] t110409_065302.rf.pcm_secondary     Delta=+0.0187 us
+[2026-05-15 13:07:38] [INFO]         [OK] t100729_005305.rf.pcm_secondary     Delta=+0.0024 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110203_070630.rf.pcm_secondary     Delta=-0.0044 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110410_071852.rf.pcm_secondary     Delta=+0.0087 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110411_042148.rf.pcm_secondary     Delta=+0.0378 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110207_102615.rf.pcm_secondary     Delta=-0.0024 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110411_090806.rf.pcm_secondary     Delta=-0.0131 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110204_130418.rf.pcm_secondary     Delta=-0.0025 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110410_064016.rf.pcm_secondary     Delta=-0.0068 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110204_095017.rf.pcm_secondary     Delta=+0.0008 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110411_044938.rf.pcm_secondary     Delta=-0.0025 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110410_060608.rf.pcm_secondary     Delta=-0.0036 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110731_181849.rf.pcm_secondary     Delta=+0.0065 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110622_210816.rf.pcm_secondary     Delta=+0.0160 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110109_062941.rf.pcm_secondary     Delta=+0.0015 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110822_232808.rf.pcm_secondary     Delta=+0.0054 us
+[2026-05-15 13:07:38] [INFO]         [OK] t100602_215755.rf.pcm_secondary     Delta=-0.0040 us
+[2026-05-15 13:07:38] [INFO]         [OK] t110924_183444.rf.pcm_secondary     Delta=+0.0013 us
+[2026-05-15 13:07:39] [INFO]         [OK] t110928_194905.rf.pcm_secondary     Delta=-0.0001 us
+[2026-05-15 13:07:39] [INFO]         [OK] t110928_205800.rf.pcm_secondary     Delta=-0.0060 us
+[2026-05-15 13:07:39] [INFO]         [OK] t110613_061652.rf.pcm_secondary     Delta=+0.0060 us
+[2026-05-15 13:07:39] [INFO]         [OK] t110928_173134.rf.pcm_secondary     Delta=-0.0158 us
+[2026-05-15 13:07:39] [INFO]         [OK] t110928_220631.rf.pcm_secondary     Delta=-0.0334 us
+[2026-05-15 13:07:39] [INFO]         [OK] t111220_154107.rf.pcm_secondary     Delta=+0.0137 us
+[2026-05-15 13:07:39] [INFO]         [OK] t111220_132357.rf.pcm_secondary     Delta=-0.0184 us
+[2026-05-15 13:07:39] [INFO]         [OK] t110719_020647.rf.pcm_secondary     Delta=+0.0370 us
+[2026-05-15 13:07:39] [INFO]         [OK] t120302_062948.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:39] [INFO]         [OK] t120303_053906.rf.pcm_secondary     Delta=+0.0132 us
+[2026-05-15 13:07:39] [INFO]         [OK] t110613_053806.rf.pcm_secondary     Delta=-0.0061 us
+[2026-05-15 13:07:39] [INFO]         [OK] t120302_055154.rf.pcm_secondary     Delta=-0.0359 us
+[2026-05-15 13:07:39] [INFO]         [OK] t120727_011841.rf.pcm_secondary     Delta=-0.0105 us
+[2026-05-15 13:07:39] [INFO]         [OK] t120301_072213.rf.pcm_secondary     Delta=-0.0044 us
+[2026-05-15 13:07:39] [INFO]         [OK] t110612_213857.rf.pcm_secondary     Delta=+0.0047 us
+[2026-05-15 13:07:39] [INFO]         [OK] t120319_110853.rf.pcm_secondary     Delta=-0.0026 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_131146.rf.pcm_secondary     Delta=-0.0029 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_123306.rf.pcm_secondary     Delta=-0.0011 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_180117.rf.pcm_secondary     Delta=+0.0152 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_185947.rf.pcm_secondary     Delta=-0.0018 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_191917.rf.pcm_secondary     Delta=-0.0045 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_182036.rf.pcm_secondary     Delta=-0.0024 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_201717.rf.pcm_secondary     Delta=+0.0016 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_203637.rf.pcm_secondary     Delta=-0.0016 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_174156.rf.pcm_secondary     Delta=-0.0245 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121023_155555.rf.pcm_secondary     Delta=+0.0011 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121222_104807.rf.pcm_secondary     Delta=-0.0035 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121118_125958.rf.pcm_secondary     Delta=+0.0060 us
+[2026-05-15 13:07:40] [INFO]         [OK] t111202_110005.rf.pcm_secondary     Delta=-0.0104 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_172236.rf.pcm_secondary     Delta=-0.0016 us
+[2026-05-15 13:07:40] [INFO]         [OK] t111119_154547.rf.pcm_secondary     Delta=-0.0108 us
+[2026-05-15 13:07:40] [INFO]         [OK] t130127_090835.rf.pcm_secondary     Delta=-0.0089 us
+[2026-05-15 13:07:40] [INFO]         [OK] t120730_003144.rf.pcm_secondary     Delta=-0.0043 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121020_140946.rf.pcm_secondary     Delta=+0.0022 us
+[2026-05-15 13:07:40] [INFO]         [OK] t100412_051238.rf.pcm_secondary     Delta=+0.0059 us
+[2026-05-15 13:07:40] [INFO]         [OK] t130512_060617.rf.pcm_secondary     Delta=+0.0229 us
+[2026-05-15 13:07:40] [INFO]         [OK] t100518_234825.rf.pcm_secondary     Delta=+0.0476 us
+[2026-05-15 13:07:40] [INFO]         [OK] t130205_101048.rf.pcm_secondary     Delta=+0.0022 us
+[2026-05-15 13:07:40] [INFO]         [OK] t130512_000335.rf.pcm_secondary     Delta=-0.0122 us
+[2026-05-15 13:07:40] [INFO]         [OK] t111221_073425.rf.pcm_secondary     Delta=-0.0057 us
+[2026-05-15 13:07:40] [INFO]         [OK] t130711_001218.rf.pcm_secondary     Delta=+0.0391 us
+[2026-05-15 13:07:40] [INFO]         [OK] t121119_122506.rf.pcm_secondary     Delta=+0.0022 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130823_194508.rf.pcm_secondary     Delta=+0.0016 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130711_232836.rf.pcm_secondary     Delta=-0.0466 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_170458.rf.pcm_secondary     Delta=-0.0369 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_203417.rf.pcm_secondary     Delta=+0.0251 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_205340.rf.pcm_secondary     Delta=-0.0156 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_211309.rf.pcm_secondary     Delta=-0.0253 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_184149.rf.pcm_secondary     Delta=-0.0062 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_215200.rf.pcm_secondary     Delta=+0.0028 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_221119.rf.pcm_secondary     Delta=+0.0046 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_213230.rf.pcm_secondary     Delta=-0.0059 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130128_053519.rf.pcm_secondary     Delta=-0.0174 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130516_223906.rf.pcm_secondary     Delta=+0.0117 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_195539.rf.pcm_secondary     Delta=-0.0001 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_230938.rf.pcm_secondary     Delta=-0.0140 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130517_041947.rf.pcm_secondary     Delta=+0.0353 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130929_175618.rf.pcm_secondary     Delta=+0.0022 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_144658.rf.pcm_secondary     Delta=-0.0267 us
+[2026-05-15 13:07:41] [INFO]         [OK] t131218_112018.rf.pcm_secondary     Delta=+0.0011 us
+[2026-05-15 13:07:41] [INFO]         [OK] t140202_085149.rf.pcm_secondary     Delta=-0.0106 us
+[2026-05-15 13:07:41] [INFO]         [OK] t140110_093019.rf.pcm_secondary     Delta=+0.0063 us
+[2026-05-15 13:07:41] [INFO]         [OK] t140314_052058.rf.pcm_secondary     Delta=-0.0031 us
+[2026-05-15 13:07:41] [INFO]         [OK] t130926_134727.rf.pcm_secondary     Delta=-0.0021 us
+[2026-05-15 13:07:41] [INFO]         [OK] t140130_080448.rf.pcm_secondary     Delta=-0.0324 us
+[2026-05-15 13:07:41] [INFO]         [OK] t140415_074027.rf.pcm_secondary     Delta=-0.0045 us
+[2026-05-15 13:07:42] [INFO]         [OK] t140323_040426.rf.pcm_secondary     Delta=+0.0395 us
+[2026-05-15 13:07:42] [INFO]         [OK] t131027_182218.rf.pcm_secondary     Delta=-0.0018 us
+[2026-05-15 13:07:42] [INFO]         [OK] t131219_093446.rf.pcm_secondary     Delta=-0.0037 us
+[2026-05-15 13:07:42] [INFO]         [OK] t140415_093826.rf.pcm_secondary     Delta=-0.0168 us
+[2026-05-15 13:07:42] [INFO]         [OK] t130704_014347.rf.pcm_secondary     Delta=-0.0034 us
+[2026-05-15 13:07:42] [INFO]         [OK] t130620_231007.rf.pcm_secondary     Delta=-0.0030 us
+[2026-05-15 13:07:42] [INFO]         [OK] t140729_204747.rf.pcm_secondary     Delta=+0.0036 us
+[2026-05-15 13:07:42] [INFO]         [OK] t131025_142217.rf.pcm_secondary     Delta=+0.0064 us
+[2026-05-15 13:07:42] [INFO]         [OK] t130128_075103.rf.pcm_secondary     Delta=-0.0147 us
+[2026-05-15 13:07:42] [INFO]         [OK] t140924_162258.rf.pcm_secondary     Delta=+0.0027 us
+[2026-05-15 13:07:42] [INFO]         [OK] t131128_113846.rf.pcm_secondary     Delta=-0.0059 us
+[2026-05-15 13:07:42] [INFO]         [OK] t140731_191506.rf.pcm_secondary     Delta=-0.0175 us
+[2026-05-15 13:07:42] [INFO]         [OK] t140421_041947.rf.pcm_secondary     Delta=-0.0050 us
+[2026-05-15 13:07:42] [INFO]         [OK] t140416_061036.rf.pcm_secondary     Delta=+0.0055 us
+[2026-05-15 13:07:43] [INFO]         [OK] t150417_021348.rf.pcm_secondary     Delta=-0.0045 us
+[2026-05-15 13:07:43] [INFO]         [OK] t141128_125820.rf.pcm_secondary     Delta=-0.0258 us
+[2026-05-15 13:07:43] [INFO]         [OK] t150416_094928.rf.pcm_secondary     Delta=+0.0012 us
+[2026-05-15 13:07:43] [INFO]         [OK] t141010_200339.rf.pcm_secondary     Delta=+0.0332 us
+[2026-05-15 13:07:43] [INFO]         [OK] t150202_072057.rf.pcm_secondary     Delta=-0.0234 us
+[2026-05-15 13:07:43] [INFO]         [OK] t150613_220958.rf.pcm_secondary     Delta=+0.0413 us
+[2026-05-15 13:07:43] [INFO]         [OK] t150715_014642.rf.pcm_secondary     Delta=-0.0118 us
+[2026-05-15 13:07:43] [INFO]         [OK] t150830_173848.rf.pcm_secondary     Delta=+0.0018 us
+[2026-05-15 13:07:43] [INFO]         [OK] t150615_000444.rf.pcm_secondary     Delta=+0.0042 us
+[2026-05-15 13:07:44] [INFO]         [OK] t150130_071608.rf.pcm_secondary     Delta=-0.0045 us
+[2026-05-15 13:07:44] [INFO]         [OK] t151006_193339.rf.pcm_secondary     Delta=-0.0055 us
+[2026-05-15 13:07:44] [INFO]         [OK] t150519_053656.rf.pcm_secondary     Delta=+0.0202 us
+[2026-05-15 13:07:44] [INFO]         [OK] t151111_044455.rf.pcm_secondary     Delta=-0.0078 us
+[2026-05-15 13:07:44] [INFO]         [OK] t151120_143708.rf.pcm_secondary     Delta=+0.0108 us
+[2026-05-15 13:07:44] [INFO]         [OK] t141014_141358.rf.pcm_secondary     Delta=-0.0001 us
+[2026-05-15 13:07:44] [INFO]         [OK] t140324_023207.rf.pcm_secondary     Delta=-0.0039 us
+[2026-05-15 13:07:44] [INFO]         [OK] t150814_192149.rf.pcm_secondary     Delta=-0.0042 us
+[2026-05-15 13:07:44] [INFO]         [OK] t160129_133824.rf.pcm_secondary     Delta=-0.0145 us
+[2026-05-15 13:07:44] [INFO]         [OK] t150811_234259.rf.pcm_secondary     Delta=-0.0123 us
+[2026-05-15 13:07:44] [INFO]         [OK] t160223_074159.rf.pcm_secondary     Delta=+0.0014 us
+[2026-05-15 13:07:44] [INFO]         [OK] t141201_153841.rf.pcm_secondary     Delta=-0.0005 us
+[2026-05-15 13:07:44] [INFO]         [OK] t150714_192128.rf.pcm_secondary     Delta=-0.0007 us
+[2026-05-15 13:07:44] [INFO]         [OK] t151109_193117.rf.pcm_secondary     Delta=-0.0222 us
+[2026-05-15 13:07:44] [INFO]         [OK] t160417_021057.rf.pcm_secondary     Delta=-0.0047 us
+[2026-05-15 13:07:45] [INFO]         [OK] t150903_214848.rf.pcm_secondary     Delta=-0.0057 us
+[2026-05-15 13:07:45] [INFO]         [OK] t150202_093609.rf.pcm_secondary     Delta=-0.0091 us
+[2026-05-15 13:07:45] [INFO]         [OK] t150903_171007.rf.pcm_secondary     Delta=+0.0102 us
+[2026-05-15 13:07:45] [INFO]         [OK] t160827_195319.rf.pcm_secondary     Delta=+0.0417 us
+[2026-05-15 13:07:45] [INFO]         [OK] t160109_141648.rf.pcm_secondary     Delta=+0.0107 us
+[2026-05-15 13:07:45] [INFO]         [OK] t160929_145617.rf.pcm_secondary     Delta=+0.0151 us
+[2026-05-15 13:07:45] [INFO]         [OK] t161206_115918.rf.pcm_secondary     Delta=-0.0019 us
+[2026-05-15 13:07:45] [INFO]         [OK] t161206_142412.rf.pcm_secondary     Delta=+0.0019 us
+[2026-05-15 13:07:45] [INFO]         [OK] t161114_144847.rf.pcm_secondary     Delta=-0.0041 us
+[2026-05-15 13:07:46] [INFO]         [OK] t161116_145159.rf.pcm_secondary     Delta=+0.0021 us
+[2026-05-15 13:07:46] [INFO]         [OK] t160222_085301.rf.pcm_secondary     Delta=-0.0131 us
+[2026-05-15 13:07:46] [INFO]         [OK] t160812_181848.rf.pcm_secondary     Delta=-0.0026 us
+[2026-05-15 13:07:46] [INFO]         [OK] t170105_091257.rf.pcm_secondary     Delta=-0.0008 us
+[2026-05-15 13:07:46] [INFO]         [OK] t161113_104837.rf.pcm_secondary     Delta=-0.0012 us
+[2026-05-15 13:07:46] [INFO]         [OK] t160827_184549.rf.pcm_secondary     Delta=+0.0122 us
+[2026-05-15 13:07:46] [INFO]         [OK] t170211_053601.rf.pcm_secondary     Delta=+0.0133 us
+[2026-05-15 13:07:46] [INFO]         [OK] t160717_024049.rf.pcm_secondary     Delta=+0.0040 us
+[2026-05-15 13:07:46] [INFO]         [OK] t161215_160908.rf.pcm_secondary     Delta=-0.0033 us
+[2026-05-15 13:07:46] [INFO]         [OK] t161215_104717.rf.pcm_secondary     Delta=-0.0157 us
+[2026-05-15 13:07:46] [INFO]         [OK] t170330_033008.rf.pcm_secondary     Delta=+0.0552 us
+[2026-05-15 13:07:46] [INFO]         [OK] t170625_212437.rf.pcm_secondary     Delta=-0.0006 us
+[2026-05-15 13:07:46] [INFO]         [OK] t160706_002604.rf.pcm_secondary     Delta=+0.0059 us
+[2026-05-15 13:07:46] [INFO]         [OK] t170627_042547.rf.pcm_secondary     Delta=-0.0036 us
+[2026-05-15 13:07:46] [INFO]         [OK] t170304_064140.rf.pcm_secondary     Delta=+0.0015 us
+[2026-05-15 13:07:46] [INFO]         [OK] t170626_050826.rf.pcm_secondary     Delta=-0.0007 us
+[2026-05-15 13:07:47] [INFO]         [OK] t160827_210041.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:47] [INFO]         [OK] t170104_082707.rf.pcm_secondary     Delta=-0.0086 us
+[2026-05-15 13:07:47] [INFO]         [OK] t171016_132837.rf.pcm_secondary     Delta=-0.0005 us
+[2026-05-15 13:07:47] [INFO]         [OK] t170414_033919.rf.pcm_secondary     Delta=+0.0058 us
+[2026-05-15 13:07:47] [INFO]         [OK] t170127_085439.rf.pcm_secondary     Delta=-0.0310 us
+[2026-05-15 13:07:47] [INFO]         [OK] t160410_031209.rf.pcm_secondary     Delta=+0.0110 us
+[2026-05-15 13:07:47] [INFO]         [OK] t171218_155548.rf.pcm_secondary     Delta=+0.0024 us
+[2026-05-15 13:07:47] [INFO]         [OK] t170926_144107.rf.pcm_secondary     Delta=-0.0018 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180114_124929.rf.pcm_secondary     Delta=-0.0231 us
+[2026-05-15 13:07:47] [INFO]         [OK] t171227_112749.rf.pcm_secondary     Delta=-0.0068 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180328_044322.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_022916.rf.pcm_secondary     Delta=-0.0128 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_015236.rf.pcm_secondary     Delta=-0.0419 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_030558.rf.pcm_secondary     Delta=+0.0549 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180401_031018.rf.pcm_secondary     Delta=-0.0000 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_042000.rf.pcm_secondary     Delta=+0.0160 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_045657.rf.pcm_secondary     Delta=-0.0043 us
+[2026-05-15 13:07:47] [INFO]         [OK] t171229_105801.rf.pcm_secondary     Delta=-0.0485 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_053338.rf.pcm_secondary     Delta=+0.0079 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_040128.rf.pcm_secondary     Delta=+0.0046 us
+[2026-05-15 13:07:47] [INFO]         [OK] t170625_201608.rf.pcm_secondary     Delta=+0.0121 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_061020.rf.pcm_secondary     Delta=-0.0175 us
+[2026-05-15 13:07:47] [INFO]         [OK] t170823_183419.rf.pcm_secondary     Delta=+0.0302 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_051519.rf.pcm_secondary     Delta=+0.0371 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_062849.rf.pcm_secondary     Delta=-0.0315 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180530_221616.rf.pcm_secondary     Delta=-0.0099 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180415_081848.rf.pcm_secondary     Delta=+0.0151 us
+[2026-05-15 13:07:47] [INFO]         [OK] t171210_131338.rf.pcm_secondary     Delta=-0.0051 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180522_001755.rf.pcm_secondary     Delta=+0.0587 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180327_095957.rf.pcm_secondary     Delta=-0.0043 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180703_231900.rf.pcm_secondary     Delta=-0.0163 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180309_070758.rf.pcm_secondary     Delta=-0.0114 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180712_203558.rf.pcm_secondary     Delta=-0.0163 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180612_022334.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:47] [INFO]         [OK] t180622_195856.rf.pcm_secondary     Delta=+0.0029 us
+[2026-05-15 13:07:48] [INFO]         [OK] t180816_192300.rf.pcm_secondary     Delta=+0.0040 us
+[2026-05-15 13:07:48] [INFO]         [OK] t180920_142136.rf.pcm_secondary     Delta=+0.0047 us
+[2026-05-15 13:07:48] [INFO]         [OK] t180726_212510.rf.pcm_secondary     Delta=-0.0425 us
+[2026-05-15 13:07:48] [INFO]         [OK] t180621_214046.rf.pcm_secondary     Delta=+0.0137 us
+[2026-05-15 13:07:48] [INFO]         [OK] t181017_153028.rf.pcm_secondary     Delta=+0.0145 us
+[2026-05-15 13:07:48] [INFO]         [OK] t170330_054520.rf.pcm_secondary     Delta=+0.0231 us
+[2026-05-15 13:07:48] [INFO]         [OK] t180602_004109.rf.pcm_secondary     Delta=-0.0054 us
+[2026-05-15 13:07:48] [INFO]         [OK] t180915_155837.rf.pcm_secondary     Delta=+0.0058 us
+[2026-05-15 13:07:48] [INFO]         [OK] t180929_204518.rf.pcm_secondary     Delta=+0.0065 us
+[2026-05-15 13:07:48] [INFO]         [OK] t181201_131450.rf.pcm_secondary     Delta=+0.0071 us
+[2026-05-15 13:07:48] [INFO]         [OK] t181226_093128.rf.pcm_secondary     Delta=+0.0207 us
+[2026-05-15 13:07:49] [INFO]         [OK] t180522_224535.rf.pcm_secondary     Delta=-0.0011 us
+[2026-05-15 13:07:49] [INFO]         [OK] t190118_113112.rf.pcm_secondary     Delta=-0.0295 us
+[2026-05-15 13:07:49] [INFO]         [OK] t180518_013648.rf.pcm_secondary     Delta=+0.0108 us
+[2026-05-15 13:07:49] [INFO]         [OK] t180727_211739.rf.pcm_secondary     Delta=-0.0086 us
+[2026-05-15 13:07:49] [INFO]         [OK] t180623_203547.rf.pcm_secondary     Delta=+0.0033 us
+[2026-05-15 13:07:49] [INFO]         [OK] t190429_052432.rf.pcm_secondary     Delta=-0.0296 us
+[2026-05-15 13:07:49] [INFO]         [OK] t190322_034518.rf.pcm_secondary     Delta=+0.0320 us
+[2026-05-15 13:07:49] [INFO]         [OK] t190504_044751.rf.pcm_secondary     Delta=+0.0177 us
+[2026-05-15 13:07:49] [INFO]         [OK] t180929_215158.rf.pcm_secondary     Delta=-0.0192 us
+[2026-05-15 13:07:50] [INFO]         [OK] t190721_180120.rf.pcm_secondary     Delta=-0.0230 us
+[2026-05-15 13:07:50] [INFO]         [OK] t181105_120157.rf.pcm_secondary     Delta=-0.0050 us
+[2026-05-15 13:07:51] [INFO]         Skipped 7935 epochs with no measurable triplets
+[2026-05-15 13:07:51] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:07:51] [INFO] ═══ GEOMETRIC CLOSURE DELAY ANALYSIS: J0437-4715
+[2026-05-15 13:07:51] [INFO] ═══ ======================================================================
+[2026-05-15 13:07:51] [INFO]         Epochs analyzed:          1391/9326 viable
+[2026-05-15 13:07:51] [INFO]         Total triplets:         19,167
+[2026-05-15 13:07:51] [INFO]         
+[2026-05-15 13:07:51] [INFO]         ── TEP Magnitude |H| (Mean of |geometric_delta|) ---
+[2026-05-15 13:07:51] [INFO]         Total |H| Mean:    8.100 +/- 0.102 ns (mean/weighted-SEM ratio = 79.5 sigma)
+[2026-05-15 13:07:51] [INFO]         Unweighted |H| Mean: 27.948 ns
+[2026-05-15 13:07:51] [INFO]         Noise floor E[|H|]:      6.810 ns (from epoch-level sigma)
+[2026-05-15 13:07:51] [INFO] [PASS]   Noise-subtracted excess:  1.290 ns (t = 12.7 sigma)
+[2026-05-15 13:07:51] [INFO]         
+[2026-05-15 13:07:51] [INFO]         -- Signed Mean (Diagnostic: shows bipolar cancellation)
+[2026-05-15 13:07:51] [INFO]         Signed mean:              -0.184 +/- 0.102 ns
+[2026-05-15 13:07:51] [INFO]         Signed t-statistic:       -1.80 sigma
+[2026-05-15 13:07:51] [INFO]         
+[2026-05-15 13:07:51] [INFO]         -- Robust Estimator (10% trimmed mean of |H|) ------
+[2026-05-15 13:07:51] [INFO]         |H|_trimmed:              21.991 +/- 0.483 ns
+[2026-05-15 13:07:51] [INFO]         Trimmed t-statistic:      45.53 sigma
+[2026-05-15 13:07:51] [INFO]         
+[2026-05-15 13:07:51] [INFO]         -- Phase Closure (Circular Statistics) -------------
+[2026-05-15 13:07:51] [INFO]         Circular mean psi:        +0.9840 rad
+[2026-05-15 13:07:51] [INFO]         Circular SE:              0.0464 rad (R_bar = 0.308)
+[2026-05-15 13:07:51] [INFO]         Bootstrap SE:             0.1246 rad
+[2026-05-15 13:07:51] [INFO]         95% Bootstrap CI:         [+0.7413, +1.2308] rad
+[2026-05-15 13:07:51] [INFO]         Rayleigh Z:               59.21 (p = 1.39e-13)
+[2026-05-15 13:07:51] [INFO]         V-test (mu0=0):           +4.26 (p = 2.04e-05)
+[2026-05-15 13:07:51] [INFO]         Legacy t-statistic:       20.35 sigma
+[2026-05-15 13:07:51] [INFO] [PASS] 
+  High-significance TEP detection (Phase Closure): Rayleigh p = 1.39e-13, V-test p = 2.04e-05
+[2026-05-15 13:07:51] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:07:51] [INFO] [PASS] J0437 full: Extracted 1391 epoch results
+[2026-05-15 13:07:52] [INFO]       
+Processing J0437-4715 (Mode: sb0)...
+[2026-05-15 13:07:52] [INFO] ═══ 
+Processing J0437-4715...
+[2026-05-15 13:07:52] [INFO] ═══ ============================================================
+[2026-05-15 13:07:52] [INFO]       Processing 9324 epochs with 12 parallel workers...
+[2026-05-15 13:07:53] [INFO]         [OK] a070814_232141.rf.pcm_sb0_secondary Delta=-0.0189 us
+[2026-05-15 13:07:54] [INFO]         [OK] p161215_170000.rf.pcm_sb0_secondary Delta=+0.0027 us
+[2026-05-15 13:07:54] [INFO]         [OK] r080101_083548.rf.pcm_sb0_secondary Delta=-0.0122 us
+[2026-05-15 13:07:54] [INFO]         [OK] s080707_214942.rf.pcm_sb0_secondary Delta=+0.0027 us
+[2026-05-15 13:07:54] [INFO]         [OK] s080713_215123.rf.pcm_sb0_secondary Delta=+0.0069 us
+[2026-05-15 13:07:54] [INFO]         [OK] s090416_065219.rf.pcm_sb0_secondary Delta=+0.0079 us
+[2026-05-15 13:07:54] [INFO]         [OK] s110225_072646.rf.pcm_sb0_secondary Delta=-0.0056 us
+[2026-05-15 13:07:54] [INFO]         [OK] s110928_162238.rf.pcm_sb0_secondary Delta=-0.0036 us
+[2026-05-15 13:07:54] [INFO]         [OK] s101221_153307.rf.pcm_sb0_secondary Delta=-0.0117 us
+[2026-05-15 13:07:54] [INFO]         [OK] s130128_133134.rf.pcm_sb0_secondary Delta=+0.0169 us
+[2026-05-15 13:07:54] [INFO]         [OK] s130128_075103.rf.pcm_sb0_secondary Delta=-0.0052 us
+[2026-05-15 13:07:54] [INFO]         [OK] t110225_072646.rf.pcm_sb0_secondary Delta=-0.0056 us
+[2026-05-15 13:07:54] [INFO]         [OK] t130128_075103.rf.pcm_sb0_secondary Delta=-0.0052 us
+[2026-05-15 13:07:54] [INFO]         [OK] t130128_133135.rf.pcm_sb0_secondary Delta=+0.0169 us
+[2026-05-15 13:07:54] [INFO]         [OK] t141010_152458.rf.pcm_sb0_secondary Delta=+0.0039 us
+[2026-05-15 13:07:54] [INFO]         [OK] t150903_214848.rf.pcm_sb0_secondary Delta=+0.0038 us
+[2026-05-15 13:07:54] [INFO]         [OK] t170712_014932.rf.pcm_sb0_secondary Delta=+0.0057 us
+[2026-05-15 13:07:55] [INFO]         Skipped 9307 epochs with no measurable triplets
+[2026-05-15 13:07:55] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:07:55] [INFO] ═══ GEOMETRIC CLOSURE DELAY ANALYSIS: J0437-4715
+[2026-05-15 13:07:55] [INFO] ═══ ======================================================================
+[2026-05-15 13:07:55] [INFO]         Epochs analyzed:          17/9324 viable
+[2026-05-15 13:07:55] [INFO]         Total triplets:         62
+[2026-05-15 13:07:55] [INFO]         
+[2026-05-15 13:07:55] [INFO]         ── TEP Magnitude |H| (Mean of |geometric_delta|) ---
+[2026-05-15 13:07:55] [INFO]         Total |H| Mean:    8.589 +/- 1.797 ns (mean/weighted-SEM ratio = 4.8 sigma)
+[2026-05-15 13:07:55] [INFO]         Unweighted |H| Mean: 16.970 ns
+[2026-05-15 13:07:55] [INFO]         Noise floor E[|H|]:      5.043 ns (from epoch-level sigma)
+[2026-05-15 13:07:55] [INFO]         Noise-subtracted excess:  3.546 ns (t = 2.0 sigma)
+[2026-05-15 13:07:55] [INFO]         
+[2026-05-15 13:07:55] [INFO]         -- Signed Mean (Diagnostic: shows bipolar cancellation)
+[2026-05-15 13:07:55] [INFO]         Signed mean:              -0.383 +/- 1.797 ns
+[2026-05-15 13:07:55] [INFO]         Signed t-statistic:       -0.21 sigma
+[2026-05-15 13:07:55] [INFO]         
+[2026-05-15 13:07:55] [INFO]         -- Robust Estimator (10% trimmed mean of |H|) ------
+[2026-05-15 13:07:55] [INFO]         |H|_trimmed:              16.970 +/- 4.982 ns
+[2026-05-15 13:07:55] [INFO]         Trimmed t-statistic:      3.41 sigma
+[2026-05-15 13:07:55] [INFO]         
+[2026-05-15 13:07:55] [INFO]         -- Phase Closure (Circular Statistics) -------------
+[2026-05-15 13:07:55] [INFO]         Circular mean psi:        +1.7166 rad
+[2026-05-15 13:07:55] [INFO]         Circular SE:              0.4987 rad (R_bar = 0.537)
+[2026-05-15 13:07:55] [INFO]         Bootstrap SE:             0.9311 rad
+[2026-05-15 13:07:55] [INFO]         95% Bootstrap CI:         [+1.2840, -1.9823] rad
+[2026-05-15 13:07:55] [INFO]         Rayleigh Z:               1.38 (p = 5.02e-01)
+[2026-05-15 13:07:55] [INFO]         V-test (mu0=0):           -0.17 (p = 8.65e-01)
+[2026-05-15 13:07:55] [INFO]         Legacy t-statistic:       1.67 sigma
+[2026-05-15 13:07:55] [INFO]       
+  Note: No significant phase closure coherence (Rayleigh p = 5.02e-01, V-test p = 8.65e-01) (Delay Excess: 2.0 sigma)
+[2026-05-15 13:07:55] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:07:55] [INFO] [PASS] J0437 sb0: Extracted 17 epoch results
+[2026-05-15 13:07:55] [INFO]       
+Processing J0437-4715 (Mode: sb1)...
+[2026-05-15 13:07:55] [INFO] ═══ 
+Processing J0437-4715...
+[2026-05-15 13:07:55] [INFO] ═══ ============================================================
+[2026-05-15 13:07:55] [INFO]       Processing 9324 epochs with 12 parallel workers...
+[2026-05-15 13:07:56] [INFO]         [OK] s080224_080115.rf.pcm_sb1_secondary Delta=+0.0316 us
+[2026-05-15 13:07:56] [INFO]         [OK] s081015_151419.rf.pcm_sb1_secondary Delta=-0.0092 us
+[2026-05-15 13:07:56] [INFO]         [OK] s080714_015650.rf.pcm_sb1_secondary Delta=+0.0074 us
+[2026-05-15 13:07:56] [INFO]         [OK] s100410_041600.rf.pcm_sb1_secondary Delta=+0.0313 us
+[2026-05-15 13:07:57] [INFO]         [OK] s120121_075246.rf.pcm_sb1_secondary Delta=-0.0376 us
+[2026-05-15 13:07:57] [INFO]         [OK] s101222_105926.rf.pcm_sb1_secondary Delta=+0.0032 us
+[2026-05-15 13:07:57] [INFO]         [OK] s100414_015106.rf.pcm_sb1_secondary Delta=+0.0069 us
+[2026-05-15 13:07:57] [INFO]         [OK] t120121_075255.rf.pcm_sb1_secondary Delta=-0.0045 us
+[2026-05-15 13:07:57] [INFO]         [OK] t130128_100743.rf.pcm_sb1_secondary Delta=-0.0686 us
+[2026-05-15 13:07:57] [INFO]         Skipped 9315 epochs with no measurable triplets
+[2026-05-15 13:07:57] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:07:57] [INFO] ═══ GEOMETRIC CLOSURE DELAY ANALYSIS: J0437-4715
+[2026-05-15 13:07:57] [INFO] ═══ ======================================================================
+[2026-05-15 13:07:57] [INFO]         Epochs analyzed:          9/9324 viable
+[2026-05-15 13:07:57] [INFO]         Total triplets:         72
+[2026-05-15 13:07:57] [INFO]         
+[2026-05-15 13:07:57] [INFO]         ── TEP Magnitude |H| (Mean of |geometric_delta|) ---
+[2026-05-15 13:07:57] [INFO]         Total |H| Mean:    9.852 +/- 1.934 ns (mean/weighted-SEM ratio = 5.1 sigma)
+[2026-05-15 13:07:57] [INFO]         Unweighted |H| Mean: 14.627 ns
+[2026-05-15 13:07:57] [INFO]         Noise floor E[|H|]:      7.805 ns (from epoch-level sigma)
+[2026-05-15 13:07:57] [INFO]         Noise-subtracted excess:  2.046 ns (t = 1.1 sigma)
+[2026-05-15 13:07:57] [INFO]         
+[2026-05-15 13:07:57] [INFO]         -- Signed Mean (Diagnostic: shows bipolar cancellation)
+[2026-05-15 13:07:57] [INFO]         Signed mean:              -0.084 +/- 1.934 ns
+[2026-05-15 13:07:57] [INFO]         Signed t-statistic:       -0.04 sigma
+[2026-05-15 13:07:57] [INFO]         
+[2026-05-15 13:07:57] [INFO]         -- Robust Estimator (10% trimmed mean of |H|) ------
+[2026-05-15 13:07:57] [INFO]         |H|_trimmed:              14.627 +/- 2.599 ns
+[2026-05-15 13:07:57] [INFO]         Trimmed t-statistic:      5.63 sigma
+[2026-05-15 13:07:57] [INFO]         
+[2026-05-15 13:07:57] [INFO]         -- Phase Closure (Circular Statistics) -------------
+[2026-05-15 13:07:57] [INFO]         Circular mean psi:        -0.6655 rad
+[2026-05-15 13:07:57] [INFO]         Circular SE:              0.4985 rad (R_bar = 0.537)
+[2026-05-15 13:07:57] [INFO]         Bootstrap SE:             1.4810 rad
+[2026-05-15 13:07:57] [INFO]         95% Bootstrap CI:         [+2.6855, +2.3499] rad
+[2026-05-15 13:07:57] [INFO]         Rayleigh Z:               1.18 (p = 5.54e-01)
+[2026-05-15 13:07:57] [INFO]         V-test (mu0=0):           +0.85 (p = 3.93e-01)
+[2026-05-15 13:07:57] [INFO]         Legacy t-statistic:       -0.76 sigma
+[2026-05-15 13:07:57] [INFO]       
+  Note: No significant phase closure coherence (Rayleigh p = 5.54e-01, V-test p = 3.93e-01) (Delay Excess: 1.1 sigma)
+[2026-05-15 13:07:57] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:07:57] [INFO] [PASS] J0437 sb1: Extracted 9 epoch results
+[2026-05-15 13:07:57] [INFO]       
+Processing J1603-7202...
+[2026-05-15 13:07:57] [INFO] ═══ 
+Processing J1603-7202...
+[2026-05-15 13:07:57] [INFO] ═══ ============================================================
+[2026-05-15 13:07:57] [INFO]       Processing 761 epochs with 12 parallel workers...
+[2026-05-15 13:07:58] [INFO]         [OK] a060211_153423.rf.pcm_secondary     Delta=+0.0022 us
+[2026-05-15 13:07:58] [INFO]         [OK] a060407_152453.rf.pcm_secondary     Delta=+0.0000 us
+[2026-05-15 13:07:58] [INFO]         [OK] a060131_162033.rf.pcm_secondary     Delta=+0.0017 us
+[2026-05-15 13:07:58] [INFO]         [OK] a070121_165621.rf.pcm_secondary     Delta=+0.0050 us
+[2026-05-15 13:07:58] [INFO]         [OK] a060701_062805.rf.pcm_secondary     Delta=-0.0011 us
+[2026-05-15 13:07:58] [INFO]         [OK] a060510_094043.rf.pcm_secondary     Delta=-0.0023 us
+[2026-05-15 13:07:58] [INFO]         [OK] a060322_000213.rf.pcm_secondary     Delta=+0.0280 us
+[2026-05-15 13:07:58] [INFO]         [OK] a070417_174554.rf.pcm_secondary     Delta=-0.0032 us
+[2026-05-15 13:07:58] [INFO]         [OK] a070410_171351.rf.pcm_secondary     Delta=+0.0047 us
+[2026-05-15 13:07:58] [INFO]         [OK] a060511_101714.rf.pcm_secondary     Delta=-0.0212 us
+[2026-05-15 13:07:58] [INFO]         [OK] a060527_085713.rf.pcm_secondary     Delta=-0.0124 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2003-08-29-10:47:48.rf.pcm_seconda Delta=-0.0010 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2002-12-14-06:00:00.rf.pcm_seconda Delta=+0.0282 us
+[2026-05-15 13:07:58] [INFO]         [OK] a070501_121609.rf.pcm_secondary     Delta=-0.0194 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2004-02-01-16:59:17.rf.pcm_seconda Delta=-0.0091 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2002-12-14-06:16:11.rf.pcm_seconda Delta=+0.0282 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2004-07-17-07:15:56.rf.pcm_seconda Delta=+0.0251 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2004-06-10-09:42:52.rf.pcm_seconda Delta=-0.0070 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2004-06-12-09:22:53.rf.pcm_seconda Delta=-0.0818 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2004-06-25-12:15:49.rf.pcm_seconda Delta=+0.0278 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2003-10-08-00:58:18.rf.pcm_seconda Delta=+0.0000 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2004-11-06-00:30:37.rf.pcm_seconda Delta=+0.0061 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2004-04-12-17:06:34.rf.pcm_seconda Delta=-0.0115 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2004-09-11-09:13:05.rf.pcm_seconda Delta=-0.0008 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2004-05-19-10:25:49.rf.pcm_seconda Delta=+0.0312 us
+[2026-05-15 13:07:58] [INFO]         [OK] m2004-09-24-02:13:36.rf.pcm_seconda Delta=-0.0016 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-02-17-14:34:07.rf.pcm_seconda Delta=+0.0318 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-01-07-21:08:19.rf.pcm_seconda Delta=-0.0140 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-03-23-12:50:30.rf.pcm_seconda Delta=+0.0096 us
+[2026-05-15 13:07:59] [INFO]         [OK] a060302_143843.rf.pcm_secondary     Delta=+0.0079 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2003-01-10-20:20:46.rf.pcm_seconda Delta=+0.0164 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-03-01-23:15:59.rf.pcm_seconda Delta=-0.0165 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-03-23-13:23:47.rf.pcm_seconda Delta=+0.0130 us
+[2026-05-15 13:07:59] [INFO]         [OK] a071012_102211.rf.pcm_secondary     Delta=-0.0000 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2004-09-26-00:26:45.rf.pcm_seconda Delta=+0.0004 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-04-23-14:30:28.rf.pcm_seconda Delta=+0.0718 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-04-21-14:11:46.rf.pcm_seconda Delta=-0.0426 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-06-27-17:17:14.rf.pcm_seconda Delta=-0.0625 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2006-01-31-16:20:41.rf.pcm_seconda Delta=+0.0187 us
+[2026-05-15 13:07:59] [INFO]         [OK] a061217_210439.rf.pcm_secondary     Delta=+0.0024 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2004-12-21-22:12:48.rf.pcm_seconda Delta=-0.0134 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2004-11-08-03:15:28.rf.pcm_seconda Delta=+0.0035 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-06-27-08:42:09.rf.pcm_seconda Delta=-0.0221 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2007-02-05-17:36:51.rf.pcm_seconda Delta=-0.0112 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2006-11-02-21:30:11.rf.pcm_seconda Delta=-0.0008 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-05-26-13:08:18.rf.pcm_seconda Delta=-0.0819 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2007-09-11-01:08:52.rf.pcm_seconda Delta=-0.0038 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2008-01-23-16:48:40.rf.pcm_seconda Delta=-0.0576 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2006-10-20-00:55:02.rf.pcm_seconda Delta=+0.0008 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2008-12-31-04:05:34.rf.pcm_seconda Delta=-0.0122 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2007-01-21-03:34:13.rf.pcm_seconda Delta=+0.0101 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2009-02-10-17:41:42.rf.pcm_seconda Delta=-0.0493 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2006-11-03-21:07:51.rf.pcm_seconda Delta=+0.0021 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2009-11-10-21:32:51.rf.pcm_seconda Delta=-0.0110 us
+[2026-05-15 13:07:59] [INFO]         [OK] a051113_233623.rf.pcm_secondary     Delta=+0.0004 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2010-05-04-15:35:00.rf.pcm_seconda Delta=+0.0258 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2008-03-01-14:30:15.rf.pcm_seconda Delta=-0.0090 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2002-12-14-06:00:00.rf.pcm_seconda Delta=+0.0345 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2002-12-14-06:16:11.rf.pcm_seconda Delta=+0.0345 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-02-01-16:59:17.rf.pcm_seconda Delta=-0.0066 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-06-27-16:16:14.rf.pcm_seconda Delta=+0.0144 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2003-08-29-10:47:48.rf.pcm_seconda Delta=+0.0058 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2004-08-31-09:19:34.rf.pcm_seconda Delta=+0.0018 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-04-12-17:40:20.rf.pcm_seconda Delta=-0.0241 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-03-06-13:58:17.rf.pcm_seconda Delta=-0.0418 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-07-24-04:42:19.rf.pcm_seconda Delta=-0.0283 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-04-12-17:06:34.rf.pcm_seconda Delta=-0.0480 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2010-05-04-16:43:10.rf.pcm_seconda Delta=-0.0246 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-05-19-10:25:49.rf.pcm_seconda Delta=-0.0299 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-03-22-17:25:34.rf.pcm_seconda Delta=+0.0795 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-09-24-02:13:36.rf.pcm_seconda Delta=-0.0012 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-12-01-20:16:57.rf.pcm_seconda Delta=+0.0070 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-11-08-03:15:28.rf.pcm_seconda Delta=-0.0111 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-08-10-04:45:40.rf.pcm_seconda Delta=-0.0023 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2005-11-29-19:33:01.rf.pcm_seconda Delta=+0.0027 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-08-31-09:19:34.rf.pcm_seconda Delta=-0.0025 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-03-23-12:50:30.rf.pcm_seconda Delta=-0.0432 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-03-01-23:15:59.rf.pcm_seconda Delta=-0.0650 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-11-06-00:30:37.rf.pcm_seconda Delta=+0.0010 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-06-25-12:15:49.rf.pcm_seconda Delta=+0.0061 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-02-17-14:34:07.rf.pcm_seconda Delta=+0.0353 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-12-21-22:12:48.rf.pcm_seconda Delta=-0.0039 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-03-23-13:23:47.rf.pcm_seconda Delta=+0.0989 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-05-26-13:08:18.rf.pcm_seconda Delta=+0.0181 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-06-27-08:42:09.rf.pcm_seconda Delta=-0.0109 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-01-07-21:08:19.rf.pcm_seconda Delta=-0.0142 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-06-27-17:17:14.rf.pcm_seconda Delta=+0.0248 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-09-03-05:07:00.rf.pcm_seconda Delta=-0.0080 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-01-02-17:36:11.rf.pcm_seconda Delta=+0.0313 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-05-11-08:57:18.rf.pcm_seconda Delta=-0.0257 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-06-27-16:16:14.rf.pcm_seconda Delta=-0.0320 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-06-14-09:50:01.rf.pcm_seconda Delta=+0.1069 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-11-29-19:33:01.rf.pcm_seconda Delta=+0.0151 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-07-16-15:38:54.rf.pcm_seconda Delta=-0.0046 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-08-19-02:49:51.rf.pcm_seconda Delta=+0.0010 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-03-22-00:02:21.rf.pcm_seconda Delta=-0.1441 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2005-07-31-04:38:07.rf.pcm_seconda Delta=+0.0066 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-12-17-05:56:53.rf.pcm_seconda Delta=+0.0157 us
+[2026-05-15 13:07:59] [INFO]         [OK] m2006-10-04-01:48:41.rf.pcm_seconda Delta=-0.0000 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-10-19-03:38:21.rf.pcm_seconda Delta=+0.0006 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-12-17-21:04:41.rf.pcm_seconda Delta=+0.0110 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2007-01-21-03:34:13.rf.pcm_seconda Delta=-0.0071 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-11-02-21:30:11.rf.pcm_seconda Delta=+0.0036 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2003-01-10-20:20:46.rf.pcm_seconda Delta=+0.0493 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2004-09-26-00:26:45.rf.pcm_seconda Delta=-0.0005 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2003-10-08-00:58:18.rf.pcm_seconda Delta=+0.0000 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2008-09-02-04:11:32.rf.pcm_seconda Delta=+0.0072 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2008-08-14-05:24:04.rf.pcm_seconda Delta=-0.0027 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-11-03-21:07:51.rf.pcm_seconda Delta=-0.0007 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2010-05-04-15:35:00.rf.pcm_seconda Delta=-0.0016 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2010-05-04-18:01:10.rf.pcm_seconda Delta=+0.0186 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2009-11-10-21:32:51.rf.pcm_seconda Delta=+0.0003 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2009-04-24-21:36:05.rf.pcm_seconda Delta=-0.0217 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2007-04-10-17:13:53.rf.pcm_seconda Delta=-0.1237 us
+[2026-05-15 13:07:59] [INFO]         [OK] r080101_172959.rf.pcm_secondary     Delta=+0.0201 us
+[2026-05-15 13:07:59] [INFO]         [OK] r070729_135319.rf.pcm_secondary     Delta=+0.0023 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2010-06-02-14:45:41.rf.pcm_seconda Delta=-0.0058 us
+[2026-05-15 13:07:59] [INFO]         [OK] n2006-10-04-01:48:41.rf.pcm_seconda Delta=-0.0002 us
+[2026-05-15 13:07:59] [INFO]         [OK] r071230_180309.rf.pcm_secondary     Delta=-0.0004 us
+[2026-05-15 13:07:59] [INFO]         [OK] r071012_102211.rf.pcm_secondary     Delta=+0.0000 us
+[2026-05-15 13:07:59] [INFO]         [OK] r090520_192442.rf.pcm_secondary     Delta=+0.0080 us
+[2026-05-15 13:07:59] [INFO]         [OK] r080121_170629.rf.pcm_secondary     Delta=+0.0052 us
+[2026-05-15 13:07:59] [INFO]         [OK] r091215_183601.rf.pcm_secondary     Delta=+0.0037 us
+[2026-05-15 13:08:00] [INFO]         [OK] r080301_143013.rf.pcm_secondary     Delta=+0.0019 us
+[2026-05-15 13:08:00] [INFO]         [OK] r090609_075142.rf.pcm_secondary     Delta=+0.0241 us
+[2026-05-15 13:08:00] [INFO]         [OK] r100205_234200.rf.pcm_secondary     Delta=+0.0297 us
+[2026-05-15 13:08:00] [INFO]         [OK] r091110_213249.rf.pcm_secondary     Delta=-0.0029 us
+[2026-05-15 13:08:00] [INFO]         [OK] n2005-04-23-14:30:28.rf.pcm_seconda Delta=+0.0590 us
+[2026-05-15 13:08:00] [INFO]         [OK] s080814_052402.rf.pcm_secondary     Delta=+0.0042 us
+[2026-05-15 13:08:00] [INFO]         [OK] s100220_014159.rf.pcm_secondary     Delta=-0.0093 us
+[2026-05-15 13:08:00] [INFO]         [OK] s090424_213603.rf.pcm_secondary     Delta=-0.0232 us
+[2026-05-15 13:08:00] [INFO]         [OK] s081230_172121.rf.pcm_secondary     Delta=+0.0019 us
+[2026-05-15 13:08:00] [INFO]         [OK] r090222_141059.rf.pcm_secondary     Delta=+0.0024 us
+[2026-05-15 13:08:00] [INFO]         [OK] s100504_164308.rf.pcm_secondary     Delta=-0.0307 us
+[2026-05-15 13:08:00] [INFO]         [OK] s100222_135307.rf.pcm_secondary     Delta=+0.0184 us
+[2026-05-15 13:08:00] [INFO]         [OK] n2006-10-20-00:55:02.rf.pcm_seconda Delta=+0.0004 us
+[2026-05-15 13:08:00] [INFO]         [OK] s100618_075233.rf.pcm_secondary     Delta=-0.0203 us
+[2026-05-15 13:08:00] [INFO]         [OK] s091012_095323.rf.pcm_secondary     Delta=-0.0001 us
+[2026-05-15 13:08:00] [INFO]         [OK] s100504_180108.rf.pcm_secondary     Delta=+0.0243 us
+[2026-05-15 13:08:00] [INFO]         [OK] s090210_174650.rf.pcm_secondary     Delta=+0.0120 us
+[2026-05-15 13:08:00] [INFO]         [OK] s090830_054809.rf.pcm_secondary     Delta=-0.0019 us
+[2026-05-15 13:08:00] [INFO]         [OK] s100407_225107.rf.pcm_secondary     Delta=+0.0016 us
+[2026-05-15 13:08:00] [INFO]         [OK] n2005-10-03-01:54:40.rf.pcm_seconda Delta=-0.0001 us
+[2026-05-15 13:08:00] [INFO]         [OK] s101023_092218.rf.pcm_secondary     Delta=+0.0006 us
+[2026-05-15 13:08:00] [INFO]         [OK] s110522_124916.rf.pcm_secondary     Delta=+0.0258 us
+[2026-05-15 13:08:00] [INFO]         [OK] s100709_113559.rf.pcm_secondary     Delta=-0.0096 us
+[2026-05-15 13:08:00] [INFO]         [OK] s110522_131903.rf.pcm_secondary     Delta=+0.0020 us
+[2026-05-15 13:08:00] [INFO]         [OK] s111017_052847.rf.pcm_secondary     Delta=+0.0001 us
+[2026-05-15 13:08:00] [INFO]         [OK] s101129_041458.rf.pcm_secondary     Delta=-0.0004 us
+[2026-05-15 13:08:00] [INFO]         [OK] s090609_075100.rf.pcm_secondary     Delta=+0.0019 us
+[2026-05-15 13:08:00] [INFO]         [OK] s120406_201258.rf.pcm_secondary     Delta=+0.0056 us
+[2026-05-15 13:08:01] [INFO]         [OK] s120524_085927.rf.pcm_secondary     Delta=-0.0035 us
+[2026-05-15 13:08:01] [INFO]         [OK] s110914_012406.rf.pcm_secondary     Delta=-0.0005 us
+[2026-05-15 13:08:01] [INFO]         [OK] s120708_085739.rf.pcm_secondary     Delta=+0.0087 us
+[2026-05-15 13:08:01] [INFO]         [OK] s120617_131019.rf.pcm_secondary     Delta=-0.0027 us
+[2026-05-15 13:08:01] [INFO]         [OK] s100918_025348.rf.pcm_secondary     Delta=-0.0001 us
+[2026-05-15 13:08:01] [INFO]         [OK] s100205_234159.rf.pcm_secondary     Delta=+0.0032 us
+[2026-05-15 13:08:01] [INFO]         [OK] s120502_143818.rf.pcm_secondary     Delta=-0.0218 us
+[2026-05-15 13:08:01] [INFO]         [OK] s130127_161503.rf.pcm_secondary     Delta=-0.0075 us
+[2026-05-15 13:08:01] [INFO]         [OK] s120105_202738.rf.pcm_secondary     Delta=+0.0015 us
+[2026-05-15 13:08:01] [INFO]         [OK] s111201_065457.rf.pcm_secondary     Delta=-0.0013 us
+[2026-05-15 13:08:01] [INFO]         [OK] s110612_070527.rf.pcm_secondary     Delta=-0.0142 us
+[2026-05-15 13:08:01] [INFO]         [OK] s130411_220042.rf.pcm_secondary     Delta=-0.0015 us
+[2026-05-15 13:08:01] [INFO]         [OK] s110711_131630.rf.pcm_secondary     Delta=+0.0133 us
+[2026-05-15 13:08:01] [INFO]         [OK] s130810_034742.rf.pcm_secondary     Delta=+0.0036 us
+[2026-05-15 13:08:01] [INFO]         [OK] s130512_094041.rf.pcm_secondary     Delta=-0.0020 us
+[2026-05-15 13:08:01] [INFO]         [OK] s130930_013922.rf.pcm_secondary     Delta=+0.0001 us
+[2026-05-15 13:08:01] [INFO]         [OK] s130901_022422.rf.pcm_secondary     Delta=+0.0003 us
+[2026-05-15 13:08:01] [INFO]         [OK] s120727_143229.rf.pcm_secondary     Delta=-0.0002 us
+[2026-05-15 13:08:02] [INFO]         [OK] s130128_155314.rf.pcm_secondary     Delta=+0.0018 us
+[2026-05-15 13:08:02] [INFO]         [OK] s111120_015227.rf.pcm_secondary     Delta=-0.0023 us
+[2026-05-15 13:08:02] [INFO]         [OK] t080814_052401.rf.pcm_secondary     Delta=+0.0009 us
+[2026-05-15 13:08:02] [INFO]         [OK] s080902_041130.rf.pcm_secondary     Delta=+0.0015 us
+[2026-05-15 13:08:02] [INFO]         [OK] s130525_090326.rf.pcm_secondary     Delta=+0.0020 us
+[2026-05-15 13:08:02] [INFO]         [OK] t081230_172121.rf.pcm_secondary     Delta=-0.0019 us
+[2026-05-15 13:08:02] [INFO]         [OK] t081015_025800.rf.pcm_secondary     Delta=-0.0000 us
+[2026-05-15 13:08:02] [INFO]         [OK] s130722_093212.rf.pcm_secondary     Delta=+0.0012 us
+[2026-05-15 13:08:02] [INFO]         [OK] t090210_174140.rf.pcm_secondary     Delta=+0.0226 us
+[2026-05-15 13:08:02] [INFO]         [OK] s120616_084757.rf.pcm_secondary     Delta=-0.0179 us
+[2026-05-15 13:08:02] [INFO]         [OK] t090222_141059.rf.pcm_secondary     Delta=+0.0143 us
+[2026-05-15 13:08:02] [INFO]         [OK] t090317_122220.rf.pcm_secondary     Delta=+0.0022 us
+[2026-05-15 13:08:02] [INFO]         [OK] t081113_203139.rf.pcm_secondary     Delta=-0.0022 us
+[2026-05-15 13:08:02] [INFO]         [OK] t090424_213602.rf.pcm_secondary     Delta=+0.0232 us
+[2026-05-15 13:08:02] [INFO]         [OK] t090923_090250.rf.pcm_secondary     Delta=+0.0005 us
+[2026-05-15 13:08:02] [INFO]         [OK] s130705_073132.rf.pcm_secondary     Delta=+0.0009 us
+[2026-05-15 13:08:02] [INFO]         [OK] t100504_180109.rf.pcm_secondary     Delta=+0.0074 us
+[2026-05-15 13:08:02] [INFO]         [OK] t100906_050547.rf.pcm_secondary     Delta=-0.0032 us
+[2026-05-15 13:08:02] [INFO]         [OK] s130622_062552.rf.pcm_secondary     Delta=+0.0017 us
+[2026-05-15 13:08:02] [INFO]         [OK] t110522_124917.rf.pcm_secondary     Delta=+0.0357 us
+[2026-05-15 13:08:02] [INFO]         [OK] t100220_014200.rf.pcm_secondary     Delta=+0.0008 us
+[2026-05-15 13:08:02] [INFO]         [OK] t100918_025347.rf.pcm_secondary     Delta=+0.0007 us
+[2026-05-15 13:08:02] [INFO]         [OK] t100504_164308.rf.pcm_secondary     Delta=-0.0093 us
+[2026-05-15 13:08:02] [INFO]         [OK] t110522_131929.rf.pcm_secondary     Delta=+0.0197 us
+[2026-05-15 13:08:02] [INFO]         [OK] t110914_012415.rf.pcm_secondary     Delta=-0.0008 us
+[2026-05-15 13:08:02] [INFO]         [OK] t111017_052847.rf.pcm_secondary     Delta=+0.0000 us
+[2026-05-15 13:08:02] [INFO]         [OK] t101129_041533.rf.pcm_secondary     Delta=+0.0005 us
+[2026-05-15 13:08:02] [INFO]         [OK] t111201_065457.rf.pcm_secondary     Delta=-0.0004 us
+[2026-05-15 13:08:02] [INFO]         [OK] t100709_113602.rf.pcm_secondary     Delta=+0.0085 us
+[2026-05-15 13:08:02] [INFO]         [OK] t091012_095323.rf.pcm_secondary     Delta=+0.0001 us
+[2026-05-15 13:08:02] [INFO]         [OK] t121023_024825.rf.pcm_secondary     Delta=-0.0003 us
+[2026-05-15 13:08:03] [INFO]         [OK] t081231_040532.rf.pcm_secondary     Delta=+0.0083 us
+[2026-05-15 13:08:03] [INFO]         [OK] s140426_140812.rf.pcm_secondary     Delta=+0.0319 us
+[2026-05-15 13:08:03] [INFO]         [OK] s140111_025252.rf.pcm_secondary     Delta=+0.0140 us
+[2026-05-15 13:08:03] [INFO]         [OK] t130321_182827.rf.pcm_secondary     Delta=-0.0324 us
+[2026-05-15 13:08:03] [INFO]         [OK] t130622_062551.rf.pcm_secondary     Delta=-0.0145 us
+[2026-05-15 13:08:03] [INFO]         [OK] t130127_161503.rf.pcm_secondary     Delta=+0.0283 us
+[2026-05-15 13:08:03] [INFO]         [OK] t130512_094042.rf.pcm_secondary     Delta=+0.0027 us
+[2026-05-15 13:08:03] [INFO]         [OK] t110612_070533.rf.pcm_secondary     Delta=-0.0016 us
+[2026-05-15 13:08:03] [INFO]         [OK] t120406_201300.rf.pcm_secondary     Delta=+0.0229 us
+[2026-05-15 13:08:03] [INFO]         [OK] t130824_031407.rf.pcm_secondary     Delta=+0.0022 us
+[2026-05-15 13:08:03] [INFO]         [OK] t130512_192705.rf.pcm_secondary     Delta=+0.0165 us
+[2026-05-15 13:08:03] [INFO]         [OK] t120727_143236.rf.pcm_secondary     Delta=-0.0066 us
+[2026-05-15 13:08:03] [INFO]         [OK] t100205_234200.rf.pcm_secondary     Delta=+0.0032 us
+[2026-05-15 13:08:03] [INFO]         [OK] t140927_012111.rf.pcm_secondary     Delta=-0.0001 us
+[2026-05-15 13:08:03] [INFO]         [OK] t140731_074531.rf.pcm_secondary     Delta=+0.0024 us
+[2026-05-15 13:08:03] [INFO]         [OK] t130705_073131.rf.pcm_secondary     Delta=-0.0082 us
+[2026-05-15 13:08:03] [INFO]         [OK] t141010_000551.rf.pcm_secondary     Delta=-0.0000 us
+[2026-05-15 13:08:03] [INFO]         [OK] t130930_014038.rf.pcm_secondary     Delta=+0.0002 us
+[2026-05-15 13:08:04] [INFO]         [OK] t111120_015228.rf.pcm_secondary     Delta=+0.0020 us
+[2026-05-15 13:08:04] [INFO]         [OK] t130128_155314.rf.pcm_secondary     Delta=+0.0043 us
+[2026-05-15 13:08:04] [INFO]         [OK] t141219_044031.rf.pcm_secondary     Delta=+0.0007 us
+[2026-05-15 13:08:04] [INFO]         [OK] t141219_004431.rf.pcm_secondary     Delta=+0.0011 us
+[2026-05-15 13:08:04] [INFO]         [OK] t130901_022408.rf.pcm_secondary     Delta=+0.0027 us
+[2026-05-15 13:08:04] [INFO]         [OK] t151212_211122.rf.pcm_secondary     Delta=+0.0011 us
+[2026-05-15 13:08:04] [INFO]         [OK] t151106_023122.rf.pcm_secondary     Delta=+0.0002 us
+[2026-05-15 13:08:04] [INFO]         [OK] t140926_074512.rf.pcm_secondary     Delta=+0.0001 us
+[2026-05-15 13:08:04] [INFO]         [OK] t161106_212742.zp_secondary         Delta=-0.0003 us
+[2026-05-15 13:08:04] [INFO]         [OK] t150107_192521.rf.pcm_secondary     Delta=-0.0111 us
+[2026-05-15 13:08:04] [INFO]         [OK] w040724_044217.rf.pcm_secondary     Delta=-0.0045 us
+[2026-05-15 13:08:04] [INFO]         [OK] t161111_222242.zp_secondary         Delta=+0.0013 us
+[2026-05-15 13:08:04] [INFO]         [OK] t140111_025252.rf.pcm_secondary     Delta=+0.0009 us
+[2026-05-15 13:08:04] [INFO]         [OK] w041022_224135.rf.pcm_secondary     Delta=-0.0005 us
+[2026-05-15 13:08:04] [INFO]         [OK] w041201_201653.rf.pcm_secondary     Delta=-0.0004 us
+[2026-05-15 13:08:04] [INFO]         [OK] w040926_002643.rf.pcm_secondary     Delta=+0.0006 us
+[2026-05-15 13:08:04] [INFO]         [OK] w041221_221244.rf.pcm_secondary     Delta=-0.0061 us
+[2026-05-15 13:08:04] [INFO]         [OK] w050104_191836.rf.pcm_secondary     Delta=+0.0084 us
+[2026-05-15 13:08:04] [INFO]         [OK] w050107_210813.rf.pcm_secondary     Delta=+0.0025 us
+[2026-05-15 13:08:04] [INFO]         [OK] t140426_140757.rf.pcm_secondary     Delta=+0.0154 us
+[2026-05-15 13:08:04] [INFO]         [OK] w050510_180814.rf.pcm_secondary     Delta=+0.0008 us
+[2026-05-15 13:08:04] [INFO]         [OK] w040831_091932.rf.pcm_secondary     Delta=-0.0015 us
+[2026-05-15 13:08:05] [INFO]         [OK] t161112_041612.zp_secondary         Delta=+0.0009 us
+[2026-05-15 13:08:05] [INFO]         [OK] t161108_211111.zp_secondary         Delta=+0.0006 us
+[2026-05-15 13:08:06] [INFO]         [OK] t161109_060912.zp_secondary         Delta=+0.0002 us
+[2026-05-15 13:08:07] [INFO]         [OK] t161113_210812.zp_secondary         Delta=+0.0005 us
+[2026-05-15 13:08:07] [INFO]         [OK] t161110_051122.zp_secondary         Delta=+0.0009 us
+[2026-05-15 13:08:07] [INFO]         [OK] t161107_213901.zp_secondary         Delta=+0.0018 us
+[2026-05-15 13:08:09] [INFO]         [OK] t161107_061813.zp_secondary         Delta=-0.0001 us
+[2026-05-15 13:08:09] [INFO]         [OK] t161108_061411.zp_secondary         Delta=-0.0007 us
+[2026-05-15 13:08:09] [INFO]         Skipped 513 epochs with no measurable triplets
+[2026-05-15 13:08:09] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:09] [INFO] ═══ GEOMETRIC CLOSURE DELAY ANALYSIS: J1603-7202
+[2026-05-15 13:08:09] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:09] [INFO]         Epochs analyzed:          248/761 viable
+[2026-05-15 13:08:09] [INFO]         Total triplets:         3,653
+[2026-05-15 13:08:09] [INFO]         
+[2026-05-15 13:08:09] [INFO]         ── TEP Magnitude |H| (Mean of |geometric_delta|) ---
+[2026-05-15 13:08:09] [INFO]         Total |H| Mean:    2.557 +/- 0.120 ns (mean/weighted-SEM ratio = 21.4 sigma)
+[2026-05-15 13:08:09] [INFO]         Unweighted |H| Mean: 15.984 ns
+[2026-05-15 13:08:09] [INFO]         Noise floor E[|H|]:      2.332 ns (from epoch-level sigma)
+[2026-05-15 13:08:09] [INFO]         Noise-subtracted excess:  0.225 ns (t = 1.9 sigma)
+[2026-05-15 13:08:09] [INFO]         
+[2026-05-15 13:08:09] [INFO]         -- Signed Mean (Diagnostic: shows bipolar cancellation)
+[2026-05-15 13:08:09] [INFO]         Signed mean:              +0.151 +/- 0.120 ns
+[2026-05-15 13:08:09] [INFO]         Signed t-statistic:       1.26 sigma
+[2026-05-15 13:08:09] [INFO]         
+[2026-05-15 13:08:09] [INFO]         -- Robust Estimator (10% trimmed mean of |H|) ------
+[2026-05-15 13:08:09] [INFO]         |H|_trimmed:              12.070 +/- 0.848 ns
+[2026-05-15 13:08:09] [INFO]         Trimmed t-statistic:      14.24 sigma
+[2026-05-15 13:08:09] [INFO]         
+[2026-05-15 13:08:09] [INFO]         -- Phase Closure (Circular Statistics) -------------
+[2026-05-15 13:08:09] [INFO]         Circular mean psi:        -2.3276 rad
+[2026-05-15 13:08:09] [INFO]         Circular SE:              0.1836 rad (R_bar = 0.027)
+[2026-05-15 13:08:09] [INFO]         Bootstrap SE:             1.5716 rad
+[2026-05-15 13:08:09] [INFO]         95% Bootstrap CI:         [+1.0552, +0.5744] rad
+[2026-05-15 13:08:09] [INFO]         Rayleigh Z:               0.13 (p = 9.36e-01)
+[2026-05-15 13:08:09] [INFO]         V-test (mu0=0):           -0.25 (p = 8.03e-01)
+[2026-05-15 13:08:09] [INFO]         Legacy t-statistic:       -18.34 sigma
+[2026-05-15 13:08:09] [INFO]       
+  Note: No significant phase closure coherence (Rayleigh p = 9.36e-01, V-test p = 8.03e-01) (Delay Excess: 1.9 sigma)
+[2026-05-15 13:08:09] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:09] [INFO] [PASS] J1603: Extracted 248 epoch results
+[2026-05-15 13:08:09] [INFO]       J1603 Summary: |H| = 2.557 +/- 0.120 ns, t = 21.36sigma
+[2026-05-15 13:08:09] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:09] [INFO] ═══ Jiamusi Pulsar Analysis
+[2026-05-15 13:08:09] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:09] [INFO]       
+Processing B1933+16...
+[2026-05-15 13:08:09] [INFO] ═══ 
+Processing B1933+16...
+[2026-05-15 13:08:09] [INFO] ═══ ============================================================
+[2026-05-15 13:08:09] [INFO]       Processing 8 epochs with 12 parallel workers...
+[2026-05-15 13:08:10] [INFO]         Skipped 8 epochs with no measurable triplets
+[2026-05-15 13:08:10] [INFO]       
+Processing B0355+54...
+[2026-05-15 13:08:10] [INFO] ═══ 
+Processing B0355+54...
+[2026-05-15 13:08:10] [INFO] ═══ ============================================================
+[2026-05-15 13:08:10] [INFO]       Processing 5 epochs with 12 parallel workers...
+[2026-05-15 13:08:13] [INFO]         [OK] B0355_201711091756d_secondary       Delta=+0.0015 us
+[2026-05-15 13:08:13] [INFO]         Skipped 4 epochs with no measurable triplets
+[2026-05-15 13:08:13] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:13] [INFO] ═══ GEOMETRIC CLOSURE DELAY ANALYSIS: B0355+54
+[2026-05-15 13:08:13] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:13] [INFO]         Epochs analyzed:          1/5 viable
+[2026-05-15 13:08:13] [INFO]         Total triplets:         20
+[2026-05-15 13:08:13] [INFO]         
+[2026-05-15 13:08:13] [INFO]         ── TEP Magnitude |H| (Mean of |geometric_delta|) ---
+[2026-05-15 13:08:13] [INFO]         Total |H| Mean:    1.722 +/- 1.092 ns (mean/weighted-SEM ratio = 1.6 sigma)
+[2026-05-15 13:08:13] [INFO]         Unweighted |H| Mean: 1.722 ns
+[2026-05-15 13:08:13] [INFO]         Noise floor E[|H|]:      0.145 ns (from epoch-level sigma)
+[2026-05-15 13:08:13] [INFO]         Noise-subtracted excess:  1.577 ns (t = 1.4 sigma)
+[2026-05-15 13:08:13] [INFO]         
+[2026-05-15 13:08:13] [INFO]         -- Signed Mean (Diagnostic: shows bipolar cancellation)
+[2026-05-15 13:08:13] [INFO]         Signed mean:              -0.248 +/- 1.092 ns
+[2026-05-15 13:08:13] [INFO]         Signed t-statistic:       -0.23 sigma
+[2026-05-15 13:08:13] [INFO]         
+[2026-05-15 13:08:13] [INFO]         -- Robust Estimator (10% trimmed mean of |H|) ------
+[2026-05-15 13:08:13] [INFO]         |H|_trimmed:              1.722 +/- 1.092 ns
+[2026-05-15 13:08:13] [INFO]         Trimmed t-statistic:      1.58 sigma
+[2026-05-15 13:08:13] [INFO]         
+[2026-05-15 13:08:13] [INFO]         -- Phase Closure (Circular Statistics) -------------
+[2026-05-15 13:08:13] [INFO]         Circular mean psi:        +0.1494 rad
+[2026-05-15 13:08:13] [INFO]         Circular SE:              0.0000 rad (R_bar = 1.000)
+[2026-05-15 13:08:13] [INFO]         Bootstrap SE:             inf rad
+[2026-05-15 13:08:13] [INFO]         95% Bootstrap CI:         [-inf, +inf] rad
+[2026-05-15 13:08:13] [INFO]         Rayleigh Z:               0.00 (p = 1.00e+00)
+[2026-05-15 13:08:13] [INFO]         V-test (mu0=0):           +0.00 (p = 1.00e+00)
+[2026-05-15 13:08:13] [INFO]         Legacy t-statistic:       0.00 sigma
+[2026-05-15 13:08:13] [INFO]       
+  Note: No significant phase closure coherence (Rayleigh p = 1.00e+00, V-test p = 1.00e+00) (Delay Excess: 1.4 sigma)
+[2026-05-15 13:08:13] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:13] [INFO]       B0355+54: 1 viable epochs
+[2026-05-15 13:08:13] [INFO]       
+Processing 8 additional Jiamusi pulsars...
+[2026-05-15 13:08:13] [INFO]         Processing B0329+54...
+[2026-05-15 13:08:13] [INFO] ═══ 
+Processing B0329+54...
+[2026-05-15 13:08:13] [INFO] ═══ ============================================================
+[2026-05-15 13:08:13] [INFO]       Processing 3 epochs with 12 parallel workers...
+[2026-05-15 13:08:14] [INFO]         Skipped 3 epochs with no measurable triplets
+[2026-05-15 13:08:14] [INFO]         Processing B0540+23...
+[2026-05-15 13:08:14] [INFO] ═══ 
+Processing B0540+23...
+[2026-05-15 13:08:14] [INFO] ═══ ============================================================
+[2026-05-15 13:08:14] [INFO]       Processing 3 epochs with 12 parallel workers...
+[2026-05-15 13:08:15] [INFO]         [OK] B0540_201506251100d_secondary       Delta=-0.0030 us
+[2026-05-15 13:08:16] [INFO]         [OK] B0540_201608090445d_secondary       Delta=-0.0004 us
+[2026-05-15 13:08:16] [INFO]         Skipped 1 epochs with no measurable triplets
+[2026-05-15 13:08:16] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:16] [INFO] ═══ GEOMETRIC CLOSURE DELAY ANALYSIS: B0540+23
+[2026-05-15 13:08:16] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:16] [INFO]         Epochs analyzed:          2/3 viable
+[2026-05-15 13:08:16] [INFO]         Total triplets:         40
+[2026-05-15 13:08:16] [INFO]         
+[2026-05-15 13:08:16] [INFO]         ── TEP Magnitude |H| (Mean of |geometric_delta|) ---
+[2026-05-15 13:08:16] [INFO]         Total |H| Mean:    1.945 +/- 0.926 ns (mean/weighted-SEM ratio = 2.1 sigma)
+[2026-05-15 13:08:16] [INFO]         Unweighted |H| Mean: 4.385 ns
+[2026-05-15 13:08:16] [INFO]         Noise floor E[|H|]:      1.503 ns (from epoch-level sigma)
+[2026-05-15 13:08:16] [INFO]         Noise-subtracted excess:  0.442 ns (t = 0.5 sigma)
+[2026-05-15 13:08:16] [INFO]         
+[2026-05-15 13:08:16] [INFO]         -- Signed Mean (Diagnostic: shows bipolar cancellation)
+[2026-05-15 13:08:16] [INFO]         Signed mean:              -0.822 +/- 0.926 ns
+[2026-05-15 13:08:16] [INFO]         Signed t-statistic:       -0.89 sigma
+[2026-05-15 13:08:16] [INFO]         
+[2026-05-15 13:08:16] [INFO]         -- Robust Estimator (10% trimmed mean of |H|) ------
+[2026-05-15 13:08:16] [INFO]         |H|_trimmed:              4.385 +/- 3.698 ns
+[2026-05-15 13:08:16] [INFO]         Trimmed t-statistic:      1.19 sigma
+[2026-05-15 13:08:16] [INFO]         
+[2026-05-15 13:08:16] [INFO]         -- Phase Closure (Circular Statistics) -------------
+[2026-05-15 13:08:16] [INFO]         Circular mean psi:        +1.8283 rad
+[2026-05-15 13:08:16] [INFO]         Circular SE:              0.6132 rad (R_bar = 0.687)
+[2026-05-15 13:08:16] [INFO]         Bootstrap SE:             inf rad
+[2026-05-15 13:08:16] [INFO]         95% Bootstrap CI:         [-inf, +inf] rad
+[2026-05-15 13:08:16] [INFO]         Rayleigh Z:               0.00 (p = 1.00e+00)
+[2026-05-15 13:08:16] [INFO]         V-test (mu0=0):           +0.00 (p = 1.00e+00)
+[2026-05-15 13:08:16] [INFO]         Legacy t-statistic:       1.00 sigma
+[2026-05-15 13:08:16] [INFO]       
+  Note: No significant phase closure coherence (Rayleigh p = 1.00e+00, V-test p = 1.00e+00) (Delay Excess: 0.5 sigma)
+[2026-05-15 13:08:16] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:16] [INFO]       B0540+23: 2 viable epochs
+[2026-05-15 13:08:16] [INFO]         Processing B0740-28...
+[2026-05-15 13:08:16] [INFO] ═══ 
+Processing B0740-28...
+[2026-05-15 13:08:16] [INFO] ═══ ============================================================
+[2026-05-15 13:08:16] [INFO]       Processing 3 epochs with 12 parallel workers...
+[2026-05-15 13:08:16] [INFO]         Skipped 3 epochs with no measurable triplets
+[2026-05-15 13:08:16] [INFO]         Processing B1508+55...
+[2026-05-15 13:08:16] [INFO] ═══ 
+Processing B1508+55...
+[2026-05-15 13:08:16] [INFO] ═══ ============================================================
+[2026-05-15 13:08:16] [INFO]       Processing 2 epochs with 12 parallel workers...
+[2026-05-15 13:08:17] [INFO]         [OK] B1508_201710310630d_secondary       Delta=-0.1109 us
+[2026-05-15 13:08:17] [INFO]         Skipped 1 epochs with no measurable triplets
+[2026-05-15 13:08:17] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:17] [INFO] ═══ GEOMETRIC CLOSURE DELAY ANALYSIS: B1508+55
+[2026-05-15 13:08:17] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:17] [INFO]         Epochs analyzed:          1/2 viable
+[2026-05-15 13:08:17] [INFO]         Total triplets:         20
+[2026-05-15 13:08:17] [INFO]         
+[2026-05-15 13:08:17] [INFO]         ── TEP Magnitude |H| (Mean of |geometric_delta|) ---
+[2026-05-15 13:08:17] [INFO]         Total |H| Mean:    247.105 +/- 74.293 ns (mean/weighted-SEM ratio = 3.3 sigma)
+[2026-05-15 13:08:17] [INFO]         Unweighted |H| Mean: 247.105 ns
+[2026-05-15 13:08:17] [INFO]         Noise floor E[|H|]:      264.055 ns (from epoch-level sigma)
+[2026-05-15 13:08:17] [INFO]         Noise-subtracted excess:  0.000 ns (t = 0.0 sigma)
+[2026-05-15 13:08:17] [INFO]         
+[2026-05-15 13:08:17] [INFO]         -- Signed Mean (Diagnostic: shows bipolar cancellation)
+[2026-05-15 13:08:17] [INFO]         Signed mean:              -96.234 +/- 74.293 ns
+[2026-05-15 13:08:17] [INFO]         Signed t-statistic:       -1.30 sigma
+[2026-05-15 13:08:17] [INFO]         
+[2026-05-15 13:08:17] [INFO]         -- Robust Estimator (10% trimmed mean of |H|) ------
+[2026-05-15 13:08:17] [INFO]         |H|_trimmed:              247.105 +/- 74.293 ns
+[2026-05-15 13:08:17] [INFO]         Trimmed t-statistic:      3.33 sigma
+[2026-05-15 13:08:17] [INFO]         
+[2026-05-15 13:08:17] [INFO]         -- Phase Closure (Circular Statistics) -------------
+[2026-05-15 13:08:17] [INFO]         Circular mean psi:        +1.4686 rad
+[2026-05-15 13:08:17] [INFO]         Circular SE:              0.0000 rad (R_bar = 1.000)
+[2026-05-15 13:08:17] [INFO]         Bootstrap SE:             inf rad
+[2026-05-15 13:08:17] [INFO]         95% Bootstrap CI:         [-inf, +inf] rad
+[2026-05-15 13:08:17] [INFO]         Rayleigh Z:               0.00 (p = 1.00e+00)
+[2026-05-15 13:08:17] [INFO]         V-test (mu0=0):           +0.00 (p = 1.00e+00)
+[2026-05-15 13:08:17] [INFO]         Legacy t-statistic:       0.00 sigma
+[2026-05-15 13:08:17] [INFO]       
+  Note: No significant phase closure coherence (Rayleigh p = 1.00e+00, V-test p = 1.00e+00) (Delay Excess: 0.0 sigma)
+[2026-05-15 13:08:17] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:17] [INFO]       B1508+55: 1 viable epochs
+[2026-05-15 13:08:17] [INFO]         Processing B2154+40...
+[2026-05-15 13:08:17] [INFO] ═══ 
+Processing B2154+40...
+[2026-05-15 13:08:17] [INFO] ═══ ============================================================
+[2026-05-15 13:08:17] [INFO]       Processing 3 epochs with 12 parallel workers...
+[2026-05-15 13:08:21] [INFO]         [OK] B2154_201710312035d_secondary       Delta=+0.0037 us
+[2026-05-15 13:08:21] [INFO]         Skipped 2 epochs with no measurable triplets
+[2026-05-15 13:08:21] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:21] [INFO] ═══ GEOMETRIC CLOSURE DELAY ANALYSIS: B2154+40
+[2026-05-15 13:08:21] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:21] [INFO]         Epochs analyzed:          1/3 viable
+[2026-05-15 13:08:21] [INFO]         Total triplets:         20
+[2026-05-15 13:08:21] [INFO]         
+[2026-05-15 13:08:21] [INFO]         ── TEP Magnitude |H| (Mean of |geometric_delta|) ---
+[2026-05-15 13:08:21] [INFO]         Total |H| Mean:    7.968 +/- 2.437 ns (mean/weighted-SEM ratio = 3.3 sigma)
+[2026-05-15 13:08:21] [INFO]         Unweighted |H| Mean: 7.968 ns
+[2026-05-15 13:08:21] [INFO]         Noise floor E[|H|]:      8.848 ns (from epoch-level sigma)
+[2026-05-15 13:08:21] [INFO]         Noise-subtracted excess:  0.000 ns (t = 0.0 sigma)
+[2026-05-15 13:08:21] [INFO]         
+[2026-05-15 13:08:21] [INFO]         -- Signed Mean (Diagnostic: shows bipolar cancellation)
+[2026-05-15 13:08:21] [INFO]         Signed mean:              -0.310 +/- 2.437 ns
+[2026-05-15 13:08:21] [INFO]         Signed t-statistic:       -0.13 sigma
+[2026-05-15 13:08:21] [INFO]         
+[2026-05-15 13:08:21] [INFO]         -- Robust Estimator (10% trimmed mean of |H|) ------
+[2026-05-15 13:08:21] [INFO]         |H|_trimmed:              7.968 +/- 2.437 ns
+[2026-05-15 13:08:21] [INFO]         Trimmed t-statistic:      3.27 sigma
+[2026-05-15 13:08:21] [INFO]         
+[2026-05-15 13:08:21] [INFO]         -- Phase Closure (Circular Statistics) -------------
+[2026-05-15 13:08:21] [INFO]         Circular mean psi:        +1.1659 rad
+[2026-05-15 13:08:21] [INFO]         Circular SE:              0.0000 rad (R_bar = 1.000)
+[2026-05-15 13:08:21] [INFO]         Bootstrap SE:             inf rad
+[2026-05-15 13:08:21] [INFO]         95% Bootstrap CI:         [-inf, +inf] rad
+[2026-05-15 13:08:21] [INFO]         Rayleigh Z:               0.00 (p = 1.00e+00)
+[2026-05-15 13:08:21] [INFO]         V-test (mu0=0):           +0.00 (p = 1.00e+00)
+[2026-05-15 13:08:21] [INFO]         Legacy t-statistic:       0.00 sigma
+[2026-05-15 13:08:21] [INFO]       
+  Note: No significant phase closure coherence (Rayleigh p = 1.00e+00, V-test p = 1.00e+00) (Delay Excess: 0.0 sigma)
+[2026-05-15 13:08:21] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:21] [INFO]       B2154+40: 1 viable epochs
+[2026-05-15 13:08:21] [INFO]         Processing B2310+42...
+[2026-05-15 13:08:21] [INFO] ═══ 
+Processing B2310+42...
+[2026-05-15 13:08:21] [INFO] ═══ ============================================================
+[2026-05-15 13:08:21] [INFO]       Processing 2 epochs with 12 parallel workers...
+[2026-05-15 13:08:21] [INFO]         Skipped 2 epochs with no measurable triplets
+[2026-05-15 13:08:21] [INFO]         Processing B2324+60...
+[2026-05-15 13:08:21] [INFO] ═══ 
+Processing B2324+60...
+[2026-05-15 13:08:21] [INFO] ═══ ============================================================
+[2026-05-15 13:08:21] [INFO]       Processing 2 epochs with 12 parallel workers...
+[2026-05-15 13:08:22] [INFO]         Skipped 2 epochs with no measurable triplets
+[2026-05-15 13:08:22] [INFO]         Processing B2351+61...
+[2026-05-15 13:08:22] [INFO] ═══ 
+Processing B2351+61...
+[2026-05-15 13:08:22] [INFO] ═══ ============================================================
+[2026-05-15 13:08:22] [INFO]       Processing 1 epochs with 12 parallel workers...
+[2026-05-15 13:08:23] [INFO]         Skipped 1 epochs with no measurable triplets
+[2026-05-15 13:08:23] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:23] [INFO] ═══ MeerKAT Pulsar Analysis
+[2026-05-15 13:08:23] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:23] [INFO]         Processing J0908-1739...
+[2026-05-15 13:08:23] [INFO] ═══ 
+Processing J0908-1739...
+[2026-05-15 13:08:23] [INFO] ═══ ============================================================
+[2026-05-15 13:08:23] [INFO]       Processing 1 epochs with 12 parallel workers...
+[2026-05-15 13:08:23] [INFO]         Skipped 1 epochs with no measurable triplets
+[2026-05-15 13:08:23] [INFO]       J0908-1739: No valid results
+[2026-05-15 13:08:23] [INFO]         Processing J0922-0638...
+[2026-05-15 13:08:23] [INFO] ═══ 
+Processing J0922-0638...
+[2026-05-15 13:08:23] [INFO] ═══ ============================================================
+[2026-05-15 13:08:23] [INFO]       Processing 1 epochs with 12 parallel workers...
+[2026-05-15 13:08:24] [INFO]         Skipped 1 epochs with no measurable triplets
+[2026-05-15 13:08:24] [INFO]       J0922-0638: No valid results
+[2026-05-15 13:08:24] [INFO]         Processing J1731-4744...
+[2026-05-15 13:08:24] [INFO] ═══ 
+Processing J1731-4744...
+[2026-05-15 13:08:24] [INFO] ═══ ============================================================
+[2026-05-15 13:08:24] [INFO]       Processing 1 epochs with 12 parallel workers...
+[2026-05-15 13:08:25] [INFO]         [OK] J1731-4744_secondary                Delta=-0.0032 us
+[2026-05-15 13:08:25] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:25] [INFO] ═══ GEOMETRIC CLOSURE DELAY ANALYSIS: J1731-4744
+[2026-05-15 13:08:25] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:25] [INFO]         Epochs analyzed:          1/1 viable
+[2026-05-15 13:08:25] [INFO]         Total triplets:         20
+[2026-05-15 13:08:25] [INFO]         
+[2026-05-15 13:08:25] [INFO]         ── TEP Magnitude |H| (Mean of |geometric_delta|) ---
+[2026-05-15 13:08:25] [INFO]         Total |H| Mean:    2.313 +/- 1.159 ns (mean/weighted-SEM ratio = 2.0 sigma)
+[2026-05-15 13:08:25] [INFO]         Unweighted |H| Mean: 2.313 ns
+[2026-05-15 13:08:25] [INFO]         Noise floor E[|H|]:      2.299 ns (from epoch-level sigma)
+[2026-05-15 13:08:25] [INFO]         Noise-subtracted excess:  0.014 ns (t = 0.0 sigma)
+[2026-05-15 13:08:25] [INFO]         
+[2026-05-15 13:08:25] [INFO]         -- Signed Mean (Diagnostic: shows bipolar cancellation)
+[2026-05-15 13:08:25] [INFO]         Signed mean:              -1.078 +/- 1.159 ns
+[2026-05-15 13:08:25] [INFO]         Signed t-statistic:       -0.93 sigma
+[2026-05-15 13:08:25] [INFO]         
+[2026-05-15 13:08:25] [INFO]         -- Robust Estimator (10% trimmed mean of |H|) ------
+[2026-05-15 13:08:25] [INFO]         |H|_trimmed:              2.313 +/- 1.159 ns
+[2026-05-15 13:08:25] [INFO]         Trimmed t-statistic:      1.99 sigma
+[2026-05-15 13:08:25] [INFO]         
+[2026-05-15 13:08:25] [INFO]         -- Phase Closure (Circular Statistics) -------------
+[2026-05-15 13:08:25] [INFO]         Circular mean psi:        -0.5761 rad
+[2026-05-15 13:08:25] [INFO]         Circular SE:              0.0000 rad (R_bar = 1.000)
+[2026-05-15 13:08:25] [INFO]         Bootstrap SE:             inf rad
+[2026-05-15 13:08:25] [INFO]         95% Bootstrap CI:         [-inf, +inf] rad
+[2026-05-15 13:08:25] [INFO]         Rayleigh Z:               0.00 (p = 1.00e+00)
+[2026-05-15 13:08:25] [INFO]         V-test (mu0=0):           +0.00 (p = 1.00e+00)
+[2026-05-15 13:08:25] [INFO]         Legacy t-statistic:       0.00 sigma
+[2026-05-15 13:08:25] [INFO]       
+  Note: No significant phase closure coherence (Rayleigh p = 1.00e+00, V-test p = 1.00e+00) (Delay Excess: 0.0 sigma)
+[2026-05-15 13:08:25] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:25] [INFO]       J1731-4744: 1 viable epochs
+[2026-05-15 13:08:25] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:25] [INFO] [PASS] STEP 003 COMPLETED SUCCESSFULLY
+[2026-05-15 13:08:25] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:25] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:25] [INFO] ═══ CONTROL PULSAR COMPARISON: J0437-4715 vs J1603-7202
+[2026-05-15 13:08:25] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:25] [INFO]         J0437-4715 Excess: 12.65sigma, H_ex = 1.290 ns
+[2026-05-15 13:08:25] [INFO]         J1603-7202 Excess: 1.88sigma, H_ex = 0.225 ns
+[2026-05-15 13:08:25] [INFO]         Difference Significance: 6.77sigma
+[2026-05-15 13:08:25] [INFO]         
+[2026-05-15 13:08:25] [INFO] [PASS]   Pipeline specificity confirmed: Signal difference significant (6.8sigma)
+[2026-05-15 13:08:25] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:25] [INFO] ═══ 
+======================================================================
+[2026-05-15 13:08:25] [INFO] ═══ CROSS-PULSAR VARIANCE DECOMPOSITION
+[2026-05-15 13:08:25] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:25] [INFO]         Model: sigma_circ^2 = sigma_signal^2 + k * (D/v)
+[2026-05-15 13:08:25] [INFO]         J0437: D/v = 1.50, sigma_circ^2 = 2.358 rad^2
+[2026-05-15 13:08:25] [INFO]         J1603: D/v = 7.89, sigma_circ^2 = 7.246 rad^2
+[2026-05-15 13:08:25] [INFO]         
+[2026-05-15 13:08:25] [INFO]         Fit: sigma_signal = 1.102 rad (63.1°)
+[2026-05-15 13:08:25] [INFO]         Fit: k = 0.764 rad^2 / (pc / km/s)
+[2026-05-15 13:08:25] [INFO]         R-squared = 1.000
+[2026-05-15 13:08:25] [INFO]         
+[2026-05-15 13:08:25] [INFO]         Intrinsic holonomy coherence: 1.102 rad (63.1°)
+[2026-05-15 13:08:25] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:25] [INFO] [PASS] Analysis complete. Results saved to results/
+[2026-05-15 13:08:25] [INFO] ═══ ======================================================================
+[2026-05-15 13:08:25] [INFO] ================================================================================
+[2026-05-15 13:08:25] [INFO] STEP COMPLETED SUCCESSFULLY (79.8 seconds)
+[2026-05-15 13:08:25] [INFO] ================================================================================

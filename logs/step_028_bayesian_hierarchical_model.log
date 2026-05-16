@@ -1,0 +1,44 @@
+[2026-05-15 13:18:14] [INFO] ================================================================================
+[2026-05-15 13:18:14] [INFO] STEP step_028_bayesian_hierarchical_model STARTED
+[2026-05-15 13:18:14] [INFO] Description: Bayesian hierarchical model (alternative implementation)
+[2026-05-15 13:18:14] [INFO] Physics: Alternative Bayesian model for TEP detection inference
+[2026-05-15 13:18:14] [INFO] Method: Hierarchical model with conjugate priors, numerical integration
+[2026-05-15 13:18:14] [INFO] ================================================================================
+[2026-05-15 13:18:15] [INFO] ═══ ================================================================================
+[2026-05-15 13:18:15] [INFO] ═══ STEP 028: BAYESIAN DIAGNOSTIC MODEL — UNSIGNED |H|
+[2026-05-15 13:18:15] [INFO] ═══ ================================================================================
+[2026-05-15 13:18:15] [INFO]       PyMC available: False
+[2026-05-15 13:18:15] [INFO]       Model: epoch mean(|delta_i|) with folded-noise-floor subtraction
+[2026-05-15 13:18:15] [INFO]       Primary TEP statistic remains phase closure from step_003
+[2026-05-15 13:18:15] [INFO] 
+[2026-05-15 13:18:15] [INFO]       Loading closure delay data...
+[2026-05-15 13:18:15] [INFO]       Loaded 1391 epochs
+[2026-05-15 13:18:15] [INFO]       Running Bayesian model...
+[2026-05-15 13:18:15] [INFO]       n_triplets = 19,167
+[2026-05-15 13:18:15] [INFO] ═══ ================================================================================
+[2026-05-15 13:18:15] [INFO] ═══ BAYESIAN RESULTS — UNSIGNED |H| DIAGNOSTIC
+[2026-05-15 13:18:15] [INFO] ═══ ================================================================================
+[2026-05-15 13:18:15] [INFO]       |H| excess mean     : 21.246 ns
+[2026-05-15 13:18:15] [INFO]       |H| excess std      : 0.8118 ns
+[2026-05-15 13:18:15] [INFO]       95% CI              : [19.655, 22.838] ns
+[2026-05-15 13:18:15] [INFO]       diagnostic z        : 26.2sigma (not inferential)
+[2026-05-15 13:18:15] [INFO]       3sigma detection    : False
+[2026-05-15 13:18:15] [INFO]       5sigma detection    : False
+[2026-05-15 13:18:15] [INFO] 
+[2026-05-15 13:18:15] [INFO]       Signed mean (diagnostic -- bipolar cancellation):
+[2026-05-15 13:18:15] [INFO]         mean = +0.686 ns  t = +1.07sigma
+[2026-05-15 13:18:15] [INFO]         Note: Unweighted signed mean across independent epochs; diagnostic only.
+[2026-05-15 13:18:15] [INFO] 
+[2026-05-15 13:18:15] [INFO]       Frequentist comparison (unsigned-|H| excess diagnostic):
+[2026-05-15 13:18:15] [INFO]         Frequentist: 1.290 +/- 0.869 ns  (t = n/a)
+[2026-05-15 13:18:15] [INFO]         Bayesian:    21.246 +/- 0.8118 ns  (diagnostic z = 26.2, not inferential)
+[2026-05-15 13:18:15] [INFO]         Difference:  19.9567 ns (1547.23%)
+[2026-05-15 13:18:15] [INFO]         Both detect 5sigma: False
+[2026-05-15 13:18:15] [INFO]         Both detect 3sigma: False
+[2026-05-15 13:18:15] [WARNING] [WARN] Unsigned-|H| diagnostic is not promoted to a detection; use phase closure for primary inference.
+[2026-05-15 13:18:15] [INFO]       Converged: True  Rhat = 1.000
+[2026-05-15 13:18:15] [INFO] [PASS] Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_028_bayesian_hierarchical_results.json
+[2026-05-15 13:18:15] [INFO] ═══ ================================================================================
+[2026-05-15 13:18:15] [INFO] ================================================================================
+[2026-05-15 13:18:15] [INFO] STEP COMPLETED SUCCESSFULLY (1.7 seconds)
+[2026-05-15 13:18:15] [INFO] ================================================================================

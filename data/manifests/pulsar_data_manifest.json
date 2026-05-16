@@ -1,0 +1,33 @@
+{
+  "manifest_metadata": {
+    "generated": "2026-05-09T15:33:19.781821",
+    "version": "1.0",
+    "description": "Multi-pulsar data availability manifest"
+  },
+  "pulsars": {
+    "J1909-3744": {
+      "status": "available_locally",
+      "local_files": 2,
+      "total_size_bytes": 399,
+      "sources": [
+        "local"
+      ]
+    },
+    "J0437-4715": {
+      "status": "available_locally",
+      "local_files": 4,
+      "total_size_bytes": 627,
+      "sources": [
+        "local"
+      ]
+    },
+    "data": {
+      "status": "available_locally",
+      "local_files": 2296,
+      "total_size_bytes": 7151412638,
+      "sources": [
+        "local"
+      ]
+    }
+  }
+}

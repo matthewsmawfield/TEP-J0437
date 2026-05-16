@@ -1,0 +1,203 @@
+/* Simple academic manuscript styling */
+
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Print optimization - remove constraints for PDF output */
+@media print {
+  section {
+    max-width: none;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    page-break-after: avoid;
+  }
+  
+  h3, h4 {
+    margin-top: 15px;
+    page-break-after: avoid;
+  }
+}
+
+ .figure-row {
+   display: flex;
+   gap: 18px;
+   align-items: flex-start;
+   margin: 18px 0;
+ }
+ 
+ .figure-row .figure-panel {
+   flex: 1 1 0;
+   margin: 0;
+ }
+ 
+ .figure-row .figure-panel img {
+   width: 100%;
+   height: auto;
+   display: block;
+ }
+ 
+ @media (max-width: 900px) {
+   .figure-row {
+     flex-direction: column;
+   }
+ }
+
+h2 {
+  border-bottom: 2px solid #2C3E50;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #1C2E4A;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #2C3E50;
+  padding-bottom: 5px;
+  color: #1C2E4A;
+}
+
+h4 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+ul, ol {
+  line-height: 1.8;
+  margin: 10px 0 20px 20px;
+}
+
+table, table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td,
+table.data-table th, table.data-table td {
+  padding: 8px 12px;
+  border: 1px solid #5D6D7E;
+  text-align: left;
+}
+
+table th, table.data-table th {
+  background-color: rgba(28, 46, 74, 0.08);
+  font-weight: 600;
+  color: #1C2E4A;
+}
+
+table tr:nth-child(even),
+table.data-table tr:nth-child(even) {
+  background-color: rgba(28, 46, 74, 0.03);
+}
+
+.table-caption {
+  font-size: 0.9em;
+  color: #566573;
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.note, .caveat, .finding {
+  border-left: 3px solid #84a3aa;
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+blockquote {
+  border-left: 3px solid #84a3aa;
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+code {
+  background: rgba(28, 46, 74, 0.06);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Citation styling - clean superscript numbers */
+sup.cite {
+  font-size: 0.7em;
+  color: #1A5276;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 1px;
+}
+
+/* Scope box styling */
+.scope-box {
+  background: rgba(28, 46, 74, 0.04);
+  border: 1px solid #2C3E50;
+  border-radius: 4px;
+  padding: 15px 20px;
+  margin: 20px 0;
+}
+
+.scope-box h4 {
+  margin-top: 0;
+  color: #1A5276;
+  font-size: 1em;
+}
+
+sup.cite:hover {
+  text-decoration: underline;
+  color: #84a3aa;
+}
+
+/* Reference list styling */
+.ref-item {
+  margin-bottom: 12px;
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+/* DOI and download icon styling */
+.doi {
+  font-size: 0.9em;
+  color: #566573;
+}
+
+.doi svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.doi .pdf-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  color: #495773;
+  opacity: 0.8;
+}
+
+.doi .pdf-link:hover {
+  color: #1a365d;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.doi .pdf-link svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}

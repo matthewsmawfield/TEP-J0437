@@ -1,0 +1,63 @@
+{
+  "bayesian_results": {
+    "mu_H": {
+      "mean": 21.24649318353029,
+      "unclipped_excess": 21.24649318353029,
+      "raw_magnitude": 28.056827362701537,
+      "noise_floor": 6.810334179171245,
+      "std": 0.8117700689084804,
+      "ci_lower": 19.65545308474207,
+      "ci_upper": 22.83753328231851,
+      "t_equivalent": 26.173043325062086
+    },
+    "signed_diagnostic": {
+      "mean_ns": 0.6859936764646859,
+      "sem_ns": 0.6432094737855037,
+      "t_signed": 1.0665167483112192,
+      "median_ns": -0.055639799052108196,
+      "mad_ns": 7.803377820983298,
+      "note": "Unweighted signed mean across independent epochs; diagnostic only."
+    },
+    "p_pos": {
+      "mean": 0.4953271028037383,
+      "std": 0.013405637515789387
+    },
+    "detection": {
+      "prob_H_excess_positive": 1.0,
+      "detected_5sigma": false,
+      "detected_3sigma": false,
+      "primary_statistic": "diagnostic mean(|geometric_delta|) excess above folded-noise floor",
+      "valid_for_primary_inference": false,
+      "note": "Unsigned-|H| epoch summaries disagree with the step_003 noise-subtracted excess and are not used as detection evidence."
+    },
+    "convergence": {
+      "rhat_mean": 1.0,
+      "converged": true
+    }
+  },
+  "comparison_with_frequentist": {
+    "frequentist": {
+      "H_excess_ns": 1.289828040272936,
+      "SEM_ns": 0.8692781889106548,
+      "t_statistic": null
+    },
+    "bayesian": {
+      "H_ns": 21.24649318353029,
+      "CI_lower_ns": 19.65545308474207,
+      "CI_upper_ns": 22.83753328231851,
+      "t_equivalent": 26.173043325062086
+    },
+    "agreement": {
+      "H_difference_ns": 19.956665143257354,
+      "agreement_fraction": 15.472345553159467,
+      "both_detect_5sigma": false,
+      "both_detect_3sigma": false
+    }
+  },
+  "model_info": {
+    "backend": "analytic_diagnostic",
+    "model": "unsigned_H_epoch_mean_noise_floor_diagnostic",
+    "primary_statistic": "phase closure from step_003; unsigned |H| is diagnostic only",
+    "note": "This result audits the unsigned delay-amplitude channel after subtracting the folded-noise floor. It deliberately avoids inverse-variance precision domination and is not used as the primary evidence for TEP. The primary inference is the phase-domain circular-statistics result."
+  }
+}

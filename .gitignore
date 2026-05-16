@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Data files (large)
+*.fits
+*.h5
+*.hdf5
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.windsurf/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local tool/cache output
+scratch/
+node_modules/
+scripts/utils/matplotlib/
+
+# Temp files
+*.tmp
+*.temp

@@ -1,0 +1,13 @@
+[2026-05-15 13:18:17] [INFO] ================================================================================
+[2026-05-15 13:18:17] [INFO] STEP step_018_ensemble_scaling_analysis STARTED
+[2026-05-15 13:18:17] [INFO] Description: Ensemble Scaling Analysis (Ensemble Overview)
+[2026-05-15 13:18:17] [INFO] Physics: Testing the TEP scaling law |H| ∝ D × v across 8 independent pulsars
+[2026-05-15 13:18:17] [INFO] Method: Multi-pulsar correlation analysis with Jiamusi offset correction
+[2026-05-15 13:18:17] [INFO] ================================================================================
+[2026-05-15 13:18:17] [INFO]       ========================================================================================================================
+[2026-05-15 13:18:17] [INFO]       ========================================================================================================================
+[2026-05-15 13:18:17] [WARNING] [WARN] Insufficient data for scaling fit (requires at least 3 pulsars).
+[2026-05-15 13:18:17] [INFO]       Partial results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_018_ensemble_scaling_results.json
+[2026-05-15 13:18:17] [INFO] ================================================================================
+[2026-05-15 13:18:17] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-15 13:18:17] [INFO] ================================================================================

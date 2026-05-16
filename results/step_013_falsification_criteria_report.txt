@@ -1,0 +1,19 @@
+======================================================================
+TEP FALSIFICATION CRITERIA REPORT
+======================================================================
+
+Criteria passed: 4/5
+Criteria failed: 0/5
+Criteria inconclusive: 1/5
+Status: TEP NOT FALSIFIED
+
+criterion_1: Phase Closure significance (primary)
+  Status: PASS
+criterion_2: Phase-scramble specificity (diagnostic)
+  Status: PASS
+criterion_3: Unweighted ψ frame invariance (diagnostic)
+  Status: PASS
+criterion_4: Velocity-label permutation control (diagnostic)
+  Status: INCONCLUSIVE
+criterion_5: Signed-mean bipolar cancellation (diagnostic)
+  Status: PASS

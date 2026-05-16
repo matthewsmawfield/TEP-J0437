@@ -1,0 +1,36 @@
+{
+  "n_pulsars": 1,
+  "pulsars": [
+    "J0437-4715"
+  ],
+  "scaling_analysis_performed": false,
+  "reason": "Insufficient robust phase detections (need \u22652, have 1)",
+  "excluded_pulsars": [
+    {
+      "name": "J1603-7202",
+      "telescope": "Parkes/PPTA",
+      "phase_sigma": -0.2497989958311154,
+      "H_magnitude_ns": 2.5572479699421744,
+      "H_excess_ns": 0.2252994349648203,
+      "reason": "phase evidence below threshold; legacy unsigned-|H| amplitude is diagnostic only"
+    },
+    {
+      "name": "B0355+54",
+      "telescope": "Jiamusi",
+      "phase_sigma": 0.0,
+      "H_magnitude_ns": 1.7220928186582298,
+      "H_excess_ns": 1.5771638347371535,
+      "reason": "phase evidence below threshold; legacy unsigned-|H| amplitude is diagnostic only"
+    },
+    {
+      "name": "B0540+23",
+      "telescope": "Jiamusi",
+      "phase_sigma": 0.0,
+      "H_magnitude_ns": 1.9454905172536934,
+      "H_excess_ns": 0.4424419169374507,
+      "reason": "phase evidence below threshold; legacy unsigned-|H| amplitude is diagnostic only"
+    }
+  ],
+  "legacy_h_scaling_disabled": true,
+  "note": "Unsigned |H| amplitudes are noise-floor-biased diagnostics and are not used to claim multi-pulsar scaling. Single-pulsar phase results are available in step_003."
+}

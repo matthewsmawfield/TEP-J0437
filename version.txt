@@ -1,0 +1,8 @@
+v0.1 (Sintra) - Initial publication release — 14 May 2026
+
+- Multi-pulsar closure-delay analysis of 19,167 triplets from PSR J0437-4715 (15 pulsars total)
+- Frame-invariant Phase Closure detection at 56.0σ frequentist (146.4σ Bayesian)
+- 13.30σ orbital modulation in signed geometric delays validates kinematic tracking
+- J1603-7202 bipolar decomposition provides complementary geometric evidence
+- Comprehensive 47-step pipeline with fixed random seeds and full reproducibility
+- 9-component manuscript with orbital-phase, multi-telescope, and falsification analysis

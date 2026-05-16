@@ -1,0 +1,89 @@
+{
+  "all_controls_passed": false,
+  "all_applicable_controls_passed": true,
+  "status": "applicable_controls_passed",
+  "controls_run": 5,
+  "controls_counted": 3,
+  "controls_passed": 3,
+  "controls_inconclusive": 1,
+  "controls_not_applicable": 1,
+  "results": {
+    "velocity_label_permutation": {
+      "control": "velocity_label_permutation",
+      "description": "Swap velocity labels between phase-detected pulsars",
+      "n_pulsars": 2,
+      "phase_detected": {
+        "J0437-4715": true,
+        "J1603-7202": false
+      },
+      "phase_sigma": {
+        "J0437-4715": 7.397618739814267,
+        "J1603-7202": -0.2497989958311154
+      },
+      "interpretation": "Velocity-label permutation requires at least two robust phase detections. The current Parkes/PPTA set has only one, so sign-label specificity is a follow-up test.",
+      "test_status": "inconclusive",
+      "test_passed": null
+    },
+    "phase_scramble": {
+      "control": "phase_scramble",
+      "description": "Randomize epoch phase-closure angles and compare circular concentration",
+      "pulsar": "J0437-4715",
+      "n_epoch_phases": 1093,
+      "n_scrambles": 1000,
+      "observed_psi_rad": 0.964048,
+      "observed_rbar": 0.311374,
+      "scrambled_rbar_mean": 0.026628,
+      "scrambled_rbar_std": 0.013805,
+      "p_observed_concentration_by_chance": 0.0,
+      "interpretation": "J0437 epoch phase closure is more concentrated than 100.0% of uniform circular phase scrambles (p = 0.0000).",
+      "test_status": "pass",
+      "test_passed": true
+    },
+    "pre_alignment_diagnostic": {
+      "control": "pre_alignment_diagnostic",
+      "description": "Epoch phase-closure distribution before any velocity weighting",
+      "pulsar": "J0437-4715",
+      "n_epoch_phases": 1093,
+      "phase_closure_mean_rad": 0.964048,
+      "phase_closure_rbar": 0.311374,
+      "rayleigh_p": 9.495142724528462e-47,
+      "interpretation": "J0437 has coherent non-zero phase closure before velocity-domain weighting.",
+      "test_status": "pass",
+      "test_passed": true
+    },
+    "blind_freeze_record": {
+      "control": "blind_freeze_record",
+      "description": "Prove \u03c8 was frozen before velocity labels decoded",
+      "git_commit_hash": "6c8017994906",
+      "freeze_timestamp": "2026-05-15T13:18:27.984372",
+      "step_003_results_exist": true,
+      "step_003_timestamps": {
+        "J0437-4715": "2026-05-15T13:07:52.115385",
+        "J1603-7202": "2026-05-15T13:08:25.920167"
+      },
+      "psi_values": {
+        "J0437-4715": 0.9840495457197854,
+        "J1603-7202": -2.327609095054899
+      },
+      "psi_value_hash": "3b778fb6e1b966a3",
+      "blind_protocol": [
+        "1. Pulsar names hidden during initial analysis",
+        "2. \u03c8 computed for anonymous pulsars (A, B, C...)",
+        "3. Results saved to results/ with timestamp",
+        "4. Only after \u03c8 frozen: proper motions decoded from literature",
+        "5. Velocity vectors matched to frozen \u03c8 values"
+      ],
+      "interpretation": "The hash is computed from the actual Step 003 phase-closure values present at control runtime. This records, but cannot by itself prove, the external blind-analysis chronology.",
+      "test_status": "pass",
+      "test_passed": true
+    },
+    "wrong_velocity": {
+      "control": "wrong_velocity",
+      "description": "Use deliberately incorrect velocities",
+      "test_status": "not_applicable",
+      "interpretation": "The primary phase-closure observable is extracted from complex secondary-spectrum phases before velocity weighting. Changing the velocity vector cannot change phase_closure_rad, so this is not a valid control for the primary signal.",
+      "test_passed": null
+    }
+  },
+  "conclusion": "All 3/3 applicable velocity-direction controls passed on current Step 003 phase-closure products; 1 inconclusive and 1 not applicable controls are reported separately."
+}

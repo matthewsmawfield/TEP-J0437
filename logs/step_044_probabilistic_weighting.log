@@ -1,0 +1,9 @@
+[2026-05-15 13:18:24] [INFO] ================================================================================
+[2026-05-15 13:18:24] [INFO] STEP step_044_probabilistic_weighting STARTED
+[2026-05-15 13:18:24] [INFO] Description: Probabilistic weighting diagnostic (alternative to hard SNR thresholds)
+[2026-05-15 13:18:24] [INFO] Physics: Characterize threshold sensitivity of unsigned-|H| diagnostics
+[2026-05-15 13:18:24] [INFO] Method: Sign-marginalized diagnostic model and inverse-variance weighting, explicitly not primary inference
+[2026-05-15 13:18:24] [INFO] ================================================================================
+[2026-05-15 13:18:26] [INFO] ================================================================================
+[2026-05-15 13:18:26] [INFO] STEP COMPLETED SUCCESSFULLY (1.4 seconds)
+[2026-05-15 13:18:26] [INFO] ================================================================================

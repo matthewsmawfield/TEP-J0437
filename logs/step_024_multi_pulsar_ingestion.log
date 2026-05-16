@@ -1,0 +1,31 @@
+[2026-05-15 13:18:05] [INFO] ================================================================================
+[2026-05-15 13:18:05] [INFO] STEP step_024_multi_pulsar_ingestion STARTED
+[2026-05-15 13:18:05] [INFO] Description: Multi-pulsar data ingestion
+[2026-05-15 13:18:05] [INFO] Physics: Ingest data for multiple pulsars (B0329, B0355, B0540)
+[2026-05-15 13:18:05] [INFO] Method: Download and organize data from multiple pulsar sources
+[2026-05-15 13:18:05] [INFO] ================================================================================
+[2026-05-15 13:18:05] [INFO]       ================================================================================
+[2026-05-15 13:18:05] [INFO] ═══ STEP 024: MULTI-PULSAR DATA INGESTION
+[2026-05-15 13:18:05] [INFO]       ================================================================================
+[2026-05-15 13:18:05] [INFO]       Reading actual pipeline results (no hardcoded statistics)
+[2026-05-15 13:18:05] [INFO]       J0437-4715: |H| = 8.100 ns, significance = 7.40σ
+[2026-05-15 13:18:05] [INFO]       J1603-7202: |H| = 2.557 ns, significance = -0.25σ
+[2026-05-15 13:18:05] [INFO]         B0329+54: no closure results
+[2026-05-15 13:18:05] [INFO]         B0355+54: |H| = 1.722 ns, significance = 0.00σ, epochs = 1, triplets = 20
+[2026-05-15 13:18:05] [INFO]         B0540+23: |H| = 1.945 ns, significance = 0.00σ, epochs = 2, triplets = 40
+[2026-05-15 13:18:05] [INFO]         B0740-28: no closure results
+[2026-05-15 13:18:05] [INFO]         B1508+55: |H| = 247.105 ns, significance = 0.00σ, epochs = 1, triplets = 20
+[2026-05-15 13:18:05] [INFO]         B1933+16: no closure results
+[2026-05-15 13:18:05] [INFO]         B2154+40: |H| = 7.968 ns, significance = 0.00σ, epochs = 1, triplets = 20
+[2026-05-15 13:18:05] [INFO]         B2310+42: |H| = 15.406 ns, significance = 0.00σ, epochs = 1, triplets = 20
+[2026-05-15 13:18:05] [INFO]         B2324+60: no closure results
+[2026-05-15 13:18:05] [INFO]         B2351+61: no closure results
+[2026-05-15 13:18:05] [INFO]       Ensemble scaling status: insufficient_data (2 pulsars)
+[2026-05-15 13:18:05] [INFO] [PASS] 
+Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_024_multi_pulsar_ingestion.json
+[2026-05-15 13:18:05] [INFO]       ================================================================================
+[2026-05-15 13:18:05] [INFO] [PASS] STEP 024 COMPLETED
+[2026-05-15 13:18:05] [INFO]       ================================================================================
+[2026-05-15 13:18:05] [INFO] ================================================================================
+[2026-05-15 13:18:05] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-15 13:18:05] [INFO] ================================================================================

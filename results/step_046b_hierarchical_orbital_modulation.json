@@ -1,0 +1,59 @@
+{
+  "step": "046b",
+  "pulsar": "J0437-4715",
+  "model": "hierarchical_mixed_effects_orbital_modulation_reml",
+  "n_triplets": 19167,
+  "n_epochs": 1391,
+  "parameterisation": "A1*sin(2\u03c0\u03c6) + A2*cos(2\u03c0\u03c6) + C + alpha[epoch]",
+  "amplitude_interval": {
+    "label": "Monte Carlo amplitude interval (2.5 / 97.5 percentiles on circular A)",
+    "n_draws": 10000,
+    "generator": "Draw z ~ N(0, I_3); set beta = beta_hat + L z with lower-triangular L from Cholesky(LL^T)=cov_beta; circular amplitude A = sqrt(A_1^2 + A_2^2).",
+    "mean_of_drawn_circular_amplitudes_ns": 1.4597304218914737,
+    "std_of_drawn_circular_amplitudes_ns": 0.6744391678636561,
+    "note": "The mean of A over draws typically exceeds A_hat because A is a nonlinear positive map of Gaussian coefficients (Rice-like upward bias); report A_hat, delta-method SE, and percentile interval."
+  },
+  "fixed_effects": {
+    "A1_ns": {
+      "mean": -0.8542825440332378,
+      "std": 0.7951519844842174
+    },
+    "A2_ns": {
+      "mean": 0.7534402344568099,
+      "std": 0.8210217649013289
+    },
+    "modulation_amplitude_A_ns": {
+      "mean": 1.139065780338534,
+      "std": 0.7933888088569664,
+      "ci_95_lower": 0.29477677878899805,
+      "ci_95_upper": 2.8558603355616907,
+      "prob_positive": 1.0
+    },
+    "modulation_phase_psi_rad": {
+      "mean": 2.418836119426314,
+      "std": null
+    },
+    "offset_C_ns": {
+      "mean": 0.6511325018922349,
+      "std": 0.5709744490732169
+    },
+    "corr_A1_A2": 0.03256606353748569
+  },
+  "random_effects": {
+    "sigma_epoch_ns": {
+      "mle": 21.010137340285667,
+      "null_model_mle": 21.01741734266469
+    },
+    "icc_estimate": 0.9010622000227858,
+    "effective_sample_size": 1531
+  },
+  "model_comparison": {
+    "logL_modulation": -5033.960173340526,
+    "logL_null": -5034.991448695921,
+    "lr_statistic": 2.062550710788855,
+    "lr_dof": 2,
+    "lr_pvalue": 0.3565519400342598,
+    "favors_modulation": false
+  },
+  "methodology_note": "This mixed-effects model accounts for within-epoch triplet correlations via per-epoch random offsets (alpha_j ~ N(0, sigma_epoch\u00b2)), preserving triplet-level measurement precision.  It replaces both the overconfident triplet-binning (which ignores correlations) and the overly conservative epoch-blocked analysis (which discards within-epoch inverse-variance weighting).  The likelihood-ratio test is exact for nested Gaussian models.  The 95% amplitude interval is from parametric Gaussian draws in (A_1, A_2) using the REML fixed-effect covariance (see amplitude_interval.generator), not from resampling residuals."
+}

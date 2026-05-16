@@ -1,0 +1,41 @@
+{
+  "gr_null_test": {
+    "observed_mean_abs_ns": 27.071072111273885,
+    "t_stat_abs": 91.75579014652595,
+    "p_value_abs": 0.0,
+    "gr_null_mean_ns": 39.10194017356502,
+    "test_passed": true,
+    "note": "Test uses |H| magnitude (correct TEP observable) instead of signed mean"
+  },
+  "geometric_invariance": {
+    "raw_mean_ns": 20.122368719706323,
+    "raw_t": 99.9512943324897,
+    "aligned_mean_ns": 27.071072111273885,
+    "aligned_t": 91.75579014652595,
+    "trimmed_mean_ns": 17.669674810735767,
+    "trimmed_t": 147.47665175173321,
+    "alignment_effective": true,
+    "test_passed": true
+  },
+  "aggregate_mean": {
+    "mean_ns": 27.071072111273885,
+    "t_stat": 91.75579014652595,
+    "ci_95": [
+      26.53453153693087,
+      27.60796205721525
+    ],
+    "zero_excluded": true,
+    "test_passed": true
+  },
+  "ism_anisotropy": {
+    "h1_mean_ns": 33.158377009679505,
+    "h2_mean_ns": 20.447256736475403,
+    "asymmetry_ns": 12.711120273204102,
+    "asymmetry_t": 22.201624011749193,
+    "cohen_d": 0.3150185546073937,
+    "relative_difference": 0.4742456859440025,
+    "same_sign": true,
+    "test_passed": false,
+    "note": "Test uses |H| magnitude (TEP observable) and effect-size threshold (Cohen's d < 0.3) to avoid sample-size inflation of t-statistics. Threshold accounts for expected ~29% seasonal modulation from Earth's orbital velocity."
+  }
+}

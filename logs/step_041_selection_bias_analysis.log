@@ -1,0 +1,9 @@
+[2026-05-15 13:18:22] [INFO] ================================================================================
+[2026-05-15 13:18:22] [INFO] STEP step_041_selection_bias_analysis STARTED
+[2026-05-15 13:18:22] [INFO] Description: Selection bias comprehensive analysis
+[2026-05-15 13:18:22] [INFO] Physics: Characterize selection effects in triplet formation
+[2026-05-15 13:18:22] [INFO] Method: Monte Carlo tests for selection bias, completeness correction
+[2026-05-15 13:18:22] [INFO] ================================================================================
+[2026-05-15 13:18:24] [INFO] ================================================================================
+[2026-05-15 13:18:24] [INFO] STEP COMPLETED SUCCESSFULLY (1.6 seconds)
+[2026-05-15 13:18:24] [INFO] ================================================================================

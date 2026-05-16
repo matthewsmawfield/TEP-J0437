@@ -1,0 +1,21 @@
+{
+  "step": "035_meerkat_analysis",
+  "status": "no_op",
+  "j0437_data_available": false,
+  "raw_files_present": [
+    "J0908-1739.dynspec",
+    "J0922-0638.dynspec",
+    "J1731-4744.dynspec",
+    "sample.dynspec",
+    "test1.dynspec"
+  ],
+  "processed_files_present": [
+    "J0908-1739.npz",
+    "J0922-0638.npz",
+    "J1731-4744.npz",
+    "sample.npz",
+    "test1.npz"
+  ],
+  "catalog_exists": true,
+  "note": "J0437-4715 MeerKAT data is not present in this repository. Available MeerKAT files are for other pulsars. Primary J0437 TEP analysis uses PPTA DR2 Parkes/CASPSR data."
+}

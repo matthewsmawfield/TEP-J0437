@@ -1,0 +1,206 @@
+{
+  "bayesian_hierarchical": {
+    "n_triplets": 19167,
+    "posterior_H": {
+      "mean_ns": 14.158679746418915,
+      "std_ns": 0.44079077169728176,
+      "ci_95_lower_ns": 13.22509263752918,
+      "ci_95_upper_ns": 15.07138509764277,
+      "probability_H_positive_under_halfnormal_prior": 1.0,
+      "probability_note": "Half-normal magnitude prior makes H non-negative by construction; this is not detection evidence.",
+      "t_equivalent": 32.12108931387192,
+      "snr_posterior": 32.12108931387192,
+      "tau_intrinsic_ns": 40.84595435542334
+    },
+    "effective_sample_size": 1361.5497851117088,
+    "weights_summary": {
+      "min_weight": 6.026655617466222e-14,
+      "max_weight": 0.0028452056287650053,
+      "median_weight": 3.0388406273286265e-06,
+      "entropy_bits": 11.553013897362781
+    }
+  },
+  "weighted_statistics": {
+    "weighted_mean_ns": 27.839359179163697,
+    "weighted_sem_ns": 0.3018573269202107,
+    "weighted_std_ns": 41.489325155309025,
+    "t_statistic": 92.22687904647884,
+    "n_eff": 18891.62420861078,
+    "n_total": 19167,
+    "tau_intrinsic_ns": 40.84595435542334
+  },
+  "threshold_comparison": {
+    "hard_thresholds": {
+      "snr_0": {
+        "n_retained": 19167,
+        "n_total": 19167,
+        "retention_fraction": 1.0,
+        "mean_ns": 27.071072111273885,
+        "sem_ns": 0.2950339381094507,
+        "t_stat": 91.75579014652595
+      },
+      "snr_3": {
+        "n_retained": 8637,
+        "n_total": 19167,
+        "retention_fraction": 0.45061825011738926,
+        "mean_ns": 47.24493783386665,
+        "sem_ns": 0.5672433122764879,
+        "t_stat": 83.2886643374622
+      },
+      "snr_5": {
+        "n_retained": 5176,
+        "n_total": 19167,
+        "retention_fraction": 0.27004747743517504,
+        "mean_ns": 58.646318714158504,
+        "sem_ns": 0.8457908779725697,
+        "t_stat": 69.33902958936913
+      },
+      "snr_7": {
+        "n_retained": 2872,
+        "n_total": 19167,
+        "retention_fraction": 0.14984087233265508,
+        "mean_ns": 68.92665462124363,
+        "sem_ns": 1.2991132573042388,
+        "t_stat": 53.05669404396027
+      },
+      "snr_10": {
+        "n_retained": 946,
+        "n_total": 19167,
+        "retention_fraction": 0.04935566337976731,
+        "mean_ns": 82.3650092339113,
+        "sem_ns": 2.7003450516410537,
+        "t_stat": 30.501660957682585
+      }
+    },
+    "probabilistic_weighting": {
+      "weighted_mean_ns": 27.839359179163697,
+      "weighted_sem_ns": 0.3018573269202107,
+      "weighted_std_ns": 41.489325155309025,
+      "t_statistic": 92.22687904647884,
+      "n_eff": 18891.62420861078,
+      "n_total": 19167,
+      "tau_intrinsic_ns": 40.84595435542334
+    },
+    "bayesian_hierarchical": {
+      "n_triplets": 19167,
+      "posterior_H": {
+        "mean_ns": 14.158679746418915,
+        "std_ns": 0.44079077169728176,
+        "ci_95_lower_ns": 13.22509263752918,
+        "ci_95_upper_ns": 15.07138509764277,
+        "probability_H_positive_under_halfnormal_prior": 1.0,
+        "probability_note": "Half-normal magnitude prior makes H non-negative by construction; this is not detection evidence.",
+        "t_equivalent": 32.12108931387192,
+        "snr_posterior": 32.12108931387192,
+        "tau_intrinsic_ns": 40.84595435542334
+      },
+      "effective_sample_size": 1361.5497851117088,
+      "weights_summary": {
+        "min_weight": 6.026655617466222e-14,
+        "max_weight": 0.0028452056287650053,
+        "median_weight": 3.0388406273286265e-06,
+        "entropy_bits": 11.553013897362781
+      }
+    },
+    "comparison": {
+      "probabilistic_mean_ns": 27.839359179163697,
+      "probabilistic_t": 92.22687904647884,
+      "bayesian_mean_ns": 14.158679746418915,
+      "bayesian_t": 32.12108931387192,
+      "threshold_degradation": {
+        "snr_0": {
+          "n_retained": 19167,
+          "n_total": 19167,
+          "retention_fraction": 1.0,
+          "mean_ns": 27.071072111273885,
+          "sem_ns": 0.2950339381094507,
+          "t_stat": 91.75579014652595
+        },
+        "snr_3": {
+          "n_retained": 8637,
+          "n_total": 19167,
+          "retention_fraction": 0.45061825011738926,
+          "mean_ns": 47.24493783386665,
+          "sem_ns": 0.5672433122764879,
+          "t_stat": 83.2886643374622
+        },
+        "snr_5": {
+          "n_retained": 5176,
+          "n_total": 19167,
+          "retention_fraction": 0.27004747743517504,
+          "mean_ns": 58.646318714158504,
+          "sem_ns": 0.8457908779725697,
+          "t_stat": 69.33902958936913
+        },
+        "snr_7": {
+          "n_retained": 2872,
+          "n_total": 19167,
+          "retention_fraction": 0.14984087233265508,
+          "mean_ns": 68.92665462124363,
+          "sem_ns": 1.2991132573042388,
+          "t_stat": 53.05669404396027
+        },
+        "snr_10": {
+          "n_retained": 946,
+          "n_total": 19167,
+          "retention_fraction": 0.04935566337976731,
+          "mean_ns": 82.3650092339113,
+          "sem_ns": 2.7003450516410537,
+          "t_stat": 30.501660957682585
+        }
+      }
+    }
+  },
+  "snr_influence": {
+    "stratified_by_snr": {
+      "low": {
+        "n": 6325,
+        "snr_range": "< 1",
+        "mean_abs_H_ns": 6.174390494812266,
+        "std_ns": 5.64003209145865,
+        "sem_ns": 0.0709171559130497
+      },
+      "mid": {
+        "n": 6517,
+        "snr_range": "1 - 4",
+        "mean_abs_H_ns": 20.902642424845503,
+        "std_ns": 21.47687566526985,
+        "sem_ns": 0.26604018576550653
+      },
+      "high": {
+        "n": 6325,
+        "snr_range": ">= 4",
+        "mean_abs_H_ns": 54.32343060780725,
+        "std_ns": 57.70548181592092,
+        "sem_ns": 0.7255825116978983
+      }
+    },
+    "snr_percentiles": {
+      "p33": 1.1949662808773949,
+      "p67": 4.2713982859693
+    },
+    "snr_abs_delta_correlation": {
+      "r": 0.5488459501008691,
+      "p": 0.0,
+      "n": 19167
+    },
+    "quality_metric": "closure_snr"
+  },
+  "conclusions": [
+    "Probabilistic weighting diagnostic gives |H| = 14.159 ns (z = 32.12, not inferential)",
+    "All 19167 triplets contribute (no data discarded)",
+    "Bayesian and frequentist weighted diagnostics disagree by 13.681 ns; this supports treating unsigned-|H| as diagnostic only",
+    "SNR\u22655 cut changes the unsigned-|H| diagnostic by 44.488 ns vs. probabilistic weighting"
+  ],
+  "inference_status": "diagnostic_only",
+  "valid_for_primary_inference": false,
+  "note": "Unsigned |H| probabilistic weighting is a threshold-sensitivity diagnostic. It is not used as primary evidence because folded delay magnitudes have a noise floor.",
+  "methodology": {
+    "weighting_scheme": "inverse_variance",
+    "uncertainty_proxy": "sigma_us / max(closure_snr, 1e-3)",
+    "prior": "HalfNormal(0, 50)",
+    "bayesian_likelihood": "0.5*N(+H,sigma_i) + 0.5*N(-H,sigma_i)",
+    "n_triplets": 19167,
+    "n_epochs": 1391
+  }
+}

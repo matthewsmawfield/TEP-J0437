@@ -1,0 +1,154 @@
+{
+  "effect_size": {
+    "cohen_d": -0.002871159460262301,
+    "cohen_d_abs": 0.39733122749272043,
+    "t_statistic": -0.10708308594236023,
+    "p_value": 0.9147385183113574,
+    "test_passed_primary": true,
+    "test_passed_signed_diagnostic": false,
+    "test_passed": true
+  },
+  "robust_statistics": {
+    "parametric_mean_abs_ns": 12.00818310934756,
+    "median_abs_ns": 5.2504657124263145,
+    "trimmed_mean_abs_ns": 7.489466057343764,
+    "all_positive": true,
+    "test_passed": true
+  },
+  "permutation_test": {
+    "p_value": 1.434742236236525e-75,
+    "z_score": -18.395221162259617,
+    "expected_H_null_ns": 19.14062254265235,
+    "observed_H_mean_ns": 12.00818310934756,
+    "test_passed": true,
+    "note": "Gaussian noise null model: E[|X|] = sigma * sqrt(2/pi). Sign-randomization is invalid for |H| because |sign*value| = |value|."
+  },
+  "cross_validation": {
+    "cv_results": [
+      {
+        "fold": 0,
+        "test_mean_abs_ns": 12.25742446868565,
+        "test_t": 9.21198219357926
+      },
+      {
+        "fold": 1,
+        "test_mean_abs_ns": 13.519078221957665,
+        "test_t": 8.165749649062581
+      },
+      {
+        "fold": 2,
+        "test_mean_abs_ns": 12.045038170340993,
+        "test_t": 11.55387985599694
+      },
+      {
+        "fold": 3,
+        "test_mean_abs_ns": 11.824410398241787,
+        "test_t": 10.344902283706382
+      },
+      {
+        "fold": 4,
+        "test_mean_abs_ns": 10.43465779773679,
+        "test_t": 11.201941389048567
+      }
+    ],
+    "all_positive": true,
+    "mean_cv_abs_ns": 12.016121811392576,
+    "test_passed": true
+  },
+  "phase_closure_epoch_cv": {
+    "method": "5-fold shuffle split on epoch-level \u03c8 means (\u22655 triplets/epoch); within-epoch SNR\u00b2 circular mean; across-epoch inverse-variance weights (Step 003 construction).",
+    "shuffle_rng_seed": 70049,
+    "n_epochs": 1093,
+    "fold_size": 218,
+    "global_full_sample": {
+      "psi_mean_rad": 0.9840495457197854,
+      "r_bar": 0.30759393239598287,
+      "rayleigh_z": 59.21367260354874,
+      "rayleigh_p": 1.3864824207812792e-13,
+      "v_stat": 4.260397380796272,
+      "v_p": 2.0406376031625597e-05
+    },
+    "agreement_with_step003_summary_rad": 0.0,
+    "fold_results": [
+      {
+        "fold": 0,
+        "n_epochs_holdout": 218,
+        "psi_mean_rad": 1.0120641928989937,
+        "r_bar": 0.2516072133599018,
+        "rayleigh_z": 8.114555235272453,
+        "rayleigh_p": 0.01729604151821673,
+        "v_stat": 1.510078900914547,
+        "v_p": 0.13102329255416087,
+        "cos_delta_vs_global_mean": 0.9996076154353387,
+        "same_open_halfplane_as_global": true
+      },
+      {
+        "fold": 1,
+        "n_epochs_holdout": 218,
+        "psi_mean_rad": 1.1573566824354449,
+        "r_bar": 0.23828919007548244,
+        "rayleigh_z": 7.47498907884206,
+        "rayleigh_p": 0.023813692718798494,
+        "v_stat": 1.098433157188307,
+        "v_p": 0.27201539049533985,
+        "cos_delta_vs_global_mean": 0.9850198690303165,
+        "same_open_halfplane_as_global": true
+      },
+      {
+        "fold": 2,
+        "n_epochs_holdout": 218,
+        "psi_mean_rad": 0.9350399874099465,
+        "r_bar": 0.29565290523906335,
+        "rayleigh_z": 11.346924772633143,
+        "rayleigh_p": 0.003435948077427975,
+        "v_stat": 2.000180670341262,
+        "v_p": 0.04548075828807167,
+        "cos_delta_vs_global_mean": 0.998799271965409,
+        "same_open_halfplane_as_global": true
+      },
+      {
+        "fold": 3,
+        "n_epochs_holdout": 218,
+        "psi_mean_rad": 0.9958315317740193,
+        "r_bar": 0.4589902556728983,
+        "rayleigh_z": 25.090958049221296,
+        "rayleigh_p": 3.5609648497489666e-06,
+        "v_stat": 2.7239680885002424,
+        "v_p": 0.006450273860576242,
+        "cos_delta_vs_global_mean": 0.9999305932052076,
+        "same_open_halfplane_as_global": true
+      },
+      {
+        "fold": 4,
+        "n_epochs_holdout": 218,
+        "psi_mean_rad": 0.8577355337190045,
+        "r_bar": 0.3136564647774921,
+        "rayleigh_z": 13.255023146519672,
+        "rayleigh_p": 0.0013234523059392222,
+        "v_stat": 2.3816001789079033,
+        "v_p": 0.017237601500756063,
+        "cos_delta_vs_global_mean": 0.992032986602826,
+        "same_open_halfplane_as_global": true
+      }
+    ],
+    "n_folds_rayleigh_p_lt_0_05": 5,
+    "min_folds_rayleigh_required": 4,
+    "n_folds_v_p_lt_0_05": 3,
+    "all_folds_same_open_halfplane_as_global": true,
+    "test_passed": true
+  },
+  "bayesian_model": {
+    "delta_bic": 393.9326713690625,
+    "log10_bf": 85.54139270849548,
+    "test_passed": true
+  },
+  "annual_modulation": {
+    "t_asymmetry": 8.578483896472244,
+    "h1_significance": 25.802842223337624,
+    "h2_significance": 26.314908302243357,
+    "h1_mean_abs_ns": 34.571841052287766,
+    "h2_mean_abs_ns": 21.165947498716093,
+    "test_passed": true,
+    "note": "TEP does not predict constant |H| across Earth's orbit. Test checks both halves show independent detection (t > 3)."
+  }
+}

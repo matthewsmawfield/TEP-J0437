@@ -1,0 +1,23 @@
+{
+  "version": "0.1",
+  "codename": "Sintra",
+  "paper": "TEP-J0437",
+  "series": 16,
+  "status": "completed",
+  "title": "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation",
+  "results": {
+    "pulsars_processed": 15,
+    "primary_pulsar": "J0437-4715",
+    "primary_epochs": 1391,
+    "primary_triplets": 19167,
+    "holonomy_magnitude_ns": 8.041,
+    "holonomy_sem_ns": 0.102,
+    "phase_closure_rad": 0.991,
+    "phase_closure_sigma": 20.77,
+    "noise_floor_ns": 7.734,
+    "signed_mean_ns": -0.190,
+    "detected_pulsars": ["J0437-4715"],
+    "detection_significances": [20.77]
+  },
+  "date": "2026-05-14"
+}

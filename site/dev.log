@@ -1,0 +1,72 @@
+
+> tep-jwst-site@0.1.0 dev
+> node dev-server.js
+
+🎯 TEP-JWST Development Server
+
+🔄 Rebuilding site...
+🔨 Building static site...
+🧹 Cleaning dist directory...
+📄 Loading section: Abstract
+📄 Loading section: 1. Introduction
+📄 Loading section: 2. Methodology
+📄 Loading section: 3. Results
+📄 Loading section: 4. Discussion
+📄 Loading section: 5. Conclusion
+📄 Loading section: References
+📄 Loading section: Appendix A
+📄 Loading section: Supplementary Material
+📁 Copying public/
+📁 Copying figures/
+📁 Copying styles/
+📁 Copied simple-styles.css
+📁 Copying results/figures/ → dist/figures/
+📁 Copied .nojekyll to dist root
+📁 Copied 404.html to dist root
+📁 Copied robots.txt to dist root
+📁 Copied sitemap.xml to dist root
+📁 Copied 29c6507763d2303d801cc8ed89d39f88.txt to dist root
+📁 Copied CITATION.cff to dist root
+📁 Copied CITATION.bib to dist root
+📁 Copied citation.json to dist root
+📁 Copied codemeta.json to dist root
+📁 Copied LICENSE to dist root
+📁 Copied README.md to dist root
+📁 Copied .well-known/ to dist
+📝 Generating markdown version...
+🔄 Converting HTML site to markdown (TEP-JWST)...
+  ✓ 1_abstract.html (6.2 KB)
+  ✓ 2_introduction.html (14.1 KB)
+  ✓ 3_methodology.html (26.4 KB)
+  ✓ 4_results.html (61.0 KB)
+  ✓ 5_discussion.html (120.6 KB)
+  ✓ 6_conclusion.html (13.6 KB)
+  ✓ 7_references.html (15.5 KB)
+  ✓ 8_appendix.html (43.2 KB)
+  ✓ 9_supplementary.html (18.9 KB)
+  Total HTML: 319.7 KB
+✅ Markdown saved to: /Users/matthewsmawfield/www/TEP-JWST/13manuscript-tep-jwst.md (252.0 KB)
+✅ Static site built successfully!
+📁 Output: /Users/matthewsmawfield/www/TEP-JWST/site/dist/index.html
+📊 Generated 9 sections
+🚀 Ready for deployment
+📝 Generating markdown...
+🔄 Converting HTML site to markdown (TEP-JWST)...
+  ✓ 1_abstract.html (6.2 KB)
+  ✓ 2_introduction.html (14.1 KB)
+  ✓ 3_methodology.html (26.4 KB)
+  ✓ 4_results.html (61.0 KB)
+  ✓ 5_discussion.html (120.6 KB)
+  ✓ 6_conclusion.html (13.6 KB)
+  ✓ 7_references.html (15.5 KB)
+  ✓ 8_appendix.html (43.2 KB)
+  ✓ 9_supplementary.html (18.9 KB)
+  Total HTML: 319.7 KB
+✅ Markdown saved to: /Users/matthewsmawfield/www/TEP-JWST/13manuscript-tep-jwst.md (252.0 KB)
+✅ Build & Markdown complete!
+🚀 Starting live server...
+
+🌐 Server running at: http://localhost:51737
+📡 [33mhttp://localhost:51737 is already in use. Trying another port.[39m
+📡 [36mReady for changes[39m
+📡 [32mServing "dist" at http://localhost:61897 (http://::1:61897)[39m

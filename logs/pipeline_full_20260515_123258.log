@@ -1,0 +1,243 @@
+[2026-05-15 12:32:58] [INFO] ======================================================================
+[2026-05-15 12:32:58] [INFO] TEP-J0437: TEMPORAL EQUIVALENCE PRINCIPLE DETECTION PIPELINE
+[2026-05-15 12:32:58] [INFO] ======================================================================
+[2026-05-15 12:32:58] [INFO] Execution started: 2026-05-15 12:32:58
+[2026-05-15 12:32:58] [INFO] Working directory: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437
+[2026-05-15 12:32:58] [INFO] CPU cores available: 14
+[2026-05-15 12:32:58] [INFO] 
+Pipeline configuration: 50 steps
+[2026-05-15 12:32:58] [INFO]   • Step 000 - Data Ingestion (Scintools ATNF)
+[2026-05-15 12:32:58] [INFO]   • Step 001 - Parse Dynamic Spectra
+[2026-05-15 12:32:58] [INFO]   • Step 002 - Secondary Spectrum Generation
+[2026-05-15 12:32:58] [INFO]   • Step 003 - Closure Delay Extraction
+[2026-05-15 12:32:58] [INFO]   • Step 004 - Verification & Validation
+[2026-05-15 12:32:58] [INFO]   • Step 005 - Enhanced Validation
+[2026-05-15 12:32:58] [INFO]   • Step 006 - Advanced Validation
+[2026-05-15 12:32:58] [INFO]   • Step 007 - Independent Statistical Validation
+[2026-05-15 12:32:58] [INFO]   • Step 008 - Alternative Explanations Testing
+[2026-05-15 12:32:58] [INFO]   • Step 009 - Parameter Sensitivity Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 010 - Comprehensive Data Quality Metrics
+[2026-05-15 12:32:58] [INFO]   • Step 011 - ISM Density Profile Modeling
+[2026-05-15 12:32:58] [INFO]   • Step 012 - Environmental Dependence Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 014 - Synthetic Data Validation
+[2026-05-15 12:32:58] [INFO]   • Step 015 - Blind Analysis Validation
+[2026-05-15 12:32:58] [INFO]   • Step 016 - Control Pulsar Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 017 - Orientation Algorithm Documentation
+[2026-05-15 12:32:58] [INFO]   • Step 019 - Systematic Monte Carlo
+[2026-05-15 12:32:58] [INFO]   • Step 020 - Replication Readiness
+[2026-05-15 12:32:58] [INFO]   • Step 021 - Epoch-Level Significance Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 022 - Q4 Dominance Mechanism Investigation
+[2026-05-15 12:32:58] [INFO]   • Step 023 - SNR Correlation Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 024 - Multi-Pulsar Ingestion
+[2026-05-15 12:32:58] [INFO]   • Step 025 - Random Triplet Subset Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 026 - SNR Correlation Investigation
+[2026-05-15 12:32:58] [INFO]   • Step 027 - Alternative Selection Criteria
+[2026-05-15 12:32:58] [INFO]   • Step 028 - Bayesian Hierarchical Model
+[2026-05-15 12:32:58] [INFO]   • Step 029 - Jiamusi Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 030 - TEP Scaling Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 018 - Ensemble Scaling Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 031 - TEP Theoretical Predictions
+[2026-05-15 12:32:58] [INFO]   • Step 032 - Detailed TEP Scaling
+[2026-05-15 12:32:58] [INFO]   • Step 033 - Extract Eta from Arclets
+[2026-05-15 12:32:58] [INFO]   • Step 034 - Extract Eta
+[2026-05-15 12:32:58] [INFO]   • Step 035 - MeerKAT Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 036 - Synthetic Data Injection
+[2026-05-15 12:32:58] [INFO]   • Step 037 - Multi-Telescope Validation
+[2026-05-15 12:32:58] [INFO]   • Step 038 - Temporal Evolution
+[2026-05-15 12:32:58] [INFO]   • Step 039 - Higher Order Closures
+[2026-05-15 12:32:58] [INFO]   • Step 040 - Bootstrap Resampling
+[2026-05-15 12:32:58] [INFO]   • Step 041 - Selection Bias Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 042 - Systematic Errors
+[2026-05-15 12:32:58] [INFO]   • Step 043 - Chromatic Diagnostic
+[2026-05-15 12:32:58] [INFO]   • Step 044 - Probabilistic Weighting
+[2026-05-15 12:32:58] [INFO]   • Step 045 - Synthetic Threshold Degradation
+[2026-05-15 12:32:58] [INFO]   • Step 046 - Bayesian Orbital Phase-Binning (signed delays)
+[2026-05-15 12:32:58] [INFO]   • Step 047 - Velocity Direction Controls
+[2026-05-15 12:32:58] [INFO]   • Step 048 - CMB Dipole Frame Analysis
+[2026-05-15 12:32:58] [INFO]   • Step 013 - Falsification Criteria Automation
+[2026-05-15 12:32:58] [INFO]   • Step 049 - Evidence Ledger
+[2026-05-15 12:32:58] [INFO] ================================================================================
+[2026-05-15 12:32:58] [INFO] PIPELINE STEP: Step 000 - Data Ingestion (Scintools ATNF)
+[2026-05-15 12:32:58] [INFO] ================================================================================
+[2026-05-15 12:32:58] [INFO] 
+[2026-05-15 12:32:58] [INFO] DESCRIPTION:
+[2026-05-15 12:32:58] [INFO]     Data acquisition from CSIRO Data Access Portal
+[2026-05-15 12:32:58] [INFO] 
+[2026-05-15 12:32:58] [INFO] PHYSICS CONTEXT:
+[2026-05-15 12:32:58] [INFO]     Retrieving calibrated dynamic spectra for PSR J0437-4715 and PSR J1603-7202
+[2026-05-15 12:32:58] [INFO] 
+[2026-05-15 12:32:58] [INFO] METHODOLOGY:
+[2026-05-15 12:32:58] [INFO]     DOI-resolved CSIRO DAP retrieval with SHA-256 manifest verification
+[2026-05-15 12:32:58] [INFO] 
+[2026-05-15 12:32:58] [INFO] EXECUTING...
+[2026-05-15 12:32:58] [INFO] 
+[2026-05-15 12:33:18] [INFO] ================================================================================
+[2026-05-15 12:33:18] [INFO] STEP COMPLETED SUCCESSFULLY (20.3 seconds)
+[2026-05-15 12:33:18] [INFO] ================================================================================
+[2026-05-15 12:33:18] [INFO] ================================================================================
+[2026-05-15 12:33:18] [INFO] PIPELINE STEP: Step 001 - Parse Dynamic Spectra
+[2026-05-15 12:33:18] [INFO] ================================================================================
+[2026-05-15 12:33:18] [INFO] 
+[2026-05-15 12:33:18] [INFO] DESCRIPTION:
+[2026-05-15 12:33:18] [INFO]     Dynamic spectrum calibration and parsing
+[2026-05-15 12:33:18] [INFO] 
+[2026-05-15 12:33:18] [INFO] PHYSICS CONTEXT:
+[2026-05-15 12:33:18] [INFO]     Extracting intensity I(t,ν) from filterbank data
+[2026-05-15 12:33:18] [INFO] 
+[2026-05-15 12:33:18] [INFO] METHODOLOGY:
+[2026-05-15 12:33:18] [INFO]     RFI masking, baseline subtraction, bandpass calibration
+[2026-05-15 12:33:18] [INFO] 
+[2026-05-15 12:33:18] [INFO] EXECUTING...
+[2026-05-15 12:33:18] [INFO] 
+[2026-05-15 12:33:29] [INFO] ================================================================================
+[2026-05-15 12:33:29] [INFO] STEP COMPLETED SUCCESSFULLY (10.9 seconds)
+[2026-05-15 12:33:29] [INFO] ================================================================================
+[2026-05-15 12:33:29] [INFO] ================================================================================
+[2026-05-15 12:33:29] [INFO] PIPELINE STEP: Step 002 - Secondary Spectrum Generation
+[2026-05-15 12:33:29] [INFO] ================================================================================
+[2026-05-15 12:33:29] [INFO] 
+[2026-05-15 12:33:29] [INFO] DESCRIPTION:
+[2026-05-15 12:33:29] [INFO]     Secondary spectrum computation S(τ, f_D)
+[2026-05-15 12:33:29] [INFO] 
+[2026-05-15 12:33:29] [INFO] PHYSICS CONTEXT:
+[2026-05-15 12:33:29] [INFO]     2D Fourier transform of covariance C(Δt, Δν) = ⟨δI δI⟩
+[2026-05-15 12:33:29] [INFO] 
+[2026-05-15 12:33:29] [INFO] METHODOLOGY:
+[2026-05-15 12:33:29] [INFO]     Vectorized FFT with conjugate symmetry optimization
+[2026-05-15 12:33:29] [INFO] 
+[2026-05-15 12:33:29] [INFO] EXECUTING...
+[2026-05-15 12:33:29] [INFO] 
+[2026-05-15 12:39:04] [INFO] ================================================================================
+[2026-05-15 12:39:04] [INFO] STEP COMPLETED SUCCESSFULLY (334.2 seconds)
+[2026-05-15 12:39:04] [INFO] ================================================================================
+[2026-05-15 12:39:04] [INFO] ================================================================================
+[2026-05-15 12:39:04] [INFO] PIPELINE STEP: Step 003 - Closure Delay Extraction
+[2026-05-15 12:39:04] [INFO] ================================================================================
+[2026-05-15 12:39:04] [INFO] 
+[2026-05-15 12:39:04] [INFO] DESCRIPTION:
+[2026-05-15 12:39:04] [INFO]     Closure delay extraction from arclet triplets (PARALLEL)
+[2026-05-15 12:39:04] [INFO] 
+[2026-05-15 12:39:04] [INFO] PHYSICS CONTEXT:
+[2026-05-15 12:39:04] [INFO]     Measuring holonomy H = ∮ dτ_prop via triangulation
+[2026-05-15 12:39:04] [INFO] 
+[2026-05-15 12:39:04] [INFO] METHODOLOGY:
+[2026-05-15 12:39:04] [INFO]     Parabolic fitting to arclets, parallel epoch processing with ProcessPoolExecutor
+[2026-05-15 12:39:04] [INFO] 
+[2026-05-15 12:39:04] [INFO] EXECUTING...
+[2026-05-15 12:39:04] [INFO] 
+[2026-05-15 12:40:24] [INFO] ================================================================================
+[2026-05-15 12:40:24] [INFO] STEP COMPLETED SUCCESSFULLY (80.8 seconds)
+[2026-05-15 12:40:24] [INFO] ================================================================================
+[2026-05-15 12:40:24] [INFO] 
+[2026-05-15 12:40:24] [INFO] ACTUAL RESULTS:
+[2026-05-15 12:40:24] [INFO]     H_magnitude_ns: 8.1002 ns
+[2026-05-15 12:40:24] [INFO]     H_trim_magnitude_ns: 21.9909 ns
+[2026-05-15 12:40:24] [INFO]     t_statistic: 79.46
+[2026-05-15 12:40:24] [INFO]     p_value: 0.00e+00
+[2026-05-15 12:40:24] [INFO]     n_epochs: 1391
+[2026-05-15 12:40:24] [INFO]     n_triplets: 19167
+[2026-05-15 12:40:24] [INFO] ================================================================================
+[2026-05-15 12:40:24] [INFO] PIPELINE STEP: Step 004 - Verification & Validation
+[2026-05-15 12:40:24] [INFO] ================================================================================
+[2026-05-15 12:40:24] [INFO] 
+[2026-05-15 12:40:24] [INFO] DESCRIPTION:
+[2026-05-15 12:40:24] [INFO]     Verification and validation of TEP detection
+[2026-05-15 12:40:24] [INFO] 
+[2026-05-15 12:40:24] [INFO] PHYSICS CONTEXT:
+[2026-05-15 12:40:24] [INFO]     Testing robustness against alternative explanations and systematic errors
+[2026-05-15 12:40:24] [INFO] 
+[2026-05-15 12:40:24] [INFO] METHODOLOGY:
+[2026-05-15 12:40:24] [INFO]     Independent verification, blind analysis, alternative ISM phenomenon tests
+[2026-05-15 12:40:24] [INFO] 
+[2026-05-15 12:40:24] [INFO] EXECUTING...
+[2026-05-15 12:40:24] [INFO] 
+[2026-05-15 12:40:26] [INFO] ================================================================================
+[2026-05-15 12:40:26] [INFO] STEP COMPLETED SUCCESSFULLY (2.0 seconds)
+[2026-05-15 12:40:26] [INFO] ================================================================================
+[2026-05-15 12:40:26] [INFO] 
+[2026-05-15 12:40:26] [INFO] VERIFICATION SUMMARY:
+[2026-05-15 12:40:26] [INFO]     All verification tests have completed.
+[2026-05-15 12:40:26] [INFO]     Results are available in:
+[2026-05-15 12:40:26] [INFO]         results/independent_verification_results.json
+[2026-05-15 12:40:26] [INFO]         results/blind_analysis_results.json
+[2026-05-15 12:40:26] [INFO]         results/alternative_ism_tests_results.json
+[2026-05-15 12:40:26] [INFO] ================================================================================
+[2026-05-15 12:40:26] [INFO] PIPELINE STEP: Step 005 - Enhanced Validation
+[2026-05-15 12:40:26] [INFO] ================================================================================
+[2026-05-15 12:40:26] [INFO] 
+[2026-05-15 12:40:26] [INFO] DESCRIPTION:
+[2026-05-15 12:40:26] [INFO]     Enhanced validation addressing reviewer concerns
+[2026-05-15 12:40:26] [INFO] 
+[2026-05-15 12:40:26] [INFO] PHYSICS CONTEXT:
+[2026-05-15 12:40:26] [INFO]     Advanced tests for systematic errors, alternative explanations, and theoretical framework
+[2026-05-15 12:40:26] [INFO] 
+[2026-05-15 12:40:26] [INFO] METHODOLOGY:
+[2026-05-15 12:40:26] [INFO]     Improved GR null tests, advanced ISS tests, blind analysis, rigorous anisotropy derivation, weighted analysis verification
+[2026-05-15 12:40:26] [INFO] 
+[2026-05-15 12:40:26] [INFO] EXECUTING...
+[2026-05-15 12:40:26] [INFO] 
+[2026-05-15 12:40:27] [INFO] ================================================================================
+[2026-05-15 12:40:27] [INFO] STEP COMPLETED SUCCESSFULLY (0.4 seconds)
+[2026-05-15 12:40:27] [INFO] ================================================================================
+[2026-05-15 12:40:27] [INFO] 
+[2026-05-15 12:40:27] [INFO] ENHANCED VALIDATION SUMMARY:
+[2026-05-15 12:40:27] [INFO]     All enhanced validation analyses have completed.
+[2026-05-15 12:40:27] [INFO]     These address reviewer concerns and strengthen the detection.
+[2026-05-15 12:40:27] [INFO]     Results are available in:
+[2026-05-15 12:40:27] [INFO]         results/improved_gr_null_tests.json
+[2026-05-15 12:40:27] [INFO]         results/advanced_ism_tests.json
+[2026-05-15 12:40:27] [INFO]         results/blind_analysis_both_signs.json
+[2026-05-15 12:40:27] [INFO]         results/rigorous_anisotropy_derivation.json
+[2026-05-15 12:40:27] [INFO]         results/weighted_analysis_verification.json
+[2026-05-15 12:40:27] [INFO]         results/tep_prediction_framework.json
+[2026-05-15 12:40:27] [INFO] ================================================================================
+[2026-05-15 12:40:27] [INFO] PIPELINE STEP: Step 006 - Advanced Validation
+[2026-05-15 12:40:27] [INFO] ================================================================================
+[2026-05-15 12:40:27] [INFO] 
+[2026-05-15 12:40:27] [INFO] DESCRIPTION:
+[2026-05-15 12:40:27] [INFO]     Advanced validation tests
+[2026-05-15 12:40:27] [INFO] 
+[2026-05-15 12:40:27] [INFO] PHYSICS CONTEXT:
+[2026-05-15 12:40:27] [INFO]     Systematic error investigation for both-signs significance, aggregate mean deviation, stratified analysis
+[2026-05-15 12:40:27] [INFO] 
+[2026-05-15 12:40:27] [INFO] METHODOLOGY:
+[2026-05-15 12:40:27] [INFO]     Both-signs systematic error test, aggregate mean deviation test, stratified analysis, sensitivity analysis, bootstrap reconciliation, orientation methodology verification
+[2026-05-15 12:40:27] [INFO] 
+[2026-05-15 12:40:27] [INFO] EXECUTING...
+[2026-05-15 12:40:27] [INFO] 
+[2026-05-15 12:40:30] [INFO] ================================================================================
+[2026-05-15 12:40:30] [INFO] STEP COMPLETED SUCCESSFULLY (2.9 seconds)
+[2026-05-15 12:40:30] [INFO] ================================================================================
+[2026-05-15 12:40:30] [INFO] ================================================================================
+[2026-05-15 12:40:30] [INFO] PIPELINE STEP: Step 007 - Independent Statistical Validation
+[2026-05-15 12:40:30] [INFO] ================================================================================
+[2026-05-15 12:40:30] [INFO] 
+[2026-05-15 12:40:30] [INFO] DESCRIPTION:
+[2026-05-15 12:40:30] [INFO]     Independent statistical validation
+[2026-05-15 12:40:30] [INFO] 
+[2026-05-15 12:40:30] [INFO] PHYSICS CONTEXT:
+[2026-05-15 12:40:30] [INFO]     Cross-validation using multiple independent statistical approaches
+[2026-05-15 12:40:30] [INFO] 
+[2026-05-15 12:40:30] [INFO] METHODOLOGY:
+[2026-05-15 12:40:30] [INFO]     Effect size measures, robust statistics, permutation tests, cross-validation, Bayesian model comparison, outlier robustness analysis
+[2026-05-15 12:40:30] [INFO] 
+[2026-05-15 12:40:30] [INFO] EXECUTING...
+[2026-05-15 12:40:30] [INFO] 
+[2026-05-15 12:40:31] [INFO] ================================================================================
+[2026-05-15 12:40:31] [INFO] STEP COMPLETED SUCCESSFULLY (0.8 seconds)
+[2026-05-15 12:40:31] [INFO] ================================================================================
+[2026-05-15 12:40:31] [INFO] ================================================================================
+[2026-05-15 12:40:31] [INFO] PIPELINE STEP: Step 008 - Alternative Explanations Testing
+[2026-05-15 12:40:31] [INFO] ================================================================================
+[2026-05-15 12:40:31] [INFO] 
+[2026-05-15 12:40:31] [INFO] DESCRIPTION:
+[2026-05-15 12:40:31] [INFO]     Alternative explanations testing
+[2026-05-15 12:40:31] [INFO] 
+[2026-05-15 12:40:31] [INFO] PHYSICS CONTEXT:
+[2026-05-15 12:40:31] [INFO]     Systematic simulation of standard ISM and instrumental effects
+[2026-05-15 12:40:31] [INFO] 
+[2026-05-15 12:40:31] [INFO] METHODOLOGY:
+[2026-05-15 12:40:31] [INFO]     Scattering geometry simulation, screen multiplicity simulation, velocity gradient simulation, instrumental systematic simulation, bipolar structure reproduction test
+[2026-05-15 12:40:31] [INFO] 
+[2026-05-15 12:40:31] [INFO] EXECUTING...
+[2026-05-15 12:40:31] [INFO] 

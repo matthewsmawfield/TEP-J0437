@@ -1,0 +1,9 @@
+[2026-05-15 13:18:17] [INFO] ================================================================================
+[2026-05-15 13:18:17] [INFO] STEP step_031_tep_theoretical_predictions STARTED
+[2026-05-15 13:18:17] [INFO] Description: TEP theoretical predictions
+[2026-05-15 13:18:17] [INFO] Physics: Generate theoretical TEP predictions for comparison
+[2026-05-15 13:18:17] [INFO] Method: Compute |H| scaling from TEP framework parameters
+[2026-05-15 13:18:17] [INFO] ================================================================================
+[2026-05-15 13:18:17] [INFO] ================================================================================
+[2026-05-15 13:18:17] [INFO] STEP COMPLETED SUCCESSFULLY (0.4 seconds)
+[2026-05-15 13:18:17] [INFO] ================================================================================

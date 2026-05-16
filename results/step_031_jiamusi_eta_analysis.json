@@ -1,0 +1,92 @@
+{
+  "B1933": {
+    "n_epochs_total": 8,
+    "n_epochs_with_eta": 8,
+    "eta1_mean": 0.0059827360143850095,
+    "eta2_mean": 0.020359525223525677,
+    "eta_mean": 0.013171130618955343,
+    "screen_distance_s": 0.5738277315308868,
+    "distance_pc": 3700.0
+  },
+  "B2351": {
+    "n_epochs_total": 1,
+    "n_epochs_with_eta": 1,
+    "eta1_mean": 0.0105906926924276,
+    "eta2_mean": 0.03262296526730869,
+    "eta_mean": 0.021606828979868146,
+    "screen_distance_s": 0.7349630769614918,
+    "distance_pc": 2400.0
+  },
+  "B0540": {
+    "n_epochs_total": 3,
+    "n_epochs_with_eta": 2,
+    "eta1_mean": 0.004182035331810958,
+    "eta2_mean": 0.00446001236547941,
+    "eta_mean": 0.004321023848645184,
+    "screen_distance_s": 0.3286724755986263,
+    "distance_pc": 1600.0
+  },
+  "B2310": {
+    "n_epochs_total": 2,
+    "n_epochs_with_eta": 2,
+    "eta1_mean": 0.009626411611693591,
+    "eta2_mean": 0.019085493588348476,
+    "eta_mean": 0.014355952600021035,
+    "screen_distance_s": 0.5990816430174821,
+    "distance_pc": 1060.0
+  },
+  "B0355": {
+    "n_epochs_total": 5,
+    "n_epochs_with_eta": 4,
+    "eta1_mean": 0.004267228902562133,
+    "eta2_mean": 0.007368791262888366,
+    "eta_mean": 0.00581801008272525,
+    "screen_distance_s": 0.381379406979626,
+    "distance_pc": 1000.0
+  },
+  "B0740": {
+    "n_epochs_total": 3,
+    "n_epochs_with_eta": 0,
+    "eta1_mean": 0.0,
+    "eta2_mean": 0.0,
+    "eta_mean": 0.0,
+    "screen_distance_s": null,
+    "distance_pc": 2000.0
+  },
+  "B1508": {
+    "n_epochs_total": 2,
+    "n_epochs_with_eta": 2,
+    "eta1_mean": 0.004436081715968217,
+    "eta2_mean": 0.0067337912536149964,
+    "eta_mean": 0.005584936484791607,
+    "screen_distance_s": 0.37366216308289785,
+    "distance_pc": 2100.0
+  },
+  "B2154": {
+    "n_epochs_total": 3,
+    "n_epochs_with_eta": 2,
+    "eta1_mean": 0.0037955979567103025,
+    "eta2_mean": 0.005476919677829059,
+    "eta_mean": 0.004636258817269681,
+    "screen_distance_s": 0.3404503934962361,
+    "distance_pc": 2900.0
+  },
+  "B0329": {
+    "n_epochs_total": 3,
+    "n_epochs_with_eta": 2,
+    "eta1_mean": 0.005182748465215072,
+    "eta2_mean": 0.005225443810444544,
+    "eta_mean": 0.005204096137829808,
+    "screen_distance_s": 0.36069710762043156,
+    "distance_pc": 1000.0
+  },
+  "B2324": {
+    "n_epochs_total": 2,
+    "n_epochs_with_eta": 2,
+    "eta1_mean": 0.0030315017352486244,
+    "eta2_mean": 0.008863634941026974,
+    "eta_mean": 0.005947568338137799,
+    "screen_distance_s": 0.38560239684608416,
+    "distance_pc": 2700.0
+  }
+}

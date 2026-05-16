@@ -1,0 +1,6 @@
+[2026-05-15 02:55:18] [INFO] ================================================================================
+[2026-05-15 02:55:18] [INFO] STEP step_046_signed_orbital_phasebin STARTED
+[2026-05-15 02:55:18] [INFO] Description: Signed-delay orbital phase-binning analysis
+[2026-05-15 02:55:18] [INFO] Physics: Test orbital kinematic modulation using Stokes-aligned signed geometric delays
+[2026-05-15 02:55:18] [INFO] Method: Bin triplets by orbital phase, compute inverse-variance weighted signed mean per bin, fit sinusoid with absolute_sigma=True
+[2026-05-15 02:55:18] [INFO] ================================================================================

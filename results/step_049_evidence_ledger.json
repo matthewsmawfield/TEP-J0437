@@ -1,0 +1,384 @@
+{
+  "evidence_standard": "Primary claims require phase-domain circular evidence on independent epochs. Unsigned |H|, delay amplitudes, cross-pulsar scaling, chromatic fits, and orbital fits are diagnostics unless explicitly marked primary.",
+  "manuscript_claim_guardrails": {
+    "preferred_headline": "Robust single-sightline detection of non-zero Phase Closure in J0437-4715, consistent with TEP and supported by non-decisive geometric diagnostics.",
+    "avoid_phrases": [
+      "proof of TEP",
+      "decisive orbital modulation",
+      "confirmed cross-telescope replication",
+      "J1603 independent phase detection",
+      "unsigned |H| detection",
+      "raw |H| scaling law established"
+    ],
+    "required_caveats": [
+      "J1603 is phase-noise-limited and contributes geometry, not a second phase detection.",
+      "Jiamusi and MeerKAT rows are noise-limited bounds, not positive replication.",
+      "Orbital modulation: mixed-effects model yields 1.14 \u00b1 0.79 ns (LR p = 0.357, 2 df); not independently significant.",
+      "Raw |H| and delay-amplitude fits are diagnostic because folded magnitudes have a noise floor.",
+      "A local J0437 sightline anomaly remains a residual alternative until independent high-SNR replication.",
+      "Chromatic step_043 (unsigned |H| hierarchy): valid_for_primary_inference is false in results/step_043_definitive_chromatic_test.json; cross-pulsar free exponent sits on the optimizer upper boundary; within-source J0437 sub-band comparison is directional (three bands)."
+    ]
+  },
+  "primary_claim": {
+    "claim": "J0437-4715 rejects the additive scalar path-delay null through non-zero Phase Closure psi.",
+    "status": "primary_evidence",
+    "pulsar": "J0437-4715",
+    "phase_closure_mean_rad": 0.9840495457197854,
+    "phase_closure_circ_se_rad": 0.04644694692483576,
+    "unweighted_psi_rad": 1.1203686885494328,
+    "rayleigh_p_unweighted": 1.336433790700201e-44,
+    "rayleigh_p_weighted": 1.3864824207812792e-13,
+    "v_test_p": 2.0406376031625597e-05,
+    "bootstrap_ci_95_rad": [
+      0.7412846805632585,
+      1.2308015762374724
+    ],
+    "falsification_status": "TEP NOT FALSIFIED"
+  },
+  "supporting_diagnostics": {
+    "phase_scramble": {
+      "control": "phase_scramble",
+      "description": "Randomize epoch phase-closure angles and compare circular concentration",
+      "pulsar": "J0437-4715",
+      "n_epoch_phases": 1093,
+      "n_scrambles": 1000,
+      "observed_psi_rad": 0.964048,
+      "observed_rbar": 0.311374,
+      "scrambled_rbar_mean": 0.026628,
+      "scrambled_rbar_std": 0.013805,
+      "p_observed_concentration_by_chance": 0.0,
+      "interpretation": "J0437 epoch phase closure is more concentrated than 100.0% of uniform circular phase scrambles (p = 0.0000).",
+      "test_status": "pass",
+      "test_passed": true
+    },
+    "pre_alignment_phase": {
+      "control": "pre_alignment_diagnostic",
+      "description": "Epoch phase-closure distribution before any velocity weighting",
+      "pulsar": "J0437-4715",
+      "n_epoch_phases": 1093,
+      "phase_closure_mean_rad": 0.964048,
+      "phase_closure_rbar": 0.311374,
+      "rayleigh_p": 9.495142724528462e-47,
+      "interpretation": "J0437 has coherent non-zero phase closure before velocity-domain weighting.",
+      "test_status": "pass",
+      "test_passed": true
+    },
+    "frame_invariance": {
+      "unweighted_psi_invariant_all_directions": true,
+      "unweighted_psi_max_abs_delta_rad": 0.0
+    },
+    "signed_bipolar_cancellation": {
+      "H_signed_mean_ns": -0.18369435483279536,
+      "H_signed_sem_ns": 0.10194563966559812,
+      "H_signed_t_statistic": -1.8018853521871971,
+      "signed_threshold": 3.0
+    },
+    "systematics_note": null
+  },
+  "explicit_non_claims": {
+    "multi_pulsar_scaling": {
+      "status": "not_established",
+      "reason": "Insufficient robust phase detections (need \u22652, have 1)",
+      "legacy_h_scaling_disabled": true
+    },
+    "cross_telescope_replication": {
+      "status": "no_positive_cross_telescope_replication",
+      "instrumental_stats": {
+        "parkes_positive_phase_detections": 1,
+        "jiamusi_positive_phase_detections": 0
+      }
+    },
+    "chromaticity": {
+      "pipeline_step": "043",
+      "results_json": "results/step_043_definitive_chromatic_test.json",
+      "inference_status": "diagnostic_only",
+      "valid_for_primary_inference": false,
+      "interpretation": "Unexpected positive frequency dependence; fitted exponent is on an optimizer boundary, so the cross-pulsar frequency exponent is not interpretable as evidence.",
+      "cross_pulsar_unsigned_H_hierarchy": {
+        "preferred_model_by_aic": "M_general",
+        "free_frequency_exponent_delta_hat": 2.0,
+        "free_delta_on_upper_boundary": true,
+        "delta_aic_M_ISM_minus_M_TEP": 663.8267326082922,
+        "aic_M_TEP": 237.92079620610798,
+        "aic_M_ISM": 901.7475288144002,
+        "aic_M_general": 161.95022422109872
+      },
+      "within_source_j0437_subbands": {
+        "n_points": 3,
+        "delta_hat": 0.020487165090882963,
+        "delta_aic_tep_vs_free": -1.9994141209946523,
+        "delta_aic_ism_vs_free": 3.6983514664023547
+      },
+      "limitations": [
+        "Cross-pulsar fit uses unsigned |H| amplitudes, which are folded-noise-floor biased.",
+        "Bounding rows constrain amplitudes but are not positive phase detections.",
+        "Telescope calibration and geometry differences dominate the cross-pulsar model.",
+        "A free exponent on an optimizer boundary is not interpretable as strong chromatic evidence.",
+        "Within-source J0437 sub-band test has few points and large errors."
+      ]
+    },
+    "orbital_modulation": {
+      "status": "suggestive_follow_up",
+      "primary_analysis": "step_046b_mixed_effects_reml",
+      "mixed_effects_amplitude_ns": 1.139065780338534,
+      "mixed_effects_amplitude_se_ns": 0.7933888088569664,
+      "mixed_effects_ci_95": [
+        0.29477677878899805,
+        2.8558603355616907
+      ],
+      "mixed_effects_lr_pvalue": 0.3565519400342598,
+      "mixed_effects_favors_modulation": false,
+      "epoch_blocked_amplitude_ns": -1.0280758790152418,
+      "epoch_blocked_amplitude_err_ns": 0.8271498576499526,
+      "epoch_blocked_sigma": 1.2429136866881025,
+      "nested_model_p": 0.448663101130781,
+      "permutation_p": 0.512743628185907
+    },
+    "unsigned_H": {
+      "status": "diagnostic_only",
+      "reason": "Folded magnitudes have a noise floor and delay-domain systematics exceed formal SEM.",
+      "H_magnitude_ns": 8.100162219444181,
+      "H_noise_bias_ns": 6.810334179171245,
+      "H_excess_ns": 1.289828040272936
+    }
+  },
+  "paper_ready_summary": {
+    "one_sentence": "The present pipeline supports a phase-domain J0437 detection of non-zero synchronization holonomy, while classifying J1603 geometry, orbital structure, chromatic fits, scaling, and unsigned-|H| amplitudes as supporting diagnostics or follow-up tests.",
+    "reviewer_risk_reduction": [
+      "Separates circular phase evidence from folded-magnitude noise-floor artifacts.",
+      "Prevents J1603 from being over-described as an independent detection.",
+      "Prevents orbital triplet-level precision from being treated as independent-epoch significance.",
+      "Makes cross-telescope replication status explicit.",
+      "Keeps residual local-ISM alternatives visible instead of overclaiming exclusion.",
+      "Records step_043 inference_status and valid_for_primary_inference so unsigned-|H| chromatic hierarchies cannot be read as phase-primary claims."
+    ]
+  },
+  "replication_gates": [
+    "Independent reproduction of J0437 phase closure from raw dynamic spectra.",
+    "A second nearby high-SNR pulsar with robust phase closure in the predicted geometry.",
+    "Cross-telescope detection of phase closure, not merely unsigned |H|.",
+    "Chromatic test on same-source multi-band data with enough epochs for phase statistics.",
+    "Orbital or annual modulation detected with epoch-blocked significance."
+  ],
+  "evidence_tier_summary": {
+    "generated_at_utc": "2026-05-15T10:19:46.476910+00:00",
+    "ingestion_reference": "results/step_024_multi_pulsar_ingestion.json",
+    "scaling_reference_note": "Insufficient robust phase detections (need \u22652, have 1)",
+    "epistemic_accounting": {
+      "interpretation": "Population-level falsification of GR or establishment of TEP as physical fact requires multiple independent high-SNR phase-closure detections on distinct sightlines. The present catalog mixes one primary phase target, one geometry-supporting Parkes pulsar, and noise-limited bounding rows.",
+      "n_rows_in_ingestion_catalog": 12,
+      "n_pulsars_with_step003_summary": 8,
+      "n_primary_phase_closure_targets": 1,
+      "n_geometric_diagnostic_targets": 1,
+      "n_noise_limited_bounding_or_auxiliary_rows": 11,
+      "n_pulsars_counting_toward_independent_phase_replication": 0
+    },
+    "example_high_snr_replication_classes_not_in_current_catalog": [
+      {
+        "example": "PSR B1937+21",
+        "note": "Illustrative millisecond-pulsar class often cited for scintillation SNR; not part of the processed PPTA/Jiamusi/MeerKAT artifact set in this repository."
+      }
+    ],
+    "j0437_subband_robustness_summaries": [
+      "results/step_003_closure_final_summary_j0437_sb0.json",
+      "results/step_003_closure_final_summary_j0437_sb1.json"
+    ],
+    "pulsars": [
+      {
+        "pulsar": "J0437-4715",
+        "evidence_tier": "primary_phase_closure",
+        "ingestion_role": "Primary reference pulsar",
+        "data_source": "PPTA DR2 Parkes/CASPSR",
+        "step003_summary_relpath": "results/step_003_closure_final_summary_j0437.json",
+        "n_epochs": 1391,
+        "n_total_triplets": 19167,
+        "n_independent_samples": 1093,
+        "phase_closure_rayleigh_p": 1.3864824207812792e-13,
+        "phase_closure_rbar": 0.30759393239598287,
+        "detected_3sigma_phase_closure": true,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": true
+      },
+      {
+        "pulsar": "J1603-7202",
+        "evidence_tier": "geometric_diagnostic_phase_noise_limited",
+        "ingestion_role": "Secondary Parkes/PPTA pulsar",
+        "data_source": "PPTA DR2 Parkes/CASPSR",
+        "step003_summary_relpath": "results/step_003_closure_final_summary_j1603.json",
+        "n_epochs": 248,
+        "n_total_triplets": 3653,
+        "n_independent_samples": 215,
+        "phase_closure_rayleigh_p": 0.9359613430530282,
+        "phase_closure_rbar": 0.02670174025447849,
+        "detected_3sigma_phase_closure": false,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "B0329+54",
+        "evidence_tier": "catalog_noise_limited_bounding_row",
+        "ingestion_role": "Ensemble scaling analysis",
+        "data_source": "Jiamusi 65m",
+        "step003_summary_relpath": null,
+        "n_epochs": 0,
+        "n_total_triplets": 0,
+        "n_independent_samples": null,
+        "phase_closure_rayleigh_p": null,
+        "phase_closure_rbar": null,
+        "detected_3sigma_phase_closure": null,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "B0355+54",
+        "evidence_tier": "catalog_noise_limited_bounding_row",
+        "ingestion_role": "Ensemble scaling analysis",
+        "data_source": "Jiamusi 65m",
+        "step003_summary_relpath": "results/step_003_closure_final_summary_B0355.json",
+        "n_epochs": 1,
+        "n_total_triplets": 20,
+        "n_independent_samples": 1,
+        "phase_closure_rayleigh_p": 1.0,
+        "phase_closure_rbar": 1.0,
+        "detected_3sigma_phase_closure": false,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "B0540+23",
+        "evidence_tier": "catalog_noise_limited_bounding_row",
+        "ingestion_role": "Ensemble scaling analysis",
+        "data_source": "Jiamusi 65m",
+        "step003_summary_relpath": "results/step_003_closure_final_summary_B0540.json",
+        "n_epochs": 2,
+        "n_total_triplets": 40,
+        "n_independent_samples": 2,
+        "phase_closure_rayleigh_p": 1.0,
+        "phase_closure_rbar": 0.6865877818765881,
+        "detected_3sigma_phase_closure": false,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "B0740-28",
+        "evidence_tier": "catalog_noise_limited_bounding_row",
+        "ingestion_role": "Ensemble scaling analysis",
+        "data_source": "Jiamusi 65m",
+        "step003_summary_relpath": null,
+        "n_epochs": 0,
+        "n_total_triplets": 0,
+        "n_independent_samples": null,
+        "phase_closure_rayleigh_p": null,
+        "phase_closure_rbar": null,
+        "detected_3sigma_phase_closure": null,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "B1508+55",
+        "evidence_tier": "catalog_noise_limited_bounding_row",
+        "ingestion_role": "Ensemble scaling analysis",
+        "data_source": "Jiamusi 65m",
+        "step003_summary_relpath": "results/step_003_closure_final_summary_B1508.json",
+        "n_epochs": 1,
+        "n_total_triplets": 20,
+        "n_independent_samples": 1,
+        "phase_closure_rayleigh_p": 1.0,
+        "phase_closure_rbar": 1.0,
+        "detected_3sigma_phase_closure": false,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "B1933+16",
+        "evidence_tier": "catalog_noise_limited_bounding_row",
+        "ingestion_role": "Ensemble scaling analysis",
+        "data_source": "Jiamusi 65m",
+        "step003_summary_relpath": null,
+        "n_epochs": 0,
+        "n_total_triplets": 0,
+        "n_independent_samples": null,
+        "phase_closure_rayleigh_p": null,
+        "phase_closure_rbar": null,
+        "detected_3sigma_phase_closure": null,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "B2154+40",
+        "evidence_tier": "catalog_noise_limited_bounding_row",
+        "ingestion_role": "Ensemble scaling analysis",
+        "data_source": "Jiamusi 65m",
+        "step003_summary_relpath": "results/step_003_closure_final_summary_B2154.json",
+        "n_epochs": 1,
+        "n_total_triplets": 20,
+        "n_independent_samples": 1,
+        "phase_closure_rayleigh_p": 1.0,
+        "phase_closure_rbar": 1.0,
+        "detected_3sigma_phase_closure": false,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "B2310+42",
+        "evidence_tier": "catalog_noise_limited_bounding_row",
+        "ingestion_role": "Ensemble scaling analysis",
+        "data_source": "Jiamusi 65m",
+        "step003_summary_relpath": "results/step_003_closure_final_summary_B2310.json",
+        "n_epochs": 1,
+        "n_total_triplets": 20,
+        "n_independent_samples": 1,
+        "phase_closure_rayleigh_p": 1.0,
+        "phase_closure_rbar": 0.9999999999999999,
+        "detected_3sigma_phase_closure": false,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "B2324+60",
+        "evidence_tier": "catalog_noise_limited_bounding_row",
+        "ingestion_role": "Ensemble scaling analysis",
+        "data_source": "Jiamusi 65m",
+        "step003_summary_relpath": null,
+        "n_epochs": 0,
+        "n_total_triplets": 0,
+        "n_independent_samples": null,
+        "phase_closure_rayleigh_p": null,
+        "phase_closure_rbar": null,
+        "detected_3sigma_phase_closure": null,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "B2351+61",
+        "evidence_tier": "catalog_noise_limited_bounding_row",
+        "ingestion_role": "Ensemble scaling analysis",
+        "data_source": "Jiamusi 65m",
+        "step003_summary_relpath": null,
+        "n_epochs": 0,
+        "n_total_triplets": 0,
+        "n_independent_samples": null,
+        "phase_closure_rayleigh_p": null,
+        "phase_closure_rbar": null,
+        "detected_3sigma_phase_closure": null,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      },
+      {
+        "pulsar": "J1731-4744",
+        "evidence_tier": "catalog_noise_limited_telescope_auxiliary",
+        "ingestion_role": "MeerKAT auxiliary",
+        "data_source": null,
+        "step003_summary_relpath": "results/step_003_closure_final_summary_J1731.json",
+        "n_epochs": 1,
+        "n_total_triplets": 20,
+        "n_independent_samples": 1,
+        "phase_closure_rayleigh_p": 1.0,
+        "phase_closure_rbar": 1.0,
+        "detected_3sigma_phase_closure": false,
+        "counts_toward_multi_sightline_phase_replication": false,
+        "is_primary_single_sightline_phase_target": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "null_test": {
+    "true_h": 0.0,
+    "detected_h": 0.6490329265166971,
+    "detected_std": 5.526391274505516,
+    "t_statistic": 0.8788588151417126,
+    "p_value": 0.3833013942784179,
+    "n_samples": 56,
+    "detection_made": false,
+    "correct_detection": true,
+    "mean_cross_term_snr": 830.9000034187393
+  },
+  "tep_test": {
+    "true_h": 8.100162219444181,
+    "detected_h": 6.704273982342398,
+    "detected_std": 1.501608405128905,
+    "t_statistic": 11.380384392101677,
+    "p_value": 3.1046190609150367e-12,
+    "n_samples": 56,
+    "detection_made": true,
+    "correct_detection": true,
+    "mean_cross_term_snr": 632.3129339992701,
+    "n_realizations": 10,
+    "t_statistic_std": 1.501608405128905
+  },
+  "sensitivity_analysis": [
+    {
+      "true_h": 2.0,
+      "detected": false,
+      "t_statistic": 3.33599560027708
+    },
+    {
+      "true_h": 5.0,
+      "detected": true,
+      "t_statistic": 8.609310008996838
+    },
+    {
+      "true_h": 8.93,
+      "detected": true,
+      "t_statistic": 11.776164079888675
+    },
+    {
+      "true_h": 15.0,
+      "detected": true,
+      "t_statistic": 22.506031382588457
+    }
+  ],
+  "pipeline_integrity": {
+    "null_case_correct": true,
+    "tep_case_correct": true,
+    "detection_threshold": "5sigma",
+    "snr_filtering_method": "cross-term SNR (independent of closure delay)",
+    "circular_snr_bug_fixed": true,
+    "conclusion": "Pipeline correctly identifies null case and detects TEP effects when present"
+  }
+}

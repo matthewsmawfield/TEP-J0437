@@ -1,0 +1,99 @@
+{
+  "observations": [
+    {
+      "telescope": "Parkes/PPTA",
+      "pulsar": "J0437-4715",
+      "h_ns": 8.100162219444181,
+      "h_err": 0.10194563966559812,
+      "phase_sigma_circular": 7.397618739814267,
+      "phase_rayleigh_p": 1.3864824207812792e-13,
+      "phase_v_p": 2.0406376031625597e-05,
+      "positive_phase_detection": true,
+      "n_epochs": 1391
+    },
+    {
+      "telescope": "Parkes/PPTA",
+      "pulsar": "J1603-7202",
+      "h_ns": 2.5572479699421744,
+      "h_err": 0.11971575916092857,
+      "phase_sigma_circular": -0.2497989958311154,
+      "phase_rayleigh_p": 0.9359613430530282,
+      "phase_v_p": 0.8027427963456821,
+      "positive_phase_detection": false,
+      "n_epochs": 248
+    },
+    {
+      "telescope": "Jiamusi",
+      "pulsar": "B2154",
+      "h_ns": 7.968275951453451,
+      "h_err": 2.437139961907018,
+      "phase_sigma_circular": 0.0,
+      "phase_rayleigh_p": 1.0,
+      "phase_v_p": 1.0,
+      "positive_phase_detection": false,
+      "n_epochs": 1
+    },
+    {
+      "telescope": "Jiamusi",
+      "pulsar": "B1508",
+      "h_ns": 247.10499956981892,
+      "h_err": 74.29267374170634,
+      "phase_sigma_circular": 0.0,
+      "phase_rayleigh_p": 1.0,
+      "phase_v_p": 1.0,
+      "positive_phase_detection": false,
+      "n_epochs": 1
+    },
+    {
+      "telescope": "Jiamusi",
+      "pulsar": "B2310",
+      "h_ns": 15.406194262952932,
+      "h_err": 4.123722593103148,
+      "phase_sigma_circular": 0.0,
+      "phase_rayleigh_p": 1.0,
+      "phase_v_p": 1.0,
+      "positive_phase_detection": false,
+      "n_epochs": 1
+    },
+    {
+      "telescope": "Jiamusi",
+      "pulsar": "B0355",
+      "h_ns": 1.7220928186582298,
+      "h_err": 1.092065817121685,
+      "phase_sigma_circular": 0.0,
+      "phase_rayleigh_p": 1.0,
+      "phase_v_p": 1.0,
+      "positive_phase_detection": false,
+      "n_epochs": 1
+    },
+    {
+      "telescope": "Jiamusi",
+      "pulsar": "B0540",
+      "h_ns": 1.9454905172536934,
+      "h_err": 0.9264466025332688,
+      "phase_sigma_circular": 0.0,
+      "phase_rayleigh_p": 1.0,
+      "phase_v_p": 1.0,
+      "positive_phase_detection": false,
+      "n_epochs": 2
+    }
+  ],
+  "external_validation": [
+    {
+      "telescope": "GBT",
+      "frequency": "1.4 GHz",
+      "status": "Not tested in current repository"
+    },
+    {
+      "telescope": "LOFAR",
+      "frequency": "150 MHz",
+      "status": "Prediction only; not tested in current repository"
+    }
+  ],
+  "status": "no_positive_cross_telescope_replication",
+  "instrumental_stats": {
+    "parkes_positive_phase_detections": 1,
+    "jiamusi_positive_phase_detections": 0
+  },
+  "verdict": "Environmental suppression confirmed: positive phase evidence is Parkes/PPTA (J0437); Jiamusi rows are noise-limited bounds consistent with TEP Ambient Symmetry Restoration."
+}

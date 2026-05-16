@@ -1,0 +1,25 @@
+# External dependencies (PyPI packages)
+# Python version: 3.10 - 3.12
+numpy==1.26.4
+pandas==2.2.0
+astropy==6.1.0
+astroquery==0.4.7
+requests==2.31.0
+matplotlib==3.8.4
+scipy==1.13.0
+scikit-learn==1.5.0
+emcee==3.3.0
+corner==2.2.2
+tqdm==4.66.4
+pymc==5.16.0
+arviz==0.18.0
+playwright==1.44.0
+
+# Standard library dependencies (Python 3.2+)
+# - concurrent.futures: Used in step_001_parse_dynspec.py, step_002_secondary_spectra.py
+# - multiprocessing: Used in step_002_secondary_spectra.py, run_pipeline.py
+# - itertools: Used in step_003_closure_delays_final.py
+# - dataclasses: Used in step_003_closure_delays_final.py
+# - json: Used throughout for data serialization
+# - pathlib: Used throughout for path handling
+# - sys: Used throughout for system operations

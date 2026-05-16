@@ -1,0 +1,99 @@
+{
+  "correlation_analysis": {
+    "shear_correlation": {
+      "note": "Full analysis requires multi-pulsar data",
+      "current_limitation": "Single pulsar (J0437-4715) limits environmental dependence analysis",
+      "proxy_analysis": "Arclet count and SNR serve as proxies for ISM complexity and Temporal Shear",
+      "v0.8_framework": "Correlation tracks Temporal Shear (\u2207\u03c6), the operative quantity in continuous geometric screening",
+      "status": "deferred_to_multi_pulsar_analysis"
+    }
+  },
+  "candidate_pulsars": [
+    {
+      "name": "PSR J0437-4715",
+      "distance_pc": 156,
+      "flux_mjy": 150,
+      "screen_distances_pc": [
+        89.8,
+        124.0
+      ],
+      "density_g_cm3": 1e-24,
+      "observed_H_ns": 8.100162219444181,
+      "note": "Current study - reference measurement. Temporal Shear unsuppressed in local ISM."
+    },
+    {
+      "name": "PSR J1713+0747",
+      "distance_pc": 1000,
+      "flux_mjy": 8,
+      "screen_distances_pc": null,
+      "density_g_cm3": 1e-24,
+      "predicted_H_ns": null,
+      "note": "Candidate for replication - requires scintillation data to measure screen distances before prediction."
+    },
+    {
+      "name": "PSR J1909-3744",
+      "distance_pc": 1100,
+      "flux_mjy": 3,
+      "screen_distances_pc": null,
+      "density_g_cm3": 1e-24,
+      "predicted_H_ns": null,
+      "note": "Candidate for replication - requires scintillation data to measure screen distances before prediction."
+    },
+    {
+      "name": "PSR J1643-1224",
+      "distance_pc": 350,
+      "flux_mjy": 15,
+      "screen_distances_pc": null,
+      "density_g_cm3": 1e-24,
+      "predicted_H_ns": null,
+      "note": "Candidate for replication - requires scintillation data to measure screen distances before prediction."
+    }
+  ],
+  "replication_framework": {
+    "target_pulsar_criteria": {
+      "minimum_flux_mjy": 50,
+      "minimum_observation_years": 5,
+      "minimum_epochs": 100,
+      "minimum_arclets_per_epoch": 3,
+      "well_characterized_ism": true
+    },
+    "analysis_requirements": {
+      "use_same_pipeline": true,
+      "fixed_random_seeds": true,
+      "multiple_comparison_correction": "Bonferroni",
+      "significance_threshold": "5sigma after correction"
+    },
+    "testable_hypotheses": {
+      "TEP_prediction_1": "|H| scales with Temporal Shear (\u2207\u03c6), which tracks ISM density gradients in the continuous screening paradigm",
+      "TEP_prediction_2": "|H| scales with screen distance through integrated Temporal Shear",
+      "TEP_prediction_3": "Bipolar structure preserved across environments",
+      "TEP_prediction_4": "Magnitude equality holds across environments",
+      "TEP_prediction_5": "Ambient Symmetry Restoration: \u03b1_eff \u221d D^-1.6 (environment-dependent scalar coupling scaling with Galactocentric distance)",
+      "alternative_prediction": "No environmental dependence expected for standard ISM effects"
+    },
+    "ambient_symmetry_restoration": {
+      "description": "TEP v0.8 predicts environment-dependent scalar coupling \u03b1_eff \u221d D^-1.6",
+      "scaling_relation": "\u03b1_eff = \u03b1_0 * (D / D_0)^-1.6",
+      "physical_basis": "Non-linear superposition of field gradients (Temporal Shear) in continuous screening",
+      "implications": "Coupling strength varies with Galactic environment, predicting weaker effects at larger Galactocentric radii",
+      "testable": true
+    },
+    "success_criteria": {
+      "detection_significance": ">5sigma after multiple comparison correction",
+      "bipolar_structure_confirmed": "Both signs significant, magnitudes equal",
+      "environmental_scaling": "|H varies with ISM parameters as predicted",
+      "reproducibility": "Independent groups obtain consistent results"
+    }
+  },
+  "current_limitations": [
+    "Single pulsar analysis limits environmental dependence testing",
+    "Independent replication requires multi-pulsar observational campaign",
+    "Theoretical scaling relations need proper derivation from TEP field equations"
+  ],
+  "next_steps": [
+    "Obtain scintillation data for candidate pulsars",
+    "Apply same pipeline to new pulsars",
+    "Test environmental scaling predictions",
+    "Independent group replication using same methodology"
+  ]
+}

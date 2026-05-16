@@ -1,0 +1,50 @@
+{
+  "screen_distances_pc": [
+    89.8,
+    124.0
+  ],
+  "reference_density_g_cm3": 1e-24,
+  "observed_holonomy_ns": 8.100162219444181,
+  "shear_integrals": [
+    0.005926163872582356,
+    0.007106157820609487
+  ],
+  "total_integrated_density": 8.63800340556687e-23,
+  "constrained_B_phi": 0.6215440663712093,
+  "temporal_topology": {
+    "mean_phi": 0.004324678379199617,
+    "max_phi": 0.009999999999999998,
+    "mean_shear_pc_inv": 4.3246726127886523e-05,
+    "max_shear_pc_inv": 9.989996666667646e-05
+  },
+  "shear_scaling": {
+    "shear_x0.5": 4.050081109722091,
+    "shear_x1.0": 8.100162219444181,
+    "shear_x2.0": 16.200324438888362,
+    "shear_x5.0": 40.50081109722091,
+    "shear_x10.0": 81.00162219444182
+  },
+  "distance_scaling": {
+    "distance_x0.5": 4.050081109722091,
+    "distance_x1.0": 8.100162219444181,
+    "distance_x1.5": 12.150243329166273,
+    "distance_x2.0": 16.200324438888362
+  },
+  "theoretical_framework": {
+    "note": "TEP v0.8 Temporal Topology formulation. Temporal Shear (\u2207\u03c6) is the operative quantity driving holonomy, replacing legacy discrete approximations.",
+    "screening_paradigm": "Continuous Temporal Topology governed by non-linear superposition of field gradients (Temporal Shear)",
+    "known_limitations": [
+      "V_eff(\u03c6; \u03c1) solution uses phenomenological linear relation \u03c6 \u221d \u03c1 (line 117)",
+      "Full Temporal Topology field equation V_eff(\u03c6; \u03c1) = V(\u03c6) + [A(\u03c6) - 1]\u03c1 not yet solved self-consistently",
+      "Non-linear superposition of gradients from multiple screens simplified to single exponential model"
+    ],
+    "required_development": [
+      "Derive functional form of B(\u03c6) from TEP field equations",
+      "Solve full gradient-dependent effective potential V_eff(\u03c6; \u03c1) for \u03c6(r) self-consistently",
+      "Implement non-linear superposition of field gradients from multiple scattering screens",
+      "Compute expected holonomy from path integration of Temporal Shear \u2207\u03c6",
+      "Incorporate scattering screen geometry into holonomy calculation",
+      "Establish scaling relations for |H| with Temporal Shear, screen distance, loop geometry"
+    ]
+  }
+}

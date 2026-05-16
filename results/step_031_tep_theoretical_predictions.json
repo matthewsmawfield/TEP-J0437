@@ -1,0 +1,186 @@
+{
+  "j0437_prediction": {
+    "parameters": {
+      "wavelength_cm": 20.0,
+      "screen_distance_pc": 100.0,
+      "c_n2": 1e-14,
+      "v_iss_kms": 100.0,
+      "observed_H_ns": 21.990938799984754
+    },
+    "predicted_H_ns": 21.990938799984754,
+    "observed_H_ns": 21.990938799984754,
+    "agreement_fraction": 0.0
+  },
+  "control_pulsar_predictions": {
+    "J0437-4715": {
+      "predicted_H_ns": 21.990938799984754,
+      "parameters": {
+        "wavelength_cm": 20.0,
+        "screen_distance_pc": 100.0,
+        "c_n2": 1e-14,
+        "v_iss_kms": 100.0,
+        "observed_H_ns": 21.990938799984754
+      },
+      "detectable": true
+    },
+    "J1603-7202": {
+      "predicted_H_ns": 8.706302192858008,
+      "parameters": {
+        "wavelength_cm": 20.0,
+        "screen_distance_pc": 125.0,
+        "c_n2": 1e-14,
+        "v_iss_kms": 31.672325668475942
+      },
+      "detectable": true
+    }
+  },
+  "scaling_laws": {
+    "wavelength_scaling": {
+      "predictions": [
+        {
+          "wavelength_cm": 10.0,
+          "H_ns": 5.4977346999961885
+        },
+        {
+          "wavelength_cm": 20.0,
+          "H_ns": 21.990938799984754
+        },
+        {
+          "wavelength_cm": 30.0,
+          "H_ns": 49.479612299965694
+        },
+        {
+          "wavelength_cm": 40.0,
+          "H_ns": 87.96375519993902
+        },
+        {
+          "wavelength_cm": 50.0,
+          "H_ns": 137.44336749990472
+        },
+        {
+          "wavelength_cm": 60.0,
+          "H_ns": 197.91844919986278
+        },
+        {
+          "wavelength_cm": 70.0,
+          "H_ns": 269.38900029981323
+        },
+        {
+          "wavelength_cm": 80.0,
+          "H_ns": 351.85502079975606
+        },
+        {
+          "wavelength_cm": 90.0,
+          "H_ns": 445.31651069969126
+        },
+        {
+          "wavelength_cm": 100.0,
+          "H_ns": 549.7734699996189
+        }
+      ],
+      "scaling_exponent": 1.999999999999999,
+      "theoretical_exponent": 2.0,
+      "agreement": true
+    },
+    "screen_distance_scaling": {
+      "predictions": [
+        {
+          "distance_pc": 50.0,
+          "H_ns": 10.995469399992377
+        },
+        {
+          "distance_pc": 100.0,
+          "H_ns": 21.990938799984754
+        },
+        {
+          "distance_pc": 150.0,
+          "H_ns": 32.986408199977134
+        },
+        {
+          "distance_pc": 200.0,
+          "H_ns": 43.98187759996951
+        },
+        {
+          "distance_pc": 250.0,
+          "H_ns": 54.97734699996188
+        },
+        {
+          "distance_pc": 300.0,
+          "H_ns": 65.97281639995427
+        },
+        {
+          "distance_pc": 350.0,
+          "H_ns": 76.96828579994664
+        },
+        {
+          "distance_pc": 400.0,
+          "H_ns": 87.96375519993902
+        },
+        {
+          "distance_pc": 450.0,
+          "H_ns": 98.95922459993139
+        },
+        {
+          "distance_pc": 500.0,
+          "H_ns": 109.95469399992376
+        }
+      ],
+      "scaling_exponent": 0.9999999999999998,
+      "theoretical_exponent": 1.0,
+      "agreement": true
+    },
+    "turbulence_strength_scaling": {
+      "predictions": [
+        {
+          "c_n2": 1e-15,
+          "H_ns": 2.1990938799984754
+        },
+        {
+          "c_n2": 1.6681005372000557e-15,
+          "H_ns": 3.6683096825788115
+        },
+        {
+          "c_n2": 2.782559402207126e-15,
+          "H_ns": 6.119109352125907
+        },
+        {
+          "c_n2": 4.641588833612772e-15,
+          "H_ns": 10.20728959746711
+        },
+        {
+          "c_n2": 7.742636826811278e-15,
+          "H_ns": 17.026785260891497
+        },
+        {
+          "c_n2": 1.2915496650148826e-14,
+          "H_ns": 28.402389640483094
+        },
+        {
+          "c_n2": 2.1544346900318866e-14,
+          "H_ns": 47.378041417055336
+        },
+        {
+          "c_n2": 3.5938136638046254e-14,
+          "H_ns": 79.0313363392765
+        },
+        {
+          "c_n2": 5.994842503189421e-14,
+          "H_ns": 131.83221460318597
+        },
+        {
+          "c_n2": 1e-13,
+          "H_ns": 219.90938799984752
+        }
+      ],
+      "scaling_exponent": 1.0000000000000009,
+      "theoretical_exponent": 1.0,
+      "agreement": true
+    }
+  },
+  "testable_predictions": [
+    "|H| \u221d lambda\u00b2 (wavelength scaling)",
+    "|H| \u221d D (screen distance scaling)",
+    "|H| \u221d C_n\u00b2 (turbulence strength scaling)",
+    "|H| \u221d v_iss (velocity scaling)"
+  ]
+}

@@ -1,0 +1,867 @@
+{
+  "arclet_number_dependence": {
+    "arclet_number_stats": {
+      "3": {
+        "n_epochs": 57,
+        "mean_H_ns": -9.441371699102412,
+        "std_H_ns": 35.34016868308824,
+        "sem_ns": 4.680919692488711
+      },
+      "4": {
+        "n_epochs": 78,
+        "mean_H_ns": 2.9452703741062596,
+        "std_H_ns": 39.62959383978467,
+        "sem_ns": 4.487167897726632
+      },
+      "5": {
+        "n_epochs": 88,
+        "mean_H_ns": 6.494669795129437,
+        "std_H_ns": 37.30201792152833,
+        "sem_ns": 3.9764084711898295
+      },
+      "6": {
+        "n_epochs": 111,
+        "mean_H_ns": 1.9547771477343079,
+        "std_H_ns": 28.747687786693042,
+        "sem_ns": 2.7286097722136162
+      },
+      "7": {
+        "n_epochs": 90,
+        "mean_H_ns": 1.096599084775771,
+        "std_H_ns": 26.34235228629842,
+        "sem_ns": 2.776727738374898
+      },
+      "8": {
+        "n_epochs": 70,
+        "mean_H_ns": -1.5415799702034463,
+        "std_H_ns": 27.09180519616455,
+        "sem_ns": 3.2380900648970052
+      },
+      "9": {
+        "n_epochs": 76,
+        "mean_H_ns": 2.9260691897733104,
+        "std_H_ns": 34.09194761802362,
+        "sem_ns": 3.910614590932819
+      },
+      "10": {
+        "n_epochs": 44,
+        "mean_H_ns": 3.3810472871990256,
+        "std_H_ns": 18.079932293126646,
+        "sem_ns": 2.725652347787772
+      },
+      "11": {
+        "n_epochs": 44,
+        "mean_H_ns": 1.3696208813648045,
+        "std_H_ns": 12.195615132798867,
+        "sem_ns": 1.8385581583215538
+      },
+      "12": {
+        "n_epochs": 35,
+        "mean_H_ns": 4.974330559701352,
+        "std_H_ns": 28.352257106897504,
+        "sem_ns": 4.79240614501025
+      },
+      "13": {
+        "n_epochs": 32,
+        "mean_H_ns": -2.2301378915477614,
+        "std_H_ns": 21.334461403138874,
+        "sem_ns": 3.7714355827805406
+      },
+      "14": {
+        "n_epochs": 21,
+        "mean_H_ns": 1.4342804809847673,
+        "std_H_ns": 20.233610544660635,
+        "sem_ns": 4.415335804912573
+      },
+      "15": {
+        "n_epochs": 31,
+        "mean_H_ns": -3.5130702935457956,
+        "std_H_ns": 15.378878645693527,
+        "sem_ns": 2.7621281439929053
+      },
+      "16": {
+        "n_epochs": 24,
+        "mean_H_ns": 2.5763342165761496,
+        "std_H_ns": 6.290864551950925,
+        "sem_ns": 1.2841173494368405
+      },
+      "17": {
+        "n_epochs": 16,
+        "mean_H_ns": -3.8534821320403347,
+        "std_H_ns": 8.09777847272594,
+        "sem_ns": 2.024444618181485
+      },
+      "18": {
+        "n_epochs": 19,
+        "mean_H_ns": -5.122306251316211,
+        "std_H_ns": 19.708740212627426,
+        "sem_ns": 4.521495099544172
+      },
+      "19": {
+        "n_epochs": 26,
+        "mean_H_ns": 2.1904523249886063,
+        "std_H_ns": 10.847234255072273,
+        "sem_ns": 2.127317659043293
+      },
+      "20": {
+        "n_epochs": 11,
+        "mean_H_ns": -6.313100644433228,
+        "std_H_ns": 17.354940719274612,
+        "sem_ns": 5.232711511335869
+      },
+      "21": {
+        "n_epochs": 8,
+        "mean_H_ns": 2.317082322951658,
+        "std_H_ns": 4.7388825584771235,
+        "sem_ns": 1.6754479961729147
+      },
+      "22": {
+        "n_epochs": 10,
+        "mean_H_ns": 2.7658744960996464,
+        "std_H_ns": 14.424391273394956,
+        "sem_ns": 4.561393028538459
+      },
+      "23": {
+        "n_epochs": 5,
+        "mean_H_ns": -3.5641558594342184,
+        "std_H_ns": 9.445350069202318,
+        "sem_ns": 4.2240889652037446
+      },
+      "24": {
+        "n_epochs": 11,
+        "mean_H_ns": -5.812083734046795,
+        "std_H_ns": 12.91758817664321,
+        "sem_ns": 3.8947993798415164
+      },
+      "25": {
+        "n_epochs": 10,
+        "mean_H_ns": -0.6035557653777982,
+        "std_H_ns": 15.581000278055518,
+        "sem_ns": 4.927144910237227
+      },
+      "26": {
+        "n_epochs": 11,
+        "mean_H_ns": 3.2507378959394844,
+        "std_H_ns": 12.832332354868882,
+        "sem_ns": 3.8690937823852565
+      },
+      "27": {
+        "n_epochs": 8,
+        "mean_H_ns": -0.2288843504733884,
+        "std_H_ns": 8.217691126546539,
+        "sem_ns": 2.9053925606387883
+      },
+      "28": {
+        "n_epochs": 9,
+        "mean_H_ns": 5.026828899080836,
+        "std_H_ns": 12.964776693470233,
+        "sem_ns": 4.321592231156744
+      },
+      "29": {
+        "n_epochs": 9,
+        "mean_H_ns": 2.1360994401770825,
+        "std_H_ns": 8.082985932443673,
+        "sem_ns": 2.694328644147891
+      },
+      "30": {
+        "n_epochs": 11,
+        "mean_H_ns": -2.7038231428507546,
+        "std_H_ns": 20.22852803160871,
+        "sem_ns": 6.099130685639325
+      },
+      "31": {
+        "n_epochs": 12,
+        "mean_H_ns": 6.9123912891279495,
+        "std_H_ns": 14.703614883913678,
+        "sem_ns": 4.2445680056440755
+      },
+      "32": {
+        "n_epochs": 7,
+        "mean_H_ns": 2.6874528914450804,
+        "std_H_ns": 13.25882357571622,
+        "sem_ns": 5.011364265517899
+      },
+      "33": {
+        "n_epochs": 10,
+        "mean_H_ns": 7.367849138264297,
+        "std_H_ns": 31.380635923880867,
+        "sem_ns": 9.923428394396577
+      },
+      "34": {
+        "n_epochs": 8,
+        "mean_H_ns": -6.153063431433021,
+        "std_H_ns": 18.28446118417194,
+        "sem_ns": 6.464533246835094
+      },
+      "35": {
+        "n_epochs": 8,
+        "mean_H_ns": 1.571970031789193,
+        "std_H_ns": 15.00905522869673,
+        "sem_ns": 5.306502365707432
+      },
+      "36": {
+        "n_epochs": 12,
+        "mean_H_ns": -4.802858943220873,
+        "std_H_ns": 11.249343058244994,
+        "sem_ns": 3.247405621442098
+      },
+      "37": {
+        "n_epochs": 4,
+        "mean_H_ns": -11.761563521737475,
+        "std_H_ns": 13.889601813018263,
+        "sem_ns": 6.944800906509132
+      },
+      "38": {
+        "n_epochs": 11,
+        "mean_H_ns": -13.650764458331894,
+        "std_H_ns": 20.70102371781528,
+        "sem_ns": 6.2415934952946595
+      },
+      "39": {
+        "n_epochs": 8,
+        "mean_H_ns": -0.4858924554339099,
+        "std_H_ns": 20.16812140022449,
+        "sem_ns": 7.130507702946132
+      },
+      "41": {
+        "n_epochs": 5,
+        "mean_H_ns": -2.1037586963944346,
+        "std_H_ns": 10.631418110765418,
+        "sem_ns": 4.754514718578773
+      },
+      "42": {
+        "n_epochs": 8,
+        "mean_H_ns": 9.513478257797246,
+        "std_H_ns": 15.941455102751263,
+        "sem_ns": 5.636155502568154
+      },
+      "43": {
+        "n_epochs": 3,
+        "mean_H_ns": -9.808629045493765,
+        "std_H_ns": 19.368090588706114,
+        "sem_ns": 11.182172315078533
+      },
+      "44": {
+        "n_epochs": 4,
+        "mean_H_ns": 1.9418272444366522,
+        "std_H_ns": 5.30569410288201,
+        "sem_ns": 2.652847051441005
+      },
+      "46": {
+        "n_epochs": 6,
+        "mean_H_ns": 0.14159720976077925,
+        "std_H_ns": 9.84656452122546,
+        "sem_ns": 4.01984313273242
+      },
+      "47": {
+        "n_epochs": 5,
+        "mean_H_ns": 10.03783944051762,
+        "std_H_ns": 19.19800338524995,
+        "sem_ns": 8.585608120337994
+      },
+      "48": {
+        "n_epochs": 4,
+        "mean_H_ns": -9.027918073654382,
+        "std_H_ns": 11.900472893895257,
+        "sem_ns": 5.9502364469476285
+      },
+      "52": {
+        "n_epochs": 4,
+        "mean_H_ns": 1.3493087117251235,
+        "std_H_ns": 1.763936283523652,
+        "sem_ns": 0.881968141761826
+      },
+      "54": {
+        "n_epochs": 3,
+        "mean_H_ns": 3.194386663449443,
+        "std_H_ns": 3.6940160277412786,
+        "sem_ns": 2.1327411480072196
+      },
+      "55": {
+        "n_epochs": 3,
+        "mean_H_ns": 14.51690103348953,
+        "std_H_ns": 21.077012449608297,
+        "sem_ns": 12.168818811494445
+      },
+      "56": {
+        "n_epochs": 8,
+        "mean_H_ns": 7.423012791672091,
+        "std_H_ns": 10.735773479254762,
+        "sem_ns": 3.795669114231868
+      },
+      "58": {
+        "n_epochs": 4,
+        "mean_H_ns": -2.6327550051973403,
+        "std_H_ns": 4.263069032763054,
+        "sem_ns": 2.131534516381527
+      },
+      "59": {
+        "n_epochs": 3,
+        "mean_H_ns": 1.4026182569156112,
+        "std_H_ns": 4.424686244005011,
+        "sem_ns": 2.5545937940559273
+      },
+      "63": {
+        "n_epochs": 5,
+        "mean_H_ns": -2.059747553358707,
+        "std_H_ns": 5.841099029209053,
+        "sem_ns": 2.6122188985238943
+      },
+      "64": {
+        "n_epochs": 6,
+        "mean_H_ns": 5.343345829675989,
+        "std_H_ns": 9.52820077163384,
+        "sem_ns": 3.889871676215976
+      },
+      "65": {
+        "n_epochs": 4,
+        "mean_H_ns": -0.48915143658715565,
+        "std_H_ns": 0.8458607639086528,
+        "sem_ns": 0.4229303819543264
+      },
+      "66": {
+        "n_epochs": 4,
+        "mean_H_ns": -2.1535935318818265,
+        "std_H_ns": 2.3469987198909035,
+        "sem_ns": 1.1734993599454517
+      },
+      "68": {
+        "n_epochs": 3,
+        "mean_H_ns": -8.118394445827107,
+        "std_H_ns": 5.603068274336313,
+        "sem_ns": 3.2349329764759225
+      },
+      "70": {
+        "n_epochs": 3,
+        "mean_H_ns": -5.259043579752705,
+        "std_H_ns": 4.814757678496474,
+        "sem_ns": 2.779801641762757
+      },
+      "71": {
+        "n_epochs": 5,
+        "mean_H_ns": 8.126628557127294,
+        "std_H_ns": 13.35038807931705,
+        "sem_ns": 5.970475054271155
+      },
+      "72": {
+        "n_epochs": 4,
+        "mean_H_ns": 12.031681398738336,
+        "std_H_ns": 23.592475292523243,
+        "sem_ns": 11.796237646261622
+      },
+      "73": {
+        "n_epochs": 3,
+        "mean_H_ns": -6.379077671024578,
+        "std_H_ns": 8.901441504533311,
+        "sem_ns": 5.139249648818015
+      },
+      "75": {
+        "n_epochs": 3,
+        "mean_H_ns": -1.5735718737306683,
+        "std_H_ns": 8.412016188095762,
+        "sem_ns": 4.856679810624579
+      },
+      "76": {
+        "n_epochs": 3,
+        "mean_H_ns": -5.858654021079705,
+        "std_H_ns": 21.446592123028545,
+        "sem_ns": 12.382195735430638
+      },
+      "77": {
+        "n_epochs": 7,
+        "mean_H_ns": -5.083166599477908,
+        "std_H_ns": 17.293445993327396,
+        "sem_ns": 6.536308201381521
+      },
+      "78": {
+        "n_epochs": 9,
+        "mean_H_ns": -3.488766676752701,
+        "std_H_ns": 7.251077466562199,
+        "sem_ns": 2.4170258221873997
+      },
+      "80": {
+        "n_epochs": 3,
+        "mean_H_ns": 0.7301339924911443,
+        "std_H_ns": 4.934951157508116,
+        "sem_ns": 2.849195379224966
+      },
+      "82": {
+        "n_epochs": 5,
+        "mean_H_ns": -0.48942263104178585,
+        "std_H_ns": 4.936873999413522,
+        "sem_ns": 2.207837171807978
+      },
+      "83": {
+        "n_epochs": 3,
+        "mean_H_ns": 3.898353610403952,
+        "std_H_ns": 4.720574195508048,
+        "sem_ns": 2.7254247825061726
+      },
+      "85": {
+        "n_epochs": 3,
+        "mean_H_ns": -6.667973788729253,
+        "std_H_ns": 8.263717559503041,
+        "sem_ns": 4.771059557486118
+      },
+      "86": {
+        "n_epochs": 5,
+        "mean_H_ns": 1.3251287328925507,
+        "std_H_ns": 4.72396723149813,
+        "sem_ns": 2.112622370622261
+      },
+      "88": {
+        "n_epochs": 5,
+        "mean_H_ns": 6.334246762124833,
+        "std_H_ns": 6.908249244728266,
+        "sem_ns": 3.0894629833447964
+      },
+      "90": {
+        "n_epochs": 3,
+        "mean_H_ns": 18.625721255138085,
+        "std_H_ns": 30.855140056603307,
+        "sem_ns": 17.814223417563525
+      },
+      "91": {
+        "n_epochs": 4,
+        "mean_H_ns": 2.876163392315909,
+        "std_H_ns": 8.93839718610949,
+        "sem_ns": 4.469198593054745
+      },
+      "92": {
+        "n_epochs": 4,
+        "mean_H_ns": -12.761334410973076,
+        "std_H_ns": 18.775516947673093,
+        "sem_ns": 9.387758473836547
+      },
+      "93": {
+        "n_epochs": 3,
+        "mean_H_ns": -0.5462385725458002,
+        "std_H_ns": 2.8376173247380785,
+        "sem_ns": 1.6382991262946753
+      },
+      "95": {
+        "n_epochs": 5,
+        "mean_H_ns": 3.0628108482815004,
+        "std_H_ns": 4.8555077555367285,
+        "sem_ns": 2.1714490813315113
+      },
+      "97": {
+        "n_epochs": 4,
+        "mean_H_ns": 3.9342914490633847,
+        "std_H_ns": 6.1178573378000465,
+        "sem_ns": 3.0589286689000232
+      },
+      "101": {
+        "n_epochs": 4,
+        "mean_H_ns": -4.094094652527961,
+        "std_H_ns": 7.550302186537844,
+        "sem_ns": 3.775151093268922
+      },
+      "104": {
+        "n_epochs": 3,
+        "mean_H_ns": -11.915024450119992,
+        "std_H_ns": 21.633408066139033,
+        "sem_ns": 12.490053970474392
+      },
+      "105": {
+        "n_epochs": 4,
+        "mean_H_ns": -2.9045870863901073,
+        "std_H_ns": 10.408320763934706,
+        "sem_ns": 5.204160381967353
+      },
+      "106": {
+        "n_epochs": 3,
+        "mean_H_ns": -0.311315374278356,
+        "std_H_ns": 0.5200726605842402,
+        "sem_ns": 0.30026409058647596
+      },
+      "109": {
+        "n_epochs": 5,
+        "mean_H_ns": -0.9414131861222049,
+        "std_H_ns": 5.960640902245384,
+        "sem_ns": 2.6656796493772714
+      },
+      "119": {
+        "n_epochs": 3,
+        "mean_H_ns": -8.79697920467573,
+        "std_H_ns": 7.636101440297596,
+        "sem_ns": 4.408705222115106
+      },
+      "132": {
+        "n_epochs": 3,
+        "mean_H_ns": -3.2157980112786375,
+        "std_H_ns": 7.738332945889384,
+        "sem_ns": 4.467728609388186
+      },
+      "150": {
+        "n_epochs": 3,
+        "mean_H_ns": 0.9371607376306966,
+        "std_H_ns": 6.490970378811094,
+        "sem_ns": 3.747563495508473
+      }
+    },
+    "correlation_with_arclets": -0.07454856496265147,
+    "p_value": 0.502983624029944,
+    "significant": false,
+    "interpretation": "H independent of arclet number"
+  },
+  "snr_dependence": {
+    "note": "Triplet snr in step_003 is independent cross-term SNR; dedicated SNR diagnostics are handled in steps 025 and 028",
+    "reason": "Avoid duplicating a more rigorous dedicated SNR analysis in the systematic-error summary",
+    "correlation_with_snr": null,
+    "interpretation": "Analysis deferred to steps 025 and 028"
+  },
+  "triplet_number_dependence": {
+    "correlation_with_n_triplets": -0.029591391007796886,
+    "p_value": 0.27007355793088644,
+    "significant": false,
+    "interpretation": "H independent of number of triplets"
+  },
+  "selection_bias": {
+    "upstream_epoch_selection": {
+      "skipped": false,
+      "n_total_secondary_epochs": 27974,
+      "n_retained_closure_epochs": 5127,
+      "retention_fraction": 0.18327732894830914,
+      "retained_summary": {
+        "n_epochs": 5127,
+        "mean_n_arclets": 22.43514725960601,
+        "median_n_arclets": 0.0,
+        "eta_nonzero_fraction": 0.5927442949093037
+      },
+      "nonretained_summary": {
+        "n_epochs": 22847,
+        "mean_n_arclets": 101.72245809077778,
+        "median_n_arclets": 0.0,
+        "eta_nonzero_fraction": 0.12316715542521994
+      }
+    },
+    "snr_threshold_grid": [
+      1.52,
+      1.77,
+      1.97,
+      2.36,
+      2.88,
+      3.44
+    ],
+    "snr_threshold_analysis": [
+      {
+        "min_snr": 1.52,
+        "n_epochs": 1391,
+        "n_triplets": 19167,
+        "mean_H_ns": 0.2995802201707903,
+        "sem_ns": 0.35394484884292937,
+        "t_statistic": 0.846403673199763,
+        "detected_3sigma": false,
+        "detected_5sigma": false,
+        "n_negative": 9671,
+        "n_positive": 9496,
+        "magnitude_ratio": 0.9604101654736774,
+        "abs_mean_H_ns": 27.071072111273885,
+        "abs_sem_H_ns": 0.2950339381094507,
+        "abs_t_statistic": 91.75579014652595,
+        "abs_detected_5sigma": true
+      },
+      {
+        "min_snr": 1.77,
+        "n_epochs": 1305,
+        "n_triplets": 17278,
+        "mean_H_ns": 0.17889392662819179,
+        "sem_ns": 0.3366135110864057,
+        "t_statistic": 0.5314520087171168,
+        "detected_3sigma": false,
+        "detected_5sigma": false,
+        "n_negative": 8761,
+        "n_positive": 8517,
+        "magnitude_ratio": 0.9581167231009233,
+        "abs_mean_H_ns": 24.60794756601775,
+        "abs_sem_H_ns": 0.27975160004633487,
+        "abs_t_statistic": 87.96356325376502,
+        "abs_detected_5sigma": true
+      },
+      {
+        "min_snr": 1.97,
+        "n_epochs": 1127,
+        "n_triplets": 14337,
+        "mean_H_ns": -0.05290354710302459,
+        "sem_ns": 0.3039763000761167,
+        "t_statistic": 0.1740383940780165,
+        "detected_3sigma": false,
+        "detected_5sigma": false,
+        "n_negative": 7315,
+        "n_positive": 7022,
+        "magnitude_ratio": 0.9649012581212602,
+        "abs_mean_H_ns": 20.54730398662102,
+        "abs_sem_H_ns": 0.2509024318302458,
+        "abs_t_statistic": 81.89360237258603,
+        "abs_detected_5sigma": true
+      },
+      {
+        "min_snr": 2.36,
+        "n_epochs": 837,
+        "n_triplets": 9566,
+        "mean_H_ns": -0.4049996718607466,
+        "sem_ns": 0.2830527840601853,
+        "t_statistic": 1.4308273744964537,
+        "detected_3sigma": false,
+        "detected_5sigma": false,
+        "n_negative": 4919,
+        "n_positive": 4647,
+        "magnitude_ratio": 0.9911696951602802,
+        "abs_mean_H_ns": 16.87334721828892,
+        "abs_sem_H_ns": 0.22443313079591287,
+        "abs_t_statistic": 75.18206941395214,
+        "abs_detected_5sigma": true
+      },
+      {
+        "min_snr": 2.88,
+        "n_epochs": 521,
+        "n_triplets": 4797,
+        "mean_H_ns": -0.600618192071259,
+        "sem_ns": 0.3419208467848765,
+        "t_statistic": 1.7566000953698648,
+        "detected_3sigma": false,
+        "detected_5sigma": false,
+        "n_negative": 2466,
+        "n_positive": 2331,
+        "magnitude_ratio": 1.0236394364901047,
+        "abs_mean_H_ns": 15.086684457493721,
+        "abs_sem_H_ns": 0.263680092565182,
+        "abs_t_statistic": 57.2158645376851,
+        "abs_detected_5sigma": true
+      },
+      {
+        "min_snr": 3.44,
+        "n_epochs": 253,
+        "n_triplets": 1918,
+        "mean_H_ns": -0.07146644815083518,
+        "sem_ns": 0.5233377754403983,
+        "t_statistic": 0.13655893288172224,
+        "detected_3sigma": false,
+        "detected_5sigma": false,
+        "n_negative": 955,
+        "n_positive": 963,
+        "magnitude_ratio": 1.0183284660481309,
+        "abs_mean_H_ns": 14.554730365072144,
+        "abs_sem_H_ns": 0.4042016832361633,
+        "abs_t_statistic": 36.008584250670324,
+        "abs_detected_5sigma": true
+      }
+    ],
+    "arclet_threshold_analysis": [
+      {
+        "min_arclets": 0,
+        "n_epochs": 1391,
+        "n_triplets": 19167,
+        "mean_H_ns": 0.2995802201707903,
+        "sem_ns": 0.35394484884292937,
+        "t_statistic": 0.846403673199763,
+        "detected_3sigma": false,
+        "detected_5sigma": false
+      },
+      {
+        "min_arclets": 3,
+        "n_epochs": 1391,
+        "n_triplets": 19167,
+        "mean_H_ns": 0.2995802201707903,
+        "sem_ns": 0.35394484884292937,
+        "t_statistic": 0.846403673199763,
+        "detected_3sigma": false,
+        "detected_5sigma": false
+      },
+      {
+        "min_arclets": 5,
+        "n_epochs": 1256,
+        "n_triplets": 18925,
+        "mean_H_ns": 0.30156261628983316,
+        "sem_ns": 0.35717940351269256,
+        "t_statistic": 0.8442889296642128,
+        "detected_3sigma": false,
+        "detected_5sigma": false
+      },
+      {
+        "min_arclets": 7,
+        "n_epochs": 1057,
+        "n_triplets": 17823,
+        "mean_H_ns": 0.18761502349385664,
+        "sem_ns": 0.37134883933504786,
+        "t_statistic": 0.5052258244022187,
+        "detected_3sigma": false,
+        "detected_5sigma": false
+      }
+    ],
+    "geometric_coverage_analysis": [
+      {
+        "min_snr": 5.0,
+        "n_triplets": 99,
+        "vector_area_stats": {
+          "mean_abs_area": 0.0053125662520814975,
+          "std_abs_area": 0.01193445529227396,
+          "median_abs_area": 0.0008183736471492817
+        },
+        "region_concentration": {
+          "high_curvature_fraction": 0.16161616161616163,
+          "between_arc_fraction": 0.8383838383838383,
+          "n_high_curvature": 16,
+          "n_between_arc": 83
+        },
+        "orientation_balance": {
+          "n_ccw": 43,
+          "n_cw": 37,
+          "ccw_fraction": 0.43434343434343436
+        }
+      },
+      {
+        "min_snr": 5.5,
+        "n_triplets": 44,
+        "vector_area_stats": {
+          "mean_abs_area": 0.0058594476430349355,
+          "std_abs_area": 0.008622180786881635,
+          "median_abs_area": 0.0013154039127573217
+        },
+        "region_concentration": {
+          "high_curvature_fraction": 0.25,
+          "between_arc_fraction": 0.75,
+          "n_high_curvature": 11,
+          "n_between_arc": 33
+        },
+        "orientation_balance": {
+          "n_ccw": 17,
+          "n_cw": 15,
+          "ccw_fraction": 0.38636363636363635
+        }
+      },
+      {
+        "min_snr": 6.0,
+        "n_triplets": 18,
+        "vector_area_stats": {
+          "mean_abs_area": 0.0061659387470785676,
+          "std_abs_area": 0.007773280468369856,
+          "median_abs_area": 0.0013294034299722699
+        },
+        "region_concentration": {
+          "high_curvature_fraction": 0.2222222222222222,
+          "between_arc_fraction": 0.7777777777777778,
+          "n_high_curvature": 4,
+          "n_between_arc": 14
+        },
+        "orientation_balance": {
+          "n_ccw": 6,
+          "n_cw": 4,
+          "ccw_fraction": 0.3333333333333333
+        }
+      },
+      {
+        "min_snr": 6.5,
+        "n_triplets": 8,
+        "vector_area_stats": {
+          "mean_abs_area": 0.011175223519597668,
+          "std_abs_area": 0.007916730063044353,
+          "median_abs_area": 0.01460251780944944
+        },
+        "region_concentration": {
+          "high_curvature_fraction": 0.0,
+          "between_arc_fraction": 1.0,
+          "n_high_curvature": 0,
+          "n_between_arc": 8
+        },
+        "orientation_balance": {
+          "n_ccw": 4,
+          "n_cw": 3,
+          "ccw_fraction": 0.5
+        }
+      }
+    ],
+    "geometric_impact_summary": {
+      "baseline_mean_abs_area": 0.0053125662520814975,
+      "aggressive_mean_abs_area": 0.011175223519597668,
+      "vector_area_fractional_change": 1.1035452527710397,
+      "baseline_high_curvature_fraction": 0.16161616161616163,
+      "aggressive_high_curvature_fraction": 0.0,
+      "interpretation": "Aggressive SNR cuts alter geometric coverage, explaining threshold sensitivity"
+    },
+    "conclusions": [
+      "Detection robust to SNR threshold: False",
+      "Detection robust to arclet threshold: False",
+      "Threshold-based selection-bias evidence is limited or mixed in the current dataset",
+      "Aggressive SNR cuts change mean |vector area| by +110.4% (baseline vs most aggressive SNR cut tested)",
+      "|Unsigned H| robustness across SNR thresholds: ROBUST as a noise-biased diagnostic (36.0sigma minimum across all cuts)",
+      "Signed mean robustness: PARTIAL (significant at low SNR cuts, drops at SNR\u22655.59 \u2014 expected for diagnostic bipolar quantity)"
+    ],
+    "implications": {
+      "robustness": "Threshold robustness is incomplete across the tested cuts",
+      "not_selection_effect": "Current threshold sweep does not by itself rule out all selection effects",
+      "confidence": "Interpret threshold-robustness claims cautiously",
+      "geometric_necessity": "Lower-SNR cross-terms provide essential geometric coverage for Stokes alignment"
+    }
+  },
+  "pixel_discretization": {
+    "median_sigma_us_ns": 3.416028811280524,
+    "d_tau_ns": 1.972245153752328,
+    "pixel_discretization_ns": 0.1972245153752328,
+    "note": "Conservative theoretical upper bound for parabolic sub-pixel interpolation: \u2264 0.1 \u00d7 d_tau. Actual contribution to phase-angle variance is subsumed in the empirical circular SE."
+  },
+  "thermal_noise": {
+    "mean_sigma_per_triplet_ns": 6.385196817412644,
+    "std_sigma_across_epochs_ns": 5.1059450654626595,
+    "thermal_noise_systematic_ns": 0.13690287639052331,
+    "n_epochs": 1391,
+    "note": "Epoch-to-epoch noise-floor variation propagated to mean"
+  },
+  "bandpass_calibration": {
+    "median_abs_H_ns": 12.81706139262578,
+    "calibration_fraction": 0.01,
+    "bandpass_calibration_ns": 0.1281706139262578,
+    "note": "1% of |median H|, consistent with Parkes bandpass accuracy. Closure observables largely cancel common-mode bandpass residuals; this is a conservative upper bound."
+  },
+  "psi_circular_statistics": {
+    "n_epochs": 1220,
+    "psi_mean_rad": 0.9362751408680228,
+    "r_bar": 0.2882960143656783,
+    "rayleigh_z": 202.79960423389036,
+    "rayleigh_p": 9.175409891694962e-45,
+    "v_stat": 8.441815596874159,
+    "v_p": 3.124460035574063e-17,
+    "bootstrap_se": 0.06785741777051277,
+    "bootstrap_ci_95": [
+      0.8069610139816787,
+      1.0722605610149163
+    ]
+  },
+  "error_budget": {
+    "statistical_error_ns": 0.10194563966559812,
+    "core_systematic_error_ns": 0.2721536575231503,
+    "core_systematic_sources": [
+      "pixel_discretization",
+      "thermal_noise_floor",
+      "bandpass_calibration"
+    ],
+    "core_systematic_errors_ns": [
+      0.1972245153752328,
+      0.13690287639052331,
+      0.1281706139262578
+    ],
+    "threshold_robustness_ns": 0.32334690745699013,
+    "total_systematic_error_ns": 0.4226355828195581,
+    "total_error_ns": 0.4347571153092903,
+    "systematic_fraction": 4.145695531519411,
+    "core_fraction": 2.6695958592821447,
+    "interpretation": "Core metrology systematic errors exceed statistical error"
+  },
+  "conclusions": [
+    "Arclet number dependence: H independent of arclet number",
+    "SNR dependence: Analysis deferred to steps 025 and 028",
+    "Triplet number dependence: H independent of number of triplets",
+    "Core metrology systematics: Core metrology systematic errors exceed statistical error",
+    "Phase Closure \u03c8: Rayleigh Z = 202.80 (p = 9.18e-45), circular SE = 0.068 rad",
+    "Threshold-robustness concerns apply to signed-mean diagnostic (expected near zero by bipolar cancellation), not to primary Phase Closure \u03c8"
+  ],
+  "implications": {
+    "core_systematic_ratio": "2.67",
+    "total_systematic_ratio": "4.15",
+    "core_systematic_ns": "0.272",
+    "threshold_robustness_ns": "0.323",
+    "psi_circular_se_rad": "0.068",
+    "measurement_status": "Core metrology systematic exceeds the delay-domain statistical error; this weakens delay-amplitude claims but does not directly control the phase-closure \u03c8 circular-statistics inference."
+  }
+}

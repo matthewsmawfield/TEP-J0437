@@ -1,0 +1,9 @@
+[2026-05-15 13:18:05] [INFO] ================================================================================
+[2026-05-15 13:18:05] [INFO] STEP step_023_snr_correlation_analysis STARTED
+[2026-05-15 13:18:05] [INFO] Description: SNR correlation analysis
+[2026-05-15 13:18:05] [INFO] Physics: Test whether holonomy correlates with SNR in a pattern indicative of threshold or precision-driven bias
+[2026-05-15 13:18:05] [INFO] Method: Epoch- and triplet-level SNR–delay diagnostics with robust correlation summaries
+[2026-05-15 13:18:05] [INFO] ================================================================================
+[2026-05-15 13:18:05] [INFO] ================================================================================
+[2026-05-15 13:18:05] [INFO] STEP COMPLETED SUCCESSFULLY (0.4 seconds)
+[2026-05-15 13:18:05] [INFO] ================================================================================

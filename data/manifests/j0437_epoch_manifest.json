@@ -1,0 +1,45 @@
+{
+  "manifest_metadata": {
+    "generated": "2026-04-10T21:00:00",
+    "version": "2.1",
+    "description": "Accurate epoch counts after full pipeline processing with SNR threshold criterion"
+  },
+  "data_sources": {
+    "scintools_atnf": {
+      "n_files": 5,
+      "location": "data/raw/scintools/",
+      "coverage": "2011-12-20",
+      "source": "https://scintools.atnf.csiro.au/data/J0437-4715/"
+    },
+    "csiro_ppta_dr2": {
+      "n_files": 60,
+      "location": "data/raw/j0437/",
+      "coverage": "2008-2018",
+      "source": "CSIRO Data Portal Collection 46012"
+    }
+  },
+  "processing_pipeline": {
+    "step_001_parse_dynspec": {
+      "input_files": 65,
+      "output_epochs": 10201,
+      "note": "Each observation file may contain multiple sub-integrations (epochs)"
+    },
+    "step_002_secondary_spectrum": {
+      "input_epochs": 10201,
+      "output_epochs": 10201
+    },
+    "step_003_closure_delays": {
+      "input_epochs": 10201,
+      "output_epochs": 1391,
+      "filtering": "Epochs with valid triplet measurements (SNR >= 5.0 threshold criterion)",
+      "total_triplets": 19167
+    }
+  },
+  "epoch_counts": {
+    "raw_total": 65,
+    "processed_total": 10201,
+    "with_closure_delays": 1391,
+    "total_triplets": 19167
+  },
+  "explanation": "The 60 raw observation files from PPTA DR2 contain multiple sub-integrations. When parsed, these yield 10,201 individual epochs. The closure delay analysis requires specific ISM scintillation conditions and uses an SNR threshold criterion (min_snr=2.5) to address selection bias, resulting in 1,391 epochs with valid triplet measurements yielding 19,167 triplet delays. The independent epoch sample (n=1,093, epochs with ≥5 triplets) is used for primary inference."
+}

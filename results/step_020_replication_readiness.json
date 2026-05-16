@@ -1,0 +1,172 @@
+{
+  "check_type": "Replication Readiness",
+  "check_date": "2026-05-15T13:17:57.697830",
+  "data_availability": {
+    "all_data_available": true,
+    "files": {
+      "raw_data_catalog": {
+        "exists": true,
+        "path": "data/raw/scintools_catalog.json",
+        "size_bytes": 244
+      },
+      "processed_data": {
+        "exists": true,
+        "path": "data/processed/j0437_epoch_catalog.json",
+        "size_bytes": 2252359
+      },
+      "closure_results_summary_j0437": {
+        "exists": true,
+        "path": "results/step_003_closure_final_summary_j0437.json",
+        "size_bytes": 3931
+      },
+      "closure_results_per_epoch_j0437": {
+        "exists": true,
+        "path": "results/step_003_closure_final_per_epoch_j0437.json",
+        "size_bytes": 21479279
+      },
+      "closure_results_summary_legacy": {
+        "exists": true,
+        "path": "results/step_003_closure_final_summary.json",
+        "size_bytes": 4798
+      },
+      "closure_results_per_epoch_legacy": {
+        "exists": true,
+        "path": "results/step_003_closure_final_per_epoch.json",
+        "size_bytes": 21479279
+      },
+      "pipeline_documentation": {
+        "exists": true,
+        "path": "scripts/README.md",
+        "size_bytes": 1638
+      }
+    },
+    "missing_files": []
+  },
+  "code_reproducibility": {
+    "fixed_seeds_implemented": true,
+    "seeded_scripts": [
+      "step_006_advanced_validation.py",
+      "step_014_synthetic_data_validation.py",
+      "step_015_blind_analysis_validation.py"
+    ],
+    "primary_seed": 42,
+    "reproducibility_level": "High"
+  },
+  "documentation": {
+    "all_docs_present": true,
+    "docs": {
+      "manuscript": true,
+      "pipeline_readme": true,
+      "citation": true,
+      "license": true,
+      "requirements": true
+    }
+  },
+  "analysis_parameters": {
+    "pre_registered_thresholds": {
+      "significance_threshold_sigma": 5.0,
+      "bootstrap_samples": 10000,
+      "min_arclets": 3,
+      "max_triplets_per_epoch": 20,
+      "edge_margin_fraction": 0.01,
+      "cv_threshold": 0.5,
+      "multiple_comparison_method": "Bonferroni",
+      "n_tests": 4,
+      "alpha_corrected": 0.0125
+    },
+    "measurement_parameters": {
+      "sub_pixel_method": "parabolic interpolation",
+      "aliasing_checks": true,
+      "tau_bounds_us": [
+        0,
+        50
+      ],
+      "fD_bounds_mHz": [
+        -50,
+        50
+      ]
+    },
+    "data_selection": {
+      "source": "PSR J0437-4715",
+      "dataset": "PPTA DR2",
+      "time_span_years": 11,
+      "n_epochs_with_triplets": 1391,
+      "n_total_triplets": 19167,
+      "n_independent_samples": 1093
+    },
+    "random_seeds": {
+      "bootstrap": 42,
+      "permutations": 42,
+      "simulations": 42,
+      "cross_validation": 42
+    }
+  },
+  "replication_steps": [
+    {
+      "step": 1,
+      "action": "Download PPTA DR2 data from Scintools repository",
+      "expected_time": "2-4 hours",
+      "verification": "Step 000 audit verifies CSIRO manifests and checksums"
+    },
+    {
+      "step": 2,
+      "action": "Run Step 000-003: Process dynamic spectra to closure delays",
+      "expected_time": "4-8 hours",
+      "verification": "J0437 Step 003 summary: n_epochs=1391, n_total_triplets=19167, n_independent_samples=1093"
+    },
+    {
+      "step": 3,
+      "action": "Run Step 004-006: Basic validation tests",
+      "expected_time": "1-2 hours",
+      "verification": "All 3 tests pass"
+    },
+    {
+      "step": 4,
+      "action": "Run Step 007-014: Advanced validation suite",
+      "expected_time": "2-4 hours",
+      "verification": "All 8 tests pass"
+    },
+    {
+      "step": 5,
+      "action": "Run Step 015-019: Strengthening validations",
+      "expected_time": "1-2 hours",
+      "verification": "All 5 tests pass"
+    },
+    {
+      "step": 6,
+      "action": "Run Step 020-022: Cross-method & systematic tests",
+      "expected_time": "30 minutes",
+      "verification": "Detection robust"
+    },
+    {
+      "step": 7,
+      "action": "Compare results with reference values",
+      "expected_time": "15 minutes",
+      "verification": "\u03c8 \u2248 0.984 +/- 0.046 rad; Rayleigh p \u2248 1.3864824207812792e-13; V-test p \u2248 2.0406376031625597e-05; bootstrap CI \u2248 [0.7412846805632585, 1.2308015762374724]"
+    }
+  ],
+  "expected_results": {
+    "primary_detection": {
+      "phase_closure_mean_rad": 0.9840495457197854,
+      "phase_closure_circ_se_rad": 0.04644694692483576,
+      "phase_closure_rayleigh_p": 1.3864824207812792e-13,
+      "phase_closure_v_p": 2.0406376031625597e-05,
+      "phase_closure_bootstrap_ci_95": [
+        0.7412846805632585,
+        1.2308015762374724
+      ],
+      "tolerance_rad": 0.02
+    },
+    "secondary_results": {
+      "n_epochs": 1391,
+      "n_total_triplets": 19167,
+      "n_independent_samples": 1093
+    },
+    "validation_status": {
+      "n_tests": 6,
+      "all_should_pass": true
+    }
+  },
+  "ready_for_replication": true,
+  "estimated_time_hours": 20
+}

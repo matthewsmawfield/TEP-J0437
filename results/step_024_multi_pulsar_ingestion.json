@@ -1,0 +1,143 @@
+{
+  "validation_type": "Multi-Pulsar Data Ingestion",
+  "validation_date": "2026-05-15T13:18:05.856731",
+  "status": "COMPLETE",
+  "note": "All values read from actual pipeline outputs; no hardcoded statistics",
+  "data_sources": {
+    "ppta_dr2_parkes": "PPTA DR2 Parkes/CASPSR (J0437, J1603)",
+    "jiamusi_65m": "Jiamusi 65m telescope (10 pulsars, 33 epochs)"
+  },
+  "pulsars_analyzed": [
+    {
+      "name": "J0437-4715",
+      "source": "PPTA DR2 Parkes/CASPSR",
+      "distance_pc": 156.3,
+      "H_magnitude_ns": 8.1,
+      "detection_sigma": 7.4,
+      "role": "Primary reference pulsar"
+    },
+    {
+      "name": "J1603-7202",
+      "source": "PPTA DR2 Parkes/CASPSR",
+      "distance_pc": 250.0,
+      "H_magnitude_ns": 2.557,
+      "detection_sigma": -0.25,
+      "role": "Secondary Parkes/PPTA pulsar"
+    },
+    {
+      "name": "B0329+54",
+      "distance_pc": 1000.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": null,
+      "n_epochs": 0,
+      "n_triplets": 0,
+      "role": "Ensemble scaling analysis",
+      "source": "Jiamusi 65m",
+      "has_results": false
+    },
+    {
+      "name": "B0355+54",
+      "distance_pc": 1000.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": 1.722,
+      "n_epochs": 1,
+      "n_triplets": 20,
+      "role": "Ensemble scaling analysis",
+      "source": "Jiamusi 65m",
+      "has_results": true
+    },
+    {
+      "name": "B0540+23",
+      "distance_pc": 1600.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": 1.945,
+      "n_epochs": 2,
+      "n_triplets": 40,
+      "role": "Ensemble scaling analysis",
+      "source": "Jiamusi 65m",
+      "has_results": true
+    },
+    {
+      "name": "B0740-28",
+      "distance_pc": 2000.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": null,
+      "n_epochs": 0,
+      "n_triplets": 0,
+      "role": "Ensemble scaling analysis",
+      "source": "Jiamusi 65m",
+      "has_results": false
+    },
+    {
+      "name": "B1508+55",
+      "distance_pc": 2100.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": 247.105,
+      "n_epochs": 1,
+      "n_triplets": 20,
+      "role": "Ensemble scaling analysis",
+      "source": "Jiamusi 65m",
+      "has_results": true
+    },
+    {
+      "name": "B1933+16",
+      "distance_pc": 3700.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": null,
+      "n_epochs": 0,
+      "n_triplets": 0,
+      "role": "Ensemble scaling analysis",
+      "source": "Jiamusi 65m",
+      "has_results": false
+    },
+    {
+      "name": "B2154+40",
+      "distance_pc": 2900.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": 7.968,
+      "n_epochs": 1,
+      "n_triplets": 20,
+      "role": "Ensemble scaling analysis",
+      "source": "Jiamusi 65m",
+      "has_results": true
+    },
+    {
+      "name": "B2310+42",
+      "distance_pc": 1060.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": 15.406,
+      "n_epochs": 1,
+      "n_triplets": 20,
+      "role": "Ensemble scaling analysis",
+      "source": "Jiamusi 65m",
+      "has_results": true
+    },
+    {
+      "name": "B2324+60",
+      "distance_pc": 2700.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": null,
+      "n_epochs": 0,
+      "n_triplets": 0,
+      "role": "Ensemble scaling analysis",
+      "source": "Jiamusi 65m",
+      "has_results": false
+    },
+    {
+      "name": "B2351+61",
+      "distance_pc": 2400.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": null,
+      "n_epochs": 0,
+      "n_triplets": 0,
+      "role": "Ensemble scaling analysis",
+      "source": "Jiamusi 65m",
+      "has_results": false
+    }
+  ],
+  "ensemble_scaling": {
+    "status": "insufficient_data",
+    "n_pulsars_with_data": 2,
+    "message": "Ensemble scaling requires >= 3 pulsars with kinematics. Currently 2 pulsars available."
+  }
+}

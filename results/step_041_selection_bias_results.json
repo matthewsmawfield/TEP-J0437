@@ -1,0 +1,278 @@
+{
+  "upstream_epoch_selection": {
+    "skipped": false,
+    "n_total_secondary_epochs": 27974,
+    "n_retained_closure_epochs": 5127,
+    "retention_fraction": 0.18327732894830914,
+    "retained_summary": {
+      "n_epochs": 5127,
+      "mean_n_arclets": 22.43514725960601,
+      "median_n_arclets": 0.0,
+      "eta_nonzero_fraction": 0.5927442949093037
+    },
+    "nonretained_summary": {
+      "n_epochs": 22847,
+      "mean_n_arclets": 101.72245809077778,
+      "median_n_arclets": 0.0,
+      "eta_nonzero_fraction": 0.12316715542521994
+    }
+  },
+  "snr_threshold_grid": [
+    1.52,
+    1.77,
+    1.97,
+    2.36,
+    2.88,
+    3.44
+  ],
+  "snr_threshold_analysis": [
+    {
+      "min_snr": 1.52,
+      "n_epochs": 1391,
+      "n_triplets": 19167,
+      "mean_H_ns": 0.2995802201707903,
+      "sem_ns": 0.35394484884292937,
+      "t_statistic": 0.846403673199763,
+      "detected_3sigma": false,
+      "detected_5sigma": false,
+      "n_negative": 9671,
+      "n_positive": 9496,
+      "magnitude_ratio": 0.9604101654736774,
+      "abs_mean_H_ns": 27.071072111273885,
+      "abs_sem_H_ns": 0.2950339381094507,
+      "abs_t_statistic": 91.75579014652595,
+      "abs_detected_5sigma": true
+    },
+    {
+      "min_snr": 1.77,
+      "n_epochs": 1305,
+      "n_triplets": 17278,
+      "mean_H_ns": 0.17889392662819179,
+      "sem_ns": 0.3366135110864057,
+      "t_statistic": 0.5314520087171168,
+      "detected_3sigma": false,
+      "detected_5sigma": false,
+      "n_negative": 8761,
+      "n_positive": 8517,
+      "magnitude_ratio": 0.9581167231009233,
+      "abs_mean_H_ns": 24.60794756601775,
+      "abs_sem_H_ns": 0.27975160004633487,
+      "abs_t_statistic": 87.96356325376502,
+      "abs_detected_5sigma": true
+    },
+    {
+      "min_snr": 1.97,
+      "n_epochs": 1127,
+      "n_triplets": 14337,
+      "mean_H_ns": -0.05290354710302459,
+      "sem_ns": 0.3039763000761167,
+      "t_statistic": 0.1740383940780165,
+      "detected_3sigma": false,
+      "detected_5sigma": false,
+      "n_negative": 7315,
+      "n_positive": 7022,
+      "magnitude_ratio": 0.9649012581212602,
+      "abs_mean_H_ns": 20.54730398662102,
+      "abs_sem_H_ns": 0.2509024318302458,
+      "abs_t_statistic": 81.89360237258603,
+      "abs_detected_5sigma": true
+    },
+    {
+      "min_snr": 2.36,
+      "n_epochs": 837,
+      "n_triplets": 9566,
+      "mean_H_ns": -0.4049996718607466,
+      "sem_ns": 0.2830527840601853,
+      "t_statistic": 1.4308273744964537,
+      "detected_3sigma": false,
+      "detected_5sigma": false,
+      "n_negative": 4919,
+      "n_positive": 4647,
+      "magnitude_ratio": 0.9911696951602802,
+      "abs_mean_H_ns": 16.87334721828892,
+      "abs_sem_H_ns": 0.22443313079591287,
+      "abs_t_statistic": 75.18206941395214,
+      "abs_detected_5sigma": true
+    },
+    {
+      "min_snr": 2.88,
+      "n_epochs": 521,
+      "n_triplets": 4797,
+      "mean_H_ns": -0.600618192071259,
+      "sem_ns": 0.3419208467848765,
+      "t_statistic": 1.7566000953698648,
+      "detected_3sigma": false,
+      "detected_5sigma": false,
+      "n_negative": 2466,
+      "n_positive": 2331,
+      "magnitude_ratio": 1.0236394364901047,
+      "abs_mean_H_ns": 15.086684457493721,
+      "abs_sem_H_ns": 0.263680092565182,
+      "abs_t_statistic": 57.2158645376851,
+      "abs_detected_5sigma": true
+    },
+    {
+      "min_snr": 3.44,
+      "n_epochs": 253,
+      "n_triplets": 1918,
+      "mean_H_ns": -0.07146644815083518,
+      "sem_ns": 0.5233377754403983,
+      "t_statistic": 0.13655893288172224,
+      "detected_3sigma": false,
+      "detected_5sigma": false,
+      "n_negative": 955,
+      "n_positive": 963,
+      "magnitude_ratio": 1.0183284660481309,
+      "abs_mean_H_ns": 14.554730365072144,
+      "abs_sem_H_ns": 0.4042016832361633,
+      "abs_t_statistic": 36.008584250670324,
+      "abs_detected_5sigma": true
+    }
+  ],
+  "arclet_threshold_analysis": [
+    {
+      "min_arclets": 0,
+      "n_epochs": 1391,
+      "n_triplets": 19167,
+      "mean_H_ns": 0.2995802201707903,
+      "sem_ns": 0.35394484884292937,
+      "t_statistic": 0.846403673199763,
+      "detected_3sigma": false,
+      "detected_5sigma": false
+    },
+    {
+      "min_arclets": 3,
+      "n_epochs": 1391,
+      "n_triplets": 19167,
+      "mean_H_ns": 0.2995802201707903,
+      "sem_ns": 0.35394484884292937,
+      "t_statistic": 0.846403673199763,
+      "detected_3sigma": false,
+      "detected_5sigma": false
+    },
+    {
+      "min_arclets": 5,
+      "n_epochs": 1256,
+      "n_triplets": 18925,
+      "mean_H_ns": 0.30156261628983316,
+      "sem_ns": 0.35717940351269256,
+      "t_statistic": 0.8442889296642128,
+      "detected_3sigma": false,
+      "detected_5sigma": false
+    },
+    {
+      "min_arclets": 7,
+      "n_epochs": 1057,
+      "n_triplets": 17823,
+      "mean_H_ns": 0.18761502349385664,
+      "sem_ns": 0.37134883933504786,
+      "t_statistic": 0.5052258244022187,
+      "detected_3sigma": false,
+      "detected_5sigma": false
+    }
+  ],
+  "geometric_coverage_analysis": [
+    {
+      "min_snr": 5.0,
+      "n_triplets": 99,
+      "vector_area_stats": {
+        "mean_abs_area": 0.0053125662520814975,
+        "std_abs_area": 0.01193445529227396,
+        "median_abs_area": 0.0008183736471492817
+      },
+      "region_concentration": {
+        "high_curvature_fraction": 0.16161616161616163,
+        "between_arc_fraction": 0.8383838383838383,
+        "n_high_curvature": 16,
+        "n_between_arc": 83
+      },
+      "orientation_balance": {
+        "n_ccw": 43,
+        "n_cw": 37,
+        "ccw_fraction": 0.43434343434343436
+      }
+    },
+    {
+      "min_snr": 5.5,
+      "n_triplets": 44,
+      "vector_area_stats": {
+        "mean_abs_area": 0.0058594476430349355,
+        "std_abs_area": 0.008622180786881635,
+        "median_abs_area": 0.0013154039127573217
+      },
+      "region_concentration": {
+        "high_curvature_fraction": 0.25,
+        "between_arc_fraction": 0.75,
+        "n_high_curvature": 11,
+        "n_between_arc": 33
+      },
+      "orientation_balance": {
+        "n_ccw": 17,
+        "n_cw": 15,
+        "ccw_fraction": 0.38636363636363635
+      }
+    },
+    {
+      "min_snr": 6.0,
+      "n_triplets": 18,
+      "vector_area_stats": {
+        "mean_abs_area": 0.0061659387470785676,
+        "std_abs_area": 0.007773280468369856,
+        "median_abs_area": 0.0013294034299722699
+      },
+      "region_concentration": {
+        "high_curvature_fraction": 0.2222222222222222,
+        "between_arc_fraction": 0.7777777777777778,
+        "n_high_curvature": 4,
+        "n_between_arc": 14
+      },
+      "orientation_balance": {
+        "n_ccw": 6,
+        "n_cw": 4,
+        "ccw_fraction": 0.3333333333333333
+      }
+    },
+    {
+      "min_snr": 6.5,
+      "n_triplets": 8,
+      "vector_area_stats": {
+        "mean_abs_area": 0.011175223519597668,
+        "std_abs_area": 0.007916730063044353,
+        "median_abs_area": 0.01460251780944944
+      },
+      "region_concentration": {
+        "high_curvature_fraction": 0.0,
+        "between_arc_fraction": 1.0,
+        "n_high_curvature": 0,
+        "n_between_arc": 8
+      },
+      "orientation_balance": {
+        "n_ccw": 4,
+        "n_cw": 3,
+        "ccw_fraction": 0.5
+      }
+    }
+  ],
+  "geometric_impact_summary": {
+    "baseline_mean_abs_area": 0.0053125662520814975,
+    "aggressive_mean_abs_area": 0.011175223519597668,
+    "vector_area_fractional_change": 1.1035452527710397,
+    "baseline_high_curvature_fraction": 0.16161616161616163,
+    "aggressive_high_curvature_fraction": 0.0,
+    "interpretation": "Aggressive SNR cuts alter geometric coverage, explaining threshold sensitivity"
+  },
+  "conclusions": [
+    "Detection robust to SNR threshold: False",
+    "Detection robust to arclet threshold: False",
+    "Threshold-based selection-bias evidence is limited or mixed in the current dataset",
+    "Aggressive SNR cuts change mean |vector area| by +110.4% (baseline vs most aggressive SNR cut tested)",
+    "|Unsigned H| robustness across SNR thresholds: ROBUST as a noise-biased diagnostic (36.0sigma minimum across all cuts)",
+    "Signed mean robustness: PARTIAL (significant at low SNR cuts, drops at SNR\u22655.59 \u2014 expected for diagnostic bipolar quantity)"
+  ],
+  "implications": {
+    "robustness": "Threshold robustness is incomplete across the tested cuts",
+    "not_selection_effect": "Current threshold sweep does not by itself rule out all selection effects",
+    "confidence": "Interpret threshold-robustness claims cautiously",
+    "geometric_necessity": "Lower-SNR cross-terms provide essential geometric coverage for Stokes alignment"
+  }
+}
