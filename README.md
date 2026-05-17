@@ -8,7 +8,7 @@
 **Author:** Matthew Lukin Smawfield  
 **Version:** v0.1 (Sintra)  
 **First published:** 17 May 2026 · **Last updated:** 17 May 2026  
-**Status:** Preprint  
+**Status:** Preprint (Open for Collaboration)  
 **DOI:** [10.5281/zenodo.19454620](https://doi.org/10.5281/zenodo.19454620)  
 **Website:** [https://mlsmawfield.com/tep/j0437/](https://mlsmawfield.com/tep/j0437/)  
 **Paper Series:** TEP Series: Paper 16 (Pulsar Scintillation)
