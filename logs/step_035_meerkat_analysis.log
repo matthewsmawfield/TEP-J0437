@@ -1,38 +1,38 @@
-[2026-05-15 13:18:21] [INFO] ================================================================================
-[2026-05-15 13:18:21] [INFO] STEP step_035_meerkat_analysis STARTED
-[2026-05-15 13:18:21] [INFO] Description: MeerKAT telescope analysis
-[2026-05-15 13:18:21] [INFO] Physics: Dedicated analysis of MeerKAT observational data
-[2026-05-15 13:18:21] [INFO] Method: MeerKAT-specific calibration and processing pipeline
-[2026-05-15 13:18:21] [INFO] ================================================================================
-[2026-05-15 13:18:21] [INFO]       ======================================================================
-[2026-05-15 13:18:21] [INFO] ═══ STEP 035: MeerKAT Data Availability Audit
-[2026-05-15 13:18:21] [INFO]       ======================================================================
-[2026-05-15 13:18:21] [INFO]       Raw .dynspec files found: 5
-[2026-05-15 13:18:21] [INFO]         - J0908-1739.dynspec
-[2026-05-15 13:18:21] [INFO]         - J0922-0638.dynspec
-[2026-05-15 13:18:21] [INFO]         - J1731-4744.dynspec
-[2026-05-15 13:18:21] [INFO]         - sample.dynspec
-[2026-05-15 13:18:21] [INFO]         - test1.dynspec
-[2026-05-15 13:18:21] [INFO]       Processed .npz files found: 5
-[2026-05-15 13:18:21] [INFO]         - J0908-1739.npz
-[2026-05-15 13:18:21] [INFO]         - J0922-0638.npz
-[2026-05-15 13:18:21] [INFO]         - J1731-4744.npz
-[2026-05-15 13:18:21] [INFO]         - sample.npz
-[2026-05-15 13:18:21] [INFO]         - test1.npz
-[2026-05-15 13:18:21] [INFO]       Epoch catalog exists: True
-[2026-05-15 13:18:21] [INFO] 
-[2026-05-15 13:18:21] [WARNING] [WARN] J0437-4715 MeerKAT data: NOT AVAILABLE (expected for this repository)
-[2026-05-15 13:18:21] [INFO]       The raw MeerKAT files present are for other pulsars
-[2026-05-15 13:18:21] [INFO]       (J0908-1739, J0922-0638, J1731-4744, sample, test1).
-[2026-05-15 13:18:21] [INFO]       A dedicated MeerKAT TEP analysis for J0437 cannot be performed.
-[2026-05-15 13:18:21] [INFO]       The primary J0437 analysis uses PPTA DR2 Parkes/CASPSR data.
-[2026-05-15 13:18:21] [INFO] 
-[2026-05-15 13:18:21] [INFO]       ======================================================================
-[2026-05-15 13:18:21] [INFO]       STEP 035 SUMMARY
-[2026-05-15 13:18:21] [INFO]       ======================================================================
-[2026-05-15 13:18:21] [WARNING] [WARN] J0437 MeerKAT data missing. Step returns no-op.
-[2026-05-15 13:18:21] [INFO]       ======================================================================
-[2026-05-15 13:18:21] [INFO]       Audit report saved to /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_035_meerkat_audit.json
-[2026-05-15 13:18:21] [INFO] ================================================================================
-[2026-05-15 13:18:21] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
-[2026-05-15 13:18:21] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO] STEP step_035_meerkat_analysis STARTED
+[2026-05-17 16:12:42] [INFO] Description: MeerKAT telescope analysis
+[2026-05-17 16:12:42] [INFO] Physics: Dedicated analysis of MeerKAT observational data
+[2026-05-17 16:12:42] [INFO] Method: MeerKAT-specific calibration and processing pipeline
+[2026-05-17 16:12:42] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO]       ======================================================================
+[2026-05-17 16:12:42] [INFO] ═══ STEP 035: MeerKAT Data Availability Audit
+[2026-05-17 16:12:42] [INFO]       ======================================================================
+[2026-05-17 16:12:42] [INFO]       Raw .dynspec files found: 5
+[2026-05-17 16:12:42] [INFO]         - J0908-1739.dynspec
+[2026-05-17 16:12:42] [INFO]         - J0922-0638.dynspec
+[2026-05-17 16:12:42] [INFO]         - J1731-4744.dynspec
+[2026-05-17 16:12:42] [INFO]         - sample.dynspec
+[2026-05-17 16:12:42] [INFO]         - test1.dynspec
+[2026-05-17 16:12:42] [INFO]       Processed .npz files found: 5
+[2026-05-17 16:12:42] [INFO]         - J0908-1739.npz
+[2026-05-17 16:12:42] [INFO]         - J0922-0638.npz
+[2026-05-17 16:12:42] [INFO]         - J1731-4744.npz
+[2026-05-17 16:12:42] [INFO]         - sample.npz
+[2026-05-17 16:12:42] [INFO]         - test1.npz
+[2026-05-17 16:12:42] [INFO]       Epoch catalog exists: True
+[2026-05-17 16:12:42] [INFO] 
+[2026-05-17 16:12:42] [WARNING] [WARN] J0437-4715 MeerKAT data: NOT AVAILABLE (expected for this repository)
+[2026-05-17 16:12:42] [INFO]       The raw MeerKAT files present are for other pulsars
+[2026-05-17 16:12:42] [INFO]       (J0908-1739, J0922-0638, J1731-4744, sample, test1).
+[2026-05-17 16:12:42] [INFO]       A dedicated MeerKAT TEP analysis for J0437 cannot be performed.
+[2026-05-17 16:12:42] [INFO]       The primary J0437 analysis uses PPTA DR2 Parkes/CASPSR data.
+[2026-05-17 16:12:42] [INFO] 
+[2026-05-17 16:12:42] [INFO]       ======================================================================
+[2026-05-17 16:12:42] [INFO]       STEP 035 SUMMARY
+[2026-05-17 16:12:42] [INFO]       ======================================================================
+[2026-05-17 16:12:42] [WARNING] [WARN] J0437 MeerKAT data missing. Step returns no-op.
+[2026-05-17 16:12:42] [INFO]       ======================================================================
+[2026-05-17 16:12:42] [INFO]       Audit report saved to /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_035_meerkat_audit.json
+[2026-05-17 16:12:42] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-17 16:12:42] [INFO] ================================================================================

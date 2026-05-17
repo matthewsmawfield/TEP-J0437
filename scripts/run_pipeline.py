@@ -402,6 +402,12 @@ def run_step(step_name: str, step_module: str, verbose: bool = True, force: bool
             "method": "Bin triplets by orbital phase, compute inverse-variance weighted signed mean per bin, fit sinusoid with absolute_sigma=True",
             "output": "Phase-resolved signed-delay modulation testing orbital kinematic predictions",
         },
+        "step_046b_hierarchical_orbital_modulation": {
+            "description": "Hierarchical mixed-effects orbital modulation model (REML)",
+            "physics": "Account for within-epoch triplet correlations via per-epoch random offsets",
+            "method": "Linear mixed-effects model fitted by REML with likelihood-ratio test",
+            "output": "Orbital modulation amplitude and significance with proper correlation handling",
+        },
         "step_047_velocity_direction_controls": {
             "description": "Velocity-direction controls",
             "physics": "Test whether velocity-projection alignment encodes the expected sign",
@@ -740,6 +746,7 @@ def run_pipeline(
         ("Step 044 - Probabilistic Weighting", "step_044_probabilistic_weighting"),
         ("Step 045 - Synthetic Threshold Degradation", "step_045_synthetic_threshold_degradation"),
         ("Step 046 - Bayesian Orbital Phase-Binning (signed delays)", "step_046_bayesian_orbital_phasebin"),
+        ("Step 046b - Hierarchical Mixed-Effects Orbital Modulation (REML)", "step_046b_hierarchical_orbital_modulation"),
         ("Step 047 - Velocity Direction Controls", "step_047_velocity_direction_controls"),
         ("Step 048 - CMB Dipole Frame Analysis", "step_048_cmb_dipole_frame_analysis"),
         ("Step 013 - Falsification Criteria Automation", "step_013_falsification_criteria"),

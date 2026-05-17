@@ -1,88 +1,88 @@
-[2026-05-15 13:18:27] [INFO] ================================================================================
-[2026-05-15 13:18:27] [INFO] STEP step_048_cmb_dipole_frame_analysis STARTED
-[2026-05-15 13:18:27] [INFO] Description: CMB dipole bulk-vector sensitivity on Stokes-weighted closure
-[2026-05-15 13:18:27] [INFO] Physics: Test invariance of phase-only Phase Closure and stability of |H| when adding the Planck 2018 kinematic dipole to Step 003 SSB velocities
-[2026-05-15 13:18:27] [INFO] Method: Reload Step 003 per-epoch triplets; recompute geometric delays; Earth velocity projected onto 3D CMB dipole for annual regressions; wrong-direction and random-direction controls
-[2026-05-15 13:18:27] [INFO] ================================================================================
-[2026-05-15 13:18:28] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:28] [INFO] ═══ STEP 048: CMB DIPOLE FRAME ANALYSIS
-[2026-05-15 13:18:28] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:28] [INFO]       CMB dipole (Planck 2018): v=369.82 km/s, l=264.0211 deg, b=48.2533 deg
-[2026-05-15 13:18:28] [INFO]         ICRS Cartesian: vx=-359.01, vy=76.69, vz=-44.71 km/s
-[2026-05-15 13:18:28] [INFO]         Pulsars: J0437-4715, J1603-7202
-[2026-05-15 13:18:28] [INFO] 
-[2026-05-15 13:18:28] [INFO] ═══ 
+[2026-05-17 16:12:49] [INFO] ================================================================================
+[2026-05-17 16:12:49] [INFO] STEP step_048_cmb_dipole_frame_analysis STARTED
+[2026-05-17 16:12:49] [INFO] Description: CMB dipole bulk-vector sensitivity on Stokes-weighted closure
+[2026-05-17 16:12:49] [INFO] Physics: Test invariance of phase-only Phase Closure and stability of |H| when adding the Planck 2018 kinematic dipole to Step 003 SSB velocities
+[2026-05-17 16:12:49] [INFO] Method: Reload Step 003 per-epoch triplets; recompute geometric delays; Earth velocity projected onto 3D CMB dipole for annual regressions; wrong-direction and random-direction controls
+[2026-05-17 16:12:49] [INFO] ================================================================================
+[2026-05-17 16:12:49] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:49] [INFO] ═══ STEP 048: CMB DIPOLE FRAME ANALYSIS
+[2026-05-17 16:12:49] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:49] [INFO]       CMB dipole (Planck 2018): v=369.82 km/s, l=264.0211 deg, b=48.2533 deg
+[2026-05-17 16:12:49] [INFO]         ICRS Cartesian: vx=-359.01, vy=76.69, vz=-44.71 km/s
+[2026-05-17 16:12:49] [INFO]         Pulsars: J0437-4715, J1603-7202
+[2026-05-17 16:12:49] [INFO] 
+[2026-05-17 16:12:49] [INFO] ═══ 
 --- J0437-4715 ---
-[2026-05-15 13:18:28] [INFO]       SSB (Step 003) v_eff: [91.97622543173009, -41.94301486467178], v_proj=-89.68 km/s
-[2026-05-15 13:18:28] [INFO]       CMB bulk model v_eff: [-267.03157911926075, 34.74552652410101], v_proj=+191.78 km/s
-[2026-05-15 13:18:28] [INFO]       Angle SSB vs CMB-bulk vector (Step 003 ICRS (vx, vy) plane): 162.90 deg
-[2026-05-15 13:18:28] [INFO]       Projection sign: SSB=-1, CMB_bulk=+1
-[2026-05-15 13:18:29] [INFO]       SSB ψ (weighted) = +0.9840 rad, R_bar=0.3076, Rayleigh p=1.386e-13
-[2026-05-15 13:18:29] [INFO]       SSB ψ (unweighted) = +1.1204 rad, R_bar=0.3040, Rayleigh p=1.336e-44
-[2026-05-15 13:18:29] [INFO]       SSB |H| = 8.100 ± 0.102 ns, signed=-0.184 ns
-[2026-05-15 13:18:30] [INFO]       CMB bulk ψ (weighted) = +0.5660 rad, R_bar=0.2993, Rayleigh p=1.892e-04
-[2026-05-15 13:18:30] [INFO]       CMB bulk ψ (unweighted) = +1.1204 rad, R_bar=0.3040, Rayleigh p=1.336e-44
-[2026-05-15 13:18:30] [INFO]       CMB bulk |H| = 25.855 ± 0.291 ns, signed=-1.397 ns
-[2026-05-15 13:18:30] [WARNING] [WARN] Velocity projection sign unchanged (SSB vs CMB bulk): False
-[2026-05-15 13:18:30] [INFO] ═══ 
+[2026-05-17 16:12:49] [INFO]       SSB (Step 003) v_eff: [91.97622543173009, -41.94301486467178], v_proj=-89.68 km/s
+[2026-05-17 16:12:49] [INFO]       CMB bulk model v_eff: [-267.03157911926075, 34.74552652410101], v_proj=+191.78 km/s
+[2026-05-17 16:12:49] [INFO]       Angle SSB vs CMB-bulk vector (Step 003 ICRS (vx, vy) plane): 162.90 deg
+[2026-05-17 16:12:49] [INFO]       Projection sign: SSB=-1, CMB_bulk=+1
+[2026-05-17 16:12:51] [INFO]       SSB ψ (weighted) = +0.9840 rad, R_bar=0.3076, Rayleigh p=1.386e-13
+[2026-05-17 16:12:51] [INFO]       SSB ψ (unweighted) = +1.1204 rad, R_bar=0.3040, Rayleigh p=1.336e-44
+[2026-05-17 16:12:51] [INFO]       SSB |H| = 8.100 ± 0.102 ns, signed=-0.184 ns
+[2026-05-17 16:12:52] [INFO]       CMB bulk ψ (weighted) = +0.5660 rad, R_bar=0.2993, Rayleigh p=1.892e-04
+[2026-05-17 16:12:52] [INFO]       CMB bulk ψ (unweighted) = +1.1204 rad, R_bar=0.3040, Rayleigh p=1.336e-44
+[2026-05-17 16:12:52] [INFO]       CMB bulk |H| = 25.855 ± 0.291 ns, signed=-1.397 ns
+[2026-05-17 16:12:52] [WARNING] [WARN] Velocity projection sign unchanged (SSB vs CMB bulk): False
+[2026-05-17 16:12:52] [INFO] ═══ 
   --- Enhanced CMB Frame Tests ---
-[2026-05-15 13:18:30] [INFO]         Test 1: Earth velocity along CMB dipole (annual)
-[2026-05-15 13:18:30] [INFO]           v_parallel range: [-28.78, +29.69] km/s
-[2026-05-15 13:18:30] [INFO]           |H| vs v_parallel: r=+0.0489, p=0.1065
-[2026-05-15 13:18:30] [INFO]           Joint model v_parallel t=+1.31
-[2026-05-15 13:18:30] [INFO]         Test 2: Directional specificity
-[2026-05-15 13:18:34] [INFO]           Unweighted psi invariant: True, max |Δ|=0.00e+00 rad
-[2026-05-15 13:18:34] [INFO]           |H| true_cmb: 25.855 ns
-[2026-05-15 13:18:34] [INFO]           |H| anti_cmb: 41.006 ns
-[2026-05-15 13:18:34] [INFO]           |H| perpendicular_1: 20.595 ns
-[2026-05-15 13:18:34] [INFO]           |H| perpendicular_2: 12.228 ns
-[2026-05-15 13:18:34] [INFO]         Test 3: Joint model (annual + Earth||CMB + Earth⊥CMB)
-[2026-05-15 13:18:35] [INFO]           v_parallel t=-1.17
-[2026-05-15 13:18:35] [INFO]           F-test for Earth CMB-geometry terms: F=2.46, p=0.0862
-[2026-05-15 13:18:35] [INFO]           delta AIC (reduced - full): +0.9
-[2026-05-15 13:18:35] [INFO]         Test 4: Multipole (v_proj^2) check on |H|
-[2026-05-15 13:18:35] [INFO]           v_proj^2 t=+41.26, p=0.0003
-[2026-05-15 13:18:35] [INFO]           Conclusion: quadrupole_significant
-[2026-05-15 13:18:35] [INFO]         Test 5: Random direction control (n=50)
-[2026-05-15 13:19:29] [INFO]           Unweighted ψ identical all draws: True, max |Δ|=0.00e+00 rad
-[2026-05-15 13:19:29] [INFO]           |H| true=25.855 ns, random mean=24.083 ± 12.699 ns, percentile=60.0
-[2026-05-15 13:19:29] [INFO] ═══ 
+[2026-05-17 16:12:52] [INFO]         Test 1: Earth velocity along CMB dipole (annual)
+[2026-05-17 16:12:52] [INFO]           v_parallel range: [-28.78, +29.69] km/s
+[2026-05-17 16:12:52] [INFO]           |H| vs v_parallel: r=+0.0489, p=0.1065
+[2026-05-17 16:12:52] [INFO]           Joint model v_parallel t=+1.31
+[2026-05-17 16:12:52] [INFO]         Test 2: Directional specificity
+[2026-05-17 16:12:57] [INFO]           Unweighted psi invariant: True, max |Δ|=0.00e+00 rad
+[2026-05-17 16:12:57] [INFO]           |H| true_cmb: 25.855 ns
+[2026-05-17 16:12:57] [INFO]           |H| anti_cmb: 41.006 ns
+[2026-05-17 16:12:57] [INFO]           |H| perpendicular_1: 20.595 ns
+[2026-05-17 16:12:57] [INFO]           |H| perpendicular_2: 12.228 ns
+[2026-05-17 16:12:57] [INFO]         Test 3: Joint model (annual + Earth||CMB + Earth⊥CMB)
+[2026-05-17 16:12:57] [INFO]           v_parallel t=-1.17
+[2026-05-17 16:12:57] [INFO]           F-test for Earth CMB-geometry terms: F=2.46, p=0.0862
+[2026-05-17 16:12:57] [INFO]           delta AIC (reduced - full): +0.9
+[2026-05-17 16:12:57] [INFO]         Test 4: Multipole (v_proj^2) check on |H|
+[2026-05-17 16:12:58] [INFO]           v_proj^2 t=+41.26, p=0.0003
+[2026-05-17 16:12:58] [INFO]           Conclusion: quadrupole_significant
+[2026-05-17 16:12:58] [INFO]         Test 5: Random direction control (n=50)
+[2026-05-17 16:13:58] [INFO]           Unweighted ψ identical all draws: True, max |Δ|=0.00e+00 rad
+[2026-05-17 16:13:58] [INFO]           |H| true=25.855 ns, random mean=24.083 ± 12.699 ns, percentile=60.0
+[2026-05-17 16:13:58] [INFO] ═══ 
 --- J1603-7202 ---
-[2026-05-15 13:19:29] [INFO]       SSB (Step 003) v_eff: [20.86426231432975, -36.25321760758207], v_proj=-40.42 km/s
-[2026-05-15 13:19:29] [INFO]       CMB bulk model v_eff: [-338.1435422366611, 40.43532378119072], v_proj=+126.58 km/s
-[2026-05-15 13:19:29] [INFO]       Angle SSB vs CMB-bulk vector (Step 003 ICRS (vx, vy) plane): 126.74 deg
-[2026-05-15 13:19:29] [INFO]       Projection sign: SSB=-1, CMB_bulk=+1
-[2026-05-15 13:19:29] [INFO]       SSB ψ (weighted) = -2.3276 rad, R_bar=0.0267, Rayleigh p=9.360e-01
-[2026-05-15 13:19:29] [INFO]       SSB ψ (unweighted) = -2.2373 rad, R_bar=0.0189, Rayleigh p=9.261e-01
-[2026-05-15 13:19:29] [INFO]       SSB |H| = 2.557 ± 0.120 ns, signed=+0.151 ns
-[2026-05-15 13:19:29] [INFO]       CMB bulk ψ (weighted) = -2.2407 rad, R_bar=0.1047, Rayleigh p=3.714e-01
-[2026-05-15 13:19:29] [INFO]       CMB bulk ψ (unweighted) = -2.2373 rad, R_bar=0.0189, Rayleigh p=9.261e-01
-[2026-05-15 13:19:29] [INFO]       CMB bulk |H| = 35.922 ± 0.845 ns, signed=-1.167 ns
-[2026-05-15 13:19:29] [WARNING] [WARN] Velocity projection sign unchanged (SSB vs CMB bulk): False
-[2026-05-15 13:19:29] [INFO] ═══ 
+[2026-05-17 16:13:58] [INFO]       SSB (Step 003) v_eff: [20.86426231432975, -36.25321760758207], v_proj=-40.42 km/s
+[2026-05-17 16:13:58] [INFO]       CMB bulk model v_eff: [-338.1435422366611, 40.43532378119072], v_proj=+126.58 km/s
+[2026-05-17 16:13:58] [INFO]       Angle SSB vs CMB-bulk vector (Step 003 ICRS (vx, vy) plane): 126.74 deg
+[2026-05-17 16:13:58] [INFO]       Projection sign: SSB=-1, CMB_bulk=+1
+[2026-05-17 16:13:58] [INFO]       SSB ψ (weighted) = -2.3276 rad, R_bar=0.0267, Rayleigh p=9.360e-01
+[2026-05-17 16:13:58] [INFO]       SSB ψ (unweighted) = -2.2373 rad, R_bar=0.0189, Rayleigh p=9.261e-01
+[2026-05-17 16:13:58] [INFO]       SSB |H| = 2.557 ± 0.120 ns, signed=+0.151 ns
+[2026-05-17 16:13:58] [INFO]       CMB bulk ψ (weighted) = -2.2407 rad, R_bar=0.1047, Rayleigh p=3.714e-01
+[2026-05-17 16:13:58] [INFO]       CMB bulk ψ (unweighted) = -2.2373 rad, R_bar=0.0189, Rayleigh p=9.261e-01
+[2026-05-17 16:13:58] [INFO]       CMB bulk |H| = 35.922 ± 0.845 ns, signed=-1.167 ns
+[2026-05-17 16:13:58] [WARNING] [WARN] Velocity projection sign unchanged (SSB vs CMB bulk): False
+[2026-05-17 16:13:58] [INFO] ═══ 
   --- Enhanced CMB Frame Tests ---
-[2026-05-15 13:19:29] [INFO]         Test 1: Earth velocity along CMB dipole (annual)
-[2026-05-15 13:19:29] [INFO]           v_parallel range: [-28.78, +29.68] km/s
-[2026-05-15 13:19:29] [INFO]           |H| vs v_parallel: r=+0.1434, p=0.0356
-[2026-05-15 13:19:29] [INFO]           Joint model v_parallel t=-0.84
-[2026-05-15 13:19:29] [INFO]         Test 2: Directional specificity
-[2026-05-15 13:19:31] [INFO]           Unweighted psi invariant: True, max |Δ|=0.00e+00 rad
-[2026-05-15 13:19:31] [INFO]           |H| true_cmb: 35.922 ns
-[2026-05-15 13:19:31] [INFO]           |H| anti_cmb: 49.755 ns
-[2026-05-15 13:19:31] [INFO]           |H| perpendicular_1: 79.379 ns
-[2026-05-15 13:19:31] [INFO]           |H| perpendicular_2: 9.169 ns
-[2026-05-15 13:19:31] [INFO]         Test 3: Joint model (annual + Earth||CMB + Earth⊥CMB)
-[2026-05-15 13:19:31] [INFO]           v_parallel t=-1.27
-[2026-05-15 13:19:31] [INFO]           F-test for Earth CMB-geometry terms: F=0.88, p=0.4176
-[2026-05-15 13:19:31] [INFO]           delta AIC (reduced - full): -2.2
-[2026-05-15 13:19:31] [INFO]         Test 4: Multipole (v_proj^2) check on |H|
-[2026-05-15 13:19:31] [INFO]           v_proj^2 t=+8.43, p=0.4089
-[2026-05-15 13:19:31] [INFO]           Conclusion: dipole_only
-[2026-05-15 13:19:31] [INFO]         Test 5: Random direction control (n=50)
-[2026-05-15 13:19:46] [INFO]           Unweighted ψ identical all draws: True, max |Δ|=0.00e+00 rad
-[2026-05-15 13:19:46] [INFO]           |H| true=35.922 ns, random mean=52.059 ± 28.801 ns, percentile=34.0
-[2026-05-15 13:19:46] [INFO] [PASS] 
+[2026-05-17 16:13:58] [INFO]         Test 1: Earth velocity along CMB dipole (annual)
+[2026-05-17 16:13:58] [INFO]           v_parallel range: [-28.78, +29.68] km/s
+[2026-05-17 16:13:58] [INFO]           |H| vs v_parallel: r=+0.1434, p=0.0356
+[2026-05-17 16:13:58] [INFO]           Joint model v_parallel t=-0.84
+[2026-05-17 16:13:58] [INFO]         Test 2: Directional specificity
+[2026-05-17 16:14:00] [INFO]           Unweighted psi invariant: True, max |Δ|=0.00e+00 rad
+[2026-05-17 16:14:00] [INFO]           |H| true_cmb: 35.922 ns
+[2026-05-17 16:14:00] [INFO]           |H| anti_cmb: 49.755 ns
+[2026-05-17 16:14:00] [INFO]           |H| perpendicular_1: 79.379 ns
+[2026-05-17 16:14:00] [INFO]           |H| perpendicular_2: 9.169 ns
+[2026-05-17 16:14:00] [INFO]         Test 3: Joint model (annual + Earth||CMB + Earth⊥CMB)
+[2026-05-17 16:14:00] [INFO]           v_parallel t=-1.27
+[2026-05-17 16:14:00] [INFO]           F-test for Earth CMB-geometry terms: F=0.88, p=0.4176
+[2026-05-17 16:14:00] [INFO]           delta AIC (reduced - full): -2.2
+[2026-05-17 16:14:00] [INFO]         Test 4: Multipole (v_proj^2) check on |H|
+[2026-05-17 16:14:00] [INFO]           v_proj^2 t=+8.43, p=0.4089
+[2026-05-17 16:14:00] [INFO]           Conclusion: dipole_only
+[2026-05-17 16:14:00] [INFO]         Test 5: Random direction control (n=50)
+[2026-05-17 16:14:15] [INFO]           Unweighted ψ identical all draws: True, max |Δ|=0.00e+00 rad
+[2026-05-17 16:14:15] [INFO]           |H| true=35.922 ns, random mean=52.059 ± 28.801 ns, percentile=34.0
+[2026-05-17 16:14:15] [INFO] [PASS] 
 Results saved to /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_048_cmb_dipole_frame_analysis.json
-[2026-05-15 13:19:46] [INFO] ================================================================================
-[2026-05-15 13:19:46] [INFO] STEP COMPLETED SUCCESSFULLY (78.5 seconds)
-[2026-05-15 13:19:46] [INFO] ================================================================================
+[2026-05-17 16:14:15] [INFO] ================================================================================
+[2026-05-17 16:14:15] [INFO] STEP COMPLETED SUCCESSFULLY (86.5 seconds)
+[2026-05-17 16:14:15] [INFO] ================================================================================

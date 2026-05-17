@@ -29,6 +29,35 @@ scratch/
 node_modules/
 scripts/utils/matplotlib/
 
+# Build artifacts
+site/node_modules/
+site/dist/
+
+# Env / secrets
+.env*
+.env.local
+*.pem
+*.key
+credentials.json
+*secret*.json
+
+# Large binaries and archives
+*.tar
+*.tar.gz
+*.npz
+*.zip
+*.7z
+
+# Root-level npm artifacts (if accidentally created)
+/package.json
+/package-lock.json
+
+# IDE
+.cursor/
+
+# Test cache
+.pytest_cache/
+
 # Temp files
 *.tmp
 *.temp

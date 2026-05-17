@@ -18,6 +18,8 @@ CURRENT DATASET:
 - Jiamusi 65m ensemble: B0355+54, B0540+23, B1508+55, B2154+40 (have closure
   results); B0329+54, B0740-28, B1933+16, B2310+42, B2324+60, B2351+61
   (data ingested but no significant closure detections)
+- MeerKAT: J1731-4744 (has closure results); J0908-1739, J0922-0638
+  (no valid closure results)
 
 FUTURE EXPANSION:
 - PPTA DR3 could provide additional pulsars
@@ -50,6 +52,13 @@ JIAMUSI_PULSARS = {
     "B2310+42": 1060.0,
     "B2324+60": 2700.0,
     "B2351+61": 2400.0,
+}
+
+# MeerKAT pulsars (Thousand Pulsar Array programme)
+MEERKAT_PULSARS = {
+    "J0908-1739": 400.0,
+    "J0922-0638": 1000.0,
+    "J1731-4744": 400.0,
 }
 
 
@@ -156,6 +165,50 @@ def main():
         else:
             print_status(f"  {jr['name']}: no closure results", "INFO")
 
+    # --- Load MeerKAT pulsars ---
+    meerkat_results = []
+    for name, dist_pc in MEERKAT_PULSARS.items():
+        summary = load_summary(name)
+        if summary:
+            sigma = compute_detection_sigma(summary)
+            h_mag = summary.get("H_magnitude_ns")
+            n_epochs = summary.get("n_epochs", 0)
+            n_triplets = summary.get("n_total_triplets", 0)
+            meerkat_results.append({
+                "name": name,
+                "distance_pc": dist_pc,
+                "detection_sigma": round(sigma, 2) if sigma else 0.0,
+                "H_magnitude_ns": round(float(h_mag), 3) if h_mag is not None and not math.isnan(h_mag) else None,
+                "n_epochs": n_epochs,
+                "n_triplets": n_triplets,
+                "role": "Ensemble scaling analysis",
+                "source": "MeerKAT",
+                "has_results": True,
+            })
+        else:
+            meerkat_results.append({
+                "name": name,
+                "distance_pc": dist_pc,
+                "detection_sigma": 0.0,
+                "H_magnitude_ns": None,
+                "n_epochs": 0,
+                "n_triplets": 0,
+                "role": "Ensemble scaling analysis",
+                "source": "MeerKAT",
+                "has_results": False,
+            })
+
+    for mr in meerkat_results:
+        if mr["has_results"]:
+            print_status(
+                f"  {mr['name']}: |H| = {mr['H_magnitude_ns']} ns, "
+                f"significance = {mr['detection_sigma']:.2f}σ, "
+                f"epochs = {mr['n_epochs']}, triplets = {mr['n_triplets']}",
+                "INFO",
+            )
+        else:
+            print_status(f"  {mr['name']}: no closure results", "INFO")
+
     # --- Load ensemble scaling status ---
     ensemble_file = RESULTS_DIR / "step_018_ensemble_scaling_results.json"
     ensemble_status = "not_run"
@@ -177,6 +230,7 @@ def main():
         "data_sources": {
             "ppta_dr2_parkes": "PPTA DR2 Parkes/CASPSR (J0437, J1603)",
             "jiamusi_65m": "Jiamusi 65m telescope (10 pulsars, 33 epochs)",
+            "meerkat_tpa": "MeerKAT Thousand-Pulsar Array (3 pulsars, L-band)",
         },
         "pulsars_analyzed": [
             {
@@ -195,7 +249,7 @@ def main():
                 "detection_sigma": round(j1603_sigma, 2),
                 "role": "Secondary Parkes/PPTA pulsar",
             },
-        ] + jiamusi_results,
+        ] + jiamusi_results + meerkat_results,
         "ensemble_scaling": {
             "status": ensemble_status,
             "n_pulsars_with_data": n_pulsars_in_ensemble,

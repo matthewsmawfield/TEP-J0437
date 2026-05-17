@@ -1,11 +1,12 @@
 {
   "validation_type": "Multi-Pulsar Data Ingestion",
-  "validation_date": "2026-05-15T13:18:05.856731",
+  "validation_date": "2026-05-17T16:12:22.934770",
   "status": "COMPLETE",
   "note": "All values read from actual pipeline outputs; no hardcoded statistics",
   "data_sources": {
     "ppta_dr2_parkes": "PPTA DR2 Parkes/CASPSR (J0437, J1603)",
-    "jiamusi_65m": "Jiamusi 65m telescope (10 pulsars, 33 epochs)"
+    "jiamusi_65m": "Jiamusi 65m telescope (10 pulsars, 33 epochs)",
+    "meerkat_tpa": "MeerKAT Thousand-Pulsar Array (3 pulsars, L-band)"
   },
   "pulsars_analyzed": [
     {
@@ -105,12 +106,12 @@
       "name": "B2310+42",
       "distance_pc": 1060.0,
       "detection_sigma": 0.0,
-      "H_magnitude_ns": 15.406,
-      "n_epochs": 1,
-      "n_triplets": 20,
+      "H_magnitude_ns": null,
+      "n_epochs": 0,
+      "n_triplets": 0,
       "role": "Ensemble scaling analysis",
       "source": "Jiamusi 65m",
-      "has_results": true
+      "has_results": false
     },
     {
       "name": "B2324+60",
@@ -133,11 +134,44 @@
       "role": "Ensemble scaling analysis",
       "source": "Jiamusi 65m",
       "has_results": false
+    },
+    {
+      "name": "J0908-1739",
+      "distance_pc": 400.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": null,
+      "n_epochs": 0,
+      "n_triplets": 0,
+      "role": "Ensemble scaling analysis",
+      "source": "MeerKAT",
+      "has_results": false
+    },
+    {
+      "name": "J0922-0638",
+      "distance_pc": 1000.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": null,
+      "n_epochs": 0,
+      "n_triplets": 0,
+      "role": "Ensemble scaling analysis",
+      "source": "MeerKAT",
+      "has_results": false
+    },
+    {
+      "name": "J1731-4744",
+      "distance_pc": 400.0,
+      "detection_sigma": 0.0,
+      "H_magnitude_ns": 2.313,
+      "n_epochs": 1,
+      "n_triplets": 20,
+      "role": "Ensemble scaling analysis",
+      "source": "MeerKAT",
+      "has_results": true
     }
   ],
   "ensemble_scaling": {
-    "status": "insufficient_data",
-    "n_pulsars_with_data": 2,
-    "message": "Ensemble scaling requires >= 3 pulsars with kinematics. Currently 2 pulsars available."
+    "status": "not_run",
+    "n_pulsars_with_data": 0,
+    "message": "Ensemble scaling requires >= 3 pulsars with kinematics. Currently 0 pulsars available."
   }
 }

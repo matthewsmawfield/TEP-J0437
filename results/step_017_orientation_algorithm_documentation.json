@@ -80,12 +80,12 @@
     "index_independence": {
       "n_triplets_analyzed": 19167,
       "index_sum_correlation": {
-        "r": -0.002576074241412707,
+        "r": -0.0025760742414126974,
         "p_value": 0.7213749831733786,
         "significant": false
       },
       "index_max_correlation": {
-        "r": -0.007091065914642464,
+        "r": -0.007091065914642463,
         "p_value": 0.3262622162383567,
         "significant": false
       },

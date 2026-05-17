@@ -3,12 +3,23 @@
   "version": "0.1.0",
   "description": "TEP-J0437: Synchronization Holonomy in Pulsar Scintillation",
   "keywords": [
-    "pulsar scintillation", "synchronization holonomy", "Temporal Equivalence Principle",
-    "closure delays", "modified gravity", "interstellar medium", "PSR J0437-4715",
-    "multi-pulsar analysis", "scattering strength",
-    "time dilation", "beyond standard model", "extended gravity"
+    "pulsar scintillation",
+    "synchronization holonomy",
+    "Temporal Equivalence Principle",
+    "closure delays",
+    "modified gravity",
+    "interstellar medium",
+    "PSR J0437-4715",
+    "multi-pulsar analysis",
+    "scattering strength",
+    "time dilation",
+    "beyond standard model",
+    "extended gravity"
   ],
   "scripts": {
     "build:markdown": "npm run build:markdown --prefix site"
+  },
+  "dependencies": {
+    "chokidar": "^5.0.0"
   }
 }

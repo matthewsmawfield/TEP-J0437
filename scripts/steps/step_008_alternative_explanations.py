@@ -7,8 +7,8 @@ closure-delay structure. Uses Kolmogorov-turbulence thin-screen Fresnel
 diffraction simulations (Cordes & Rickett 1998; Narayan & Goodman 1997).
 
 Key result: Standard ISS predicts identically zero closure delay
-(τ_ij + τ_jk + τ_ki ≡ 0). The observed |H| = 4.244 ns and ψ = 0.987 rad
-(4.38σ) cannot be explained by any standard scintillation mechanism.
+(τ_ij + τ_jk + τ_ki ≡ 0). The observed |H| and ψ from step_003
+are loaded at runtime and compared against simulated nulls.
 """
 
 import sys, json
@@ -233,7 +233,7 @@ def test_instrumental(n_trials=410751):
         "n_trials": n_trials, "n_observed": n_obs,
         "noise_model": "Uncorrelated Gaussian: σ_delay=10ns, σ_doppler=0.1mHz",
         "instrumental_ruled_out": bool(psi_sigma > 5),
-        "interpretation": "Instrumental noise produces |H| ~ 8 ns from 10 ns timing precision (unsigned noise bias), but cannot produce Phase Closure ψ because delay and Doppler noise are uncorrelated. The observed ψ = 0.987 rad is incompatible with instrumental noise."
+        "interpretation": f"Instrumental noise produces |H| ~ {sim_H:.1f} ns from 10 ns timing precision (unsigned noise bias), but cannot produce Phase Closure ψ because delay and Doppler noise are uncorrelated. The observed ψ = {obs_psi:.3f} rad is incompatible with instrumental noise."
     }
 
 

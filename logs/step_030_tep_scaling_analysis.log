@@ -1,22 +1,22 @@
-[2026-05-15 13:18:17] [INFO] ================================================================================
-[2026-05-15 13:18:17] [INFO] STEP step_030_tep_scaling_analysis STARTED
-[2026-05-15 13:18:17] [INFO] Description: TEP scaling analysis (two-pulsar baseline plus ensemble rows)
-[2026-05-15 13:18:17] [INFO] Physics: Compare holonomy magnitudes across pulsars against distance, velocity, and screen-geometry scaling expectations
-[2026-05-15 13:18:17] [INFO] Method: Compute |H| ratios, velocity ratios, and scaling-motivated comparisons using regenerated summaries
-[2026-05-15 13:18:17] [INFO] ================================================================================
-[2026-05-15 13:18:17] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:17] [INFO] ═══ TEP SCALING ANALYSIS: Multi-Pulsar Comparison
-[2026-05-15 13:18:17] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:17] [INFO] [PASS] [OK] J0437-4715 (Parkes/PPTA): phase closure = 7.40sigma
-[2026-05-15 13:18:17] [INFO]       ○ J1603-7202: not included (phase evidence below threshold; legacy unsigned-|H| amplitude is diagnostic only; phase sigma=-0.25)
-[2026-05-15 13:18:17] [WARNING] [WARN] [SKIP] B0329+54: no closure summary available
-[2026-05-15 13:18:17] [INFO]       ○ B0355+54: not included (phase evidence below threshold; legacy unsigned-|H| amplitude is diagnostic only; phase sigma=0.00)
-[2026-05-15 13:18:17] [INFO]       ○ B0540+23: not included (phase evidence below threshold; legacy unsigned-|H| amplitude is diagnostic only; phase sigma=0.00)
-[2026-05-15 13:18:17] [INFO]       
+[2026-05-17 16:12:37] [INFO] ================================================================================
+[2026-05-17 16:12:37] [INFO] STEP step_030_tep_scaling_analysis STARTED
+[2026-05-17 16:12:37] [INFO] Description: TEP scaling analysis (two-pulsar baseline plus ensemble rows)
+[2026-05-17 16:12:37] [INFO] Physics: Compare holonomy magnitudes across pulsars against distance, velocity, and screen-geometry scaling expectations
+[2026-05-17 16:12:37] [INFO] Method: Compute |H| ratios, velocity ratios, and scaling-motivated comparisons using regenerated summaries
+[2026-05-17 16:12:37] [INFO] ================================================================================
+[2026-05-17 16:12:37] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:37] [INFO] ═══ TEP SCALING ANALYSIS: Multi-Pulsar Comparison
+[2026-05-17 16:12:37] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:37] [INFO] [PASS] [OK] J0437-4715 (Parkes/PPTA): phase closure = 7.40sigma
+[2026-05-17 16:12:37] [INFO]       ○ J1603-7202: not included (phase evidence below threshold; legacy unsigned-|H| amplitude is diagnostic only; phase sigma=-0.25)
+[2026-05-17 16:12:37] [WARNING] [WARN] [SKIP] B0329+54: no closure summary available
+[2026-05-17 16:12:37] [INFO]       ○ B0355+54: not included (phase evidence below threshold; legacy unsigned-|H| amplitude is diagnostic only; phase sigma=0.00)
+[2026-05-17 16:12:37] [INFO]       ○ B0540+23: not included (phase evidence below threshold; legacy unsigned-|H| amplitude is diagnostic only; phase sigma=0.00)
+[2026-05-17 16:12:37] [INFO]       
 Robust phase detections (≥3sigma): 1 pulsars
-[2026-05-15 13:18:17] [WARNING] [WARN] Need at least 2 independent robust phase detections for scaling analysis
-[2026-05-15 13:18:17] [INFO]       Only 1 pulsar(s) meet the ≥3sigma threshold. Multi-pulsar scaling analysis requires at least 2.
-[2026-05-15 13:18:17] [INFO]       Partial results saved to /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_030_tep_scaling_analysis.json
-[2026-05-15 13:18:17] [INFO] ================================================================================
-[2026-05-15 13:18:17] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
-[2026-05-15 13:18:17] [INFO] ================================================================================
+[2026-05-17 16:12:37] [WARNING] [WARN] Need at least 2 independent robust phase detections for scaling analysis
+[2026-05-17 16:12:37] [INFO]       Only 1 pulsar(s) meet the ≥3sigma threshold. Multi-pulsar scaling analysis requires at least 2.
+[2026-05-17 16:12:37] [INFO]       Partial results saved to /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_030_tep_scaling_analysis.json
+[2026-05-17 16:12:37] [INFO] ================================================================================
+[2026-05-17 16:12:37] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-17 16:12:37] [INFO] ================================================================================

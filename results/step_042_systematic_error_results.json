@@ -27,19 +27,19 @@
       },
       "7": {
         "n_epochs": 90,
-        "mean_H_ns": 1.096599084775771,
+        "mean_H_ns": 1.0965990847757712,
         "std_H_ns": 26.34235228629842,
         "sem_ns": 2.776727738374898
       },
       "8": {
         "n_epochs": 70,
-        "mean_H_ns": -1.5415799702034463,
+        "mean_H_ns": -1.541579970203446,
         "std_H_ns": 27.09180519616455,
         "sem_ns": 3.2380900648970052
       },
       "9": {
         "n_epochs": 76,
-        "mean_H_ns": 2.9260691897733104,
+        "mean_H_ns": 2.926069189773311,
         "std_H_ns": 34.09194761802362,
         "sem_ns": 3.910614590932819
       },
@@ -51,7 +51,7 @@
       },
       "11": {
         "n_epochs": 44,
-        "mean_H_ns": 1.3696208813648045,
+        "mean_H_ns": 1.3696208813648048,
         "std_H_ns": 12.195615132798867,
         "sem_ns": 1.8385581583215538
       },
@@ -63,9 +63,9 @@
       },
       "13": {
         "n_epochs": 32,
-        "mean_H_ns": -2.2301378915477614,
-        "std_H_ns": 21.334461403138874,
-        "sem_ns": 3.7714355827805406
+        "mean_H_ns": -2.230137891547762,
+        "std_H_ns": 21.33446140313887,
+        "sem_ns": 3.77143558278054
       },
       "14": {
         "n_epochs": 21,
@@ -512,7 +512,7 @@
     "interpretation": "Analysis deferred to steps 025 and 028"
   },
   "triplet_number_dependence": {
-    "correlation_with_n_triplets": -0.029591391007796886,
+    "correlation_with_n_triplets": -0.029591391007796904,
     "p_value": 0.27007355793088644,
     "significant": false,
     "interpretation": "H independent of number of triplets"
@@ -549,31 +549,31 @@
         "min_snr": 1.52,
         "n_epochs": 1391,
         "n_triplets": 19167,
-        "mean_H_ns": 0.2995802201707903,
+        "mean_H_ns": 0.29958022017079045,
         "sem_ns": 0.35394484884292937,
-        "t_statistic": 0.846403673199763,
+        "t_statistic": 0.8464036731997634,
         "detected_3sigma": false,
         "detected_5sigma": false,
         "n_negative": 9671,
         "n_positive": 9496,
-        "magnitude_ratio": 0.9604101654736774,
-        "abs_mean_H_ns": 27.071072111273885,
+        "magnitude_ratio": 0.9604101654736776,
+        "abs_mean_H_ns": 27.07107211127389,
         "abs_sem_H_ns": 0.2950339381094507,
-        "abs_t_statistic": 91.75579014652595,
+        "abs_t_statistic": 91.75579014652597,
         "abs_detected_5sigma": true
       },
       {
         "min_snr": 1.77,
         "n_epochs": 1305,
         "n_triplets": 17278,
-        "mean_H_ns": 0.17889392662819179,
+        "mean_H_ns": 0.17889392662819162,
         "sem_ns": 0.3366135110864057,
-        "t_statistic": 0.5314520087171168,
+        "t_statistic": 0.5314520087171164,
         "detected_3sigma": false,
         "detected_5sigma": false,
         "n_negative": 8761,
         "n_positive": 8517,
-        "magnitude_ratio": 0.9581167231009233,
+        "magnitude_ratio": 0.9581167231009232,
         "abs_mean_H_ns": 24.60794756601775,
         "abs_sem_H_ns": 0.27975160004633487,
         "abs_t_statistic": 87.96356325376502,
@@ -607,7 +607,7 @@
         "detected_5sigma": false,
         "n_negative": 4919,
         "n_positive": 4647,
-        "magnitude_ratio": 0.9911696951602802,
+        "magnitude_ratio": 0.9911696951602803,
         "abs_mean_H_ns": 16.87334721828892,
         "abs_sem_H_ns": 0.22443313079591287,
         "abs_t_statistic": 75.18206941395214,
@@ -617,9 +617,9 @@
         "min_snr": 2.88,
         "n_epochs": 521,
         "n_triplets": 4797,
-        "mean_H_ns": -0.600618192071259,
+        "mean_H_ns": -0.6006181920712589,
         "sem_ns": 0.3419208467848765,
-        "t_statistic": 1.7566000953698648,
+        "t_statistic": 1.7566000953698644,
         "detected_3sigma": false,
         "detected_5sigma": false,
         "n_negative": 2466,
@@ -634,14 +634,14 @@
         "min_snr": 3.44,
         "n_epochs": 253,
         "n_triplets": 1918,
-        "mean_H_ns": -0.07146644815083518,
+        "mean_H_ns": -0.07146644815083524,
         "sem_ns": 0.5233377754403983,
-        "t_statistic": 0.13655893288172224,
+        "t_statistic": 0.13655893288172236,
         "detected_3sigma": false,
         "detected_5sigma": false,
         "n_negative": 955,
         "n_positive": 963,
-        "magnitude_ratio": 1.0183284660481309,
+        "magnitude_ratio": 1.018328466048131,
         "abs_mean_H_ns": 14.554730365072144,
         "abs_sem_H_ns": 0.4042016832361633,
         "abs_t_statistic": 36.008584250670324,
@@ -653,9 +653,9 @@
         "min_arclets": 0,
         "n_epochs": 1391,
         "n_triplets": 19167,
-        "mean_H_ns": 0.2995802201707903,
+        "mean_H_ns": 0.29958022017079045,
         "sem_ns": 0.35394484884292937,
-        "t_statistic": 0.846403673199763,
+        "t_statistic": 0.8464036731997634,
         "detected_3sigma": false,
         "detected_5sigma": false
       },
@@ -663,9 +663,9 @@
         "min_arclets": 3,
         "n_epochs": 1391,
         "n_triplets": 19167,
-        "mean_H_ns": 0.2995802201707903,
+        "mean_H_ns": 0.29958022017079045,
         "sem_ns": 0.35394484884292937,
-        "t_statistic": 0.846403673199763,
+        "t_statistic": 0.8464036731997634,
         "detected_3sigma": false,
         "detected_5sigma": false
       },
@@ -673,9 +673,9 @@
         "min_arclets": 5,
         "n_epochs": 1256,
         "n_triplets": 18925,
-        "mean_H_ns": 0.30156261628983316,
+        "mean_H_ns": 0.30156261628983294,
         "sem_ns": 0.35717940351269256,
-        "t_statistic": 0.8442889296642128,
+        "t_statistic": 0.8442889296642122,
         "detected_3sigma": false,
         "detected_5sigma": false
       },
@@ -683,9 +683,9 @@
         "min_arclets": 7,
         "n_epochs": 1057,
         "n_triplets": 17823,
-        "mean_H_ns": 0.18761502349385664,
+        "mean_H_ns": 0.1876150234938567,
         "sem_ns": 0.37134883933504786,
-        "t_statistic": 0.5052258244022187,
+        "t_statistic": 0.505225824402219,
         "detected_3sigma": false,
         "detected_5sigma": false
       }
@@ -715,8 +715,8 @@
         "min_snr": 5.5,
         "n_triplets": 44,
         "vector_area_stats": {
-          "mean_abs_area": 0.0058594476430349355,
-          "std_abs_area": 0.008622180786881635,
+          "mean_abs_area": 0.005859447643034935,
+          "std_abs_area": 0.008622180786881633,
           "median_abs_area": 0.0013154039127573217
         },
         "region_concentration": {
@@ -803,8 +803,8 @@
   },
   "thermal_noise": {
     "mean_sigma_per_triplet_ns": 6.385196817412644,
-    "std_sigma_across_epochs_ns": 5.1059450654626595,
-    "thermal_noise_systematic_ns": 0.13690287639052331,
+    "std_sigma_across_epochs_ns": 5.10594506546266,
+    "thermal_noise_systematic_ns": 0.13690287639052334,
     "n_epochs": 1391,
     "note": "Epoch-to-epoch noise-floor variation propagated to mean"
   },
@@ -816,16 +816,16 @@
   },
   "psi_circular_statistics": {
     "n_epochs": 1220,
-    "psi_mean_rad": 0.9362751408680228,
+    "psi_mean_rad": 0.9362751408680229,
     "r_bar": 0.2882960143656783,
     "rayleigh_z": 202.79960423389036,
     "rayleigh_p": 9.175409891694962e-45,
     "v_stat": 8.441815596874159,
     "v_p": 3.124460035574063e-17,
-    "bootstrap_se": 0.06785741777051277,
+    "bootstrap_se": 0.06777837493082249,
     "bootstrap_ci_95": [
-      0.8069610139816787,
-      1.0722605610149163
+      0.8033910088153617,
+      1.0696887298314373
     ]
   },
   "error_budget": {
@@ -838,7 +838,7 @@
     ],
     "core_systematic_errors_ns": [
       0.1972245153752328,
-      0.13690287639052331,
+      0.13690287639052334,
       0.1281706139262578
     ],
     "threshold_robustness_ns": 0.32334690745699013,

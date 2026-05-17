@@ -21,9 +21,9 @@
       "phase_degrees": 67.5,
       "n_triplets": 2462,
       "valid": true,
-      "mean_ns": 0.017354607968360233,
+      "mean_ns": 0.01735460796836022,
       "sem_ns": 0.04350684708265044,
-      "significance": 0.3988937174737459,
+      "significance": 0.39889371747374563,
       "n_eff": 548.2423806945277
     },
     {
@@ -34,9 +34,9 @@
       "phase_degrees": 112.5,
       "n_triplets": 2846,
       "valid": true,
-      "mean_ns": -0.007073102571402201,
+      "mean_ns": -0.007073102571402257,
       "sem_ns": 0.046491758496284,
-      "significance": 0.15213669691516488,
+      "significance": 0.15213669691516607,
       "n_eff": 681.2817828620971
     },
     {
@@ -60,10 +60,10 @@
       "phase_degrees": 202.5,
       "n_triplets": 2159,
       "valid": true,
-      "mean_ns": -0.13520138264108608,
+      "mean_ns": -0.13520138264108605,
       "sem_ns": 0.04803756687380004,
-      "significance": 2.8144927280824805,
-      "n_eff": 477.39565181983636
+      "significance": 2.81449272808248,
+      "n_eff": 477.3956518198365
     },
     {
       "bin_index": 5,
@@ -73,10 +73,10 @@
       "phase_degrees": 247.5,
       "n_triplets": 2361,
       "valid": true,
-      "mean_ns": 0.5436796762243267,
+      "mean_ns": 0.5436796762243269,
       "sem_ns": 0.049698585008934024,
-      "significance": 10.939540353645734,
-      "n_eff": 470.8966176138679
+      "significance": 10.939540353645738,
+      "n_eff": 470.89661761386793
     },
     {
       "bin_index": 6,
@@ -86,9 +86,9 @@
       "phase_degrees": 292.5,
       "n_triplets": 2507,
       "valid": true,
-      "mean_ns": -0.08289941936542056,
+      "mean_ns": -0.08289941936542064,
       "sem_ns": 0.04716699130735178,
-      "significance": 1.7575727657765456,
+      "significance": 1.7575727657765474,
       "n_eff": 551.8133343505841
     },
     {
@@ -99,9 +99,9 @@
       "phase_degrees": 337.5,
       "n_triplets": 2485,
       "valid": true,
-      "mean_ns": -0.27379464587177843,
+      "mean_ns": -0.2737946458717784,
       "sem_ns": 0.057736244222951406,
-      "significance": 4.742162389616246,
+      "significance": 4.7421623896162455,
       "n_eff": 485.80419129865675
     }
   ],
@@ -109,20 +109,20 @@
   "n_bins_valid": 8,
   "binary_period_days": 5.74104635,
   "modulation_test": {
-    "fitted_amplitude_ns": -0.2080071613369258,
-    "fitted_amplitude_err_ns": 0.02327990280886109,
-    "fitted_phase_rad": 0.351168798760795,
-    "fitted_offset_ns": -0.19124644965568716,
-    "modulation_significance_sigma": 8.93505282409304,
-    "modulation_p_value": 3.706803498303465e-18,
-    "delta_chi2": 80.27272351881982,
+    "fitted_amplitude_ns": -0.20800715291257973,
+    "fitted_amplitude_err_ns": 0.02327990280594621,
+    "fitted_phase_rad": 0.3511687991668616,
+    "fitted_offset_ns": -0.19124644666556012,
+    "modulation_significance_sigma": 8.935052463339753,
+    "modulation_p_value": 3.706803498303681e-18,
+    "delta_chi2": 80.2727235188197,
     "delta_chi2_dof": 2,
-    "quadrant_difference_ns": -0.4083422483723616,
-    "mean_approaching_ns": -0.3953961912858512,
-    "mean_receding_ns": 0.012946057086510407,
+    "quadrant_difference_ns": -0.40834224837236166,
+    "mean_approaching_ns": -0.39539619128585124,
+    "mean_receding_ns": 0.012946057086510449,
     "n_bins_used": 8,
     "chi2_null": 616.5016849918042,
-    "chi2_fit": 536.2289614729843,
+    "chi2_fit": 536.2289614729845,
     "dof_fit": 5
   },
   "epoch_blocked_analysis": {
@@ -142,10 +142,10 @@
         "n_epochs": 153,
         "n_triplets": 2136,
         "valid": true,
-        "mean_ns": -1.2561575540563326,
+        "mean_ns": -1.2561575540563323,
         "sem_ns": 1.4282602217457898,
         "epoch_scatter_ns": 17.66660326537798,
-        "significance": 0.8795018827317805
+        "significance": 0.8795018827317804
       },
       {
         "bin_index": 1,
@@ -156,10 +156,10 @@
         "n_epochs": 176,
         "n_triplets": 2462,
         "valid": true,
-        "mean_ns": 0.09456821073192638,
+        "mean_ns": 0.09456821073192634,
         "sem_ns": 1.3473024243757987,
         "epoch_scatter_ns": 17.87398648316282,
-        "significance": 0.07019078198106825
+        "significance": 0.07019078198106822
       },
       {
         "bin_index": 2,
@@ -184,10 +184,10 @@
         "n_epochs": 157,
         "n_triplets": 2211,
         "valid": true,
-        "mean_ns": 0.8568351333189158,
+        "mean_ns": 0.856835133318916,
         "sem_ns": 1.3843457489474393,
         "epoch_scatter_ns": 17.345802517114304,
-        "significance": 0.6189459056528284
+        "significance": 0.6189459056528285
       },
       {
         "bin_index": 4,
@@ -213,9 +213,9 @@
         "n_triplets": 2361,
         "valid": true,
         "mean_ns": 1.8577979239247888,
-        "sem_ns": 2.0388968836091728,
-        "epoch_scatter_ns": 25.87070120465587,
-        "significance": 0.9111779702346644
+        "sem_ns": 2.0388968836091723,
+        "epoch_scatter_ns": 25.870701204655866,
+        "significance": 0.9111779702346646
       },
       {
         "bin_index": 6,
@@ -227,9 +227,9 @@
         "n_triplets": 2507,
         "valid": true,
         "mean_ns": 3.580102047042155,
-        "sem_ns": 1.8000454258394543,
-        "epoch_scatter_ns": 23.812362726952777,
-        "significance": 1.9888953887775185
+        "sem_ns": 1.8000454258394547,
+        "epoch_scatter_ns": 23.81236272695278,
+        "significance": 1.988895388777518
       },
       {
         "bin_index": 7,
@@ -240,35 +240,35 @@
         "n_epochs": 195,
         "n_triplets": 2485,
         "valid": true,
-        "mean_ns": 2.707261427605597,
+        "mean_ns": 2.7072614276055975,
         "sem_ns": 2.4183141495241784,
         "epoch_scatter_ns": 33.76991928519856,
-        "significance": 1.119482937375308
+        "significance": 1.1194829373753081
       }
     ],
     "modulation_test": {
-      "fitted_amplitude_ns": -1.0280758790152418,
-      "fitted_amplitude_err_ns": 0.8271498576499526,
-      "fitted_phase_rad": -0.12197400146274116,
-      "fitted_offset_ns": 0.7839586256210098,
-      "modulation_significance_sigma": 1.2429136866881025,
-      "modulation_p_value": 0.448663101130781,
-      "delta_chi2": 1.6029660088735547,
+      "fitted_amplitude_ns": -1.028075899608163,
+      "fitted_amplitude_err_ns": 0.8271498422389792,
+      "fitted_phase_rad": -0.12197382062995323,
+      "fitted_offset_ns": 0.7839586499266301,
+      "modulation_significance_sigma": 1.2429137347415855,
+      "modulation_p_value": 0.44866310113080454,
+      "delta_chi2": 1.6029660088734499,
       "delta_chi2_dof": 2,
       "quadrant_difference_ns": -1.1773033517751412,
-      "mean_approaching_ns": 0.060046190818988404,
+      "mean_approaching_ns": 0.060046190818988515,
       "mean_receding_ns": 1.2373495425941297,
       "n_bins_used": 8,
-      "chi2_null": 8.68589189153166,
-      "chi2_fit": 7.082925882658106,
+      "chi2_null": 8.685891891531659,
+      "chi2_fit": 7.082925882658209,
       "dof_fit": 5
     },
     "epoch_phase_permutation": {
       "n_permutations": 2000,
-      "observed_abs_amplitude_ns": 1.0280758790152418,
-      "null_abs_amplitude_mean_ns": 1.1121154311575852,
-      "null_abs_amplitude_std_ns": 0.5781763759271565,
-      "empirical_p_value": 0.512743628185907
+      "observed_abs_amplitude_ns": 1.028075899608163,
+      "null_abs_amplitude_mean_ns": 1.1027907732511533,
+      "null_abs_amplitude_std_ns": 0.5726839313477492,
+      "empirical_p_value": 0.5067466266866567
     }
   },
   "recommended_modulation_test": "epoch_blocked_analysis.modulation_test",

@@ -31,6 +31,9 @@ from scipy import stats
 from datetime import datetime
 from typing import Optional, Dict, Any, List
 from scripts.utils.json_numpy import NpEncoder
+from scripts.utils.config import RANDOM_SEED
+
+np.random.seed(RANDOM_SEED)
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 RESULTS_DIR = PROJECT_ROOT / "results"

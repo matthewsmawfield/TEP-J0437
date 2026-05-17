@@ -1,9 +1,9 @@
-[2026-05-15 13:18:13] [INFO] ================================================================================
-[2026-05-15 13:18:13] [INFO] STEP step_026_snr_correlation_investigation STARTED
-[2026-05-15 13:18:13] [INFO] Description: SNR correlation investigation
-[2026-05-15 13:18:13] [INFO] Physics: Resolve whether prominent SNR-linked outliers reflect physics or estimator/threshold coupling
-[2026-05-15 13:18:13] [INFO] Method: Regression and stratified SNR tests on signed and unsigned delays; estimator comparisons
-[2026-05-15 13:18:13] [INFO] ================================================================================
-[2026-05-15 13:18:13] [INFO] ================================================================================
-[2026-05-15 13:18:13] [INFO] STEP COMPLETED SUCCESSFULLY (0.3 seconds)
-[2026-05-15 13:18:13] [INFO] ================================================================================
+[2026-05-17 16:12:31] [INFO] ================================================================================
+[2026-05-17 16:12:31] [INFO] STEP step_026_snr_correlation_investigation STARTED
+[2026-05-17 16:12:31] [INFO] Description: SNR correlation investigation
+[2026-05-17 16:12:31] [INFO] Physics: Resolve whether prominent SNR-linked outliers reflect physics or estimator/threshold coupling
+[2026-05-17 16:12:31] [INFO] Method: Regression and stratified SNR tests on signed and unsigned delays; estimator comparisons
+[2026-05-17 16:12:31] [INFO] ================================================================================
+[2026-05-17 16:12:32] [INFO] ================================================================================
+[2026-05-17 16:12:32] [INFO] STEP COMPLETED SUCCESSFULLY (0.3 seconds)
+[2026-05-17 16:12:32] [INFO] ================================================================================

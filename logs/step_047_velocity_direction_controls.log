@@ -1,36 +1,36 @@
-[2026-05-15 13:18:27] [INFO] ================================================================================
-[2026-05-15 13:18:27] [INFO] STEP step_047_velocity_direction_controls STARTED
-[2026-05-15 13:18:27] [INFO] Description: Velocity-direction controls
-[2026-05-15 13:18:27] [INFO] Physics: Test whether velocity-projection alignment encodes the expected sign
-[2026-05-15 13:18:27] [INFO] Method: Data-driven velocity-label, scramble, pre-alignment, freeze-record, and wrong-velocity controls
-[2026-05-15 13:18:27] [INFO] ================================================================================
-[2026-05-15 13:18:27] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:27] [INFO] ═══ STEP 047: VELOCITY DIRECTION CONTROLS
-[2026-05-15 13:18:27] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:27] [INFO]       Loaded 2 pulsars and 22820 closure triplets
-[2026-05-15 13:18:27] [INFO] ═══ CONTROL 1: Velocity-Label Permutation
-[2026-05-15 13:18:27] [WARNING] [WARN]   Inconclusive: fewer than two robust phase detections
-[2026-05-15 13:18:27] [WARNING] [WARN]   Result: INCONCLUSIVE
-[2026-05-15 13:18:27] [INFO] ═══ CONTROL 2: Angle-Scramble Test
-[2026-05-15 13:18:27] [INFO]         Observed psi: +0.9640 rad (R_bar = 0.311)
-[2026-05-15 13:18:27] [INFO]         Scrambled R_bar mean: 0.027 ± 0.014
-[2026-05-15 13:18:27] [INFO]         P(scrambled >= observed): 0.0000
-[2026-05-15 13:18:27] [INFO] [PASS]   Result: PASS
-[2026-05-15 13:18:27] [INFO] ═══ CONTROL 3: Pre-Alignment Diagnostic
-[2026-05-15 13:18:27] [INFO]         psi: +0.9640 rad, R_bar=0.311, p=9.50e-47
-[2026-05-15 13:18:27] [INFO] [PASS]   Result: PASS
-[2026-05-15 13:18:27] [INFO] ═══ CONTROL 4: Blind Freeze Record
-[2026-05-15 13:18:27] [INFO]         Git commit: 6c8017994906
-[2026-05-15 13:18:27] [INFO]         Step 003 summaries: 2
-[2026-05-15 13:18:27] [INFO]         ψ hash: 3b778fb6e1b966a3
-[2026-05-15 13:18:27] [INFO] [PASS]   Result: PASS
-[2026-05-15 13:18:27] [INFO] ═══ CONTROL 5: Wrong-Velocity Control
-[2026-05-15 13:18:27] [WARNING] [WARN]   Not applicable to phase_closure_rad (velocity is not an input to phase extraction)
-[2026-05-15 13:18:27] [INFO] ═══ 
+[2026-05-17 16:12:49] [INFO] ================================================================================
+[2026-05-17 16:12:49] [INFO] STEP step_047_velocity_direction_controls STARTED
+[2026-05-17 16:12:49] [INFO] Description: Velocity-direction controls
+[2026-05-17 16:12:49] [INFO] Physics: Test whether velocity-projection alignment encodes the expected sign
+[2026-05-17 16:12:49] [INFO] Method: Data-driven velocity-label, scramble, pre-alignment, freeze-record, and wrong-velocity controls
+[2026-05-17 16:12:49] [INFO] ================================================================================
+[2026-05-17 16:12:49] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:49] [INFO] ═══ STEP 047: VELOCITY DIRECTION CONTROLS
+[2026-05-17 16:12:49] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:49] [INFO]       Loaded 2 pulsars and 22820 closure triplets
+[2026-05-17 16:12:49] [INFO] ═══ CONTROL 1: Velocity-Label Permutation
+[2026-05-17 16:12:49] [WARNING] [WARN]   Inconclusive: fewer than two robust phase detections
+[2026-05-17 16:12:49] [WARNING] [WARN]   Result: INCONCLUSIVE
+[2026-05-17 16:12:49] [INFO] ═══ CONTROL 2: Angle-Scramble Test
+[2026-05-17 16:12:49] [INFO]         Observed psi: +0.9640 rad (R_bar = 0.311)
+[2026-05-17 16:12:49] [INFO]         Scrambled R_bar mean: 0.027 ± 0.014
+[2026-05-17 16:12:49] [INFO]         P(scrambled >= observed): 0.0000
+[2026-05-17 16:12:49] [INFO] [PASS]   Result: PASS
+[2026-05-17 16:12:49] [INFO] ═══ CONTROL 3: Pre-Alignment Diagnostic
+[2026-05-17 16:12:49] [INFO]         psi: +0.9640 rad, R_bar=0.311, p=9.50e-47
+[2026-05-17 16:12:49] [INFO] [PASS]   Result: PASS
+[2026-05-17 16:12:49] [INFO] ═══ CONTROL 4: Blind Freeze Record
+[2026-05-17 16:12:49] [INFO]         Git commit: 2e4a44c6d786
+[2026-05-17 16:12:49] [INFO]         Step 003 summaries: 2
+[2026-05-17 16:12:49] [INFO]         ψ hash: cbbc2d48aab0fe19
+[2026-05-17 16:12:49] [INFO] [PASS]   Result: PASS
+[2026-05-17 16:12:49] [INFO] ═══ CONTROL 5: Wrong-Velocity Control
+[2026-05-17 16:12:49] [WARNING] [WARN]   Not applicable to phase_closure_rad (velocity is not an input to phase extraction)
+[2026-05-17 16:12:49] [INFO] ═══ 
 ======================================================================
-[2026-05-15 13:18:27] [INFO] [PASS] SUMMARY: 3/3 applicable controls passed (1 inconclusive, 1 not applicable)
-[2026-05-15 13:18:27] [INFO]       Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_047_velocity_direction_controls_results.json
-[2026-05-15 13:18:27] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:27] [INFO] ================================================================================
-[2026-05-15 13:18:27] [INFO] STEP COMPLETED SUCCESSFULLY (0.2 seconds)
-[2026-05-15 13:18:27] [INFO] ================================================================================
+[2026-05-17 16:12:49] [INFO] [PASS] SUMMARY: 3/3 applicable controls passed (1 inconclusive, 1 not applicable)
+[2026-05-17 16:12:49] [INFO]       Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_047_velocity_direction_controls_results.json
+[2026-05-17 16:12:49] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:49] [INFO] ================================================================================
+[2026-05-17 16:12:49] [INFO] STEP COMPLETED SUCCESSFULLY (0.2 seconds)
+[2026-05-17 16:12:49] [INFO] ================================================================================

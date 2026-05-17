@@ -1,85 +1,85 @@
-[2026-05-15 13:18:26] [INFO] ================================================================================
-[2026-05-15 13:18:26] [INFO] STEP step_046_bayesian_orbital_phasebin STARTED
-[2026-05-15 13:18:26] [INFO] Description: Signed-delay orbital phase-binning analysis
-[2026-05-15 13:18:26] [INFO] Physics: Test orbital kinematic modulation using Stokes-aligned signed geometric delays
-[2026-05-15 13:18:26] [INFO] Method: Bin triplets by orbital phase, compute inverse-variance weighted signed mean per bin, fit sinusoid with absolute_sigma=True
-[2026-05-15 13:18:26] [INFO] ================================================================================
-[2026-05-15 13:18:26] [INFO] ═══ 
+[2026-05-17 16:12:47] [INFO] ================================================================================
+[2026-05-17 16:12:47] [INFO] STEP step_046_bayesian_orbital_phasebin STARTED
+[2026-05-17 16:12:47] [INFO] Description: Signed-delay orbital phase-binning analysis
+[2026-05-17 16:12:47] [INFO] Physics: Test orbital kinematic modulation using Stokes-aligned signed geometric delays
+[2026-05-17 16:12:47] [INFO] Method: Bin triplets by orbital phase, compute inverse-variance weighted signed mean per bin, fit sinusoid with absolute_sigma=True
+[2026-05-17 16:12:47] [INFO] ================================================================================
+[2026-05-17 16:12:47] [INFO] ═══ 
 ======================================================================
-[2026-05-15 13:18:26] [INFO] ═══ STEP 046: SIGNED-DELAY ORBITAL PHASE-BINNING
-[2026-05-15 13:18:26] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:26] [INFO]       Loaded 19167 triplets with orbital phase info
-[2026-05-15 13:18:26] [INFO] ═══ 
+[2026-05-17 16:12:47] [INFO] ═══ STEP 046: SIGNED-DELAY ORBITAL PHASE-BINNING
+[2026-05-17 16:12:47] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:47] [INFO]       Loaded 19167 triplets with orbital phase info
+[2026-05-17 16:12:47] [INFO] ═══ 
 ======================================================================
-[2026-05-15 13:18:26] [INFO] ═══ SIGNED-DELAY ORBITAL PHASE-BINNING ANALYSIS
-[2026-05-15 13:18:26] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:26] [INFO]       Phase bins: 8
-[2026-05-15 13:18:26] [INFO]       Min triplets per bin: 100
-[2026-05-15 13:18:26] [INFO]       
+[2026-05-17 16:12:47] [INFO] ═══ SIGNED-DELAY ORBITAL PHASE-BINNING ANALYSIS
+[2026-05-17 16:12:47] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:47] [INFO]       Phase bins: 8
+[2026-05-17 16:12:47] [INFO]       Min triplets per bin: 100
+[2026-05-17 16:12:47] [INFO]       
   Bin 1: phase 0.00-0.12 (22°)
-[2026-05-15 13:18:26] [INFO]           Triplets: 2136 (n_eff=501.7)
-[2026-05-15 13:18:26] [INFO]           Signed mean = -0.776 +/- 0.045 ns
-[2026-05-15 13:18:26] [INFO]           Significance: 17.4sigma
-[2026-05-15 13:18:26] [INFO]       
+[2026-05-17 16:12:47] [INFO]           Triplets: 2136 (n_eff=501.7)
+[2026-05-17 16:12:47] [INFO]           Signed mean = -0.776 +/- 0.045 ns
+[2026-05-17 16:12:47] [INFO]           Significance: 17.4sigma
+[2026-05-17 16:12:47] [INFO]       
   Bin 2: phase 0.12-0.25 (68°)
-[2026-05-15 13:18:26] [INFO]           Triplets: 2462 (n_eff=548.2)
-[2026-05-15 13:18:26] [INFO]           Signed mean = +0.017 +/- 0.044 ns
-[2026-05-15 13:18:26] [INFO]           Significance: 0.4sigma
-[2026-05-15 13:18:26] [INFO]       
+[2026-05-17 16:12:47] [INFO]           Triplets: 2462 (n_eff=548.2)
+[2026-05-17 16:12:47] [INFO]           Signed mean = +0.017 +/- 0.044 ns
+[2026-05-17 16:12:47] [INFO]           Significance: 0.4sigma
+[2026-05-17 16:12:47] [INFO]       
   Bin 3: phase 0.25-0.38 (112°)
-[2026-05-15 13:18:26] [INFO]           Triplets: 2846 (n_eff=681.3)
-[2026-05-15 13:18:26] [INFO]           Signed mean = -0.007 +/- 0.046 ns
-[2026-05-15 13:18:26] [INFO]           Significance: 0.2sigma
-[2026-05-15 13:18:26] [INFO]       
+[2026-05-17 16:12:47] [INFO]           Triplets: 2846 (n_eff=681.3)
+[2026-05-17 16:12:47] [INFO]           Signed mean = -0.007 +/- 0.046 ns
+[2026-05-17 16:12:47] [INFO]           Significance: 0.2sigma
+[2026-05-17 16:12:47] [INFO]       
   Bin 4: phase 0.38-0.50 (158°)
-[2026-05-15 13:18:26] [INFO]           Triplets: 2211 (n_eff=529.3)
-[2026-05-15 13:18:26] [INFO]           Signed mean = -0.816 +/- 0.047 ns
-[2026-05-15 13:18:26] [INFO]           Significance: 17.5sigma
-[2026-05-15 13:18:26] [INFO]       
+[2026-05-17 16:12:47] [INFO]           Triplets: 2211 (n_eff=529.3)
+[2026-05-17 16:12:47] [INFO]           Signed mean = -0.816 +/- 0.047 ns
+[2026-05-17 16:12:47] [INFO]           Significance: 17.5sigma
+[2026-05-17 16:12:47] [INFO]       
   Bin 5: phase 0.50-0.62 (202°)
-[2026-05-15 13:18:26] [INFO]           Triplets: 2159 (n_eff=477.4)
-[2026-05-15 13:18:26] [INFO]           Signed mean = -0.135 +/- 0.048 ns
-[2026-05-15 13:18:26] [INFO]           Significance: 2.8sigma
-[2026-05-15 13:18:26] [INFO]       
+[2026-05-17 16:12:47] [INFO]           Triplets: 2159 (n_eff=477.4)
+[2026-05-17 16:12:47] [INFO]           Signed mean = -0.135 +/- 0.048 ns
+[2026-05-17 16:12:47] [INFO]           Significance: 2.8sigma
+[2026-05-17 16:12:47] [INFO]       
   Bin 6: phase 0.62-0.75 (248°)
-[2026-05-15 13:18:26] [INFO]           Triplets: 2361 (n_eff=470.9)
-[2026-05-15 13:18:26] [INFO]           Signed mean = +0.544 +/- 0.050 ns
-[2026-05-15 13:18:26] [INFO]           Significance: 10.9sigma
-[2026-05-15 13:18:26] [INFO]       
+[2026-05-17 16:12:47] [INFO]           Triplets: 2361 (n_eff=470.9)
+[2026-05-17 16:12:47] [INFO]           Signed mean = +0.544 +/- 0.050 ns
+[2026-05-17 16:12:47] [INFO]           Significance: 10.9sigma
+[2026-05-17 16:12:47] [INFO]       
   Bin 7: phase 0.75-0.88 (292°)
-[2026-05-15 13:18:26] [INFO]           Triplets: 2507 (n_eff=551.8)
-[2026-05-15 13:18:26] [INFO]           Signed mean = -0.083 +/- 0.047 ns
-[2026-05-15 13:18:26] [INFO]           Significance: 1.8sigma
-[2026-05-15 13:18:26] [INFO]       
+[2026-05-17 16:12:47] [INFO]           Triplets: 2507 (n_eff=551.8)
+[2026-05-17 16:12:47] [INFO]           Signed mean = -0.083 +/- 0.047 ns
+[2026-05-17 16:12:47] [INFO]           Significance: 1.8sigma
+[2026-05-17 16:12:47] [INFO]       
   Bin 8: phase 0.88-1.00 (338°)
-[2026-05-15 13:18:26] [INFO]           Triplets: 2485 (n_eff=485.8)
-[2026-05-15 13:18:26] [INFO]           Signed mean = -0.274 +/- 0.058 ns
-[2026-05-15 13:18:26] [INFO]           Significance: 4.7sigma
-[2026-05-15 13:18:27] [INFO] ═══ 
+[2026-05-17 16:12:47] [INFO]           Triplets: 2485 (n_eff=485.8)
+[2026-05-17 16:12:47] [INFO]           Signed mean = -0.274 +/- 0.058 ns
+[2026-05-17 16:12:47] [INFO]           Significance: 4.7sigma
+[2026-05-17 16:12:48] [INFO] ═══ 
 ======================================================================
-[2026-05-15 13:18:27] [INFO] ═══ SUMMARY
-[2026-05-15 13:18:27] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:27] [INFO]       Total phase bins: 8
-[2026-05-15 13:18:27] [INFO]       Valid bins: 8
-[2026-05-15 13:18:27] [INFO]       
+[2026-05-17 16:12:48] [INFO] ═══ SUMMARY
+[2026-05-17 16:12:48] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:48] [INFO]       Total phase bins: 8
+[2026-05-17 16:12:48] [INFO]       Valid bins: 8
+[2026-05-17 16:12:48] [INFO]       
 Modulation Test:
-[2026-05-15 13:18:27] [INFO]         Fitted amplitude: -0.208 +/- 0.023 ns
-[2026-05-15 13:18:27] [INFO]         Modulation significance: 8.94 sigma
-[2026-05-15 13:18:27] [INFO]         Modulation p-value: 0.000
-[2026-05-15 13:18:27] [INFO]       
+[2026-05-17 16:12:48] [INFO]         Fitted amplitude: -0.208 +/- 0.023 ns
+[2026-05-17 16:12:48] [INFO]         Modulation significance: 8.94 sigma
+[2026-05-17 16:12:48] [INFO]         Modulation p-value: 0.000
+[2026-05-17 16:12:48] [INFO]       
 Quadrant Analysis:
-[2026-05-15 13:18:27] [INFO]         Approaching mean: -0.395 ns
-[2026-05-15 13:18:27] [INFO]         Receding mean: +0.013 ns
-[2026-05-15 13:18:27] [INFO]         Difference: -0.408 ns
-[2026-05-15 13:18:27] [INFO]       
+[2026-05-17 16:12:48] [INFO]         Approaching mean: -0.395 ns
+[2026-05-17 16:12:48] [INFO]         Receding mean: +0.013 ns
+[2026-05-17 16:12:48] [INFO]         Difference: -0.408 ns
+[2026-05-17 16:12:48] [INFO]       
 Epoch-blocked Modulation Test:
-[2026-05-15 13:18:27] [INFO]         Fitted amplitude: -1.028 +/- 0.827 ns
-[2026-05-15 13:18:27] [INFO]         Modulation significance: 1.24 sigma
-[2026-05-15 13:18:27] [INFO]         Nested-model p-value: 4.487e-01
-[2026-05-15 13:18:27] [INFO]         Epoch phase permutation p-value: 5.127e-01
-[2026-05-15 13:18:27] [INFO]       
+[2026-05-17 16:12:48] [INFO]         Fitted amplitude: -1.028 +/- 0.827 ns
+[2026-05-17 16:12:48] [INFO]         Modulation significance: 1.24 sigma
+[2026-05-17 16:12:48] [INFO]         Nested-model p-value: 4.487e-01
+[2026-05-17 16:12:48] [INFO]         Epoch phase permutation p-value: 5.067e-01
+[2026-05-17 16:12:48] [INFO]       
 Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_046_bayesian_orbital_phasebin_results.json
-[2026-05-15 13:18:27] [INFO] ═══ ======================================================================
-[2026-05-15 13:18:27] [INFO] ================================================================================
-[2026-05-15 13:18:27] [INFO] STEP COMPLETED SUCCESSFULLY (1.3 seconds)
-[2026-05-15 13:18:27] [INFO] ================================================================================
+[2026-05-17 16:12:48] [INFO] ═══ ======================================================================
+[2026-05-17 16:12:48] [INFO] ================================================================================
+[2026-05-17 16:12:48] [INFO] STEP COMPLETED SUCCESSFULLY (1.4 seconds)
+[2026-05-17 16:12:48] [INFO] ================================================================================

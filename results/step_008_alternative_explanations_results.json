@@ -3,7 +3,7 @@
     "test": "thin_screen_kolmogorov",
     "observed_H_ns": 8.100162219444181,
     "simulated_H_ns": 0.0,
-    "observed_psi_rad": 0.9840495457197854,
+    "observed_psi_rad": 0.9840495457197855,
     "simulated_psi_rad": 0.0,
     "observed_sigma": 20.352872328258897,
     "iss_ruled_out": true,
@@ -21,14 +21,14 @@
     "test": "instrumental",
     "observed_H_ns": 8.100162219444181,
     "simulated_H_ns": 7.966459852961577,
-    "observed_psi_rad": 0.9840495457197854,
+    "observed_psi_rad": 0.9840495457197855,
     "simulated_psi_rad": 0.002354454787101208,
-    "psi_vs_instrumental_sigma": 286.3617818233742,
+    "psi_vs_instrumental_sigma": 286.36178182337426,
     "n_trials": 410751,
     "n_observed": 19167,
     "noise_model": "Uncorrelated Gaussian: \u03c3_delay=10ns, \u03c3_doppler=0.1mHz",
     "instrumental_ruled_out": true,
-    "interpretation": "Instrumental noise produces |H| ~ 8 ns from 10 ns timing precision (unsigned noise bias), but cannot produce Phase Closure \u03c8 because delay and Doppler noise are uncorrelated. The observed \u03c8 = 0.987 rad is incompatible with instrumental noise."
+    "interpretation": "Instrumental noise produces |H| ~ 8.0 ns from 10 ns timing precision (unsigned noise bias), but cannot produce Phase Closure \u03c8 because delay and Doppler noise are uncorrelated. The observed \u03c8 = 0.984 rad is incompatible with instrumental noise."
   },
   "velocity_gradient": {
     "test": "velocity_gradient",
@@ -41,7 +41,7 @@
   },
   "bipolar_structure": {
     "test": "bipolar_structure",
-    "observed_bipolar_magnitude_ratio": 0.9604101654736774,
+    "observed_bipolar_magnitude_ratio": 0.9604101654736776,
     "observed_abs_branch_mean_ns": 27.076064474622108,
     "simulated_matching_bipolar_fraction": 0.0,
     "bipolar_structure_ruled_out": true,
@@ -66,7 +66,7 @@
   "localized_anisotropic_structure": {
     "test": "localized_anisotropic_structure",
     "observed_H_ns": 8.100162219444181,
-    "observed_psi_rad": 0.9840495457197854,
+    "observed_psi_rad": 0.9840495457197855,
     "simulated_H_ns": 0.0,
     "simulated_H_max": 0.0,
     "simulated_psi_rad": 0.0,

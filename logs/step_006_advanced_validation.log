@@ -1,87 +1,87 @@
-[2026-05-15 13:08:28] [INFO] ================================================================================
-[2026-05-15 13:08:28] [INFO] STEP step_006_advanced_validation STARTED
-[2026-05-15 13:08:28] [INFO] Description: Advanced validation tests
-[2026-05-15 13:08:28] [INFO] Physics: Systematic error investigation for both-signs significance, aggregate mean deviation, stratified analysis
-[2026-05-15 13:08:28] [INFO] Method: Both-signs systematic error test, aggregate mean deviation test, stratified analysis, sensitivity analysis, bootstrap reconciliation, orientation methodology verification
-[2026-05-15 13:08:28] [INFO] ================================================================================
-[2026-05-15 13:08:28] [INFO] ═══ ======================================================================
-[2026-05-15 13:08:28] [INFO] ═══ TEP-J0437 Step 006: Advanced Validation
-[2026-05-15 13:08:28] [INFO] ═══ ======================================================================
-[2026-05-15 13:08:28] [INFO]       Loading closure delay data...
-[2026-05-15 13:08:28] [INFO]       
+[2026-05-17 16:04:19] [INFO] ================================================================================
+[2026-05-17 16:04:19] [INFO] STEP step_006_advanced_validation STARTED
+[2026-05-17 16:04:19] [INFO] Description: Advanced validation tests
+[2026-05-17 16:04:19] [INFO] Physics: Systematic error investigation for both-signs significance, aggregate mean deviation, stratified analysis
+[2026-05-17 16:04:19] [INFO] Method: Both-signs systematic error test, aggregate mean deviation test, stratified analysis, sensitivity analysis, bootstrap reconciliation, orientation methodology verification
+[2026-05-17 16:04:19] [INFO] ================================================================================
+[2026-05-17 16:04:19] [INFO] ═══ ======================================================================
+[2026-05-17 16:04:19] [INFO] ═══ TEP-J0437 Step 006: Advanced Validation
+[2026-05-17 16:04:19] [INFO] ═══ ======================================================================
+[2026-05-17 16:04:19] [INFO]       Loading closure delay data...
+[2026-05-17 16:04:19] [INFO]       
 Running systematic offset test...
-[2026-05-15 13:08:28] [INFO] ═══ 
+[2026-05-17 16:04:19] [INFO] ═══ 
 === TEST 1: SYSTEMATIC OFFSET (|H| MAGNITUDE) ===
-[2026-05-15 13:08:28] [INFO]       Testing if a constant additive offset can reproduce the observed |H| magnitude.
-[2026-05-15 13:08:28] [INFO]         Observed |H| mean: 27.071 ns
-[2026-05-15 13:08:28] [INFO]         Offsets tested: 61 (−30 to +30 ns)
-[2026-05-15 13:08:28] [INFO]         Offsets where |H| still significant (>3σ): 61/61
-[2026-05-15 13:08:28] [INFO]         Robust to +/-1 ns offsets: True
-[2026-05-15 13:08:28] [INFO]         Note: Signal magnitude ~4 ns; +/-1 ns is the calibration systematic bound
-[2026-05-15 13:08:28] [DEBUG] [CALC] Systematic Offset Test (|H|): 61/61 offsets preserve significance
-[2026-05-15 13:08:28] [DEBUG] [CALC]   Robust to +/-1 ns offsets: YES
-[2026-05-15 13:08:28] [INFO]       Test result: PASS
-[2026-05-15 13:08:28] [INFO]       Running epoch-level sign consistency test...
-[2026-05-15 13:08:28] [INFO] ═══ 
+[2026-05-17 16:04:19] [INFO]       Testing if a constant additive offset can reproduce the observed |H| magnitude.
+[2026-05-17 16:04:19] [INFO]         Observed |H| mean: 27.071 ns
+[2026-05-17 16:04:19] [INFO]         Offsets tested: 61 (−30 to +30 ns)
+[2026-05-17 16:04:19] [INFO]         Offsets where |H| still significant (>3σ): 61/61
+[2026-05-17 16:04:19] [INFO]         Robust to +/-1 ns offsets: True
+[2026-05-17 16:04:19] [INFO]         Note: Signal magnitude ~4 ns; +/-1 ns is the calibration systematic bound
+[2026-05-17 16:04:19] [DEBUG] [CALC] Systematic Offset Test (|H|): 61/61 offsets preserve significance
+[2026-05-17 16:04:19] [DEBUG] [CALC]   Robust to +/-1 ns offsets: YES
+[2026-05-17 16:04:19] [INFO]       Test result: PASS
+[2026-05-17 16:04:19] [INFO]       Running epoch-level sign consistency test...
+[2026-05-17 16:04:19] [INFO] ═══ 
 === TEST 2: EPOCH-LEVEL |H| CONSISTENCY ===
-[2026-05-15 13:08:28] [INFO]         TEP prediction: |H| significant at epoch level (bipolar cancellation)
-[2026-05-15 13:08:28] [INFO]         Epochs: 1391
-[2026-05-15 13:08:28] [INFO]         Mean |H| (epoch level): 12.008 +/- 0.557 ns  (t = 21.56sigma)
-[2026-05-15 13:08:28] [INFO]         Signed mean (for context): +0.686 +/- 0.643 ns  (t = 1.07sigma)
-[2026-05-15 13:08:28] [INFO]         Negative epochs: 699 (50.3%)
-[2026-05-15 13:08:28] [INFO]         [Physics Note] Bipolar cancellation means signed mean ≈ 0, but |H| significant.
-[2026-05-15 13:08:28] [INFO]         [Physics Note] TEP environmental dependence requires kinematic v_proj alignment.
-[2026-05-15 13:08:28] [INFO]         [Physics Note] Epochs with weak transverse gradients inherently yield nulls.
-[2026-05-15 13:08:28] [DEBUG] [CALC] Epoch Consistency: |H|=12.008 (t=21.56sigma), Signed=+0.686 (t=1.07sigma)
-[2026-05-15 13:08:28] [DEBUG] [CALC]   Bipolar signature: CONSISTENT
-[2026-05-15 13:08:28] [INFO]       Test result: PASS
-[2026-05-15 13:08:28] [INFO]       Running triplet-count stratification test...
-[2026-05-15 13:08:28] [INFO] ═══ 
+[2026-05-17 16:04:19] [INFO]         TEP prediction: |H| significant at epoch level (bipolar cancellation)
+[2026-05-17 16:04:19] [INFO]         Epochs: 1391
+[2026-05-17 16:04:19] [INFO]         Mean |H| (epoch level): 12.008 +/- 0.557 ns  (t = 21.56sigma)
+[2026-05-17 16:04:19] [INFO]         Signed mean (for context): +0.686 +/- 0.643 ns  (t = 1.07sigma)
+[2026-05-17 16:04:19] [INFO]         Negative epochs: 699 (50.3%)
+[2026-05-17 16:04:19] [INFO]         [Physics Note] Bipolar cancellation means signed mean ≈ 0, but |H| significant.
+[2026-05-17 16:04:19] [INFO]         [Physics Note] TEP environmental dependence requires kinematic v_proj alignment.
+[2026-05-17 16:04:19] [INFO]         [Physics Note] Epochs with weak transverse gradients inherently yield nulls.
+[2026-05-17 16:04:19] [DEBUG] [CALC] Epoch Consistency: |H|=12.008 (t=21.56sigma), Signed=+0.686 (t=1.07sigma)
+[2026-05-17 16:04:19] [DEBUG] [CALC]   Bipolar signature: CONSISTENT
+[2026-05-17 16:04:19] [INFO]       Test result: PASS
+[2026-05-17 16:04:19] [INFO]       Running triplet-count stratification test...
+[2026-05-17 16:04:19] [INFO] ═══ 
 === TEST 3: TRIPLET-COUNT STRATIFICATION ===
-[2026-05-15 13:08:28] [INFO]         Q1 (low n): N=380, |H|=29.263 +/- 1.822 ns  (t=16.06sigma)
-[2026-05-15 13:08:28] [INFO]         Q2: N=1011, |H|=27.603 +/- 0.882 ns  (t=31.28sigma)
-[2026-05-15 13:08:28] [INFO]         Quartiles with significant |H| (t>3): 2/2
-[2026-05-15 13:08:28] [INFO]         [Physics Note] TEP predicts |H| consistent across quartiles.
-[2026-05-15 13:08:28] [INFO]         [Physics Note] Bipolar cancellation means signed mean may vary.
-[2026-05-15 13:08:28] [INFO]       Test result: FAIL
-[2026-05-15 13:08:28] [INFO]       Running bootstrap CI test...
-[2026-05-15 13:08:28] [INFO] ═══ 
+[2026-05-17 16:04:19] [INFO]         Q1 (low n): N=380, |H|=29.263 +/- 1.822 ns  (t=16.06sigma)
+[2026-05-17 16:04:19] [INFO]         Q2: N=1011, |H|=27.603 +/- 0.882 ns  (t=31.28sigma)
+[2026-05-17 16:04:19] [INFO]         Quartiles with significant |H| (t>3): 2/2
+[2026-05-17 16:04:19] [INFO]         [Physics Note] TEP predicts |H| consistent across quartiles.
+[2026-05-17 16:04:19] [INFO]         [Physics Note] Bipolar cancellation means signed mean may vary.
+[2026-05-17 16:04:19] [INFO]       Test result: FAIL
+[2026-05-17 16:04:19] [INFO]       Running bootstrap CI test...
+[2026-05-17 16:04:19] [INFO] ═══ 
 === TEST 4: TRIPLET-LEVEL BOOTSTRAP CI (|H| MAGNITUDE) ===
-[2026-05-15 13:08:31] [INFO]         Triplet count: 19167
-[2026-05-15 13:08:31] [INFO]         Standard |H| mean: 27.071 ns
-[2026-05-15 13:08:31] [INFO]         Bootstrap 95% CI (Standard): [26.522, 27.649] ns
-[2026-05-15 13:08:31] [INFO]         
-[2026-05-15 13:08:31] [INFO]         10% Trimmed |H| Mean (diagnostic robust estimator): 17.670 ns
-[2026-05-15 13:08:31] [INFO]         10% Trimmed 95% CI: [17.311, 18.029] ns
-[2026-05-15 13:08:31] [INFO]         [Stats Note] ISM noise is intrinsically heavy-tailed; trimmed |H| is diagnostic only.
-[2026-05-15 13:08:31] [INFO]         Trimmed Zero excluded: True
-[2026-05-15 13:08:31] [DEBUG] [CALC] Bootstrap CI (Trimmed |H|): [17.311, 18.029] ns
-[2026-05-15 13:08:31] [DEBUG] [CALC]   Zero excluded: YES
-[2026-05-15 13:08:31] [INFO]       Test result: PASS
-[2026-05-15 13:08:31] [INFO]       Running orientation algorithm bias check test...
-[2026-05-15 13:08:31] [INFO] ═══ 
+[2026-05-17 16:04:22] [INFO]         Triplet count: 19167
+[2026-05-17 16:04:22] [INFO]         Standard |H| mean: 27.071 ns
+[2026-05-17 16:04:22] [INFO]         Bootstrap 95% CI (Standard): [26.485, 27.667] ns
+[2026-05-17 16:04:22] [INFO]         
+[2026-05-17 16:04:22] [INFO]         10% Trimmed |H| Mean (diagnostic robust estimator): 17.670 ns
+[2026-05-17 16:04:22] [INFO]         10% Trimmed 95% CI: [17.309, 18.032] ns
+[2026-05-17 16:04:22] [INFO]         [Stats Note] ISM noise is intrinsically heavy-tailed; trimmed |H| is diagnostic only.
+[2026-05-17 16:04:22] [INFO]         Trimmed Zero excluded: True
+[2026-05-17 16:04:22] [DEBUG] [CALC] Bootstrap CI (Trimmed |H|): [17.309, 18.032] ns
+[2026-05-17 16:04:22] [DEBUG] [CALC]   Zero excluded: YES
+[2026-05-17 16:04:22] [INFO]       Test result: PASS
+[2026-05-17 16:04:22] [INFO]       Running orientation algorithm bias check test...
+[2026-05-17 16:04:22] [INFO] ═══ 
 === TEST 5: ORIENTATION ALGORITHM BIAS CHECK ===
-[2026-05-15 13:08:31] [INFO]         Total triplets: 19167
-[2026-05-15 13:08:31] [INFO]         geom_sign > 0: 9449 (49.3%)
-[2026-05-15 13:08:31] [INFO]         Binomial p (two-tail, vs 50/50): 0.0529
-[2026-05-15 13:08:31] [INFO]         Unbiased (p>0.01): True
-[2026-05-15 13:08:31] [INFO]       Test result: PASS
-[2026-05-15 13:08:31] [INFO]       Running SNR threshold sensitivity test...
-[2026-05-15 13:08:31] [INFO] ═══ 
+[2026-05-17 16:04:22] [INFO]         Total triplets: 19167
+[2026-05-17 16:04:22] [INFO]         geom_sign > 0: 9449 (49.3%)
+[2026-05-17 16:04:22] [INFO]         Binomial p (two-tail, vs 50/50): 0.0529
+[2026-05-17 16:04:22] [INFO]         Unbiased (p>0.01): True
+[2026-05-17 16:04:22] [INFO]       Test result: PASS
+[2026-05-17 16:04:22] [INFO]       Running SNR threshold sensitivity test...
+[2026-05-17 16:04:22] [INFO] ═══ 
 === TEST 6: SNR THRESHOLD SENSITIVITY ===
-[2026-05-15 13:08:31] [INFO]         TEP prediction: |H| significant across SNR thresholds
-[2026-05-15 13:08:31] [INFO]         SNR ≥     0: N=19167, |H|=27.071 ns  (t=91.76sigma)  sig=True
-[2026-05-15 13:08:31] [INFO]         SNR ≥    50: N= 9808, |H|=18.067 ns  (t=75.65sigma)  sig=True
-[2026-05-15 13:08:31] [INFO]         SNR ≥   100: N= 8326, |H|=17.486 ns  (t=69.36sigma)  sig=True
-[2026-05-15 13:08:31] [INFO]         SNR ≥   500: N= 5581, |H|=15.883 ns  (t=58.60sigma)  sig=True
-[2026-05-15 13:08:31] [INFO]         SNR ≥  1000: N= 4691, |H|=15.442 ns  (t=53.35sigma)  sig=True
-[2026-05-15 13:08:31] [INFO]       Test result: PASS
-[2026-05-15 13:08:31] [INFO]       
+[2026-05-17 16:04:22] [INFO]         TEP prediction: |H| significant across SNR thresholds
+[2026-05-17 16:04:22] [INFO]         SNR ≥     0: N=19167, |H|=27.071 ns  (t=91.76sigma)  sig=True
+[2026-05-17 16:04:22] [INFO]         SNR ≥    50: N= 9808, |H|=18.067 ns  (t=75.65sigma)  sig=True
+[2026-05-17 16:04:22] [INFO]         SNR ≥   100: N= 8326, |H|=17.486 ns  (t=69.36sigma)  sig=True
+[2026-05-17 16:04:22] [INFO]         SNR ≥   500: N= 5581, |H|=15.883 ns  (t=58.60sigma)  sig=True
+[2026-05-17 16:04:22] [INFO]         SNR ≥  1000: N= 4691, |H|=15.442 ns  (t=53.35sigma)  sig=True
+[2026-05-17 16:04:22] [INFO]       Test result: PASS
+[2026-05-17 16:04:22] [INFO]       
 Tests passed: 5/6
-[2026-05-15 13:08:31] [INFO] [PASS] 
+[2026-05-17 16:04:22] [INFO] [PASS] 
 Results saved to /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_006_advanced_validation_results.json
-[2026-05-15 13:08:31] [DEBUG] [DATA] Advanced Validation Summary: 5/6 tests passed
-[2026-05-15 13:08:31] [INFO] [PASS] STEP 006 COMPLETED SUCCESSFULLY
-[2026-05-15 13:08:31] [INFO] ================================================================================
-[2026-05-15 13:08:31] [INFO] STEP COMPLETED SUCCESSFULLY (2.9 seconds)
-[2026-05-15 13:08:31] [INFO] ================================================================================
+[2026-05-17 16:04:22] [DEBUG] [DATA] Advanced Validation Summary: 5/6 tests passed
+[2026-05-17 16:04:22] [INFO] [PASS] STEP 006 COMPLETED SUCCESSFULLY
+[2026-05-17 16:04:22] [INFO] ================================================================================
+[2026-05-17 16:04:22] [INFO] STEP COMPLETED SUCCESSFULLY (2.7 seconds)
+[2026-05-17 16:04:22] [INFO] ================================================================================

@@ -1,25 +1,25 @@
 {
   "temporal_holdout": {
-    "train_mean_ns": 26.886046305479415,
-    "train_t": 81.83867828575664,
-    "holdout_mean_ns": 27.805991732110456,
-    "holdout_t": 41.497115082294336,
+    "train_mean_ns": 26.76991759434391,
+    "train_t": 82.3543815354377,
+    "holdout_mean_ns": 28.279786447599715,
+    "holdout_t": 40.58600738912283,
     "both_significant": true,
     "same_sign": true,
     "test_passed": true
   },
   "power_analysis": {
     "n_triplets": 19167,
-    "mean_ns": 27.071072111273885,
-    "t_stat": 91.75579014652595,
-    "cohen_d": 0.6627601812339466,
+    "mean_ns": 27.07107211127389,
+    "t_stat": 91.75579014652597,
+    "cohen_d": 0.6627601812339468,
     "mde_ns": 0.9852898267702066,
     "test_passed": true
   },
   "bootstrap_ci": {
-    "observed_mean_ns": 27.071072111273885,
-    "ci_95_lower": 26.512245586136974,
-    "ci_95_upper": 27.64637432356299,
+    "observed_mean_ns": 27.07107211127389,
+    "ci_95_lower": 26.486715482763437,
+    "ci_95_upper": 27.655496454617392,
     "zero_excluded": true,
     "test_passed": true
   },
@@ -28,9 +28,9 @@
     "n_negative": 9671,
     "frac_positive": 0.49543486200239994,
     "frac_negative": 0.5045651379976,
-    "mean_positive_ns": 27.622856636310033,
+    "mean_positive_ns": 27.622856636310026,
     "mean_negative_ns": 26.529272312934186,
-    "magnitude_ratio": 1.0412217987163817,
+    "magnitude_ratio": 1.0412217987163812,
     "both_present": true,
     "magnitudes_equal": true,
     "test_passed": true

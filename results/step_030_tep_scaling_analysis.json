@@ -9,7 +9,7 @@
     {
       "name": "J1603-7202",
       "telescope": "Parkes/PPTA",
-      "phase_sigma": -0.2497989958311154,
+      "phase_sigma": -0.24979899583111512,
       "H_magnitude_ns": 2.5572479699421744,
       "H_excess_ns": 0.2252994349648203,
       "reason": "phase evidence below threshold; legacy unsigned-|H| amplitude is diagnostic only"

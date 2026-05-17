@@ -125,28 +125,73 @@ def analyze_arclet_number_dependence(epochs: List[Dict[str, Any]]) -> Dict[str, 
 
 def analyze_snr_dependence(epochs: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
-    Analyze if H depends on SNR.
-
-    NOTE: The triplet `snr` field in step_003 is an independent cross-term SNR,
-    not the circular closure-SNR statistic. However, dedicated SNR analyses are
-    already performed in steps 025 and 028 using arclet-level SNR observables,
-    so this systematic-error summary defers to those authoritative outputs.
-
-    Instead, the analysis should correlate H with truly independent variables like:
-    - Number of arclets
-    - Number of triplets
-    - Dedicated arclet-level SNR diagnostics from steps 025/028
+    Analyze if Phase Closure ψ depends on epoch-level SNR.
+    
+    Uses epoch-level median cross-term SNR as the SNR metric. This is a
+    genuine diagnostic: if ψ were an artifact of low-SNR measurements,
+    we would see a correlation between ψ magnitude and SNR.
     """
-
-    print(f"   NOTE: Triplet `snr` is independent cross-term SNR, not closure SNR")
-    print(f"   NOTE: Dedicated SNR diagnostics already exist in steps 025 and 028")
-    print(f"   NOTE: Skipping duplicate SNR dependence analysis in this summary step")
-
+    epoch_psi = []
+    epoch_snr = []
+    epoch_H = []
+    
+    for epoch in epochs:
+        triplets = epoch.get("triplets", [])
+        if len(triplets) < 3:
+            continue
+        
+        # Epoch-level Phase Closure (circular mean)
+        psi_vals = [t.get("phase_closure_rad") for t in triplets if t.get("phase_closure_rad") is not None]
+        if len(psi_vals) < 3:
+            continue
+        
+        z = np.sum(np.exp(1j * np.array(psi_vals)))
+        psi_mean = float(np.angle(z / len(psi_vals)))
+        r_bar = float(np.abs(z) / len(psi_vals))
+        
+        # Epoch-level median SNR
+        snr_vals = [t.get("snr", 1.0) for t in triplets]
+        snr_median = float(np.median(snr_vals))
+        
+        # Epoch-level |H|
+        h_vals = [t.get("geometric_delta_us", 0.0) * 1000 for t in triplets if t.get("geometric_delta_us") is not None]
+        h_mean = float(np.mean(np.abs(h_vals)))
+        
+        epoch_psi.append(abs(psi_mean))  # Use |ψ| for SNR correlation test
+        epoch_snr.append(snr_median)
+        epoch_H.append(h_mean)
+    
+    epoch_psi = np.array(epoch_psi)
+    epoch_snr = np.array(epoch_snr)
+    epoch_H = np.array(epoch_H)
+    
+    if len(epoch_psi) < 10:
+        return {
+            "note": "Insufficient epochs for SNR dependence analysis",
+            "correlation_with_snr_psi": None,
+            "correlation_with_snr_H": None,
+            "interpretation": "Insufficient data",
+        }
+    
+    # Test correlation between |ψ| and SNR
+    corr_psi, p_psi = stats.pearsonr(epoch_snr, epoch_psi)
+    
+    # Test correlation between |H| and SNR
+    corr_H, p_H = stats.pearsonr(epoch_snr, epoch_H)
+    
     return {
-        "note": "Triplet snr in step_003 is independent cross-term SNR; dedicated SNR diagnostics are handled in steps 025 and 028",
-        "reason": "Avoid duplicating a more rigorous dedicated SNR analysis in the systematic-error summary",
-        "correlation_with_snr": None,
-        "interpretation": "Analysis deferred to steps 025 and 028",
+        "n_epochs": len(epoch_psi),
+        "correlation_with_snr_psi": float(corr_psi),
+        "p_value_snr_psi": float(p_psi),
+        "significant_psi": bool(p_psi < 0.05),
+        "correlation_with_snr_H": float(corr_H),
+        "p_value_snr_H": float(p_H),
+        "significant_H": bool(p_H < 0.05),
+        "interpretation": (
+            "|ψ| depends on SNR" if p_psi < 0.05 else
+            "|H| depends on SNR" if p_H < 0.05 else
+            "Both |ψ| and |H| independent of SNR"
+        ),
     }
 
 
@@ -288,6 +333,86 @@ def analyze_bandpass_calibration_error(epochs):
         "calibration_fraction": 0.01,
         "bandpass_calibration_ns": calibration_systematic,
         "note": "1% of |median H|, consistent with Parkes bandpass accuracy. Closure observables largely cancel common-mode bandpass residuals; this is a conservative upper bound.",
+    }
+
+
+def analyze_jackknife_influence(epochs: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    Jackknife analysis: test if any single epoch drives the detection.
+    
+    For each epoch, recompute the global circular mean ψ with that epoch removed.
+    This identifies influential epochs that disproportionately affect the result.
+    """
+    all_psi = []
+    all_weights = []
+    epoch_indices = []
+    
+    for i, epoch in enumerate(epochs):
+        triplets = epoch.get("triplets", [])
+        psi_vals = [t.get("phase_closure_rad") for t in triplets if t.get("phase_closure_rad") is not None]
+        snr_vals = [t.get("snr", 1.0) for t in triplets]
+        
+        if len(psi_vals) < 3:
+            continue
+        
+        weights = np.array(snr_vals) ** 2
+        z = np.sum(weights * np.exp(1j * np.array(psi_vals)))
+        psi_mean = float(np.angle(z / np.sum(weights)))
+        
+        all_psi.append(psi_mean)
+        all_weights.append(float(np.sum(weights)))
+        epoch_indices.append(i)
+    
+    if len(all_psi) < 10:
+        return {
+            "note": "Insufficient epochs for jackknife analysis",
+            "influential_epochs": [],
+            "max_jackknife_shift_rad": 0.0,
+            "interpretation": "Insufficient data",
+        }
+    
+    # Full-sample circular mean
+    z_full = np.sum(np.array(all_weights) * np.exp(1j * np.array(all_psi)))
+    psi_full = float(np.angle(z_full / np.sum(all_weights)))
+    
+    # Jackknife: remove each epoch and recompute
+    jackknife_shifts = []
+    influential_epochs = []
+    
+    for i in range(len(all_psi)):
+        psi_jackknife = np.delete(all_psi, i)
+        weights_jackknife = np.delete(all_weights, i)
+        
+        z_j = np.sum(weights_jackknife * np.exp(1j * np.array(psi_jackknife)))
+        psi_j = float(np.angle(z_j / np.sum(weights_jackknife)))
+        
+        # Compute angular difference (accounting for wrap-around)
+        diff = (psi_j - psi_full + np.pi) % (2 * np.pi) - np.pi
+        jackknife_shifts.append(abs(diff))
+        
+        # If shift > 0.1 rad, mark as influential
+        if abs(diff) > 0.1:
+            influential_epochs.append({
+                "epoch_index": int(epoch_indices[i]),
+                "jackknife_shift_rad": float(diff),
+                "psi_full": psi_full,
+                "psi_jackknife": psi_j,
+            })
+    
+    max_shift = float(max(jackknife_shifts)) if jackknife_shifts else 0.0
+    
+    return {
+        "n_epochs": len(all_psi),
+        "psi_full_rad": psi_full,
+        "max_jackknife_shift_rad": max_shift,
+        "influential_epochs": influential_epochs,
+        "n_influential": len(influential_epochs),
+        "interpretation": (
+            f"{len(influential_epochs)} epochs have jackknife shift > 0.1 rad. "
+            f"Maximum shift: {max_shift:.4f} rad. "
+            f"Detection is robust to single-epoch removal." if max_shift < 0.2 else
+            f"Detection may be driven by influential epochs."
+        ),
     }
 
 
@@ -514,9 +639,9 @@ def main():
     # Analyze SNR dependence
     print_status("3. SNR DEPENDENCE:", "PROCESS")
     snr_dep = analyze_snr_dependence(epochs)
-    if snr_dep["correlation_with_snr"] is not None:
-        print_status(f"   Correlation: {snr_dep['correlation_with_snr']:.3f}", "INFO")
-        print_status(f"   Significant: {snr_dep['significant']}", "INFO")
+    if snr_dep.get("correlation_with_snr_psi") is not None:
+        print_status(f"   |ψ| vs SNR: r = {snr_dep['correlation_with_snr_psi']:.3f}, p = {snr_dep['p_value_snr_psi']:.3f}", "INFO")
+        print_status(f"   |H| vs SNR: r = {snr_dep['correlation_with_snr_H']:.3f}, p = {snr_dep['p_value_snr_H']:.3f}", "INFO")
     print_status(f"   {snr_dep['interpretation']}", "INFO")
     print_status("", "INFO")
 
@@ -617,6 +742,15 @@ def main():
     print_status("   NOTE: ψ is extracted from complex cross-term phases prior to SNR weighting; threshold cuts do not directly affect phase measurement", "INFO")
     print_status("", "INFO")
 
+    # Jackknife influence analysis
+    print_status("11. JACKKNIFE INFLUENCE ANALYSIS:", "PROCESS")
+    jackknife = analyze_jackknife_influence(epochs)
+    print_status(f"   Full-sample ψ = {jackknife.get('psi_full_rad', 0):.4f} rad", "INFO")
+    print_status(f"   Max jackknife shift = {jackknife.get('max_jackknife_shift_rad', 0):.4f} rad", "INFO")
+    print_status(f"   Influential epochs (shift > 0.1 rad): {jackknife.get('n_influential', 0)}", "INFO")
+    print_status(f"   {jackknife['interpretation']}", "INFO")
+    print_status("", "INFO")
+
     # Total systematic error is sqrt(sum(e^2))
     # Total error is sqrt(stat^2 + sys^2)
     sys_fraction = error_budget["systematic_fraction"]
@@ -632,6 +766,7 @@ def main():
         "thermal_noise": thermal_noise,
         "bandpass_calibration": bandpass_cal,
         "psi_circular_statistics": psi_stats,
+        "jackknife_influence": jackknife,
         "error_budget": error_budget,
         "conclusions": [
             f"Arclet number dependence: {arclet_dep['interpretation']}",
@@ -639,6 +774,7 @@ def main():
             f"Triplet number dependence: {triplet_dep['interpretation']}",
             f"Core metrology systematics: {error_budget['interpretation']}",
             f"Phase Closure ψ: Rayleigh Z = {psi_stats['rayleigh_z']:.2f} (p = {psi_stats['rayleigh_p']:.2e}), circular SE = {psi_stats['bootstrap_se']:.3f} rad",
+            f"Jackknife influence: {jackknife['interpretation']}",
             "Threshold-robustness concerns apply to signed-mean diagnostic (expected near zero by bipolar cancellation), not to primary Phase Closure ψ",
         ],
         "implications": {
@@ -647,6 +783,7 @@ def main():
             "core_systematic_ns": f"{error_budget['core_systematic_error_ns']:.3f}",
             "threshold_robustness_ns": f"{error_budget['threshold_robustness_ns']:.3f}",
             "psi_circular_se_rad": f"{psi_stats['bootstrap_se']:.3f}",
+            "max_jackknife_shift_rad": f"{jackknife.get('max_jackknife_shift_rad', 0):.4f}",
             "measurement_status": (
                 "Core metrology systematic exceeds the delay-domain statistical error; "
                 "this weakens delay-amplitude claims but does not directly control the "

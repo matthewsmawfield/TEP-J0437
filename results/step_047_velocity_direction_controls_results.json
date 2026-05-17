@@ -17,8 +17,8 @@
         "J1603-7202": false
       },
       "phase_sigma": {
-        "J0437-4715": 7.397618739814267,
-        "J1603-7202": -0.2497989958311154
+        "J0437-4715": 7.397618739814268,
+        "J1603-7202": -0.24979899583111512
       },
       "interpretation": "Velocity-label permutation requires at least two robust phase detections. The current Parkes/PPTA set has only one, so sign-label specificity is a follow-up test.",
       "test_status": "inconclusive",
@@ -54,18 +54,18 @@
     "blind_freeze_record": {
       "control": "blind_freeze_record",
       "description": "Prove \u03c8 was frozen before velocity labels decoded",
-      "git_commit_hash": "6c8017994906",
-      "freeze_timestamp": "2026-05-15T13:18:27.984372",
+      "git_commit_hash": "2e4a44c6d786",
+      "freeze_timestamp": "2026-05-17T16:12:49.439573",
       "step_003_results_exist": true,
       "step_003_timestamps": {
-        "J0437-4715": "2026-05-15T13:07:52.115385",
-        "J1603-7202": "2026-05-15T13:08:25.920167"
+        "J0437-4715": "2026-05-17T16:03:40.312174",
+        "J1603-7202": "2026-05-17T16:04:17.293728"
       },
       "psi_values": {
-        "J0437-4715": 0.9840495457197854,
-        "J1603-7202": -2.327609095054899
+        "J0437-4715": 0.9840495457197855,
+        "J1603-7202": -2.3276090950548984
       },
-      "psi_value_hash": "3b778fb6e1b966a3",
+      "psi_value_hash": "cbbc2d48aab0fe19",
       "blind_protocol": [
         "1. Pulsar names hidden during initial analysis",
         "2. \u03c8 computed for anonymous pulsars (A, B, C...)",

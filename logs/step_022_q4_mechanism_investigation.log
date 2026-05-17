@@ -1,9 +1,9 @@
-[2026-05-15 13:18:05] [INFO] ================================================================================
-[2026-05-15 13:18:05] [INFO] STEP step_022_q4_mechanism_investigation STARTED
-[2026-05-15 13:18:05] [INFO] Description: Q4 dominance mechanism investigation
-[2026-05-15 13:18:05] [INFO] Physics: Explain stratification where high-triplet epochs once showed inflated unsigned |H| relative to lower quartiles
-[2026-05-15 13:18:05] [INFO] Method: Correlations of |H| vs triplet count and SNR, stratified diagnostics, signed-delay checks
-[2026-05-15 13:18:05] [INFO] ================================================================================
-[2026-05-15 13:18:05] [INFO] ================================================================================
-[2026-05-15 13:18:05] [INFO] STEP COMPLETED SUCCESSFULLY (0.2 seconds)
-[2026-05-15 13:18:05] [INFO] ================================================================================
+[2026-05-17 16:12:22] [INFO] ================================================================================
+[2026-05-17 16:12:22] [INFO] STEP step_022_q4_mechanism_investigation STARTED
+[2026-05-17 16:12:22] [INFO] Description: Q4 dominance mechanism investigation
+[2026-05-17 16:12:22] [INFO] Physics: Explain stratification where high-triplet epochs once showed inflated unsigned |H| relative to lower quartiles
+[2026-05-17 16:12:22] [INFO] Method: Correlations of |H| vs triplet count and SNR, stratified diagnostics, signed-delay checks
+[2026-05-17 16:12:22] [INFO] ================================================================================
+[2026-05-17 16:12:22] [INFO] ================================================================================
+[2026-05-17 16:12:22] [INFO] STEP COMPLETED SUCCESSFULLY (0.2 seconds)
+[2026-05-17 16:12:22] [INFO] ================================================================================

@@ -34,14 +34,14 @@
     "eta2_ratio": 1.0387700322667208
   },
   "orbital_results": {
-    "modulation_amplitude": -1.1221377367932024,
-    "modulation_amplitude_err": 0.9346331250783478,
-    "modulation_phase": -0.11263584258569317,
-    "modulation_offset": 0.8171384493512628,
-    "modulation_significance": 0.9471637579119793,
-    "chi2_improvement": 2.212268266072112,
-    "predicted_amplitude": 0.08402251336600301,
-    "observed_to_predicted_ratio": 13.35520316924058,
+    "modulation_amplitude": -1.122137740287053,
+    "modulation_amplitude_err": 0.9346331112882282,
+    "modulation_phase": -0.11263580197601493,
+    "modulation_offset": 0.8171384613007409,
+    "modulation_significance": 0.9471637579119795,
+    "chi2_improvement": 2.2122682660721082,
+    "predicted_amplitude": 0.08402251336600298,
+    "observed_to_predicted_ratio": 13.355203210822898,
     "suppression_explained": false,
     "naive_scaling_adequate": false
   },
@@ -51,7 +51,7 @@
         "quadrant": 1,
         "phase_range": "0-90\u00b0 (approaching)",
         "n_epochs": 329,
-        "mean_h_ns": -0.5335808531361701,
+        "mean_h_ns": -0.53358085313617,
         "std_h_ns": 17.736570378835065,
         "sem_h_ns": 0.9778487784135602
       },
@@ -59,7 +59,7 @@
         "quadrant": 2,
         "phase_range": "90-180\u00b0",
         "n_epochs": 354,
-        "mean_h_ns": 0.6832658013206615,
+        "mean_h_ns": 0.6832658013206618,
         "std_h_ns": 17.572193655620556,
         "sem_h_ns": 0.9339515555472501
       },
@@ -67,7 +67,7 @@
         "quadrant": 3,
         "phase_range": "180-270\u00b0 (receding)",
         "n_epochs": 338,
-        "mean_h_ns": -0.7885935669787127,
+        "mean_h_ns": -0.7885935669787134,
         "std_h_ns": 27.9329329122929,
         "sem_h_ns": 1.5193512523624007
       },
@@ -80,34 +80,34 @@
         "sem_h_ns": 1.528813329622997
       }
     ],
-    "f_statistic": 1.9707793591929434,
+    "f_statistic": 1.970779359192944,
     "approaching_mean": 1.2932552985879537,
-    "perpendicular_mean": -0.05266388282902562,
-    "velocity_projection_difference": 1.3459191814169793
+    "perpendicular_mean": -0.05266388282902579,
+    "velocity_projection_difference": 1.3459191814169795
   },
   "time_evolution": {
-    "trend_slope_ns_per_year": -0.17331981175081626,
-    "trend_r": -0.032438844955331614,
-    "trend_p": 0.22663467087649194,
-    "early_mean_ns": 1.2479803995457883,
-    "late_mean_ns": 0.12481440557191836,
-    "early_late_difference_ns": -1.12316599397387,
-    "early_late_t_stat": 0.8730201091431615,
-    "early_late_p_value": 0.38280301247881154,
+    "trend_slope_ns_per_year": -0.17331981175081632,
+    "trend_r": -0.03243884495533162,
+    "trend_p": 0.22663467087649192,
+    "early_mean_ns": 1.2479803995457879,
+    "late_mean_ns": 0.12481440557191843,
+    "early_late_difference_ns": -1.1231659939738694,
+    "early_late_t_stat": 0.873020109143161,
+    "early_late_p_value": 0.382803012478812,
     "temporal_stability": "STABLE"
   },
   "bootstrap_ratio_ci": {
-    "bootstrap_median": 1.0714375918162027,
-    "bootstrap_mean": 7.3979806830630555,
-    "bootstrap_std": 180.9364439621917,
-    "ci_lower": 0.04779618201854743,
-    "ci_upper": 26.59076038946319,
+    "bootstrap_median": 1.063133152378701,
+    "bootstrap_mean": 6.775998135556528,
+    "bootstrap_std": 97.39740935475388,
+    "ci_lower": 0.042118928713032945,
+    "ci_upper": 25.61496919767223,
     "confidence_level": 0.95,
     "n_bootstrap": 10000,
-    "direct_ratio": 0.17827311649066924
+    "direct_ratio": 0.17827311649066885
   },
   "higher_order_moments": {
-    "mean_ns": 0.2995802201707903,
+    "mean_ns": 0.29958022017079045,
     "std_ns": 49.001871556933274,
     "skewness": 0.025700473068428462,
     "excess_kurtosis": 10.861058011954205,
@@ -124,14 +124,14 @@
     "tep_like": true
   },
   "effect_size_robustness": {
-    "cohens_d": 0.006113648533254903,
+    "cohens_d": 0.0061136485332549066,
     "n_total": 19167,
-    "split_half_d1": 0.014688624086117687,
-    "split_half_d2": -0.013974422950082126,
+    "split_half_d1": 0.0147538209084129,
+    "split_half_d2": -0.014145023077420965,
     "split_half_consistent": false,
-    "subsample_mean_d": 0.00727582156179206,
-    "subsample_std_d": 0.007199237293533183,
-    "sign_consistency_fraction": 0.81,
+    "subsample_mean_d": 0.006018680149349348,
+    "subsample_std_d": 0.007677165531012129,
+    "sign_consistency_fraction": 0.83,
     "robust": false
   },
   "differential_refraction": {

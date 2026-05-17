@@ -1,26 +1,26 @@
-[2026-05-15 13:19:46] [INFO] ================================================================================
-[2026-05-15 13:19:46] [INFO] STEP step_013_falsification_criteria STARTED
-[2026-05-15 13:19:46] [INFO] Description: Falsification criteria automation
-[2026-05-15 13:19:46] [INFO] Physics: Automated quantitative assessment of TEP falsification criteria
-[2026-05-15 13:19:46] [INFO] Method: Quantitative threshold evaluation, pass/fail verdict generation, comprehensive falsification report
-[2026-05-15 13:19:46] [INFO] ================================================================================
-[2026-05-15 13:19:46] [INFO]       ======================================================================
-[2026-05-15 13:19:46] [INFO]       STEP 013: FALSIFICATION CRITERIA AUTOMATION
-[2026-05-15 13:19:46] [INFO]       ======================================================================
-[2026-05-15 13:19:46] [INFO] ═══ ======================================================================
-[2026-05-15 13:19:46] [INFO] ═══ FALSIFICATION CRITERIA EVALUATION (PHASE-PRIMARY)
-[2026-05-15 13:19:46] [INFO] ═══ ======================================================================
-[2026-05-15 13:19:46] [INFO] [PASS]   criterion_1: Phase Closure significance (primary) -> PASS
-[2026-05-15 13:19:46] [INFO] [PASS]   criterion_2: Phase-scramble specificity (diagnostic) -> PASS
-[2026-05-15 13:19:46] [INFO] [PASS]   criterion_3: Unweighted ψ frame invariance (diagnostic) -> PASS
-[2026-05-15 13:19:46] [WARNING] [WARN]   criterion_4: Velocity-label permutation control (diagnostic) -> INCONCLUSIVE
-[2026-05-15 13:19:46] [INFO] [PASS]   criterion_5: Signed-mean bipolar cancellation (diagnostic) -> PASS
-[2026-05-15 13:19:46] [INFO] [PASS] 
+[2026-05-17 16:14:15] [INFO] ================================================================================
+[2026-05-17 16:14:15] [INFO] STEP step_013_falsification_criteria STARTED
+[2026-05-17 16:14:15] [INFO] Description: Falsification criteria automation
+[2026-05-17 16:14:15] [INFO] Physics: Automated quantitative assessment of TEP falsification criteria
+[2026-05-17 16:14:15] [INFO] Method: Quantitative threshold evaluation, pass/fail verdict generation, comprehensive falsification report
+[2026-05-17 16:14:15] [INFO] ================================================================================
+[2026-05-17 16:14:15] [INFO]       ======================================================================
+[2026-05-17 16:14:15] [INFO]       STEP 013: FALSIFICATION CRITERIA AUTOMATION
+[2026-05-17 16:14:15] [INFO]       ======================================================================
+[2026-05-17 16:14:15] [INFO] ═══ ======================================================================
+[2026-05-17 16:14:15] [INFO] ═══ FALSIFICATION CRITERIA EVALUATION (PHASE-PRIMARY)
+[2026-05-17 16:14:15] [INFO] ═══ ======================================================================
+[2026-05-17 16:14:15] [INFO] [PASS]   criterion_1: Phase Closure significance (primary) -> PASS
+[2026-05-17 16:14:15] [INFO] [PASS]   criterion_2: Phase-scramble specificity (diagnostic) -> PASS
+[2026-05-17 16:14:15] [INFO] [PASS]   criterion_3: Unweighted ψ frame invariance (diagnostic) -> PASS
+[2026-05-17 16:14:15] [WARNING] [WARN]   criterion_4: Velocity-label permutation control (diagnostic) -> INCONCLUSIVE
+[2026-05-17 16:14:15] [INFO] [PASS]   criterion_5: Signed-mean bipolar cancellation (diagnostic) -> PASS
+[2026-05-17 16:14:15] [INFO] [PASS] 
 Primary criterion: PASS
-[2026-05-15 13:19:46] [INFO]       
+[2026-05-17 16:14:15] [INFO]       
 Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_013_falsification_criteria_results.json
-[2026-05-15 13:19:46] [INFO]       Report saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_013_falsification_criteria_report.txt
-[2026-05-15 13:19:46] [INFO]       STEP 013 COMPLETED SUCCESSFULLY
-[2026-05-15 13:19:46] [INFO] ================================================================================
-[2026-05-15 13:19:46] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
-[2026-05-15 13:19:46] [INFO] ================================================================================
+[2026-05-17 16:14:15] [INFO]       Report saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_013_falsification_criteria_report.txt
+[2026-05-17 16:14:15] [INFO]       STEP 013 COMPLETED SUCCESSFULLY
+[2026-05-17 16:14:15] [INFO] ================================================================================
+[2026-05-17 16:14:15] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-17 16:14:15] [INFO] ================================================================================

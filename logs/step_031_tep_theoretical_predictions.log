@@ -1,9 +1,9 @@
-[2026-05-15 13:18:17] [INFO] ================================================================================
-[2026-05-15 13:18:17] [INFO] STEP step_031_tep_theoretical_predictions STARTED
-[2026-05-15 13:18:17] [INFO] Description: TEP theoretical predictions
-[2026-05-15 13:18:17] [INFO] Physics: Generate theoretical TEP predictions for comparison
-[2026-05-15 13:18:17] [INFO] Method: Compute |H| scaling from TEP framework parameters
-[2026-05-15 13:18:17] [INFO] ================================================================================
-[2026-05-15 13:18:17] [INFO] ================================================================================
-[2026-05-15 13:18:17] [INFO] STEP COMPLETED SUCCESSFULLY (0.4 seconds)
-[2026-05-15 13:18:17] [INFO] ================================================================================
+[2026-05-17 16:12:37] [INFO] ================================================================================
+[2026-05-17 16:12:37] [INFO] STEP step_031_tep_theoretical_predictions STARTED
+[2026-05-17 16:12:37] [INFO] Description: TEP theoretical predictions
+[2026-05-17 16:12:37] [INFO] Physics: Generate theoretical TEP predictions for comparison
+[2026-05-17 16:12:37] [INFO] Method: Compute |H| scaling from TEP framework parameters
+[2026-05-17 16:12:37] [INFO] ================================================================================
+[2026-05-17 16:12:38] [INFO] ================================================================================
+[2026-05-17 16:12:38] [INFO] STEP COMPLETED SUCCESSFULLY (0.6 seconds)
+[2026-05-17 16:12:38] [INFO] ================================================================================

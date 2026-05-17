@@ -1,45 +1,45 @@
-[2026-05-15 13:17:54] [INFO] ================================================================================
-[2026-05-15 13:17:54] [INFO] STEP step_014_synthetic_data_validation STARTED
-[2026-05-15 13:17:54] [INFO] Description: Synthetic data validation
-[2026-05-15 13:17:54] [INFO] Physics: Pipeline integrity testing using synthetic data with known properties
-[2026-05-15 13:17:54] [INFO] Method: Generate synthetic scintillation data with and without TEP effects, run through pipeline to verify detection methodology, test for false positives and false negatives
-[2026-05-15 13:17:54] [INFO] ================================================================================
-[2026-05-15 13:17:54] [INFO]       ================================================================================
-[2026-05-15 13:17:54] [INFO]       STEP 014: SYNTHETIC DATA VALIDATION (FIXED)
-[2026-05-15 13:17:54] [INFO]       ================================================================================
-[2026-05-15 13:17:54] [INFO]       Testing pipeline integrity with synthetic data
-[2026-05-15 13:17:54] [INFO]       CRITICAL FIX: This version uses the full pipeline logic,
-[2026-05-15 13:17:54] [INFO]       including SNR filtering based on cross-term SNR (not circular closure SNR)
-[2026-05-15 13:17:54] [INFO]       Purpose: Validate detection methodology on data with known ground truth
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO] STEP step_014_synthetic_data_validation STARTED
+[2026-05-17 16:12:11] [INFO] Description: Synthetic data validation
+[2026-05-17 16:12:11] [INFO] Physics: Pipeline integrity testing using synthetic data with known properties
+[2026-05-17 16:12:11] [INFO] Method: Generate synthetic scintillation data with and without TEP effects, run through pipeline to verify detection methodology, test for false positives and false negatives
+[2026-05-17 16:12:11] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO]       ================================================================================
+[2026-05-17 16:12:11] [INFO]       STEP 014: SYNTHETIC DATA VALIDATION (FIXED)
+[2026-05-17 16:12:11] [INFO]       ================================================================================
+[2026-05-17 16:12:11] [INFO]       Testing pipeline integrity with synthetic data
+[2026-05-17 16:12:11] [INFO]       CRITICAL FIX: This version uses the full pipeline logic,
+[2026-05-17 16:12:11] [INFO]       including SNR filtering based on cross-term SNR (not circular closure SNR)
+[2026-05-17 16:12:11] [INFO]       Purpose: Validate detection methodology on data with known ground truth
+[2026-05-17 16:12:11] [INFO]       
 --- Testing GR Null Case ---
-[2026-05-15 13:17:55] [INFO]       True H: 0.0 ns
-[2026-05-15 13:17:55] [INFO]       Detected H: 0.649 +/- 5.526 ns
-[2026-05-15 13:17:55] [INFO]       t-statistic: 0.879
-[2026-05-15 13:17:55] [INFO]       p-value: 3.833e-01
-[2026-05-15 13:17:55] [INFO]       Detection made: False
-[2026-05-15 13:17:55] [INFO]       Correct detection: True
-[2026-05-15 13:17:55] [INFO]       Mean cross-term SNR: 830.90
-[2026-05-15 13:17:55] [INFO]       
+[2026-05-17 16:12:11] [INFO]       True H: 0.0 ns
+[2026-05-17 16:12:11] [INFO]       Detected H: 0.649 +/- 5.526 ns
+[2026-05-17 16:12:11] [INFO]       t-statistic: 0.879
+[2026-05-17 16:12:11] [INFO]       p-value: 3.833e-01
+[2026-05-17 16:12:11] [INFO]       Detection made: False
+[2026-05-17 16:12:11] [INFO]       Correct detection: True
+[2026-05-17 16:12:11] [INFO]       Mean cross-term SNR: 830.90
+[2026-05-17 16:12:11] [INFO]       
 --- Testing TEP Case (Monte Carlo) ---
-[2026-05-15 13:17:55] [INFO]       True H: 8.100162219444181 ns
-[2026-05-15 13:17:55] [INFO]       Detected H: 6.704 +/- 1.502 ns
-[2026-05-15 13:17:55] [INFO]       t-statistic: 11.380
-[2026-05-15 13:17:55] [INFO]       p-value: 3.105e-12
-[2026-05-15 13:17:55] [INFO]       Detection made: True
-[2026-05-15 13:17:55] [INFO]       Correct detection: True
-[2026-05-15 13:17:55] [INFO]       Mean cross-term SNR: 632.31
-[2026-05-15 13:17:55] [INFO]       
+[2026-05-17 16:12:12] [INFO]       True H: 8.100162219444181 ns
+[2026-05-17 16:12:12] [INFO]       Detected H: 6.704 +/- 1.502 ns
+[2026-05-17 16:12:12] [INFO]       t-statistic: 11.380
+[2026-05-17 16:12:12] [INFO]       p-value: 3.105e-12
+[2026-05-17 16:12:12] [INFO]       Detection made: True
+[2026-05-17 16:12:12] [INFO]       Correct detection: True
+[2026-05-17 16:12:12] [INFO]       Mean cross-term SNR: 632.31
+[2026-05-17 16:12:12] [INFO]       
 --- Testing Detection Sensitivity ---
-[2026-05-15 13:17:55] [INFO]       H = 2.00 ns: detected=False, t=3.34
-[2026-05-15 13:17:56] [INFO]       H = 5.00 ns: detected=True, t=8.61
-[2026-05-15 13:17:56] [INFO]       H = 8.93 ns: detected=True, t=11.78
-[2026-05-15 13:17:57] [INFO]       H = 15.00 ns: detected=True, t=22.51
-[2026-05-15 13:17:57] [INFO]       
+[2026-05-17 16:12:12] [INFO]       H = 2.00 ns: detected=False, t=3.34
+[2026-05-17 16:12:13] [INFO]       H = 5.00 ns: detected=True, t=8.61
+[2026-05-17 16:12:13] [INFO]       H = 8.93 ns: detected=True, t=11.78
+[2026-05-17 16:12:13] [INFO]       H = 15.00 ns: detected=True, t=22.51
+[2026-05-17 16:12:13] [INFO]       
 Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_014_synthetic_validation_results_fixed.json
-[2026-05-15 13:17:57] [INFO]       ================================================================================
-[2026-05-15 13:17:57] [INFO]       STEP 014 COMPLETED SUCCESSFULLY
-[2026-05-15 13:17:57] [INFO]       ================================================================================
-[2026-05-15 13:17:57] [INFO] ================================================================================
-[2026-05-15 13:17:57] [INFO] STEP COMPLETED SUCCESSFULLY (2.2 seconds)
-[2026-05-15 13:17:57] [INFO] ================================================================================
+[2026-05-17 16:12:13] [INFO]       ================================================================================
+[2026-05-17 16:12:13] [INFO]       STEP 014 COMPLETED SUCCESSFULLY
+[2026-05-17 16:12:13] [INFO]       ================================================================================
+[2026-05-17 16:12:13] [INFO] ================================================================================
+[2026-05-17 16:12:13] [INFO] STEP COMPLETED SUCCESSFULLY (2.3 seconds)
+[2026-05-17 16:12:13] [INFO] ================================================================================

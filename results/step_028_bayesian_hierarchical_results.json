@@ -11,9 +11,9 @@
       "t_equivalent": 26.173043325062086
     },
     "signed_diagnostic": {
-      "mean_ns": 0.6859936764646859,
+      "mean_ns": 0.6859936764646857,
       "sem_ns": 0.6432094737855037,
-      "t_signed": 1.0665167483112192,
+      "t_signed": 1.066516748311219,
       "median_ns": -0.055639799052108196,
       "mad_ns": 7.803377820983298,
       "note": "Unweighted signed mean across independent epochs; diagnostic only."

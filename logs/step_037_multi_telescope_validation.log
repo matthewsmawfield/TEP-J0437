@@ -1,12 +1,12 @@
-[2026-05-15 13:18:21] [INFO] ================================================================================
-[2026-05-15 13:18:21] [INFO] STEP step_037_multi_telescope_validation STARTED
-[2026-05-15 13:18:21] [INFO] Description: Multi-telescope validation audit
-[2026-05-15 13:18:21] [INFO] Physics: Audit whether current positive phase evidence is independently replicated across telescopes
-[2026-05-15 13:18:21] [INFO] Method: Compare Parkes/PPTA phase detections against noise-limited Jiamusi bounding rows
-[2026-05-15 13:18:21] [INFO] ================================================================================
-[2026-05-15 13:18:21] [INFO]       ========================================================================================================================
-[2026-05-15 13:18:21] [INFO]       ========================================================================================================================
-[2026-05-15 13:18:21] [WARNING] [WARN] Environmental suppression confirmed: positive phase evidence is Parkes/PPTA (J0437); Jiamusi rows are noise-limited bounds consistent with TEP Ambient Symmetry Restoration.
-[2026-05-15 13:18:21] [INFO] ================================================================================
-[2026-05-15 13:18:21] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
-[2026-05-15 13:18:21] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO] STEP step_037_multi_telescope_validation STARTED
+[2026-05-17 16:12:42] [INFO] Description: Multi-telescope validation audit
+[2026-05-17 16:12:42] [INFO] Physics: Audit whether current positive phase evidence is independently replicated across telescopes
+[2026-05-17 16:12:42] [INFO] Method: Compare Parkes/PPTA phase detections against noise-limited Jiamusi bounding rows
+[2026-05-17 16:12:42] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO]       ========================================================================================================================
+[2026-05-17 16:12:42] [INFO]       ========================================================================================================================
+[2026-05-17 16:12:42] [WARNING] [WARN] Environmental suppression confirmed: positive phase evidence is Parkes/PPTA (J0437); Jiamusi rows are noise-limited bounds consistent with TEP Ambient Symmetry Restoration.
+[2026-05-17 16:12:42] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-17 16:12:42] [INFO] ================================================================================

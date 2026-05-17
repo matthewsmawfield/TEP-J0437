@@ -1,0 +1,17 @@
+[2026-05-17 16:12:48] [INFO] ================================================================================
+[2026-05-17 16:12:48] [INFO] STEP step_046b_hierarchical_orbital_modulation STARTED
+[2026-05-17 16:12:48] [INFO] Description: Hierarchical mixed-effects orbital modulation model (REML)
+[2026-05-17 16:12:48] [INFO] Physics: Account for within-epoch triplet correlations via per-epoch random offsets
+[2026-05-17 16:12:48] [INFO] Method: Linear mixed-effects model fitted by REML with likelihood-ratio test
+[2026-05-17 16:12:48] [INFO] ================================================================================
+[2026-05-17 16:12:48] [INFO]       Step 046b: Hierarchical Mixed-Effects Orbital Modulation (REML)
+[2026-05-17 16:12:49] [INFO]       Loaded 19167 triplets across 1391 epochs
+[2026-05-17 16:12:49] [INFO]       Fitting mixed-effects modulation model...
+[2026-05-17 16:12:49] [INFO]       Fitting null model...
+[2026-05-17 16:12:49] [INFO]       Results saved to /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_046b_hierarchical_orbital_modulation.json
+[2026-05-17 16:12:49] [INFO]       Modulation amplitude: 1.112 ± 0.791 ns (95% MC amplitude interval: [0.292, 2.826])
+[2026-05-17 16:12:49] [INFO]       Likelihood-ratio test: χ² = 1.98, p = 3.7164e-01 (2 df)
+[2026-05-17 16:12:49] [INFO]       Epoch scatter σ_α = 20.946 ns, ICC = 0.900, effective n = 1532
+[2026-05-17 16:12:49] [INFO] ================================================================================
+[2026-05-17 16:12:49] [INFO] STEP COMPLETED SUCCESSFULLY (0.3 seconds)
+[2026-05-17 16:12:49] [INFO] ================================================================================

@@ -1,57 +1,57 @@
-[2026-05-15 13:08:28] [INFO] ================================================================================
-[2026-05-15 13:08:28] [INFO] STEP step_005_enhanced_validation STARTED
-[2026-05-15 13:08:28] [INFO] Description: Enhanced validation addressing reviewer concerns
-[2026-05-15 13:08:28] [INFO] Physics: Advanced tests for systematic errors, alternative explanations, and theoretical framework
-[2026-05-15 13:08:28] [INFO] Method: Improved GR null tests, advanced ISS tests, blind analysis, rigorous anisotropy derivation, weighted analysis verification
-[2026-05-15 13:08:28] [INFO] ================================================================================
-[2026-05-15 13:08:28] [INFO] ═══ ======================================================================
-[2026-05-15 13:08:28] [INFO] ═══ TEP-J0437 Step 005: Enhanced Validation
-[2026-05-15 13:08:28] [INFO] ═══ ======================================================================
-[2026-05-15 13:08:28] [INFO]       Loading closure delay results...
-[2026-05-15 13:08:28] [INFO]       
+[2026-05-17 16:04:19] [INFO] ================================================================================
+[2026-05-17 16:04:19] [INFO] STEP step_005_enhanced_validation STARTED
+[2026-05-17 16:04:19] [INFO] Description: Enhanced validation addressing reviewer concerns
+[2026-05-17 16:04:19] [INFO] Physics: Advanced tests for systematic errors, alternative explanations, and theoretical framework
+[2026-05-17 16:04:19] [INFO] Method: Improved GR null tests, advanced ISS tests, blind analysis, rigorous anisotropy derivation, weighted analysis verification
+[2026-05-17 16:04:19] [INFO] ================================================================================
+[2026-05-17 16:04:19] [INFO] ═══ ======================================================================
+[2026-05-17 16:04:19] [INFO] ═══ TEP-J0437 Step 005: Enhanced Validation
+[2026-05-17 16:04:19] [INFO] ═══ ======================================================================
+[2026-05-17 16:04:19] [INFO]       Loading closure delay results...
+[2026-05-17 16:04:19] [INFO]       
 Loaded 19167 triplets from 1391 epochs
-[2026-05-15 13:08:28] [INFO]       
+[2026-05-17 16:04:19] [INFO]       
 Running 4 independent validation tests sequentially...
-[2026-05-15 13:08:28] [INFO] ═══ 
+[2026-05-17 16:04:19] [INFO] ═══ 
 === GR NULL HYPOTHESIS TEST (|H| MAGNITUDE) ===
-[2026-05-15 13:08:28] [DEBUG] [CALC] GR Null Test (|H|): mean=27.071 ns, t=91.76sigma, p=0.0000
-[2026-05-15 13:08:28] [DEBUG] [PHYS]   Null hypothesis H0 (GR): |H|=0. Alternative H1 (TEP): |H|>0
-[2026-05-15 13:08:28] [INFO]       GR null model (noise |baseline H| mean): 39.102 +/- 0.211 ns
-[2026-05-15 13:08:28] [INFO]       Observed |H| mean: 27.071 +/- 0.295 ns
-[2026-05-15 13:08:28] [INFO]       t-statistic vs true GR null (|H|=0): 91.76sigma  (p = 0.0000)
-[2026-05-15 13:08:28] [INFO]       Test result: PASS
-[2026-05-15 13:08:28] [INFO] ═══ 
+[2026-05-17 16:04:19] [DEBUG] [CALC] GR Null Test (|H|): mean=27.071 ns, t=91.76sigma, p=0.0000
+[2026-05-17 16:04:19] [DEBUG] [PHYS]   Null hypothesis H0 (GR): |H|=0. Alternative H1 (TEP): |H|>0
+[2026-05-17 16:04:19] [INFO]       GR null model (noise |baseline H| mean): 39.102 +/- 0.211 ns
+[2026-05-17 16:04:19] [INFO]       Observed |H| mean: 27.071 +/- 0.295 ns
+[2026-05-17 16:04:19] [INFO]       t-statistic vs true GR null (|H|=0): 91.76sigma  (p = 0.0000)
+[2026-05-17 16:04:19] [INFO]       Test result: PASS
+[2026-05-17 16:04:19] [INFO] ═══ 
 === GEOMETRIC ALIGNMENT EFFECTIVENESS ===
-[2026-05-15 13:08:28] [INFO]         TEP prediction: |H| should be significant; alignment enables phase closure
-[2026-05-15 13:08:28] [INFO]       Raw |H| mean:          20.122 ns  (t = 99.95sigma)
-[2026-05-15 13:08:28] [INFO]       Stokes-aligned |H|:     27.071 ns  (t = 91.76sigma)
-[2026-05-15 13:08:28] [INFO]       Stokes-aligned trimmed: 17.670 ns  (t = 147.48sigma)
-[2026-05-15 13:08:28] [INFO]       |H| significance (t>5): True
-[2026-05-15 13:08:28] [INFO]       Test result: PASS
-[2026-05-15 13:08:28] [INFO] ═══ 
+[2026-05-17 16:04:19] [INFO]         TEP prediction: |H| should be significant; alignment enables phase closure
+[2026-05-17 16:04:19] [INFO]       Raw |H| mean:          20.122 ns  (t = 99.95sigma)
+[2026-05-17 16:04:19] [INFO]       Stokes-aligned |H|:     27.071 ns  (t = 91.76sigma)
+[2026-05-17 16:04:19] [INFO]       Stokes-aligned trimmed: 17.670 ns  (t = 147.48sigma)
+[2026-05-17 16:04:19] [INFO]       |H| significance (t>5): True
+[2026-05-17 16:04:19] [INFO]       Test result: PASS
+[2026-05-17 16:04:19] [INFO] ═══ 
 === AGGREGATE |H| TEST ===
-[2026-05-15 13:08:28] [INFO]         TEP prediction: |H| should be significant (bipolar cancellation)
-[2026-05-15 13:08:28] [INFO]       |H| mean: 27.071 +/- 0.295 ns  (t = 91.76sigma)
-[2026-05-15 13:08:28] [INFO]       Bootstrap 95% CI: [26.535, 27.608] ns
-[2026-05-15 13:08:28] [INFO]       Zero excluded from CI: True
-[2026-05-15 13:08:28] [INFO]       Test result: PASS
-[2026-05-15 13:08:28] [INFO] ═══ 
+[2026-05-17 16:04:19] [INFO]         TEP prediction: |H| should be significant (bipolar cancellation)
+[2026-05-17 16:04:19] [INFO]       |H| mean: 27.071 +/- 0.295 ns  (t = 91.76sigma)
+[2026-05-17 16:04:19] [INFO]       Bootstrap 95% CI: [26.506, 27.659] ns
+[2026-05-17 16:04:19] [INFO]       Zero excluded from CI: True
+[2026-05-17 16:04:19] [INFO]       Test result: PASS
+[2026-05-17 16:04:19] [INFO] ═══ 
 === ISM ANISOTROPY / ANNUAL MODULATION ===
-[2026-05-15 13:08:28] [INFO]       H1 (Jan-Jun): N=9988, |H|=+33.158 +/- 0.481 ns
-[2026-05-15 13:08:28] [INFO]       H2 (Jul-Dec): N=9179, |H|=+20.447 +/- 0.310 ns
-[2026-05-15 13:08:28] [INFO]       Asymmetry:    +12.711 +/- 0.573 ns  (t = +22.20sigma)
-[2026-05-15 13:08:28] [INFO]       Cohen's d:    0.315  (relative diff: 47.4%)
-[2026-05-15 13:08:28] [INFO]       Consistency:  Both halves consistent (Cohen's d < 0.3 or rel. diff < 30%)
-[2026-05-15 13:08:28] [DEBUG] [CALC] ISM Anisotropy Test: Semester 1 |H|=+33.158 vs Semester 2 |H|=+20.447
-[2026-05-15 13:08:28] [DEBUG] [CALC]   Cohen's d: 0.315, rel. diff: 47.4%, Consistency: FAIL
-[2026-05-15 13:08:28] [DEBUG] [PHYS]   Annual modulation check: |H| magnitude consistency (not signed direction)
-[2026-05-15 13:08:28] [INFO]       Test result: FAIL
-[2026-05-15 13:08:28] [INFO]       
+[2026-05-17 16:04:19] [INFO]       H1 (Jan-Jun): N=9988, |H|=+33.158 +/- 0.481 ns
+[2026-05-17 16:04:19] [INFO]       H2 (Jul-Dec): N=9179, |H|=+20.447 +/- 0.310 ns
+[2026-05-17 16:04:19] [INFO]       Asymmetry:    +12.711 +/- 0.573 ns  (t = +22.20sigma)
+[2026-05-17 16:04:19] [INFO]       Cohen's d:    0.315  (relative diff: 47.4%)
+[2026-05-17 16:04:19] [INFO]       Consistency:  Both halves consistent (Cohen's d < 0.3 or rel. diff < 30%)
+[2026-05-17 16:04:19] [DEBUG] [CALC] ISM Anisotropy Test: Semester 1 |H|=+33.158 vs Semester 2 |H|=+20.447
+[2026-05-17 16:04:19] [DEBUG] [CALC]   Cohen's d: 0.315, rel. diff: 47.4%, Consistency: FAIL
+[2026-05-17 16:04:19] [DEBUG] [PHYS]   Annual modulation check: |H| magnitude consistency (not signed direction)
+[2026-05-17 16:04:19] [INFO]       Test result: FAIL
+[2026-05-17 16:04:19] [INFO]       
 Tests passed: 3/4
-[2026-05-15 13:08:28] [INFO] [PASS] 
+[2026-05-17 16:04:19] [INFO] [PASS] 
 Results saved to /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_005_enhanced_validation_results.json
-[2026-05-15 13:08:28] [DEBUG] [DATA] Enhanced Validation Summary: 3/4 tests passed
-[2026-05-15 13:08:28] [INFO] [PASS] STEP 005 COMPLETED SUCCESSFULLY
-[2026-05-15 13:08:28] [INFO] ================================================================================
-[2026-05-15 13:08:28] [INFO] STEP COMPLETED SUCCESSFULLY (0.4 seconds)
-[2026-05-15 13:08:28] [INFO] ================================================================================
+[2026-05-17 16:04:19] [DEBUG] [DATA] Enhanced Validation Summary: 3/4 tests passed
+[2026-05-17 16:04:19] [INFO] [PASS] STEP 005 COMPLETED SUCCESSFULLY
+[2026-05-17 16:04:19] [INFO] ================================================================================
+[2026-05-17 16:04:19] [INFO] STEP COMPLETED SUCCESSFULLY (0.4 seconds)
+[2026-05-17 16:04:19] [INFO] ================================================================================

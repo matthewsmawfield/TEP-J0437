@@ -1,44 +1,44 @@
-[2026-05-15 13:17:54] [INFO] ================================================================================
-[2026-05-15 13:17:54] [INFO] STEP step_011_ism_density_modeling STARTED
-[2026-05-15 13:17:54] [INFO] Description: ISM Temporal Topology and Temporal Shear modeling
-[2026-05-15 13:17:54] [INFO] Physics: TEP v0.8 Temporal Topology: screening as a continuous gradient suppression (∇φ), replacing legacy discrete approximations
-[2026-05-15 13:17:54] [INFO] Method: Compute Temporal Topology φ(r; ρ) from density profile, derive Temporal Shear ∇φ, constrain B(φ) from observation
-[2026-05-15 13:17:54] [INFO] ================================================================================
-[2026-05-15 13:17:54] [INFO]       ================================================================================
-[2026-05-15 13:17:54] [INFO]       STEP 011: ISM DENSITY PROFILE MODELING
-[2026-05-15 13:17:54] [INFO]       ================================================================================
-[2026-05-15 13:17:54] [INFO]       Screen distances: [89.8, 124.0] pc
-[2026-05-15 13:17:54] [INFO]       Reference density: 1.00e-24 g/cm³
-[2026-05-15 13:17:54] [INFO]       Observed holonomy: 8.100 ns
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO] STEP step_011_ism_density_modeling STARTED
+[2026-05-17 16:12:11] [INFO] Description: ISM Temporal Topology and Temporal Shear modeling
+[2026-05-17 16:12:11] [INFO] Physics: TEP v0.8 Temporal Topology: screening as a continuous gradient suppression (∇φ), replacing legacy discrete approximations
+[2026-05-17 16:12:11] [INFO] Method: Compute Temporal Topology φ(r; ρ) from density profile, derive Temporal Shear ∇φ, constrain B(φ) from observation
+[2026-05-17 16:12:11] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO]       ================================================================================
+[2026-05-17 16:12:11] [INFO]       STEP 011: ISM DENSITY PROFILE MODELING
+[2026-05-17 16:12:11] [INFO]       ================================================================================
+[2026-05-17 16:12:11] [INFO]       Screen distances: [89.8, 124.0] pc
+[2026-05-17 16:12:11] [INFO]       Reference density: 1.00e-24 g/cm³
+[2026-05-17 16:12:11] [INFO]       Observed holonomy: 8.100 ns
+[2026-05-17 16:12:11] [INFO]       
 Temporal Topology and Shear:
-[2026-05-15 13:17:54] [INFO]       ----------------------------------------
-[2026-05-15 13:17:54] [INFO]       Mean Temporal Shear: 4.32e-05 pc⁻¹
-[2026-05-15 13:17:54] [INFO]       Max Temporal Shear: 9.99e-05 pc⁻¹
-[2026-05-15 13:17:54] [INFO]       Integrated shear to screen at 89.8 pc: 5.93e-03
-[2026-05-15 13:17:54] [INFO]       Integrated shear to screen at 124.0 pc: 7.11e-03
-[2026-05-15 13:17:54] [INFO]       Total integrated Temporal Shear: 1.30e-02
-[2026-05-15 13:17:54] [INFO]       Total integrated density: 8.64e-23 g·cm⁻²·pc
-[2026-05-15 13:17:54] [INFO]       Implied B(φ) from observation: 6.22e-01
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO]       ----------------------------------------
+[2026-05-17 16:12:11] [INFO]       Mean Temporal Shear: 4.32e-05 pc⁻¹
+[2026-05-17 16:12:11] [INFO]       Max Temporal Shear: 9.99e-05 pc⁻¹
+[2026-05-17 16:12:11] [INFO]       Integrated shear to screen at 89.8 pc: 5.93e-03
+[2026-05-17 16:12:11] [INFO]       Integrated shear to screen at 124.0 pc: 7.11e-03
+[2026-05-17 16:12:11] [INFO]       Total integrated Temporal Shear: 1.30e-02
+[2026-05-17 16:12:11] [INFO]       Total integrated density: 8.64e-23 g·cm⁻²·pc
+[2026-05-17 16:12:11] [INFO]       Implied B(φ) from observation: 6.22e-01
+[2026-05-17 16:12:11] [INFO]       
 Scaling Relations:
-[2026-05-15 13:17:54] [INFO]       ----------------------------------------
-[2026-05-15 13:17:54] [INFO]       Shear x  0.5: |H| = 4.050 ns
-[2026-05-15 13:17:54] [INFO]       Shear x  1.0: |H| = 8.100 ns
-[2026-05-15 13:17:54] [INFO]       Shear x  2.0: |H| = 16.200 ns
-[2026-05-15 13:17:54] [INFO]       Shear x  5.0: |H| = 40.501 ns
-[2026-05-15 13:17:54] [INFO]       Shear x 10.0: |H| = 81.002 ns
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO]       ----------------------------------------
+[2026-05-17 16:12:11] [INFO]       Shear x  0.5: |H| = 4.050 ns
+[2026-05-17 16:12:11] [INFO]       Shear x  1.0: |H| = 8.100 ns
+[2026-05-17 16:12:11] [INFO]       Shear x  2.0: |H| = 16.200 ns
+[2026-05-17 16:12:11] [INFO]       Shear x  5.0: |H| = 40.501 ns
+[2026-05-17 16:12:11] [INFO]       Shear x 10.0: |H| = 81.002 ns
+[2026-05-17 16:12:11] [INFO]       
 Distance Scaling:
-[2026-05-15 13:17:54] [INFO]       Distance x  0.5: |H| = 4.050 ns
-[2026-05-15 13:17:54] [INFO]       Distance x  1.0: |H| = 8.100 ns
-[2026-05-15 13:17:54] [INFO]       Distance x  1.5: |H| = 12.150 ns
-[2026-05-15 13:17:54] [INFO]       Distance x  2.0: |H| = 16.200 ns
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO]       Distance x  0.5: |H| = 4.050 ns
+[2026-05-17 16:12:11] [INFO]       Distance x  1.0: |H| = 8.100 ns
+[2026-05-17 16:12:11] [INFO]       Distance x  1.5: |H| = 12.150 ns
+[2026-05-17 16:12:11] [INFO]       Distance x  2.0: |H| = 16.200 ns
+[2026-05-17 16:12:11] [INFO]       
 Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_011_ism_density_modeling_results.json
-[2026-05-15 13:17:54] [INFO]       ================================================================================
-[2026-05-15 13:17:54] [INFO]       STEP 011 COMPLETED SUCCESSFULLY
-[2026-05-15 13:17:54] [INFO]       ================================================================================
-[2026-05-15 13:17:54] [INFO] ================================================================================
-[2026-05-15 13:17:54] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
-[2026-05-15 13:17:54] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO]       ================================================================================
+[2026-05-17 16:12:11] [INFO]       STEP 011 COMPLETED SUCCESSFULLY
+[2026-05-17 16:12:11] [INFO]       ================================================================================
+[2026-05-17 16:12:11] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-17 16:12:11] [INFO] ================================================================================

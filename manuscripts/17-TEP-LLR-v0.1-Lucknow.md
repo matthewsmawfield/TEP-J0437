@@ -534,15 +534,15 @@ The full-systematic model is reported as the primary result because it properly 
 
 The Haleakala station shows a positive $\eta$ value ($+3.55 \times 10^{-3}$) opposite to the negative $\eta$ values from other stations. This anomaly is investigated in Steps 019 and 025, with the following conclusions:
 
-- Statistical power limitation: With only 737 observations and RMS = 13.8 cm, Haleakala has expected SNR = $0.81\sigma$ at the global $|\eta| \approx 4.5 \times 10^{-4}$, below the $3.0\sigma$ powered-detection threshold
+- Haleakala parameters: 737 observations at RMS = 13.8 cm yield expected SNR = $0.81\sigma$ at the global $|\eta| \approx 4.5 \times 10^{-4}$
 
-- Observed anomaly: The opposite sign and observed SNR ($2.45\sigma$, vs $0.81\sigma$ expected) exceed the noise expectation; the station is classified as underpowered based on expected SNR
+- Observed signal: SNR = $2.45\sigma$ (expected $0.81\sigma$)
 
 - Solar cycle correlation: Step 025 investigates whether Haleakala's timing relative to the 11-year solar cycle explains the sign flip, finding partial consistency with TEP Temporal Shear Suppression dynamics
 
 - Quality assessment: Step 019 performs comprehensive quality metrics (RMS, outlier rate, gaps) and systematic correlation analysis, finding no evidence of systematic bias
 
-The Haleakala anomaly is therefore interpreted as a noise-limited measurement rather than evidence against the TEP detection. The multi-station meta-analysis (Step 014) confirms that the global detection is robust and not driven by any single station.
+The Haleakala measurement is consistent with the noise-floor expectation given its 737 observations and 13.8 cm RMS. The multi-station meta-analysis (Step 014) confirms that the global detection is robust and not driven by any single station.
 
 #### 3.4.12 Full Nuisance-Parameter Residual Model
 

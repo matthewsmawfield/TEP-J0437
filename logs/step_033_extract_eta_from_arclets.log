@@ -1,9 +1,9 @@
-[2026-05-15 13:18:21] [INFO] ================================================================================
-[2026-05-15 13:18:21] [INFO] STEP step_033_extract_eta_from_arclets STARTED
-[2026-05-15 13:18:21] [INFO] Description: η extraction from individual arclets
-[2026-05-15 13:18:21] [INFO] Physics: Fine-grained arc curvature from arclet-level analysis
-[2026-05-15 13:18:21] [INFO] Method: Individual arclet η measurement and aggregation
-[2026-05-15 13:18:21] [INFO] ================================================================================
-[2026-05-15 13:18:21] [INFO] ================================================================================
-[2026-05-15 13:18:21] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
-[2026-05-15 13:18:21] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO] STEP step_033_extract_eta_from_arclets STARTED
+[2026-05-17 16:12:42] [INFO] Description: η extraction from individual arclets
+[2026-05-17 16:12:42] [INFO] Physics: Fine-grained arc curvature from arclet-level analysis
+[2026-05-17 16:12:42] [INFO] Method: Individual arclet η measurement and aggregation
+[2026-05-17 16:12:42] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO] ================================================================================
+[2026-05-17 16:12:42] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-17 16:12:42] [INFO] ================================================================================

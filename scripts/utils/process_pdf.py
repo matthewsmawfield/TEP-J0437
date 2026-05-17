@@ -186,7 +186,7 @@ def main():
         'XMP-dc:Identifier': f'doi:{args.doi}',
         'XMP-dc:Source': 'https://github.com/matthewsmawfield/TEP-J0437',
         'XMP-dc:Publisher': 'Zenodo',
-        'XMP-dc:Date': '2026-05-14',
+        'XMP-dc:Date': '2026-05-17',
         'XMP-dc:Type': 'Preprint',
         'XMP-dc:Format': 'application/pdf',
         'XMP-dc:Language': 'en',

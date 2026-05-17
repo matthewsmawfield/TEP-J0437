@@ -1,14 +1,14 @@
-[2026-05-15 13:19:46] [INFO] ================================================================================
-[2026-05-15 13:19:46] [INFO] STEP step_049_evidence_ledger STARTED
-[2026-05-15 13:19:46] [INFO] Description: Evidence ledger, claim hierarchy, and per-pulsar evidence tier table
-[2026-05-15 13:19:46] [INFO] Physics: Separate primary phase evidence from diagnostics, follow-up targets, and non-claims
-[2026-05-15 13:19:46] [INFO] Method: Read current result JSON files and write machine-readable claim-status ledger plus step_049_evidence_tier_summary.json
-[2026-05-15 13:19:46] [INFO] ================================================================================
-[2026-05-15 13:19:46] [INFO] ═══ STEP 049: EVIDENCE LEDGER
-[2026-05-15 13:19:46] [INFO] [PASS] Primary claim status: primary_evidence
-[2026-05-15 13:19:46] [INFO]       Falsification status: TEP NOT FALSIFIED
-[2026-05-15 13:19:46] [INFO]       Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_049_evidence_ledger.json
-[2026-05-15 13:19:46] [INFO]       Evidence tier summary: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_049_evidence_tier_summary.json
-[2026-05-15 13:19:46] [INFO] ================================================================================
-[2026-05-15 13:19:46] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
-[2026-05-15 13:19:46] [INFO] ================================================================================
+[2026-05-17 16:14:15] [INFO] ================================================================================
+[2026-05-17 16:14:15] [INFO] STEP step_049_evidence_ledger STARTED
+[2026-05-17 16:14:15] [INFO] Description: Evidence ledger, claim hierarchy, and per-pulsar evidence tier table
+[2026-05-17 16:14:15] [INFO] Physics: Separate primary phase evidence from diagnostics, follow-up targets, and non-claims
+[2026-05-17 16:14:15] [INFO] Method: Read current result JSON files and write machine-readable claim-status ledger plus step_049_evidence_tier_summary.json
+[2026-05-17 16:14:15] [INFO] ================================================================================
+[2026-05-17 16:14:15] [INFO] ═══ STEP 049: EVIDENCE LEDGER
+[2026-05-17 16:14:15] [INFO] [PASS] Primary claim status: primary_evidence
+[2026-05-17 16:14:15] [INFO]       Falsification status: TEP NOT FALSIFIED
+[2026-05-17 16:14:15] [INFO]       Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_049_evidence_ledger.json
+[2026-05-17 16:14:15] [INFO]       Evidence tier summary: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_049_evidence_tier_summary.json
+[2026-05-17 16:14:15] [INFO] ================================================================================
+[2026-05-17 16:14:15] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-17 16:14:15] [INFO] ================================================================================

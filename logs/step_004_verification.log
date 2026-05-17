@@ -1,48 +1,48 @@
-[2026-05-15 13:08:25] [INFO] ================================================================================
-[2026-05-15 13:08:25] [INFO] STEP step_004_verification STARTED
-[2026-05-15 13:08:25] [INFO] Description: Verification and validation of TEP detection
-[2026-05-15 13:08:25] [INFO] Physics: Testing robustness against alternative explanations and systematic errors
-[2026-05-15 13:08:25] [INFO] Method: Independent verification, blind analysis, alternative ISM phenomenon tests
-[2026-05-15 13:08:25] [INFO] ================================================================================
-[2026-05-15 13:08:25] [INFO] ═══ ======================================================================
-[2026-05-15 13:08:25] [INFO] ═══ TEP-J0437 Step 004: Verification & Validation
-[2026-05-15 13:08:25] [INFO] ═══ ======================================================================
-[2026-05-15 13:08:25] [INFO]       Testing H0: mean(geometric_delta_us) = 0 via multiple approaches
-[2026-05-15 13:08:26] [INFO]       
+[2026-05-17 16:04:17] [INFO] ================================================================================
+[2026-05-17 16:04:17] [INFO] STEP step_004_verification STARTED
+[2026-05-17 16:04:17] [INFO] Description: Verification and validation of TEP detection
+[2026-05-17 16:04:17] [INFO] Physics: Testing robustness against alternative explanations and systematic errors
+[2026-05-17 16:04:17] [INFO] Method: Independent verification, blind analysis, alternative ISM phenomenon tests
+[2026-05-17 16:04:17] [INFO] ================================================================================
+[2026-05-17 16:04:17] [INFO] ═══ ======================================================================
+[2026-05-17 16:04:17] [INFO] ═══ TEP-J0437 Step 004: Verification & Validation
+[2026-05-17 16:04:17] [INFO] ═══ ======================================================================
+[2026-05-17 16:04:17] [INFO]       Testing H0: mean(geometric_delta_us) = 0 via multiple approaches
+[2026-05-17 16:04:17] [INFO]       
 Loaded 19167 triplets from 1391 epochs
-[2026-05-15 13:08:26] [INFO]       Overall mean: +0.300 ns  (t = +0.85sigma)
-[2026-05-15 13:08:26] [INFO]       
+[2026-05-17 16:04:17] [INFO]       Overall mean: +0.300 ns  (t = +0.85sigma)
+[2026-05-17 16:04:17] [INFO]       
 ======================================================================
-[2026-05-15 13:08:26] [INFO] ═══ TEST 1: TEMPORAL HOLDOUT
-[2026-05-15 13:08:26] [DEBUG] [CALC] Temporal Holdout: Train |H|=26.886 (t=81.84sigma), Holdout |H|=27.806 (t=41.50sigma)
-[2026-05-15 13:08:26] [DEBUG] [CALC]   Holdout consistency: MATCH
-[2026-05-15 13:08:26] [INFO] [PASS] [OK] Temporal holdout completed
-[2026-05-15 13:08:26] [INFO]       
+[2026-05-17 16:04:17] [INFO] ═══ TEST 1: TEMPORAL HOLDOUT
+[2026-05-17 16:04:17] [DEBUG] [CALC] Temporal Holdout: Train |H|=26.770 (t=82.35sigma), Holdout |H|=28.280 (t=40.59sigma)
+[2026-05-17 16:04:17] [DEBUG] [CALC]   Holdout consistency: MATCH
+[2026-05-17 16:04:17] [INFO] [PASS] [OK] Temporal holdout completed
+[2026-05-17 16:04:17] [INFO]       
 ======================================================================
-[2026-05-15 13:08:26] [INFO] ═══ TEST 2: POWER ANALYSIS
-[2026-05-15 13:08:26] [DEBUG] [CALC] Power Analysis: Cohen's d = 0.6628, MDE = 0.9853 ns
-[2026-05-15 13:08:26] [DEBUG] [CALC]   Power status: Observed |H| (27.0711 ns) EXCEEDS MDE
-[2026-05-15 13:08:26] [INFO] [PASS] [OK] Power analysis completed
-[2026-05-15 13:08:26] [INFO]       
+[2026-05-17 16:04:17] [INFO] ═══ TEST 2: POWER ANALYSIS
+[2026-05-17 16:04:17] [DEBUG] [CALC] Power Analysis: Cohen's d = 0.6628, MDE = 0.9853 ns
+[2026-05-17 16:04:17] [DEBUG] [CALC]   Power status: Observed |H| (27.0711 ns) EXCEEDS MDE
+[2026-05-17 16:04:17] [INFO] [PASS] [OK] Power analysis completed
+[2026-05-17 16:04:17] [INFO]       
 ======================================================================
-[2026-05-15 13:08:26] [INFO] ═══ TEST 3: BOOTSTRAP CONFIDENCE INTERVAL
-[2026-05-15 13:08:28] [INFO] [PASS] [OK] Bootstrap CI completed
-[2026-05-15 13:08:28] [INFO]       
+[2026-05-17 16:04:17] [INFO] ═══ TEST 3: BOOTSTRAP CONFIDENCE INTERVAL
+[2026-05-17 16:04:19] [INFO] [PASS] [OK] Bootstrap CI completed
+[2026-05-17 16:04:19] [INFO]       
 ======================================================================
-[2026-05-15 13:08:28] [INFO] ═══ TEST 4: SIGN CONSISTENCY
-[2026-05-15 13:08:28] [INFO] [PASS] [OK] Sign consistency completed
-[2026-05-15 13:08:28] [INFO]       
+[2026-05-17 16:04:19] [INFO] ═══ TEST 4: SIGN CONSISTENCY
+[2026-05-17 16:04:19] [INFO] [PASS] [OK] Sign consistency completed
+[2026-05-17 16:04:19] [INFO]       
 ======================================================================
-[2026-05-15 13:08:28] [INFO] ═══ VERIFICATION SUMMARY
-[2026-05-15 13:08:28] [INFO]       ======================================================================
-[2026-05-15 13:08:28] [INFO]         temporal_holdout: PASS
-[2026-05-15 13:08:28] [INFO]         power_analysis: PASS
-[2026-05-15 13:08:28] [INFO]         bootstrap_ci: PASS
-[2026-05-15 13:08:28] [INFO]         sign_consistency: PASS
-[2026-05-15 13:08:28] [INFO]       
+[2026-05-17 16:04:19] [INFO] ═══ VERIFICATION SUMMARY
+[2026-05-17 16:04:19] [INFO]       ======================================================================
+[2026-05-17 16:04:19] [INFO]         temporal_holdout: PASS
+[2026-05-17 16:04:19] [INFO]         power_analysis: PASS
+[2026-05-17 16:04:19] [INFO]         bootstrap_ci: PASS
+[2026-05-17 16:04:19] [INFO]         sign_consistency: PASS
+[2026-05-17 16:04:19] [INFO]       
 Tests passed: 4/4
-[2026-05-15 13:08:28] [INFO]       Total time: 2.1 seconds
-[2026-05-15 13:08:28] [INFO]       Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_004_independent_verification_results.json
-[2026-05-15 13:08:28] [INFO] ================================================================================
-[2026-05-15 13:08:28] [INFO] STEP COMPLETED SUCCESSFULLY (2.1 seconds)
-[2026-05-15 13:08:28] [INFO] ================================================================================
+[2026-05-17 16:04:19] [INFO]       Total time: 2.0 seconds
+[2026-05-17 16:04:19] [INFO]       Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_004_independent_verification_results.json
+[2026-05-17 16:04:19] [INFO] ================================================================================
+[2026-05-17 16:04:19] [INFO] STEP COMPLETED SUCCESSFULLY (2.0 seconds)
+[2026-05-17 16:04:19] [INFO] ================================================================================

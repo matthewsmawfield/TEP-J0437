@@ -1,9 +1,9 @@
 {
   "effect_size": {
-    "cohen_d": -0.002871159460262301,
+    "cohen_d": -0.002871159460262295,
     "cohen_d_abs": 0.39733122749272043,
-    "t_statistic": -0.10708308594236023,
-    "p_value": 0.9147385183113574,
+    "t_statistic": -0.10708308594236002,
+    "p_value": 0.9147385183113577,
     "test_passed_primary": true,
     "test_passed_signed_diagnostic": false,
     "test_passed": true
@@ -27,28 +27,28 @@
     "cv_results": [
       {
         "fold": 0,
-        "test_mean_abs_ns": 12.25742446868565,
-        "test_t": 9.21198219357926
+        "test_mean_abs_ns": 11.281236253973633,
+        "test_t": 12.211795104476916
       },
       {
         "fold": 1,
-        "test_mean_abs_ns": 13.519078221957665,
-        "test_t": 8.165749649062581
+        "test_mean_abs_ns": 12.05204302043254,
+        "test_t": 8.242032185944035
       },
       {
         "fold": 2,
-        "test_mean_abs_ns": 12.045038170340993,
-        "test_t": 11.55387985599694
+        "test_mean_abs_ns": 12.647665246238061,
+        "test_t": 11.068389652463674
       },
       {
         "fold": 3,
-        "test_mean_abs_ns": 11.824410398241787,
-        "test_t": 10.344902283706382
+        "test_mean_abs_ns": 12.371297246710775,
+        "test_t": 9.955655422560923
       },
       {
         "fold": 4,
-        "test_mean_abs_ns": 10.43465779773679,
-        "test_t": 11.201941389048567
+        "test_mean_abs_ns": 11.728367289607869,
+        "test_t": 8.411083831349139
       }
     ],
     "all_positive": true,
@@ -61,10 +61,10 @@
     "n_epochs": 1093,
     "fold_size": 218,
     "global_full_sample": {
-      "psi_mean_rad": 0.9840495457197854,
-      "r_bar": 0.30759393239598287,
-      "rayleigh_z": 59.21367260354874,
-      "rayleigh_p": 1.3864824207812792e-13,
+      "psi_mean_rad": 0.9840495457197855,
+      "r_bar": 0.3075939323959829,
+      "rayleigh_z": 59.21367260354876,
+      "rayleigh_p": 1.3864824207812638e-13,
       "v_stat": 4.260397380796272,
       "v_p": 2.0406376031625597e-05
     },
@@ -73,81 +73,81 @@
       {
         "fold": 0,
         "n_epochs_holdout": 218,
-        "psi_mean_rad": 1.0120641928989937,
-        "r_bar": 0.2516072133599018,
-        "rayleigh_z": 8.114555235272453,
-        "rayleigh_p": 0.01729604151821673,
-        "v_stat": 1.510078900914547,
-        "v_p": 0.13102329255416087,
-        "cos_delta_vs_global_mean": 0.9996076154353387,
+        "psi_mean_rad": 0.5829419608969362,
+        "r_bar": 0.3045406611548955,
+        "rayleigh_z": 12.15138682511994,
+        "rayleigh_p": 0.0022980521353072893,
+        "v_stat": 2.9101789366912043,
+        "v_p": 0.003612218840982387,
+        "cos_delta_vs_global_mean": 0.9206291152923595,
         "same_open_halfplane_as_global": true
       },
       {
         "fold": 1,
         "n_epochs_holdout": 218,
-        "psi_mean_rad": 1.1573566824354449,
-        "r_bar": 0.23828919007548244,
-        "rayleigh_z": 7.47498907884206,
-        "rayleigh_p": 0.023813692718798494,
-        "v_stat": 1.098433157188307,
-        "v_p": 0.27201539049533985,
-        "cos_delta_vs_global_mean": 0.9850198690303165,
+        "psi_mean_rad": 1.0348303196405,
+        "r_bar": 0.2733942964705707,
+        "rayleigh_z": 9.522800387506143,
+        "rayleigh_p": 0.008553624277431665,
+        "v_stat": 1.5758839765243136,
+        "v_p": 0.11505254439022267,
+        "cos_delta_vs_global_mean": 0.9987109335439689,
         "same_open_halfplane_as_global": true
       },
       {
         "fold": 2,
         "n_epochs_holdout": 218,
-        "psi_mean_rad": 0.9350399874099465,
-        "r_bar": 0.29565290523906335,
-        "rayleigh_z": 11.346924772633143,
-        "rayleigh_p": 0.003435948077427975,
-        "v_stat": 2.000180670341262,
-        "v_p": 0.04548075828807167,
-        "cos_delta_vs_global_mean": 0.998799271965409,
+        "psi_mean_rad": 1.0390319385587812,
+        "r_bar": 0.26635268539636375,
+        "rayleigh_z": 8.631659397808459,
+        "rayleigh_p": 0.013355463874161902,
+        "v_stat": 1.4897113080977593,
+        "v_p": 0.13630016000283915,
+        "cos_delta_vs_global_mean": 0.9984888489885239,
         "same_open_halfplane_as_global": true
       },
       {
         "fold": 3,
         "n_epochs_holdout": 218,
-        "psi_mean_rad": 0.9958315317740193,
-        "r_bar": 0.4589902556728983,
-        "rayleigh_z": 25.090958049221296,
-        "rayleigh_p": 3.5609648497489666e-06,
-        "v_stat": 2.7239680885002424,
-        "v_p": 0.006450273860576242,
-        "cos_delta_vs_global_mean": 0.9999305932052076,
+        "psi_mean_rad": 1.3134275924606416,
+        "r_bar": 0.3802529976360742,
+        "rayleigh_z": 16.43882627235227,
+        "rayleigh_p": 0.0002693731038572265,
+        "v_stat": 1.0320150825884016,
+        "v_p": 0.3020650519601611,
+        "cos_delta_vs_global_mean": 0.9462437001561925,
         "same_open_halfplane_as_global": true
       },
       {
         "fold": 4,
         "n_epochs_holdout": 218,
-        "psi_mean_rad": 0.8577355337190045,
-        "r_bar": 0.3136564647774921,
-        "rayleigh_z": 13.255023146519672,
-        "rayleigh_p": 0.0013234523059392222,
-        "v_stat": 2.3816001789079033,
-        "v_p": 0.017237601500756063,
-        "cos_delta_vs_global_mean": 0.992032986602826,
+        "psi_mean_rad": 1.0057865412963236,
+        "r_bar": 0.3464521708390785,
+        "rayleigh_z": 16.437322243205415,
+        "rayleigh_p": 0.00026957575254484933,
+        "v_stat": 2.170768117287373,
+        "v_p": 0.0299487051450189,
+        "cos_delta_vs_global_mean": 0.999763760813731,
         "same_open_halfplane_as_global": true
       }
     ],
     "n_folds_rayleigh_p_lt_0_05": 5,
     "min_folds_rayleigh_required": 4,
-    "n_folds_v_p_lt_0_05": 3,
+    "n_folds_v_p_lt_0_05": 2,
     "all_folds_same_open_halfplane_as_global": true,
     "test_passed": true
   },
   "bayesian_model": {
-    "delta_bic": 393.9326713690625,
-    "log10_bf": 85.54139270849548,
+    "delta_bic": 393.9326713690634,
+    "log10_bf": 85.54139270849568,
     "test_passed": true
   },
   "annual_modulation": {
-    "t_asymmetry": 8.578483896472244,
-    "h1_significance": 25.802842223337624,
+    "t_asymmetry": 8.578483896472251,
+    "h1_significance": 25.80284222333763,
     "h2_significance": 26.314908302243357,
-    "h1_mean_abs_ns": 34.571841052287766,
-    "h2_mean_abs_ns": 21.165947498716093,
+    "h1_mean_abs_ns": 34.57184105228777,
+    "h2_mean_abs_ns": 21.16594749871609,
     "test_passed": true,
     "note": "TEP does not predict constant |H| across Earth's orbit. Test checks both halves show independent detection (t > 3)."
   }

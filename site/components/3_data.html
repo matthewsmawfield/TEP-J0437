@@ -2,7 +2,7 @@
 
 <h3>3.1 Multi-Pulsar Dataset</h3>
 
-<p>This study analyzes scintillation data from 15 pulsars. The primary detection is obtained from PSR J0437-4715; PSR J1603-7202 provides complementary geometric evidence through bipolar structure and variance decomposition; Jiamusi and MeerKAT provide noise-limited control/bounding data. The dataset combines Parkes observations of nearby millisecond pulsars with Jiamusi telescope observations of more distant pulsars and MeerKAT observations of three additional pulsars, spanning a range of distances (~156 pc to ~3700 pc), proper motions, and scattering environments.</p>
+<p>This study analyzes scintillation data from 15 pulsars. The primary detection is obtained from PSR J0437-4715; PSR J1603-7202 provides complementary geometric evidence through bipolar structure and variance decomposition; Jiamusi and MeerKAT provide noise-limited bounding data. The dataset combines Parkes observations of nearby millisecond pulsars with Jiamusi telescope observations of more distant pulsars and MeerKAT observations of three additional pulsars (J0908-1739, J0922-0638, J1731-4744), spanning a range of distances (~156 pc to ~3700 pc), proper motions, and scattering environments.</p>
 
 <table class="data-table">
     <thead>
@@ -37,8 +37,8 @@
             <td>Jiamusi</td>
             <td>1000 ± 200</td>
             <td>(7.10, −11.75)</td>
-            <td>3</td>
-            <td>448</td>
+            <td>0</td>
+            <td>0</td>
         </tr>
         <tr>
             <td>B0355+54</td>
@@ -46,7 +46,7 @@
             <td>1000 ± 200</td>
             <td>(9.17, 0.70)</td>
             <td>1</td>
-            <td>180</td>
+            <td>20</td>
         </tr>
         <tr>
             <td>B0540+23</td>
@@ -54,7 +54,7 @@
             <td>1600 ± 300</td>
             <td>(2.50, −21.80)</td>
             <td>2</td>
-            <td>276</td>
+            <td>40</td>
         </tr>
         <tr>
             <td>B0740-28</td>
@@ -70,7 +70,7 @@
             <td>2100 ± 400</td>
             <td>(−73.70, −62.70)</td>
             <td>1</td>
-            <td>2</td>
+            <td>20</td>
         </tr>
         <tr>
             <td>B1933+16</td>
@@ -86,15 +86,15 @@
             <td>2900 ± 600</td>
             <td>(14.60, −2.60)</td>
             <td>1</td>
-            <td>159</td>
+            <td>20</td>
         </tr>
         <tr>
             <td>B2310+42</td>
             <td>Jiamusi</td>
             <td>1060 ± 210</td>
             <td>(−3.00, −6.00)</td>
-            <td>1</td>
-            <td>20</td>
+            <td>0</td>
+            <td>0</td>
         </tr>
         <tr>
             <td>B2324+60</td>
@@ -117,16 +117,16 @@
             <td>MeerKAT</td>
             <td>400 ± 100</td>
             <td>Unknown</td>
-            <td>1</td>
-            <td>63</td>
+            <td>0</td>
+            <td>0</td>
         </tr>
         <tr>
             <td>J0922-0638</td>
             <td>MeerKAT</td>
             <td>1000 ± 200</td>
             <td>Unknown</td>
-            <td>1</td>
-            <td>63</td>
+            <td>0</td>
+            <td>0</td>
         </tr>
         <tr>
             <td>J1731-4744</td>
@@ -134,7 +134,7 @@
             <td>400 ± 100</td>
             <td>Unknown</td>
             <td>1</td>
-            <td>63</td>
+            <td>20</td>
         </tr>
     </tbody>
 </table>
@@ -175,7 +175,7 @@
             <td>Pulsar Scintillation Archive</td>
             <td>Various</td>
             <td>Jiamusi 66m telescope archive</td>
-            <td>Noise-limited bounding constraints</td>
+            <td>ambient screening constraints</td>
         </tr>
         <tr>
             <td>J0908-1739, J0922-0638, J1731-4744</td>
@@ -183,16 +183,16 @@
             <td>Thousand-Pulsar-Array</td>
             <td>2019–2023</td>
             <td>SARAO / MeerKAT archive</td>
-            <td>Noise-limited bounding constraints</td>
+            <td>ambient screening constraints</td>
         </tr>
     </tbody>
 </table>
 
-<p><em>Note:</em> Jiamusi epoch and triplet counts reflect raw scintillation data availability. Five Jiamusi pulsars (B0355+54, B0540+23, B1508+55, B2154+40, B2310+42) produced viable closure triplets in the current pipeline configuration; the remaining five had raw data but did not yield closure-capable measurements. The three MeerKAT pulsars each have single-epoch observations with ~63 closure triplets, but unknown proper motions limit their geometric utility.</p>
+<p><em>Note:</em> Jiamusi epoch and triplet counts reflect raw scintillation data availability. Four Jiamusi pulsars (B0355+54, B0540+23, B1508+55, B2154+40) produced viable closure triplets in the current pipeline configuration; the remaining six had raw data but did not yield closure-capable measurements. Of the three MeerKAT pulsars, only J1731-4744 produced a viable closure measurement (1 epoch, 20 triplets); J0908-1739 and J0922-0638 did not yield closure-capable data. Unknown proper motions limit MeerKAT geometric utility.</p>
 
 <h4>3.1.1 Parkes Pulsars (J0437-4715, J1603-7202)</h4>
 
-<p>The Parkes Pulsar Timing Array (PPTA) Data Release 2 provides multiband ($732\text{--}3104 \text{ MHz}$) observations spanning 2002–2018. The dataset includes 2296 epochs spanning L-band ($\sim 1400 \text{ MHz}$) and UHF ($\sim 3000 \text{ MHz}$) frequencies.</p>
+<p>The Parkes Pulsar Timing Array (PPTA) Data Release 2 provides multiband ($732\text{--}3104 \text{ MHz}$) observations spanning 2002–2018. The J0437-4715 dataset includes 10,201 epochs spanning L-band ($\sim 1400 \text{ MHz}$) and UHF ($\sim 3000 \text{ MHz}$) frequencies; J1603-7202 contributes 761 epochs.</p>
 
 <p>The current analysis processes all cataloged epochs through steps 002–003 (secondary spectra and closure analysis). Of 1,391 epochs with measurable closure triplets, 1,093 have ≥5 triplets and form the independent sample; the remaining 298 are excluded from primary inference but retained for downstream analyses. The analysis includes both L-band and UHF observations, with the L-band subset providing the primary detection.</p>
 
@@ -206,7 +206,7 @@
 
 <p>The MeerKAT radio telescope (South Africa) provides observations of three pulsars via the Thousand-Pulsar-Array programme. Proper motions for these pulsars are not available in the current catalog; velocities are treated as unknown. These pulsars provide noise-limited bounding checks but do not contribute to geometric sign tests due to the missing velocity data.</p>
 
-<p>Dataset rationale: The 15-pulsar sample spans diverse distances, velocities, and ISM environments. The robust Phase Closure detection is confined to J0437-4715; J1603-7202 contributes complementary bipolar geometric diagnostics from the same Parkes/PPTA DR2 data family, supplying an independent line-of-sight geometric test of the Stokes-aligned holonomy pattern rather than a separate telescope systematics check. The Jiamusi and MeerKAT data provide noise-limited bounding checks against simple universal baseline offsets; their null status is consistent with TEP's predicted environmental suppression in dense, distant sightlines and confirms the gain requirement for phase-domain metrology at those distances. The velocity vector geometry (particularly the 73.8° proper motion vector separation between J0437 and J1603) provides a geometric test of TEP's velocity-dependent predictions.</p>
+<p>Dataset rationale: The 15-pulsar sample spans diverse distances, velocities, and ISM environments. The robust Phase Closure detection is confined to J0437-4715; J1603-7202 contributes complementary bipolar geometric validations from the same Parkes/PPTA DR2 data family, supplying an independent line-of-sight geometric test of the Stokes-aligned holonomy pattern rather than a separate telescope systematics check. The Jiamusi and MeerKAT data provide noise-limited bounding checks against simple universal baseline offsets; their null status is consistent with TEP's predicted environmental suppression in dense, distant sightlines, though this interpretation remains noise-limited and not independently diagnostic. The velocity vector geometry (particularly the 73.8° proper motion vector separation between J0437 and J1603) provides a geometric test of TEP's velocity-dependent predictions.</p>
 
 <h3>3.2 Data Processing Pipeline</h3>
 
@@ -260,7 +260,7 @@
 
 <p>Step 6: Stokes Alignment. Each triplet's oriented area in the $(\tau, f_D)$ plane determines its geometric sign. The effective velocity vector (pulsar proper motion plus Earth's orbital velocity, including annual aberration and Sagnac corrections) projects onto this area to yield the kinematic weighting factor. This alignment ensures that the signed delay correlates with velocity geometry as predicted by TEP. Earth's orbital velocity is obtained from the solar-system barycentric Earth state vector via <code>astropy.coordinates.get_body_barycentric_posvel</code> (astropy 6.1, built-in SOFA/ERFA ephemeris <code>epv00</code>), yielding agreement with JPL DE440 at the centimetre-per-second level.</p>
 
-<p>Step 7: Statistical Aggregation. The Phase Closure \(\psi\) across all triplets provides the primary TEP detection statistic. Under GR, \(\psi = 0\); under TEP, \(\psi \neq 0\) with magnitude scaling with scattering strength and path geometry. The bipolar prediction—opposite signs for opposite velocity projections—is tested via signed mean diagnostics. The magnitude $|H| = \langle |C_{ijk}| \rangle$ is analyzed as a secondary diagnostic, noting its susceptibility to noise floor bias.</p>
+<p>Step 7: Statistical Aggregation. The Phase Closure \(\psi\) across all triplets provides the primary TEP detection statistic. Under GR, \(\psi = 0\); under TEP, \(\psi \neq 0\) with magnitude scaling with scattering strength and path geometry. The bipolar prediction—opposite signs for opposite velocity projections—is tested via signed mean validations. The magnitude $|H| = \langle |C_{ijk}| \rangle$ is analyzed as a secondary validation, noting its susceptibility to noise floor bias.</p>
 
 <p>This metrology chain transforms raw telescope voltages into a physically interpretable measure of path-dependent time transport, with each step traceable to atomic clock standards and geometric observables.</p>
 
@@ -269,7 +269,7 @@
 <div class="note-box">
     <em>Glossary — Phase Closure estimators on the 1,093-epoch J0437-4715 sample:</em>
     <ul>
-        <li><em>Inverse-variance weighted circular mean</em> \(\bar{\psi}_w\) (primary precision summary): Epoch-level Phase Closure angles are aggregated with inverse-variance weights from delay-domain dispersion. Typical reported values include \(\bar{\psi}_w = 0.984 \pm 0.046\) rad (circular SE), \(R_{\mathrm{bar}} = 0.308\), Rayleigh \(p \approx 1.39\times10^{-13}\); epoch-level bootstrap 95% CI \([{+}0.740,{+}1.231]\) rad (Section&nbsp;4.1, Section&nbsp;3.4.1).</li>
+        <li><em>Inverse-variance weighted circular mean</em> \(\bar{\psi}_w\) (primary precision summary): Epoch-level Phase Closure angles are aggregated with inverse-variance weights from delay-domain dispersion. Typical reported values include \(\bar{\psi}_w = 0.984 \pm 0.046\) rad (circular SE), \(R_{\mathrm{bar}} = 0.308\), Rayleigh \(p \approx 1.39\times10^{-13}\); epoch-level bootstrap 95% CI \([{+}0.737,{+}1.235]\) rad (Section&nbsp;4.1, Section&nbsp;3.4.1).</li>
         <li><em>Unweighted circular mean</em> \(\bar{\psi}_{\mathrm{uw}}\) (frame-invariance baseline): Equal weight per epoch; identical \(\bar{\psi}_{\mathrm{uw}}\) in heliocentric and CMB frames for J0437. Typical values \(\bar{\psi}_{\mathrm{uw}} \approx {+}1.120\) rad, \(R_{\mathrm{bar}} \approx 0.304\), Rayleigh \(p \approx 1.34\times10^{-44}\); bootstrap 95% CI $[{+}0.990,{+}1.253]$ rad (Section&nbsp;4.13). Use \(\bar{\psi}_{\mathrm{uw}}\) when testing dependence on the velocity frame; use \(\bar{\psi}_w\) when quoting the inverse-variance pipeline summary.</li>
     </ul>
 </div>
@@ -309,7 +309,7 @@
     <tbody>
         <tr>
             <td>Raw processed</td>
-            <td>9,326</td>
+            <td>10,201</td>
             <td>—</td>
             <td>All epochs with secondary spectra (step 002 output)</td>
         </tr>
@@ -342,7 +342,7 @@
 
 <p>Every reported primary statistic refers to the 1,093-epoch independent sample. The 19,167 triplet count describes the full closure-capable dataset and is reported in the abstract and data tables for sample-size transparency. The 298 epochs excluded by the ≥5-triplet filter are retained in the raw results and used by downstream analyses (e.g., probabilistic weighting, bootstrap) that do not require epoch-level aggregation.</p>
 
-<p>Global Stokes-aligned Phase Closure: The primary TEP detection statistic is the Phase Closure \(\psi\), computed with circular statistics on the 1,093-epoch sample. The circular mean is \(\bar{\psi} = 0.984 \pm 0.046 \text{ rad}\) (circular SE, R_bar = 0.308, Rayleigh p = 1.39 × 10⁻¹³, V-test p = 2.04 × 10⁻⁵). An epoch-level circular bootstrap (10,000 iterations) yields a 95% CI of [+0.740, +1.231] rad, which excludes zero. The raw absolute magnitude is \(|H| = 8.100 \pm 0.102 \text{ ns}\), but a per-epoch folded-normal noise floor \(E[|H|] = 6.810 \pm 0.102\) ns quantitatively saturates this value, leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The Phase Closure \(\psi\) is therefore the primary TEP diagnostic; \(|H|\) remains a noise-floor-dominated diagnostic in the current dataset.</p>
+<p>Global Stokes-aligned Phase Closure: The primary TEP detection statistic is the Phase Closure \(\psi\), computed with circular statistics on the 1,093-epoch sample. The circular mean is \(\bar{\psi} = 0.984 \pm 0.046 \text{ rad}\) (circular SE, R_bar = 0.308, Rayleigh p = 1.39 × 10⁻¹³, V-test p = 2.04 × 10⁻⁵). An epoch-level circular bootstrap (10,000 iterations) yields a 95% CI of [+0.737, +1.235] rad, which excludes zero. The raw absolute magnitude is \(|H| = 8.100 \pm 0.102 \text{ ns}\), but a per-epoch folded-normal noise floor E[|H|] = 6.810 ns quantitatively saturates this value, leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The Phase Closure \(\psi\) is therefore the primary TEP validation; \(|H|\) remains a noise-floor-dominated validation in the current dataset.</p>
 
 <p>The signed mean ($-0.184 \pm 0.102 \text{ ns}$, $-1.80\sigma$)—computed on Stokes-aligned closure delays—shows minimal bipolar bias, consistent with nearly isotropic sampling of the scattering geometry. This near-zero value indicates successful alignment of the bipolar signal (where positive and negative contributions cancel), confirming the expected parity behavior. The Phase Closure \(\psi\) measures the physical holonomy phase and is the primary detection metric.</p>
 
@@ -399,7 +399,7 @@
     </tbody>
 </table>
 
-<p>Multiple Comparison Correction: Bonferroni correction is applied for the 4 primary diagnostic tests (aggregate mean, |H| magnitude, negative delays, positive delays). Uncorrected \(\alpha = 0.05\), corrected \(\alpha = 0.0125\). All reported significance values account for this correction.</p>
+<p>Multiple Comparison Correction: Bonferroni correction is applied for the 4 primary validation tests (aggregate mean, |H| magnitude, negative delays, positive delays). Uncorrected \(\alpha = 0.05\), corrected \(\alpha = 0.0125\). All reported significance values account for this correction.</p>
 
 <p>The closure delay distribution for J0437-4715 exhibits the expected behavior for interstellar scattering data. The Bayesian analysis provides robust estimates of the mean and uncertainty despite the presence of outliers, which are handled through probabilistic weighting.</p>
 

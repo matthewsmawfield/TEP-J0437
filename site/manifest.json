@@ -5,7 +5,10 @@
   "version": "v0.1",
   "codename": "Sintra",
   "author": "Matthew Lukin Smawfield",
-  "date": "First published: 14 May 2026 / Last update: 14 May 2026",
+  "date": {
+    "first_published": "17 May 2026",
+    "last_updated": "17 May 2026"
+  },
   "description": "Detection of non-zero synchronization holonomy in pulsar scintillation closure delays consistent with the Temporal Equivalence Principle.",
   "doi": "10.5281/zenodo.19454620",
   "start_url": ".",

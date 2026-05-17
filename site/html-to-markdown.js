@@ -163,7 +163,7 @@ class HTMLToMarkdownConverter {
             const citationPath = path.join(__dirname, '..', 'CITATION.cff');
             let author = 'Matthew Lukin Smawfield';
             let version = 'v0.1 (Sintra)';
-            let dateReleased = '2026-05-14';
+            let dateReleased = '2026-05-17';
             let doi = '';
             
             if (fs.existsSync(citationPath)) {

@@ -1,44 +1,44 @@
-[2026-05-15 12:57:49] [INFO] ================================================================================
-[2026-05-15 12:57:49] [INFO] STEP step_000_data_ingestion STARTED
-[2026-05-15 12:57:49] [INFO] Description: Data acquisition from CSIRO Data Access Portal
-[2026-05-15 12:57:49] [INFO] Physics: Retrieving calibrated dynamic spectra for PSR J0437-4715 and PSR J1603-7202
-[2026-05-15 12:57:49] [INFO] Method: DOI-resolved CSIRO DAP retrieval with SHA-256 manifest verification
-[2026-05-15 12:57:49] [INFO] ================================================================================
-[2026-05-15 12:57:49] [INFO] ═══ ======================================================================
-[2026-05-15 12:57:49] [INFO] ═══ STEP 000: DATA INGESTION
-[2026-05-15 12:57:49] [INFO] ═══ ======================================================================
-[2026-05-15 12:57:49] [INFO]       ======================================================================
-[2026-05-15 12:57:49] [INFO] ═══ CSIRO DAP ingestion: J0437-4715 (10.25919/5f3cd2bc1c213)
-[2026-05-15 12:57:49] [INFO]       ======================================================================
-[2026-05-15 12:57:49] [INFO]       J0437-4715: manifest includes 2 non-API metadata sidecar entries; enforcing CSIRO DAP ./data/ members only.
-[2026-05-15 12:57:52] [INFO]       J0437-4715: classifying 13271 manifest files with 14 workers.
-[2026-05-15 12:57:56] [INFO]       J0437-4715: inventory verified=13271, missing=0, corrupted=0.
-[2026-05-15 12:57:56] [INFO] [PASS] J0437-4715: all manifest files already verified; no downloads required.
-[2026-05-15 12:57:56] [INFO]       Using cached CSIRO file index for collection 46012: 13271 files
-[2026-05-15 12:58:01] [INFO] [PASS] J0437-4715: verified 13271 manifest files (13270 dynamic spectra; downloaded=0, cached=13271, missing=0, corrupted=0).
-[2026-05-15 12:58:01] [INFO]       ======================================================================
-[2026-05-15 12:58:01] [INFO] ═══ CSIRO DAP ingestion: J1603-7202 (10.25919/82f5-mh79)
-[2026-05-15 12:58:01] [INFO]       ======================================================================
-[2026-05-15 12:58:01] [INFO]       J1603-7202: manifest includes 2 non-API metadata sidecar entries; enforcing CSIRO DAP ./data/ members only.
-[2026-05-15 12:58:03] [INFO]       J1603-7202: classifying 765 manifest files with 14 workers.
-[2026-05-15 12:58:03] [INFO]       J1603-7202: inventory verified=765, missing=0, corrupted=0.
-[2026-05-15 12:58:03] [INFO] [PASS] J1603-7202: all manifest files already verified; no downloads required.
-[2026-05-15 12:58:03] [INFO]       Using cached CSIRO file index for collection 53483: 765 files
-[2026-05-15 12:58:03] [INFO] [PASS] J1603-7202: verified 765 manifest files (764 dynamic spectra; downloaded=0, cached=765, missing=0, corrupted=0).
-[2026-05-15 12:58:03] [INFO]       Supplementary Scintools ATNF epochs for J0437-4715
-[2026-05-15 12:58:04] [WARNING] [WARN] WARNING: Scintools supplementary download failed for 10 files; continuing with primary PPTA data only.
-[2026-05-15 12:58:08] [INFO] [PASS] AUDIT J0437-4715: 13270/13270 dynspec present; verified=13270; missing=0; mismatch=0
-[2026-05-15 12:58:08] [INFO] [PASS] AUDIT J1603-7202: 764/764 dynspec present; verified=764; missing=0; mismatch=0
-[2026-05-15 12:58:08] [INFO] [PASS] AUDIT Jiamusi: 33/33 epochs present
-[2026-05-15 12:58:08] [INFO]       Audit saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/data/raw/ingestion_audit.json
-[2026-05-15 12:58:08] [INFO] ═══ 
+[2026-05-17 15:54:27] [INFO] ================================================================================
+[2026-05-17 15:54:27] [INFO] STEP step_000_data_ingestion STARTED
+[2026-05-17 15:54:27] [INFO] Description: Data acquisition from CSIRO Data Access Portal
+[2026-05-17 15:54:27] [INFO] Physics: Retrieving calibrated dynamic spectra for PSR J0437-4715 and PSR J1603-7202
+[2026-05-17 15:54:27] [INFO] Method: DOI-resolved CSIRO DAP retrieval with SHA-256 manifest verification
+[2026-05-17 15:54:27] [INFO] ================================================================================
+[2026-05-17 15:54:27] [INFO] ═══ ======================================================================
+[2026-05-17 15:54:27] [INFO] ═══ STEP 000: DATA INGESTION
+[2026-05-17 15:54:27] [INFO] ═══ ======================================================================
+[2026-05-17 15:54:27] [INFO]       ======================================================================
+[2026-05-17 15:54:27] [INFO] ═══ CSIRO DAP ingestion: J0437-4715 (10.25919/5f3cd2bc1c213)
+[2026-05-17 15:54:27] [INFO]       ======================================================================
+[2026-05-17 15:54:27] [INFO]       J0437-4715: manifest includes 2 non-API metadata sidecar entries; enforcing CSIRO DAP ./data/ members only.
+[2026-05-17 15:54:31] [INFO]       J0437-4715: classifying 13271 manifest files with 14 workers.
+[2026-05-17 15:54:35] [INFO]       J0437-4715: inventory verified=13271, missing=0, corrupted=0.
+[2026-05-17 15:54:35] [INFO] [PASS] J0437-4715: all manifest files already verified; no downloads required.
+[2026-05-17 15:54:35] [INFO]       Using cached CSIRO file index for collection 46012: 13271 files
+[2026-05-17 15:54:38] [INFO] [PASS] J0437-4715: verified 13271 manifest files (13270 dynamic spectra; downloaded=0, cached=13271, missing=0, corrupted=0).
+[2026-05-17 15:54:38] [INFO]       ======================================================================
+[2026-05-17 15:54:38] [INFO] ═══ CSIRO DAP ingestion: J1603-7202 (10.25919/82f5-mh79)
+[2026-05-17 15:54:38] [INFO]       ======================================================================
+[2026-05-17 15:54:38] [INFO]       J1603-7202: manifest includes 2 non-API metadata sidecar entries; enforcing CSIRO DAP ./data/ members only.
+[2026-05-17 15:54:42] [INFO]       J1603-7202: classifying 765 manifest files with 14 workers.
+[2026-05-17 15:54:42] [INFO]       J1603-7202: inventory verified=765, missing=0, corrupted=0.
+[2026-05-17 15:54:42] [INFO] [PASS] J1603-7202: all manifest files already verified; no downloads required.
+[2026-05-17 15:54:42] [INFO]       Using cached CSIRO file index for collection 53483: 765 files
+[2026-05-17 15:54:42] [INFO] [PASS] J1603-7202: verified 765 manifest files (764 dynamic spectra; downloaded=0, cached=765, missing=0, corrupted=0).
+[2026-05-17 15:54:42] [INFO]       Supplementary Scintools ATNF epochs for J0437-4715
+[2026-05-17 15:54:42] [WARNING] [WARN] WARNING: Scintools supplementary download failed for 10 files; continuing with primary PPTA data only.
+[2026-05-17 15:54:47] [INFO] [PASS] AUDIT J0437-4715: 13270/13270 dynspec present; verified=13270; missing=0; mismatch=0
+[2026-05-17 15:54:47] [INFO] [PASS] AUDIT J1603-7202: 764/764 dynspec present; verified=764; missing=0; mismatch=0
+[2026-05-17 15:54:47] [INFO] [PASS] AUDIT Jiamusi: 33/33 epochs present
+[2026-05-17 15:54:47] [INFO]       Audit saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/data/raw/ingestion_audit.json
+[2026-05-17 15:54:47] [INFO] ═══ 
 ======================================================================
-[2026-05-15 12:58:08] [INFO] ═══ DATA INGESTION SUMMARY
-[2026-05-15 12:58:08] [INFO] ═══ ======================================================================
-[2026-05-15 12:58:08] [INFO] [PASS] J0437-4715: 13271 manifest files verified (13270 dynamic spectra)
-[2026-05-15 12:58:08] [INFO] [PASS] J1603-7202: 765 manifest files verified (764 dynamic spectra)
-[2026-05-15 12:58:08] [WARNING] [WARN] Scintools supplement: 0/10 files available
-[2026-05-15 12:58:08] [INFO]       Catalog saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/data/raw/ingestion_catalog.json
-[2026-05-15 12:58:08] [INFO] ================================================================================
-[2026-05-15 12:58:08] [INFO] STEP COMPLETED SUCCESSFULLY (19.5 seconds)
-[2026-05-15 12:58:08] [INFO] ================================================================================
+[2026-05-17 15:54:47] [INFO] ═══ DATA INGESTION SUMMARY
+[2026-05-17 15:54:47] [INFO] ═══ ======================================================================
+[2026-05-17 15:54:47] [INFO] [PASS] J0437-4715: 13271 manifest files verified (13270 dynamic spectra)
+[2026-05-17 15:54:47] [INFO] [PASS] J1603-7202: 765 manifest files verified (764 dynamic spectra)
+[2026-05-17 15:54:47] [WARNING] [WARN] Scintools supplement: 0/10 files available
+[2026-05-17 15:54:47] [INFO]       Catalog saved: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/data/raw/ingestion_catalog.json
+[2026-05-17 15:54:47] [INFO] ================================================================================
+[2026-05-17 15:54:47] [INFO] STEP COMPLETED SUCCESSFULLY (19.6 seconds)
+[2026-05-17 15:54:47] [INFO] ================================================================================

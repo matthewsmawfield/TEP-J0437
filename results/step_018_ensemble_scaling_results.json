@@ -1,39 +1,15 @@
 {
   "status": "insufficient_data",
-  "n_pulsars_with_data": 2,
-  "pulsars": [
-    "J0437-4715",
-    "J1603-7202"
-  ],
+  "n_pulsars_with_data": 0,
+  "pulsars": [],
   "message": "Ensemble scaling analysis requires at least 3 pulsars with kinematics data. Current analysis limited to 2 pulsars (J0437-4715, J1603-7202). Full ensemble analysis pending additional pulsar data.",
   "observed_data": {
-    "pulsars": [
-      "J0437-4715",
-      "J1603-7202"
-    ],
-    "phase_z": [
-      20.352872328258897,
-      18.340943454173928
-    ],
-    "h_raw": [
-      8.100162219444181,
-      2.5572479699421744
-    ],
-    "h_noise": [
-      6.810334179171245,
-      2.331948534977354
-    ],
-    "h_excess": [
-      1.289828040272936,
-      0.2252994349648203
-    ],
-    "predictor": [
-      30.673475978333524,
-      15.836174029518274
-    ],
-    "distances": [
-      156.3,
-      250.0
-    ]
+    "pulsars": [],
+    "phase_z": [],
+    "h_raw": [],
+    "h_noise": [],
+    "h_excess": [],
+    "predictor": [],
+    "distances": []
   }
 }

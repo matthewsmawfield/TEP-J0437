@@ -1,18 +1,18 @@
-[2026-05-15 13:17:54] [INFO] ================================================================================
-[2026-05-15 13:17:54] [INFO] STEP step_012_environmental_dependence STARTED
-[2026-05-15 13:17:54] [INFO] Description: Environmental dependence and Ambient Symmetry Restoration analysis
-[2026-05-15 13:17:54] [INFO] Physics: TEP v0.8 continuous gradient suppression: α_eff ∝ D^-1.6 scaling with Galactocentric distance
-[2026-05-15 13:17:54] [INFO] Method: Temporal Shear scaling relations, Ambient Symmetry Restoration predictions, multi-pulsar replication framework
-[2026-05-15 13:17:54] [INFO] ================================================================================
-[2026-05-15 13:17:54] [INFO]       ================================================================================
-[2026-05-15 13:17:54] [INFO]       STEP 012: ENVIRONMENTAL DEPENDENCE ANALYSIS
-[2026-05-15 13:17:54] [INFO]       ================================================================================
-[2026-05-15 13:17:54] [INFO]       Analyzing environmental dependence of holonomy magnitude
-[2026-05-15 13:17:54] [INFO]       Purpose: Establish framework for independent replication studies
-[2026-05-15 13:17:54] [INFO]       Loaded closure delays from /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_003_closure_final_summary.json
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO] STEP step_012_environmental_dependence STARTED
+[2026-05-17 16:12:11] [INFO] Description: Environmental dependence and Ambient Symmetry Restoration analysis
+[2026-05-17 16:12:11] [INFO] Physics: TEP v0.8 continuous gradient suppression: α_eff ∝ D^-1.6 scaling with Galactocentric distance
+[2026-05-17 16:12:11] [INFO] Method: Temporal Shear scaling relations, Ambient Symmetry Restoration predictions, multi-pulsar replication framework
+[2026-05-17 16:12:11] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO]       ================================================================================
+[2026-05-17 16:12:11] [INFO]       STEP 012: ENVIRONMENTAL DEPENDENCE ANALYSIS
+[2026-05-17 16:12:11] [INFO]       ================================================================================
+[2026-05-17 16:12:11] [INFO]       Analyzing environmental dependence of holonomy magnitude
+[2026-05-17 16:12:11] [INFO]       Purpose: Establish framework for independent replication studies
+[2026-05-17 16:12:11] [INFO]       Loaded closure delays from /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_003_closure_final_summary.json
+[2026-05-17 16:12:11] [INFO]       
 Density Correlation Analysis:
-[2026-05-15 13:17:54] [INFO]       {
+[2026-05-17 16:12:11] [INFO]       {
   "shear_correlation": {
     "note": "Full analysis requires multi-pulsar data",
     "current_limitation": "Single pulsar (J0437-4715) limits environmental dependence analysis",
@@ -21,45 +21,45 @@ Density Correlation Analysis:
     "status": "deferred_to_multi_pulsar_analysis"
   }
 }
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO]       
 Predictions for Candidate Replication Pulsars:
-[2026-05-15 13:17:54] [INFO]       --------------------------------------------------------------------------------
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO]       --------------------------------------------------------------------------------
+[2026-05-17 16:12:11] [INFO]       
 Pulsar: PSR J0437-4715
-[2026-05-15 13:17:54] [INFO]         Distance: 156 pc
-[2026-05-15 13:17:54] [INFO]         Flux: 150 mJy
-[2026-05-15 13:17:54] [INFO]         Screen distances: [89.8, 124.0] pc
-[2026-05-15 13:17:54] [INFO]         Density: 1.00e-24 g/cm³
-[2026-05-15 13:17:54] [INFO]         |Observed H|: 8.100 ns
-[2026-05-15 13:17:54] [INFO]         Note: Current study - reference measurement. Temporal Shear unsuppressed in local ISM.
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO]         Distance: 156 pc
+[2026-05-17 16:12:11] [INFO]         Flux: 150 mJy
+[2026-05-17 16:12:11] [INFO]         Screen distances: [89.8, 124.0] pc
+[2026-05-17 16:12:11] [INFO]         Density: 1.00e-24 g/cm³
+[2026-05-17 16:12:11] [INFO]         |Observed H|: 8.100 ns
+[2026-05-17 16:12:11] [INFO]         Note: Current study - reference measurement. Temporal Shear unsuppressed in local ISM.
+[2026-05-17 16:12:11] [INFO]       
 Pulsar: PSR J1713+0747
-[2026-05-15 13:17:54] [INFO]         Distance: 1000 pc
-[2026-05-15 13:17:54] [INFO]         Flux: 8 mJy
-[2026-05-15 13:17:54] [INFO]         Screen distances: None pc
-[2026-05-15 13:17:54] [INFO]         Density: 1.00e-24 g/cm³
-[2026-05-15 13:17:54] [INFO]         |Predicted H|: None (requires screen distance measurement)
-[2026-05-15 13:17:54] [INFO]         Note: Candidate for replication - requires scintillation data to measure screen distances before prediction.
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO]         Distance: 1000 pc
+[2026-05-17 16:12:11] [INFO]         Flux: 8 mJy
+[2026-05-17 16:12:11] [INFO]         Screen distances: None pc
+[2026-05-17 16:12:11] [INFO]         Density: 1.00e-24 g/cm³
+[2026-05-17 16:12:11] [INFO]         |Predicted H|: None (requires screen distance measurement)
+[2026-05-17 16:12:11] [INFO]         Note: Candidate for replication - requires scintillation data to measure screen distances before prediction.
+[2026-05-17 16:12:11] [INFO]       
 Pulsar: PSR J1909-3744
-[2026-05-15 13:17:54] [INFO]         Distance: 1100 pc
-[2026-05-15 13:17:54] [INFO]         Flux: 3 mJy
-[2026-05-15 13:17:54] [INFO]         Screen distances: None pc
-[2026-05-15 13:17:54] [INFO]         Density: 1.00e-24 g/cm³
-[2026-05-15 13:17:54] [INFO]         |Predicted H|: None (requires screen distance measurement)
-[2026-05-15 13:17:54] [INFO]         Note: Candidate for replication - requires scintillation data to measure screen distances before prediction.
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO]         Distance: 1100 pc
+[2026-05-17 16:12:11] [INFO]         Flux: 3 mJy
+[2026-05-17 16:12:11] [INFO]         Screen distances: None pc
+[2026-05-17 16:12:11] [INFO]         Density: 1.00e-24 g/cm³
+[2026-05-17 16:12:11] [INFO]         |Predicted H|: None (requires screen distance measurement)
+[2026-05-17 16:12:11] [INFO]         Note: Candidate for replication - requires scintillation data to measure screen distances before prediction.
+[2026-05-17 16:12:11] [INFO]       
 Pulsar: PSR J1643-1224
-[2026-05-15 13:17:54] [INFO]         Distance: 350 pc
-[2026-05-15 13:17:54] [INFO]         Flux: 15 mJy
-[2026-05-15 13:17:54] [INFO]         Screen distances: None pc
-[2026-05-15 13:17:54] [INFO]         Density: 1.00e-24 g/cm³
-[2026-05-15 13:17:54] [INFO]         |Predicted H|: None (requires screen distance measurement)
-[2026-05-15 13:17:54] [INFO]         Note: Candidate for replication - requires scintillation data to measure screen distances before prediction.
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO]         Distance: 350 pc
+[2026-05-17 16:12:11] [INFO]         Flux: 15 mJy
+[2026-05-17 16:12:11] [INFO]         Screen distances: None pc
+[2026-05-17 16:12:11] [INFO]         Density: 1.00e-24 g/cm³
+[2026-05-17 16:12:11] [INFO]         |Predicted H|: None (requires screen distance measurement)
+[2026-05-17 16:12:11] [INFO]         Note: Candidate for replication - requires scintillation data to measure screen distances before prediction.
+[2026-05-17 16:12:11] [INFO]       
 Replication Framework:
-[2026-05-15 13:17:54] [INFO]       --------------------------------------------------------------------------------
-[2026-05-15 13:17:54] [INFO]       {
+[2026-05-17 16:12:11] [INFO]       --------------------------------------------------------------------------------
+[2026-05-17 16:12:11] [INFO]       {
   "target_pulsar_criteria": {
     "minimum_flux_mjy": 50,
     "minimum_observation_years": 5,
@@ -95,11 +95,11 @@ Replication Framework:
     "reproducibility": "Independent groups obtain consistent results"
   }
 }
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:12:11] [INFO]       
 Results saved to: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_012_environmental_dependence_results.json
-[2026-05-15 13:17:54] [INFO]       ================================================================================
-[2026-05-15 13:17:54] [INFO]       STEP 012 COMPLETED SUCCESSFULLY
-[2026-05-15 13:17:54] [INFO]       ================================================================================
-[2026-05-15 13:17:54] [INFO] ================================================================================
-[2026-05-15 13:17:54] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
-[2026-05-15 13:17:54] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO]       ================================================================================
+[2026-05-17 16:12:11] [INFO]       STEP 012 COMPLETED SUCCESSFULLY
+[2026-05-17 16:12:11] [INFO]       ================================================================================
+[2026-05-17 16:12:11] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO] STEP COMPLETED SUCCESSFULLY (0.0 seconds)
+[2026-05-17 16:12:11] [INFO] ================================================================================

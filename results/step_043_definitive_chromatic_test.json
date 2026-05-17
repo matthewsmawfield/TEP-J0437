@@ -4,33 +4,33 @@
   "valid_for_primary_inference": false,
   "method": "Hierarchical diagnostic model with frequency exponent",
   "best_fit_params": {
-    "log_alpha": -5.0,
-    "alpha": 0.006737946999085467,
-    "beta": 0.4511503178302047,
-    "gamma": -1.4347961600098402,
-    "delta": 2.0,
+    "log_alpha": -2.3959668612827905,
+    "alpha": 0.09108457019062394,
+    "beta": -2.0,
+    "gamma": -1.713065607604279,
+    "delta": 0.13669658086703687,
     "cal_parkes": 0.0,
     "cal_jiamusi": 1.0
   },
   "model_comparison": {
     "M_TEP": {
-      "aic": 237.92079620610798,
-      "bic": 238.23856237282732,
-      "log_likelihood": -114.96039810305399
+      "aic": 100.35209022787595,
+      "bic": 100.1357308240972,
+      "log_likelihood": -46.176045113937974
     },
     "M_ISM": {
-      "aic": 901.7475288144002,
-      "bic": 902.0652949811196,
-      "log_likelihood": -446.8737644072001
+      "aic": 801.9907531542374,
+      "bic": 801.7743937504587,
+      "log_likelihood": -396.9953765771187
     },
     "M_general": {
-      "aic": 161.95022422109872,
-      "bic": 162.3474319294979,
-      "log_likelihood": -75.97511211054936
+      "aic": 104.08501093955144,
+      "bic": 103.814561684828,
+      "log_likelihood": -47.04250546977572
     }
   },
-  "preferred_model": "M_general",
-  "interpretation": "Unexpected positive frequency dependence; fitted exponent is on an optimizer boundary, so the cross-pulsar frequency exponent is not interpretable as evidence.",
+  "preferred_model": "M_TEP",
+  "interpretation": "Consistent with achromatic TEP (\u03b4 = 0)",
   "limitations": [
     "Cross-pulsar fit uses unsigned |H| amplitudes, which are folded-noise-floor biased.",
     "Bounding rows constrain amplitudes but are not positive phase detections.",
@@ -96,7 +96,7 @@
       "freq": 1380,
       "telescope": "Parkes",
       "quality": "phase_significant",
-      "phase_sigma": 7.397618739814267,
+      "phase_sigma": 7.397618739814268,
       "valid_for_primary_inference": false,
       "log_eta": -4.849421082035526,
       "log_D_eff": 3.6246608817872854,
@@ -153,7 +153,7 @@
       "freq": 1380,
       "telescope": "Parkes",
       "quality": "bounding",
-      "phase_sigma": -0.2497989958311154,
+      "phase_sigma": -0.24979899583111512,
       "valid_for_primary_inference": false,
       "log_eta": -4.828412181561052,
       "log_D_eff": 4.135166556742356,
@@ -217,25 +217,6 @@
       "log_v": 3.912023005428146,
       "log_freq": 7.718685495198466,
       "log_H": 2.075468152144135
-    },
-    {
-      "pulsar": "B2310",
-      "H": 15.406194262952932,
-      "H_excess": 1.1309320971533623,
-      "H_err": 4.123722593103148,
-      "eta": 0.014355952600021035,
-      "D_eff": 254.5937976979736,
-      "v": 50.0,
-      "freq": 2250,
-      "telescope": "Jiamusi",
-      "quality": "bounding",
-      "phase_sigma": 0.0,
-      "valid_for_primary_inference": false,
-      "log_eta": -4.243590607456126,
-      "log_D_eff": 5.539669324860248,
-      "log_v": 3.912023005428146,
-      "log_freq": 7.718685495198466,
-      "log_H": 2.73476965341592
     }
   ]
 }

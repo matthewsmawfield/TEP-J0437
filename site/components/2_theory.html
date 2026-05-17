@@ -7,44 +7,39 @@
     inhomogeneities creates multiple propagation paths. These paths interfere in
     the observer's dynamic spectrum, producing characteristic patterns that
     encode information about the scattering geometry. In standard scintillation theory, each scattered propagation path is
-    assigned a scalar delay. Differential delays between paths are simply
+    assigned a scalar delay \(\tau_i\). Differential delays are
     differences of these scalars, so the closure sum around any triplet vanishes
     identically by arithmetic—a property termed synchronization consistency.
 </p>
 
 <p>
-    The closure delay \(\tau_{\text{closure}}\) is the sum of differential
-    delays around a triplet of scattered propagation paths through the
-    interstellar medium. Consider a triplet of scintillation arclets indexed by
-    \(i, j, k\) forming a closed loop. The differential delay between paths
-    \(i\) and \(j\) is \(\tau_{ij} = \tau_j - \tau_i\), representing the
-    difference in propagation time. The closure delay for the loop \(i \to j \to
-    k \to i\) is defined as:
+    The <em>closure residual</em> \(C_{ijk}\) tests this additive representation.
+    Each cross-term \(\hat{\tau}_{ab}\) is independently measured from the
+    secondary-spectrum peak between scattered paths \(a\) and \(b\) via sub-pixel
+    interpolation. For a triplet of scintillation arclets indexed by \(i, j, k\)
+    forming a closed loop, the closure residual is:
 </p>
 
 <div class="equation">
-    \begin{equation} \label{eq:closure_delay} \tau_{\text{closure}} = \tau_{ij}
-    + \tau_{jk} + \tau_{ki} \end{equation}
+    \begin{equation} \label{eq:closure_residual}
+    C_{ijk} = \hat{\tau}_{ij} + \hat{\tau}_{jk} + \hat{\tau}_{ki}
+    \end{equation}
 </div>
 
 <p>
-    where \(\tau_{ki} = \tau_i - \tau_k = -\tau_{ik}\) completes the closed
-    path. Geometrically, this sums the differential delays around the complete
-    loop, independent of absolute arrival times.
-</p>
-
-<p>
-    In standard scintillation theory, \(\tau_{\text{closure}}\) serves as a null test of
-    the additive scalar path-delay model. The closure delay construction cancels
+    Under the additive-delay null hypothesis, there exists a scalar assignment
+    \(\tau_i\) such that \(\hat{\tau}_{ab} = \tau_b - \tau_a\) within measurement
+    noise, implying \(C_{ijk} \equiv 0\). The closure construction cancels
     common-mode contributions—including standard relativistic effects that apply
     equally to all scattered paths—by design, isolating only path-dependent
-    contributions. TEP predicts a non-zero synchronization holonomy \(H\), which
-    is the line integral of the disformal potential along the closed path in
-    spacetime. This holonomy—a geometric phase for clocks—arises because
-    non-gravitational fields couple to the physical or matter metric
-    \(\tilde{g}_{\mu\nu}\), for which the 1-form \(d\tilde{\tau}\) is
-    non-integrable in the presence of a gradient in the time field \(\phi\). The
-    observed closure delay relates to the holonomy magnitude as:
+    contributions that violate the additive representation. TEP predicts a
+    non-zero synchronization holonomy \(H\), which is the line integral of the
+    disformal potential along the closed path in spacetime. This holonomy—a
+    geometric phase for clocks—arises because non-gravitational fields couple
+    to the physical or matter metric \(\tilde{g}_{\mu\nu}\), for which the 1-form
+    \(d\tilde{\tau}\) is non-integrable in the presence of a gradient in the time
+    field \(\phi\). The observed closure delay relates to the holonomy magnitude
+    as:
 </p>
 
 <div class="equation">
@@ -61,17 +56,33 @@
 </p>
 
 <p>
-    The primary detection statistic is the <em>Phase Closure</em> \(\psi\), constructed from the geometric phase of the closure delay triplet. The absolute magnitude \(|H|\) is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation \(\sigma\), the expectation of the absolute value is \(\sigma\sqrt{2/\pi}\). For J0437-4715 the per-epoch noise floor is quantified at \(E[|H|] = 6.810 \pm 0.102\) ns, which saturates the raw unsigned mean (\(8.100 \pm 0.102\) ns), leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The Phase Closure \(\psi\) is an odd-parity metric that cancels to zero in the absence of path-dependent proper time and is immune to this bias:
+    The primary detection statistic is the <em>Phase Closure</em> \(\psi\), constructed from the geometric phase of the closure delay triplet. The absolute magnitude \(|H|\) is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation \(\sigma\), the expectation of the absolute value is \(\sigma\sqrt{2/\pi}\). For J0437-4715 the per-epoch noise floor is quantified at \(E[|H|] = 6.810\) ns, which saturates the raw unsigned mean (\(8.100 \pm 0.102\) ns), leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The Phase Closure \(\psi\) is an odd-parity metric that cancels to zero in the absence of path-dependent proper time and is immune to this bias:
 </p>
 
 <div class="equation">
-    \begin{equation} \label{eq:phase_closure} \psi = \frac{1}{3}\left(\phi_{ij} + \phi_{jk} + \phi_{ki}\right) \end{equation}
+    \begin{equation} \label{eq:phase_closure}
+    \psi_{ijk} = \operatorname{Arg}\!\left[\exp\!\left(i\left(\phi_{ij} + \phi_{jk} - \phi_{ik}\right)\right)\right]
+    \end{equation}
 </div>
 
 <p>
-    where \(\phi_{ij}\) represents the phase of the correlation between scattered
-    paths \(i\) and \(j\). TEP predicts \(\psi \neq 0\) while the additive-delay null hypothesis
-    predicts \(\psi = 0\).
+    where \(\phi_{ab}\) is the phase of the cross-term between scattered
+    paths \(a\) and \(b\), measured directly from the secondary spectrum.
+    The minus sign on \(\phi_{ik}\) reflects the actual geometry: the three
+    independently measured cross-terms are \((i,j)\), \((j,k)\) and the direct
+    difference \((i,k)\); their closure is \(\phi_{ij} + \phi_{jk} - \phi_{ik}\).
+    For a sample of \(N\) triplet measurements, the circular mean is:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:phase_closure_mean}
+    \bar{\psi} = \operatorname{Arg}\!\left[\frac{1}{N}\sum_{ijk} \exp\!\left(i\psi_{ijk}\right)\right]
+    \end{equation}
+</div>
+
+<p>
+    TEP predicts \(\bar{\psi} \neq 0\) while the additive-delay null hypothesis
+    predicts \(\bar{\psi} = 0\).
 </p>
 
 <h4>2.1.1 Statistical Motivation for Phase Closure</h4>
@@ -79,22 +90,22 @@
 <p>
     The choice of \(\psi\) as the primary detection statistic follows from the
     symmetry properties of the closure delay distribution, independent of any
-    specific theoretical framework. The closure delay \(\tau_{\text{closure}}\)
-    can be represented as a complex quantity \(Z = \tau_{\text{closure}} + i
+    specific theoretical framework. The closure residual \(C_{ijk}\)
+    can be represented as a complex quantity \(Z = C_{ijk} + i
     \cdot f_{D,\text{closure}}\), where the real part is the group-delay closure
     and the imaginary part is the Doppler-frequency closure. The Phase Closure
-    is then \(\psi = \arg(Z) = \arctan2(f_{D,\text{closure}},
-    \tau_{\text{closure}})\).
+    is then \(\psi_{ijk} = \arg(Z) = \arctan2(f_{D,\text{closure}},
+    C_{ijk})\), wrapped to \([-\pi, \pi)\).
 </p>
 
 <p>
     Under the null hypothesis of additive delays (standard physics), both
-    \(\tau_{\text{closure}}\) and \(f_{D,\text{closure}}\) are identically zero
+    \(C_{ijk}\) and \(f_{D,\text{closure}}\) are identically zero
     in the absence of measurement noise. Measurement noise produces a symmetric
     cloud around the origin in the complex plane, yielding \(\langle \psi
     \rangle = 0\) because \(\arctan2(y, x)\) is an odd function of both
     arguments for uncorrelated noise. The absolute magnitude \(|H| = \langle
-    |\tau_{\text{closure}}| \rangle\), however, is strictly positive under any
+    |C_{ijk}| \rangle\), however, is strictly positive under any
     noise model—it measures the mean absolute deviation, not a physical
     holonomy. This is the Rice-distribution bias: \(|H| > 0\) even when no
     signal is present.
@@ -117,12 +128,52 @@
 <p>
     The TEP framework—a two-metric scalar-tensor theory introduced in Paper
     0—makes a central prediction that directly contrasts with the standard
-    additive-delay model: the synchronization holonomy must be non-zero. Where the
+    additive-delay model: the synchronization holonomy must be non-zero. The
+    theory posits a disformal coupling between a scalar field $\phi$ and the
+    matter metric $\tilde{g}_{\mu\nu}$ (Bekenstein 1993; Koivisto & Zumalacárregui 2012):
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:disformal_metric}
+    \tilde{g}_{\mu\nu} = A^2(\phi) g_{\mu\nu} + B(\phi) \nabla_\mu\phi \nabla_\nu\phi
+    \end{equation}
+</div>
+
+<p>
+    where $g_{\mu\nu}$ is the Einstein metric governing gravitational dynamics,
+    $A(\phi)$ is the conformal coupling function, and $B(\phi)$ is the disformal
+    coupling parameter. TEP is a specific realization of this general disformal
+    ansatz, with the novel prediction that the time-transport 1-form
+    $d\tilde{\tau} = \tilde{g}_{0\mu} dx^\mu$ becomes non-integrable when $\nabla\phi \neq 0$.
+    The resulting synchronization holonomy $H = \oint_C d\tilde{\tau}$ is the line
+    integral of proper time around a closed spacetime loop, which vanishes identically
+    in single-metric theories (including General Relativity) but can be non-zero
+    in disformal theories with spatial field gradients.
+</p>
+
+<p>
+    In the presence of a field gradient, the exterior derivative of the delay 1-form
+    satisfies $d(d\tilde{\tau}) \propto \nabla B(\phi) \times \nabla\phi$ (in the
+    eikonal approximation), which is non-zero when both $B(\phi)$ and $\nabla\phi$ vary
+    along the scattering path. By Stokes' theorem, the closure delay around a
+    triplet of scattered paths is:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:holonomy_stokes}
+    H = \oint_C d\tilde{\tau} = \int_S d(d\tilde{\tau}) \propto \int_S \nabla B(\phi) \times \nabla\phi
+    \end{equation}
+</div>
+
+<p>
+    where $S$ is the surface bounded by the closed scattering loop $C$. This
+    expression makes explicit that the non-zero closure is a geometric consequence
+    of the disformal coupling structure, not a measurement artifact. Where the
     single-metric null hypothesis requires the closure residual to vanish, TEP
     predicts path-dependent proper time accumulation as a consequence of disformal
     coupling in low-density environments where Temporal Shear remains
-    unsuppressed. The Phase Closure \(\psi\) provides a zero-centered test:
-    \(\psi = 0\) under the additive-delay null hypothesis, \(\psi \neq 0\) for TEP.
+    unsuppressed. The Phase Closure $\psi$ provides a zero-centered test:
+    $\psi = 0$ under the additive-delay null hypothesis, $\psi \neq 0$ for TEP.
 </p>
 
 <p>
@@ -145,7 +196,7 @@
 </p>
 
 <p>
-    Key distinction: TEP predicts a <em>bipolar</em> signal where the holonomy sign flips with velocity projection. The primary detection statistic is the Phase Closure \(\psi\), which represents the physical holonomy phase and is immune to noise-floor bias. The absolute magnitude \(|H|\) is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation \(\sigma\), the folded-normal expectation is \(E[|X|] = \sigma\sqrt{2/\pi}\). For J0437-4715 the per-epoch noise floor is quantified at \(E[|H|] = 6.810 \pm 0.102\) ns, which saturates the raw unsigned mean (\(8.100 \pm 0.102\) ns), leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The signed mean serves as a diagnostic quantity expected near zero due to bipolar cancellation, but the Phase Closure provides the primary test of TEP.
+    Key distinction: TEP predicts a <em>bipolar</em> signal where the holonomy sign flips with velocity projection. The primary detection statistic is the Phase Closure $\psi$, which represents the physical holonomy phase and is immune to noise-floor bias. The absolute magnitude $|H|$ is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation $\sigma$, the folded-normal expectation is $E[|X|] = \sigma\sqrt{2/\pi}$. For J0437-4715 the per-epoch noise floor is quantified at $E[|H|] = 6.810$ ns, which saturates the raw unsigned mean ($8.100 \pm 0.102$ ns), leaving a noise-subtracted excess of $1.290 \pm 0.102$ ns ($t = 12.7\sigma$). The signed mean serves as a physical metric expected near zero due to bipolar cancellation, but the Phase Closure provides the primary test of TEP.
 </p>
 
 <h3>2.3 The ISM as an Unscreened Laboratory</h3>
@@ -158,6 +209,31 @@
     $\sim 89.8$ pc and $\sim 124$ pc (Gwinn et al. 2006) create multiple path
     configurations that enable closure delay measurements around closed loops
     through the Galactic plasma.
+</p>
+
+<p>
+    The screening of scalar-tensor theories in high-density environments is a
+    well-studied phenomenon in modified gravity. In the chameleon mechanism
+    (Khoury & Weltman 2004), the scalar field mass increases with ambient density,
+    suppressing long-range forces in laboratory and Solar System environments.
+    Similarly, Vainshtein screening (Vainshtein 1972) operates through non-linear
+    derivative self-interactions that decouple the scalar field from matter in
+    regions of high gravitational potential. TEP incorporates these screening
+    mechanisms through the conformal-sector self-screening axiom (A4, Section 1),
+    which ensures that Temporal Shear is suppressed in dense environments such as
+    the white dwarf companion's vicinity.
+</p>
+
+<p>
+    The density-potential relation in TEP follows the form $\nabla\phi \propto
+    \rho^{-\alpha}$ for some exponent $\alpha > 0$, such that the field gradient
+    scales inversely with ambient density. In the ISM with $\rho \sim 10^{-24}$
+    g/cm$^3$, the unsuppressed gradient yields measurable holonomy. In the
+    binary companion's potential well with $\rho \sim 10^3$ g/cm$^3$, the gradient
+    is suppressed by many orders of magnitude, shielding orbital-scale kinematics
+    from TEP effects. This density-dependent screening is a generic feature of
+    disformal scalar-tensor theories (Sakstein 2015; Babichev & Fabbri 2014) and
+    is essential for consistency with existing gravitational tests.
 </p>
 
 <p>

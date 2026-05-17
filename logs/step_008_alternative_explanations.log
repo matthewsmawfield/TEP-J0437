@@ -1,81 +1,81 @@
-[2026-05-15 13:08:32] [INFO] ================================================================================
-[2026-05-15 13:08:32] [INFO] STEP step_008_alternative_explanations STARTED
-[2026-05-15 13:08:32] [INFO] Description: Alternative explanations testing
-[2026-05-15 13:08:32] [INFO] Physics: Systematic simulation of standard ISM and instrumental effects
-[2026-05-15 13:08:32] [INFO] Method: Scattering geometry simulation, screen multiplicity simulation, velocity gradient simulation, instrumental systematic simulation, bipolar structure reproduction test
-[2026-05-15 13:08:32] [INFO] ================================================================================
-[2026-05-15 13:08:32] [INFO]       ============================================================
-[2026-05-15 13:08:32] [INFO]       STEP 008: ALTERNATIVE EXPLANATIONS TESTING
-[2026-05-15 13:08:32] [INFO]       ============================================================
-[2026-05-15 13:08:32] [INFO]       ============================================================
-[2026-05-15 13:08:32] [INFO]       TEST 1: THIN-SCREEN KOLMOGOROV SCINTILLATION
-[2026-05-15 13:08:32] [INFO]         200 realisations, Fresnel=1.97e+08m, r_diff=5.90e+07m
-[2026-05-15 13:08:34] [INFO]           50/200
-[2026-05-15 13:08:36] [INFO]           100/200
-[2026-05-15 13:08:37] [INFO]           150/200
-[2026-05-15 13:08:39] [INFO]           200/200
-[2026-05-15 13:08:39] [INFO]         Observed |H|=8.100 ns, ψ=0.9840 rad (20.4σ)
-[2026-05-15 13:08:39] [INFO]         Simulated |H|=0.000000 ns, ψ=0.000000 rad
-[2026-05-15 13:08:39] [INFO]         ISS ruled out: True
-[2026-05-15 13:08:39] [INFO]       ============================================================
-[2026-05-15 13:08:39] [INFO]       TEST 2: TWO-SCREEN INTERFERENCE
-[2026-05-15 13:08:40] [INFO]         100 realisations with two independent Kolmogorov screens
-[2026-05-15 13:08:41] [INFO]           25/100
-[2026-05-15 13:08:42] [INFO]           50/100
-[2026-05-15 13:08:43] [INFO]           75/100
-[2026-05-15 13:08:45] [INFO]           100/100
-[2026-05-15 13:08:45] [INFO]         Observed |H|=8.100 ns, Simulated |H|=0.000000 ns
-[2026-05-15 13:08:45] [INFO]       ============================================================
-[2026-05-15 13:08:45] [INFO]       TEST 3: INSTRUMENTAL SYSTEMATICS
-[2026-05-15 13:08:45] [INFO]         Observed (N=19167): |H|=8.100 ns, ψ=0.9840 rad
-[2026-05-15 13:08:45] [INFO]         Instrumental (N=410751): |H|=7.966 ns, ψ=0.0024 ± 0.0034 rad
-[2026-05-15 13:08:45] [INFO]         ψ vs instrumental null: 286.4σ
-[2026-05-15 13:08:45] [INFO]       ============================================================
-[2026-05-15 13:08:45] [INFO]       TEST 4: VELOCITY GRADIENT EFFECTS
-[2026-05-15 13:08:45] [INFO]         100 realisations, physical upper limit: 0.2 ns
-[2026-05-15 13:08:45] [INFO]         Observed |H|=8.100 ns, Simulated |H|=0.100024 ns
-[2026-05-15 13:08:45] [INFO]         Observed/Simulated ratio: 80.98
-[2026-05-15 13:08:45] [INFO]         Velocity gradient ruled out: True
-[2026-05-15 13:08:45] [INFO]       ============================================================
-[2026-05-15 13:08:45] [INFO]       TEST 5: BIPOLAR STRUCTURE REPRODUCTION
-[2026-05-15 13:08:45] [INFO]         Observed bipolar structure:
-[2026-05-15 13:08:45] [INFO]           Negative mean: -26.529 ns
-[2026-05-15 13:08:45] [INFO]           Positive mean: 27.623 ns
-[2026-05-15 13:08:45] [INFO]           Magnitude ratio: 0.960
-[2026-05-15 13:08:46] [INFO]         Fraction of ISM simulations matching bipolarity: 0.0%
-[2026-05-15 13:08:46] [INFO]         Bipolar structure ruled out: True
-[2026-05-15 13:08:46] [INFO]       ============================================================
-[2026-05-15 13:08:46] [INFO]       TEST 6: THICK SCREEN SCATTERING
-[2026-05-15 13:08:46] [INFO]         100 realisations with extended scattering region
-[2026-05-15 13:08:55] [INFO]         Observed |H|=8.100 ns, Simulated |H|=0.000000 ns
-[2026-05-15 13:08:55] [INFO]       ============================================================
-[2026-05-15 13:08:55] [INFO]       TEST 7: ANISOTROPIC TURBULENCE
-[2026-05-15 13:08:55] [INFO]         100 realisations, anisotropy ratio: 3.0
-[2026-05-15 13:08:59] [INFO]         Observed |H|=8.100 ns, Simulated |H|=0.000000 ns
-[2026-05-15 13:08:59] [INFO]       ============================================================
-[2026-05-15 13:08:59] [INFO]       TEST 8: LOCALIZED ANISOTROPIC STRUCTURE (DEVIL'S ADVOCATE)
-[2026-05-15 13:08:59] [INFO]         12800 total runs: 200 realisations x 4 aspect x 4 strength x 4 size
-[2026-05-15 13:09:40] [INFO]           1000/12800
-[2026-05-15 13:10:19] [INFO]           2000/12800
-[2026-05-15 13:11:01] [INFO]           3000/12800
-[2026-05-15 13:11:43] [INFO]           4000/12800
-[2026-05-15 13:12:24] [INFO]           5000/12800
-[2026-05-15 13:13:04] [INFO]           6000/12800
-[2026-05-15 13:13:45] [INFO]           7000/12800
-[2026-05-15 13:14:25] [INFO]           8000/12800
-[2026-05-15 13:15:05] [INFO]           9000/12800
-[2026-05-15 13:15:49] [INFO]           10000/12800
-[2026-05-15 13:16:34] [INFO]           11000/12800
-[2026-05-15 13:17:20] [INFO]           12000/12800
-[2026-05-15 13:17:54] [INFO]         Observed |H|=8.100 ns, ψ=0.9840 rad
-[2026-05-15 13:17:54] [INFO]         Simulated |H|=0.000000 ns (max 0.000000), ψ=0.000000 rad
-[2026-05-15 13:17:54] [INFO]         Simulated ψ SEM: 0.000000 rad
-[2026-05-15 13:17:54] [INFO]         ψ vs null separation: infσ
-[2026-05-15 13:17:54] [INFO]         Spurious velocity correlation: r = 0.0000
-[2026-05-15 13:17:54] [INFO]         Best-case params: {}
-[2026-05-15 13:17:54] [INFO]       
+[2026-05-17 16:04:23] [INFO] ================================================================================
+[2026-05-17 16:04:23] [INFO] STEP step_008_alternative_explanations STARTED
+[2026-05-17 16:04:23] [INFO] Description: Alternative explanations testing
+[2026-05-17 16:04:23] [INFO] Physics: Systematic simulation of standard ISM and instrumental effects
+[2026-05-17 16:04:23] [INFO] Method: Scattering geometry simulation, screen multiplicity simulation, velocity gradient simulation, instrumental systematic simulation, bipolar structure reproduction test
+[2026-05-17 16:04:23] [INFO] ================================================================================
+[2026-05-17 16:04:23] [INFO]       ============================================================
+[2026-05-17 16:04:23] [INFO]       STEP 008: ALTERNATIVE EXPLANATIONS TESTING
+[2026-05-17 16:04:23] [INFO]       ============================================================
+[2026-05-17 16:04:23] [INFO]       ============================================================
+[2026-05-17 16:04:23] [INFO]       TEST 1: THIN-SCREEN KOLMOGOROV SCINTILLATION
+[2026-05-17 16:04:23] [INFO]         200 realisations, Fresnel=1.97e+08m, r_diff=5.90e+07m
+[2026-05-17 16:04:24] [INFO]           50/200
+[2026-05-17 16:04:26] [INFO]           100/200
+[2026-05-17 16:04:27] [INFO]           150/200
+[2026-05-17 16:04:28] [INFO]           200/200
+[2026-05-17 16:04:28] [INFO]         Observed |H|=8.100 ns, ψ=0.9840 rad (20.4σ)
+[2026-05-17 16:04:28] [INFO]         Simulated |H|=0.000000 ns, ψ=0.000000 rad
+[2026-05-17 16:04:28] [INFO]         ISS ruled out: True
+[2026-05-17 16:04:28] [INFO]       ============================================================
+[2026-05-17 16:04:28] [INFO]       TEST 2: TWO-SCREEN INTERFERENCE
+[2026-05-17 16:04:28] [INFO]         100 realisations with two independent Kolmogorov screens
+[2026-05-17 16:04:29] [INFO]           25/100
+[2026-05-17 16:04:30] [INFO]           50/100
+[2026-05-17 16:04:31] [INFO]           75/100
+[2026-05-17 16:04:32] [INFO]           100/100
+[2026-05-17 16:04:32] [INFO]         Observed |H|=8.100 ns, Simulated |H|=0.000000 ns
+[2026-05-17 16:04:32] [INFO]       ============================================================
+[2026-05-17 16:04:32] [INFO]       TEST 3: INSTRUMENTAL SYSTEMATICS
+[2026-05-17 16:04:33] [INFO]         Observed (N=19167): |H|=8.100 ns, ψ=0.9840 rad
+[2026-05-17 16:04:33] [INFO]         Instrumental (N=410751): |H|=7.966 ns, ψ=0.0024 ± 0.0034 rad
+[2026-05-17 16:04:33] [INFO]         ψ vs instrumental null: 286.4σ
+[2026-05-17 16:04:33] [INFO]       ============================================================
+[2026-05-17 16:04:33] [INFO]       TEST 4: VELOCITY GRADIENT EFFECTS
+[2026-05-17 16:04:33] [INFO]         100 realisations, physical upper limit: 0.2 ns
+[2026-05-17 16:04:33] [INFO]         Observed |H|=8.100 ns, Simulated |H|=0.100024 ns
+[2026-05-17 16:04:33] [INFO]         Observed/Simulated ratio: 80.98
+[2026-05-17 16:04:33] [INFO]         Velocity gradient ruled out: True
+[2026-05-17 16:04:33] [INFO]       ============================================================
+[2026-05-17 16:04:33] [INFO]       TEST 5: BIPOLAR STRUCTURE REPRODUCTION
+[2026-05-17 16:04:33] [INFO]         Observed bipolar structure:
+[2026-05-17 16:04:33] [INFO]           Negative mean: -26.529 ns
+[2026-05-17 16:04:33] [INFO]           Positive mean: 27.623 ns
+[2026-05-17 16:04:33] [INFO]           Magnitude ratio: 0.960
+[2026-05-17 16:04:33] [INFO]         Fraction of ISM simulations matching bipolarity: 0.0%
+[2026-05-17 16:04:33] [INFO]         Bipolar structure ruled out: True
+[2026-05-17 16:04:33] [INFO]       ============================================================
+[2026-05-17 16:04:33] [INFO]       TEST 6: THICK SCREEN SCATTERING
+[2026-05-17 16:04:33] [INFO]         100 realisations with extended scattering region
+[2026-05-17 16:04:41] [INFO]         Observed |H|=8.100 ns, Simulated |H|=0.000000 ns
+[2026-05-17 16:04:41] [INFO]       ============================================================
+[2026-05-17 16:04:41] [INFO]       TEST 7: ANISOTROPIC TURBULENCE
+[2026-05-17 16:04:41] [INFO]         100 realisations, anisotropy ratio: 3.0
+[2026-05-17 16:04:44] [INFO]         Observed |H|=8.100 ns, Simulated |H|=0.000000 ns
+[2026-05-17 16:04:44] [INFO]       ============================================================
+[2026-05-17 16:04:44] [INFO]       TEST 8: LOCALIZED ANISOTROPIC STRUCTURE (DEVIL'S ADVOCATE)
+[2026-05-17 16:04:44] [INFO]         12800 total runs: 200 realisations x 4 aspect x 4 strength x 4 size
+[2026-05-17 16:05:14] [INFO]           1000/12800
+[2026-05-17 16:05:44] [INFO]           2000/12800
+[2026-05-17 16:06:13] [INFO]           3000/12800
+[2026-05-17 16:06:43] [INFO]           4000/12800
+[2026-05-17 16:07:13] [INFO]           5000/12800
+[2026-05-17 16:07:42] [INFO]           6000/12800
+[2026-05-17 16:08:12] [INFO]           7000/12800
+[2026-05-17 16:08:42] [INFO]           8000/12800
+[2026-05-17 16:09:22] [INFO]           9000/12800
+[2026-05-17 16:10:10] [INFO]           10000/12800
+[2026-05-17 16:10:54] [INFO]           11000/12800
+[2026-05-17 16:11:37] [INFO]           12000/12800
+[2026-05-17 16:12:11] [INFO]         Observed |H|=8.100 ns, ψ=0.9840 rad
+[2026-05-17 16:12:11] [INFO]         Simulated |H|=0.000000 ns (max 0.000000), ψ=0.000000 rad
+[2026-05-17 16:12:11] [INFO]         Simulated ψ SEM: 0.000000 rad
+[2026-05-17 16:12:11] [INFO]         ψ vs null separation: infσ
+[2026-05-17 16:12:11] [INFO]         Spurious velocity correlation: r = 0.0000
+[2026-05-17 16:12:11] [INFO]         Best-case params: {}
+[2026-05-17 16:12:11] [INFO]       
 Results saved to /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/results/step_008_alternative_explanations_results.json
-[2026-05-15 13:17:54] [INFO]       STEP 008 COMPLETED
-[2026-05-15 13:17:54] [INFO] ================================================================================
-[2026-05-15 13:17:54] [INFO] STEP COMPLETED SUCCESSFULLY (562.4 seconds)
-[2026-05-15 13:17:54] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO]       STEP 008 COMPLETED
+[2026-05-17 16:12:11] [INFO] ================================================================================
+[2026-05-17 16:12:11] [INFO] STEP COMPLETED SUCCESSFULLY (468.0 seconds)
+[2026-05-17 16:12:11] [INFO] ================================================================================
