@@ -1,0 +1,21 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation",
+  "description": "Analysis pipeline for synchronization holonomy in pulsar scintillation via Temporal Equivalence Principle.",
+  "title": "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Matthew Lukin",
+      "familyName": "Smawfield",
+      "@id": "https://orcid.org/0009-0003-8219-3159"
+    }
+  ],
+  "version": "0.1",
+  "datePublished": "2026-05-17",
+  "dateModified": "2026-05-17",
+  "codeRepository": "https://github.com/matthewsmawfield/TEP-J0437",
+  "license": "https://spdx.org/licenses/CC-BY-4.0",
+  "identifier": "https://doi.org/10.5281/zenodo.19454620"
+}

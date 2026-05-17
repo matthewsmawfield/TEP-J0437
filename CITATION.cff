@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+title: "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation"
+message: "If you use this work, please cite it as below."
+type: article
+authors:
+  - family-names: "Smawfield"
+    given-names: "Matthew Lukin"
+    orcid: "https://orcid.org/0009-0003-8219-3159"
+version: "v0.1 (Sintra)"
+date-released: 2026-05-17
+doi: 10.5281/zenodo.19454620
+url: "https://github.com/matthewsmawfield/TEP-J0437"
+license: CC-BY-4.0
+keywords:
+  - Gravitation
+  - Astrometry
+  - pulsar scintillation
+  - Galaxy: disk
+  - Cosmology: dark matter
+  - Cosmology: modified gravity
+  - Temporal Equivalence Principle
+  - TEP
+  - synchronization holonomy
+  - closure delays
+  - PSR J0437-4715
+  - PSR J1603-7202
+  - multi-pulsar analysis
+  - scattering strength
+repository-code: "https://github.com/matthewsmawfield/TEP-J0437"
+
+preferred-citation:
+  type: article
+  title: "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation"
+  authors:
+    - family-names: Smawfield
+      given-names: Matthew Lukin
+      orcid: "https://orcid.org/0009-0003-8219-3159"
+  year: 2026
+  journal: Zenodo
+  doi: 10.5281/zenodo.19454620
+  identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19454620
+    description: Pre-print DOI
+  url: "https://doi.org/10.5281/zenodo.19454620"
+  notes: "Preprint v0.1 (Sintra)"

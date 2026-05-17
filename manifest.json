@@ -1,0 +1,93 @@
+{
+  "name": "TEP-J0437",
+  "short_name": "TEP-J0437",
+  "paper_number": 16,
+  "version": "v0.1",
+  "codename": "Sintra",
+  "author": "Matthew Lukin Smawfield",
+  "date": {
+    "first_published": "17 May 2026",
+    "last_updated": "17 May 2026"
+  },
+  "description": "Detection of non-zero synchronization holonomy in pulsar scintillation closure delays consistent with the Temporal Equivalence Principle.",
+  "doi": "10.5281/zenodo.19454620",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1C2E4A",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "public/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "public/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "title": "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation",
+  "sections": [
+    {
+      "id": "section-abstract",
+      "title": "Abstract",
+      "file": "0_abstract.html",
+      "order": 1
+    },
+    {
+      "id": "section-intro",
+      "title": "1. Introduction: Temporal Equivalence Principle and Observable Holonomy",
+      "file": "1_introduction.html",
+      "order": 2
+    },
+    {
+      "id": "section-theory",
+      "title": "2. Synchronization Holonomy in Pulsar Scintillation",
+      "file": "2_theory.html",
+      "order": 3
+    },
+    {
+      "id": "section-data",
+      "title": "3. Data and Methodology",
+      "file": "3_data.html",
+      "order": 4
+    },
+    {
+      "id": "section-results",
+      "title": "4. Results: Detection of Synchronization Holonomy",
+      "file": "4_results.html",
+      "order": 5
+    },
+    {
+      "id": "section-discussion",
+      "title": "5. Discussion",
+      "file": "5_discussion.html",
+      "order": 6
+    },
+    {
+      "id": "section-conclusions",
+      "title": "6. Conclusion",
+      "file": "6_conclusion.html",
+      "order": 7
+    },
+    {
+      "id": "section-references",
+      "title": "7. References",
+      "file": "7_references.html",
+      "order": 8
+    },
+    {
+      "id": "section-reproducibility",
+      "title": "8. Data Availability & Reproducibility",
+      "file": "8_reproducibility.html",
+      "order": 9
+    },
+    {
+      "id": "section-appendix",
+      "title": "Appendix A. Derivation of Synchronization Holonomy from Disformal Coupling",
+      "file": "9_appendix.html",
+      "order": 10
+    }
+  ]
+}
