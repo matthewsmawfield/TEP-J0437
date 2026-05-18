@@ -12,10 +12,6 @@ venv/
 *.fits
 *.h5
 *.hdf5
-*.dynspec
-*.dat
-data/raw/
-data/secondary/
 
 # IDE
 .idea/
