@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation"
 message: "If you use this work, please cite it as below."
-type: article
+type: software
 authors:
   - family-names: "Smawfield"
     given-names: "Matthew Lukin"
@@ -22,9 +22,9 @@ keywords:
   - Gravitation
   - Astrometry
   - pulsar scintillation
-  - Galaxy: disk
-  - Cosmology: dark matter
-  - Cosmology: modified gravity
+  - "Galaxy: disk"
+  - "Cosmology: dark matter"
+  - "Cosmology: modified gravity"
   - Temporal Equivalence Principle
   - TEP
   - synchronization holonomy
