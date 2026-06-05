@@ -1,4 +1,4 @@
-# The Soliton Wake: Exploring RBH-1 as a Temporal Topology Candidate
+# The Soliton Wake: Exploring RBH-1 as Temporal Topology
 **Matthew Lukin Smawfield**
 Version: v0.3 (Blantyre)
 First published: 28 December 2025 · Last updated: 29 April 2026
@@ -152,7 +152,7 @@ $ v_{\text{app}} \approx c \cdot z_{\text{metric}} \approx c \left( \frac{1}{A(\
 
 A critical distinction must be made between the core radius and the transition radius. The *temporal scale* $R_T \sim 7.8 \times 10^7$ km is the fundamental geometric scale where the field saturates (derived from $\rho_T$). However, because the Temporal Topology is flattened in the deep density well of the compact object, the local Temporal Shear (field gradient) is strongly suppressed in the core region. The observable kinematic effects therefore manifest at the *transition radius* $R_{\rm trans} \sim 0.1$–$1$ kpc, where the Temporal Shear recovers continuously from its suppressed value.
 
-The connection is that $R_{\rm trans}$ is not arbitrary; it scales with the core mass. In the TEP framework, the continuous spatial profile of the Temporal Shear Suppression field (Temporal Topology) governs the transition scale. While the exact prefactor depends on the coupling strength, the *existence* of a transition zone at $\sim$kpc scales for a $10^7 M_\odot$ object is a consequence of the underlying temporal topology geometry. The "shock" observed at the RBH-1 tip corresponds to the gradient of $A(\phi)$ at this transition boundary, where Temporal Shear has recovered sufficiently to produce an observable metric effect.
+The connection is that $R_{\rm trans}$ is not arbitrary; it scales with the core mass. In the TEP framework, the continuous spatial profile of the chameleon field (Temporal Topology) governs the transition scale. While the exact prefactor depends on the coupling strength, the *existence* of a transition zone at $\sim$kpc scales for a $10^7 M_\odot$ object is a consequence of the underlying temporal topology geometry. The "shock" observed at the RBH-1 tip corresponds to the gradient of $A(\phi)$ at this transition boundary, where Temporal Shear has recovered sufficiently to produce an observable metric effect.
 
 For a weak-field conformal coupling, $A(\phi) \approx 1 + 2\beta_{\text{eff}}\Phi/c^2$ where $\Phi = -GM/r$ is the Newtonian potential and $\beta_{\text{eff}}$ is the effective coupling strength (scalar charge) at the transition boundary where Temporal Shear has recovered. Substituting into the apparent velocity formula:
 
@@ -322,10 +322,10 @@ The above estimates assume the scalar field profile is governed by
 continuous Temporal Topology, where the local field gradient (Temporal
 Shear) is suppressed in deep density wells. The phenomenological scaling
 ansatz (detailed in Smawfield 2025e) is adopted:
-Unlike traditional Temporal Shear Suppression mechanisms that invoke discrete continuous gradient boundaries
+Unlike traditional chameleon mechanisms that invoke discrete thin-shell boundaries
 with sharp density cutoffs, TEP screening operates through continuous field gradient
 flattening. The Temporal Shear is gradually suppressed in deep potential wells,
-avoiding the fine-tuning problems of continuous gradient suppressions while maintaining
+avoiding the fine-tuning problems of thin-shell approximations while maintaining
 fifth-force suppression in dense environments.
 $S = \frac{\beta_0}{\beta_{\text{eff}}} \propto
 \left(\frac{\rho}{\rho_T}\right)^{1/3}$
@@ -740,7 +740,7 @@ Taylor, J. H., & Weisberg, J. M. 1982, *ApJ*, 253, 908 (DOI: 10.1086/159690)
 
 Tuo, Y. L., et al. 2024, *ApJ*, 966, 80 (DOI: 10.3847/1538-4357/ad2fb6; arXiv:2403.12137)
 
-Temporal Shear Suppression, A. I. 1972, *Phys. Lett. B*, 39, 393 (DOI: 10.1016/0370-2693(72)90147-5)
+Vainshtein, A. I. 1972, *Phys. Lett. B*, 39, 393 (DOI: 10.1016/0370-2693(72)90147-5)
 
 Weisberg, J. M., & Taylor, J. H. 2005, *Binary Radio Pulsars*, ASP Conf. Ser., 328, 25 (arXiv:astro-ph/0407149)
 

@@ -109,9 +109,9 @@ Related: [Paper 1 (Multi-Center)](https://matthewsmawfield.github.io/TEP-GNSS/) 
 The Temporal Equivalence Principle (TEP) represents a proposed extension to
 the foundations of General Relativity, positing a fundamental coupling
 between spatial and temporal fluctuations in geodetic measurements.
-Formulated within a Bi-Metric Geometry framework (TEP v0.8, Jakarta;
+Formulated within a Bi-Metric Geometry framework (TEP v0.7, Jakarta;
 Smawfield, 2025), the theory employs continuous geometric screening rather
-than discrete continuous gradient suppressions: the scalar time field exhibits a
+than discrete thin-shell approximations: the scalar time field exhibits a
 spatially varying Temporal Topology, and its gradient (Temporal Shear)
 drives the observable Temporal Shear response that manifests as synchronized fluctuations in
 the rate of proper time flow across spatially separated atomic clocks. High
@@ -1652,7 +1652,7 @@ The OPTIMAL_100 filter (100 spatially balanced stations) was designed to maximiz
 
 Finding: When ionospheric delay is removed (Ionofree) and the network has optimal spatial balance (OPTIMAL_100), the summer-season correlation length (for pos_jitter) is *6,060 km*. This is closely corroborated by the Precise mode (using IGS SP3 products), which yields *6,259 km* in the same condition—a 3% agreement. Both values are within 1σ of CODE's 25-year PPP benchmark (4201 ± 1967 km; upper 1σ bound 6168 km).
 
-Physical interpretation within TEP v0.8:
+Physical interpretation within TEP v0.7:
 
 - Summer ionosphere: Lower ambient electron density reduces local flattening of the Temporal Topology, permitting stronger Temporal Shear (field gradient) and longer apparent correlation lengths
 
@@ -1710,7 +1710,7 @@ Conclusion: The correlation structure is detectable without restrictive station 
 
 ### 3.7.5 The Temporal Topology Model: Unified Interpretation
 
-The three signatures can be interpreted within the continuous geometric screening framework of TEP v0.8:
+The three signatures can be interpreted within the continuous geometric screening framework of TEP v0.7:
 
 #### Interpretive Model: Temporal Topology Relaxation and Temporal Shear Modulation
 
@@ -1728,7 +1728,7 @@ Density-driven gradient suppression (ionosphere + troposphere):
 
 -  Mitigation: Ionofree (L1+L2 combination) removes one source of density-driven suppression, permitting the underlying topology to emerge
 
-Observable result: A baseline scale of ~1800 km is consistently observed when Temporal Topology is partially flattened, while the larger extent (~6060 km) emerges when density-driven suppression is minimized (Ionofree + Summer + Optimal geometry), consistent with the v0.8 prediction that the field gradient vanishes continuously with increasing ambient density rather than at a discrete boundary.
+Observable result: A baseline scale of ~1800 km is consistently observed when Temporal Topology is partially flattened, while the larger extent (~6060 km) emerges when density-driven suppression is minimized (Ionofree + Summer + Optimal geometry), consistent with the v0.7 prediction that the field gradient vanishes continuously with increasing ambient density rather than at a discrete boundary.
 
 ### 3.7.6 Comparison with CODE Benchmark
 
@@ -3284,7 +3284,7 @@ period. This produced 48 independent seasonal measurements (4 seasons ×
 The Temporal Topology Model
 
 Key insight: the observed seasonality is interpreted within the TEP
-v0.8 continuous geometric screening framework. Rather than a binary
+v0.7 continuous geometric screening framework. Rather than a binary
 screened/unscreened transition, the scalar time field exhibits a
 continuous spatial profile (Temporal Topology) whose local gradient
 (Temporal Shear) drives the observable response:
@@ -3366,6 +3366,44 @@ Ionospheric Gradient Scale: Lee & Lee (2019) show ionospheric
 spatial gradients are <0.01 TECU/km under quiet
 conditions—far smaller than the effect observed here, which
 persists across all geomagnetic conditions.
+
+### 6.1b Multiplicity, Preregistration, and the Cross-Paper Synthesis
+
+A concern sometimes raised is that the large number of metric combinations
+reported in this paper (72 combinations across 3 filters, 4 modes, 3
+metrics, and 2 coherence types) constitutes a "look-elsewhere" problem.
+This concern is addressed through three complementary arguments.
+
+**Preregistration of the primary comparison.** The single
+most important comparison was predefined before inspection of the raw-SPP
+results: the phase-alignment index from the precise-ephemeris mode, matched
+against the PPP phase-alignment index from Paper 1.  All other
+combinations (baseline GPS, ionofree, multi-GNSS, MSC metrics, etc.) are
+treated as *consistency checks*, not independent tests of the TEP
+hypothesis.  They serve to ask whether the signal form is robust across
+processing choices, not to accumulate significance.
+
+**Cross-paper synthesis (Step 5.0).** A direct comparison of
+PPP-derived λ (Paper 1: CODE 4,549 km, IGS Combined 3,764 km, ESA Final
+3,330 km) with raw-SPP phase-alignment λ (this paper: precise-mode range
+1,166&ndash;3,581 km) reveals a systematic and directional shift: in 99 of
+108 matched comparisons, raw-SPP λ is *shorter* than PPP λ (sign-test
+p = 2.6 × 10−20).  This is precisely the direction
+predicted by a noise-dilution model: higher uncorrelated noise in raw SPP
+should shorten the apparent correlation length because the exponential
+signal is buried in a larger incoherent background.  The mean ratio
+λraw/λPPP = 0.52 &pm; 0.26, with a median of 0.47.
+The fact that the shift is directional and predictable constrains the
+forward-model space: a software artifact would not necessarily produce this
+systematic shortening, whereas a physical signal attenuated by noise would.
+
+**Multiplicity is bounded by the physical prediction.** The
+TEP theoretical framework specifies a single search range (1,000&ndash;10,000
+km) and a single functional form (exponential decay).  The 72 combinations
+do not scan 72 independent hypotheses; they are 72 realizations of the
+*same* hypothesis under different noise conditions.  Treating them
+as independent tests would be a methodological error; treating them as
+consistency checks, as done here, is the correct statistical framing.
 
 ### 6.2 Physical Implications
 
@@ -3696,14 +3734,14 @@ invariance; Kp independence | Supported |
 months | Supported |
 
 Across the sixteen comparisons summarized above, the observations are
-broadly consistent with the expectations of TEP v0.8 (Jakarta), which posits
+broadly consistent with the expectations of TEP v0.7 (Jakarta), which posits
 continuous geometric screening (manifesting as Temporal Topology governed by shear suppression) rather than discrete
-continuous gradient boundaries. The detection of exponential decay, directional
+thin-shell boundaries. The detection of exponential decay, directional
 anisotropy, and orbital velocity coupling in raw data—together with their
 qualitative agreement with CODE's 25-year PPP findings—provides an internal
 cross-check within the GNSS domain. The observed density-driven modulation
 of correlation lengths (summer enhancement, altitude invariance, geomagnetic
-independence) is specifically consistent with the v0.8 prediction that
+independence) is specifically consistent with the v0.7 prediction that
 Temporal Shear is suppressed continuously by increasing ambient density, not
 at a step-function boundary. The agreement on Southern Hemisphere
 enhancement across Papers 2 and 3 (different datasets, different
@@ -4038,7 +4076,7 @@ url={https://matthewsmawfield.github.io/TEP-GNSS-RINEX/}
 
 Burde, G. I. (2016). Special relativity with a preferred frame and the relativity principle: Cosmological implications. *arXiv*:1610.08771. [arxiv.org/abs/1610.08771](https://arxiv.org/abs/1610.08771)
 
-Burrage, C., & Sakstein, J. (2018). Tests of Temporal Shear Suppression gravity. *Living Reviews in Relativity*, 21, 1. [doi:10.1007/s41114-018-0011-x](https://doi.org/10.1007/s41114-018-0011-x)
+Burrage, C., & Sakstein, J. (2018). Tests of chameleon gravity. *Living Reviews in Relativity*, 21, 1. [doi:10.1007/s41114-018-0011-x](https://doi.org/10.1007/s41114-018-0011-x)
 
 Consoli, M., & Pluchino, A. (2021). The CMB, preferred reference system and dragging of light in the Earth frame. *Universe*, 7(8), 311. [doi:10.3390/universe7080311](https://doi.org/10.3390/universe7080311)
 
@@ -4120,7 +4158,7 @@ Rebischung, P., & Gobron, K. (2024). Modeling random isotropic vector fields on 
 
 Saastamoinen, J. (1972). Atmospheric correction for the troposphere and stratosphere in radio ranging of satellites. *The Use of Artificial Satellites for Geodesy*, Geophysical Monograph 15, 247-251.
 
-Santamaría-Gómez, A., & Ray, J. (2021). Temporal Shear Suppressionic Noise in GPS Position Time Series. *Journal of Geophysical Research: Solid Earth*, 126(2), e2020JB019541. [doi:10.1029/2020JB019541](https://doi.org/10.1029/2020JB019541)
+Santamaría-Gómez, A., & Ray, J. (2021). Chameleonic Noise in GPS Position Time Series. *Journal of Geophysical Research: Solid Earth*, 126(2), e2020JB019541. [doi:10.1029/2020JB019541](https://doi.org/10.1029/2020JB019541)
 
 Gobron, K., Rebischung, P., Van Camp, M., Demoulin, A., & de Viron, O. (2024). Spatial correlations of GNSS position time series: Application to the EUREF network. *Journal of Geodesy*, 98, 48. [doi:10.1007/s00190-024-01848-3](https://doi.org/10.1007/s00190-024-01848-3)
 

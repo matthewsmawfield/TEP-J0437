@@ -45,7 +45,7 @@ proper time is a dynamical field governed by a conformal factor A(φ) =
 exp(βφ/MPl). Fifth-force suppression operates through the
 continuous spatial profile of the φ field (Temporal Topology), with
 suppression arising from the non-linear superposition of field gradients
-(Temporal Shear), replacing discrete continuous gradient suppressions with a
+(Temporal Shear), replacing discrete thin-shell approximations with a
 geometrically continuous mechanism. The observed correlation length λT
 represents the characteristic scale of Temporal Topology. Compton-mass,
 environmental screening, derivative-screened, and saturation-radius
@@ -187,7 +187,7 @@ developed independently of any GNSS analysis, establishing pre-specified expecta
 spatial decay form, velocity-dependent anisotropy, and absence of GM/r²
 scaling. Screening operates via the continuous spatial profile of the φ field
 (Temporal Topology), with fifth-force suppression arising from the non-linear superposition of field
-gradients (Temporal Shear) rather than discrete continuous gradient boundaries,
+gradients (Temporal Shear) rather than discrete thin-shell boundaries,
 suppressing fifth forces in dense environments while leaving cosmology
 accessible to dynamics. This theory-first approach ensures that subsequent
 empirical findings represent genuine predictions rather than post-hoc
@@ -477,7 +477,7 @@ where r denotes the inter-station distance, λT the Temporal Topology correlatio
 
 The correlation metric employed is the magnitude-weighted phase alignment index, computed via cross-spectral density analysis in the 10–500 μHz band (corresponding to periods of 33 minutes to 28 hours). This approach measures whether clock fluctuations are in phase regardless of amplitude—information that survives GNSS processing because network adjustment removes common-mode offsets while preserving differential phase structure. Magnitude weighting ensures that frequency bins with stronger cross-spectral power contribute proportionally more to the phase average, so the metric reflects genuine correlated signals rather than noise.
 
-The primary result from the CODE 25-year analysis is a Temporal Topology correlation length of λT = 4,201 ± 1,967 km. Cross-center validation yields consistent values: CODE reports λT = 3,330 km (95% CI: 1,198–5,918 km); IGS reports λT = 4,549 km (95% CI: 3,197–4,871 km); and ESA reports λT = 3,758 km (95% CI: 2,532–3,984 km). The coefficient of variation across centers is 18.2%, indicating consistency across independent processing pipelines and substantially reducing the likelihood of center-specific artifacts.
+The primary result from the CODE 25-year analysis is a Temporal Topology correlation length of λT = 4,201 ± 1,967 km. Cross-center validation on the 2023–2025 multi-center sample (exponential fits to binned phase-alignment means) yields: CODE λT = 4,549 km (95% CI: 1,198–5,918 km); IGS λT = 3,764 km (95% CI: 3,197–4,871 km); ESA λT = 3,330 km (95% CI: 2,532–3,984 km). The 25-year CODE long-span headline is a separate estimand from these center-specific exponential fits. The coefficient of variation across the three center fits is ~13%, indicating consistency across independent processing pipelines and substantially reducing the likelihood of center-specific artifacts.
 
 ## 2.2 Seven Convergent Signatures
 
@@ -775,7 +775,7 @@ sparse terrestrial environment sampled by the GNSS network.
 ### 4.4.2 Candidate Derivative-Screened Completion
 
 A second completion invokes derivative self-interactions (cubic Galileon
-terms) that generate nonlinear screening. The Temporal Shear Suppression radius scales as:
+terms) that generate nonlinear screening. The Vainshtein radius scales as:
 
 $r_V = \left(\frac{GM}{\Lambda^3}\right)^{1/3}$
 
@@ -793,7 +793,7 @@ as follows:
 **Deep field (r ≪ rV):** Nonlinear derivative
 interactions dominate and Temporal Shear |∇φ| is strongly suppressed.
 The effective coupling to matter decreases continuously, reaching αPPNeff
-≪ α0 well inside the Temporal Shear Suppression radius, rendering TEP effects
+≪ α0 well inside the Vainshtein radius, rendering TEP effects
 undetectable in laboratory tests and solar system observations.
 
 **Weak field (r ≫ rV):** Temporal Shear recovers
@@ -821,7 +821,7 @@ array correlations within clusters.
 rV ~ 50 kpc, matching the observed dark matter halo radius.
 This connection is developed in Section 5.5.
 
-If the Temporal Shear Suppression completion were correct, it would provide a unified
+If the Vainshtein completion were correct, it would provide a unified
 explanation spanning 15 orders of magnitude in mass scale, from Earth to
 galaxy clusters, with a single fundamental parameter Λ. This M1/3
 scaling is the same continuous gradient-suppression behavior described by
@@ -998,8 +998,8 @@ not can be formalized through the synchronization holonomy (after GR
 subtraction), where σ is the time-transport one-form whose line integral
 equals the calibrated proper-time increment along a leg:
 
-$\mathcal{H}_{\text{resid}} = \oint_{\partial\Sigma} (\tilde{\sigma} -
-\sigma_{\text{GR}}) = \iint_{\Sigma} (\tilde{F} - F_{\text{GR}})$
+$\mathcal{H}_{\rm resid} = \oint_{\partial\Sigma} (\tilde{\sigma} -
+\sigma_{\rm GR}) = \iint_{\Sigma} (\tilde{F} - F_{\rm GR})$
 
 This represents the loop non-closure of time transport built from
 measured proper times (in time units; right-hand rule on Σ). It is gauge
@@ -1068,7 +1068,7 @@ predictions to better than 0.05%, constraining deviations in the
 strong-field regime. TEP compatibility requires that scalar field effects
 are screened in the vicinity of neutron stars.
 
-The Temporal Shear Suppression screening radius for a neutron star (M ~ 1.4 M☉)
+The Vainshtein screening radius for a neutron star (M ~ 1.4 M☉)
 is:
 
 $r_V^{\text{NS}} \sim \left(\frac{GM_{\text{NS}}}{\Lambda^3}\right)^{1/3}
@@ -1104,11 +1104,11 @@ deviations in scalar-tensor theories through composition-dependent
 couplings. However, TEP's universal conformal coupling ensures that the
 Nordtvedt parameter:
 
-$\eta = 4\beta^2 - \gamma - 3$
+$\eta = 4\beta_A^2 - \gamma - 3$
 
-remains within observational bounds for the coupling strength β ~ 10−3
+remains within observational bounds for the coupling strength β_A ~ 10−3
 required to explain the GNSS correlation length. With γ ≈ 1 (Cassini
-constraint) and β ~ 10−3, the predicted Nordtvedt parameter is η
+constraint) and β_A ~ 10−3, the predicted Nordtvedt parameter is η
 ~ 4 × 10−6, well below the LLR bound.
 
 Furthermore, both Earth and Moon are within each other's screening radii
@@ -1124,11 +1124,11 @@ The TEP framework is not a novel field theory but rather a phenomenological
 application of well-established scalar-tensor gravity to precision timing.
 TEP with B = 0 and A(φ) = exp(βφ/MPl) reduces to Brans-Dicke
 gravity in the Jordan frame, with the coupling β related to the Brans-Dicke
-parameter ωBD. The screening mechanism employed (Temporal Shear Suppression)
+parameter ωBD. The screening mechanism employed (Vainshtein)
 arises naturally in the cubic Galileon sector of Horndeski gravity—the most
 general scalar-tensor theory with second-order equations of motion, ensuring
 freedom from Ostrogradsky instabilities. TEP's environmental screening is
-analogous to Temporal Shear Suppression mechanisms but operates through derivative
+analogous to chameleon mechanisms but operates through derivative
 self-interactions rather than density-dependent mass. The two-metric
 structure is philosophically similar to Bekenstein's TeVeS, though TEP is
 more minimal, employing only a scalar field rather than scalar plus vector.
@@ -1251,7 +1251,7 @@ definitive test is achievable with current technology.
 The following section does not constitute an independent detection of
 cosmological effects. Instead, it addresses the question: if the
 terrestrial clock correlations reported in Sections 2–4 arise from a
-conformally coupled scalar field (whether screened via Temporal Shear Suppression
+conformally coupled scalar field (whether screened via Vainshtein
 mechanisms or other completions), then what are the necessary
 consequences for astrophysical observations that already exist?
 The empirical GNSS result stands independently of the validity of
@@ -1268,7 +1268,7 @@ astrophysical scales.
 
 Within the TEP framework, the same conformal factor A(φ) that modulates
 clock correlations on Earth would affect light propagation across
-cosmological distances. If the Temporal Shear Suppression completion were correct, the
+cosmological distances. If the Vainshtein completion were correct, the
 M1/3 scaling would connect terrestrial and galactic scales without
 additional free parameters: the screening radius rV = (GM/Λ³)1/3
 scales from Earth (λ ≈ 4,000 km) to galaxies (≈50 kpc) across 15 orders of
@@ -1423,7 +1423,7 @@ differential component.
 
 **Mechanism 2: Screening Locality** — The conformal factor A(φ)
 varies significantly only within the region where Temporal Shear is
-non-negligible, bounded roughly by the Temporal Shear Suppression screening radius rV
+non-negligible, bounded roughly by the Vainshtein screening radius rV
 ~ 100 kpc around the lens galaxy. Beyond this radius, Temporal Topology
 flattens to its cosmological value, A(φ) → 1, and delays cease accumulating.
 The integration path for the static delay is therefore limited to the halo
@@ -1484,10 +1484,10 @@ GNSS timing or FRB observations.
 ## 5.5 The Earth-Galaxy Scaling Argument
 
 The TEP framework suggests a connection between terrestrial metrology and
-galactic dynamics. If the Temporal Shear Suppression screening mechanism is operative, the
+galactic dynamics. If the Vainshtein screening mechanism is operative, the
 same scalar field that produces λ ≈ 4,000 km on Earth should produce the
 dark matter halo at galactic scales—representing the same physics at
-different density scales. In the v0.8 geometric formulation, the terrestrial
+different density scales. In the v0.7 geometric formulation, the terrestrial
 correlation length is interpreted as the relaxation scale of Temporal
 Topology around Earth: the distance at which Temporal Shear (∇φ) recovers
 from near-zero values in the planet's deep potential well to the weak-field
@@ -1511,7 +1511,7 @@ framework at different density scales, pending independent replication and compl
 matter halos would not be arbitrary structures but would follow a strict
 density-dependent scaling law determined by the field's coupling parameters.
 
-The Temporal Shear Suppression screening radius scales as rV ∝
+The Vainshtein screening radius scales as rV ∝
 (GM/Λ³)1/3. For Earth mass M⊕ ≈ 6 × 1024 kg
 and typical galaxy mass Mgal ≈ 1012 M☉ ≈ 2
 × 1042 kg, the mass ratio is approximately 3 × 1017,
@@ -1566,7 +1566,7 @@ This value is statistically consistent with the Planck CMB benchmark (0.60σ ten
 
 ## 5.7 Emergent MOND Scale
 
-A notable prediction of TEP with Temporal Shear Suppression screening and continuous
+A notable prediction of TEP with Vainshtein screening and continuous
 Temporal Topology is the natural emergence of the MOND acceleration scale.
 The transition from screened (GR-like) to unscreened (modified) behavior
 occurs when the scalar-mediated acceleration equals the Newtonian
@@ -1625,11 +1625,11 @@ biases correlated with source properties.
 
 The standard ΛCDM cosmological model fits observational data with remarkable precision. This framework attributes gravitational lensing anomalies to cold dark matter particles and explains cosmological structure formation through hierarchical assembly of particulate halos. ΛCDM is empirically successful and theoretically well-motivated.
 
-TEP does not claim that ΛCDM is incorrect. Rather, TEP proposes that the same observational phenomena can be reinterpreted under a different axiom set. The key distinction is operational, not observational at current precision:
+TEP treats ΛCDM as the successful control reconstruction, not as the final ontology. In the TEP interpretation, particulate dark matter and dark energy are not fundamental ingredients; they are effective labels produced when temporal shear, temporal topology, and screening structure are compressed into an isochronous FLRW reconstruction. The key distinction is therefore ontological, while many current static-source observables remain operationally degenerate:
 
-- **ΛCDM interpretation:** Gravitational lensing mass reconstructions directly measure matter distribution. Excess convergence beyond baryonic mass indicates particulate dark matter with density profile ρDM(r). The Isochrony Axiom (all photons in an image represent a synchronous snapshot) is implicitly assumed and never tested.
+- **ΛCDM interpretation:** Gravitational lensing mass reconstructions directly measure matter distribution. Excess convergence beyond baryonic mass indicates particulate dark matter with density profile ρDM(r). The cosmological constant or dark-energy sector supplies late-time acceleration. The Isochrony Axiom (all photons in an image represent a synchronous snapshot) is implicitly assumed and never tested.
 
-- **TEP interpretation:** Gravitational lensing mass reconstructions measure the effective Fermat potential, which includes both matter distribution and temporal-field gradients. Excess convergence can arise from differential proper-time accumulation along different light paths. The Isochrony Axiom is empirically testable through achromatic timing residuals in lensed transients.
+- **TEP interpretation:** Gravitational lensing mass reconstructions measure the effective Fermat potential, which includes both baryonic matter distribution and temporal-field gradients. Excess convergence can arise from differential proper-time accumulation along different light paths, while apparent dark energy arises from reconstructing non-integrable temporal transport as a global acceleration term. The Isochrony Axiom is empirically testable through achromatic timing residuals in lensed transients.
 
 Both frameworks fit existing lensing data because they make identical predictions for static sources observed under the assumption of isochrony. The degeneracy is broken by observations that probe temporal structure:
 
@@ -1639,9 +1639,9 @@ Both frameworks fit existing lensing data because they make identical prediction
 
 - **CMB vs. galaxy lensing S8:** ΛCDM predicts convergence of CMB-inferred and galaxy-inferred S8 as systematics are controlled. TEP predicts persistent tension arising from kinematic noise in galaxy surveys that is absent in CMB (static source).
 
-The frameworks compete rather than contradict. ΛCDM remains the default interpretation given its theoretical maturity and empirical success. TEP offers an alternative interpretation that becomes distinguishable through specific tests designed to probe temporal structure in lensing observations. Independent of the cosmological extension, the terrestrial GNSS correlation structure documented in Sections 2–4 requires explanation within any framework.
+The frameworks compete at the level of ontology. ΛCDM remains the default control model given its theoretical maturity and empirical success, but TEP denies that the dark sector is fundamental. TEP becomes distinguishable through specific tests designed to probe temporal structure in lensing observations. Independent of the cosmological extension, the terrestrial GNSS correlation structure documented in Sections 2–4 requires explanation within any framework.
 
-**Falsification asymmetry:** Null results in the tests above would exclude TEP's cosmological extension while leaving ΛCDM intact. Positive results would require reinterpretation of dark matter phenomenology but would not exclude particulate dark matter in all contexts—only in regimes where temporal-field gradients dominate the lensing signal. This asymmetry reflects TEP's status as a challenger framework rather than an established paradigm.
+**Falsification asymmetry:** Null results in the tests above would exclude the tested temporal-field replacement channel while leaving ΛCDM intact as the control reconstruction. Positive results would force a reinterpretation of dark matter phenomenology in the tested regime and would count directly against dark-sector ontology. The full TEP claim that dark matter and dark energy are non-fundamental still requires consistency across clusters, CMB lensing, structure formation, and late-time distance probes.
 
 ## 6. Falsification and Experimental Program
 
@@ -1966,7 +1966,7 @@ Bothwell, T. et al. (2022). JILA Sr optical lattice clock with 10⁻¹⁸ stabil
 
 Boulder Atomic Clock Optical Network (BACON) Collaboration (2021). Frequency ratio measurements at 18-digit accuracy using an optical clock network. *Nature* 591, 564–569.
 
-Burrage, C. & Sakstein, J. (2018). Tests of Temporal Shear Suppression gravity. *Living Rev. Relativity* 21, 1.
+Burrage, C. & Sakstein, J. (2018). Tests of chameleon gravity. *Living Rev. Relativity* 21, 1.
 
 Damour, T. & Polyakov, A. M. (1994). The string dilaton and a least coupling principle. *Nucl. Phys. B* 423, 532.
 
@@ -1978,7 +1978,7 @@ Hofmann-Wellenhof, B., Lichtenegger, H. & Wasle, E. (2008). *GNSS – Global Nav
 
 Kelly, A. G. (2009). GPS and the One-Way Speed of Light. In: *New Approach of Indoor and Outdoor Localization Systems*. IntechOpen. DOI: [10.5772/11006](https://doi.org/10.5772/11006)
 
-Khoury, J. & Weltman, A. (2004). Temporal Shear Suppression fields: Awaiting surprises for tests of gravity in space. *Phys. Rev. Lett.* 93, 171104.
+Khoury, J. & Weltman, A. (2004). Chameleon fields: Awaiting surprises for tests of gravity in space. *Phys. Rev. Lett.* 93, 171104.
 
 Milgrom, M. (1983). A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis. *ApJ* 270, 365.
 
@@ -2098,7 +2098,7 @@ where α(φ) ≡ d ln A/dφ = β/MPl is the conformal coupling strength (for A(�
 
 ## A.3 Galileon Terms and Nonlinear Screening
 
-**Illustrative Only:** This appendix presents one candidate microscopic completion. The empirical claims of this paper do not depend on the cubic Galileon/Temporal Shear Suppression realization.
+**Illustrative Only:** This appendix presents one candidate microscopic completion. The empirical claims of this paper do not depend on the cubic Galileon/Vainshtein realization.
 
 The following derivation illustrates one candidate microscopic completion (cubic
 Galileon) that realizes the continuous gradient suppression described as
@@ -2113,15 +2113,15 @@ where Λ is the strong-coupling scale and c3 is a dimensionless coefficient of o
 
 $\frac{|\nabla \phi|^2}{\Lambda^3} \sim 1$
 
-The Temporal Shear Suppression radius, inside which nonlinear effects dominate, is:
+The Vainshtein radius, inside which nonlinear effects dominate, is:
 
 $r_V = \left(\frac{GM}{\Lambda^3}\right)^{1/3}$
 
-For a spherically symmetric source of mass M, the scalar field profile in the Temporal Shear Suppression regime (r < rV) is:
+For a spherically symmetric source of mass M, the scalar field profile in the Vainshtein regime (r < rV) is:
 
-$\phi(r) \sim \frac{\beta M_{\text{Pl}}}{M_{\text{Pl}}^2} \frac{GM}{r} \left(\frac{r}{r_V}\right)^3$
+$\phi(r) \sim \frac{\beta_A M_{\text{Pl}}}{M_{\text{Pl}}^2} \frac{GM}{r} \left(\frac{r}{r_V}\right)^3$
 
-This suppresses the fifth force by a factor of (r/rV)3 inside the screening radius, reconciling weak-field cosmological behavior with strong-field solar system constraints. Other completions (e.g., Temporal Shear Suppression mechanisms, symmetry-breaking potentials) may produce similar phenomenology.
+This suppresses the fifth force by a factor of (r/rV)3 inside the screening radius, reconciling weak-field cosmological behavior with strong-field solar system constraints. Other completions (e.g., chameleon mechanisms, symmetry-breaking potentials) may produce similar phenomenology.
 
 ## A.4 Conservation Laws
 

@@ -12,9 +12,9 @@
       "@id": "https://orcid.org/0009-0003-8219-3159"
     }
   ],
-  "version": "0.1",
+  "version": "0.2",
   "datePublished": "2026-05-17",
-  "dateModified": "2026-05-17",
+  "dateModified": "2026-06-05",
   "codeRepository": "https://github.com/matthewsmawfield/TEP-J0437",
   "license": "https://spdx.org/licenses/CC-BY-4.0",
   "identifier": "https://doi.org/10.5281/zenodo.19454620"

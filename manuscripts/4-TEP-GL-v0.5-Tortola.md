@@ -1,4 +1,4 @@
-# Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations
+# Temporal-Spatial Coupling in Gravitational Lensing
 **Matthew Lukin Smawfield**
 Version: v0.5 (Tortola)
 First published: 19 December 2025 · Last updated: 29 April 2026
@@ -20,7 +20,7 @@ TEP v0.8)—that is degenerate with gravitational shear in standard static lens 
 This phenomenon is defined here as *Phantom Mass*. GW170817 primarily constrains differential propagation and disformal cone tilt; it does not directly test common-mode conformal clock-rate structure along a shared path, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests. Because photons and gravitational waves traverse the same path, conformal time dilation is common-mode and cancels in differential measurements. Screening operates
 via the continuous flattening of Temporal Topology in dense
 environments, suppressing local field gradients without invoking
-discrete continuous gradient boundaries. Conformal gradients may reproduce specific timing-sensitive aspects of dark-matter-like phenomenology—particularly in the time domain—without violating strong-lens arrival time constraints. The component conventionally attributed to dark matter may contain an unmodeled temporal-transport contribution. These results are derived in two regimes: a conservative Reference Envelope (millisecond-scale corrections, directly testable with lensed FRBs) and an Extended Regime (year-scale delays, possible dark-sector reinterpretation) whose validity is determined by the Variability-Mass Correlation test in existing strong-lens catalogs. Within the Extended Regime, where the Isochrony Axiom fails, temporal-field gradients produce an observational degeneracy with particulate dark matter. This is a conditional claim; the Reference Envelope result is the primary, unconditional contribution.
+discrete thin-shell boundaries. Conformal gradients may reproduce specific timing-sensitive aspects of dark-matter-like phenomenology—particularly in the time domain—without violating strong-lens arrival time constraints. The component conventionally attributed to dark matter may contain an unmodeled temporal-transport contribution. These results are derived in two regimes: a conservative Reference Envelope (millisecond-scale corrections, directly testable with lensed FRBs) and an Extended Regime (year-scale delays, possible dark-sector reinterpretation) whose validity is determined by the Variability-Mass Correlation test in existing strong-lens catalogs. Within the Extended Regime, where the Isochrony Axiom fails, temporal-field gradients produce an observational degeneracy with particulate dark matter. This is a conditional claim; the Reference Envelope result is the primary, unconditional contribution.
 
 *Keywords:* gravitational lensing – dark matter – modified
 gravity – cosmology: theory – galaxies: kinematics and dynamics –
@@ -118,9 +118,9 @@ The TEP framework is not a novel field theory but a
 gravity to gravitational lensing. Specifically:
 
 **Brans-Dicke Theory:** TEP with \(B=0\) and \(A(\phi)
-= e^{\beta\phi/M_{\text{Pl}}}\) reduces to Brans-Dicke gravity in the
+= e^{\beta_A\phi/M_{\text{Pl}}}\) reduces to Brans-Dicke gravity in the
 Jordan frame. The scalar field \(\phi\) plays the role of the
-Brans-Dicke field, with the coupling \(\beta\) related to the
+Brans-Dicke field, with the coupling \(\beta_A\) related to the
 Brans-Dicke parameter \(\omega_{BD}\).
 
 **Horndeski/Galileon Theories:** The Lagrangian in
@@ -132,11 +132,11 @@ consistency (no Ostrogradsky ghosts) of this framework.
 **Screening and Temporal Topology:** The core TEP
 framework (v0.8) formulates screening as a continuous spatial
 profile governed by the non-linear superposition of field gradients
-(Temporal Shear), replacing discrete continuous gradient boundaries. TEP-GL
-phenomenologically employs Temporal Shear Suppression screening (from the Galileon
+(Temporal Shear), replacing discrete thin-shell boundaries. TEP-GL
+phenomenologically employs Vainshtein screening (from the Galileon
 sector) as a specific realization of this continuous
-gradient-suppression paradigm, rather than Temporal Shear Suppression
-(density-dependent mass) or Temporal Shear Suppression (symmetry-breaking)
+gradient-suppression paradigm, rather than chameleon
+(density-dependent mass) or symmetron (symmetry-breaking)
 mechanisms.
 
 **DHOST Theories:** Degenerate Higher-Order
@@ -291,7 +291,7 @@ manifests as a continuous spatial profile (Temporal Topology) governed
 by the non-linear superposition of field gradients (Temporal Shear),
 suppressing fifth forces and lensing anomalies in dense environments
 while leaving cosmology accessible to dynamics. Rather than invoking
-discrete continuous gradient boundaries or step-function density cutoffs, the
+discrete thin-shell boundaries or step-function density cutoffs, the
 suppression of local field gradients in deep potential wells reduces the
 $\alpha_{\text{PPN}}^{\text{eff}}$ continuously, preserving PPN bounds without rigid
 approximations. Existing multi-messenger constraints (e.g., GW170817)
@@ -862,7 +862,7 @@ parameter \(\gamma\)).
 To reconcile the large potentials required on cluster scales with the strict
 constraints on local scales, a screening mechanism is explicitly invoked,
 formulated in the continuous geometric language of Temporal Topology (TEP
-v0.8). To move beyond qualitative hypotheses, the scalar sector is defined
+v0.7). To move beyond qualitative hypotheses, the scalar sector is defined
 via a Galileon-type Lagrangian that realizes this continuous gradient
 suppression:
 
@@ -877,7 +877,7 @@ dominates, suppressing the spatial gradients of \(\phi\)—the
 *Temporal Shear*—and restoring General Relativity to high precision.
 This gradient suppression is a specific realization of the continuous
 geometric screening paradigm (Temporal Topology) introduced in TEP v0.8:
-rather than invoking discrete continuous gradient boundaries, the field profile
+rather than invoking discrete thin-shell boundaries, the field profile
 flattens continuously in deep potential wells, with the degree of
 suppression governed by the non-linear superposition of gradients. On
 cosmological scales (low density), the linear kinetic term dominates,
@@ -889,7 +889,7 @@ ensures mathematical consistency with local tests.
 
 Box 4.1: The Screening Hierarchy and Continuous Gradient Suppression
 
-For a spherically symmetric source of mass \(M\), the Temporal Shear Suppression radius
+For a spherically symmetric source of mass \(M\), the Vainshtein radius
 \(r_V\) marks the characteristic scale at which the non-linear kinetic
 term becomes dominant, continuously suppressing the scalar field
 gradient (Temporal Shear). Rather than a discrete boundary between
@@ -987,7 +987,7 @@ electroweak scale. Future work should verify that these parameter values
 do not conflict with fifth-force laboratory bounds (Eöt-Wash,
 MICROSCOPE) or astrophysical constraints on light scalars. The
 continuous formulation of screening via Temporal Topology removes the
-need to track discrete continuous gradient suppression radii; the operative quantity is the
+need to track discrete thin-shell radii; the operative quantity is the
 field gradient (Temporal Shear), which vanishes smoothly as density
 increases.
 
@@ -1100,7 +1100,7 @@ TEP-GL is a falsifiable hypothesis. The following observations would exclude spe
 
 - **Chromatic Anomaly:** If any timing or morphological anomaly shows wavelength dependence after correction for plasma dispersion and dust, the achromatic prediction of two-metric coupling is falsified. This would indicate conventional astrophysical systematics rather than metric effects.
 
-- **Direct Detection:** A confirmed detection of dark matter particles in direct-detection experiments would establish the existence of a particulate dark sector. TEP would then be relegated to a sub-dominant correction rather than a primary explanation.
+- **Direct Detection:** A confirmed detection of dark matter particles in direct-detection experiments would falsify the strong TEP claim that the dark sector is wholly non-particulate. TEP would then survive only as a possible temporal-transport correction, not as the primary replacement explanation.
 
 The framework stands or falls on empirical grounds. It does not claim immunity from observation; the claim is that the observations required to test TEP have not yet been performed with sufficient precision.
 
@@ -1283,11 +1283,11 @@ Solar System (AU): \(\alpha < 10^{-15}\) (Microsecond residuals)
 **Mechanism:** The required suppression factor is
 \(10^{10}\). In the continuous geometric framework of Temporal Topology
 (TEP v0.8), the scalar field gradient is suppressed smoothly as a
-function of ambient density, without invoking discrete continuous gradient suppression
+function of ambient density, without invoking discrete thin-shell
 boundaries. The non-linear kinetic term in the Galileon Lagrangian
 flattens the field profile continuously in deep potential wells; the
 degree of suppression scales as \((r/r_V)^{3/2}\) interior to the
-characteristic Temporal Shear Suppression scale \(r_V\). For a galaxy with \(r_V \sim
+characteristic Vainshtein scale \(r_V\). For a galaxy with \(r_V \sim
 100\) kpc, the suppression at Solar System scales (\(r \sim 10^{-11}\)
 kpc) is:
 
@@ -1351,12 +1351,13 @@ astrophysical data.
 
 **Standard Assumption:** \(c\) is constant; therefore, any
 anomaly in \(t\) must be due to extra path length (spatial curvature) or
-extra mass (Shapiro delay). Conclusion: *dark matter* exists.
+extra mass (Shapiro delay). Conclusion: particulate *dark matter*
+is inferred.
 
 **TEP Reality:** \(t\) is modulated by the field
 \(A(\phi)\); \(c\) is effectively variable along the path. The
 anomaly in \(t\) is due to the scalar field gradient. Conclusion:
-*dark matter* admits the interpretation of variable light speed.
+apparent *dark matter* is reconstructed temporal transport.
 
 TEP removes the need for an invisible substance by correcting the assumption
 about the constancy of the global speed of light.
@@ -1392,7 +1393,7 @@ m/s² emerges naturally from TEP parameters:
 gradient produces an effective "fifth force" that becomes significant
 when the Newtonian acceleration falls below a threshold.
 
-**Derivation:** The Temporal Shear Suppression suppression factor scales as
+**Derivation:** The Vainshtein suppression factor scales as
 \((r/r_V)^{3/2}\) inside the screening radius. The transition from
 screened to unscreened behavior occurs when the scalar-mediated
 acceleration equals the Newtonian acceleration:
@@ -1455,10 +1456,10 @@ provides a unified explanation for *existing* anomalies that
 ### 6.8 The Path Forward
 
 The analysis suggests that
-*some dark-matter phenomenology may be reproducible without a new substance*,
+*dark-matter phenomenology may be reproducible without a new substance*,
 if temporal-composite projection effects survive the proposed time-domain tests.
-What may exist is a temporal field with spatial gradients, and some of what has been
-inferred as "dark matter" may be the projection of those gradients onto
+In TEP ontology, what exists is a temporal field with spatial gradients, and what has been
+inferred as "dark matter" is the projection of those gradients onto
 observations that assume temporal synchrony. To maintain the particle
 interpretation, it is necessary to demonstrate that the universe is
 synchronous to a precision that excludes TEP effects. TEP offers a geometric
@@ -1466,9 +1467,8 @@ identification of the phenomenology, explaining the universality of dark
 matter profiles and the success of MOND on galactic scales through a single
 parsimonious framework.
 
-"Dark Time" is not merely an alternative to dark matter; it offers a
-geometric identification of the phenomenology that admits this
-interpretation.
+"Dark Time" is not merely an alternative label for dark matter; it is the
+proposed geometric identity of the phenomenology.
 
 ## 7. Conclusions
 
@@ -1480,7 +1480,10 @@ treating the photons in telescopes as representing a single spatial slice of
 the source, standard models have been forced to interpret all observed
 distortions as spatial deflections caused by mass. It has been shown that
 this *Isochrony Axiom* is an effective approximation that may break
-down in the presence of generalized metric couplings.
+down in the presence of generalized metric couplings. In the TEP ontology,
+the dark sector is not fundamental matter or energy; it is the residual
+produced when temporal transport is forced into a synchronous mass-and-expansion
+reconstruction.
 
 The *Temporal Equivalence Principle (TEP)*, introduced in a companion
 paper (Smawfield 2025a), provides a corrected framework. Under TEP,
@@ -1496,7 +1499,8 @@ dilation onto the spatial image plane.
 gradient in proper-time accumulation across an image plane acts as a
 "temporal shear" on evolving sources. In a static reconstruction, this
 is mathematically indistinguishable from the gravitational shear of a
-dark matter halo. The "dark sector" may be the difference between
+dark matter halo under a static reconstruction. The "dark sector" is interpreted
+in TEP as the difference between
 the gravitational metric (which guides orbits) and the matter metric
 (which guides clocks).
 
@@ -1517,7 +1521,7 @@ effects are millisecond-scale and detectable only in
 high-time-resolution astrophysics (FRBs, pulsars). In the
 *Extended Regime*, where environmental screening and/or a revised
 operational mapping allow larger effective delays, TEP becomes a full
-dynamical alternative to particle dark matter.
+temporal-geometry replacement for particle dark matter.
 
 ### 7.3 Future Outlook: Time, Not Mass
 

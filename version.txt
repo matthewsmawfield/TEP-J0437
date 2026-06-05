@@ -1,3 +1,5 @@
+v0.2 (Sintra) — 05 June 2026 — Renamed conformal coupling notation from beta_conf to beta_A to avoid PPN collision
+
 v0.1 (Sintra) - Initial publication release — 17 May 2026 · Last updated: 17 May 2026
 
 - Multi-pulsar closure-delay analysis of 19,167 triplets from PSR J0437-4715 (15 pulsars total)

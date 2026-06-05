@@ -61,7 +61,7 @@ The TEP enhancement effect is governed by the temporal enhancement factor $\Gamm
 $$\Gamma_t = \exp\left[ K \frac{\Phi - \Phi_{\rm ref}}{c^2} \times \sqrt{1+z} \right]$$
 
 
-The JWST response-prior test adopts the external Cepheid-calibrated response coefficient $\kappa_{\rm Cep} = (9.6 \pm 4.0) \times 10^5$ mag from Paper 11, transferred to the galaxy stellar-population sector through the phenomenological normalization $K_{\rm gal}$, and applies it without JWST-specific refit. The high-redshift observables are then examined for internal consistency of the response scale. These internal recoveries are treated as self-consistency checks rather than as replacement calibrations; the latest multi-observable recovery is anchor-consistent but internally scattered. No parameters are tuned to the JWST data the model seeks to explain. The structural choices in the $\Gamma_t$ formula — the reference redshift $z_{\rm ref} = 5.5$, reference halo mass $\log M_{h,\rm ref} = 12.0$, exponential functional form, and $\sqrt{1+z}$ coupling scaling — were fixed by the scalar-tensor framework in prior papers (Papers 1 and 7); all have independent physical motivation and none were adjusted to improve JWST fits (§4.11.1).
+The JWST response-prior test adopts the external Cepheid-calibrated response coefficient $\kappa_{\rm Cep} = (9.6 \pm 4.0) \times 10^5$ mag from Paper 11, transferred to the galaxy stellar-population sector through the phenomenological normalization $K_{\rm gal}$, and applies it without JWST-specific refit. The high-redshift observables are then examined for internal consistency of the response scale. These internal recoveries are treated as self-consistency checks rather than as replacement calibrations; the latest multi-observable recovery is anchor-consistent but internally scattered. No parameters are tuned to the JWST data the model seeks to explain. The structural choices in the $\Gamma_t$ formula — the reference redshift $z_{\rm ref} = 5.5$, reference halo mass $\log M_{h,\rm ref} = 12.0$, exponential functional form, and $\sqrt{1+z}$ coupling scaling — were fixed by the scalar-tensor framework in prior papers; all have independent physical motivation and none were adjusted to improve JWST fits (§4.11.1).
 
 
 ### 1.3 Reader's Guide to the Evidence
@@ -99,7 +99,7 @@ The JWST analysis presented here is not the first test of the TEP framework. A l
 
 - **Globular Cluster Pulsars:** Analysis of 380 millisecond pulsars reveals a $0.13$ dex spin-down excess in cluster pulsars ($p = 1.7 \times 10^{-15}$). The environmental screening threshold $\sigma > 165$ km/s derived from this population is used directly in §2.3.2.2 and §4.4.3 of this work.
 
-- **Temporal Topology Reference Scale:** GNSS atomic clock networks yield $\rho_T \approx 20$ g/cm³ as a Temporal Topology reference density, independently confirmed by the SPARC rotation curve slope and magnetar critical periods. This $\rho_T$ informs the continuous screening function in this work.
+- **Temporal Topology Reference Scale:** The screening threshold $\rho_T \approx 20$ g/cm³ is independently anchored by the SPARC rotation curve slope, magnetar critical periods, and terrestrial atomic clock correlation lengths. This $\rho_T$ informs the continuous screening function in this work.
 
 
 The central question this work addresses is whether the same Paper 11-derived $\kappa_{\rm Cep}$, transferred via $K_{\rm gal}$, that resolves the Hubble tension and accounts for pulsar timing anomalies also predicts the high-redshift galaxy anomalies, with no re-tuning. The JWST analysis uses this coupling directly in the potential-linear $\Gamma_t$ formula, converting from the magnitude sector (Cepheid P-L residuals) to the stellar-population sector (nuclear burning timescales) via the shared TEP framework.
@@ -313,7 +313,7 @@ quantities used in the present analysis.
 
 
 The TEP framework builds upon scalar-tensor theories with
-density-dependent screening (Khoury & Weltman 2004; Brax et al. 2004;
+environment-dependent screening (Khoury & Weltman 2004; Brax et al. 2004;
 Burrage & Sakstein 2018), extending them via the v0.8 Temporal Topology
 mechanism where field gradient flattening (Temporal Shear) provides
 continuous geometric screening. The key steps mapping the fundamental physics to the
@@ -323,7 +323,7 @@ observable $\Gamma_t$ are:
 
 - 
 **Action:** Matter couples to $\tilde{g}_{\mu\nu} =
-A^2(\phi) g_{\mu\nu}$ where $A(\phi) = \exp(\beta\phi/M_{\rm Pl})$.
+A^2(\phi) g_{\mu\nu}$ where $A(\phi) = \exp(\beta_A\phi/M_{\rm Pl})$.
 The Klein-Gordon equation sources $\phi$ from the matter density
 trace $T^\mu_\mu$.
 
@@ -550,7 +550,7 @@ analytic Yukawa argument, the linear growth ODE is solved independently
 for each Fourier mode $k$, incorporating the full scale-dependent
 gravitational coupling $G_{\rm eff}(k,z)/G_N = 1 + 2\beta^2 k^2/(k^2 +
 m_\phi(z)^2)$, where $m_\phi(z) = m_{\phi,0}(1+z)^{9/4}$ for $n=1$
-potential (standard Temporal Shear Suppression form). The resulting matter power spectrum ratio $P_{\rm
+potential (standard chameleon form). The resulting matter power spectrum ratio $P_{\rm
 TEP}(k)/P_{\Lambda{\rm CDM}}(k)$ and integrated $\sigma_8$ are computed
 self-consistently (Appendix A.1.8). Key results:
 
@@ -2654,7 +2654,7 @@ $\sqrt{1+z}$ multiplier on the potential contrast, not through a moving referenc
 mass. The $z = 0$ base scale is not arbitrary: it corresponds to the mass at which the TEP
 Temporal Topology radius $R_T = (3M/4\pi\rho_T)^{1/3}$ equals the halo
 virial radius for $\rho_T \approx 20$ g/cm³. This connection — from the
-Temporal Topology reference density $\rho_T$ derived from GNSS clocks and SPARC
+Temporal Topology reference density $\rho_T$ anchored by SPARC
 rotation curves to the reference mass used in the JWST $\Gamma_t$
 formula — provides an independent physical motivation that does not rely
 on tuning to JWST data.
@@ -3919,7 +3919,7 @@ the high-redshift universe.
 
 ## 5. Conclusion
 
-JWST has revealed a coherent pattern of anomalies at $z > 5$: ultra-massive galaxies with star formation efficiencies exceeding $\Lambda$CDM limits and stellar masses that can exceed dynamical masses. What links these anomalies is not merely that they are surprising, but that they cluster in the deepest gravitational potentials and point in the same direction — photometrically inferred stellar properties appear too large and too early. This work tested whether a single violation of the isochrony axiom, encoded by the Temporal Shear Suppression-screened Temporal Equivalence Principle (TEP), can account for that shared structure. Using the external Cepheid prior $\\kappa_{\\rm Cep} = (9.6 \pm 4.0) \times 10^5$ mag with no JWST retuning, the framework reproduces the scale of the Red Monster efficiency excess and yields a regime-level reconciliation of the $M_*/M_{\rm dyn}$ anomaly. The Little Red Dot black-hole branch is retained as an unresolved compact-core stress test rather than as part of the primary evidence stack.
+JWST has revealed a coherent pattern of anomalies at $z > 5$: ultra-massive galaxies with star formation efficiencies exceeding $\Lambda$CDM limits and stellar masses that can exceed dynamical masses. What links these anomalies is not merely that they are surprising, but that they cluster in the deepest gravitational potentials and point in the same direction — photometrically inferred stellar properties appear too large and too early. This work tested whether a single violation of the isochrony axiom, encoded by the chameleon-screened Temporal Equivalence Principle (TEP), can account for that shared structure. Using the external Cepheid prior $\\kappa_{\\rm Cep} = (9.6 \pm 4.0) \times 10^5$ mag with no JWST retuning, the framework reproduces the scale of the Red Monster efficiency excess and yields a regime-level reconciliation of the $M_*/M_{\rm dyn}$ anomaly. The Little Red Dot black-hole branch is retained as an unresolved compact-core stress test rather than as part of the primary evidence stack.
 
 
 ### 5.1 Synthesis of Results
@@ -3932,7 +3932,6 @@ Follow-up branches strengthen this hierarchy. COSMOS2025 adds blank-field suppor
 ### 5.2 Interpretative Framework
 
 The interpretive claim is direct. Physical processes require proper time. Standard inference assumes that proper time and cosmic time can be identified. The JWST anomalies are what appear when that identification fails in deep potentials. Under TEP, time behaves as a local field, and a single parameter ($\Gamma_t$) propagates coherently through stellar ages, mass-to-light ratios, dust buildup, star-formation diagnostics, and dynamical-mass comparisons.
-
 
 This empirical case moves beyond generalized mass correlations through two especially important lines of evidence:
 
@@ -4018,11 +4017,11 @@ Brammer, G. B., van Dokkum, P. G., & Coppi, P. 2008, ApJ, 686, 1503. *EAZY: A Fa
 
 Brout, D., et al. 2022, ApJ, 938, 110. *Type Ia supernova host-mass step measurements in Pantheon+.*
 
-Brax, P., van de Bruck, C., Davis, A.-C., Khoury, J., & Weltman, A. 2004, PhRvD, 70, 123518. *Small scale structure formation in Temporal Shear Suppression cosmology.*
+Brax, P., van de Bruck, C., Davis, A.-C., Khoury, J., & Weltman, A. 2004, PhRvD, 70, 123518. *Small scale structure formation in chameleon cosmology.*
 
 Bruzual, G. & Charlot, S. 2003, MNRAS, 344, 1000. *Stellar population synthesis at the resolution of 2003.*
 
-Burrage, C. & Sakstein, J. 2018, Living Reviews in Relativity, 21, 1. *Tests of Temporal Shear Suppression Gravity.*
+Burrage, C. & Sakstein, J. 2018, Living Reviews in Relativity, 21, 1. *Tests of Chameleon Gravity.*
 
 Carniani, S., et al. 2024, Nature, 633, 318. *A shining cosmic dawn: spectroscopic confirmation of two luminous galaxies at z > 14.*
 
@@ -4084,7 +4083,7 @@ Ju, M., et al. 2025, arXiv:2506.12129. *A 13-Billion-Year View of Galaxy Growth:
 
 Kelly, P. L., et al. 2010, ApJ, 715, 743. *Host-galaxy mass step in Type Ia supernova distances.*
 
-Khoury, J. & Weltman, A. 2004, PhRvL, 93, 171104. *Temporal Shear Suppression Fields: Awaiting Surprises for Tests of Gravity in Space.*
+Khoury, J. & Weltman, A. 2004, PhRvL, 93, 171104. *Chameleon Fields: Awaiting Surprises for Tests of Gravity in Space.*
 
 Kawinwanichakij, L., et al. 2025, ApJ (in press). *Environmental dependence of galaxy morphology at z = 3–4.*
 
@@ -4221,7 +4220,7 @@ to which all non-gravitational matter couples. The JWST response normalization
 $K_{\rm gal}$ is informed by the Cepheid response scale $\kappa_{\rm Cep}$
 measured in Paper 11. It is a transferred galaxy-sector effective normalization,
 not the Cepheid coefficient itself and not a microscopic scalar coupling.
-$K_{\rm gal}$ is not identified with bare couplings ($\beta$, $\kappa_{\rm Cep}$,
+$K_{\rm gal}$ is not identified with bare couplings ($\beta_A$, $\kappa_{\rm Cep}$,
 or $\alpha_{\rm clock}$). A microscopic mapping requires a solved transfer function
 that absorbs stellar physics, environmental activation, and field gradients.
 The JWST analysis adopts this observable response normalization for the
@@ -4250,7 +4249,7 @@ $$S_{\rm matter} = S_{\rm matter}[\psi, \tilde{g}_{\mu\nu}], \quad
 \nabla_\nu\phi$$
 
 
-The conformal factor $A(\phi) = \exp(\beta\phi/M_{\rm Pl})$ controls 
+The conformal factor $A(\phi) = \exp(\beta_A\phi/M_{\rm Pl})$ controls 
 the clock rate $d\tau/dt \propto A(\phi)$. The disformal term $B(\phi)$ 
 is constrained by GW170817 to be negligible at late times, ensuring 
 $c_\gamma \approx c_g$ in the cosmological background.
@@ -4333,7 +4332,7 @@ For an unscreened bare coupling $\beta \sim 0.8$, this would give $|\gamma -
 magnitude. Near massive bodies, the locally active PPN scalar charge is
 suppressed by source/environment screening (Temporal Shear flattening), bringing
 $|\gamma - 1|_{\rm eff} \lesssim 10^{-6}$ into compliance with observations
-without invoking rigid continuous gradient suppressions.
+without invoking rigid thin-shell approximations.
 
 
 
@@ -4362,7 +4361,7 @@ the use of the potential-dependent parameterization $\Gamma_t =
 #### A.1.5 Screening Hierarchy Validation
 
 
-The density-dependent screening hierarchy explains why precision tests
+The environment-dependent screening hierarchy explains why precision tests
 of General Relativity show no deviation despite the large halo-scale
 response. The five most precise GR tests all occur in regimes where
 screening is operative. For example, the Hulse-Taylor binary pulsar at
@@ -4406,15 +4405,15 @@ $$K = \frac{\kappa_{\rm gal} \ln 10}{2.5 n} \approx 1.26 \times 10^6$$
 
 
 Here $\kappa_{\rm gal}$ denotes the derived galaxy-sector effective response
-(not the Cepheid-measured coefficient $\kappa_{\rm Cep}$). **Neither $K$
+(not the Cepheid-measured coefficient $\kappa_{\rm Cep}$). Neither $K$
 nor $\kappa_{\rm gal}$ is identified with $\beta$, $\kappa_{\rm Cep}$, or
-$\alpha_{\rm clock}$.** A microscopic mapping requires a solved transfer
+$\alpha_{\rm clock}$. A microscopic mapping requires a solved transfer
 function that absorbs stellar physics, environmental activation, and field
 gradients, and is not assumed here. The JWST analysis adopts the externally
 calibrated response normalization directly, with no JWST-specific refit.
 
 
-**A.1.5b.1 Redshift Scaling.**
+A.1.5b.1 Redshift Scaling.
 The $\sqrt{1+z}$ scaling reflects the weakening of cosmological screening 
 at higher redshift due to lower background density. This scaling ensures 
 that the temporal enhancement factor remains active during the peak epoch 
@@ -4453,7 +4452,7 @@ Table A1: Structural Assumptions in the TEP Formula
 
 | Component | Adopted Form | Physical Justification | Alternative Possibilities |
 | --- | --- | --- | --- |
-| **Functional form** | Exponential: $\Gamma_t = \exp[ K \frac{\Phi - \Phi_{\rm ref}}{c^2} \sqrt{1+z} ]$ | Conformal coupling $\tilde{g}_{\mu\nu} = A^2(\phi) g_{\mu\nu}$ with $A(\phi) = \exp(\beta\phi/M_{\rm Pl})$ implies proper time $d\tau \propto A(\phi) dt$ | Power-law, logarithmic, or other monotonic functions of potential depth |
+| **Functional form** | Exponential: $\Gamma_t = \exp[ K \frac{\Phi - \Phi_{\rm ref}}{c^2} \sqrt{1+z} ]$ | Conformal coupling $\tilde{g}_{\mu\nu} = A^2(\phi) g_{\mu\nu}$ with $A(\phi) = \exp(\beta_A\phi/M_{\rm Pl})$ implies proper time $d\tau \propto A(\phi) dt$ | Power-law, logarithmic, or other monotonic functions of potential depth |
 | **Redshift scaling** | $K(z) = K_{\rm gal} \sqrt{1+z}$ | Screening weakens at high redshift due to lower background density; $\sqrt{1+z}$ scaling emerges from Temporal Topology radius evolution with cosmic mean density | $(1+z)^n$ with $n \neq 0.5$, or constant $K(z) = K_{\rm gal}$ |
 | **Reference mass evolution** | $\log M_{\rm h,ref}(z) = 12.0 - 1.5\log_{10}(1+z)$ | Maintains constant virial velocity (constant potential depth) as characteristic halo mass evolves; exponent 1.5 from $M \propto (1+z)^{-3/2}$ for fixed circular velocity | Fixed reference mass, or different evolutionary index |
 | **Reference redshift** | $z_{\rm ref} = 5.5$ | Normalization epoch chosen near the midpoint of the JWST high-redshift sample; affects absolute scaling but not relative trends | Any $z_{\rm ref} \in [4, 8]$ would shift normalization but preserve rank ordering |
@@ -4474,7 +4473,7 @@ choice but a consequence of the two-metric structure.
 
 - 
 **$\sqrt{1+z}$ scaling:** Motivated by the
-density-dependent screening hierarchy (§A.1.2), but the exact
+environment-dependent screening hierarchy (§A.1.2), but the exact
 exponent 0.5 is a simplification. The full screening evolution
 depends on the time-dependent background density and the scalar
 field equation of motion. Alternative scalings $(1+z)^n$ with $n \in
@@ -4705,7 +4704,7 @@ eff}}{G_N} \lesssim 1.006$$
 
 This implies that any fifth force responsible for the halo-scale
 temporal enhancement must be screened and/or short-ranged on $\sigma_8$
-scales. In Temporal Shear Suppression-like models this can occur via a continuous gradient suppression
+scales. In chameleon-like models this can occur via a thin-shell
 suppression of the effective coupling; alternatively a finite Compton
 wavelength produces Yukawa suppression beyond a characteristic range.
 
@@ -4716,7 +4715,7 @@ wavelength produces Yukawa suppression beyond a characteristic range.
 
 The apparent tension between the halo-scale response (Cepheid-calibrated $\kappa_{\rm Cep}$ prior from Paper 11)
 and the $\sigma_8$ constraint ($\beta_{\rm eff}
-\lesssim 0.055$) is resolved by density-dependent screening. This
+\lesssim 0.055$) is resolved by environment-dependent screening. This
 section provides a quantitative model demonstrating how the required
 $\sim 10\times$ suppression arises naturally from the characteristic
 screening length associated with $\rho_T$.
@@ -4741,7 +4740,7 @@ The screening factor $S = R_T/R_{\text{phys}}$ then
 determines the degree of suppression: when $S \gg 1$, the object is
 deeply screened and GR is recovered; when $S \ll 1$, the scalar field is
 active. The specific dynamical origin of this saturation—whether from a
-density-dependent effective mass (Temporal Shear Suppression-type) or non-linear
+density-dependent effective mass (chameleon-type) or non-linear
 derivative interactions (kinetic/DBI-type)—does not affect the
 phenomenological hierarchy derived below (see §A.1.11 for discussion).
 
@@ -4803,7 +4802,7 @@ $$\beta_{\rm eff}(R_8) \approx \beta \times
 
 
 This is well below the Planck 2$\sigma$ bound of $\beta_{\rm eff}
-\lesssim 0.055$, demonstrating that the density-dependent screening
+\lesssim 0.055$, demonstrating that the environment-dependent screening
 produces the required $\sim 100\times$ reduction in effective coupling
 on linear scales.
 
@@ -4884,7 +4883,7 @@ constraint) is resolved by:
 
 
 - 
-**Density-dependent screening:** The Temporal Topology radius
+**Environment-dependent screening:** The Temporal Topology radius
 produces a screening factor $S \propto \rho^{1/3}$ that
 suppresses the scalar force on linear scales by factors of $\sim
 100$.
@@ -5237,7 +5236,7 @@ consistent with the phenomenological hierarchy:
 
 
 **Temporal Topology screening** (Smawfield 2025, Paper 0;
-historically described using Temporal Shear Suppression-like density-mass language, but now treated as a candidate density-mass realization of the effective Temporal Topology framework) is one candidate density-mass
+historically described using chameleon-like density-mass language, but now treated as a candidate density-mass realization of the effective Temporal Topology framework) is one candidate density-mass
 realization of the effective Temporal Topology framework (§A.1). A density-dependent effective potential
 $V_{\text{eff}}(\phi;\rho) = V(\phi) + [A(\phi)-1]\rho$ produces a
 density-dependent effective mass $m_{\text{eff}}(\rho)$ that grows with
@@ -5259,8 +5258,8 @@ Dirac-Born-Infeld structure $P(X) = -\Lambda^4\sqrt{1 - 2X/\Lambda^4} +
 \Lambda^4 - V(\phi)$ enforces a maximum gradient $|\nabla\phi| \leq
 \Lambda^2$, producing gradient saturation in dense environments. This
 identifies $\rho_T \equiv \Lambda^4 \approx 20$ g/cm³. The resulting
-screening is sometimes described as "Temporal Shear Suppression-like" in the literature,
-though strictly Temporal Shear Suppression screening refers to Galileon-type derivative
+screening is sometimes described as "Vainshtein-like" in the literature,
+though strictly Vainshtein screening refers to Galileon-type derivative
 interactions rather than DBI kinetic terms.
 
 
@@ -5328,13 +5327,13 @@ and are valid under either UV completion.
 **Note on Theoretical Development**
 
 
-Paper 0 (Smawfield 2025) adopted what was then described as Temporal Shear Suppression screening
+Paper 0 (Smawfield 2025) adopted what was then described as chameleon screening
 (now refined as Temporal Topology) as the simplest realization consistent with the canonical TEP action. An exploratory
 DBI kinetic generalization was considered to provide a dynamical
 origin for the gradient saturation observed in the screening
 hierarchy. The cosmology paper (Paper 11) correctly noted that the
 screening mechanism "remains to be derived from first principles"
-and that the phenomenology "mimics Temporal Shear Suppression or Temporal Shear Suppression
+and that the phenomenology "mimics chameleon or Vainshtein
 screening." This agnostic position is adopted here: the robust
 empirical finding is the saturation density $\rho_T \approx 20$
 g/cm³ and the resulting screening hierarchy, not the specific
@@ -5665,9 +5664,9 @@ the core saturation density $\rho_T \approx 20$ g/cm³, the Sun's deep
 Newtonian potential ($\Phi_N \sim 10^{-6}$) ensures that the field
 gradient vanishes in the interior, with only a narrow outer region
 contributing to the scalar force. The effective coupling is suppressed
-to $\kappa_{\rm eff} \ll \beta$, reducing $\kappa_{\rm eff}$ to
+to $\kappa_{\rm eff} \ll \beta_A$, reducing $\kappa_{\rm eff}$ to
 $\lesssim 10^{-6}$ and satisfying all solar system bounds without
-invoking a rigid continuous gradient suppression.
+invoking a rigid thin-shell approximation.
 
 
 
@@ -5860,7 +5859,7 @@ Table C2: Modified Gravity Comparison (JWST Anomaly Predictions)
 | **TEP** | **8** | **3** | — |
 | $f(R)$ | 1 | 3 | No dust/clock prediction |
 | Galileon | 1 | $-1$ | Ruled out by GW170817 |
-| Temporal Shear Suppression | 0 | 3 | No JWST predictions |
+| Symmetron | 0 | 3 | No JWST predictions |
 | DGP | 0 | 1 | Self-accelerating branch ruled out |
 | MOND | 0 | $-1$ | Non-relativistic; no clock effect |
 | Horndeski (generic) | 0 | 0 | Too broad; no specific predictions |

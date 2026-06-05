@@ -2,7 +2,7 @@
   "name": "TEP-J0437",
   "short_name": "TEP-J0437",
   "paper_number": 16,
-  "version": "v0.1",
+  "version": "v0.2 (Sintra)",
   "codename": "Sintra",
   "author": "Matthew Lukin Smawfield",
   "date": {
@@ -89,5 +89,6 @@
       "file": "9_appendix.html",
       "order": 10
     }
-  ]
+  ],
+  "last_updated": "05 June 2026"
 }
