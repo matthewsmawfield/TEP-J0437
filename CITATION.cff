@@ -1,14 +1,14 @@
 cff-version: 1.2.0
 title: "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation"
 message: "If you use this work, please cite it as below."
-type: software
+type: article
 authors:
   - family-names: "Smawfield"
     given-names: "Matthew Lukin"
     orcid: "https://orcid.org/0009-0003-8219-3159"
 abstract: >
   Standard scintillation models predict zero phase closure around delay triplets. TEP predicts path-dependent proper-time transport (synchronization holonomy) in low-density sightlines. PSR J0437-4715 shows weighted phase closure psi = 0.984 ± 0.046 rad (Rayleigh p = 1.34 × 10^-44), rejecting the scalar-delay null; multi-pulsar checks are directionally consistent with TEP environmental screening.
-version: "v0.1 (Sintra)"
+version: v0.2 (Sintra)
 date-released: 2026-06-05
 doi: 10.5281/zenodo.19454620
 url: "https://github.com/matthewsmawfield/TEP-J0437"
