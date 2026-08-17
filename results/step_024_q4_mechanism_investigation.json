@@ -87,13 +87,13 @@
   },
   "control_analysis": {
     "metric": "signed_geometric_mean_ns (Stokes-aligned)",
-    "raw_q4_H_ns": NaN,
+    "raw_q4_H_ns": null,
     "raw_q123_H_ns": 0.6859936764646857,
-    "raw_mag_ratio": NaN,
+    "raw_mag_ratio": null,
     "n_matched_q123": 0,
     "controlled_q123_H_ns": 0.6859936764646857,
-    "controlled_ratio": NaN,
-    "ratio_change": NaN
+    "controlled_ratio": null,
+    "ratio_change": null
   },
   "epoch_metrics": [
     {

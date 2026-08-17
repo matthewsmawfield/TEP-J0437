@@ -1,7 +1,7 @@
 # The Cepheid Bias: Resolving the Hubble Tension
 **Matthew Lukin Smawfield**  
-Version: v0.7 (Kingston upon Hull)  
-First published: 11 January 2026 · Last updated: 2 July 2026  
+Version: v0.8 (Kingston upon Hull)
+First published: 11 January 2026 · Last updated: 14 August 2026  
 DOI: 10.5281/zenodo.18209702
 
 ---
@@ -18,9 +18,13 @@ Principle (TEP).
 
 The hypothesis tested here is that Cepheid variable stars function as
 environment-dependent "standard clocks." In deep gravitational
-potentials and active-shear environments, the TEP clock response
+potentials where Temporal Shear remains active, the TEP clock response
 accelerates the effective Cepheid clock rate, shortening observed
-pulsation periods relative to calibration environments. When interpreted through a universal Period-Luminosity
+pulsation periods relative to calibration environments. Potential depth
+controls the amplitude and sign of the clock response conditional on
+active Temporal Shear; a deep potential in a strongly suppressed
+environmental state need not exhibit a large observable TEP correction.
+When interpreted through a universal Period-Luminosity
 relation, this clock-rate anomaly mimics diminished luminosity,
 leading to underestimated distances and an inflated local Hubble
 constant.
@@ -37,11 +41,14 @@ inferred modulus.
 
 The proper test must therefore be applied at the redshift-distance
 level, where distances are tied to an independent velocity scale.
+Here $cz_{\rm HD}$ is used as the conventional low-redshift redshift
+coordinate supplied by the Hubble-diagram analysis; within TEP this
+operational variable does not imply literal spatial recession or expansion.
 A velocity-space likelihood analysis models
 $cz_i = d_i^{\rm true}\,(H_{\rm app} + \Gamma_X X_i) + v_i$
 and identifies a structurally robust combined environmental slope
-$\Gamma_X = +2.35\times10^7 \pm 1.00\times10^7$ (2.3$\sigma$ at
-$\sigma_v = 250$ km/s; 3.4$\sigma$ at $\sigma_v = 150$ km/s). The signal survives explicit controls for
+$\Gamma_X = +2.31\times10^7 \pm 1.01\times10^7$ (2.3$\sigma$ at
+$\sigma_v = 250$ km/s; 3.15$\sigma$ at $\sigma_v = 150$ km/s). The signal survives explicit controls for
 redshift trend, sky dipole ($\sim$100 km/s), quadrupole, and
 group-offset models; binned permutation tests confirm it
 is not driven by redshift or sky selection. Leave-one-host-out
@@ -56,9 +63,9 @@ $\beta_X$ to zero, corresponding to the hypothesis tested here: the observed
 environmental slope is dominantly a Cepheid clock-transport bias.
 In that gauge—treating the environmental slope as a pure Cepheid
 clock-rate bias ($\beta_X = 0$)—the equivalent
-response coefficient is $\kappa_{\rm Cep} \approx 7.34\times10^5$ mag,
+response coefficient is $\kappa_{\rm Cep} \approx 7.21\times10^5$ mag,
 consistent with the canonical TEP parameter $\kappa_{\rm gal} = 9.6\times10^5$ mag ($\sim 10^6$).
-The velocity-space fit yields $H_{\rm app} = 69.47 \pm 1.49$ km/s/Mpc;
+The velocity-space fit yields $H_{\rm app} = 69.54 \pm 1.50$ km/s/Mpc;
 in the TEP-native gauge this corresponds to a Cepheid clock-bias
 correction that brings the local distance scale into agreement with
 the CMB inference. As a historical residual-space cross-check, the empirical one-parameter
@@ -73,7 +80,7 @@ the generative inference. The inferred coefficient places this probe in
 the same response-coefficient regime as the millisecond-pulsar
 spin-down excess (Paper 10).
 External TRGB distances ($N=13$ overlap) give
-$\kappa_{\rm Cep} = +3.2\times10^5$ ($0.8\sigma$)—underpowered to
+$\kappa_{\rm Cep} = +3.2\times10^5$ ($0.82\sigma$)—underpowered to
 independently break the $\kappa$–$\beta$ degeneracy, yet directionally
 consistent with and supportive of the TEP-native gauge.
 
@@ -89,8 +96,9 @@ time dilation
 
 ### 1.1 The Hubble Tension: A Crisis in Cosmology
 
-The Hubble constant $H_0$—the present-day expansion rate of the
-universe—anchors the cosmic distance scale. Its measurement has been a
+The Hubble constant $H_0$—conventionally interpreted as the present-day
+expansion rate of the universe and operationally defining the low-redshift
+distance–redshift scale—anchors the cosmic distance ladder. Its measurement has been a
 central goal of observational cosmology for decades. Yet precision
 measurements have revealed a troubling discrepancy: the local distance
 ladder, calibrated through Cepheid variable stars and Type Ia supernovae,
@@ -126,7 +134,7 @@ a scalar field $\phi$ that mediates an additional gravitational interaction,
 with the action $S = \int d^4x \sqrt{-g} \left[ \frac{M_{\rm Pl}^2}{2} R - \frac{1}{2}(\nabla_\mu
 \phi)(\nabla^\mu \phi) - V(\phi) \right] + S_m[\tilde{g}_{\mu\nu},
 \Psi_m]$, where $R$ is the Ricci scalar, $V(\phi)$ is the scalar potential,
-and $S_m$ is the matter action. The key feature is the disformal coupling:
+and $S_m$ is the matter action. The key feature is the universal causal matter metric:
 matter fields $\Psi_m$ couple not to the Einstein-frame metric $g_{\mu\nu}$
 but to the Jordan-frame metric $\tilde{g}_{\mu\nu} = A^2(\phi) g_{\mu\nu} + B(\phi) \nabla_\mu\phi \nabla_\nu\phi$,
 where $A(\phi) = \exp(\beta_A\phi/M_{\rm Pl})$ is the conformal factor and $B(\phi)$ encodes
@@ -207,7 +215,8 @@ phenomena. Paper 10 reports a primary hybrid-controlled spin-down residual of
 0.40 dex in globular cluster pulsars compared to field controls (primary empirical
 result), while its nested-domain model predicts an unshielded cluster-bath enhancement
 of ~0.58 dex prior to companion-shielding effects, consistent with TEP predictions for
-intermediate-scale time-dilation enhancement ($\kappa_{\rm MSP} \sim 10^6$–$10^7$ mag). Consequently, Cepheids in deep galactic potentials (high velocity
+intermediate-scale time-dilation enhancement (unsuppressed conformal clock-response coefficient $\sim 10^6$–$10^7$,
+dimensionless for the pulsar channel). Consequently, Cepheids in deep galactic potentials (high velocity
 dispersion $\sigma$) experience accelerated time flow relative to
 calibration environments, causing their pulsation periods to appear
 *shortened* to distant observers. When observers apply the standard
@@ -424,13 +433,17 @@ leading clock-transport limit), $\chi_L$ is the structural luminosity
 response ($\chi_L \simeq 0$ at leading order), and $T_{\rm disk} \sim 1$
 for galactic disks (Appendix C gives the full pulsation derivation). The
 companion paper TEP-COS (Paper 10) measures the effective screened pulsar
-response $\kappa_{\rm MSP}^{\rm emp} \approx 3 \times 10^4$ in dense
-globular clusters. The correct cross-paper comparison is through the
+full response coefficient $\tilde\kappa_{\rm MSP} \approx 3 \times 10^4$ in dense
+globular clusters (step_44_kappa_msp_prior.json). This is distinct from
+Paper 10's in-equation coupling
+$\kappa_{\rm MSP}^{\rm emp} \approx 0.05$; both derive from the same underlying
+conformal clock-response sector $\sim\!10^6$ but with different normalisations
+(Appendix~B). The correct cross-paper comparison is through the
 shared $\alpha_{\rm clock}$, not by direct equality of raw coefficients:
 
 \begin{equation}
 \kappa_{\rm Cep} = \frac{|b|\,q_P}{\ln 10}\,\alpha_{\rm clock}\,T_{\rm disk}, \qquad
-\kappa_{\rm MSP}^{\rm emp} = \alpha_{\rm clock}\,T_{\rm GC} ,
+\tilde\kappa_{\rm MSP} = \alpha_{\rm clock}\,T_{\rm GC} ,
 \end{equation}
 
 with $T_{\rm GC} \sim 10^{-2}$–$10^{-1}$. Thus a Cepheid coefficient of
@@ -450,14 +463,13 @@ In the TEP framework, the scalar field gradient (Temporal Shear) is
 progressively suppressed by ambient matter density through a continuous
 spatial profile, rather than switching at a discrete
 threshold. The suppression is quantified by a dimensionless
-shear-suppression factor $S(\rho) \in [0,1]$[1](#fn-screening):
+shear-suppression factor $S(\rho) \in [0,1]$<sup>[1](#fn-screening)</sup>:
 
-1The screening factor $S(\rho)$ derives from the canonical
-Temporal Topology of the scalar time field (Paper 0, v0.9 Jakarta), where
-the continuous spatial profile suppresses the locally active Temporal Shear
-sector in dense environments. Chameleon, Vainshtein, Galileon, DBI, and
-symmetron mechanisms may be studied as candidate microscopic completions, but
-they are not the defining ontology of TEP. See Paper 6, Box 6.5 for the
+<sup>1</sup>The microscopic completion is not specified in this analysis.
+The operative TEP mechanism is continuous environmental suppression of
+Temporal Shear, represented by the corpus-level operator
+$S_\Sigma(\mathcal{E})$. The function $S(\rho)$ used here is its
+channel-specific galactic projection. See Paper 6, Box 6.5 for the
 soliton derivation and the $R_{\rm sol} \propto M^{1/3}$ scaling from the
 canonical action with saturation potential $V(\phi)$.
 
@@ -471,9 +483,11 @@ half-suppression density and the exponent $n=2$ controls the steepness of
 the transition. $S = 1$ corresponds to fully active shear (unsuppressed),
 while $S \rightarrow 0$ indicates deep suppression in dense environments.
 The Temporal Topology saturation scale $\rho_{\rm T}$ (Paper 6) remains
-the series-level saturation scale; $\rho_{\rm half}$ is its
-galactic-scale manifestation derived from SPARC rotation-curve
-normalizations.
+the series-level saturation scale; $\rho_{\rm half}$ and $\rho_T$
+are scale-dependent phenomenological projections of the same nonlinear
+Temporal-Topology response and are not numerically interchangeable.
+The value $\rho_{\rm half} \approx 0.5 \, M_\odot/\text{pc}^3$ is
+derived from SPARC rotation-curve normalizations.
 
 **Physical mechanism:** The suppression arises from non-linear
 superposition of the scalar field gradient (Temporal Shear) with ambient
@@ -493,15 +507,24 @@ becomes:
 \label{eq:tep_correction}
 \end{equation}
 
+In the primary host-contrast parameterization, $S(\rho)$ is the
+environmental transfer factor for the complete host-to-reference
+potential contrast. It is therefore applied to
+$\sigma_{\rm host}^2 - \sigma_{\rm ref}^2$, rather than separately
+to two absolute endpoint responses. The screen-weighted anchor
+prescription of Equation 12 is reported as an alternative
+sensitivity model.
+
 where $\kappa_{\rm Cep}$ is the **Observable Response Coefficient**
 for Cepheid period-luminosity anomalies—an astrophysical response parameter
 that absorbs the intrinsic coupling $\beta_A$, the virial proportionality
 between $|\Phi|$ and $\sigma^2$, the P-L slope $b$, the factor $1/\ln 10$,
 stellar physics, environmental activation, and transfer functions. This is
-distinct from a bare scalar coupling: Cassini bounds the bare scalar-tensor coupling
-$\alpha_0 \lesssim 3\times10^{-3}$, while $\kappa_{\rm Cep} \sim 10^6$ is an
-*observable response* that includes all astrophysical amplification
-mechanisms. $S(\rho)$ encodes the environment-dependent attenuation of Temporal
+distinct from the microscopic conformal coupling: local PPN and
+equivalence-principle experiments constrain the environmentally projected,
+source-screened local scalar response, whereas $\kappa_{\rm Cep}$ is a
+channel-level observable response incorporating astrophysical and
+environmental transfer. $S(\rho)$ encodes the environment-dependent attenuation of Temporal
 Shear. In this convention $\kappa_{\rm Cep}$ has units of magnitude, and with
 $\sigma^2/c^2 \sim 10^{-7}$ it naturally takes values of order $10^6$,
 placing the distance-ladder response in the same *response hierarchy* as the
@@ -521,8 +544,9 @@ This $\sigma^2/c^2$ form replaces the earlier phenomenological
 $\log_{10}(\sigma/\sigma_{\rm ref})$ scaling. The log form was an empirical
 approximation that could mimic the full TEP prediction only over a narrow
 range of $\sigma$ and did not permit direct numerical comparison with
-independent TEP probes. The physics-derived form used here is the unique
-linear-order prediction of the TEP mechanism combined with the virial
+independent TEP probes. The physics-derived form used here is the leading
+linear-order prediction of the TEP mechanism under the adopted galactic
+transfer closure, combined with the virial
 theorem, and it enables a quantitative, unit-consistent comparison of
 $\alpha$ across probes.
 
@@ -584,15 +608,18 @@ constrained by requiring the corrected sample to show no residual
 $H_0$–$\sigma$ dependence.
 
 The large Observable Response Coefficient $\kappa_{\rm Cep} \sim 10^6$ mag applies to the
-clock-rate sector in unscreened Cepheid environments. It does not map directly
-onto a bare scalar coupling constrained by Cassini, MICROSCOPE, or GW170817.
-Those experiments constrain different observable projections: local source charge,
-photon-cone propagation, equivalence-principle violation, and screened solar-system
-gradients. The present coefficient is a channel-level Cepheid period-response
-coefficient. The mapping from the bare scalar coupling $\beta_A$ to the
-observable response coefficient $\kappa_{\rm Cep}$ is parameterized and
-constrained by the data; the leading scalar-boundary Cepheid period-transport
-law is derived in Appendix C.
+conformal clock-rate sector in unsuppressed Cepheid environments. It does not map directly
+onto the microscopic conformal coupling. Cassini and MICROSCOPE constrain local,
+source-screened PPN and equivalence-principle projections of the scalar sector.
+GW170817/GRB170817A instead constrains differential GW–photon propagation: in the
+pure-conformal branch, $A^2(\phi)\,g_{\mu\nu}$ preserves the null cone of $g_{\mu\nu}$,
+so common-mode same-path conformal transport does not generate a relative
+GW–photon propagation delay. The multimessenger bound therefore constrains any
+disformal ($B(\phi)$)-induced cone splitting. The present $\kappa_{\rm Cep}$ is
+instead a channel-level conformal clock-response coefficient. The mapping from the
+unsuppressed conformal coupling $\beta_A$ to the observable response coefficient
+$\kappa_{\rm Cep}$ is parameterized and constrained by the data; the leading
+scalar-boundary Cepheid period-transport law is derived in Appendix C.
 
 ### 2.5 Historical Residual-Space Optimization (Cross-Check)
 
@@ -757,12 +784,12 @@ for visualization, this is converted into a host-level $H_0$-equivalent
 value via:
 
 Screening in TEP is represented at the theory level by the environmental operator
-*S*&Sigma;(*&Epsilon;*).
+*S*<sub>&Sigma;</sub>(*&Epsilon;*).
 Quantities such as
-&rho;T,
-*R*T(*M*),
-*S*&oplus;(*r*),
-compactness &Phi;/*c*2,
+&rho;<sub>T</sub>,
+*R*<sub>T</sub>(*M*),
+*S*<sub>&oplus;</sub>(*r*),
+compactness &Phi;/*c*<sup>2</sup>,
 local stellar density,
 geometric coherence length,
 and channel-specific response coefficients
@@ -824,7 +851,9 @@ independent robustness verification.
 | Full-covariance GLS slope BIC | $+2.4$ | free-intercept covariance fit |
 | Host-contrast BIC | $+2.4$ | model-dependent contrast evidence |
 
-**Host-contrast projection.** The host-contrast likelihood removes the shared calibration mode and tests only the host-to-host environmental structure. This avoids allowing the common SH0ES zero-point uncertainty to dominate the model comparison. In this contrast space, the null model contains no environmental term, while the TEP model contains one fitted response coefficient, $\kappa_{\rm Cep}$. The resulting $\Delta{\rm BIC} = +2.4$ quantifies positive evidence for the environmental predictor.[1](#fn-contrast)
+**Host-contrast projection.** The host-contrast likelihood removes the shared calibration mode and tests only the host-to-host environmental structure. This avoids allowing the common SH0ES zero-point uncertainty to dominate the model comparison. In this contrast space, the null model contains no environmental term, while the TEP model contains one fitted response coefficient, $\kappa_{\rm Cep}$.    Defining $\Delta{\rm BIC}\equiv{\rm BIC}_{\rm null}-{\rm BIC}_{\rm TEP}$, the resulting
+$\Delta{\rm BIC} = +2.4$ provides positive evidence for the environmental predictor.
+Here the projected covariance is evaluated on the non-singular contrast subspace; equivalently, determinant terms are computed after removing the common calibration direction.
 
 | Likelihood | $\Delta{\rm BIC}$ | Role |
 | --- | --- | --- |
@@ -969,20 +998,26 @@ not show a statistically significant association with the distance-ladder residu
 
 ### 3.3 Cross-Probe Consistency: Cepheid and Pulsar Channels
 
-The TEP framework predicts a bare observable response coefficient
-$\kappa_{\rm bare} \sim 10^6$–$10^7$ mag from geometric compactness factors.
+The TEP framework predicts an unsuppressed observable response coefficient
+$\kappa_{\rm unsupp} \sim 10^6$–$10^7$ (dimensionless) from geometric compactness factors.
 In any given environment the *effective* coefficient is modulated by a
 channel-specific Temporal Shear transfer factor $T_{\rm env}$:
 
 \begin{equation}
-\kappa_{\rm eff,channel} = T_{\rm env,channel} \, \kappa_{\rm bare}
+\kappa_{\rm eff,channel} = T_{\rm env,channel} \, \kappa_{\rm unsupp}
 \end{equation}
 
 Paper 10 (TEP-COS) measures the effective screened pulsar response in
 dense globular clusters:
-$\kappa_{\rm MSP}^{\rm emp} = (0.99 \pm 4.5) \times 10^4$
-(step_5_55_kappa_msp_prior.json), consistent with a dense-cluster
-suppression factor $T_{\rm GC} \sim 0.03$ acting on the bare scale.
+$\tilde\kappa_{\rm MSP} = (2.9 \pm 4.5) \times 10^4$
+(step_44_kappa_msp_prior.json), consistent with a dense-cluster
+suppression factor $T_{\rm GC} \sim 0.03$ acting on the unsuppressed scale.
+This full response coefficient $\tilde\kappa_{\rm MSP}$ — which absorbs
+the potential and acceleration normalisation into a single
+dimensionless number — is distinct from Paper 10's in-equation
+in-equation coupling $\kappa_{\rm MSP}^{\rm emp} \approx 0.05$;
+both trace back to the same underlying conformal clock-response sector $\sim\!10^6$ with
+different screening normalisations (Appendix~B).
 This paper (Paper 11) calibrates the weakly screened galactic-disk
 response using a velocity-space likelihood analysis in which the
 directly identifiable host-level quantity is the combined environmental
@@ -1031,7 +1066,7 @@ coupling remains stable ($\kappa_{\rm Cep} \approx (1.30 \pm 0.39)\times10^6$ ma
 held-out residual slope is strongly reduced, demonstrating that the correction
 is internally consistent across the sample.
 
-The local and early-universe measurements become consistent within
+The local distance-ladder and CMB-inferred observational scales become consistent within
 uncertainties. A comprehensive sensitivity analysis scanned the effective
 calibrator velocity dispersion $\sigma_{\rm ref}$ across the range
 $30$–$130$ km/s. The unified $H_0$ remains statistically consistent with
@@ -1109,8 +1144,8 @@ Fitting a single Observable Response Coefficient to all 29 SN Ia hosts and 3 geo
 The difference between the joint models isolates the sensitivity of $\kappa_{\rm Cep}$
 to the precise definition of the anchor calibration scale under deep group-halo suppression.
 In both joint configurations, the coefficient remains positive, structurally
-consistent with the host-only value, and resolves the anchors-vs-hosts dichotomy
-under the TEP group-screening prescription. M31 remains a stress test of the current group-screening model.
+consistent with the host-only value, and renders the anchors-vs-hosts dichotomy
+quantitatively compatible with the TEP group-screening prescription. M31 remains a stress test of the current group-screening model.
 
 Critically, M31 (highest $\sigma = 160$ km/s) shows $M_W = -5.849$ mag,
 nearly identical to LMC (lowest $\sigma = 24$ km/s, $M_W = -5.878$ mag).
@@ -1179,14 +1214,15 @@ to the joint fit; the anchor data do not independently confirm the host-inferred
 coefficient, but they can be made compatible with it under a pre-specified
 group-screening prescription. This makes anchor behaviour a constraint on the
 screening sector rather than a direct detection of the Cepheid-bias effect.
-This anchors-vs-hosts dichotomy therefore finds a quantitative resolution in
+This anchors-vs-hosts dichotomy therefore finds a quantitative consistency explanation under
 the group halo shear suppression hypothesis: all three anchors are members of
 galaxy groups (Local Group for LMC and M31; Canes Venatici I for NGC 4258),
 while the SN Ia hosts are selected for smooth Hubble flow and are biased
 toward isolated field galaxies where Temporal Shear remains active.
-Local disk density controls source-region suppression; group-halo embedding
-controls ambient-field suppression. The effective screening factor is the
-envelope of both effects.
+Local density controls source-region suppression, while group-halo embedding
+controls ambient-field suppression. Their combined effect is represented by the
+multiplicative operator $S_{\rm total}=S_{\rm local}\,S_{\rm group}\,S_{\rm source}$,
+as defined in Section 4.6.
 The joint result is stable under reasonable variations of the anchor-screening factors; sensitivity tests are reported in Appendix D.
 
 In contrast to the anchors, high-$\sigma$ SN hosts like NGC 3147 ($\sigma =
@@ -1368,15 +1404,16 @@ high-$\sigma$ hosts, TRGB stars and other tracers in similar environments
 would also be expected to be dimmed in the same direction.
 
 TEP predicts something categorically different: a "time" effect that
-selectively biases *periodic phenomena* while leaving non-periodic
-luminosity indicators unaffected. The distinction is fundamental:
+selectively biases *periodic phenomena* while non-periodic
+luminosity indicators lack the leading period-transport term and should be
+comparatively less affected. The distinction is fundamental:
 
 | Indicator | Physical Basis | Sensitivity to Time Dilation | TEP Prediction |
 | --- | --- | --- | --- |
 | Cepheids | Period-Luminosity relation: $M = a + b\log_{10} P$ | HIGH — Period is a clock; $P \propto \tau$ | Biased in high-$\sigma$ hosts (period contracts → distance underestimated) |
 | TRGB | Core helium flash at $M_{\rm core} \approx 0.48 M_\odot$ | LOW — No direct period observable; luminosity set by a nuclear-physics threshold | Expected to be much less sensitive than period-based indicators |
 | Mira Variables | Period-Luminosity relation (long-period) | HIGH — Same as Cepheids | Biased (similar to Cepheids) |
-| SBF | Stellar fluctuation amplitude (geometric) | LOW — Statistical property, not periodic | Expected to be much less sensitive than period-based indicators |
+| SBF | Stellar fluctuation amplitude (non-periodic stellar-population) | LOW — Statistical property, not periodic | Expected to be much less sensitive than period-based indicators |
 
 This table encapsulates the key discriminating logic: if the Hubble Tension
 is caused by dust, metallicity, or any "light" effect, both Cepheids and
@@ -1457,7 +1494,7 @@ TRGB in deep potentials)
 
 #### Interpretation
 
-The differential TRGB–Cepheid test provides strong independent validation of the TEP mechanism, with both parametric and non-parametric trends confirming the core prediction. It is not straightforward to reproduce with simple, shared "light" systematics acting similarly on both tracers:
+The differential TRGB–Cepheid test provides supportive evidence consistent with the TEP mechanism, with both parametric and non-parametric trends showing the predicted sign. It is not straightforward to reproduce with simple, shared "light" systematics acting similarly on both tracers:
 
 **Dust extinction:** In the simplest shared-screen
 picture, dust would dim both indicators in the same direction → a
@@ -1483,8 +1520,8 @@ The sample size is modest ($N=13$) and the significance is at the ~2σ level,
 so this result should be interpreted with appropriate caution. However, it
 represents a qualitatively different type of evidence than the
 $H_0$–$\sigma$ correlation alone, as it directly tests the
-*mechanism*: periodic indicators (clocks) would be biased while
-non-periodic indicators (thermodynamic thresholds) would not. If confirmed
+*mechanism*: periodic indicators would carry the leading clock-transport bias,
+whereas non-periodic thermodynamic indicators would lack that leading term. If confirmed
 with larger samples, this would be the signature of a "time" effect, not a
 "light" effect.
 
@@ -1504,9 +1541,14 @@ The *differential* test ($\Delta\mu = \mu_{\rm TRGB} - \mu_{\rm Cepheid}$)
 —performed on the 13 hosts with both indicators—is the primary
 discriminating statistic: it asks whether the two indicators diverge in
 high-$\sigma$ environments. The observed positive correlation
-($r = 0.478$, $p = 0.049$; $N=13$) is directionally consistent with
+($r = 0.478$, $p = 0.049$; $N=13$; exploratory correlation statistic)
+is directionally consistent with
 Cepheids experiencing an *additional* distance underestimation
-beyond any effect shared with TRGB. This provides a strong independent mechanism test confirming the primary detection. The key
+beyond any effect shared with TRGB. This differential test has the
+predicted positive sign and is qualitatively consistent with a
+Cepheid-specific contribution. At the present ($N=13$) overlap,
+however, the preferred physical-regressor estimate is $0.82\sigma$
+and does not yet independently confirm the mechanism. The key
 discriminating prediction of TEP remains that non-periodic indicators
 show a *weaker* differential trend than periodic ones.
 
@@ -1567,21 +1609,18 @@ variance the test seeks to isolate. Therefore, multidimensional color-matching
 is explicitly omitted, and the pure "Matched logP" (baseline) test provides
 the theoretically valid proper-time variance.
 
-**Color-offset prediction (future test).** If the Inner
-Fainter signal is due to TEP period contraction (not dust extinction),
-then at a *matched observed period* $P_{\rm obs}$, inner bulge
-Cepheids (screened, longer true periods) and outer disk Cepheids
-(unscreened, shorter true periods) are actually stars of different
-intrinsic masses. By the mass–luminosity–color relation, longer-period
-Cepheids are cooler. TEP therefore predicts a systematic color offset
-$\Delta(V-I)$ at matched $P_{\rm obs}$: inner Cepheids should be
-systematically redder than outer Cepheids. A measured $\Delta(V-I)$
-consistent with the predicted sign and magnitude would definitively
-rule out dust as the primary confounder, because dust makes stars
-*redder and fainter* while TEP makes them redder at fixed
-$P_{\rm obs}$ but not fainter (the luminosity difference is carried
-by the period shift, not the color). This test requires HST-quality
-color photometry for the matched subsample and is planned as a follow-up.
+**Color-offset prediction (future test).** At matched
+observed period, inner screened Cepheids have approximately
+$P_{\rm true}\simeq P_{\rm obs}$, whereas outer active-shear Cepheids
+have $P_{\rm true}=P_{\rm obs}e^{\Delta\Theta}>P_{\rm obs}$. The outer
+Cepheids therefore correspond to intrinsically longer-period, brighter
+and—subject to instability-strip population effects—relatively redder
+stars. Inner Cepheids should be fainter and relatively bluer after
+extinction correction. Dust instead predicts inner Cepheids that are
+both fainter and redder. The sign of the extinction-corrected color
+offset therefore provides a discriminating test. This test requires
+HST-quality color photometry for the matched subsample and is planned
+as a follow-up.
 
 M31 therefore provides *supportive but not definitive* evidence
 for environmental P-L dependence consistent with TEP shear suppression.
@@ -1590,7 +1629,7 @@ bulge; the color-offset test is the discriminating observation.
 
 ![Multi-panel synthesis showing Inner Fainter offsets in both ground-based and HST M31 data consistent with TEP shear suppression; LMC control shows no large offset indicating no large pipeline artifacts](public/figures/step_31_figure_08_robustness_synthesis_plot.png?v=2)
 
-Figure 8: Synthesis of environmental differential tests. Both
+Figure 4: Synthesis of environmental differential tests. Both
 ground-based and HST M31 data show 'Inner Fainter' offsets consistent
 with TEP shear suppression (inner bulge more suppressed → less period
 contraction). The LMC control shows no large offset (~0.03 mag),
@@ -1643,8 +1682,11 @@ the full radial range.
 
 Is the half-suppression density $\rho_{\rm half}$ tuned to fit M31?
 No—it is derived independently from the SPARC rotation curve
-database (Paper 6) as the galactic-scale manifestation of the
-series-level saturation scale $\rho_{\rm T}$. The galaxy
+database (Paper 6). The function $S(\rho)$ used here is its
+channel-specific galactic projection; $\rho_{\rm half}$ and $\rho_{\rm T}$
+are scale-dependent phenomenological projections of the same nonlinear
+Temporal-Topology response and are not numerically interchangeable.
+The galaxy
 scaling $R_{\rm DM} \propto M^{1/3}$ normalizes to $\rho_{\rm half}
 \approx 0.5\,M_\odot/\text{pc}^3$. This independent scale is
 explicitly compared to the study environments:
@@ -1694,8 +1736,6 @@ not receive the same TEP correction as a diffuse one. Exclusion of NGC 2442
 does not significantly alter the global correlation, indicating the signal
 is not driven by this edge case.
 
-1The projected covariance is evaluated on the non-singular contrast subspace; equivalently, determinant terms are computed after removing the common calibration direction.
-
 ## 4. Discussion
 
 ### 4.1 The Nature of the Hubble Tension
@@ -1715,10 +1755,10 @@ which are inferred under universal-clock assumptions (Appendix A.6
 confirms this with a controlled toy recovery experiment). The appropriate TEP
 correction is therefore applied at the generative-observable level:
 velocity-space likelihood analysis identifies a positive combined environmental slope
-$\Gamma_X \approx +2.35\times10^7$ (2.3$\sigma$ at $\sigma_v=250$ km/s),
+$\Gamma_X \approx +2.31\times10^7$ (2.3$\sigma$ at $\sigma_v=250$ km/s),
 robust under redshift trend, sky dipole/quadrupole, and group-offset
 controls. In the TEP-native gauge ($\beta_X = 0$), this implies
-$\kappa_{\rm Cep}\approx7.3\times10^5$ mag, consistent with the canonical
+$\kappa_{\rm Cep}\approx7.21\times10^5$ mag, consistent with the canonical
 TEP expectation ($\sim10^6$ mag). An independent empirical cross-check
 yields a corrected mean in agreement with Planck,
 $H_0^{\rm TEP} = 68.84$ km/s/Mpc (bootstrap mean $68.92 \pm 1.44$),
@@ -1779,14 +1819,14 @@ nuisance covariate.
 
 ![Forest plot of standardized regression coefficients showing Velocity Dispersion (Potential Proxy) remains the dominant predictor of H0 across Baseline, AgeControl, DustControl, Full, and FlowEnvironment model specifications](public/figures/step_12_figure_12_multivariate_robustness.png?v=2)
 
-Figure 12: Standardized regression coefficients for $H_0$
+Figure 5: Standardized regression coefficients for $H_0$
 determinants. The dependence on velocity dispersion (Potential)
 remains positive and stable across all control specifications.
 Other astrophysical variables may contribute, but they do not
 absorb the velocity-dispersion dependence.
 The reduction of the Potential coefficient in the Host and Full
 models is the explicit expectation of the TEP framework: controlling
-for ambient group density ($N_{\rm mb}$) naturally isolates the bare
+for ambient group density ($N_{\rm mb}$) naturally isolates the unsuppressed
 shear response from the halo-suppressed response. The further
 attenuation in the FlowEnvironment specification (light blue)
 is the explicit prediction of the group-halo shear suppression
@@ -1819,8 +1859,9 @@ Other distance indicators warrant investigation: JAGB stars (carbon-rich
 asymptotic giant branch stars that show promise as standardizable
 candles; Lee et al. 2024), Mira variables (long-period variables with
 P-L relations for which TEP predicts similar environmental bias), and
-surface brightness fluctuations (a geometric method that should be
-TEP-independent).
+surface brightness fluctuations (a non-periodic stellar-population
+indicator that lacks the leading period-transport term and should be
+comparatively less affected).
 
 ### 4.4 Comparison with Cosmological Solutions
 
@@ -1835,9 +1876,11 @@ cosmological scales, generally constrained by gravitational wave
 observations; Abbott et al. 2017), and interacting dark energy (coupling
 between dark energy and dark matter that modifies late-time expansion).
 
-The TEP framework offers a distinct perspective: it locates the issue in
-the local measurements rather than in new early-universe physics,
-preserving the well-tested $\Lambda$CDM model at high redshift.
+The TEP framework offers a distinct perspective: it locates the
+Cepheid-calibrated SH0ES excess in local clock transport rather than
+requiring new early-universe expansion physics, while the observed
+high-redshift and CMB phenomenology is treated separately through the
+static-space conformal clock geometry of the wider TEP cosmology.
 Moreover, TEP makes specific, testable predictions: the bias should
 correlate specifically with gravitational potential depth (not other
 galaxy properties), low-$\sigma$ hosts should show reduced environmental bias relative to
@@ -1859,43 +1902,46 @@ The response coefficient $\kappa_{\rm Cep} = (1.27 \pm 0.46)\times10^6$ mag
 (host-only bootstrap robust; host-only WLS scaled $1.41 \pm 0.59$)
 derived from the Hubble Tension analysis—using the physics-derived
 $\Delta\mu = \kappa_{\rm Cep}\cdot S(\rho)\cdot(\sigma^2-\sigma_{\rm ref}^2)/c^2$
-regressor—provides an independent calibration of the TEP conformal factor.
+regressor—provides an independent calibration of the Cepheid conformal-response sector.
 The mean response across the sample is $\langle \kappa_{\rm Cep} \cdot S \rangle = 9.93\times10^5$,
 reflecting weak but non-zero attenuation of Temporal Shear in two hosts
 (NGC 2442 at $S = 0.075$ and NGC 3021 at $S = 0.793$). Critically, this
 value places the distance-ladder probe in the same response hierarchy as
 the TEP framework's unsuppressed estimate ($\kappa \sim 10^6$–$10^7$ mag) and as
 the effective pulsar measurement in dense globular clusters
-($\kappa_{\rm MSP}^{\rm emp} \approx 3 \times 10^4$, Paper 10,
-step_5_55_kappa_msp_prior.json). The latter is consistent with the
+($\tilde\kappa_{\rm MSP} \approx 3 \times 10^4$, Paper 10,
+step_44_kappa_msp_prior.json). The latter is consistent with the
 unsuppressed estimate when dense-cluster geometric suppression is accounted for.
 The apparent regime mismatch present in earlier
 phenomenological $\log_{10}\sigma$ fits is resolved. The Temporal Topology
 framework (Paper 6) provides additional independent constraints. The consistency across
 independent probes spanning stellar (millisecond periods) and
 cosmological (day-scale periods) timescales merits attention. At the
-cosmological level, TEP-C0 (Paper 26) demonstrates that the same
-temporal-shear transport improves the Pantheon+ supernova
-distance-redshift fit by $\Delta\chi^2 \simeq -7.5$ over baseline
-$\Lambda$CDM without primitive dark energy, with a line-of-sight
-transport exponent $\epsilon_{\text{shear}}^{\text{los}} \approx 0.83$
-that is much larger than the homogeneous CMB bound ($\epsilon_T \sim 0.0056$)
-because supernova light paths traverse predominantly unscreened cosmic
-voids. The local distance-ladder response coefficient derived here is
-therefore consistent with both the bare TEP estimate and the
-cosmological transport amplitude.
+cosmological level, TEP-C0 (Paper 26) demonstrates that the conformal
+clock-transport sector improves the Pantheon+ distance–redshift fit
+over the conventional baseline without primitive dark energy. Its
+line-of-sight transport amplitude and the homogeneous CMB-sector
+amplitude are distinct observational projections and are not
+numerically interchangeable. The local distance-ladder response
+derived here is likewise a channel-level projection of the same
+underlying conformal clock geometry.
+
+This analysis suggests that the correlation is not primarily driven by
+population age differences or dust extinction laws. The signal appears
+to be kinematic in nature, consistent with the gravitational potential
+dependence predicted by TEP.
 
 A central puzzle in Section 3.5 is why the geometric anchors (NGC 4258,
 M31, LMC) show no significant $\sigma$-dependence when analysed in isolation
 ($\kappa_{\rm Cep, anchor}\approx 0 \pm 663$ mag), while the SN Ia hosts exhibit a strong correlation
-($\kappa_{\rm Cep, host} \approx 1.27\times10^6$ mag).  This apparent dichotomy is resolved
-quantitatively by a joint environmental-screening model: fitting a single
+($\kappa_{\rm Cep, host} \approx 1.27\times10^6$ mag).  This apparent dichotomy is rendered
+quantitatively compatible with the group-halo screening hypothesis by a joint environmental-screening model: fitting a single
 $\kappa_{\rm Cep}$ to all 29 hosts and 3 anchors with environment-specific
 screening factors $S_k$ yields $(0.61 \pm 0.32) \times 10^6$ mag
 (using the screen-weighted reference scale), consistent with the
 host-only value at $0.85\sigma$.
 The joint fit remains close to the host-only value because the anchors
-are heavily screened (algorithmic $S_{\rm group} \approx 0.10$ for
+are environmentally down-weighted to differing degrees (algorithmic $S_{\rm group} \approx 0.10$ for
 NGC 4258, $0.47$ for M31, $0.87$ for LMC), so their effective regressor
 amplitudes are small and they exert little leverage on $\kappa_{\rm Cep}$.
 The anchors contribute $\chi^2=6.40$
@@ -1943,7 +1989,7 @@ stronger TEP suppression than NGC 1365 ($\sigma=136$ km/s, Fornax member),
 despite both being in massive groups. This explanation is secondary to the
 group-halo prescription above; the joint fit is stable with or without it.
 
-This framework quantitatively resolves the anchor stability under the group-halo screening prescription:
+This framework renders the anchor stability quantitatively compatible with the group-halo screening prescription:
 
 | Anchor | $\sigma$ (km/s) | Observed $M_W$ | Expected $\Delta M_W$ | Implied $S$ | Group Environment |
 | --- | --- | --- | --- | --- | --- |
@@ -1975,7 +2021,7 @@ period-luminosity relation ($\sim$0.1–0.2 mag), which is expected:
 if TEP period contraction is a real systematic in the P-L calibration,
 its amplitude should be of the same order as the residual scatter.
 The correction decreases monotonically with $\sigma$, becoming
-negative (distance underestimated, H$_0$ overcorrected) only for
+negative (distance overestimated, H$_0$ overcorrected) only for
 hosts with $\sigma < \sigma_{\rm ref} = 87.17$ km/s, where the
 effect is small ($<0.06$ mag for all low-$\sigma$ hosts).
 No host receives a correction large enough to push the corrected
@@ -2055,8 +2101,8 @@ Temporal Shear governing where the effect is active.
 predicts an unsuppressed observable response coefficient $\kappa \sim 10^6$–$10^7$
 (geometric-factor estimate). Paper 10 (TEP-COS) measures the
 *effective* screened coefficient in dense globular clusters:
-$\kappa_{\rm MSP}^{\rm emp} = (0.99 \pm 4.5) \times 10^4$
-(step_5_55_kappa_msp_prior.json), derived from the 0.63 dex raw excess
+$\tilde\kappa_{\rm MSP} = (2.9 \pm 4.5) \times 10^4$
+(step_44_kappa_msp_prior.json), derived from the 0.63 dex raw excess
 and real cluster parameters. Paper 11 measures
 $\kappa_{\rm Cep} = (1.27 \pm 0.46) \times 10^6$ mag from the
 host-only bootstrap robust fit (host-only WLS scaled gives $1.41 \pm 0.59$)
@@ -2070,13 +2116,18 @@ cross-domain consistency rather than an input to the Cepheid inference.
 Environmental scaling provides a consistency check. Globular clusters
 have characteristic densities $\rho_{\rm GC} \sim 10^{-18}$ g/cm³,
 while SN Ia host disks have $\rho_{\rm disk} \sim 10^{-23}$ g/cm³.
-Both environments are deeply unscreened compared to the Temporal
-Topology saturation scale ($\rho_{\rm T}$), so the ambient suppression
-factor $S(\rho) \approx 1$ for both. The two channels are consistent
+The low bulk densities of both environments place them well below the
+macroscopic saturation scale $\rho_T$, but this does not imply
+identical screening states. In canonical TEP the observable response
+depends on the complete environmental operator $S_\Sigma(E)$.
+Globular-cluster embedding geometry, stellar source charge, galactic
+disk structure and group-halo potential therefore project the same
+underlying scalar sector into different effective response
+coefficients. The two channels are consistent
 within the same response hierarchy after applying channel transfer
 factors: the Cepheid coefficient $\kappa_{\rm Cep} \sim 10^6$ mag
 (units of magnitude, mapping $\sigma^2/c^2$ into distance modulus)
-and the pulsar coefficient $\kappa_{\rm MSP}^{\rm emp} \sim 10^4$
+and the pulsar coefficient $\tilde\kappa_{\rm MSP} \sim 10^4$
 (dimensionless rate-response-like) both trace back to a shared
 underlying $\alpha_{\rm clock}$ once the respective $C_X$ and
 $T_X(E)$ factors are accounted for. The agreement is at the
@@ -2093,7 +2144,7 @@ frameworks. TEP addresses this apparent discrepancy: the two-metric
 framework analytically decouples these sectors. The photon propagation
 tests (Cassini) constrain strictly local metric deformations, while the
 clock-rate anomalies (Cepheids, pulsars) probe the macroscopically
-integrated phase accumulation around the source.
+transported clock-rate response between source and observer.
 
 The pipeline now makes this separation quantitative. The fitted
 $\kappa_{\rm Cep}=1.271\times10^6$ mag maps to a Cepheid clock-response
@@ -2113,8 +2164,8 @@ of magnitude without requiring an arbitrary fixed suppression factor.
 
 The Cepheid period-luminosity analysis in this work establishes the
 observable response in the galactic-disk regime using SH0ES and Pantheon+
-data alone.  The inferred $\kappa_{\rm Cep}$ is consistent with the bare
-TEP geometric-factor estimate ($\sim$10^6$–$10^7$ mag) and with the
+data alone.  The inferred $\kappa_{\rm Cep}$ is consistent with the unsuppressed
+TEP geometric-response estimate ($\sim$10^6$–$10^7$, dimensionless) and with the
 effective screened pulsar response measured in dense globular clusters
 (Paper 10) after environmental transfer is accounted for.  Further
 cross-scale tests (JWST high-redshift anomalies; Planck/hi_class
@@ -2122,13 +2173,16 @@ cosmological consistency) are reported in Paper 12.
 
 ### 4.9 Cosmological Consistency
 
-The TEP conformal-factor correction shifts local distance-ladder
-calibrations toward Planck consistency without introducing new early-universe
-energy components.  Formal Boltzmann-solver integration (Paper 12, Appendix
-A.1.8) yields $\sigma_8^{\rm TEP} = 0.8116$, in $0.10\sigma$ agreement with
-Planck 2018.  The detailed hi_class implementation is reported separately; the
-empirical Hubble-tension analysis presented here stands on the Cepheid
-period-luminosity data alone.
+The Cepheid correction derived here is a local distance-ladder result
+and does not require modification of the observed CMB acoustic geometry.
+In the canonical TEP cosmological formulation, the high-redshift
+acoustic mapping is reproduced through the conformal clock geometry
+developed in TEP-HC, TEP-C0 and TEP-TH. This should not be interpreted
+as assuming a primitive expanding hot-Big-Bang background: the same
+observed acoustic structure is re-expressed in the static-space,
+dynamical-proper-time representation. The empirical Hubble-tension
+analysis presented here is independent of that early-time
+interpretation.
 
 ### 4.10 Shared Screening and Transfer Terminology
 
@@ -2167,10 +2221,10 @@ bias (e.g., peculiar velocities, dust, metallicity, host mass):
 | Cepheid residuals vs dust/color | Not primary (Wesenheit removes reddening) | Not primary driver | PASS (Wesenheit construction) |
 | Anchor zero-points after screening | Consistent with screened prediction | No contradiction | PARTIAL (algorithmic model $\chi^2=6.40$/2 dof; categorical sensitivity test $\chi^2=2.51$/2 dof) |
 
-The strongest claim is: "The anomaly follows periodic Cepheid
-clocks, not generic luminosity indicators." The differential TRGB gate
-($N=13$) isolates the Cepheid-specific response from shared astrophysical
-confounders. The latest external-breaker fit yields a
+The central TEP interpretation is that the anomaly follows periodic Cepheid
+clocks rather than generic luminosity indicators; the present differential TRGB gate
+($N=13$) is directionally consistent with this interpretation but not yet decisive.
+The latest external-breaker fit yields a
 differential constraint $\kappa_{\rm Cep} = +3.19\times10^5 \pm 3.90\times10^5$
 mag (0.82$\sigma$). This is underpowered at the current overlap and should
 be treated as consistent-with-TEP but not a decisive discriminator.
@@ -2205,7 +2259,7 @@ covariance is treated as a nuisance mode in the slope comparison. Larger samples
 from future surveys (JWST, Rubin Observatory) will improve
 precision further.
 
-**Anchor Screening Resolution (Model-Dependent Consistency Check):** The geometric anchors
+**Anchor Screening Consistency (Model-Dependent Check):** The geometric anchors
 (LMC, NGC 4258, M31) do not exhibit the strong $\sigma$-dependence
 seen in the SN Ia hosts. As discussed in Section 4.6, this is
 consistent with *group halo shear suppression*: all three
@@ -2292,15 +2346,16 @@ distance indicators should depend on host environment. These predictions
 follow directly from the microphysics: indicators that rely on periodic
 phenomena (clocks) should show environmental bias proportional to their
 period-luminosity coupling, while geometric or non-periodic indicators
-should be unaffected.
+lack the leading period-transport term and should be comparatively
+less affected.
 
 | Indicator | Mechanism | TEP Prediction | Expected $H_0$–$\sigma$ Slope |
 | --- | --- | --- | --- |
 | Cepheids | Period-luminosity (P-L) | Strong positive bias | $dH_0/d\log_{10}\sigma \approx +15$–$25$ km/s/Mpc/dex |
-| Mira Variables | Period-luminosity (long-period) | Positive bias (similar to Cepheids) | $dH_0/d\log_{10}\sigma \approx +10$–$20$ km/s/Mpc/dex |
-| RR Lyrae | Period-luminosity (short-period) | Positive bias (weaker due to shorter periods) | $dH_0/d\log_{10}\sigma \approx +5$–$15$ km/s/Mpc/dex |
+| Mira Variables | Period-luminosity (long-period) | Positive bias; same sign as Cepheids, channel-specific amplitude | $dH_0/d\log_{10}\sigma \approx +10$–$20$ km/s/Mpc/dex |
+| RR Lyrae | Period-luminosity (short-period) | Positive bias; amplitude determined by the indicator-specific P–L slope, period-response factor and environmental transfer | $dH_0/d\log_{10}\sigma \approx +5$–$15$ km/s/Mpc/dex |
 | TRGB | Luminosity threshold (no period) | Weak or absent | $dH_0/d\log_{10}\sigma \approx 0$ |
-| SBF | Stellar fluctuations (geometric) | Weak or absent | $dH_0/d\log_{10}\sigma \approx 0$ |
+| SBF | Stellar fluctuations (non-periodic stellar-population) | Weak or absent | $dH_0/d\log_{10}\sigma \approx 0$ |
 | JAGB | Luminosity function (no period) | Weak or absent | $dH_0/d\log_{10}\sigma \approx 0$ |
 | Megamasers | Pure geometry | Absent | $dH_0/d\log_{10}\sigma = 0$ |
 
@@ -2325,8 +2380,8 @@ null trend. However, the data present a puzzle:
 | Channel | $\kappa$ (×10⁶ mag) | σ from zero | Interpretation |
 | --- | --- | --- | --- |
 | Cepheid (N=29) | $1.27 \pm 0.46$ | 2.7σ | Significant clock-rate signal |
-| TRGB (N=15) | $0.919 \pm 1.78$ | 1.7σ | Consistent with null or comparable amplitude |
-| Differential ($\mu_{\rm TRGB} - \mu_{\rm Ceph}$) | $0.32 \pm 0.39$ | 0.82σ | Underpowered at current overlap |
+| TRGB (N=15) | $0.919 \pm 1.78$ | 0.52σ | Consistent with null or comparable amplitude |
+| Differential ($\kappa_{\rm diff}$) | $\kappa_{\rm diff} = (0.32 \pm 0.39) \times 10^6$ mag | 0.82σ | Underpowered at current overlap |
 
 The latest external-distance breaker yields a differential
 constraint $\kappa_{\rm Cep} = +3.19\times10^5 \pm 3.90\times10^5$ mag
@@ -2408,11 +2463,12 @@ competing models were fitted to $H_0$ versus the environmental proxy:
 | Confound: $\sigma^2 + N_{\rm mb}$ | 0.206 | 7.17 | 0.0334 | 206.7 |
 
 The TEP-local model has the lowest BIC and the lowest scatter. The
-confound model (treating $N_{\rm mb}$ as a nuisance covariate) has the
-*highest* BIC and the highest scatter. This demonstrates that
-group richness is **not a confound to be subtracted** but
-a **physical screening mechanism** that should enter
-multiplicatively through $S_{\rm group}(N_{\rm mb})$. The baseline
+confound model (treating $N_{\rm mb}$ as an additive nuisance covariate) has the
+*highest* BIC and the highest scatter, disfavouring the additive-confound
+model. The multiplicative group-screening prescription, in which group richness enters
+through $S_{\rm group}(N_{\rm mb})$, remains a corpus-motivated, model-dependent
+transfer prescription; the present sample does not independently demonstrate
+group screening because TEP-local has lower BIC than TEP-full. The baseline
 ($\sigma^2$ only) is intermediate, confirming that local density
 screening improves the model.
 
@@ -2438,11 +2494,13 @@ occur on sample-size-limited splits ($N_{\rm train} = 6$ or
 $N_{\rm test} = 6$), where the slope-minimization objective for
 $\kappa_{\rm Cep}$ has multiple local minima and the Nelder-Mead
 optimizer produces erratic values ($\kappa_{\rm train}$ ranging from
-$0.75\times10^6$ to $8.0\times10^6$ mag). This is an
-*optimizer-instability* effect, not evidence against TEP:
-with only 6–13 hosts, the regressor has insufficient dynamic range to
-constrain $\kappa_{\rm Cep}$. The optimizer instability on small subsamples
-reflects a known data volume threshold. Larger
+$0.75\times10^6$ to $8.0\times10^6$ mag). The four small-sample
+transfers are underidentified because the training subsets do not
+constrain $\kappa_{\rm Cep}$ uniquely. They are therefore
+inconclusive rather than successful or failed tests of TEP
+transport across physical regimes. With only 6–13 hosts, the
+regressor has insufficient dynamic range to constrain
+$\kappa_{\rm Cep}$. Larger
 homogeneous samples ($N \gtrsim 50$ per regime) are required for
 decisive stratified validation.
 
@@ -2465,6 +2523,14 @@ Cepheid zero-point shift because the Cepheid P-L relation slope
 the SN Ia width-luminosity sensitivity parameter ($\alpha \approx 0.14$
 in SALT2). The Cepheid calibration bias therefore dominates the error
 budget.
+
+**Measurement-error attenuation note.** As detailed in
+Section 2.9, the reported headline response coefficient $\kappa_{\rm Cep}$
+uses the OLS slope as a conservative (attenuated) lower bound on the true
+relationship. ODR yields a slope $\sim$2.8$\times$ steeper, implying the
+TEP effect size may be underestimated due to noise in HI linewidth
+proxies; the OLS-based $\kappa_{\rm Cep}$ is therefore a deliberately
+conservative estimate.
 
 ### 4.15 Future Observational Tests
 
@@ -2499,7 +2565,7 @@ The proper correction is therefore applied at the generative-observable
 level. A velocity-space likelihood analysis models
 $cz_i = d_i^{\rm true}\,(H_{\rm app} + \Gamma_X X_i) + v_i$
 and identifies a structurally robust combined environmental slope
-$\Gamma_X = +2.35\times10^7 \pm 1.00\times10^7$ (2.3$\sigma$ at
+$\Gamma_X = +2.31\times10^7 \pm 1.01\times10^7$ (2.3$\sigma$ at
 $\sigma_v = 250$ km/s). The velocity-space likelihood identifies a combined
 environmental slope; in a general phenomenological model this slope can
 contain both Cepheid clock bias and residual velocity-sector/environmental
@@ -2507,9 +2573,9 @@ terms. The TEP-native gauge sets the non-Cepheid velocity-sector component
 $\beta_X$ to zero, corresponding to the hypothesis tested here.
 In the TEP-native gauge—treating the environmental
 slope as a pure Cepheid clock-rate bias ($\beta_X = 0$)—the equivalent
-response coefficient is $\kappa_{\rm Cep} \approx 7.34\times10^5$ mag,
+response coefficient is $\kappa_{\rm Cep} \approx 7.21\times10^5$ mag,
 consistent with the canonical TEP parameter $\kappa_{\rm gal} = 9.6\times10^5$ mag ($\sim 10^6$). The
-velocity-space fit yields $H_{\rm app} = 69.47 \pm 1.49$ km/s/Mpc; in the
+velocity-space fit yields $H_{\rm app} = 69.54 \pm 1.50$ km/s/Mpc; in the
 TEP-native gauge this corresponds to a Cepheid clock-bias correction that
 brings the local distance scale into agreement with the CMB inference.
 The empirical one-parameter correction pipeline
@@ -2523,10 +2589,10 @@ bootstrap resampling gives 99.9% positive fraction.
 | Symbol | Value | Role |
 | --- | --- | --- |
 | $\kappa_{\rm Cep}$ (design-matrix null) | $-0.067\pm0.210\times10^6$ mag | SH0ES design-matrix environmental column; absorbed by latent $\mu_i$ |
-| $\Gamma_X$ | $+2.35\pm1.00\times10^7$ | velocity-space combined environmental slope; primary empirical detection |
-| $\kappa_{\rm equiv}$ (TEP-native) | $\approx7.34\times10^5$ mag | equivalent Cepheid response if $\beta_X=0$ |
+| $\Gamma_X$ | $+2.31\pm1.01\times10^7$ | velocity-space combined environmental slope; primary empirical detection |
+| $\kappa_{\rm equiv}$ (TEP-native) | $\approx7.21\times10^5$ mag | equivalent Cepheid response if $\beta_X=0$ |
 | $\kappa_{\rm Cep}^{\rm emp}$ (empirical) | $(1.27\pm0.46)\times10^6$ mag | residual-based empirical correction cross-check |
-| $H_{\rm app}$ | $69.47\pm1.49$ km/s/Mpc | velocity-space apparent intercept |
+| $H_{\rm app}$ | $69.54\pm1.50$ km/s/Mpc | velocity-space apparent intercept |
 | $H_0^{\rm TEP}$ | $68.84$ km/s/Mpc | corrected local scale in the TEP-native interpretation |
 
 Independent P-L fits to the extragalactic geometric anchors (LMC, NGC 4258,
@@ -2535,8 +2601,8 @@ regression yields a positive coefficient ($1.78\sigma$), directionally
 consistent with the host-inferred scale, though the small sample limits
 precision.  The decisive test is whether a pre-specified screening
 prescription can reconcile the anchor residuals with the host-inferred
-coefficient.  This dichotomy is quantitatively resolved under the
-group-halo screening prescription: all three anchors are members of galaxy groups (Local
+coefficient.  This dichotomy admits a quantitative consistency explanation under
+the group-halo screening prescription: all three anchors are members of galaxy groups (Local
 Group for LMC and M31; Canes Venatici I for NGC 4258), embedding them in
 deep ambient potentials that suppress Temporal Shear, while the SN Ia
 hosts, selected for smooth Hubble flow, are biased toward isolated field
@@ -2564,7 +2630,7 @@ $2.2\times 10^5$ and $5.4\times 10^6$, respectively.
 
 **Stage 1 — Discovery of bias:** The velocity-space likelihood
 reveals a structurally robust combined environmental slope
-$\Gamma_X = +2.35\times10^7$ (2.3$\sigma$). The sign is exactly what TEP
+$\Gamma_X = +2.31\times10^7$ (2.3$\sigma$). The sign is exactly what TEP
 predicts: deep potentials induce apparent luminosity dimming, masquerading as
 a Hubble tension. The signal survives explicit controls for redshift trend,
 sky dipole ($\sim$100 km/s), quadrupole, and group offsets;
@@ -2574,8 +2640,8 @@ resampling gives 99.9% positive fraction.
 
 **Stage 2 — TEP-native gauge correction:** In the TEP-native
 gauge—treating $\Gamma_X$ as a pure Cepheid clock-rate bias ($\beta_X = 0$)—the
-equivalent response coefficient is $\kappa_{\rm Cep} \approx 7.34\times10^5$
-mag. The velocity-space fit yields $H_{\rm app} = 69.47 \pm 1.49$ km/s/Mpc;
+equivalent response coefficient is $\kappa_{\rm Cep} \approx 7.21\times10^5$
+mag. The velocity-space fit yields $H_{\rm app} = 69.54 \pm 1.50$ km/s/Mpc;
 in the TEP-native gauge this brings the local distance scale into agreement
 with the CMB inference. The empirical one-parameter correction pipeline
 yields $H_0^{\rm TEP} = 68.84$ km/s/Mpc (bootstrap mean
@@ -2583,7 +2649,7 @@ $68.92 \pm 1.44$), reducing the Hubble tension from $\approx 5\sigma$ to
 $\approx 1\sigma$ relative to Planck. The earlier residual-based estimate
 $\kappa_{\rm Cep} \approx 1.05\times10^6$ mag was an
 exploratory approximation; the new generative-observable analysis refines
-this to $\kappa_{\rm Cep} \approx 7.34\times10^5$ mag, consistent with the
+this to $\kappa_{\rm Cep} \approx 7.21\times10^5$ mag, consistent with the
 canonical TEP parameter $\kappa_{\rm gal} = 9.6\times10^5$ mag.
 
 **Three distinct quantities.** It is useful to keep three
@@ -2591,7 +2657,7 @@ coefficients conceptually separate:
 *(i)* the empirical observable is the combined environmental slope
 $\Gamma_X$;
 *(ii)* the TEP-native Cepheid interpretation is the equivalent
-response coefficient $\kappa_{\rm equiv} \approx 7.34\times10^5$ mag,
+response coefficient $\kappa_{\rm equiv} \approx 7.21\times10^5$ mag,
 obtained by setting the non-Cepheid velocity-sector component $\beta_X=0$;
 and *(iii)* the residual-space correction coefficient is
 $\kappa_{\rm Cep}^{\rm emp} \approx 1.27\times10^6$ mag, a
@@ -2604,7 +2670,7 @@ This two-stage structure separates the empirical detection (a structurally
 robust environmental slope in the velocity-space model) from the fitted
 correction (a TEP-native gauge choice), avoiding the circularity objection.
 The primary empirical claim is the host-potential dependence in the
-velocity-space likelihood ($\Gamma_X = +2.35\times10^7$, 2.3$\sigma$),
+velocity-space likelihood ($\Gamma_X = +2.31\times10^7$, 2.3$\sigma$),
 surviving explicit flow/sky controls. The primary model claim is that the
 TEP-native gauge removes this dependence and brings the local distance
 scale into agreement with the CMB inference.
@@ -2630,7 +2696,7 @@ Cepheids, SBF, masers, eclipsing binaries) while tightening metallicity and
 population controls.
 Two prospective prediction tables are provided:
 *(i)* a TEP-native gauge table using
-$\kappa_{\rm equiv} \approx 7.34\times10^5$ mag, directly tied to the
+$\kappa_{\rm equiv} \approx 7.21\times10^5$ mag, directly tied to the
 velocity-space $\Gamma_X$ likelihood and serving as the primary
 falsification target for the present model;
 and *(ii)* a historical residual-space table
@@ -2826,7 +2892,7 @@ Madore, B. F. & Freedman, W. L. 1991, *PASP*, 103, 933, "The Cepheid distance sc
 
 #### TEP Research Series
 
-Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.9 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
+Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.10 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
 
 Smawfield, M. L. (2025). *Global Time Echoes: Distance-Structured Correlations in GNSS Clocks*. Preprint v0.25 (Jaipur). Zenodo. DOI: [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) (Paper 1)
 
@@ -2846,13 +2912,15 @@ Smawfield, M. L. (2025). *Global Time Echoes: Optical-Domain Consistency Test vi
 
 Smawfield, M. L. (2025). *What Do Precision Tests of General Relativity Actually Measure?*. Preprint v0.3 (Istanbul). Zenodo. DOI: [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760) (Paper 9)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Suppressed Density Scaling in Globular Cluster Pulsars*. Preprint v0.7 (Caracas). Zenodo. DOI: [10.5281/zenodo.18165798](https://doi.org/10.5281/zenodo.18165798) (Paper 10)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Suppressed Density Scaling in Globular Cluster Pulsars*. Preprint v0.8 (Caracas). Zenodo. DOI: [10.5281/zenodo.18165798](https://doi.org/10.5281/zenodo.18165798) (Paper 10)
 
-Smawfield, M. L. (2026). *The Cepheid Bias: Resolving the Hubble Tension*. Preprint v0.7 (Kingston upon Hull). Zenodo. DOI: [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) (Paper 11 — this work)
+Smawfield, M. L. (2026). *The Cepheid Bias: Resolving the Hubble Tension*. Preprint v0.8 (Kingston upon Hull). Zenodo. DOI: [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) (Paper 11 — this work)
 
 Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies*. Preprint v0.4 (Kos). Zenodo. DOI: [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) (Paper 12)
 
 Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries*. Preprint v0.4 (Kilifi). Zenodo. DOI: [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) (Paper 13)
+
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Cosmological Shear Transport in Pantheon+ Supernova Distances*. Preprint (TEP-C0). Zenodo. (Paper 26)
 
 #### JWST Distance Ladder Studies
 
@@ -2931,7 +2999,7 @@ The velocity dispersion compilation draws from multiple sources with heterogeneo
 
 - **Stellar absorption (direct):** 16 hosts have $\sigma$ measured from stellar absorption line broadening, the gold-standard method. Sources include HyperLEDA, SDSS DR7, Ho et al. (2007, 2009), BASS DR2, and MNRAS 482:1427.
 
-- **HI linewidth proxy:** 13 hosts use HI 21-cm linewidth measurements calibrated via $\sigma = 0.467 \times V_{\rm max} + 42.9$ km/s (HyperLEDA calibrated_vmax mode). This introduces additional scatter but preserves the kinematic nature of the observable.
+- **HI linewidth proxy:** 13 hosts use HI 21-cm linewidth measurements calibrated via $\sigma = 0.467 \times V_{\rm max} + 40.91$ km/s (HyperLEDA calibrated_vmax). This introduces additional scatter but preserves the kinematic nature of the observable.
 
 The correlation coefficient strengthens when restricting to stellar-absorption-only hosts ($N=16$, Pearson $r = 0.549$, $p = 0.028$). Critically, the 13 HI-proxy hosts do not cluster anomalously—they span the full $\sigma$–$H_0$ distribution and follow the same physical trend as stellar hosts (see Section 3.2). Application of the TEP correction to the stellar-only subsample yields a unified $H_0 = 66.82 \pm 1.60$ km/s/Mpc, consistent with the full-sample result.
 
@@ -3001,14 +3069,15 @@ S_\odot q_{\rm source}.
 
 The source-charge ratio is dynamically calculated as $q_{\rm Sun}=8.4\times 10^{-12}$.
 This allows the closure to pass precision-gravity tests without identifying
-the Cepheid response coefficient directly with the bare PPN coupling.
+the Cepheid response coefficient directly with the unsuppressed PPN coupling.
 
 **A.3.4 Cross-probe comparison.**
 The useful cross-probe comparison is between observable response
-coefficients, not microscopic couplings. Paper 10 measures the
-*effective* screened pulsar response coefficient
-$\kappa_{\rm MSP}^{\rm emp} \approx 3 \times 10^4$ in dense globular
-clusters (step_5_55_kappa_msp_prior.json); this paper constrains the
+coefficients, not microscopic couplings. Paper 10's pipeline
+(step_44_kappa_msp_prior.json) measures the
+*effective* screened pulsar full response coefficient
+$\tilde\kappa_{\rm MSP} \approx 3 \times 10^4$ in dense globular
+clusters; this paper constrains the
 unsuppressed Cepheid response $\kappa_{\rm Cep} = (1.27 \pm 0.46) \times 10^6$
 mag (host-only bootstrap robust; WLS scaled $1.41 \pm 0.59$)
 in the looser galactic-disk regime. The ratio is consistent with
@@ -3081,7 +3150,7 @@ modulus bias implies a combined identifiable environmental slope
 $\Gamma_X \simeq (\ln 10/5)\,H_{\rm app}\,\kappa_{\rm Cep}$ in the redshift–distance
 relation. Fitting the velocity-space likelihood recovers
 $\Gamma_X = 2.50 \times 10^7 \pm 1.11 \times 10^7$ km/s/Mpc per unit $X$
-(injected $\Gamma_X = 2.35 \times 10^7$), a recovery fraction of $\sim 1.06$.
+(injected $\Gamma_X = 2.31 \times 10^7$), a recovery fraction of $\sim 1.08$.
 
 The toy experiment writes its recovered coefficients and figure to
 results/outputs/step_43_toy_recovery_experiment.json and
@@ -3096,10 +3165,21 @@ parameterization unless the generative observable ties distances to velocities.
 This appendix summarises the cross-domain consistency between the Cepheid
 response coefficient measured in this paper (Paper 11) and the effective
 pulsar response coefficient measured in Paper 10 (TEP-COS). Paper 10's
-empirical computation (step_5_55_kappa_msp_prior.json) derives the
+empirical computation (step_44_kappa_msp_prior.json) derives the
 effective screened coefficient from real cluster parameters and pulsar
 counts; the full theoretical framework, sample selection, and screening
-hierarchy are retained in Paper 10.
+hierarchy are retained in Paper 10. We distinguish two normalisations of
+the pulsar response: $\kappa_{\rm MSP}^{\rm emp} \approx 0.05$ is the
+in-equation coupling appearing in Paper 10's phenomenological
+spin-down equation (derived from the chameleon screening model, unsuppressed
+$\sim\!10^6$ suppressed by $\mathcal{S}\sim10^{-8}$), while
+$\tilde\kappa_{\rm MSP} = (2.9 \pm 4.5)\times 10^4$ is the full empirical
+response coefficient obtained by inverting the observed 0.63 dex excess
+with real cluster parameters. Both trace back to the same underlying conformal
+clock-response sector $\sim\!10^6$ but absorb different combinations of the potential and
+acceleration normalisation; the cross-probe comparison below uses
+$\tilde\kappa_{\rm MSP}$, which is the quantity directly analogous to
+$\kappa_{\rm Cep}$.
 
 ### B.1 Empirical Residual from Globular-Cluster Millisecond Pulsars
 
@@ -3107,7 +3187,7 @@ Paper 10 assembles a sample of *N* = 197 globular-cluster (GC)
 millisecond pulsars (MSPs) and *N* = 346 field MSPs, cross-matched
 between the Freire GC catalog and the ATNF field catalog. A hybrid
 propensity-score analysis matches GC pulsars to field controls on
-*log*10*P* (spin period) and a magnetic-field proxy,
+*log*<sub>10</sub>*P* (spin period) and a magnetic-field proxy,
 then expands the field sample to maximise statistical power. The primary
 empirical result is a mean excess in the logarithmic spin-down rate:
 
@@ -3141,19 +3221,31 @@ non-relativistic, weak-field limit the proper-time increment is
 where *Φ* is the Newtonian potential, *κ* is the
 domain-level Observable Response Coefficient, and *f*(*Φ*,
 ∇*Φ*) absorbs the channel-specific mapping from field structure to
-observable shift. The crucial point is that *κ* is not a bare
+observable shift. The crucial point is that *κ* is not an unsuppressed
 microscopic coupling; it is an empirical transfer coefficient that
 includes virial proportionality, environmental activation, instrument
 calibration, and screening geometry.
 
 **Pulsar channel.**
 For a pulsar in a globular cluster, the observed spin-down rate is
-modified by both the enhanced clock rate (period contraction) and the
-TEP-amplified line-of-sight acceleration:
+modified by both the clock-rate response (period contraction) and the
+TEP-modified line-of-sight acceleration:
 
 \begin{equation}
-\dot{P}_{\rm obs} = \dot{P}_{\rm int}\!\left(1 + \kappa_{\rm MSP}\,\frac{\Phi}{c^2}\right) + \frac{P\,a_\ell}{c}
+\dot{P}_{\rm obs} = \dot{P}_{\rm int}\!\left(1 + \kappa_{\rm MSP}\,\frac{\Phi}{c^2}\right) + (1+\kappa_{\rm MSP})\,\frac{P\,a_\ell}{c}
 \end{equation}
+
+Here $\kappa_{\rm MSP}$ is the in-equation coupling
+($\kappa_{\rm MSP}^{\rm emp} \approx 0.05$ in Paper 10's screened
+regime), not the full response coefficient $\tilde\kappa_{\rm MSP}$.
+The $(1+\kappa_{\rm MSP})$ prefactor on the acceleration term reflects
+the TEP-modified line-of-sight gradient, matching Paper 10's
+derivation (Eq.~8 of TEP-COS). The key observational signature is not
+amplitude enhancement but the suppressed density scaling: because the
+TEP clock response scales with the potential $|\Phi| \propto \rho R_c^2$
+rather than the acceleration $a \propto \rho R_c$, the response
+saturates more rapidly in dense cores, producing $\Gamma_{\rm TEP} = 0.50$
+vs the Newtonian $\Gamma_N = 0.75$ (observed: $\Gamma = 0.39 \pm 0.08$).
 
 In cluster cores the acceleration term dominates; its variance broadens
 the |*Ṗ*| distribution and shifts the mean upward. The 0.40 dex
@@ -3174,7 +3266,7 @@ P_{\rm obs} = P_{\rm true}\,e^{-\Delta\Theta_i} \approx P_{\rm true}\!\left(1 - 
 \end{equation}
 
 Propagating this through the Wesenheit Period–Luminosity relation
-*M**W* = *a* + *b* log10*P*
+*M*<sub>*W*</sub> = *a* + *b* log<sub>10</sub>*P*
 (slope *b* ≈ –3.26) yields an apparent magnitude offset
 
 \begin{equation}
@@ -3184,7 +3276,7 @@ Propagating this through the Wesenheit Period–Luminosity relation
 
 where the virial relation $|\Phi| \propto \sigma^2$ has been
 used and $S(\rho)$ is the continuous shear-suppression factor.
-The Observable Response Coefficient $\kappa_{\rm Cep}$ is not a bare
+The Observable Response Coefficient $\kappa_{\rm Cep}$ is not an unsuppressed
 scalar coupling; it is the product of the underlying clock-response scale
 and the Cepheid P–L transfer factor:
 
@@ -3192,38 +3284,38 @@ and the Cepheid P–L transfer factor:
 \kappa_{\rm Cep} = \frac{|b|\,q_P + 2.5\chi_L}{\ln 10}\,\alpha_{\rm clock}\,T_{\rm disk} ,
 \end{equation}
 
-with *q**P* ≈ 1 and *χ**L* ≈ 0
-in the leading clock-transport limit, and *T*disk ∼ 1.
+with *q*<sub>*P*</sub> ≈ 1 and *χ*<sub>*L*</sub> ≈ 0
+in the leading clock-transport limit, and *T*<sub>disk</sub> ∼ 1.
 
 **Cross-channel consistency.**
 Both channels probe the same conformal clock-rate sector, but they do not
 assert direct equality of raw coefficients. The Cepheid coefficient
-*κ*Cep (units of magnitude) and the pulsar coefficient
-*κ*MSPemp (effectively dimensionless)
-are related through the shared underlying *α*clock and
+*κ*<sub>Cep</sub> (units of magnitude) and the pulsar full
+response coefficient $\tilde\kappa_{\rm MSP}$ (effectively dimensionless)
+are related through the shared underlying *α*<sub>clock</sub> and
 channel-specific transfer factors:
 
 \begin{equation}
 \kappa_{\rm Cep} = \frac{|b|\,q_P}{\ln 10}\,\alpha_{\rm clock}\,T_{\rm disk} , \qquad
-\kappa_{\rm MSP}^{\rm emp} = \alpha_{\rm clock}\,T_{\rm GC} .
+\tilde\kappa_{\rm MSP} = \alpha_{\rm clock}\,T_{\rm GC} .
 \end{equation}
 
-With *T*disk ∼ 1 and *T*GC ∼ 10−2–10−1,
-a Cepheid coefficient of order 106 and a pulsar coefficient of
-order 104 are mutually consistent without being equal. The TEP
+With *T*<sub>disk</sub> ∼ 1 and *T*<sub>GC</sub> ∼ 10<sup>−2</sup>–10<sup>−1</sup>,
+a Cepheid coefficient of order 10<sup>6</sup> and a pulsar coefficient of
+order 10<sup>4</sup> are mutually consistent without being equal. The TEP
 framework predicts they should sit in the same *response hierarchy*
 after environmental transfer factors are included, because the underlying
 scalar-field structure is universal.
 
 ### B.3 Numerical Derivation and Uncertainty Budget
 
-Paper 10 determines *κ*MSP from the data by requiring
+Paper 10 determines $\tilde\kappa_{\rm MSP}$ from the data by requiring
 consistency with three independent observables simultaneously:
 
 **Primary residual:** 0.40 dex requires a response
-coefficient in the 106–107 range for typical
-globular-cluster potential depths (Δ*Φ*/*c*2
-~ 5 × 10−8).
+coefficient in the 10<sup>6</sup>–10<sup>7</sup> range for typical
+globular-cluster potential depths (Δ*Φ*/*c*<sup>2</sup>
+~ 5 × 10<sup>−8</sup>).
 
 **Density-scaling slope:** The observed Γ = 0.39 dex/dex
 is sub-Newtonian (0.72 dex/dex predicted), indicating Topological
@@ -3234,28 +3326,28 @@ unscreened estimate.
 **Binary inversion:** Cluster binaries are
 −0.32 dex *quieter* than isolated cluster pulsars, consistent
 with companion-shielding of the scalar field. The shielding fraction
-*S*comp ≈ 0.7 maps the unshielded bath prediction
+*S*<sub>comp</sub> ≈ 0.7 maps the unshielded bath prediction
 (~0.58 dex) onto the observed 0.40 dex.
 
-The TEP framework predicts a bare observable response coefficient
-$\kappa \sim 10^6$–$10^7$ mag from the geometric factor
+The TEP framework predicts an unsuppressed observable response coefficient
+$\kappa \sim 10^6$–$10^7$ (dimensionless) from the geometric factor
 $c^2/(4\pi G \rho_0 R_c^2)$ (Appendix C of Paper 10). Paper 10's
-empirical computation (step_5_55_kappa_msp_prior.json) uses the
+empirical computation (step_44_kappa_msp_prior.json) uses the
 observed 0.63 dex raw excess and real cluster parameters (core radii
 0.1–0.5 pc, mean ~0.3 pc) to derive the *effective* screened
-coefficient in dense globular clusters:
+full response coefficient in dense globular clusters:
 
 \begin{equation}
-\kappa_{\rm MSP}^{\rm emp} = (2.9 \pm 4.5) \times 10^4\ {\rm (dimensionless)}
+\tilde\kappa_{\rm MSP} = (2.9 \pm 4.5) \times 10^4\ {\rm (dimensionless)}
 \end{equation}
 
-The suppression relative to the bare $\sim10^6$ value arises from
+The suppression relative to the unsuppressed $\sim10^6$ value arises from
 the denser cluster environment (smaller $R_c$ → larger $\Phi/c^2$ and
 larger $\delta\dot{P}_{\rm accel}/\dot{P}_{\rm int}$), not from
 pulsar-specific self-screening. Paper 11 (this work) identifies the
 primary generative observable as the combined environmental slope
 $\Gamma_X$ in the velocity-space likelihood (Steps 36–42). In the
-TEP-native gauge this implies $\kappa_{\rm equiv} \approx 7.34\times10^5$
+TEP-native gauge this implies $\kappa_{\rm equiv} \approx 7.21\times10^5$
 mag, consistent with the canonical TEP parameter $\kappa_{\rm gal} = 9.6\times10^5$ mag ($\sim10^6$). An
 independent empirical cross-check (Step 04, residual-based correction)
 yields:
@@ -3269,8 +3361,8 @@ $1.41 \pm 0.59 \times 10^6$ mag, consistent at $0.9\sigma$.)
 The two channels show theoretical consistency in scale and sign: the
 generative-observable $\kappa_{\rm equiv}$ and the empirical
 $\kappa_{\rm Cep}^{\rm emp}$ both sit in the $10^6$ mag regime
-predicted by the bare TEP geometric-factor estimate. The pulsar
-value is compatible with the same bare estimate after accounting
+predicted by the unsuppressed TEP geometric-response estimate. The pulsar
+value is compatible with the same unsuppressed estimate after accounting
 for dense-cluster geometric suppression. The similarity of response
 scales across independent probes spanning ~8 orders of magnitude
 in period supports the TEP framework's prediction of environment-dependent
@@ -3282,11 +3374,11 @@ response coefficients.
 
 The Cepheid channel, analysed in this paper with no reference to the
 pulsar analysis, independently returns a generative-observable
-$\kappa_{\rm equiv} \approx 7.34\times10^5$ mag and an empirical
+$\kappa_{\rm equiv} \approx 7.21\times10^5$ mag and an empirical
 cross-check $\kappa_{\rm Cep}^{\rm emp} = (1.27 \pm 0.46) \times 10^{6}$
 mag. Both are compatible in scale with the TEP framework's
 unsuppressed geometric-factor estimate. Paper 10's effective pulsar
-coefficient (~3 × 104) is compatible with the same
+coefficient ($\tilde\kappa_{\rm MSP} \sim 3 \times 10^4$) is compatible with the same
 unsuppressed value after dense-cluster geometric suppression.
 The agreement across independent probes spanning ~8 orders of
 magnitude in period supports the TEP framework's prediction of
@@ -3598,7 +3690,7 @@ one obtains
 Define
 
 \begin{equation}
-\kappa_{\rm Cep} \equiv \frac{|b|q_P + 2.5\chi_L}{\ln 10}\,\alpha_{\rm clock} .
+\kappa_{\rm Cep} \equiv \frac{|b|q_P + 2.5\chi_L}{\ln 10}\,\alpha_{\rm clock}\,T_{\rm disk} ,
 \end{equation}
 
 Then
@@ -3608,17 +3700,18 @@ Then
 \end{equation}
 
 This is the correction used in TEP-H0. The full pulsation model shows that
-$\kappa_{\rm Cep}$ contains three separable pieces:
+$\kappa_{\rm Cep}$ contains three separable pieces (with $T_{\rm disk} \sim 1$
+for galactic disks, consistent with Section 2.3):
 
 \begin{equation}
-\kappa_{\rm Cep} = \underbrace{\alpha_{\rm clock}}_{\text{TEP clock response}} \times \underbrace{\frac{|b|q_P + 2.5\chi_L}{\ln 10}}_{\text{Cepheid P--L transfer}} .
+\kappa_{\rm Cep} = \underbrace{\alpha_{\rm clock}}_{\text{TEP clock response}} \times \underbrace{\frac{|b|q_P + 2.5\chi_L}{\ln 10}}_{\text{Cepheid P--L transfer}} \times \underbrace{T_{\rm disk}}_{\text{disk transfer}} .
 \end{equation}
 
 In the leading clock-transport limit, $q_P \simeq 1$ and
 $\chi_L \simeq 0$, and therefore
 
 \begin{equation}
-\boxed{\kappa_{\rm Cep} \simeq \frac{|b|}{\ln 10}\,\alpha_{\rm clock}} .
+\boxed{\kappa_{\rm Cep} \simeq \frac{|b|}{\ln 10}\,\alpha_{\rm clock}\,T_{\rm disk}} .
 \end{equation}
 
 For $b \simeq -3.26$, $|b|/\ln 10 \simeq 1.42$, so
@@ -3717,8 +3810,8 @@ $|b|q_P + 2.5\chi_L \approx 0$.
 The predicted sign reverses: $\Delta\mu < 0$ for high-$\sigma$
 active-shear hosts.
 
-Non-periodic indicators such as TRGB, JAGB, SBF, and megamasers acquire
-the same environmental response as Cepheids, eliminating the
+Non-periodic indicators such as TRGB, JAGB, SBF, and megamasers show
+environmental response amplitudes comparable to Cepheids, eliminating the
 period-vs-nonperiodic differential signature.
 
 Homogeneous high-resolution Cepheid data show no dependence of P–L
@@ -3736,16 +3829,16 @@ stellar pulsation physics plus cross-environment time transport:
 with
 
 \begin{equation}
-\kappa_{\rm Cep} = \frac{|b|q_P + 2.5\chi_L}{\ln 10}\,\alpha_{\rm clock} ,
+\kappa_{\rm Cep} = \frac{|b|q_P + 2.5\chi_L}{\ln 10}\,\alpha_{\rm clock}\,T_{\rm disk} ,
 \end{equation}
 
 and, in the leading pure clock-transport limit,
 
 \begin{equation}
-\boxed{q_P \simeq 1,\qquad \chi_L \simeq 0,\qquad \kappa_{\rm Cep} \simeq \frac{|b|}{\ln 10}\alpha_{\rm clock}} .
+\boxed{q_P \simeq 1,\qquad \chi_L \simeq 0,\qquad \kappa_{\rm Cep} \simeq \frac{|b|}{\ln 10}\,\alpha_{\rm clock}\,T_{\rm disk}} .
 \end{equation}
 
-Thus the empirical $\kappa_{\rm Cep}$ measured in TEP-H0 is not a bare
+Thus the empirical $\kappa_{\rm Cep}$ measured in TEP-H0 is not an unsuppressed
 scalar coupling. It is the product of the underlying TEP clock-response
 scale and the Cepheid P–L transfer factor. The theory predicts that
 high-potential active-shear Cepheids have shortened observed periods, are
@@ -3820,10 +3913,11 @@ fitted coefficient.
 
 ### D.1 Categorical Environmental Screening Model
 
-The TEP framework defines the group-halo screening term $S_{\rm group}$ using a discrete
+As a sensitivity test, Appendix D represents the group-halo screening term $S_{\rm group}$ using a discrete
 categorical mapping based on macroscopic environment structure.
 This step-function approach correctly captures extreme sub-halo effects, such as
-the LMC being deeply embedded within the massive dark matter halo of the Milky Way,
+the LMC being deeply embedded within the extended Galactic halo potential,
+conventionally reconstructed as a dark-matter halo,
 where simple continuous richness scaling ($N_{\rm mb}$) fails.
 
 | Object | Role | Environment | $S_{\rm group}$ | Naive Shift | Screened Shift | Observed Shift |

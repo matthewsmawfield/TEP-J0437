@@ -20,7 +20,7 @@ concern that the specific 8.93 ns magnitude was not predicted a priori.
 METHODOLOGY:
 -------------
 1. Model the ISM density profile using documented screen distances
-2. Compute Temporal Topology φ(r; ρ) from the density-dependent effective potential
+2. Compute Temporal Topology φ(r; ρ) from the environment-dependent effective potential
 3. Derive Temporal Shear ∇φ as the operative quantity driving holonomy
 4. Predict holonomy magnitude from path integration of Temporal Shear
 5. Compare predicted scaling with observed 8.93 ns value
@@ -90,7 +90,7 @@ def temporal_topology(
     """
     Compute Temporal Topology φ(r; ρ) from the ISM density profile.
 
-    In the Jakarta v0.8 framework (Temporal Topology), the density-dependent 
+    In the Jakarta v0.8 framework (Temporal Topology), the environment-dependent 
     effective potential V_eff(φ; ρ) determines the continuous field relaxation. 
     In the low-density ISM limit, the fieldtracks ambient density linearly.
 

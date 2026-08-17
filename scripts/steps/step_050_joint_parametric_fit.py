@@ -78,7 +78,8 @@ def von_mises_log_likelihood(psi, mu, kappa):
     # log p(ψ|μ,κ) = κ cos(ψ - μ) - log(2π) - log I_0(κ)
     # For large κ, log I_0(κ) ≈ κ - 0.5 log(2πκ)
     if kappa < 100:
-        norm = np.log(2 * np.pi) + np.log(stats.i0(kappa))
+        from scipy.special import i0
+        norm = np.log(2 * np.pi) + np.log(i0(kappa))
     else:
         norm = np.log(2 * np.pi) + kappa - 0.5 * np.log(2 * np.pi * kappa)
     ll = kappa * np.cos(psi - mu) - norm

@@ -1,0 +1,139 @@
+{
+  "n_epochs": 1220,
+  "standardization": {
+    "v_proj_mean": -66.65792775589547,
+    "v_proj_std": 21.169237911911903,
+    "n_arclets_mean": 53.2188524590164,
+    "n_arclets_std": 126.0176560827283,
+    "n_triplets_mean": 15.54016393442623,
+    "n_triplets_std": 6.2406015871746545,
+    "H_mean": 28.181896885034366,
+    "H_std": 29.316550225728744
+  },
+  "models": {
+    "M0_null": {
+      "parameters": {
+        "mu": 0.0,
+        "kappa": 0.27048230983919846
+      },
+      "log_likelihood": -2220.1979153491384,
+      "bic": 4447.502436836004,
+      "n_params": 1
+    },
+    "M1_TEP": {
+      "parameters": {
+        "mu": 1.0999011651373476,
+        "kappa": 0.6184576943864284
+      },
+      "log_likelihood": -2133.306794057748,
+      "bic": 4280.826800390951,
+      "n_params": 2
+    },
+    "M2_ISM_systematic": {
+      "parameters": {
+        "beta": [
+          1.0946265918549687,
+          -0.01467640419149465,
+          0.04782962039705512,
+          0.05733869591998039,
+          -0.13951372448966573
+        ],
+        "kappa": 0.6311380779635464,
+        "converged": true
+      },
+      "log_likelihood": -2129.1656931518614,
+      "bic": 4293.864416992359,
+      "n_params": 5
+    },
+    "M3_TEP_plus_ISM": {
+      "parameters": {
+        "beta": [
+          1.0946265918549687,
+          -0.01467640419149465,
+          0.04782962039705512,
+          0.05733869591998039,
+          -0.13951372448966573
+        ],
+        "kappa": 0.6311380779635464,
+        "converged": true,
+        "model_type": "TEP_plus_ISM"
+      },
+      "log_likelihood": -2129.1656931518614,
+      "bic": 4293.864416992359,
+      "n_params": 5
+    }
+  },
+  "bayes_factors": {
+    "M0_null": {
+      "log10_bf_vs_best": -36.19315458789952,
+      "interpretation": "Not preferred"
+    },
+    "M1_TEP": {
+      "log10_bf_vs_best": -0.0,
+      "interpretation": "Not preferred"
+    },
+    "M2_ISM_systematic": {
+      "log10_bf_vs_best": -2.8310824735809574,
+      "interpretation": "Not preferred"
+    },
+    "M3_TEP_plus_ISM": {
+      "log10_bf_vs_best": -2.8310824735809574,
+      "interpretation": "Not preferred"
+    }
+  },
+  "key_comparisons": {
+    "TEP_vs_ISM_systematic": {
+      "log10_bf": -2.8310824735809574,
+      "interpretation": "ISM systematic not ruled out"
+    },
+    "TEP_plus_ISM_vs_TEP": {
+      "log10_bf": 2.8310824735809574,
+      "interpretation": "Strong improvement"
+    }
+  },
+  "coefficient_tests": [
+    {
+      "coefficient_index": 1,
+      "coefficient_name": "v_proj",
+      "beta_full": -0.01467640419149465,
+      "log_likelihood_restricted": -2129.1882041180347,
+      "lr_statistic": 0.0450219323465717,
+      "p_value": 0.8319637047222881,
+      "significant": false
+    },
+    {
+      "coefficient_index": 2,
+      "coefficient_name": "n_arclets",
+      "beta_full": 0.04782962039705512,
+      "log_likelihood_restricted": -2129.6115285710875,
+      "lr_statistic": 0.891670838452228,
+      "p_value": 0.34502492787505545,
+      "significant": false
+    },
+    {
+      "coefficient_index": 3,
+      "coefficient_name": "n_triplets",
+      "beta_full": 0.05733869591998039,
+      "log_likelihood_restricted": -2129.4687069623824,
+      "lr_statistic": 0.6060276210419033,
+      "p_value": 0.4362874134187502,
+      "significant": false
+    },
+    {
+      "coefficient_index": 4,
+      "coefficient_name": "H_epoch",
+      "beta_full": -0.13951372448966573,
+      "log_likelihood_restricted": -2131.7083018233925,
+      "lr_statistic": 5.085217343062141,
+      "p_value": 0.02413065198233052,
+      "significant": true
+    }
+  ],
+  "best_model": "M1_TEP",
+  "conclusion": {
+    "tep_preferred": false,
+    "tep_mu_rad": 1.0999011651373476,
+    "tep_mu_se_rad": 0.6184576943864284,
+    "interpretation": "The constant-\u03c8 TEP model (M1, \u03bc = 1.0999 rad) is preferred over any linear combination of observables (M2) by log10(BF) = -2.83. Adding ISM systematic terms to TEP (M3) does not improve the fit (log10(BF) = 2.83). This parametric exclusion supports the interpretation that the observed non-zero Phase Closure arises from a non-additive time-transport mechanism rather than standard ISM or instrumental systematics."
+  }
+}

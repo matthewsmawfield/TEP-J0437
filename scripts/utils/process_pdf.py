@@ -41,7 +41,7 @@ def _extract_yaml_value(content, key):
 
 def parse_citation_cff():
     """Parse CITATION.cff for PDF metadata."""
-    base_dir = Path(__file__).parent.parent
+    base_dir = Path(__file__).parent.parent.parent
     citation_file = base_dir / 'CITATION.cff'
 
     if not citation_file.exists():
@@ -106,7 +106,7 @@ def build_metadata(cff_data):
     else:
         author_name = 'Matthew Lukin Smawfield'
 
-    version = cff_data.get('version', 'v0.1')
+    version = cff_data.get('version', 'v0.3')
     v_match = re.match(r'v?([\d.]+)(?:\s*\(([^)]+)\))?', str(version))
     if v_match:
         version_num = v_match.group(1)
@@ -117,9 +117,15 @@ def build_metadata(cff_data):
 
     date = cff_data.get('date-released', '')
     if date:
-        date_pdf = date.replace('-', ':')
+        date_pdf = str(date).replace('-', ':')
     else:
         date_pdf = ''
+
+    date_updated = cff_data.get('date-updated', '')
+    if date_updated:
+        date_updated_pdf = str(date_updated).replace('-', ':')
+    else:
+        date_updated_pdf = date_pdf
 
     doi = cff_data.get('doi', '')
     url = cff_data.get('url', '')
@@ -147,8 +153,14 @@ def build_metadata(cff_data):
     }
 
     if date_pdf:
-        metadata['CreationDate'] = f'{date_pdf} 00:00:00'
-        metadata['ModifyDate'] = f'{date_pdf} 00:00:00'
+        metadata['PDF:CreateDate'] = f'{date_pdf} 00:00:00'
+        metadata['XMP-xmp:CreateDate'] = f'{date_pdf} 00:00:00'
+    if date_updated_pdf:
+        metadata['PDF:ModifyDate'] = f'{date_updated_pdf} 00:00:00'
+        metadata['XMP-xmp:ModifyDate'] = f'{date_updated_pdf} 00:00:00'
+    elif date_pdf:
+        metadata['PDF:ModifyDate'] = f'{date_pdf} 00:00:00'
+        metadata['XMP-xmp:ModifyDate'] = f'{date_pdf} 00:00:00'
 
     metadata['XMP-dc:Creator'] = author_name
     metadata['XMP-dc:Title'] = title

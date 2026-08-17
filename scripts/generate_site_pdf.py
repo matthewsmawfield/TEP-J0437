@@ -36,21 +36,21 @@ def load_citation_metadata():
     
     if not citation_file.exists():
         print("⚠️  CITATION.cff not found, using defaults")
-        return {'version': 'v0.1', 'codename': 'Sintra', 'title': 'TEP-J0437'}
+        return {'version': 'v0.3', 'codename': 'Sintra', 'title': 'TEP-J0437'}
     
     try:
         if yaml:
             with open(citation_file, 'r') as f:
                 data = yaml.safe_load(f)
-            version_str = data.get('version', 'v0.1')
+            version_str = data.get('version', 'v0.3')
         else:
             # Parse manually if yaml not available
             with open(citation_file, 'r') as f:
                 content = f.read()
             version_match = re.search(r'version:\s*"?([^"\n]+)"?', content)
-            version_str = version_match.group(1).strip() if version_match else 'v0.1'
+            version_str = version_match.group(1).strip() if version_match else 'v0.3'
         
-        # Parse version string like 'v0.1 (Sintra)'
+        # Parse version string like 'v0.3 (Sintra)'
         pattern = r'^(v?[\d.]+)(?:\s*\(([^)]+)\))?$'
         match = re.match(pattern, version_str.strip())
         
@@ -65,7 +65,7 @@ def load_citation_metadata():
         
     except Exception as e:
         print(f"⚠️  Error parsing CITATION.cff: {e}, using defaults")
-        return {'version': 'v0.1', 'codename': 'Sintra', 'title': 'TEP-J0437'}
+        return {'version': 'v0.3', 'codename': 'Sintra', 'title': 'TEP-J0437'}
 
 
 def build_static_site():

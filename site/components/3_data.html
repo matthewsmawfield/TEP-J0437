@@ -175,7 +175,7 @@
             <td>Pulsar Scintillation Archive</td>
             <td>Various</td>
             <td>Jiamusi 66m telescope archive</td>
-            <td>ambient screening constraints</td>
+            <td>noise-limited bounds</td>
         </tr>
         <tr>
             <td>J0908-1739, J0922-0638, J1731-4744</td>
@@ -183,7 +183,7 @@
             <td>Thousand-Pulsar-Array</td>
             <td>2019–2023</td>
             <td>SARAO / MeerKAT archive</td>
-            <td>ambient screening constraints</td>
+            <td>noise-limited bounds</td>
         </tr>
     </tbody>
 </table>
@@ -206,7 +206,7 @@
 
 <p>The MeerKAT radio telescope (South Africa) provides observations of three pulsars via the Thousand-Pulsar-Array programme. Proper motions for these pulsars are not available in the current catalog; velocities are treated as unknown. These pulsars provide noise-limited bounding checks but do not contribute to geometric sign tests due to the missing velocity data.</p>
 
-<p>Dataset rationale: The 15-pulsar sample spans diverse distances, velocities, and ISM environments. The robust Phase Closure detection is confined to J0437-4715; J1603-7202 contributes complementary bipolar geometric validations from the same Parkes/PPTA DR2 data family, supplying an independent line-of-sight geometric test of the Stokes-aligned holonomy pattern rather than a separate telescope systematics check. The Jiamusi and MeerKAT data provide noise-limited bounding checks against simple universal baseline offsets; their null status is consistent with TEP's predicted environmental suppression in dense, distant sightlines, though this interpretation remains noise-limited and not independently diagnostic. The velocity vector geometry (particularly the 73.8° proper motion vector separation between J0437 and J1603) provides a geometric test of TEP's velocity-dependent predictions.</p>
+<p>Dataset rationale: The 15-pulsar sample spans diverse distances, velocities, and ISM environments. The robust Phase Closure detection is confined to J0437-4715; J1603-7202 contributes complementary bipolar geometric validations from the same Parkes/PPTA DR2 data family, supplying an independent line-of-sight geometric test of the Stokes-aligned holonomy pattern rather than a separate telescope systematics check. The Jiamusi and MeerKAT data provide noise-limited bounding checks against simple universal baseline offsets; their null status is consistent with TEP's predicted environmental suppression in distant, noise-limited sightlines, though this interpretation remains noise-limited and not independently diagnostic. The velocity vector geometry (particularly the 73.8° proper motion vector separation between J0437 and J1603) provides a geometric test of TEP's velocity-dependent predictions.</p>
 
 <h3>3.2 Data Processing Pipeline</h3>
 
@@ -260,7 +260,7 @@
 
 <p>Step 6: Stokes Alignment. Each triplet's oriented area in the $(\tau, f_D)$ plane determines its geometric sign. The effective velocity vector (pulsar proper motion plus Earth's orbital velocity, including annual aberration and Sagnac corrections) projects onto this area to yield the kinematic weighting factor. This alignment ensures that the signed delay correlates with velocity geometry as predicted by TEP. Earth's orbital velocity is obtained from the solar-system barycentric Earth state vector via <code>astropy.coordinates.get_body_barycentric_posvel</code> (astropy 6.1, built-in SOFA/ERFA ephemeris <code>epv00</code>), yielding agreement with JPL DE440 at the centimetre-per-second level.</p>
 
-<p>Step 7: Statistical Aggregation. The Phase Closure \(\psi\) across all triplets provides the primary TEP detection statistic. Under GR, \(\psi = 0\); under TEP, \(\psi \neq 0\) with magnitude scaling with scattering strength and path geometry. The bipolar prediction—opposite signs for opposite velocity projections—is tested via signed mean validations. The magnitude $|H| = \langle |C_{ijk}| \rangle$ is analyzed as a secondary validation, noting its susceptibility to noise floor bias.</p>
+<p>Step 7: Statistical Aggregation. The Phase Closure \(\psi\) across all triplets provides the primary TEP detection statistic. Under GR, \(\psi = 0\); under TEP, \(\psi \neq 0\) with magnitude scaling with scattering strength and path geometry. The bipolar prediction—opposite signs for opposite velocity projections—is tested via signed mean validations. The magnitude $M_{\rm cl} = \langle |C_{ijk}| \rangle$ is analyzed as a secondary validation, noting its susceptibility to noise floor bias.</p>
 
 <p>This metrology chain transforms raw telescope voltages into a physically interpretable measure of path-dependent time transport, with each step traceable to atomic clock standards and geometric observables.</p>
 
@@ -289,7 +289,7 @@
 <div class="equation">
 \begin{equation}
 \label{eq:error_prop_global}
-\sigma_{\text{global}} = \frac{\text{std}(\text{epoch\_means})}{\sqrt{N_{\text{epochs}}}}
+\sigma_{\text{global}} = \frac{\text{std}(\text{epoch_means})}{\sqrt{N_{\text{epochs}}}}
 \end{equation}
 </div>
 
@@ -332,7 +332,7 @@
             <td>Epoch-level aggregation (conservative independence framework)</td>
         </tr>
         <tr>
-            <td>\(|H|\) magnitude sample</td>
+            <td>\(M_{\rm cl}\) magnitude sample</td>
             <td>1,093</td>
             <td>—</td>
             <td>Epoch-level aggregation; magnitudes are noise-floor dominated</td>
@@ -342,11 +342,11 @@
 
 <p>Every reported primary statistic refers to the 1,093-epoch independent sample. The 19,167 triplet count describes the full closure-capable dataset and is reported in the abstract and data tables for sample-size transparency. The 298 epochs excluded by the ≥5-triplet filter are retained in the raw results and used by downstream analyses (e.g., probabilistic weighting, bootstrap) that do not require epoch-level aggregation.</p>
 
-<p>Global Stokes-aligned Phase Closure: The primary TEP detection statistic is the Phase Closure \(\psi\), computed with circular statistics on the 1,093-epoch sample. The circular mean is \(\bar{\psi} = 0.984 \pm 0.046 \text{ rad}\) (circular SE, R_bar = 0.308, Rayleigh p = 1.39 × 10⁻¹³, V-test p = 2.04 × 10⁻⁵). An epoch-level circular bootstrap (10,000 iterations) yields a 95% CI of [+0.737, +1.235] rad, which excludes zero. The raw absolute magnitude is \(|H| = 8.100 \pm 0.102 \text{ ns}\), but a per-epoch folded-normal noise floor E[|H|] = 6.810 ns quantitatively saturates this value, leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The Phase Closure \(\psi\) is therefore the primary TEP validation; \(|H|\) remains a noise-floor-dominated validation in the current dataset.</p>
+<p>Global Stokes-aligned Phase Closure: The primary TEP detection statistic is the Phase Closure \(\psi\), computed with circular statistics on the 1,093-epoch sample. The circular mean is \(\bar{\psi} = 0.984 \pm 0.046 \text{ rad}\) (circular SE, \(\bar{R}\) = 0.308, Rayleigh p = 1.39 × 10⁻¹³, V-test p = 2.04 × 10⁻⁵). An epoch-level circular bootstrap (10,000 iterations) yields a 95% CI of [+0.737, +1.235] rad, which excludes zero. The raw absolute magnitude is \(M_{\rm cl} = 8.100 \pm 0.102 \text{ ns}\), but a per-epoch folded-normal noise floor \(E[M_{\rm cl}]\) = 6.810 ns quantitatively saturates this value, leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The Phase Closure \(\psi\) is therefore the primary TEP validation; \(M_{\rm cl}\) remains a noise-floor-dominated validation in the current dataset.</p>
 
 <p>The signed mean ($-0.184 \pm 0.102 \text{ ns}$, $-1.80\sigma$)—computed on Stokes-aligned closure delays—shows minimal bipolar bias, consistent with nearly isotropic sampling of the scattering geometry. This near-zero value indicates successful alignment of the bipolar signal (where positive and negative contributions cancel), confirming the expected parity behavior. The Phase Closure \(\psi\) measures the physical holonomy phase and is the primary detection metric.</p>
 
-<p>The total standard deviation (\(\sigma_{\text{total}} \approx 16 \text{ ns}\) for raw \(|H|\)) reflects measurement uncertainty, ISM variability, and the heavy-tailed noise distribution. The frequentist MAD-based folded-normal subtraction reported above (\(1.290 \pm 0.102\) ns, \(t = 12.7\sigma\)) and the hierarchical Bayesian posterior for triplet-level holonomy amplitude \(H\) (\(0.000 \pm 0.459\) ns; 95% CI [0.000, 0.899] ns) answer different questions and must not be conflated: the former subtracts a per-epoch Rice floor from the inverse-variance-weighted epoch mean, whereas the latter marginalizes triplet delays under a generative \(\text{Normal}(H, \sigma_i)\) model with inverse-variance weights and a HalfNormal prior, testing whether latent \(H\) exceeds zero after probabilistic weighting. A posterior consistent with zero therefore does not negate the MAD-subtracted excess; it shows that the triplet-level Bayesian delay model does not infer holonomy beyond the declared floor, while Phase Closure \(\psi\) remains the primary detection statistic.</p>
+<p>The total standard deviation (\(\sigma_{\text{total}} \approx 16 \text{ ns}\) for raw \(M_{\rm cl}\)) reflects measurement uncertainty, ISM variability, and the heavy-tailed noise distribution. The frequentist MAD-based folded-normal subtraction reported above (\(1.290 \pm 0.102\) ns, \(t = 12.7\sigma\)) and the hierarchical Bayesian posterior for triplet-level holonomy amplitude \(H\) (\(0.000 \pm 0.459\) ns; 95% CI [0.000, 0.899] ns) answer different questions and must not be conflated: the former subtracts a per-epoch Rice floor from the inverse-variance-weighted epoch mean, whereas the latter marginalizes triplet delays under a generative \(\text{Normal}(s_i H, \sigma_i)\) model with inverse-variance weights and a HalfNormal prior, testing whether latent \(H\) exceeds zero after probabilistic weighting. Because the orientation sign is included in the model, \(H\) estimates the orientation-aligned amplitude. The posterior near zero shows that this particular signed Gaussian model does not recover a coherent delay-domain amplitude. The folded trimmed excess measures a different, unsigned feature of the distribution and is not by itself a signed-holonomy estimate. Phase Closure \(\psi\) remains the primary detection statistic.</p>
 
 <h3>3.5 Statistical Analysis Framework</h3>
 
@@ -361,7 +361,7 @@
     </thead>
     <tbody>
         <tr>
-            <td><em>\(|H|\) magnitude test</em></td>
+            <td><em>\(M_{\rm cl}\) magnitude test</em></td>
             <td>One-sample t-test on absolute delays (noise-floor consistency check; primary detection is Phase Closure \(\psi\))</td>
         </tr>
         <tr>
@@ -399,7 +399,7 @@
     </tbody>
 </table>
 
-<p>Multiple Comparison Correction: Bonferroni correction is applied for the 4 primary validation tests (aggregate mean, |H| magnitude, negative delays, positive delays). Uncorrected \(\alpha = 0.05\), corrected \(\alpha = 0.0125\). All reported significance values account for this correction.</p>
+<p>Multiple Comparison Correction: Bonferroni correction is applied for the 4 primary validation tests (aggregate mean, \(M_{\rm cl}\) magnitude, negative delays, positive delays). Uncorrected \(\alpha = 0.05\), corrected \(\alpha = 0.0125\). All reported significance values account for this correction.</p>
 
 <p>The closure delay distribution for J0437-4715 exhibits the expected behavior for interstellar scattering data. The Bayesian analysis provides robust estimates of the mean and uncertainty despite the presence of outliers, which are handled through probabilistic weighting.</p>
 

@@ -14,6 +14,32 @@ class HTMLToMarkdownConverter {
             .replace(/&nbsp;/g, ' ')
             .replace(/&mdash;/g, '—')
             .replace(/&ndash;/g, '–')
+            .replace(/&Sigma;/g, 'Σ')
+            .replace(/&sigma;/g, 'σ')
+            .replace(/&oplus;/g, '⊕')
+            .replace(/&Epsilon;/g, 'Ε')
+            .replace(/&epsilon;/g, 'ε')
+            .replace(/&Phi;/g, 'Φ')
+            .replace(/&phi;/g, 'φ')
+            .replace(/&radic;/g, '√')
+            .replace(/&times;/g, '×')
+            .replace(/&plusmn;/g, '±')
+            .replace(/&infin;/g, '∞')
+            .replace(/&alpha;/g, 'α')
+            .replace(/&beta;/g, 'β')
+            .replace(/&gamma;/g, 'γ')
+            .replace(/&delta;/g, 'δ')
+            .replace(/&eta;/g, 'η')
+            .replace(/&theta;/g, 'θ')
+            .replace(/&lambda;/g, 'λ')
+            .replace(/&mu;/g, 'μ')
+            .replace(/&nu;/g, 'ν')
+            .replace(/&pi;/g, 'π')
+            .replace(/&rho;/g, 'ρ')
+            .replace(/&tau;/g, 'τ')
+            .replace(/&chi;/g, 'χ')
+            .replace(/&omega;/g, 'ω')
+            .replace(/&Omega;/g, 'Ω')
             .replace(/&#10004;/g, '✔')
             .replace(/&#10008;/g, '✘');
     }
@@ -25,7 +51,9 @@ class HTMLToMarkdownConverter {
                 .replace(/<(em|i)[^>]*>([\s\S]*?)<\/(em|i)>/gi, '*$2*')
                 .replace(/<code[^>]*>([\s\S]*?)<\/code>/gi, '`$1`')
                 .replace(/<br\s*\/?>/gi, ' ')
-                .replace(/<\/?[a-zA-Z][^>]*>/g, '')
+                .replace(/<sub[^>]*>([\s\S]*?)<\/sub>/gi, '<sub>$1</sub>')
+                .replace(/<sup[^>]*>([\s\S]*?)<\/sup>/gi, '<sup>$1</sup>')
+                .replace(/<\/?(?!sub|sup)[a-zA-Z][^>]*>/g, '')
         )
             .replace(/\s+/g, ' ')
             .trim();
@@ -134,7 +162,9 @@ class HTMLToMarkdownConverter {
         html = html.replace(/<br\s*\/?>/gi, '\n');
         html = html.replace(/<hr\s*\/?>/gi, '\n---\n');
 
-        html = html.replace(/<\/?[a-zA-Z][^>]*>/g, '');
+        html = html.replace(/<sub[^>]*>([\s\S]*?)<\/sub>/gi, '<sub>$1</sub>');
+        html = html.replace(/<sup[^>]*>([\s\S]*?)<\/sup>/gi, '<sup>$1</sup>');
+        html = html.replace(/<\/?(?!sub|sup)[a-zA-Z][^>]*>/g, '');
         html = this.decodeEntities(html);
         html = html.replace(/@@@CODEBLOCK_START:([^@]*)@@@[\r\n]+([\s\S]*?)[\r\n]+@@@CODEBLOCK_END@@@/g, (match, lang, code) => {
             const language = lang.trim();
@@ -162,7 +192,7 @@ class HTMLToMarkdownConverter {
             // Load citation metadata for header
             const citationPath = path.join(__dirname, '..', 'CITATION.cff');
             let author = 'Matthew Lukin Smawfield';
-            let version = 'v0.1 (Sintra)';
+            let version = 'v0.3 (Sintra)';
             let dateReleased = '2026-05-17';
             let doi = '';
             

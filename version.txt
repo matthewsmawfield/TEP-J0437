@@ -1,10 +1,5 @@
-v0.2 (Sintra) — 05 June 2026 — Renamed conformal coupling notation from beta_conf to beta_A to avoid PPN collision
+v0.3 (Sintra) — 17 August 2026
 
-v0.1 (Sintra) - Initial publication release — 17 May 2026 · Last updated: 17 May 2026
-
-- Multi-pulsar closure-delay analysis of 19,167 triplets from PSR J0437-4715 (15 pulsars total)
-- Frame-invariant Phase Closure ψ = 0.984 ± 0.046 rad, Rayleigh p = 1.39 × 10⁻¹³, bootstrap CI [0.737, 1.235] rad
-- Hierarchical mixed-effects orbital diagnostic: amplitude 1.11 ± 0.79 ns, LR p = 0.372
-- J1603-7202 bipolar decomposition provides complementary geometric evidence
-- Comprehensive 47-step pipeline with fixed random seeds and full reproducibility
-- 9-component manuscript with orbital-phase, multi-telescope, and falsification analysis
+- Aligned theoretical language with the TEP corpus and standardized epistemic claims across abstract, discussion, and conclusion
+- Resolved conflicting trimmed-amplitude estimators and fixed LaTeX rendering errors throughout the manuscript
+- Corrected multi-screen, multi-messenger, and environmental-suppression wording to distinguish tested null implementations

@@ -1,7 +1,7 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "codename": "Sintra",
-  "paper": "TEP-J0437",
+  "paper": "16",
   "series": 16,
   "status": "Preprint",
   "title": "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation",
@@ -12,19 +12,32 @@
     "primary_pulsar": "J0437-4715",
     "primary_epochs": 1391,
     "primary_triplets": 19167,
-    "holonomy_magnitude_ns": 8.041,
-    "holonomy_sem_ns": 0.102,
-    "phase_closure_rad": 0.991,
-    "phase_closure_sigma": 20.77,
-    "noise_floor_ns": 7.734,
-    "signed_mean_ns": -0.19,
+    "M_cl_ns": 8.1,
+    "M_cl_sem_ns": 0.102,
+    "phase_closure_rad": 0.984,
+    "phase_closure_sigma": 20.35,
+    "phase_closure_unweighted_rad": 1.12,
+    "phase_closure_unweighted_p": 1.34e-44,
+    "noise_floor_ns": 6.81,
+    "signed_mean_ns": -0.184,
     "detected_pulsars": [
       "J0437-4715"
     ],
     "detection_significances": [
-      20.77
+      20.35
+    ],
+    "M_cl_sym10_excess_j0437_ns": 8.452,
+    "M_cl_sym10_excess_j0437_bootstrap_se": 19.1,
+    "M_cl_sym10_excess_j0437_ci_lower": 7.617,
+    "M_cl_sym10_excess_j0437_ci_upper": 9.362,
+    "M_cl_sym10_excess_j1603_ns": 4.138,
+    "M_cl_sym10_excess_j1603_bootstrap_se": 5.7,
+    "M_cl_sym10_excess_j1603_ci_lower": 2.843,
+    "M_cl_sym10_excess_j1603_ci_upper": 5.72,
+    "complementary_geometry_pulsars": [
+      "J1603-7202"
     ]
   },
-  "date": "2026-06-05",
-  "previous_version": "0.1"
+  "date": "2026-08-17",
+  "previous_version": "0.2"
 }

@@ -94,7 +94,8 @@ def circular_mean_and_rbar(angles, weights=None):
 def von_mises_log_likelihood(psi, mu, kappa):
     """Log-likelihood of von Mises distribution."""
     if kappa < 100:
-        norm = np.log(2 * np.pi) + np.log(stats.i0(kappa))
+        from scipy.special import i0
+        norm = np.log(2 * np.pi) + np.log(i0(kappa))
     else:
         norm = np.log(2 * np.pi) + kappa - 0.5 * np.log(2 * np.pi * kappa)
     ll = kappa * np.cos(psi - mu) - norm

@@ -12,7 +12,7 @@ class DevServer {
         this.buildQueue = false;
         this.liveServerProcess = null;
         this.watcherReady = false;
-        this.port = 51737; // Unique port for TEP-J0437
+        this.port = 8080; // Unique port for TEP-J0437
     }
 
     async startLiveServer() {

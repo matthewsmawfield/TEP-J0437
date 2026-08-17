@@ -1,0 +1,28 @@
+{
+  "pulsar": "J1603-7202",
+  "n_epochs": 248,
+  "n_triplets": 3653,
+  "n_permutations": 10000,
+  "observed": {
+    "antipodal_separation_rad": 2.5094734143996127,
+    "antipodal_excess_rad": 2.5094734143996127,
+    "pos_mean_rad": -2.879876851410729,
+    "pos_rbar": 0.027959302337803263,
+    "neg_mean_rad": 0.8938350413692449,
+    "neg_rbar": 0.03203893124393032,
+    "all_mean_rad": 1.9048028766308127,
+    "all_rbar": 0.009617276188603687,
+    "bipole_ratio": 3.1192945073590845,
+    "variance_explained": 0.0008133327076879107,
+    "n_pos": 1802,
+    "n_neg": 1851,
+    "n_all": 3653
+  },
+  "permutation_p_values": {
+    "antipodal_separation": 0.2507,
+    "bipole_ratio": 0.0466,
+    "bipole_ratio_str": "4.6600e-02",
+    "variance_explained": 0.054
+  },
+  "conclusion": "J1603's bipolar geometric structure is statistically significant (bipole-to-monopole ratio p = 4.6600e-02). The orientation-conditioned structure is significant even though the overall Rayleigh test is noise-limited (p = 0.936)."
+}

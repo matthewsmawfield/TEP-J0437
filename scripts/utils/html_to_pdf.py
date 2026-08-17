@@ -213,6 +213,16 @@ class HTMLToPDFConverter:
                 logger.info("Content container has content loaded")
             except Exception:
                 logger.warning("Could not verify content loading, proceeding anyway")
+
+            # Wait specifically for MathJax to finish rendering
+            try:
+                mathjax_ready = await page.wait_for_function(
+                    "() => { return window.mathjaxReady === true; }",
+                    timeout=60000
+                )
+                logger.info("MathJax rendering complete")
+            except Exception:
+                logger.warning("Could not detect MathJax completion, proceeding anyway (may cause missing symbols in PDF)")
             
             # Wait specifically for images to load
             try:

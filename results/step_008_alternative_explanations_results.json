@@ -71,7 +71,7 @@
     "simulated_H_max": 0.0,
     "simulated_psi_rad": 0.0,
     "simulated_psi_sem": 0.0,
-    "psi_vs_null_sigma": Infinity,
+    "psi_vs_null_sigma": null,
     "spurious_velocity_correlation": 0.0,
     "best_params": {},
     "n_total_runs": 12800,

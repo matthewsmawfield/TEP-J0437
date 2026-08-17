@@ -2,6 +2,13 @@
 
 const fs = require('fs');
 const path = require('path');
+function loadSharedSnippet(filePath) {
+    if (!fs.existsSync(filePath)) {
+        return '';
+    }
+    return fs.readFileSync(filePath, 'utf8').trim();
+}
+
 
 function readJsonIfExists(filePath) {
     if (!fs.existsSync(filePath)) {
@@ -239,7 +246,8 @@ function createInjectionContext() {
         }
     }
 
-    return ctx;
+        ctx.SCREENING_PROJECTION_NOTICE = loadSharedSnippet(path.join(__dirname, '..', 'core', 'screening_projection_notice.html')) || '';
+return ctx;
 }
 
 function injectPlaceholders(template, context) {

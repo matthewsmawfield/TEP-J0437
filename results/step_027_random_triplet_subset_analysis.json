@@ -36,19 +36,19 @@
       },
       "Q3": {
         "n_epochs": 0,
-        "mean_n_triplets": NaN,
-        "mean_H_ratio": NaN,
-        "std_H_ratio": NaN,
-        "median_H_ratio": NaN,
-        "fraction_H_ratio_lt_1": NaN
+        "mean_n_triplets": null,
+        "mean_H_ratio": null,
+        "std_H_ratio": null,
+        "median_H_ratio": null,
+        "fraction_H_ratio_lt_1": null
       },
       "Q4_highest": {
         "n_epochs": 0,
-        "mean_n_triplets": NaN,
-        "mean_H_ratio": NaN,
-        "std_H_ratio": NaN,
-        "median_H_ratio": NaN,
-        "fraction_H_ratio_lt_1": NaN
+        "mean_n_triplets": null,
+        "mean_H_ratio": null,
+        "std_H_ratio": null,
+        "median_H_ratio": null,
+        "fraction_H_ratio_lt_1": null
       }
     },
     "overall_statistics": {

@@ -4,7 +4,7 @@
     This appendix provides a self-contained derivation of the observable
     synchronization holonomy from the disformal metric structure. The derivation
     proceeds from the geodesic equation in the matter metric, showing explicitly
-    that non-integrability of the proper-time 1-form leads to a non-zero
+    that non-integrability of the synchronization 1-form leads to a non-zero
     closure when \(B(\phi) \neq 0\).
 </p>
 
@@ -35,123 +35,301 @@
     \end{align}
 </div>
 
-<h3>A.2 Proper-time 1-form and its exterior derivative</h3>
+<h3>A.2 Residual synchronization connection and projected disformal correction</h3>
 
 <p>
-    The matter-metric proper-time 1-form is \(\tilde{\tau} = \tilde{g}_{0\mu} dx^\mu\).
-    In the static limit with \(\tilde{g}_{0i}=0\), this reduces to \(\tilde{\tau} =
-    \tilde{g}_{00} dt = -A^2(\phi)(1+2\Phi) dt\). The coordinate-time differential
-    along a spatial path element \(dl\) with tangent \(\hat{n}^i = dx^i/dl\) follows
-    from the null condition \(\tilde{g}_{\mu\nu} dx^\mu dx^\nu = 0\):
+    Following the Jakarta construction (Paper 0, Section 3.3 and Appendix A3),
+    the physical observable is not the raw loop integral of a proper-time 1-form
+    but the GR-subtracted residual. Let \(\tilde{\sigma}^{(\tau)}\) denote the
+    matter-frame synchronization transport one-form and \(\sigma_{\rm GR}^{(\tau)}\) the
+    corresponding GR reference one-form. The residual connection is:
 </p>
 
 <div class="equation">
-    \begin{equation} \label{eq:app_dt}
-    dt = \frac{1}{c}\sqrt{\frac{-\tilde{g}_{ij}\,dx^i dx^j}{-\tilde{g}_{00}}}
-    = \frac{dl}{c}\sqrt{\frac{1-2\Phi}{1+2\Phi} + \frac{B(\phi)}{A^2(\phi)(1+2\Phi)}(\nabla\phi\cdot\hat{n})^2 } .
+    \begin{equation} \label{eq:app_residual}
+    \Delta\sigma^{(\tau)} = \tilde{\sigma}^{(\tau)} - \sigma_{\rm GR}^{(\tau)}
     \end{equation}
 </div>
 
 <p>
-    To leading order in the perturbations,
+    and the time-valued residual holonomy is:
 </p>
 
 <div class="equation">
-    \begin{equation} \label{eq:app_dt_approx}
-    dt \approx \frac{dl}{c}\Bigl[\,1 - 2\Phi + \frac{B(\phi)}{2A^2(\phi)}(\nabla\phi\cdot\hat{n})^2\Bigr].
+    \begin{equation} \label{eq:app_holonomy_resid}
+    H_{\rm resid}^{(\tau)}(C) = \oint_C \Delta\sigma^{(\tau)} = \iint_\Sigma d(\Delta\sigma^{(\tau)}), \qquad C = \partial\Sigma.
     \end{equation}
 </div>
 
 <p>
-    The proper-time 1-form along the path is therefore
-    \(d\tilde{\tau} = \tilde{g}_{00} dt \approx -A^2(\phi)[1 - 2\Phi +
-    \frac{B(\phi)}{2A^2(\phi)}(\nabla\phi\cdot\hat{n})^2] dl\). The exterior derivative
-    is
+    This is invariant under synchronization re-gaugings because both
+    \(\tilde{\sigma}^{(\tau)}\) and \(\sigma_{\rm GR}^{(\tau)}\) shift by the same exact one-form.
+    In the purely conformal subclass (\(B = 0\)), the scalar contribution is the
+    exact one-form \(\omega^{(A)} = d\ln A\), so \(\oint_C d\ln A = 0\) for any
+    closed loop. A leading-order nonzero \(H_{\rm resid}^{(\tau)}\) requires the disformal
+    sector.
+</p>
+
+<p>
+    To leading order in the disformal correction, let \(u^\mu\) denote the
+    four-velocity of the clock congruence and \(P_\mu{}^\nu = \delta_\mu{}^\nu +
+    u_\mu u^\nu\) the spatial projector. The projected disformal contribution to
+    the synchronization connection is (Jakarta, Appendix A3):
 </p>
 
 <div class="equation">
-    \begin{equation} \label{eq:app_exterior}
-    d(d\tilde{\tau}) \propto \nabla\left[\frac{B(\phi)}{2A^2(\phi)}(\nabla\phi\cdot\hat{n})^2\right] \times d\mathbf{l},
+    \begin{equation} \label{eq:app_disformal_sigma}
+    \delta\tilde{\sigma}_\mu^{(\tau)} \simeq -\frac{B}{A^2}\,(u \cdot \nabla\phi)\,P_\mu{}^\nu\,\nabla_\nu\phi
     \end{equation}
 </div>
 
 <p>
-    which is non-zero when both \(B(\phi)\) and \(\nabla\phi\) vary along the path.
-    This non-vanishing exterior derivative is the origin of the holonomy: the
-    1-form \(d\tilde{\tau}\) is non-integrable, so its line integral around a
-    closed loop depends on the path geometry rather than being identically zero.
-</p>
-
-<h3>A.3 Closure holonomy from Stokes' theorem</h3>
-
-<p>
-    Consider a closed scattering loop \(C\) formed by three arclets. By Stokes'
-    theorem, the synchronization holonomy is
+    In a hypersurface-orthogonal \(3+1\) slicing (\(u^\mu = n^\mu\)):
 </p>
 
 <div class="equation">
-    \begin{equation} \label{eq:app_stokes}
-    H = \oint_C d\tilde{\tau} = \int_S d(d\tilde{\tau}),
+    \begin{equation} \label{eq:app_3plus1}
+    \delta\tilde{\sigma}_i^{(\tau)} \simeq -\frac{B}{A^2 N}\,(\partial_i \phi)\,(n \cdot \partial\phi)
     \end{equation}
 </div>
 
 <p>
-    where \(S\) is any surface bounded by \(C\). The integrand
-    \(d(d\tilde{\tau})\) is proportional to \(\nabla B(\phi) \times \nabla\phi\) in
-    the eikonal approximation. For a thin scattering screen where \(\nabla\phi\) is
-    approximately constant across the loop, the surface integral reduces to
+    Unlike \(d\ln A\), the disformal contribution is not generically exact. Its
+    curvature satisfies \(d(\delta\tilde{\sigma}^{(\tau)}) \neq 0\) whenever the prefactor
+    varies independently around the loop — through time dependence, motion
+    through \(\nabla\phi\), anisotropic boundary conditions, inhomogeneous field
+    structure, or spatial variation of the disformal response.
+</p>
+
+<h3>A.3 Closure holonomy and the physical condition for non-vanishing signal</h3>
+
+<p>
+    At leading order beyond the GR-subtracted reference model:
 </p>
 
 <div class="equation">
-    \begin{equation} \label{eq:app_holonomy}
-    H = \frac{B(\phi)}{2A^2(\phi)}\,(\nabla\phi)^2\,\oint_C (\hat{n}\cdot\hat{e}_\phi)^2\,dl ,
+    \begin{equation} \label{eq:app_dsigma}
+    d(\Delta\sigma^{(\tau)}) = d(\tilde{\sigma}^{(\tau)} - \sigma_{\rm GR}^{(\tau)}) \supset d(\delta\tilde{\sigma}^{(\tau)})
     \end{equation}
 </div>
 
 <p>
-    where \(\hat{e}_\phi = \nabla\phi/|\nabla\phi|\). The loop integral is a positive
-    geometric factor \(L_C\) with dimensions of length, yielding
+    A static scalar gradient in a hypersurface-orthogonal frame does not
+    generate the leading holonomy. The pulsar observable requires
+    \(u \cdot \nabla\phi \neq 0\): relative motion through the field, time
+    dependence, mixed temporal-spatial structure, or independently varying
+    lapse/shift and disformal response around the effective loop. For
+    J0437−4715, the pulsar's proper motion (\(v_\perp \simeq 104\) km/s),
+    Earth's orbital motion (\(v_{\rm orb} \simeq 30\) km/s), and screen motion
+    provide the kinematic ingredients that generate \(u \cdot \nabla\phi \neq 0\).
+    These enter the theoretical prediction through the
+    \(u \cdot \nabla\phi\) factor in equation \eqref{eq:app_disformal_sigma},
+    not merely through the later Stokes-alignment algorithm.
+</p>
+
+<p>
+    The leading-order residual holonomy for a loop \(C\) bounding a smooth
+    surface \(\Sigma\) is:
 </p>
 
 <div class="equation">
     \begin{equation} \label{eq:app_holonomy_final}
-    H = \frac{B(\phi)}{2A^2(\phi)}\,(\nabla\phi)^2\,L_C .
+    H_{\rm resid}^{(\tau)}(C) = \iint_\Sigma d(\delta\tilde{\sigma}^{(\tau)})
     \end{equation}
 </div>
 
 <p>
     Equation&nbsp;\ref{eq:app_holonomy_final} is the central result:
-    <em>the closure holonomy vanishes if and only if the disformal coupling is
-    zero</em>, \(B(\phi)=0\). In purely conformal theories (\(B=0\)) the exterior
-    derivative \(d(d\tilde{\tau}) = 0\) identically, so the holonomy vanishes by
-    Stokes' theorem, recovering the standard additive-delay null hypothesis.
-    A non-zero holonomy at leading order is therefore a direct, unavoidable
-    consequence of \(B(\phi)\neq 0\).
-</p>
-
-<h3>A.4 Mapping to the measured closure observables</h3>
-
-<p>
-    The delay-domain observable is the closure delay \(\tau_{\text{closure}}\),
-    which is proportional to \(H\). Because the scintillation loop carries a
-    natural orientation in the \((\tau, f_D)\) plane, the delay and Doppler
-    closures define a complex number
+    <em>the residual holonomy vanishes in the conformal-only subclass</em>
+    (\(B = 0\)), where the scalar contribution is exact. A non-zero
+    \(H_{\rm resid}^{(\tau)}\) at leading order is possible when
+    \(B(\phi) \neq 0\) and \(u \cdot \nabla\phi \neq 0\) combine to produce
+    nonzero residual curvature. The precise necessary condition is:
 </p>
 
 <div class="equation">
-    \begin{equation} \label{eq:app_complex}
-    Z = \tau_{\text{closure}} + i\,f_{D,\text{closure}} .
+    \begin{equation} \label{eq:app_curvature_condition}
+    d\!\left[\frac{B}{A^2}\,(u \cdot \nabla\phi)\,P \cdot \nabla\phi\right] \neq 0
     \end{equation}
 </div>
 
 <p>
-    The Phase Closure is \(\psi = \arg(Z)\). Under the additive-delay null
-    hypothesis both \(\tau_{\text{closure}}\) and \(f_{D,\text{closure}}\) are zero
-    (up to measurement noise), so \(\psi\) is uniformly distributed. When
-    \(B(\phi)\neq 0\), Equation&nbsp;\ref{eq:app_holonomy_final} imprints a
-    non-zero mean on both the real and imaginary parts of \(Z\) with a ratio
-    fixed by the geometric orientation of the triplet relative to the effective
-    velocity vector. The angular distribution of \(\psi\) therefore clusters
-    around a non-zero mean, providing the circular statistic used as the primary
-    detection test in this work.
+    over the loop region. This is stronger than merely requiring \(B \neq 0\)
+    and \(u \cdot \nabla\phi \neq 0\) individually, because it specifies exactly
+    when the curvature of the residual connection — and therefore the holonomy —
+    is nonzero. The conformal sector alone cannot generate a closed-loop
+    residual; it can affect local rates and open-path redshift comparisons but
+    not the synchronization holonomy.
+</p>
+
+<h3>A.4 Why ordinary ray phases close but TEP synchronization transport need not</h3>
+
+<p>
+    A central question is whether the measured secondary-spectrum cross-term
+    phases are the edges of a genuine spacetime synchronization loop, or merely
+    differences between three complete source-observer ray phases that would
+    trivially cancel. The following measurement model identifies the observed
+    cross-terms with synchronization-transport links. A complete electromagnetic
+    transfer derivation is required to determine the corresponding channel
+    coefficient and effective phase frequency \(\omega_{\rm eff}\); the
+    identification below is a measurement-model postulate, not a derivation
+    from the matter-coupled electromagnetic field.
+</p>
+
+<p>
+    For three ordinary complex ray amplitudes \(X_i, X_j, X_k\) at the observer,
+    the pairwise cross-terms are \(Q_{ab} = X_a X_b^*\), and their closure
+    product is \(Q_{ij}Q_{jk}Q_{ki} = |X_i X_j X_k|^2\), whose phase is exactly
+    zero. Equivalently, if each ray carries any scalar accumulated phase
+    \(\Theta_a\), then \((\Theta_i - \Theta_j) + (\Theta_j - \Theta_k) +
+    (\Theta_k - \Theta_i) = 0\). This is precisely the scalar-delay null tested
+    in this paper. The cancellation holds regardless of whether \(\Theta_a\)
+    is path-dependent, because the endpoint phases are state functions of the
+    ray.
+</p>
+
+<p>
+    TEP modifies the operational comparison itself. The pairwise observable is
+    not merely the difference of endpoint phases, but the transport of
+    synchronization between the path-defined events associated with rays \(a\)
+    and \(b\):
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:tep_transport}
+    \varphi_{ab}^{\rm TEP} = \varphi_b - \varphi_a + \int_{\Gamma_{ab}} \omega_{\rm eff}(x)\,\Delta\sigma^{(\tau)}
+    \end{equation}
+</div>
+
+<p>
+    where \(\Gamma_{ab}\) is the comparison path in spacetime induced by the
+    scattering geometry: the spatial separation between the points where rays
+    \(a\) and \(b\) intersect the scattering screen, transported along the
+    observer's worldline. The endpoint phases \(\varphi_a, \varphi_b\) are
+    state functions and cancel in the closure; the residual synchronization
+    transport \(\int_{\Gamma_{ab}} \omega_{\rm eff}\,\Delta\sigma^{(\tau)}\) is
+    path-dependent and generically non-exact when \(B(\phi) \neq 0\).
+</p>
+
+<p>
+    The three measured cross-terms \((ij), (jk), (ki)\) correspond to three
+    comparison paths \(\Gamma_{ij}, \Gamma_{jk}, \Gamma_{ki}\) that form a
+    genuine closed spacetime loop:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:closure_loop}
+    \psi_{ijk} = \varphi_{ij}^{\rm TEP} + \varphi_{jk}^{\rm TEP} + \varphi_{ki}^{\rm TEP}
+    = \operatorname{Arg}\!\exp\!\left[i\oint_C \omega_{\rm eff}(x)\,\Delta\sigma^{(\tau)}\right]
+    = \operatorname{Arg}\!\exp\!\left[i\iint_\Sigma d(\omega_{\rm eff}\,\Delta\sigma^{(\tau)})\right]
+    \end{equation}
+</div>
+
+<p>
+    The endpoint phases cancel telescopically, while the residual
+    synchronization curvature remains. Thus the null \(\psi = 0\) is recovered
+    whenever \(\Delta\sigma^{(\tau)}\) is exact — including the conformal-only sector
+    — whereas the disformal non-exact sector permits \(\psi \neq 0\). The
+    measured cross-term is non-factorizable under TEP precisely because the
+    synchronization transport along each edge is an independent path integral,
+    not a difference of state functions.
+</p>
+
+<p>
+    In the scintillation geometry, each arclet \(i\) in the secondary spectrum
+    corresponds to a discrete scattered ray arriving at the observer with
+    delay \(\tau_i\) and Doppler shift \(f_{D,i}\). The physical events and
+    paths are:
+</p>
+
+<ul>
+    <li>\(S_i, S_j, S_k\): the three scattering-screen events where rays
+    \(i, j, k\) are redirected by plasma inhomogeneities.</li>
+    <li>\(O_i, O_j, O_k\): the corresponding observer detection events
+    (co-located at the receiver, but distinguished by their arrival
+    directions and delays in the secondary spectrum).</li>
+    <li>\(u^\mu\): the physical clock congruence (the observer's
+    four-velocity, including Earth orbital motion and station velocity).</li>
+    <li>\(\Gamma_{ij}\): the oriented synchronization-comparison link between
+    the scattering events \(S_i\) and \(S_j\), transported along the
+    observer's worldline.</li>
+    <li>\(\Gamma_{jk}, \Gamma_{ki}\): the corresponding links for the other
+    two pairs.</li>
+    <li>\(C = \Gamma_{ij} + \Gamma_{jk} + \Gamma_{ki}\): the closed
+    synchronization-comparison loop.</li>
+</ul>
+
+<p>
+    The cross-term
+    \(\hat{\tau}_{ab}\) is measured from the interference of rays \(a\) and
+    \(b\) in the secondary spectrum, and its phase \(\phi_{ab}\) is extracted
+    from the complex cross-spectrum. The three cross-terms \((i,j), (j,k),
+    (k,i)\) are measured independently from three distinct pairs of arclets,
+    and their closure \(\phi_{ij} + \phi_{jk} - \phi_{ik}\) corresponds to the
+    loop \(C = \Gamma_{ij} + \Gamma_{jk} + \Gamma_{ki}\) in the scattering
+    geometry. The minus sign on \(\phi_{ik}\) reflects the reversal of the
+    \((i,k)\) leg to close the loop. Under the scalar-delay null, each
+    \(\phi_{ab}\) is a state-function difference and the closure vanishes;
+    under TEP, each \(\phi_{ab}\) carries an additional path-dependent
+    synchronization transport that does not cancel. The measured complex
+    cross-term acquires \(\int_{\Gamma_{ab}} \omega_{\rm eff}\,\Delta\sigma^{(\tau)}\)
+    through the electromagnetic phase transport between the scattering events,
+    calibrated by the emitter and receiver clock congruence; photon propagation
+    is null, so the phase is formulated through clock calibration and
+    electromagnetic phase transport, not photon proper time.
+</p>
+
+<h3>A.5 Mapping to the measured closure observables</h3>
+
+<p>
+    The measured Phase Closure is the complex cross-term closure product
+    \(\mathcal{B}_{ijk} = Q_{ij} Q_{jk} Q_{ik}^*\) (Equation&nbsp;\ref{eq:closure_product}),
+    where each \(Q_{ab}\) is extracted from the complex secondary spectrum at
+    the cross-term peak position. The TEP measurement operator modifies each
+    cross-term:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:tep_cross_term}
+    Q_{ab}^{\rm TEP} = X_a\,X_b^*\,\exp\!\left[i\int_{\Gamma_{ab}} \omega_{\rm eff}(x)\,\Delta\sigma^{(\tau)}\right] .
+    \end{equation}
+</div>
+
+<p>
+    Within the TEP measurement model, the measured cross-term is represented as
+    above. Appendix A.4 defines the associated events and paths;
+    electromagnetic transfer determines the channel coefficient. The closure
+    product is then:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:tep_closure_product}
+    Q_{ij}^{\rm TEP}\,Q_{jk}^{\rm TEP}\,Q_{ki}^{\rm TEP}
+    = |X_i X_j X_k|^2\,\exp\!\left[i\oint_C \omega_{\rm eff}(x)\,\Delta\sigma^{(\tau)}\right] ,
+    \end{equation}
+</div>
+
+<p>
+    and therefore:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:psi_holonomy}
+    \psi_{ijk} = \operatorname{Arg}\!\exp\!\left[i\oint_C \omega_{\rm eff}(x)\,\Delta\sigma^{(\tau)}\right] .
+    \end{equation}
+</div>
+
+<p>
+    The endpoint amplitudes and phases cancel, leaving only the residual
+    synchronization holonomy converted to phase through \(\omega_{\rm eff}\).
+    Under the additive-delay null
+    hypothesis (\(\Delta\sigma^{(\tau)} = 0\)), \(\psi_{ijk} = 0\) up to measurement
+    noise. When \(B(\phi)\neq 0\) and the curvature condition
+    (Equation&nbsp;\ref{eq:app_curvature_condition}) is satisfied, the
+    nonfactorizable synchronization transport imprints a non-zero mean on
+    \(\psi\), providing the circular statistic used as the primary detection
+    test in this work. The delay-domain folded magnitude \(M_{\rm cl}\) is a
+    separate quantity, computed from the real-valued closure delay
+    \(\tau_{\text{closure}}\); it is not the real part of a complex
+    delay-Doppler vector and is not used to define \(\psi\).
 </p>

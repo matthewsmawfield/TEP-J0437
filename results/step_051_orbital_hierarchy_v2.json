@@ -1,0 +1,80 @@
+{
+  "n_epochs": 1220,
+  "models": {
+    "M0_null_no_orbital": {
+      "parameters": {
+        "mu": 1.0999011651373476,
+        "kappa": 0.6184576943864284
+      },
+      "log_likelihood": -2133.306794057748,
+      "bic": 4280.826800390951,
+      "n_params": 2,
+      "converged": true
+    },
+    "M1_kinematic_sinusoid": {
+      "parameters": {
+        "A": 0.0,
+        "B": 1.0999011653167217,
+        "kappa": 0.6186280086920678
+      },
+      "log_likelihood": -2133.3067863531232,
+      "bic": 4287.933391119428,
+      "n_params": 3,
+      "converged": true
+    },
+    "M2_kinematic_plus_GP": {
+      "parameters": {
+        "A": 0.0,
+        "B": 1.1267517066753274,
+        "gp_weights": [
+          -0.11069818515446175,
+          0.00022213406765816073,
+          0.11120689753491823,
+          0.19601142802052654,
+          -0.04597759017944034,
+          -0.1277721084091316
+        ],
+        "kappa": 0.6321463542365016,
+        "n_harmonics": 3
+      },
+      "log_likelihood": -2128.8313771055136,
+      "bic": 4321.622209450573,
+      "n_params": 9,
+      "converged": true
+    }
+  },
+  "bayes_factors": {
+    "M0_null_no_orbital": {
+      "log10_bf_vs_best": -0.0,
+      "interpretation": "Not preferred"
+    },
+    "M1_kinematic_sinusoid": {
+      "log10_bf_vs_best": -1.5431765692612696,
+      "interpretation": "Not preferred"
+    },
+    "M2_kinematic_plus_GP": {
+      "log10_bf_vs_best": -8.858610520789927,
+      "interpretation": "Not preferred"
+    }
+  },
+  "key_comparisons": {
+    "M1_vs_M0": {
+      "log10_bf": 1.5431765692612696,
+      "interpretation": "Kinematic sinusoid preferred"
+    },
+    "M2_vs_M0": {
+      "log10_bf": 8.858610520789927,
+      "interpretation": "Kinematic + GP preferred"
+    },
+    "M2_vs_M1": {
+      "log10_bf": 7.315433951528658,
+      "interpretation": "GP augmentation improves fit"
+    }
+  },
+  "best_model": "M0_null_no_orbital",
+  "recommendation": {
+    "orbital_significant": true,
+    "action": "retain_as_validation",
+    "interpretation": "The orbital modulation model is preferred over the null (log10 BF = 8.86). Retain the orbital channel as a primary validation check."
+  }
+}

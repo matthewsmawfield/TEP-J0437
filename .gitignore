@@ -61,3 +61,7 @@ credentials.json
 # Temp files
 *.tmp
 *.temp
+
+# Local agent workflows (never commit)
+.devin/
+.windsurf/

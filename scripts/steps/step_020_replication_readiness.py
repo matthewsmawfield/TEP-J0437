@@ -127,7 +127,7 @@ def check_documentation() -> Dict[str, Any]:
     """Check that documentation is complete."""
     
     docs = {
-        "manuscript": PROJECT_ROOT / "16-TEP-J0437-v0.1-Sintra.md",
+        "manuscript": PROJECT_ROOT / "16-TEP-J0437-v0.3-Sintra.md",
         "pipeline_readme": PROJECT_ROOT / "scripts" / "README.md",
         "citation": PROJECT_ROOT / "CITATION.cff",
         "license": PROJECT_ROOT / "LICENSE",

@@ -4,14 +4,14 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://matthewsmawfield.github.io/TEP-J0437/</loc>
-        <lastmod>2026-05-19</lastmod>
+        <loc>https://mlsmawfield.com/tep/j0437/</loc>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://matthewsmawfield.github.io/TEP-J0437/public/docs/16-TEP-J0437-v0.1-Sintra.pdf</loc>
-        <lastmod>2026-05-19</lastmod>
+        <loc>https://mlsmawfield.com/tep/j0437/public/docs/16-TEP-J0437-v0.3-Sintra.pdf</loc>
+        <lastmod>2026-08-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>

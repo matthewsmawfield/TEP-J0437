@@ -33,17 +33,18 @@
     common-mode contributions—including standard relativistic effects that apply
     equally to all scattered paths—by design, isolating only path-dependent
     contributions that violate the additive representation. TEP predicts a
-    non-zero synchronization holonomy \(H\), which is the line integral of the
-    disformal potential along the closed path in spacetime. This holonomy—a
-    geometric phase for clocks—arises because non-gravitational fields couple
-    to the physical or matter metric \(\tilde{g}_{\mu\nu}\), for which the 1-form
-    \(d\tilde{\tau}\) is non-integrable in the presence of a gradient in the time
-    field \(\phi\). The observed closure delay relates to the holonomy magnitude
-    as:
+    non-zero synchronization holonomy \(H_{\rm resid}^{(\tau)}\), defined as the
+    GR-subtracted loop integral of the synchronization connection
+    \(\Delta\sigma^{(\tau)} = \tilde{\sigma}^{(\tau)} - \sigma_{\rm GR}^{(\tau)}\) around the closed path
+    (Jakarta, Paper 0). This holonomy—a geometric phase for clocks—arises
+    because the disformal sector \(B(\phi) \neq 0\) of the matter metric
+    \(\tilde{g}_{\mu\nu}\) generates a non-exact contribution to the
+    synchronization connection when \(u \cdot \nabla\phi \neq 0\). The observed
+    closure delay relates to the holonomy magnitude as:
 </p>
 
 <div class="equation">
-    \begin{equation} \label{eq:holonomy_magnitude} |H| = |\langle
+    \begin{equation} \label{eq:holonomy_magnitude} M_{\rm cl} = |\langle
     \tau_{\text{closure}} \rangle_{\text{aligned}}| \end{equation}
 </div>
 
@@ -56,7 +57,7 @@
 </p>
 
 <p>
-    The primary detection statistic is the <em>Phase Closure</em> \(\psi\), constructed from the geometric phase of the closure delay triplet. The absolute magnitude \(|H|\) is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation \(\sigma\), the expectation of the absolute value is \(\sigma\sqrt{2/\pi}\). For J0437-4715 the per-epoch noise floor is quantified at \(E[|H|] = 6.810\) ns, which saturates the raw unsigned mean (\(8.100 \pm 0.102\) ns), leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The Phase Closure \(\psi\) is an odd-parity metric that cancels to zero in the absence of path-dependent proper time and is immune to this bias:
+    The primary detection statistic is the <em>Phase Closure</em> \(\psi\), constructed from the geometric phase of the closure delay triplet. The absolute magnitude \(M_{\rm cl}\) is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation \(\sigma\), the expectation of the absolute value is \(\sigma\sqrt{2/\pi}\). For J0437-4715 the per-epoch noise floor is quantified at \(E[M_{\rm cl}] = 6.810\) ns, which saturates the raw unsigned mean (\(8.100 \pm 0.102\) ns), leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)). The Phase Closure \(\psi\) is an odd-parity metric that cancels to zero in the absence of path-dependent proper time and is immune to this bias:
 </p>
 
 <div class="equation">
@@ -85,30 +86,128 @@
     predicts \(\bar{\psi} = 0\).
 </p>
 
+<p>
+    <em>Why ordinary ray phases close but TEP synchronization transport need
+    not.</em> If every measured cross-term is factorizable as
+    \(Q_{ab} = X_a X_b^*\), then
+    \(\arg(Q_{ij}Q_{jk}Q_{ki}) = 0\) identically. This is precisely the
+    scalar-delay null tested here: each ray carries a scalar accumulated phase
+    \(\Theta_a\), and the closure
+    \((\Theta_i - \Theta_j) + (\Theta_j - \Theta_k) + (\Theta_k - \Theta_i) = 0\)
+    vanishes regardless of path dependence, because endpoint phases are state
+    functions. TEP modifies the operational comparison itself: the pairwise
+    observable is the transport of synchronization between the path-defined
+    events associated with rays \(a\) and \(b\),
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:tep_pairwise}
+    \varphi_{ab}^{\rm TEP} = \varphi_b - \varphi_a + \int_{\Gamma_{ab}} \omega_{\rm eff}(x)\,\Delta\sigma^{(\tau)} ,
+    \end{equation}
+</div>
+
+<p>
+    where \(\Gamma_{ab}\) is the comparison path in spacetime induced by the
+    scattering geometry, \(\Delta\sigma^{(\tau)}\) is the time-valued residual
+    synchronization transport (units of seconds), and \(\omega_{\rm eff}(x)\) is
+    the effective angular frequency that converts synchronization transport to
+    phase. The time-valued residual holonomy is:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:h_resid_tau}
+    H_{\rm resid}^{(\tau)}(C) \equiv \oint_C \Delta\sigma^{(\tau)} \qquad [\mathrm{s}] ,
+    \end{equation}
+</div>
+
+<p>
+    and the phase closure is:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:tep_closure}
+    \psi_{ijk} = \operatorname{Arg}\!\exp\!\left[i\oint_C \omega_{\rm eff}(x)\,\Delta\sigma^{(\tau)}\right] .
+    \end{equation}
+</div>
+
+<p>
+    Only when \(\omega_{\rm eff}\) is common to all three legs may this be reduced to
+    \(\psi_{ijk} = \operatorname{wrap}\!\left[\omega_{\rm eff}\,H_{\rm resid}^{(\tau)}(C_{ijk})\right]\).
+    The effective frequency \(\omega_{\rm eff}\) is determined by the
+    secondary-spectrum measurement channel: it is the angular frequency at which
+    the cross-term interference pattern is sampled, set by the observing band
+    centre and the cross-spectrum extraction procedure. It is not simply the
+    carrier frequency; the full identification requires an explicit
+    electromagnetic transfer derivation (Appendix A.4). A direct empirical test
+    of the phase–time mapping is available through the subband derivative:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:omega_eff_test}
+    \frac{d\psi_{\rm unwrap}}{d\omega_{\rm eff}} = H_{\rm resid}^{(\tau)} ,
+    \end{equation}
+</div>
+
+<p>
+    valid for an unwrapped phase and a frequency-independent residual over
+    the fitted subband. If frequency dependence is allowed,
+    \(d\psi_{\rm unwrap}/d\omega = H + \omega\,dH/d\omega\).
+    The derivative connects the phase and delay channels and is testable across
+    observing subbands.
+    The null \(\psi = 0\) is recovered whenever \(\Delta\sigma^{(\tau)}\) is exact,
+    including the conformal-only sector, whereas the disformal non-exact sector
+    permits \(\psi \neq 0\). The TEP measurement operator modifies each
+    cross-term as:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:tep_measurement}
+    Q_{ab}^{\rm TEP} = X_a\,X_b^*\,\exp\!\left[i\int_{\Gamma_{ab}} \omega_{\rm eff}(x)\,\Delta\sigma^{(\tau)}\right] .
+    \end{equation}
+</div>
+
+<p>
+    Within the TEP measurement model, synchronization transport contributes an
+    edge-dependent phase, so the three pairwise terms need not factorize into
+    endpoint phases and their closure can be non-zero. Appendix A.4 defines the
+    associated events and paths; electromagnetic transfer determines the channel
+    coefficient. The closure product is then
+    \(Q_{ij}^{\rm TEP} Q_{jk}^{\rm TEP} Q_{ki}^{\rm TEP}
+    = |X_i X_j X_k|^2 \exp(i \oint_C \omega_{\rm eff}\,\Delta\sigma^{(\tau)})\),
+    so \(\psi_{ijk} = \operatorname{Arg}\exp(i \oint_C \omega_{\rm eff}\,\Delta\sigma^{(\tau)})\).
+    The measured cross-term is
+    non-factorizable under TEP because the synchronization transport along each
+    edge is an independent path integral, not a difference of state functions.
+    The full identification of the three measured cross-terms with the edges of
+    a genuine closed spacetime loop, including the event and path definitions,
+    is given in Appendix A.4.
+</p>
+
 <h4>2.1.1 Statistical Motivation for Phase Closure</h4>
 
 <p>
     The choice of \(\psi\) as the primary detection statistic follows from the
-    symmetry properties of the closure delay distribution, independent of any
-    specific theoretical framework. The closure residual \(C_{ijk}\)
-    can be represented as a complex quantity \(Z = C_{ijk} + i
-    \cdot f_{D,\text{closure}}\), where the real part is the group-delay closure
-    and the imaginary part is the Doppler-frequency closure. The Phase Closure
-    is then \(\psi_{ijk} = \arg(Z) = \arctan2(f_{D,\text{closure}},
-    C_{ijk})\), wrapped to \([-\pi, \pi)\).
+    symmetry properties of the cross-term closure phase, independent of any
+    specific theoretical framework. Define the complex closure product:
 </p>
 
+<div class="equation">
+    \begin{equation} \label{eq:closure_product}
+    \mathcal{B}_{ijk} = Q_{ij}\,Q_{jk}\,Q_{ik}^{*}, \qquad
+    \psi_{ijk} = \arg \mathcal{B}_{ijk} .
+    \end{equation}
+</div>
+
 <p>
-    Under the null hypothesis of additive delays (standard physics), both
-    \(C_{ijk}\) and \(f_{D,\text{closure}}\) are identically zero
-    in the absence of measurement noise. Measurement noise produces a symmetric
-    cloud around the origin in the complex plane, yielding \(\langle \psi
-    \rangle = 0\) because \(\arctan2(y, x)\) is an odd function of both
-    arguments for uncorrelated noise. The absolute magnitude \(|H| = \langle
-    |C_{ijk}| \rangle\), however, is strictly positive under any
-    noise model—it measures the mean absolute deviation, not a physical
-    holonomy. This is the Rice-distribution bias: \(|H| > 0\) even when no
-    signal is present.
+    Under scalar factorization (\(Q_{ab} = X_a X_b^*\)),
+    \(\mathcal{B}_{ijk} = |X_i X_j X_k|^2\), and therefore
+    \(\psi_{ijk} = 0\). Measurement and extraction errors broaden the observed
+    distribution around the scalar-null direction. TEP synchronization curvature
+    adds a nonfactorizable link phase, shifting the circular mean away from zero.
+    The folded closure magnitude \(M_{\rm cl} = \langle |C_{ijk}| \rangle\), by contrast, is
+    strictly positive under any noise model—it measures the mean absolute
+    deviation, not a physical holonomy. This is the Rice-distribution bias:
+    \(M_{\rm cl} > 0\) even when no signal is present.
 </p>
 
 <p>
@@ -116,7 +215,7 @@
     statistic: it cancels to zero for additive delays regardless of noise level,
     while any physical mechanism producing correlated delay-Doppler structure
     (including but not limited to TEP) yields \(\langle \psi \rangle \neq 0\).
-    The Rayleigh Z = 59.21 (p = 1.39 \times 10^{-13}) detection of non-zero \(\psi\) reported in this work
+    The Rayleigh Z = 59.21 (p = 1.39 × 10^{-13}) detection of non-zero \(\psi\) reported in this work
     constitutes a model-independent rejection of the additive-delay null
     hypothesis. The interpretation of this rejection as synchronization holonomy
     follows from the TEP framework, but the statistical significance of the
@@ -142,45 +241,140 @@
 <p>
     where $g_{\mu\nu}$ is the Einstein metric governing gravitational dynamics,
     $A(\phi)$ is the conformal coupling function, and $B(\phi)$ is the disformal
-    coupling parameter. TEP is a specific realization of this general disformal
-    ansatz, with the novel prediction that the time-transport 1-form
-    $d\tilde{\tau} = \tilde{g}_{0\mu} dx^\mu$ becomes non-integrable when $\nabla\phi \neq 0$.
-    The resulting synchronization holonomy $H = \oint_C d\tilde{\tau}$ is the line
-    integral of proper time around a closed spacetime loop, which vanishes identically
-    in single-metric theories (including General Relativity) but can be non-zero
-    in disformal theories with spatial field gradients.
-</p>
-
-<p>
-    In the presence of a field gradient, the exterior derivative of the delay 1-form
-    satisfies $d(d\tilde{\tau}) \propto \nabla B(\phi) \times \nabla\phi$ (in the
-    eikonal approximation), which is non-zero when both $B(\phi)$ and $\nabla\phi$ vary
-    along the scattering path. By Stokes' theorem, the closure delay around a
-    triplet of scattered paths is:
+    coupling parameter. The observational observable is not a raw one-way speed
+    or the integral of a scalar proper-time differential. Following the Jakarta
+    construction (Paper 0, Section 3.3 and Appendix A3), let $\tilde{\sigma}^{(\tau)}$
+    denote the matter-frame synchronization transport one-form induced by
+    $\tilde{g}_{\mu\nu}$ and the chosen clock congruence, and let $\sigma_{\rm GR}^{(\tau)}$
+    denote the corresponding GR one-form including Sagnac, gravitomagnetic/Lense–Thirring,
+    Shapiro delay, gravitational redshift, station motion, clock-scale realization, and
+    reference-frame corrections. The residual synchronization connection is:
 </p>
 
 <div class="equation">
-    \begin{equation} \label{eq:holonomy_stokes}
-    H = \oint_C d\tilde{\tau} = \int_S d(d\tilde{\tau}) \propto \int_S \nabla B(\phi) \times \nabla\phi
+    \begin{equation} \label{eq:residual_sigma}
+    \Delta\sigma^{(\tau)} \equiv \tilde{\sigma}^{(\tau)} - \sigma_{\rm GR}^{(\tau)}
     \end{equation}
 </div>
 
 <p>
-    where $S$ is the surface bounded by the closed scattering loop $C$. This
-    expression makes explicit that the non-zero closure is a geometric consequence
-    of the disformal coupling structure, not a measurement artifact. Where the
-    single-metric null hypothesis requires the closure residual to vanish, TEP
-    predicts path-dependent proper time accumulation as a consequence of disformal
-    coupling in dilute environments where Temporal Shear remains
-    unsuppressed. The Phase Closure $\psi$ provides a zero-centered test:
-    $\psi = 0$ under the additive-delay null hypothesis, $\psi \neq 0$ for TEP.
+    and the time-valued residual holonomy around a closed loop $C = \partial\Sigma$ is:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:holonomy_resid}
+    H_{\rm resid}^{(\tau)}(C) = \oint_C \Delta\sigma^{(\tau)} = \iint_\Sigma d(\Delta\sigma^{(\tau)})
+    \end{equation}
+</div>
+
+<p>
+    This quantity is invariant under admissible synchronization re-gaugings
+    because both $\tilde{\sigma}^{(\tau)}$ and $\sigma_{\rm GR}^{(\tau)}$ shift by
+    the same exact one-form, leaving $\Delta\sigma^{(\tau)}$ unchanged. In the
+    purely conformal subclass ($B = 0$), the scalar contribution to clock-rate
+    transport is generated by the exact one-form $\omega^{(A)} = d\ln A$, so
+    $\oint_C d\ln A = 0$ for any closed loop in a simply connected region. A
+    leading-order nonzero $H_{\rm resid}^{(\tau)}$ requires residual synchronization
+    curvature $d(\Delta\sigma^{(\tau)}) \neq 0$, supplied in the minimal TEP model
+    by the disformal sector $B(\phi) \neq 0$.
+</p>
+
+<h4>2.2.1 Projected Disformal Contribution</h4>
+
+<p>
+    To state the disformal contribution in a measurement-defined way, let
+    $u^\mu$ denote the four-velocity field of the physical clock network or
+    observer congruence, and let $P_\mu{}^\nu = \delta_\mu{}^\nu + u_\mu u^\nu$
+    be the spatial projector into the local rest space of that congruence. To
+    leading order in the disformal correction, the projected contribution to the
+    synchronization connection has the representative form (Jakarta, Appendix A3):
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:disformal_sigma}
+    \delta\tilde{\sigma}_\mu^{(\tau)} \simeq -\frac{B}{A^2}\,(u \cdot \nabla\phi)\,P_\mu{}^\nu\,\nabla_\nu\phi
+    \end{equation}
+</div>
+
+<p>
+    up to the sign convention used for the synchronization one-form and
+    higher-order disformal corrections. In a hypersurface-orthogonal $3+1$
+    slicing, where $u^\mu = n^\mu$, this reduces to:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:disformal_3plus1}
+    \delta\tilde{\sigma}_i^{(\tau)} \simeq -\frac{B}{A^2 N}\,(\partial_i \phi)\,(n \cdot \partial\phi)
+    \end{equation}
+</div>
+
+<p>
+    where $N$ is the lapse and $n^\mu$ is the unit normal to the spatial slices.
+    Unlike $d\ln A$, the disformal contribution is not generically exact. Its
+    curvature satisfies $d(\delta\tilde{\sigma}^{(\tau)}) \neq 0$ whenever the prefactor
+    multiplying the projected scalar gradient varies independently around the
+    loop.
+</p>
+
+<h4>2.2.2 Physical Condition for Non-Vanishing Holonomy</h4>
+
+<p>
+    A static scalar gradient in a hypersurface-orthogonal frame does not
+    generate the leading holonomy. The pulsar observable requires relative
+    motion through the field, time dependence, mixed temporal-spatial structure,
+    or independently varying lapse/shift and disformal response around the
+    effective loop. The key factor is $u \cdot \nabla\phi \neq 0$: the
+    four-velocity of the clock congruence must have a component along the scalar
+    field gradient.
+</p>
+
+<p>
+    For the J0437−4715 scintillation geometry, $u \cdot \nabla\phi \neq 0$ is
+    generated by three independent contributions:
+</p>
+
+<ul>
+    <li><strong>Pulsar proper motion:</strong> J0437−4715 has a large transverse
+    proper motion ($\mu_\alpha \simeq 121$ mas/yr, $\mu_\delta \simeq -71$ mas/yr;
+    Deller et al. 2008), corresponding to a tangential velocity
+    $v_\perp \simeq 104$ km/s at $d \simeq 156$ pc. The pulsar's worldline
+    sweeps through the interstellar scalar field gradient, producing a
+    time-varying $u \cdot \nabla\phi$ along the line of sight.</li>
+    <li><strong>Earth's orbital motion:</strong> The Earth's orbital velocity
+    ($v_{\rm orb} \simeq 30$ km/s) modulates the observer's four-velocity
+    projection onto $\nabla\phi$ over annual timescales, producing a
+    periodically varying contribution to $u \cdot \nabla\phi$.</li>
+    <li><strong>Screen motion:</strong> The scattering screens at
+    $\sim 89.8$ pc and $\sim 124$ pc have their own peculiar velocities relative
+    to the local standard of rest, contributing additional temporal structure to
+    the effective loop geometry.</li>
+</ul>
+
+<p>
+    These kinematic ingredients enter the theoretical prediction through the
+    $u \cdot \nabla\phi$ factor in equations \eqref{eq:disformal_sigma} and
+    \eqref{eq:disformal_3plus1}, not merely through the later Stokes-alignment
+    algorithm. The predicted holonomy is therefore a function of the pulsar's
+    proper motion, the Earth's orbital phase, and the screen kinematics — all of
+    which are independently measured. The Stokes-aligned analysis (Section 4.7)
+    is the observational implementation of this kinematic projection; the
+    theoretical prediction precedes it.
+</p>
+
+<p>
+    Where the single-metric null hypothesis requires the closure residual to
+    vanish, TEP predicts path-dependent residual synchronization holonomy as a
+    consequence of disformal coupling in dilute environments where Temporal
+    Shear remains unsuppressed. The Phase Closure $\psi$ provides a zero-centered
+    test: $\psi = 0$ under the additive-delay null hypothesis, $\psi \neq 0$ for
+    TEP.
 </p>
 
 <p>
     This non-zero holonomy manifests with specific geometric properties. In a
     Stokes-aligned distribution, delays converge to a consistently negative mean
     ($-H$) when aligned with the orientation kinematics vector, while the
-    magnitude $|H|$ remains invariant regardless of specific triplet geometry.
+    magnitude $M_{\rm cl}$ remains invariant regardless of specific triplet geometry.
     The sign of the holonomy correlates with geometric orientation, defined by
     clockwise versus counter-clockwise configurations.
 </p>
@@ -196,44 +390,57 @@
 </p>
 
 <p>
-    Key distinction: TEP predicts a <em>bipolar</em> signal where the holonomy sign flips with velocity projection. The primary detection statistic is the Phase Closure $\psi$, which represents the physical holonomy phase and is immune to noise-floor bias. The absolute magnitude $|H|$ is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation $\sigma$, the folded-normal expectation is $E[|X|] = \sigma\sqrt{2/\pi}$. For J0437-4715 the per-epoch noise floor is quantified at $E[|H|] = 6.810$ ns, which saturates the raw unsigned mean ($8.100 \pm 0.102$ ns), leaving a noise-subtracted excess of $1.290 \pm 0.102$ ns ($t = 12.7\sigma$). The signed mean serves as a physical metric expected near zero due to bipolar cancellation, but the Phase Closure provides the primary test of TEP.
+    Key distinction: TEP predicts a <em>bipolar</em> signal where the holonomy sign flips with velocity projection. The primary detection statistic is the Phase Closure $\psi$, which represents the physical holonomy phase and is immune to noise-floor bias. The absolute magnitude $M_{\rm cl}$ is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation $\sigma$, the folded-normal expectation is $E[|X|] = \sigma\sqrt{2/\pi}$. For J0437-4715 the per-epoch noise floor is quantified at $E[M_{\rm cl}] = 6.810$ ns, which saturates the raw unsigned mean ($8.100 \pm 0.102$ ns), leaving a noise-subtracted excess of $1.290 \pm 0.102$ ns ($t = 12.7\sigma$). The signed mean serves as a physical metric expected near zero due to bipolar cancellation, but the Phase Closure provides the primary test of TEP.
 </p>
 
 <h3>2.3 The ISM as an Unscreened Laboratory</h3>
 
 <p>
+    <em>Temporal Topology</em> is the spatial and covariance structure of the
+    conformal clock field \(\ln A(\phi)\), characterized locally by its gradients
+    and statistically by \(C_A(x,x')\). <em>Temporal Shear</em> is the canonical
+    synchronization gradient:
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:temporal_shear}
+    \Sigma_\mu \equiv \nabla_\mu \ln A(\phi) = \alpha(\phi)\,\nabla_\mu\phi .
+    \end{equation}
+</div>
+
+<p>
+    The observable Temporal Shear is screened by the environmental operator
+    \(\mathcal{S}_\Sigma(\mathcal{E})\):
+</p>
+
+<div class="equation">
+    \begin{equation} \label{eq:screening}
+    \Sigma_\mu^{\rm obs} = \mathcal{S}_\Sigma(\mathcal{E})\,\Sigma_\mu ,
+    \end{equation}
+</div>
+
+<p>
+    where \(\mathcal{E}\) includes density, compactness, gradients, source
+    structure, coherence scale and boundary conditions. Density is one
+    environmental projection, not a universal switch. The disformal response is
+    correlated with the same field configuration but is not fixed by
+    \(\mathcal{S}_\Sigma\) alone. It depends additionally on \(B(\phi)\), the
+    field solution, the observer congruence and the measurement channel.
+</p>
+
+<p>
     The interstellar medium toward PSR J0437-4715 provides a suitable testbed
     for TEP effects. With typical densities $\rho \sim 10^{-24} \text{ g/cm}^3$,
-    the ISM is a dilute environment where Temporal Shear $\nabla\phi$ is
-    unsuppressed and TEP effects manifest maximally. The scattering screens at
+    the ISM is a dilute environment. The scattering screens at
     $\sim 89.8$ pc and $\sim 124$ pc (Gwinn et al. 2006) create multiple path
     configurations that enable closure delay measurements around closed loops
-    through the Galactic plasma.
-</p>
-
-<p>
-    The screening of scalar-tensor theories in dense environments is a
-    well-studied phenomenon in modified gravity. In the chameleon mechanism
-    (Khoury & Weltman 2004), the scalar field mass increases with ambient density,
-    suppressing long-range forces in laboratory and Solar System environments.
-    Similarly, Vainshtein screening (Vainshtein 1972) operates through non-linear
-    derivative self-interactions that decouple the scalar field from matter in
-    regions of high gravitational potential. TEP incorporates these screening
-    mechanisms through the conformal-sector self-screening axiom (A4, Section 1),
-    which ensures that Temporal Shear is suppressed in dense environments such as
-    the white dwarf companion's vicinity.
-</p>
-
-<p>
-    The density-potential relation in TEP follows the form $\nabla\phi \propto
-    \rho^{-\alpha}$ for some exponent $\alpha > 0$, such that the field gradient
-    scales inversely with ambient density. In the ISM with $\rho \sim 10^{-24}$
-    g/cm$^3$, the unsuppressed gradient yields measurable holonomy. In the
-    binary companion's potential well with $\rho \sim 10^3$ g/cm$^3$, the gradient
-    is suppressed by many orders of magnitude, shielding orbital-scale kinematics
-    from TEP effects. This environment-dependent screening is a generic feature of
-    disformal scalar-tensor theories (Sakstein 2015; Babichev & Fabbri 2014) and
-    is essential for consistency with existing gravitational tests.
+    through the Galactic plasma. The diffuse ISM provides a long, low-compactness
+    multipath baseline and is therefore a motivated candidate environment for an
+    active J0437 response. However, $\rho \ll \rho_T$ alone does not determine
+    $\mathcal{S}_\Sigma(\mathcal{E})$, nor does conformal unscreening by itself
+    fix the disformal transfer. The J0437 analysis therefore constrains the
+    channel-integrated non-exact response rather than inferring it from ambient
+    density alone.
 </p>
 
 <p>
@@ -250,8 +457,8 @@
     It is important to distinguish the unscreened ISM scattering screens from
     the pulsar's immediate binary environment. The white dwarf companion to
     J0437-4715 generates a deep gravitational potential that locally suppresses
-    Temporal Shear through conformal-sector self-screening (screening axiom A4,
-    Section&nbsp;1).
+    observable Temporal Shear through the environmental screening operator
+    $\mathcal{S}_\Sigma(\mathcal{E})$.
     Within the companion's screening radius, the scalar field gradient flattens
     toward its minimum, attenuating the locally observable Temporal Shear.
     Consequently, orbital-scale kinematics are expected to be partially shielded,
