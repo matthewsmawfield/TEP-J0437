@@ -11,7 +11,7 @@ Multiple independent checks support the phase-domain result. Phase-scramble and 
 The observation rejects the tested scalar-factorizable cross-term null. Within the TEP measurement model, the non-zero Phase Closure is a synchronization-holonomy candidate sourced by the non-exact disformal sector. The tested scalar-factorizable implementations of thin-screen, multi-screen, refractive, chromatic-plasma and Doppler-delay models do not reproduce the observed coherent non-zero Phase Closure. The geometric structure from J1603-7202 is directionally consistent with the Temporal Equivalence Principle's non-integrable time transport.
 
 Website: https://mlsmawfield.com/tep/j0437
-Code Availability: https://github.com/matthewsmawfield/TEP-J0437
+Repository: https://github.com/matthewsmawfield/TEP-J0437
 
 DOI: 10.5281/zenodo.19454620
 

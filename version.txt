@@ -1,4 +1,4 @@
-v0.3 (Sintra) — 17 August 2026
+v0.4 (Sintra) — 13 September 2026
 
 - Aligned theoretical language with the TEP corpus and standardized epistemic claims across abstract, discussion, and conclusion
 - Resolved conflicting trimmed-amplitude estimators and fixed LaTeX rendering errors throughout the manuscript

@@ -21,7 +21,7 @@ abstract: |
 
   Code Availability: All data and analysis code required to reproduce the results presented in this work, including the full 15-pulsar scintillation catalog compilation, are available in the public repository at https://github.com/matthewsmawfield/TEP-J0437.
 
-version: v0.3 (Sintra)
+version: v0.4 (Sintra)
 date-released: 2026-05-17
 date-updated: 2026-08-17
 doi: 10.5281/zenodo.19454620
@@ -59,4 +59,4 @@ preferred-citation:
     value: 10.5281/zenodo.19454620
     description: Pre-print DOI
   url: "https://doi.org/10.5281/zenodo.19454620"
-  notes: "Preprint v0.3 (Sintra)"
+  notes: "Preprint v0.4 (Sintra)"

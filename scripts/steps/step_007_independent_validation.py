@@ -479,6 +479,7 @@ def test_phase_closure_epoch_cross_validation():
         "within-epoch SNR² circular mean; across-epoch inverse-variance weights "
         "(Step 003 construction).",
         "shuffle_rng_seed": int(RANDOM_SEED) + 70007,
+        "v_test_definition": "H0: circular uniformity; H1: concentration toward mu0=0; asymptotic upper normal tail",
         "n_epochs": int(n),
         "fold_size": int(fold_size),
         "global_full_sample": {

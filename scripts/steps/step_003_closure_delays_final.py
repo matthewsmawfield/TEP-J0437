@@ -615,7 +615,7 @@ def rayleigh_test(angles: np.ndarray, weights: Optional[np.ndarray] = None) -> t
     z_stat : float
         Rayleigh Z = 2n * R_bar^2.
     p_value : float
-        Two-tailed p-value from chi-squared(2).
+        Upper-tail p-value from chi-squared(2).
     """
     n = len(angles)
     if n < 3:
@@ -643,7 +643,8 @@ def v_test_circular(angles: np.ndarray, mu0: float = 0.0, weights: Optional[np.n
     v_stat : float
         V = sqrt(2n) * R_bar * cos(psi_mean - mu0).
     p_value : float
-        Two-tailed p-value.
+        Upper-tail p-value for concentration toward mu0. This is not a
+        test of a zero circular mean; that question requires the mean CI.
     """
     n = len(angles)
     if n < 3:
@@ -655,7 +656,7 @@ def v_test_circular(angles: np.ndarray, mu0: float = 0.0, weights: Optional[np.n
     else:
         n_eff = float(n)
     v_stat = float(np.sqrt(2.0 * n_eff) * r_bar * np.cos(psi_mean - mu0))
-    p_value = float(2.0 * stats.norm.sf(abs(v_stat)))
+    p_value = float(stats.norm.sf(v_stat))
     return v_stat, p_value
 
 
@@ -1480,6 +1481,7 @@ def process_pulsar(
         "phase_closure_rayleigh_p": float(rayleigh_p),
         "phase_closure_v_stat": float(v_stat),
         "phase_closure_v_p": float(v_p),
+        "phase_closure_v_test_definition": "H0: circular uniformity; H1: concentration toward mu0=0; asymptotic upper normal tail",
         "phase_closure_bootstrap_se_rad": float(psi_boot_se) if np.isfinite(psi_boot_se) else None,
         "phase_closure_bootstrap_ci_95_lower_rad": float(psi_boot_ci[0]) if np.isfinite(psi_boot_ci[0]) else None,
         "phase_closure_bootstrap_ci_95_upper_rad": float(psi_boot_ci[1]) if np.isfinite(psi_boot_ci[1]) else None,

@@ -420,6 +420,24 @@ def run_step(step_name: str, step_module: str, verbose: bool = True, force: bool
             "method": "Reload Step 003 per-epoch triplets; recompute geometric delays; Earth velocity projected onto 3D CMB dipole for annual regressions; wrong-direction and random-direction controls",
             "output": "results/step_048_cmb_dipole_frame_analysis.json",
         },
+        "step_055_leg_permutation_null": {
+            "description": "Leg-permutation closure null and realistic non-factorizable screen simulation",
+            "physics": "Destroy loop-level phase association while preserving leg marginals; test chi^2-field scintillation cross-terms on the measured J0437 arc geometry",
+            "method": "Recompute per-triplet leg phases through the unchanged step_002/step_003 chain; permute one leg per epoch; synthesize squared-Gaussian dynamic spectra on measured two-arc conjugate spectra and push through the identical chain",
+            "output": "results/step_055_leg_permutation_null.json",
+        },
+        "step_057_holonomy_amplitude_closure": {
+            "description": "Canonical-connection holonomy amplitude budget on the measured screen-triangle loop",
+            "physics": "Evaluate the admissible-branch (B>=0) disformal synchronization holonomy on the J0437 scattering-screen triangle; compare with the narrowband-equivalent delay implied by psi = omega_eff H and with the delay-channel bound",
+            "method": "Numerically integrate the Paper 0 connection sigma_i = f(x) grad u over screen triangles sized by the measured leg-delay distribution, under stated field/drift conventions, with eta=0 exactness, B0=0, and traversal-reversal controls",
+            "output": "results/step_057_holonomy_amplitude_closure.json",
+        },
+        "step_058_scintillation_forward_null": {
+            "description": "Standard-scintillation forward null for the phase-closure statistic",
+            "physics": "Test whether thin-screen scintillation physics (multi-screen propagation, non-quadratic arc curvature, discrete arclet families, interior fill, persistent arclet structure) can concentrate closure phases mundanely",
+            "method": "Simulate additive-image thin-screen dynamic spectra on empirical epoch grids and push through the unchanged step_002->step_003 chain (Hough arcs, arclet detection, cross-screen triplet requirement, sub-pixel cross-term measurement, complex-patch phase extraction); report pooled and epoch-direction circular statistics per model",
+            "output": "results/step_058_scintillation_forward_null.json",
+        },
         "step_049_evidence_ledger": {
             "description": "Evidence ledger, claim hierarchy, and per-pulsar evidence tier table",
             "physics": "Separate primary phase evidence from diagnostics, follow-up targets, and non-claims",
@@ -750,6 +768,10 @@ def run_pipeline(
         ("Step 047 - Velocity Direction Controls", "step_047_velocity_direction_controls"),
         ("Step 048 - CMB Dipole Frame Analysis", "step_048_cmb_dipole_frame_analysis"),
         ("Step 013 - Falsification Criteria Automation", "step_013_falsification_criteria"),
+        ("Step 055 - Leg-Permutation and Non-Factorizable Screen Nulls", "step_055_leg_permutation_null"),
+        ("Step 056 - Closure-Phase Parity and Geometric-Circulation Tests", "step_056_parity_geometry"),
+        ("Step 057 - Canonical Holonomy Amplitude on the Screen Loop", "step_057_holonomy_amplitude_closure"),
+        ("Step 058 - Standard-Scintillation Forward Null", "step_058_scintillation_forward_null"),
         ("Step 049 - Evidence Ledger", "step_049_evidence_ledger"),
     ]
 

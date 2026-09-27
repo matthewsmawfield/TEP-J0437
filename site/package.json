@@ -2,7 +2,7 @@
   "name": "tep-j0437-site",
   "version": "0.3.0",
   "description": "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation",
-  "comment": "Package version matches manuscript version v0.3 (Sintra)",
+  "comment": "Package version matches manuscript version v0.4 (Sintra)",
   "main": "index.html",
   "scripts": {
     "dev": "node dev-server.js",

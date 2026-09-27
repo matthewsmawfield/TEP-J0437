@@ -65,3 +65,5 @@ credentials.json
 # Local agent workflows (never commit)
 .devin/
 .windsurf/
+
+manuscripts/

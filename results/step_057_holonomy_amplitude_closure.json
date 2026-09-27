@@ -1,0 +1,114 @@
+{
+  "step": "step_057_holonomy_amplitude_closure",
+  "connection": "sigma_i dx^i = f(x) du; f = -b(u) R_H^2 udot/(A^2 N^2 c); b(u) = B0 u^2/(1+u^2) exp(-u^4/2 sigma_B^4), sigma_B=1.5; H = (1/c) oint sigma . dx",
+  "measured_inputs": {
+    "n_triplets": 19167,
+    "tau_leg_median_us": 0.01799554317193131,
+    "tau_leg_p95_us": 0.2662742145046267,
+    "L_leg_median_m": 8835495470.895943,
+    "L_leg_p95_m": 33987011995.930294,
+    "L_leg_median_AU": 0.059060798602245605,
+    "L_leg_fD_crosscheck_m": 4663923077.950269,
+    "psi_circular_mean_rad": 1.0058608326935978,
+    "psi_weighted_rad": 0.984,
+    "psi_unweighted_rad": 1.12
+  },
+  "implied_H": {
+    "omega_eff_rad_s": 8670795723.90783,
+    "H_implied_weighted_s": 1.134843942046558e-10,
+    "H_implied_unweighted_s": 1.29169229176031e-10,
+    "H_implied_circular_s": 1.160055968012435e-10,
+    "note": "narrowband-equivalent delay IF psi were a transport phase; the identification is the postulate under test"
+  },
+  "field_model": {
+    "u_gal_absolute": 6.040465889309489e-07,
+    "grad_u_galactic_m-1": 2.3870453066205718e-27,
+    "delta_u_screen_excursion_bound": 4.955884658225455e-16,
+    "udot_drift_H0_s-1": 2.27e-18,
+    "udot_kinematic_s-1": 2.4915978910505527e-22,
+    "D_s_pc": 93.78,
+    "D_eff_pc": 37.512
+  },
+  "controls": {
+    "eta0_exactness_integral_m": -1.0842021724855044e-19,
+    "B0_zero_integral_m": 0.0,
+    "reversal_ratio_Irev_over_Ifwd": -1.0,
+    "note": "eta=0 must return ~0 (prefactor then depends on position only through u, so f grad u is exact); reversal must flip the sign; B0=0 must return 0."
+  },
+  "canonical_scenarios": {
+    "absolute_depth__B0_1": {
+      "u0": 6.040465889309489e-07,
+      "B0": 1.0,
+      "b_u": 3.648722815989816e-13,
+      "H_eta1_s": -1.4679381133677276e-12,
+      "H_eta1_p95leg_s": -5.646636392674416e-12,
+      "H_kinematic_eta1_s": -2.2073420207336308e-32,
+      "ratio_implied_over_canonical": 77.30870475479456,
+      "B0_required_at_eta1": 77.30870475479456,
+      "eta_required_at_this_B0": 77.30870475479456
+    },
+    "absolute_depth__B0_0.0032": {
+      "u0": 6.040465889309489e-07,
+      "B0": 0.0032,
+      "b_u": 1.1675913011167411e-15,
+      "H_eta1_s": -4.697401962776728e-15,
+      "H_eta1_p95leg_s": -1.8069236456558138e-14,
+      "H_kinematic_eta1_s": -8.622429768490745e-35,
+      "ratio_implied_over_canonical": 24158.9702358733,
+      "B0_required_at_eta1": 77.30870475479458,
+      "eta_required_at_this_B0": 24158.9702358733
+    },
+    "ambient_excursion__B0_1": {
+      "u0": 4.955884658225455e-16,
+      "B0": 1.0,
+      "b_u": 2.456079274563443e-31,
+      "H_eta1_s": -1.0306910443270058e-30,
+      "H_eta1_p95leg_s": -4.452865785784148e-30,
+      "H_kinematic_eta1_s": 1.4190097501017212e-44,
+      "ratio_implied_over_canonical": 1.101051521008955e+20,
+      "B0_required_at_eta1": 1.101051521008955e+20,
+      "eta_required_at_this_B0": 1.101051521008955e+20
+    },
+    "ambient_excursion__B0_0.0032": {
+      "u0": 4.955884658225455e-16,
+      "B0": 0.0032,
+      "b_u": 7.859453678603019e-34,
+      "H_eta1_s": -3.2982113418464185e-33,
+      "H_eta1_p95leg_s": -1.424917051450927e-32,
+      "H_kinematic_eta1_s": 4.540837279066244e-47,
+      "ratio_implied_over_canonical": 3.4407860031529844e+22,
+      "B0_required_at_eta1": 1.1010515210089552e+20,
+      "eta_required_at_this_B0": 3.4407860031529844e+22
+    }
+  },
+  "isotropy_consistency": {
+    "u_earth": 1.0569050364524971e-08,
+    "sigma_bare_surface_m-1": 1.0925702866732979e-16,
+    "B0_required_for_implied_H": 77.30870475479456,
+    "s0_pinning_required_at_B0_req": 7.457711915102005e-13,
+    "s0_pinning_required_at_B0_1": 6.557220704064789e-12,
+    "s0_pinning_required_at_B0_cal": 1.1591638063952601e-10
+  },
+  "j1603": {
+    "tau_leg_median_us": 0.0932763938378461,
+    "L_leg_median_m": 20772041817.41962,
+    "psi_circular_mean_rad": 1.904802876630813,
+    "H_implied_s": 2.1968028509525767e-10,
+    "H_canonical_B0_1_eta1_s": -3.451087941602988e-12,
+    "ratio": 63.6553715270492
+  },
+  "delay_channel": {
+    "H_signed_bound_s": 4.59e-10,
+    "canonical_ceiling_B0_1_eta1_s": -1.4679381133677276e-12,
+    "B0_bound_from_delay_at_eta1": 312.6834815583385,
+    "statement": "the signed-delay amplitude |H| <= 0.46 ns bounds the literal circulation on this sightline; the canonical admissible-branch ceiling (~5e-13 s at B0=1, order-unity drift inhomogeneity) sits ~3 orders below the bound, so the delay channel does not exclude the admissible branch -- it constrains it"
+  },
+  "verdict": {
+    "implied_H_s": 1.134843942046558e-10,
+    "canonical_ceiling_absolute_depth_B0_1_s": -1.4679381133677276e-12,
+    "gap_orders_of_magnitude": 1.8882283970765732,
+    "landscape_smoothness_note": "the corpus's own spatial landscape contrast, bounded by the observed redshift scatter at delta u ~ 1e-3-1e-2 per drift scale (Paper 0 flatness ledger), maps to a fractional drift inhomogeneity across the ~1e10 m loop of eta ~ delta u x L_leg/R_H ~ 1e-19, under which the canonical amplitude falls to ~1e-31 s; the eta=1 ceiling quoted is therefore a maximally generous bound, not the expected value",
+    "worldline_dip_note": "a comparison link transported through the terrestrial region rather than along the screen does not rescue the amplitude: the same corpus consistency requirement that bounds the resonator channel pins the terrestrial shear response at S_Sigma <= 1e-10, suppressing any near-Earth contribution below the quoted ceiling",
+    "statement": "Under the canonical disformal connection evaluated on the measured screen-triangle geometry (legs ~ 8.8e+09 m, u ~ 6e-7 galactic depth, grad u ~ galactic, udot ~ H0), the admissible-branch (B0 = +1) holonomy ceiling at order-unity drift inhomogeneity is ~1.5e-12 s per loop -- ~1.89 orders below the narrowband-equivalent delay H_implied ~ 1.1e-10 s implied by psi = omega_eff H at omega_eff = 2pi x 1380 MHz.  Reaching the implied amplitude would require either eta ~ 77 (drift inhomogeneity ~77 times the H0 scale across a 0.1 AU loop -- inconsistent with the landscape smoothness bounded by the redshift scatter) or B0 ~ 77, departing ~1.9 orders from the Paper-28 admissible normalisation and ~4.4 orders from the Paper-0 calibrated magnitude.  Under the ambient-excursion field convention selected by the Earth-loop consistency argument the ceiling is far lower still.  The coherent closure phase therefore cannot be read as the literal omega_eff x H_resid circulation on this geometry -- the amplitude reconciliation joins the parity result (orientation-even, no Stokes-flux scaling) in identifying psi as a phase-domain non-factorizability signature of the ordered leg product.  The direct time-domain holonomy constraint on this sightline is the delay-channel bound |H| <= 0.46 ns."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "step": "step_054_annual_modulation_psi",
+  "period_days": 365.25,
+  "method": "Per-epoch SNR^2-weighted circular-mean psi and per-epoch signed geometric-delay mean reconstructed as in Step 003 (>=5 triplets). Fixed-period (365.25 d) least-squares sinusoid on unwrapped psi about the global circular mean, and on the signed delay series. Amplitude SE from residual-scaled design-matrix covariance; F-test against the constant model.",
+  "results": {
+    "j0437": {
+      "n_epochs": 1093,
+      "mjd_min": 52643.3949768885,
+      "mjd_max": 58691.8038887607,
+      "span_years": 16.55964110026613,
+      "psi_annual": {
+        "n": 1093,
+        "const": 0.06974519635180351,
+        "amp": 0.03653646974181024,
+        "amp_se": 0.08993852076756768,
+        "amp_over_se": 0.40623827732538703,
+        "beta_cos": 0.0354513300978911,
+        "beta_sin": -0.008838371766596805,
+        "se_cos": 0.06568423004338993,
+        "se_sin": 0.06143711778286182,
+        "F": 0.1595807653796417,
+        "p_value": 0.8525210256431655,
+        "peak_fraction_of_year": 0.9611138058831348,
+        "amp_95_upper": 0.2128159704462429
+      },
+      "signed_delay_annual": {
+        "n": 1093,
+        "const": 0.221322143962264,
+        "amp": 0.6268054012859988,
+        "amp_se": 1.0542573831656048,
+        "amp_over_se": 0.5945468452911361,
+        "beta_cos": -0.49567572623356876,
+        "beta_sin": -0.38365425255576957,
+        "se_cos": 0.7699491151266864,
+        "se_sin": 0.7201645576358373,
+        "F": 0.33517653462273866,
+        "p_value": 0.7152855040652799,
+        "peak_fraction_of_year": 0.6048332243289236,
+        "amp_95_upper": 2.6931498722905842
+      },
+      "psi_circular_mean_rad": 1.1203686885494328
+    },
+    "j1603": {
+      "n_epochs": 215,
+      "mjd_min": 52622.2612383143,
+      "mjd_max": 57705.8809028157,
+      "span_years": 13.918192099935384,
+      "psi_annual": {
+        "n": 215,
+        "const": 0.06847766538146777,
+        "amp": 0.1383694439960672,
+        "amp_se": 0.24730556974705453,
+        "amp_over_se": 0.5595079970806651,
+        "beta_cos": -0.05685462952268253,
+        "beta_sin": -0.12614933267211242,
+        "se_cos": 0.17035697216679407,
+        "se_sin": 0.17927227019837008,
+        "F": 0.2845557540478445,
+        "p_value": 0.7526353037049344,
+        "peak_fraction_of_year": 0.6826090016081223,
+        "amp_95_upper": 0.6230883607002942
+      },
+      "signed_delay_annual": {
+        "n": 215,
+        "const": -0.10477444071860773,
+        "amp": 1.0086124394310008,
+        "amp_se": 1.2063501515999753,
+        "amp_over_se": 0.8360859722969188,
+        "beta_cos": 0.4373832980768479,
+        "beta_sin": -0.9088426175847903,
+        "se_cos": 0.8309968894340782,
+        "se_sin": 0.8744854818784413,
+        "F": 0.7333132703170836,
+        "p_value": 0.4815292221474522,
+        "peak_fraction_of_year": 0.8213870240298835,
+        "amp_95_upper": 3.373058736566952
+      },
+      "psi_circular_mean_rad": -2.237282572064801
+    }
+  }
+}

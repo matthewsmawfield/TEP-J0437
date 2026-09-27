@@ -1,0 +1,6 @@
+[2026-09-26 19:57:40] [INFO] ================================================================================
+[2026-09-26 19:57:40] [INFO] STEP step_057_holonomy_amplitude_closure STARTED
+[2026-09-26 19:57:40] [INFO] Description: Canonical-connection holonomy amplitude budget on the measured screen-triangle loop
+[2026-09-26 19:57:40] [INFO] Physics: Evaluate the admissible-branch (B>=0) disformal synchronization holonomy on the J0437 scattering-screen triangle; compare with the narrowband-equivalent delay implied by psi = omega_eff H and with the delay-channel bound
+[2026-09-26 19:57:40] [INFO] Method: Numerically integrate the Paper 0 connection sigma_i = f(x) grad u over screen triangles sized by the measured leg-delay distribution, under stated field/drift conventions, with eta=0 exactness, B0=0, and traversal-reversal controls
+[2026-09-26 19:57:40] [INFO] ================================================================================

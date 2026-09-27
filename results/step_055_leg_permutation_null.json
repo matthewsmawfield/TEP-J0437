@@ -1,0 +1,78 @@
+{
+  "control_A_leg_permutation": {
+    "description": "Per-triplet leg phases (phi_01, phi_12, phi_02) recomputed through the unchanged step_002->step_003 chain on every stored viable epoch; psi = phi_01 + phi_12 - phi_02 reconstructed after permuting one leg across triplets within each epoch ('xepoch': leg drawn from a different epoch). Destroys loop-level association while preserving every leg marginal, the estimator chain, and epoch weights.",
+    "n_perm_replicates": 400,
+    "real": {
+      "psi_mean": 0.9840494974502261,
+      "rbar": 0.30759394013167146,
+      "n_epochs": 1093
+    },
+    "permuted": {
+      "01": {
+        "rbar_mean": 0.128909539161789,
+        "rbar_std": 0.03246859314058036,
+        "psi_mean_of_means": 0.6821220379095904,
+        "p_ge_real": 0.0024937655860349127
+      },
+      "12": {
+        "rbar_mean": 0.10947738483946115,
+        "rbar_std": 0.03408616092934104,
+        "psi_mean_of_means": 1.0558035698494261,
+        "p_ge_real": 0.0024937655860349127
+      },
+      "02": {
+        "rbar_mean": 0.09704969401499838,
+        "rbar_std": 0.03693931871212611,
+        "psi_mean_of_means": 0.8858039103815989,
+        "p_ge_real": 0.0024937655860349127
+      },
+      "any": {
+        "rbar_mean": 0.11350588578449144,
+        "rbar_std": 0.03460268237857368,
+        "psi_mean_of_means": 0.8669386569912364,
+        "p_ge_real": 0.0024937655860349127
+      },
+      "xepoch": {
+        "rbar_mean": 0.06604830896131571,
+        "rbar_std": 0.03290047445300609,
+        "psi_mean_of_means": 1.1377189008551356,
+        "p_ge_real": 0.0024937655860349127
+      }
+    }
+  },
+  "control_B_nonfactorizable_screen": {
+    "description": "I(nu,t)=|E|^2 with E a complex Gaussian field whose conjugate spectrum concentrates on the measured J0437 arc curvatures (eta1=0.0072, eta2=0.0076 us/mHz^2, arclet |fD|max 6.50 mHz modelled as a Gaussian of sigma=3.25 mHz, arc thickness 0.0030 us) plus white noise matched to the observed flux statistics. Pushed through step_002/step_003 unchanged. Intensity cross-terms of a chi^2 field are non-factorizable by construction -- the standard-physics channel the factorizable step_008 suite cannot reach.",
+    "n_synth_tasks": 3000,
+    "n_viable": 71,
+    "psi_mean": 0.20303406095123247,
+    "rbar": 0.2602517014288338,
+    "epoch_psi_std": 1.7828172891093101,
+    "epoch_dir_rbar_unweighted": 0.09232757925721259,
+    "matched_n_comparison": {
+      "n_synth_viable": 71,
+      "rbar_real_subsample_mean": 0.3521476003372071,
+      "rbar_real_subsample_std": 0.12754609934050493,
+      "p_synth_ge_real": 0.24438902743142144,
+      "frac_synth_epoch_within_0p5rad_of_real": 0.19718309859154928,
+      "synth_epoch_mean_rayleigh_z": 0.605231114296278,
+      "synth_epoch_mean_rayleigh_p": 0.5475710043212881
+    },
+    "variant_split": {
+      "symmetric": {
+        "n_viable": 41,
+        "psi_mean": -2.2974991130895788,
+        "rbar": 0.2768781229299345,
+        "epoch_dir_rbar_unweighted": 0.13619192789541146
+      },
+      "asymmetric": {
+        "n_viable": 30,
+        "psi_mean": 0.3336487831525581,
+        "rbar": 0.4250860918257938,
+        "epoch_dir_rbar_unweighted": 0.03612590830667265
+      }
+    },
+    "permuted_rbar_mean": 0.3853444913338753,
+    "permuted_rbar_std": 0.08139047256784798
+  },
+  "interpretation": "If the permuted Rbar collapses well below the real value, the concentration is a loop-level association, not a leg-marginal artifact. If the realistic screen null's Rbar/mean is far below the observed psi=0.984 rad, Rbar=0.308 concentration, standard non-factorizable screen structure does not reproduce it."
+}

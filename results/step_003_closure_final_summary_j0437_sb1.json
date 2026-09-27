@@ -35,7 +35,7 @@
   "phase_closure_rayleigh_z": 1.181106783599868,
   "phase_closure_rayleigh_p": 0.5540206094242826,
   "phase_closure_v_stat": 0.8548783459326222,
-  "phase_closure_v_p": 0.39261849955095107,
+  "phase_closure_v_p": 0.19630924977547554,
   "phase_closure_bootstrap_se_rad": 1.4810047113331712,
   "phase_closure_bootstrap_ci_95_lower_rad": 2.685491503710397,
   "phase_closure_bootstrap_ci_95_upper_rad": 2.3498760849624194,
@@ -56,5 +56,6 @@
   "detected_3sigma": false,
   "detected_5sigma": false,
   "method": "Conservative Independence Framework (Epoch-level aggregation)",
-  "note": "Phase Closure uses circular statistics: circular mean, circular SE, Rayleigh/V-tests, and epoch-level bootstrap CI. Legacy t-statistic retained for backward compatibility. n_independent_samples excludes epochs with <5 triplets (unreliable statistics). Within each epoch, triplet \u03c8 uses SNR^2-weighted circular mean. H_magnitude_ns is inverse-variance weighted across epochs; H_sem_ns matches that weighting (1/sqrt(sum w_i)); H_sem_between_epoch_unweighted_ns is the simple between-epoch SEM of mean(|H|) for comparison. H_t and H_p use the weighted SEM with a Gaussian two-sided tail (not Student t on n_epochs). Triplet cap applies equally with or without SNR filtering. H_noise_bias_ns uses per-epoch MAD scale of signed geometric delays about the epoch median, then E|H|_floor = sigma*sqrt(2/pi). Binary reflex velocity uses Thiele\u2013Innes projection (Reardon et al. 2024 PPTA-DR3 e, omega, i, Omega, T0, x)."
+  "note": "Phase Closure uses circular statistics: circular mean, circular SE, Rayleigh/V-tests, and epoch-level bootstrap CI. Legacy t-statistic retained for backward compatibility. n_independent_samples excludes epochs with <5 triplets (unreliable statistics). Within each epoch, triplet \u03c8 uses SNR^2-weighted circular mean. H_magnitude_ns is inverse-variance weighted across epochs; H_sem_ns matches that weighting (1/sqrt(sum w_i)); H_sem_between_epoch_unweighted_ns is the simple between-epoch SEM of mean(|H|) for comparison. H_t and H_p use the weighted SEM with a Gaussian two-sided tail (not Student t on n_epochs). Triplet cap applies equally with or without SNR filtering. H_noise_bias_ns uses per-epoch MAD scale of signed geometric delays about the epoch median, then E|H|_floor = sigma*sqrt(2/pi). Binary reflex velocity uses Thiele\u2013Innes projection (Reardon et al. 2024 PPTA-DR3 e, omega, i, Omega, T0, x).",
+  "phase_closure_v_test_definition": "H0: circular uniformity; H1: concentration toward mu0=0; asymptotic upper normal tail"
 }

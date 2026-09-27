@@ -66,7 +66,7 @@
       "rayleigh_z": 59.21367260354876,
       "rayleigh_p": 1.3864824207812638e-13,
       "v_stat": 4.260397380796272,
-      "v_p": 2.0406376031625597e-05
+      "v_p": 1.0203188015812799e-05
     },
     "agreement_with_step003_summary_rad": 0.0,
     "fold_results": [
@@ -78,7 +78,7 @@
         "rayleigh_z": 12.15138682511994,
         "rayleigh_p": 0.0022980521353072893,
         "v_stat": 2.9101789366912043,
-        "v_p": 0.003612218840982387,
+        "v_p": 0.0018061094204911935,
         "cos_delta_vs_global_mean": 0.9206291152923595,
         "same_open_halfplane_as_global": true
       },
@@ -90,7 +90,7 @@
         "rayleigh_z": 9.522800387506143,
         "rayleigh_p": 0.008553624277431665,
         "v_stat": 1.5758839765243136,
-        "v_p": 0.11505254439022267,
+        "v_p": 0.05752627219511133,
         "cos_delta_vs_global_mean": 0.9987109335439689,
         "same_open_halfplane_as_global": true
       },
@@ -102,7 +102,7 @@
         "rayleigh_z": 8.631659397808459,
         "rayleigh_p": 0.013355463874161902,
         "v_stat": 1.4897113080977593,
-        "v_p": 0.13630016000283915,
+        "v_p": 0.06815008000141957,
         "cos_delta_vs_global_mean": 0.9984888489885239,
         "same_open_halfplane_as_global": true
       },
@@ -114,7 +114,7 @@
         "rayleigh_z": 16.43882627235227,
         "rayleigh_p": 0.0002693731038572265,
         "v_stat": 1.0320150825884016,
-        "v_p": 0.3020650519601611,
+        "v_p": 0.15103252598008055,
         "cos_delta_vs_global_mean": 0.9462437001561925,
         "same_open_halfplane_as_global": true
       },
@@ -126,7 +126,7 @@
         "rayleigh_z": 16.437322243205415,
         "rayleigh_p": 0.00026957575254484933,
         "v_stat": 2.170768117287373,
-        "v_p": 0.0299487051450189,
+        "v_p": 0.01497435257250945,
         "cos_delta_vs_global_mean": 0.999763760813731,
         "same_open_halfplane_as_global": true
       }
@@ -135,7 +135,8 @@
     "min_folds_rayleigh_required": 4,
     "n_folds_v_p_lt_0_05": 2,
     "all_folds_same_open_halfplane_as_global": true,
-    "test_passed": true
+    "test_passed": true,
+    "v_test_definition": "H0: circular uniformity; H1: concentration toward mu0=0; asymptotic upper normal tail"
   },
   "bayesian_model": {
     "delta_bic": 393.9326713690634,

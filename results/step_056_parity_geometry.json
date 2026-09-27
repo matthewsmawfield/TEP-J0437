@@ -1,0 +1,55 @@
+{
+ "traversal_reversal": {
+  "n_triplets": 1057,
+  "median_abs_psi_rev_plus_psi_rad": 1.4901161193847656e-08,
+  "max_abs_psi_rev_plus_psi_rad": 0.5034207105636597,
+  "frac_exact_flip_lt_1e-6": 0.9971617786187322,
+  "frac_flip_lt_0.01": 0.9971617786187322,
+  "median_leg_conjugacy_dev_rad": 0.0,
+  "max_leg_conjugacy_dev_rad": 0.5034207105636597,
+  "interpretation": "Traversal reversal returns psi -> -psi: the estimator is algebraically orientation-odd, as required of a circulation. Residuals reflect only the discrete 3x3-patch readout at mirrored sub-pixel positions under FFT Hermiticity."
+ },
+ "orientation_classes": {
+  "n_cw": 9449,
+  "n_ccw": 9718,
+  "epoch_aggregated": {
+   "mean_psi_cw_rad": 1.1011386327072463,
+   "mean_psi_ccw_rad": 1.0286866466495954,
+   "separation_deg": 4.151193018444069,
+   "n_epochs_cw": 1063,
+   "n_epochs_ccw": 1060
+  },
+  "pooled_unweighted": {
+   "mean_psi_cw_rad": 1.0527491949806704,
+   "mean_psi_ccw_rad": 0.9621699913203728,
+   "rbar_cw": 0.11945607052156997,
+   "rbar_ccw": 0.12464385366721915,
+   "separation_deg": 5.189806081390984,
+   "separation_deg_boot_ci95": [
+    0.26331794940955205,
+    15.11950535384918
+   ]
+  },
+  "pooled_snr2_diagnostic_only": {
+   "mean_psi_cw_rad": 2.5537883346712213,
+   "mean_psi_ccw_rad": -2.485077822956942,
+   "neff": 124.77061707174235,
+   "note": "SNR^2 pooling collapses the effective sample to a few dozen dominant triplets; not a robust class estimator."
+  },
+  "orientation_imbalance_mean": -0.006953424029547344,
+  "orientation_imbalance_std": 0.17759634598200275
+ },
+ "signed_area": {
+  "corr_psi_signedArea": 0.0055320897374617935,
+  "null_mean": -0.0007415885372933222,
+  "null_std": 0.006671814006026089,
+  "perm_p_two_sided": 0.39900249376558605
+ },
+ "magnitude_scaling": {
+  "corr_abspsi_absarea": 0.025709501243882504
+ },
+ "phase_delay_coupling": {
+  "corr_psi_delta_us": -0.03592907724857181
+ },
+ "interpretation": "Traversal reversal is algebraically exact (part A): the closure estimator is a circulation-typed observable by construction, so the orientation-odd requirement of a holonomy is satisfied at the estimator level. The geometric-parity content of the data is empirical: the two orientation classes share essentially one mean phase (~5 deg separation under both epoch-aggregated and pooled conventions, bootstrap-bounded) and psi shows no scaling with signed loop area (Stokes flux) and no coupling to the closure delay. The measured coherent phase is thus a loop-ordered monopole -- a non-factorizability signature of the ordered leg product -- not a geometric circulation in the Stokes sense. Attribution of that non-factorizability to non-exact TEP transport versus standard screen structure is the separate channel tested by step_055 control B."
+}

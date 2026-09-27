@@ -1,0 +1,849 @@
+{
+  "step": "step_058_scintillation_forward_null",
+  "description": "Forward null for the phase-closure statistic under standard thin-screen scintillation: additive-image dynamic spectra pushed through the unchanged step_002 -> step_003 production chain (Hough arcs, arclet detection, cross-screen triplet requirement, sub-pixel cross-term measurement, complex-patch phase extraction).",
+  "rng_seed": 20260927,
+  "n_epochs_per_model": 1500,
+  "n_geometries_persistent": 12,
+  "geom_epochs_persistent": 80,
+  "workers": 8,
+  "epoch_config_table": "empirical (n_time,n_freq,band,dt) from data/processed/j0437",
+  "observed": {
+    "epoch_weighted": {
+      "psi_mean_rad": 0.9840495457197855,
+      "rbar": 0.3075939323959829,
+      "rayleigh_z": 59.21367260354876,
+      "rayleigh_p": 1.3864824207812638e-13,
+      "n_independent_samples": 1093
+    },
+    "pooled_unweighted": {
+      "psi_mean_rad": 1.1203686885494328,
+      "rbar": 0.30401963896164796,
+      "rayleigh_z": 202.0474787513745,
+      "rayleigh_p": 1.336433790700201e-44,
+      "n_total_triplets": 18538
+    }
+  },
+  "observed_epoch_direction_rbar": 0.31137436832646836,
+  "models": {
+    "noise_only": {
+      "model": "noise_only",
+      "n_epochs_submitted": 1500,
+      "n_viable_epochs": 228,
+      "yield_fraction": 0.152,
+      "n_errors": 0,
+      "n_triplets": 2943,
+      "psi_uw_rad": -1.8316682392299393,
+      "rbar_uw": 0.012169787639821546,
+      "rayleigh_z_uw": 0.8717385618335074,
+      "rayleigh_p_uw": 0.6467022567365588,
+      "epoch_direction_mean_rad": -2.5829431127635902,
+      "epoch_direction_rbar": 0.05381439714264786,
+      "epoch_direction_rayleigh_z": 1.3205711389609414,
+      "epoch_direction_rayleigh_p": 0.5167037585972166,
+      "n_epoch_means": 228,
+      "psi_hist_12bin": [
+        244,
+        252,
+        230,
+        270,
+        256,
+        241,
+        235,
+        232,
+        258,
+        229,
+        235,
+        261
+      ],
+      "sign_pattern_breakdown": {
+        "+++": {
+          "n": 2713,
+          "psi_uw": -1.7471747810978757,
+          "rbar": 0.014287731735233134
+        },
+        "-++": {
+          "n": 127,
+          "psi_uw": -2.8004956748570544,
+          "rbar": 0.035579155580728286
+        },
+        "+-+": {
+          "n": 89,
+          "psi_uw": 0.9347449734047608,
+          "rbar": 0.05792335996729773
+        }
+      },
+      "median_n_arclets": 8.0,
+      "verdict": {
+        "reproduces_concentration_magnitude": false,
+        "reproduces_direction_persistence": false,
+        "rbar_ratio_model_to_observed": 0.04002961019684904,
+        "dir_rbar_ratio_model_to_observed": 0.1728286031759197
+      }
+    },
+    "single_screen": {
+      "model": "single_screen",
+      "n_epochs_submitted": 1500,
+      "n_viable_epochs": 683,
+      "yield_fraction": 0.4553333333333333,
+      "n_errors": 0,
+      "n_triplets": 12011,
+      "psi_uw_rad": -0.3095216517260678,
+      "rbar_uw": 0.015339142628422035,
+      "rayleigh_z_uw": 5.6521194823264285,
+      "rayleigh_p_uw": 0.0592458382960335,
+      "epoch_direction_mean_rad": -0.06837369768286645,
+      "epoch_direction_rbar": 0.04701235679812296,
+      "epoch_direction_rayleigh_z": 3.019080870881349,
+      "epoch_direction_rayleigh_p": 0.22101152368767146,
+      "n_epoch_means": 683,
+      "psi_hist_12bin": [
+        989,
+        1004,
+        1006,
+        1045,
+        970,
+        1003,
+        1061,
+        1019,
+        1044,
+        951,
+        981,
+        938
+      ],
+      "sign_pattern_breakdown": {
+        "+++": {
+          "n": 8723,
+          "psi_uw": -0.4496063910197274,
+          "rbar": 0.009083897536544983
+        },
+        "-++": {
+          "n": 1626,
+          "psi_uw": -0.2495676428199848,
+          "rbar": 0.03398189618220304
+        },
+        "+-+": {
+          "n": 1080,
+          "psi_uw": 0.1480334547852512,
+          "rbar": 0.04372985095132004
+        },
+        "--+": {
+          "n": 228,
+          "psi_uw": 3.1241754140202045,
+          "rbar": 0.0530150736163482
+        },
+        "++-": {
+          "n": 93,
+          "psi_uw": -0.9199435896586817,
+          "rbar": 0.08541125244929415
+        },
+        "+--": {
+          "n": 93,
+          "psi_uw": -1.8039589299115946,
+          "rbar": 0.12322267698694754
+        },
+        "-+-": {
+          "n": 88,
+          "psi_uw": 1.1748582764518793,
+          "rbar": 0.06006382225995067
+        },
+        "---": {
+          "n": 80,
+          "psi_uw": -0.21931922496978187,
+          "rbar": 0.15044512602054502
+        }
+      },
+      "median_n_arclets": 12.0,
+      "verdict": {
+        "reproduces_concentration_magnitude": false,
+        "reproduces_direction_persistence": false,
+        "rbar_ratio_model_to_observed": 0.05045444656408222,
+        "dir_rbar_ratio_model_to_observed": 0.15098338713876303
+      }
+    },
+    "two_screens": {
+      "model": "two_screens",
+      "n_epochs_submitted": 1500,
+      "n_viable_epochs": 650,
+      "yield_fraction": 0.43333333333333335,
+      "n_errors": 0,
+      "n_triplets": 11725,
+      "psi_uw_rad": -0.4604998098110038,
+      "rbar_uw": 0.013929423163299783,
+      "rayleigh_z_uw": 4.5499760555802915,
+      "rayleigh_p_uw": 0.10279813914881372,
+      "epoch_direction_mean_rad": -0.23792560509189747,
+      "epoch_direction_rbar": 0.02883496686948867,
+      "epoch_direction_rayleigh_z": 1.0808919086738618,
+      "epoch_direction_rayleigh_p": 0.5824884312019998,
+      "n_epoch_means": 650,
+      "psi_hist_12bin": [
+        942,
+        991,
+        987,
+        996,
+        1011,
+        1024,
+        987,
+        963,
+        951,
+        1009,
+        947,
+        917
+      ],
+      "sign_pattern_breakdown": {
+        "+++": {
+          "n": 8152,
+          "psi_uw": -0.48472095844733154,
+          "rbar": 0.0155361590343459
+        },
+        "-++": {
+          "n": 1747,
+          "psi_uw": 0.7884222039858343,
+          "rbar": 0.021374109905709676
+        },
+        "+-+": {
+          "n": 1177,
+          "psi_uw": -0.2203716160116483,
+          "rbar": 0.006921211566896632
+        },
+        "--+": {
+          "n": 264,
+          "psi_uw": -1.817414805048311,
+          "rbar": 0.10061350347756469
+        },
+        "++-": {
+          "n": 84,
+          "psi_uw": -0.3895598627478831,
+          "rbar": 0.12247589337188983
+        },
+        "+--": {
+          "n": 87,
+          "psi_uw": -1.9200949482957042,
+          "rbar": 0.034562245217266085
+        },
+        "-+-": {
+          "n": 102,
+          "psi_uw": -0.15698331895996057,
+          "rbar": 0.11361198443703914
+        },
+        "---": {
+          "n": 112,
+          "psi_uw": -2.8553631707785145,
+          "rbar": 0.12541092845170218
+        }
+      },
+      "median_n_arclets": 14.0,
+      "verdict": {
+        "reproduces_concentration_magnitude": false,
+        "reproduces_direction_persistence": false,
+        "rbar_ratio_model_to_observed": 0.0458175110360452,
+        "dir_rbar_ratio_model_to_observed": 0.09260546082989052
+      }
+    },
+    "curved_arc": {
+      "model": "curved_arc",
+      "n_epochs_submitted": 1500,
+      "n_viable_epochs": 692,
+      "yield_fraction": 0.4613333333333333,
+      "n_errors": 0,
+      "n_triplets": 12144,
+      "psi_uw_rad": 0.027162371749119934,
+      "rbar_uw": 0.02389832317435877,
+      "rayleigh_z_uw": 13.871601810063517,
+      "rayleigh_p_uw": 0.0009723440015734848,
+      "epoch_direction_mean_rad": 0.25563305333196645,
+      "epoch_direction_rbar": 0.04878070924744733,
+      "epoch_direction_rayleigh_z": 3.2933077110426474,
+      "epoch_direction_rayleigh_p": 0.19269361172329547,
+      "n_epoch_means": 692,
+      "psi_hist_12bin": [
+        1027,
+        964,
+        959,
+        1035,
+        1085,
+        1008,
+        1086,
+        1045,
+        1059,
+        961,
+        958,
+        957
+      ],
+      "sign_pattern_breakdown": {
+        "+++": {
+          "n": 8331,
+          "psi_uw": 0.06746529461505367,
+          "rbar": 0.017524279705027814
+        },
+        "-++": {
+          "n": 1817,
+          "psi_uw": -0.020675837031979418,
+          "rbar": 0.050104438158070835
+        },
+        "+-+": {
+          "n": 1281,
+          "psi_uw": 0.4516077311695773,
+          "rbar": 0.031963427630900744
+        },
+        "--+": {
+          "n": 318,
+          "psi_uw": -1.9495543437820473,
+          "rbar": 0.02582192203675002
+        },
+        "++-": {
+          "n": 74,
+          "psi_uw": -0.8720415950383293,
+          "rbar": 0.08842410037806483
+        },
+        "+--": {
+          "n": 97,
+          "psi_uw": 0.5927121723288212,
+          "rbar": 0.13395922796140308
+        },
+        "-+-": {
+          "n": 111,
+          "psi_uw": 0.03997268453594338,
+          "rbar": 0.09036968745748702
+        },
+        "---": {
+          "n": 115,
+          "psi_uw": -1.964247153643081,
+          "rbar": 0.1220846908326153
+        }
+      },
+      "median_n_arclets": 14.0,
+      "verdict": {
+        "reproduces_concentration_magnitude": false,
+        "reproduces_direction_persistence": false,
+        "rbar_ratio_model_to_observed": 0.0786078269679596,
+        "dir_rbar_ratio_model_to_observed": 0.156662571520023
+      }
+    },
+    "arclet_families": {
+      "model": "arclet_families",
+      "n_epochs_submitted": 1500,
+      "n_viable_epochs": 620,
+      "yield_fraction": 0.41333333333333333,
+      "n_errors": 0,
+      "n_triplets": 10813,
+      "psi_uw_rad": 0.8740732591147843,
+      "rbar_uw": 0.016755106160721234,
+      "rayleigh_z_uw": 6.071144454215918,
+      "rayleigh_p_uw": 0.04804716111966735,
+      "epoch_direction_mean_rad": 0.7757171393963858,
+      "epoch_direction_rbar": 0.06908572510760318,
+      "epoch_direction_rayleigh_z": 5.918318392917707,
+      "epoch_direction_rayleigh_p": 0.05186250502362487,
+      "n_epoch_means": 620,
+      "psi_hist_12bin": [
+        915,
+        831,
+        850,
+        887,
+        907,
+        945,
+        934,
+        900,
+        935,
+        881,
+        930,
+        898
+      ],
+      "sign_pattern_breakdown": {
+        "+++": {
+          "n": 8031,
+          "psi_uw": 1.305727926306357,
+          "rbar": 0.023121581497400404
+        },
+        "-++": {
+          "n": 1355,
+          "psi_uw": -1.4503514270793367,
+          "rbar": 0.010050864792413081
+        },
+        "+-+": {
+          "n": 934,
+          "psi_uw": -0.5530393979074757,
+          "rbar": 0.048667529545174976
+        },
+        "--+": {
+          "n": 226,
+          "psi_uw": 0.7262092441005393,
+          "rbar": 0.13408913296515673
+        },
+        "++-": {
+          "n": 76,
+          "psi_uw": -1.7391426422856753,
+          "rbar": 0.10219966569288937
+        },
+        "+--": {
+          "n": 58,
+          "psi_uw": -0.9877236493841723,
+          "rbar": 0.11315874374351186
+        },
+        "-+-": {
+          "n": 63,
+          "psi_uw": -0.6759441273167149,
+          "rbar": 0.14902071384279317
+        },
+        "---": {
+          "n": 70,
+          "psi_uw": -2.470148134050649,
+          "rbar": 0.09116605003074323
+        }
+      },
+      "median_n_arclets": 14.0,
+      "verdict": {
+        "reproduces_concentration_magnitude": false,
+        "reproduces_direction_persistence": false,
+        "rbar_ratio_model_to_observed": 0.055111920459963736,
+        "dir_rbar_ratio_model_to_observed": 0.22187351347805384
+      }
+    },
+    "interior_fill": {
+      "model": "interior_fill",
+      "n_epochs_submitted": 1500,
+      "n_viable_epochs": 93,
+      "yield_fraction": 0.062,
+      "n_errors": 0,
+      "n_triplets": 1652,
+      "psi_uw_rad": 3.100765153369818,
+      "rbar_uw": 0.046867093623933015,
+      "rayleigh_z_uw": 7.257316831548877,
+      "rayleigh_p_uw": 0.026551781976847856,
+      "epoch_direction_mean_rad": -3.0499166738490833,
+      "epoch_direction_rbar": 0.1191445167677897,
+      "epoch_direction_rayleigh_z": 2.6403473529044024,
+      "epoch_direction_rayleigh_p": 0.26708891088298314,
+      "n_epoch_means": 93,
+      "psi_hist_12bin": [
+        154,
+        158,
+        136,
+        144,
+        113,
+        118,
+        129,
+        130,
+        159,
+        123,
+        142,
+        146
+      ],
+      "sign_pattern_breakdown": {
+        "+++": {
+          "n": 1134,
+          "psi_uw": -3.1336431342700144,
+          "rbar": 0.050849833790021774
+        },
+        "-++": {
+          "n": 251,
+          "psi_uw": 1.936034885352947,
+          "rbar": 0.052219350206896616
+        },
+        "+-+": {
+          "n": 167,
+          "psi_uw": -2.5581935167066803,
+          "rbar": 0.03295239131552255
+        },
+        "--+": {
+          "n": 34,
+          "psi_uw": -1.7932371735109318,
+          "rbar": 0.138384757101686
+        },
+        "+--": {
+          "n": 19,
+          "psi_uw": -2.609755386437997,
+          "rbar": 0.33614170216267886
+        },
+        "-+-": {
+          "n": 18,
+          "psi_uw": -2.7588010496474324,
+          "rbar": 0.28333823146579457
+        },
+        "---": {
+          "n": 20,
+          "psi_uw": 1.4849579167751612,
+          "rbar": 0.19587327419768613
+        }
+      },
+      "median_n_arclets": 15.0,
+      "verdict": {
+        "reproduces_concentration_magnitude": false,
+        "reproduces_direction_persistence": false,
+        "rbar_ratio_model_to_observed": 0.15415811223249723,
+        "dir_rbar_ratio_model_to_observed": 0.38264073375130736
+      }
+    },
+    "three_screens": {
+      "model": "three_screens",
+      "n_epochs_submitted": 1500,
+      "n_viable_epochs": 697,
+      "yield_fraction": 0.4646666666666667,
+      "n_errors": 0,
+      "n_triplets": 12542,
+      "psi_uw_rad": 0.4423638189226457,
+      "rbar_uw": 0.014320636481205429,
+      "rayleigh_z_uw": 5.14424250352585,
+      "rayleigh_p_uw": 0.07637336633540653,
+      "epoch_direction_mean_rad": 0.8219766685833051,
+      "epoch_direction_rbar": 0.04689439626088577,
+      "epoch_direction_rayleigh_z": 3.06552365453813,
+      "epoch_direction_rayleigh_p": 0.21593845827900074,
+      "n_epoch_means": 697,
+      "psi_hist_12bin": [
+        1029,
+        1034,
+        1038,
+        992,
+        1075,
+        1041,
+        1107,
+        1110,
+        1024,
+        1038,
+        1015,
+        1039
+      ],
+      "sign_pattern_breakdown": {
+        "+++": {
+          "n": 8552,
+          "psi_uw": 0.5896978086539792,
+          "rbar": 0.010478175239643022
+        },
+        "-++": {
+          "n": 2005,
+          "psi_uw": 0.06561651942741295,
+          "rbar": 0.02050364362048239
+        },
+        "+-+": {
+          "n": 1258,
+          "psi_uw": -0.057354511871029024,
+          "rbar": 0.034573925637437254
+        },
+        "--+": {
+          "n": 303,
+          "psi_uw": -2.464521406953454,
+          "rbar": 0.013713033117598519
+        },
+        "++-": {
+          "n": 78,
+          "psi_uw": -2.3720476158367467,
+          "rbar": 0.10689672710848888
+        },
+        "+--": {
+          "n": 99,
+          "psi_uw": 1.227311641412757,
+          "rbar": 0.20324416540141585
+        },
+        "-+-": {
+          "n": 128,
+          "psi_uw": 0.7507009475633948,
+          "rbar": 0.07933089976812285
+        },
+        "---": {
+          "n": 119,
+          "psi_uw": 1.7368253900257191,
+          "rbar": 0.07995521212323464
+        }
+      },
+      "median_n_arclets": 16.0,
+      "verdict": {
+        "reproduces_concentration_magnitude": false,
+        "reproduces_direction_persistence": false,
+        "rbar_ratio_model_to_observed": 0.04710431382037124,
+        "dir_rbar_ratio_model_to_observed": 0.15060454883594704
+      }
+    },
+    "persistent_arclets": {
+      "model": "persistent_arclets",
+      "n_epochs_submitted": 1500,
+      "n_viable_epochs": 678,
+      "yield_fraction": 0.452,
+      "n_errors": 0,
+      "n_triplets": 12887,
+      "psi_uw_rad": -0.19530183120671438,
+      "rbar_uw": 0.016869131283279753,
+      "rayleigh_z_uw": 7.334445071168647,
+      "rayleigh_p_uw": 0.02554732829311093,
+      "epoch_direction_mean_rad": -0.12741652073389112,
+      "epoch_direction_rbar": 0.0456344871848094,
+      "epoch_direction_rayleigh_z": 2.8238787063614432,
+      "epoch_direction_rayleigh_p": 0.24367026192656838,
+      "n_epoch_means": 678,
+      "psi_hist_12bin": [
+        1063,
+        1087,
+        1085,
+        997,
+        1172,
+        1135,
+        1091,
+        1033,
+        1135,
+        1032,
+        1101,
+        956
+      ],
+      "sign_pattern_breakdown": {
+        "+++": {
+          "n": 8132,
+          "psi_uw": 0.530975979082687,
+          "rbar": 0.014622286396009423
+        },
+        "-++": {
+          "n": 2228,
+          "psi_uw": -1.5841939695097758,
+          "rbar": 0.026683920394516312
+        },
+        "+-+": {
+          "n": 1500,
+          "psi_uw": -1.0054062137956152,
+          "rbar": 0.049855606733986015
+        },
+        "--+": {
+          "n": 404,
+          "psi_uw": 0.16692235170416586,
+          "rbar": 0.056277497092754314
+        },
+        "++-": {
+          "n": 114,
+          "psi_uw": -0.7755859662326383,
+          "rbar": 0.10252388183732078
+        },
+        "+--": {
+          "n": 147,
+          "psi_uw": 0.3283935355106658,
+          "rbar": 0.12631335190207402
+        },
+        "-+-": {
+          "n": 171,
+          "psi_uw": 0.6395933994399715,
+          "rbar": 0.16539534749868132
+        },
+        "---": {
+          "n": 191,
+          "psi_uw": 1.331407170246132,
+          "rbar": 0.009311406935356663
+        }
+      },
+      "median_n_arclets": 21.0,
+      "verdict": {
+        "reproduces_concentration_magnitude": false,
+        "reproduces_direction_persistence": false,
+        "rbar_ratio_model_to_observed": 0.05548697887049261,
+        "dir_rbar_ratio_model_to_observed": 0.14655826499168603
+      }
+    },
+    "fully_persistent": {
+      "model": "fully_persistent",
+      "n_epochs_submitted": 960,
+      "n_viable_epochs": 401,
+      "yield_fraction": 0.41770833333333335,
+      "n_errors": 0,
+      "n_triplets": 7437,
+      "psi_uw_rad": 0.5917517073280983,
+      "rbar_uw": 0.043115670475159795,
+      "rayleigh_z_uw": 27.650186516732646,
+      "rayleigh_p_uw": 9.904630673618568e-07,
+      "epoch_direction_mean_rad": -0.001219891235794462,
+      "epoch_direction_rbar": 0.07381054715008394,
+      "epoch_direction_rayleigh_z": 4.369293490217001,
+      "epoch_direction_rayleigh_p": 0.11251747398270717,
+      "n_epoch_means": 401,
+      "psi_hist_12bin": [
+        453,
+        613,
+        596,
+        681,
+        561,
+        603,
+        673,
+        720,
+        645,
+        633,
+        649,
+        610
+      ],
+      "sign_pattern_breakdown": {
+        "+++": {
+          "n": 5196,
+          "psi_uw": 0.7258744470697562,
+          "rbar": 0.059799312349818834
+        },
+        "-++": {
+          "n": 1033,
+          "psi_uw": -2.3868349342984776,
+          "rbar": 0.1220864497734787
+        },
+        "+-+": {
+          "n": 627,
+          "psi_uw": -0.1315452858881632,
+          "rbar": 0.13086000506768017
+        },
+        "--+": {
+          "n": 248,
+          "psi_uw": -3.114506556124384,
+          "rbar": 0.08104822451223309
+        },
+        "++-": {
+          "n": 48,
+          "psi_uw": 0.2693171013493161,
+          "rbar": 0.27818270868425937
+        },
+        "+--": {
+          "n": 81,
+          "psi_uw": 0.39856362530569434,
+          "rbar": 0.4923217629737319
+        },
+        "-+-": {
+          "n": 86,
+          "psi_uw": 0.42203587613304194,
+          "rbar": 0.38254038880177715
+        },
+        "---": {
+          "n": 118,
+          "psi_uw": 1.954747598674422,
+          "rbar": 0.3456571727421034
+        }
+      },
+      "median_n_arclets": null,
+      "per_geometry_pooled": [
+        {
+          "geometry": 0,
+          "n_triplets": 460,
+          "psi_uw": -2.4653246343207225,
+          "rbar": 0.22515709024655742
+        },
+        {
+          "geometry": 1,
+          "n_triplets": 640,
+          "psi_uw": -1.0015648284743601,
+          "rbar": 0.11435002114216761
+        },
+        {
+          "geometry": 2,
+          "n_triplets": 698,
+          "psi_uw": -1.9099605758143072,
+          "rbar": 0.02955001786088554
+        },
+        {
+          "geometry": 3,
+          "n_triplets": 600,
+          "psi_uw": -1.6424529990769186,
+          "rbar": 0.045705153218547866
+        },
+        {
+          "geometry": 4,
+          "n_triplets": 1220,
+          "psi_uw": 0.06173420438581635,
+          "rbar": 0.07966824838917251
+        },
+        {
+          "geometry": 5,
+          "n_triplets": 772,
+          "psi_uw": -0.962750768363805,
+          "rbar": 0.10522762852013767
+        },
+        {
+          "geometry": 6,
+          "n_triplets": 361,
+          "psi_uw": -1.5669571755979006,
+          "rbar": 0.31154257381875355
+        },
+        {
+          "geometry": 7,
+          "n_triplets": 799,
+          "psi_uw": 1.5446197861381152,
+          "rbar": 0.22765711801928276
+        },
+        {
+          "geometry": 8,
+          "n_triplets": 240,
+          "psi_uw": -2.484180101823574,
+          "rbar": 0.09210013821959764
+        },
+        {
+          "geometry": 9,
+          "n_triplets": 132,
+          "psi_uw": -2.8359712703248054,
+          "rbar": 0.3871177607438172
+        },
+        {
+          "geometry": 10,
+          "n_triplets": 904,
+          "psi_uw": 0.8361164448410375,
+          "rbar": 0.33574726648727665
+        },
+        {
+          "geometry": 11,
+          "n_triplets": 611,
+          "psi_uw": 1.3667214159833148,
+          "rbar": 0.2458643532445242
+        }
+      ],
+      "geometry_direction_rbar": 0.27997804687611727,
+      "verdict": {
+        "reproduces_concentration_magnitude": false,
+        "reproduces_direction_persistence": false,
+        "rbar_ratio_model_to_observed": 0.14181870165499022,
+        "dir_rbar_ratio_model_to_observed": 0.23704760140274422
+      }
+    },
+    "two_screens_scrambled": {
+      "model": "two_screens_scrambled",
+      "n_epochs_submitted": 1500,
+      "n_viable_epochs": 30,
+      "yield_fraction": 0.02,
+      "n_errors": 0,
+      "n_triplets": 473,
+      "psi_uw_rad": 2.2616591079149195,
+      "rbar_uw": 0.08728672266544199,
+      "rayleigh_z_uw": 7.207547468175401,
+      "rayleigh_p_uw": 0.02722080429949034,
+      "epoch_direction_mean_rad": 2.2296497425190775,
+      "epoch_direction_rbar": 0.23465217055236137,
+      "epoch_direction_rayleigh_z": 3.3036984686960693,
+      "epoch_direction_rayleigh_p": 0.19169509150430825,
+      "n_epoch_means": 30,
+      "psi_hist_12bin": [
+        35,
+        33,
+        46,
+        25,
+        33,
+        51,
+        24,
+        32,
+        50,
+        56,
+        34,
+        54
+      ],
+      "sign_pattern_breakdown": {
+        "+++": {
+          "n": 436,
+          "psi_uw": 2.256237369718843,
+          "rbar": 0.07388120645263553
+        },
+        "-++": {
+          "n": 27,
+          "psi_uw": 2.1685930927219177,
+          "rbar": 0.21725004605754777
+        },
+        "+-+": {
+          "n": 10,
+          "psi_uw": 2.4806160042714485,
+          "rbar": 0.3313634645746357
+        }
+      },
+      "median_n_arclets": 10.0,
+      "verdict": {
+        "reproduces_concentration_magnitude": false,
+        "reproduces_direction_persistence": true,
+        "rbar_ratio_model_to_observed": 0.28710882942813176,
+        "dir_rbar_ratio_model_to_observed": 0.7536014342270277
+      }
+    }
+  }
+}
