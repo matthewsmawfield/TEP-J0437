@@ -176,7 +176,11 @@ class HTMLToMarkdownConverter {
         
         // Final pass: remove leading indentation from all lines (4+ spaces)
         // This handles any residual indentation from HTML structure
-        html = html.split('\n').map(line => line.replace(/^\s{4,}/, '')).join('\n');
+        let inFence = false;
+        html = html.split('\n').map((line) => {
+            if (line.trimStart().startsWith('```')) inFence = !inFence;
+            return inFence ? line : line.replace(/^\s{4,}/, '');
+        }).join('\n');
         
         return html;
     }
@@ -192,7 +196,7 @@ class HTMLToMarkdownConverter {
             // Load citation metadata for header
             const citationPath = path.join(__dirname, '..', 'CITATION.cff');
             let author = 'Matthew Lukin Smawfield';
-            let version = 'v0.3 (Sintra)';
+            let version = 'v0.4 (Sintra)';
             let dateReleased = '2026-05-17';
             let doi = '';
             
@@ -231,7 +235,7 @@ class HTMLToMarkdownConverter {
             const header = `# ${title}
 **${author}**
 Version: ${version}
-First published: ${dateReleased}${doi ? `\nDOI: ${doi}` : ''}
+First published: ${dateReleased}\nLast updated: ${manifest.last_updated}${doi ? `\nDOI: ${doi}` : ''}
 
 ---
 

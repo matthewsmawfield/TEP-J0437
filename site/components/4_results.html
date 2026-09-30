@@ -10,7 +10,7 @@
 
 <p><em>Weighted Rayleigh convention.</em> The reported \(Z\) uses the inverse-variance-weighted epoch sample: \(Z = 2 n_{\rm eff}\bar{R}^2\) with effective sample size \(n_{\rm eff} = (\sum_i w_i)^2/\sum_i w_i^2 \approx 313\), and \(p = e^{-Z/2} = e^{-n_{\rm eff}\bar{R}^2}\). With \(\bar{R} = 0.3076\) this gives \(Z = 59.21\), \(p = 1.39\times10^{-13}\). The unweighted construction on the same 1,093 independent epochs gives \(Z_{\rm uw} = 202.05\) (\(p = 1.34\times10^{-44}\), \(\bar{R}_{\rm uw} = 0.304\)); the unweighted statistic is the frame-invariant primary. Both conventions reject circular uniformity.</p>
 
-<p>In the delay domain, the epoch-level inverse-variance weighted mean of the geometric closure delays gives a raw amplitude proxy of \(M_{\rm cl}\) = 8.100 ± 0.102 ns. The per-epoch folded-normal noise floor estimated from the signed-delay dispersion is \(E[M_{\rm cl}]\) = 6.810 ± 0.102 ns, so the corresponding noise-subtracted excess is 1.290 ± 0.102 ns (t = 12.7σ) for this particular raw estimator. A symmetric 10% trimmed mean of per-epoch folded magnitudes (step_052) gives \(M_{{\rm cl,sym10}} = 21.991 \pm 0.483\) ns (45.5σ). Phase Closure ψ is the primary frame-invariant detection metric, immune to folded-magnitude bias by construction. The symmetric trimmed amplitude \(M_{{\rm cl,sym10}} = 21.991 \pm 0.483\) ns (45.5σ) serves as a secondary robustness diagnostic in the delay domain. The symmetric 10% trim removes the lowest and highest 10% of epoch-level folded magnitudes. \(M_{{\rm cl,sym10}}\) is calculated from the symmetrically trimmed distribution of per-epoch folded magnitudes, whereas \(M_{\rm cl}\) = 8.100 ns is an inverse-variance-weighted global proxy. Because their aggregation and weighting differ, their numerical values are not interpreted as two direct estimates of the same amplitude. This is expected behavior for a signal embedded in a mixture of noise-floor-dominated and signal-dominated epochs. It does not carry primary inferential weight. The raw \(M_{\rm cl} = 8.100 \pm 0.102\) ns and its folded-normal noise floor \(E[M_{\rm cl}] = 6.810 \pm 0.102\) ns demonstrate that un-trimmed folded magnitudes are noise-floor dominated.</p>
+<p>In the delay domain, the epoch-level inverse-variance weighted mean of the geometric closure delays gives a raw amplitude proxy of \(M_{\rm cl}\) = 8.100 ± 0.26 ns (epoch-level bootstrap SEM; the internal inverse-variance SEM 0.102 ns counts triplet measurement noise only). The per-epoch folded-normal noise floor estimated from the signed-delay dispersion is \(E[M_{\rm cl}]\) = 6.810 ns, so the corresponding noise-subtracted excess is 1.290 ± 0.11 ns (paired epoch-level bootstrap SEM of the mean-minus-floor difference; t ≈ 12.2σ; ≈7.6–10.8σ under 15–240-epoch contiguous blocks) for this particular raw estimator. Phase Closure ψ is the primary frame-invariant detection metric, immune to folded-magnitude bias by construction. The symmetric trimmed amplitude \(M_{\rm cl,sym10} = 21.991 \pm 0.75\) ns (epoch-level iid; ≈2.0–4.9 ns SEM under 15–240-epoch blocks, step_052) serves as a secondary robustness diagnostic in the delay domain. The symmetric 10% trim removes the lowest and highest 10% of epoch-level folded magnitudes. \(M_{\rm cl,sym10}\) is calculated from the symmetrically trimmed distribution of per-epoch folded magnitudes, whereas \(M_{\rm cl}\) = 8.100 ns is an inverse-variance-weighted global proxy. Because their aggregation and weighting differ, their numerical values are not interpreted as two direct estimates of the same amplitude. This is expected behavior for a signal embedded in a mixture of noise-floor-dominated and signal-dominated epochs. It does not carry primary inferential weight. The raw \(M_{\rm cl} = 8.100 \pm 0.26\) ns and its folded-normal noise floor \(E[M_{\rm cl}] = 6.810 \pm 0.24\) ns demonstrate that un-trimmed folded magnitudes are noise-floor dominated.</p>
 
 <h4>4.1.1 Hierarchical Variance Decomposition</h4>
 
@@ -73,7 +73,7 @@
     <tbody>
         <tr>
             <td>Statistical (delay SEM)</td>
-            <td>0.102</td>
+            <td>0.26</td>
             <td>Standard error of the mean for 1,093 independent epochs</td>
             <td>Baseline precision for \(M_{\rm cl}\) magnitude</td>
         </tr>
@@ -132,15 +132,15 @@
         </tr>
         <tr>
             <td>Group Delay Excess M<sub>cl,excess</sub></td>
-            <td>1.290 ± 0.102 ns</td>
-            <td>12.7σ</td>
+            <td>1.290 ± 0.11 ns</td>
+            <td>≈12.2σ</td>
             <td>—</td>
             <td>—</td>
         </tr>
         <tr>
             <td>Raw Delay Magnitude \(M_{\rm cl}\)</td>
-            <td>8.100 ± 0.102 ns</td>
-            <td>79.5σ (Rice noise floor; not a signal detection)</td>
+            <td>8.100 ± 0.26 ns</td>
+            <td>31.2σ (Rice noise floor; not a signal detection)</td>
             <td>—</td>
             <td>Consistent with Rice floor \(E[M_{\rm cl}]\) = 6.810 ns</td>
         </tr>
@@ -153,8 +153,8 @@
         </tr>
         <tr>
             <td>Symmetric 10% Trimmed Magnitude M<sub>cl,sym10</sub> (Secondary)</td>
-            <td>21.991 ± 0.483 ns (symmetric 10% trim, step_052)</td>
-            <td>45.5σ (quotient of a non-negative trimmed statistic — a diagnostic, not a detection statistic)</td>
+            <td>21.991 ± 0.75 ns (symmetric 10% trim; epoch-level iid bootstrap SEM, rising to ±2.0–4.9 ns under 15–240-epoch contiguous blocks, step_052)</td>
+            <td>\(\approx 29\sigma\) epoch-level iid (quotient of a non-negative trimmed statistic — a diagnostic, not a detection statistic)</td>
             <td>—</td>
             <td>Secondary robustness diagnostic; symmetric trim of per-epoch folded magnitudes removes lowest and highest 10%</td>
         </tr>
@@ -311,9 +311,9 @@
 <p><em>Control 4 (Wrong-Velocity):</em> Not applicable to the primary phase closure observable. Individual triplet phases (and therefore epoch-level phase closure) are extracted from the complex secondary spectrum prior to any velocity weighting, so modifying the velocity vector cannot change phase_closure_rad.</p>
 
 <p><em>Phase-Scramble Specificity (Step 047):</em> The phase-scramble control is a uniform-null Monte Carlo: it draws 1,000 sets of \(N\) independent uniform phases on \([-\pi, \pi)\) and compares the resulting circular concentration (\(\bar{R}\)) to the observed value. This generates fresh random angles from the uniform distribution; it does not permute the observed angles (permuting a fixed set of angles would leave \(|\sum_i e^{i\psi_i}|\) exactly unchanged). In 1,000 Monte Carlo samples of independent uniform phases, none reached the observed concentration; the finite-simulation estimate is \(p = (0+1)/(1000+1) = 9.99\times10^{-4}\).</p>
-<p><em>Leg-Permutation Null (Step 055):</em> The deferred bispectrum control—permuting one cross-term leg within each epoch before reconstructing \(\mathcal{B}_{ijk}\)—is now implemented. The per-triplet leg phases \(\phi_{01}, \phi_{12}, \phi_{02}\) were recomputed through the unchanged Step&nbsp;002&ndash;003 chain on all 1,391 viable epochs (the recomputed aggregation reproduces the headline values exactly: \(\psi = 0.984\) rad, \(\bar{R} = 0.308\), \(n = 1{,}093\)). Permuting one leg's phases across the triplets of each epoch destroys loop-level association while preserving every leg's marginal distribution, the estimator chain, and the epoch weights. Over 400 replicates the concentration collapses from \(\bar{R} = 0.308\) to \(\bar{R}_{\rm perm} = 0.097\text{--}0.129\) depending on which leg is permuted (and to \(0.066\) when the leg is drawn from a different epoch entirely), with no replicate reaching the observed value (\(p \le 2.5\times10^{-3}\)). The measured \(\psi\) is therefore a genuine per-loop phase association—a real closure property of the data—not an artifact of the leg marginals or the estimator.</p>
-<p><em>Non-Factorizable Screen Null (Step 055):</em> The second control synthesizes dynamic spectra \(I(\nu,t) = |E(\nu,t)|^2\) where \(E\) is a complex Gaussian field whose conjugate spectrum concentrates on the measured J0437 two-arc geometry (\(\eta_1 = 0.0072\), \(\eta_2 = 0.0076\) \(\mu$s/mHz\(^2\), arclet \(|f_D|_{\max} = 6.5\) mHz modelled as a \(\sigma = 3.25\) mHz Gaussian extent, flux statistics matched to the data). For this \(\chi^2\) field the secondary-spectrum cross-terms are convolutions, not factorizable products, so the closure phase is generically non-zero under standard scintillation physics—the channel the scalar-factorizable step_008 suite cannot reach. Pushed through the identical chain, 71 of 3,000 synthetic epochs met the cross-screen viability cuts; their concentration at matched sample size (\(\bar{R} = 0.26\), vs the real distribution resampled to the same \(n\): \(0.35 \pm 0.13\)) is statistically comparable to the data—closure-phase concentration of this magnitude is <em>not</em> anomalous per se. What the screen null does not reproduce is the direction persistence: synthetic epoch-mean directions are consistent with uniform (Rayleigh \(p = 0.55\); unweighted direction \(\bar{R} = 0.09\) overall, \(0.14\) symmetric and \(0.04\) for the asymmetric-arm variant), while the 1,093 real epoch means persist at \(+0.984\) rad over fifteen years. The anomaly thus contracts to the stable direction of the closure phase, not its existence.</p>
-<p><em>Forward Scintillation-Null Battery (Step 058):</em> To test whether the circular-uniformity null is mis-specified—i.e., whether standard thin-screen scintillation can concentrate closure phases near the observed direction through mundane physics—a suite of additive-image thin-screen forward models was propagated through the unchanged Step 002&ndash;003 chain (Hough arc detection, arclet selection, the cross-screen triplet requirement, sub-pixel cross-term measurement, and complex-patch phase extraction), with epoch dimensions, sampling intervals, and observing bands drawn from the empirical distribution of the real J0437 catalogue. Ten models spanning single-screen, two-screen, non-quadratic curved-arc, discrete arclet-family, interior-fill, and three-screen propagation, together with a 30%-persistent-arclet variant, a fully persistent image field, pure noise, and a phase-scrambled control, contribute \(\sim\)14,500 synthetic epochs and \(\sim\)85,000 simulated triplets. Every model in which the image population decorrelates between epochs—the appropriate ISS null, since arc curvatures persist while image content decorrelates on the scintillation timescale—returns a pooled \(\psi\) distribution consistent with circular uniformity (\(\bar{R} \le 0.05\); epoch-direction \(\bar{R} \le 0.12\)), against the observed \(\bar{R} = 0.304\) and direction persistence \(0.311\); the phase-scrambled control, retaining only amplitude structure, yields \(\bar{R} = 0.087\) over just 30 viable epochs, consistent with uniformity at that sample size. Concentration appears only in the frozen-field limit in which every image's \((\tau, f_D)\) position, amplitude, and phase is held fixed across all epochs; each such screen realization concentrates \(\psi\) at a realization-specific direction scattered over the circle (per-realization \(\bar{R} \sim 0.03\)–\(0.39\), directions spanning \([-2.8, +1.5]\) rad), with no systematic convergence near the observed \(+1.1\) rad. The measured-position sign-pattern channel is reproduced structurally by the simulators—origin-straddling peak captures occur at comparable rates—but the flipped-sign triplets remain circularly uniform in every fresh-population model (per-pattern \(\bar{R} \lesssim 0.15\)), in contrast to the real sample where those patterns concentrate at \(+1.3\)–\(+1.4\) rad. The closure-phase concentration is therefore not a generic property of multi-screen propagation, non-quadratic curvature, discrete arclet families, or of the measurement channel itself; it is specific to the data.</p>
+<p><em>Leg-Permutation Null (Step 055):</em> The deferred bispectrum control—permuting one cross-term leg within each epoch before reconstructing \(\mathcal{B}_{ijk}\)—is now implemented. The per-triplet leg phases \(\phi_{01}, \phi_{12}, \phi_{02}\) were recomputed through the unchanged Step&nbsp;002&ndash;003 chain on all 1,391 viable epochs (the recomputed aggregation reproduces the headline values exactly: \(\psi = 0.984\) rad, \(\bar{R} = 0.308\), \(n = 1{,}093\)). Permuting one leg's phases across the triplets of each epoch destroys loop-level association while preserving every leg's marginal distribution, the estimator chain, and the epoch weights. Over 400 replicates the concentration collapses from \(\bar{R} = 0.308\) to \(\bar{R}_{\rm perm} = 0.097\text{--}0.129\) depending on which leg is permuted (and to \(0.066\) when the leg is drawn from a different epoch entirely), with no replicate reaching the observed value (\(p \le 2.5\times10^{-3}\)). An extended 5{,}000-replicate audit of the strictest cross-epoch mode (step_059) resolves the floor: no replicate attains \(\bar{R} = 0.308\) (null maximum \(0.190\), empirical \(p < 2\times10^{-4}\)); the observed concentration sits \(7.6\) null standard deviations above the cross-epoch null mean (Gaussian-tail \(p \approx 2\times10^{-14}\)). The measured \(\psi\) is therefore a genuine per-loop phase association—a real closure property of the data—not an artifact of the leg marginals or the estimator.</p>
+<p><em>Non-Factorizable Screen Null (Step 055):</em> The second control synthesizes dynamic spectra \(I(\nu,t) = |E(\nu,t)|^2\) where \(E\) is a complex Gaussian field whose conjugate spectrum concentrates on the measured J0437 two-arc geometry (\(\eta_1 = 0.0072\), \(\eta_2 = 0.0076\) \(\mu\)s/mHz\(^2\), arclet \(|f_D|_{\max} = 6.5\) mHz modelled as a \(\sigma = 3.25\) mHz Gaussian extent, flux statistics matched to the data). For this \(\chi^2\) field the secondary-spectrum cross-terms are convolutions, not factorizable products, so the closure phase is generically non-zero under standard scintillation physics—the channel the scalar-factorizable step_008 suite cannot reach. Pushed through the identical chain, 71 of 3,000 synthetic epochs met the cross-screen viability cuts; their concentration at matched sample size (\(\bar{R} = 0.26\), vs the real distribution resampled to the same \(n\): \(0.35 \pm 0.13\)) is statistically comparable to the data—closure-phase concentration of this magnitude is <em>not</em> anomalous per se. What the screen null does not reproduce is the direction persistence: synthetic epoch-mean directions are consistent with uniform (Rayleigh \(p = 0.55\); unweighted direction \(\bar{R} = 0.09\) overall, \(0.14\) symmetric and \(0.04\) for the asymmetric-arm variant), while the 1,093 real epoch means persist at \(+0.984\) rad over fifteen years. The anomaly thus contracts to the stable direction of the closure phase, not its existence.</p>
+<p><em>Forward Scintillation-Null Battery (Step 058):</em> To test whether the circular-uniformity null is mis-specified—i.e., whether standard thin-screen scintillation can concentrate closure phases near the observed direction through mundane physics—a suite of additive-image thin-screen forward models was propagated through the unchanged Step 002&ndash;003 chain (Hough arc detection, arclet selection, the cross-screen triplet requirement, sub-pixel cross-term measurement, and complex-patch phase extraction), with epoch dimensions, sampling intervals, and observing bands drawn from the empirical distribution of the real J0437 catalogue. Ten models spanning single-screen, two-screen, non-quadratic curved-arc, discrete arclet-family, interior-fill, and three-screen propagation, together with a 30%-persistent-arclet variant, a fully persistent image field, pure noise, and a phase-scrambled control, contribute \(\sim\)14,500 synthetic epochs and \(\sim\)85,000 simulated triplets. Every model in which the image population decorrelates between epochs—the appropriate ISS null, since arc curvatures persist while image content decorrelates on the scintillation timescale—returns a pooled \(\psi\) distribution consistent with circular uniformity (\(\bar{R} \le 0.05\); epoch-direction \(\bar{R} \le 0.12\)), against the observed \(\bar{R} = 0.304\) and direction persistence \(0.311\); the phase-scrambled control—identical amplitude spectrum, identical arc detection and triplet selection, with only the measured phases randomized—yields \(\bar{R} = 0.003\) and epoch-direction \(\bar{R} = 0.035\) over 668 viable epochs, the deepest null in the battery at full yield, confirming that the clustering resides entirely in the phase content rather than the selection chain. Concentration appears only in the frozen-field limit in which every image's \((\tau, f_D)\) position, amplitude, and phase is held fixed across all epochs; each such screen realization concentrates \(\psi\) at a realization-specific direction scattered over the circle (per-realization \(\bar{R} \sim 0.03\)–\(0.39\), directions spanning \([-2.8, +1.5]\) rad), with no systematic convergence near the observed \(+1.1\) rad. The measured-position sign-pattern channel is reproduced structurally by the simulators—origin-straddling peak captures occur at comparable rates—but the flipped-sign triplets remain circularly uniform in every fresh-population model (per-pattern \(\bar{R} \lesssim 0.15\)), in contrast to the real sample where those patterns concentrate at \(+1.3\)–\(+1.4\) rad. The closure-phase concentration is therefore not a generic property of multi-screen propagation, non-quadratic curvature, discrete arclet families, or of the measurement channel itself; it is specific to the data.</p>
 
 <p>Together, these controls demonstrate that the primary phase observable exists before velocity weighting, that scramble controls reject a trivial circular-null interpretation, and that the closure is a genuine loop-level association under leg permutation. With only two Parkes pulsars, velocity-label permutation is necessarily score-degenerate; the discriminating power is carried by the phase-scramble, pre-alignment, leg-permutation, and direction-persistence checks together with the J0437 circular statistics.</p>
 
@@ -347,7 +347,7 @@
         </tr>
         <tr>
             <td>Gaussian noise null test (validation)</td>
-            <td>\(p < 10^{-16}\) (\(z = -18.40\sigma\)): observed mean \(M_{\rm cl} = 12.008\) ns lies <em>below</em> the noise-null expectation of 19.141 ns, consistent with bipolar cancellation predicted by TEP. The test rejects the simple iid Gaussian magnitude model. Epoch-level inverse-variance weighted mean: \(M_{\rm cl} = 8.100 \pm 0.102\) ns (raw). The per-epoch folded-normal noise floor is \(E[M_{\rm cl}] = 6.810 \pm 0.102\) ns, leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)).</td>
+            <td>\(p < 10^{-16}\) (\(z = -18.40\sigma\)): observed mean \(M_{\rm cl} = 12.008\) ns lies <em>below</em> the noise-null expectation of 19.141 ns, consistent with bipolar cancellation predicted by TEP. The test rejects the simple iid Gaussian magnitude model. Epoch-level inverse-variance weighted mean: \(M_{\rm cl} = 8.100 \pm 0.26\) ns (raw). The per-epoch folded-normal noise floor is \(E[M_{\rm cl}] = 6.810 \pm 0.24\) ns, leaving a noise-subtracted excess of \(1.290 \pm 0.11\) ns (\(t \approx 12.2\sigma\)).</td>
             <td>Consistent with TEP bipolar cancellation</td>
         </tr>
         <tr>
@@ -362,7 +362,7 @@
         </tr>
         <tr>
             <td>Annual modulation (independent half detection)</td>
-            <td>Phase Closure ψ significant in both halves; raw \(M_{\rm cl}\) near the Rice noise floor in both halves with noise-subtracted excess consistent with zero. Sinusoidal annual fit on per-epoch ψ (step_054): amplitude \(0.037 \pm 0.090\) rad, p = 0.853 — no detected annual term</td>
+            <td>Phase Closure ψ significant in both halves; raw \(M_{\rm cl}\) near the Rice noise floor in both halves with paired noise-subtracted excess positive in each (\(1.59\) and \(1.14\) ns; \(t \approx 8.9\) and \(8.7\), step_060). Sinusoidal annual fit on per-epoch ψ (step_054): amplitude \(0.037 \pm 0.090\) rad, p = 0.853 — no detected annual term</td>
             <td>PASS</td>
         </tr>
         <tr>
@@ -377,13 +377,13 @@
 
 <h4>4.5.1 Robust Statistics</h4>
 
-<p>The primary evidence rests on the Phase Closure \(\psi\), detailed in Section 4.1. The absolute magnitude \(M_{\rm cl}\) is recovered through a hierarchical Bayesian model operating on the primary dataset, but this delay-domain quantity is vulnerable to folded-magnitude noise-floor effects. The derived magnitude \(M_{\rm cl} = 8.100 \pm 0.102 \text{ ns}\) is consistent with the noise floor expectations in this dense environment, reinforcing the decision to treat high-precision phase closure as the operative detection statistic.</p>
+<p>The primary evidence rests on the Phase Closure \(\psi\), detailed in Section 4.1. The absolute magnitude \(M_{\rm cl}\) is recovered through a hierarchical Bayesian model operating on the primary dataset, but this delay-domain quantity is vulnerable to folded-magnitude noise-floor effects. The derived magnitude \(M_{\rm cl} = 8.100 \pm 0.26 \text{ ns}\) is consistent with the noise floor expectations in this dense environment, reinforcing the decision to treat high-precision phase closure as the operative detection statistic.</p>
 
-<p>The small signed mean (-0.184 ± 0.102  ns, -1.80σ) indicates minimal parity leakage, consistent with nearly isotropic sampling of the bipolar holonomy signal.</p>
+<p>The small signed mean (-0.184 ± 0.157 ns epoch-level, -1.17σ) indicates minimal parity leakage, consistent with nearly isotropic sampling of the bipolar holonomy signal.</p>
 
 <h4>4.5.2 Gaussian Noise Null Test</h4>
 
-<p>The Gaussian noise null test compares the observed triplet-level \(M_{\rm cl}\) magnitude distribution to the theoretical expectation for pure iid Gaussian noise. At the independent-epoch aggregation used in step_007, the observed mean \(M_{\rm cl} = 12.008\) ns lies below the noise-null expectation of 19.141 ns. This <em>below-noise</em> result is expected under TEP: bipolar cancellation from Stokes parity reduces the mean \(M_{\rm cl}\) below the folded-normal noise floor. The test rejects the simple iid Gaussian magnitude model at \(p < 10^{-16}\), showing that the data are not described by this trivial noise model. The primary detection rests on Phase Closure \(\psi\) (Rayleigh Z = 59.21, p = 1.39 × 10^{-13}). The epoch-level inverse-variance weighted raw \(M_{\rm cl} = 8.100 \pm 0.102\) ns (79.0\(\sigma\)) is quantitatively saturated by the per-epoch folded-normal noise floor \(E[M_{\rm cl}] = 6.810\) ns, leaving a noise-subtracted excess of \(1.290 \pm 0.102\) ns (\(t = 12.7\sigma\)); raw \(M_{\rm cl}\) is therefore consistent with the Rice floor and does not provide independent signal evidence.</p>
+<p>The Gaussian noise null test compares the observed triplet-level \(M_{\rm cl}\) magnitude distribution to the theoretical expectation for pure iid Gaussian noise. At the independent-epoch aggregation used in step_007, the observed mean \(M_{\rm cl} = 12.008\) ns lies below the noise-null expectation of 19.141 ns. This <em>below-noise</em> result is expected under TEP: bipolar cancellation from Stokes parity reduces the mean \(M_{\rm cl}\) below the folded-normal noise floor. The test rejects the simple iid Gaussian magnitude model at \(p < 10^{-16}\), showing that the data are not described by this trivial noise model. The primary detection rests on Phase Closure \(\psi\) (Rayleigh Z = 59.21, p = 1.39 × 10^{-13}). The epoch-level inverse-variance weighted raw \(M_{\rm cl} = 8.100 \pm 0.26\) ns (\(\approx 31\sigma\) against zero at the epoch-level SEM; \(79.5\sigma\) at the internal measurement-noise SEM) is quantitatively dominated by the per-epoch folded-normal noise floor \(E[M_{\rm cl}] = 6.810\) ns, leaving a paired noise-subtracted excess of \(1.290 \pm 0.11\) ns (\(t \approx 12.2\sigma\) iid, \(\approx 7.6\)–\(10.8\sigma\) under 15–240-epoch contiguous blocks, step_060). The raw folded magnitude therefore remains a Rice-floor-dominated validation channel, while the residual excess above the floor is statistically positive.</p>
 
 <h4>4.5.3 Cross-Validation</h4>
 
@@ -461,7 +461,7 @@
     </tbody>
 </table>
 
-<p>The Phase Closure \(\psi\) remains significant in both halves of the year, showing that the primary phase-domain result persists across seasons. The raw \(M_{\rm cl}\) values shown in the table (H1: 14.20 ± 0.69 ns, H2: 10.05 ± 0.56 ns) are fully saturated by the per-half Rice noise floor; the noise-subtracted excess in both halves is consistent with zero. Any seasonal variation in raw \(M_{\rm cl}\) reflects modulation of the noise floor from Earth's orbital velocity (~30 km/s) relative to J0437's transverse velocity (~104 km/s), not a TEP signal in \(M_{\rm cl}\). The ~23.8% difference between halves is consistent with the expected ~29% modulation of the folded-normal noise floor. The primary year-round test is the Phase Closure ψ, which is immune to this noise-floor bias.</p>
+<p>The Phase Closure \(\psi\) remains significant in both halves of the year, showing that the primary phase-domain result persists across seasons. The raw \(M_{\rm cl}\) values shown in the table (H1: 14.20 ± 0.69 ns, H2: 10.05 ± 0.56 ns) are dominated by the per-half Rice noise floor; the paired noise-subtracted excess is positive in both halves (\(1.586 \pm 0.18\) ns Jan–Jun, \(t \approx 8.9\); \(1.141 \pm 0.13\) ns Jul–Dec, \(t \approx 8.7\), step_060), tracking the global \(1.290\) ns value rather than a seasonal subsample. Any seasonal variation in raw \(M_{\rm cl}\) reflects modulation of the noise floor from Earth's orbital velocity (~30 km/s) relative to J0437's transverse velocity (~104 km/s), not a TEP signal in \(M_{\rm cl}\). The ~23.8% difference between halves is consistent with the expected ~29% modulation of the folded-normal noise floor. The primary year-round test is the Phase Closure ψ, which is immune to this noise-floor bias.</p>
 
 <p>A dedicated sinusoidal annual-modulation fit was then performed on the per-epoch \(\psi\) and on the orientation-separated signed delays (step_054). Each series was regressed on \(\{1, \sin 2\pi t, \cos 2\pi t\}\) with \(t\) in years and compared against the constant model by a nested F-test. For J0437-4715 (\(n = 1093\) epochs over 16.6 yr) the annual \(\psi\) amplitude is \(0.037 \pm 0.090\) rad (F = 0.16, p = 0.853) and the signed-delay amplitude is \(0.63\) ns (p = 0.715). For J1603-7202 (\(n = 215\) epochs over 13.9 yr) the annual \(\psi\) amplitude is \(0.138 \pm 0.247\) rad (p = 0.753) and the signed-delay amplitude is \(1.01\) ns (p = 0.482). No statistically significant annual sinusoidal term is detected: the 95% upper bound on the J0437 \(\psi\) annual amplitude is \(\approx 0.21\) rad. Under the kinematic model in which Earth's ~30 km/s orbital velocity modulates \(u \cdot \nabla\phi\) against the dominant ~104 km/s pulsar transverse motion, a fully projected orbital contribution could reach \(\sim 0.3\) rad; the measured bound is compatible with partial projection and does not yet isolate the annual term. The annual channel is therefore a bounded kinematic diagnostic rather than a detected modulation.</p>
 
@@ -495,8 +495,8 @@
         <tr>
             <td>Raw frequentist mean</td>
             <td>\(8.100\)</td>
-            <td>\(\pm 0.102 \text{ ns}\)</td>
-            <td>\(79.0\sigma\) (nominal)</td>
+            <td>\(\pm 0.26 \text{ ns}\)</td>
+            <td>\(79.5\sigma\) (nominal)</td>
         </tr>
         <tr>
             <td>Rice noise floor \(E[M_{\rm cl}]\)</td>
@@ -507,8 +507,8 @@
         <tr>
             <td>Noise-subtracted excess</td>
             <td>\(1.290\)</td>
-            <td>\(\pm 0.102 \text{ ns}\)</td>
-            <td>\(12.7\sigma\)</td>
+            <td>\(\pm 0.11 \text{ ns}\)</td>
+            <td>\(\approx 12.2\sigma\)</td>
         </tr>
         <tr>
             <td>Bayesian posterior (noise-subtracted)</td>
@@ -523,7 +523,7 @@
     </tbody>
 </table>
 
-<p>The Phase Closure ψ detection validates the TEP holonomy signal. The raw inverse-variance-weighted \(M_{\rm cl}\) lies near the MAD-based folded-normal floor, with a measurable post-floor excess (\(1.290 \pm 0.102\) ns) in the frequentist row of the table above; the Bayesian posterior row (\(0.000 \pm 0.459\) ns) is the orientation-aligned latent-\(H\) estimate from the signed hierarchical model in Eq.~\eqref{eq:hierarchical_model}. Because the orientation sign is included in the model, \(H\) estimates the orientation-aligned amplitude; the posterior near zero shows that this particular signed Gaussian model does not recover a coherent delay-domain amplitude. The folded trimmed excess measures a different, unsigned feature of the distribution and is not by itself a signed-holonomy estimate. Phase Closure ψ remains the primary odd-parity statistic.</p>
+<p>The Phase Closure ψ detection validates the TEP holonomy signal. The raw inverse-variance-weighted \(M_{\rm cl}\) lies near the MAD-based folded-normal floor, with a measurable post-floor excess (\(1.290 \pm 0.11\) ns) in the frequentist row of the table above; the Bayesian posterior row (\(0.000 \pm 0.459\) ns) is the orientation-aligned latent-\(H\) estimate from the signed hierarchical model in Eq.~\eqref{eq:hierarchical_model}. Because the orientation sign is included in the model, \(H\) estimates the orientation-aligned amplitude; the posterior near zero shows that this particular signed Gaussian model does not recover a coherent delay-domain amplitude. The folded trimmed excess measures a different, unsigned feature of the distribution and is not by itself a signed-holonomy estimate. Phase Closure ψ remains the primary odd-parity statistic.</p>
 
 <p>SNR stratification by percentiles reveals a weak negative correlation (\(r = -0.107, p = 9.4 \times 10^{-12}\)) between SNR and \(M_{\rm cl}\), consistent with selection bias: low-SNR triplets are preferentially selected when the underlying signal is larger. Probabilistic weighting corrects this bias by allowing all triplets to contribute smoothly according to their measurement precision.</p>
 
@@ -582,7 +582,7 @@
 
 <p>An epoch-level stability analysis was conducted on the primary J0437-4715 dataset to test whether the folded-magnitude noise floor is stable across epochs. Because raw \(M_{\rm cl}\) follows a folded-normal distribution with a non-zero mean by construction, a stable fraction of epochs exceeding any fixed threshold is the expected behavior for a consistent noise floor.</p>
 
-<p>The calculation utilized accurate sub-pixel dimensional interpolation mapped strictly to the parabolic arc coordinate space. The unweighted epoch-level mean raw \(M_{\rm cl}\) over the dataset was measured at \(8.100 \pm 0.102 \text{ ns}\), consistent with the per-epoch Rice noise floor.</p>
+<p>The calculation utilized accurate sub-pixel dimensional interpolation mapped strictly to the parabolic arc coordinate space. The epoch-level inverse-variance-weighted mean raw \(M_{\rm cl}\) over the dataset was measured at \(8.100 \pm 0.26 \text{ ns}\), consistent with the per-epoch Rice noise floor.</p>
 
 <p>A rigorous Bonferroni multiple-comparison correction was applied across the primary J0437 dataset using exact dynamic \(p\)-values on the raw epoch-level \(M_{\rm cl}\). The results confirm the expected folded-normal behavior:</p>
 
@@ -612,18 +612,18 @@
             <td>Detected</td>
         </tr>
         <tr>
-            <td>Noise-subtracted \(M_{{\rm cl,excess}}\)</td>
-            <td>\(M_{{\rm cl,excess}} = 1.290 \pm 0.102 \text{ ns}\) (12.7σ) above the MAD-based folded-normal floor</td>
-            <td>Consistent with noise floor</td>
+            <td>Noise-subtracted \(M_{\rm cl,excess}\)</td>
+            <td>\(M_{\rm cl,excess} = 1.290 \pm 0.11 \text{ ns}\) (≈12.2σ) above the MAD-based folded-normal floor</td>
+            <td>Positive excess above folded-normal floor</td>
         </tr>
         <tr>
             <td>Small signed mean (bipolar cancellation)</td>
-            <td>Signed mean = -0.184 ± 0.102 ns (-1.80σ)</td>
+            <td>Signed mean = -0.184 ± 0.157 ns (-1.17σ)</td>
             <td>Confirmed</td>
         </tr>
         <tr>
             <td>\(M_{\rm cl}\) consistency across CV folds</td>
-            <td>Step 007: 5/5 folds show positive epoch-mean \(M_{\rm cl}\) (§4.5.3); delay excess is secondary to ψ</td>
+            <td>Cross-validation: 5/5 folds show positive epoch-mean \(M_{\rm cl}\) (§4.5.3); delay excess is secondary to ψ</td>
             <td>Confirmed</td>
         </tr>
         <tr>
@@ -637,8 +637,8 @@
             <td>Confirmed (noise-floor mean non-zero)</td>
         </tr>
         <tr>
-            <td>Trimmed mean of |signed epoch means| (step_007)</td>
-            <td>\(M_{{\rm cl,trim007}} = 7.489\) ns; symmetric 10% trimmed mean of \(|\)signed epoch means\(|\), characterizing the noise-floor regime</td>
+            <td>Trimmed mean of |signed epoch means|</td>
+            <td>\(M_{\rm cl,trim007} = 7.489\) ns; symmetric 10% trimmed mean of \(|\)signed epoch means\(|\), characterizing the noise-floor regime</td>
             <td>Confirmed</td>
         </tr>
         <tr>
@@ -648,7 +648,7 @@
         </tr>
         <tr>
             <td>Annual modulation (Phase Closure \(\psi\))</td>
-            <td>Phase Closure \(\psi\) significant in both halves; raw \(M_{\rm cl}\) near Rice noise floor in both halves with noise-subtracted excess consistent with zero; sinusoidal annual fit (step_054): ψ amplitude \(0.037 \pm 0.090\) rad, p = 0.853 — no detected annual term</td>
+            <td>Phase Closure \(\psi\) significant in both halves; raw \(M_{\rm cl}\) near Rice noise floor in both halves with paired noise-subtracted excess positive in each (≈1.6 and ≈1.1 ns; \(t \approx 8.9\) and \(8.7\), step_060); sinusoidal annual fit (step_054): ψ amplitude \(0.037 \pm 0.090\) rad, p = 0.853 — no detected annual term</td>
             <td>Confirmed</td>
         </tr>
     </tbody>
@@ -681,7 +681,7 @@
             <td>156.3</td>
             <td>104.4</td>
             <td>\(\bar{\psi} = 0.984 \pm 0.046\)</td>
-            <td>Rayleigh Z = 59.21 (p = 1.39 × 10⁻¹³); \(M_{\rm cl}\) t = 79.5σ</td>
+            <td>Rayleigh Z = 59.21 (p = 1.39 × 10⁻¹³); \(M_{\rm cl}\) t = 30.8σ</td>
             <td>DETECTED</td>
         </tr>
         <tr>
@@ -804,7 +804,7 @@
     </tbody>
 </table>
 
-<p>The velocity vectors are separated by \(73.8^{\circ}\) (\(\cos\theta = 0.279\)), with J0437 moving primarily in positive RA direction and J1603 moving primarily in negative DEC direction. The large angular separation and kinematic projections produce the observed signed means in closure delays (J0437: \(-0.184 \pm 0.102 \text{ ns}\), J1603: \(+0.151 \pm 0.120 \text{ ns}\)). The agreement is precisely what TEP predicts: the holonomy depends on \(\vec{v}_{\text{eff}} \cdot \hat{\psi}\), the projection of effective velocity onto the scattering geometry. A pipeline artifact or systematic error would not know the velocity direction of each pulsar and could not produce this geometrically-consistent pattern.</p>
+<p>The velocity vectors are separated by \(73.8^{\circ}\) (\(\cos\theta = 0.279\)), with J0437 moving primarily in positive RA direction and J1603 moving primarily in negative DEC direction. The large angular separation and kinematic projections produce the observed signed means in closure delays (J0437: \(-0.184 \pm 0.157 \text{ ns}\), J1603: \(+0.151 \pm 0.092 \text{ ns}\) (epoch-level)). The agreement is precisely what TEP predicts: the holonomy depends on \(\vec{v}_{\text{eff}} \cdot \hat{\psi}\), the projection of effective velocity onto the scattering geometry. A pipeline artifact or systematic error would not know the velocity direction of each pulsar and could not produce this geometrically-consistent pattern.</p>
 
 <h4>4.9.3 Distance and Screen Geometry Scaling</h4>
 
@@ -926,7 +926,7 @@
     </tbody>
 </table>
 
-<p><em>Scaling Analysis and Systematic Constraints:</em> The scaling ratios in Table 4.9.5 compare J1603/J0437 \(M_{\rm cl}\) magnitudes. The raw absolute magnitude \(M_{\rm cl}\) for J0437 (79.5\(\sigma\) nominal) is quantitatively saturated by the Rice noise floor; the Phase Closure \(\psi\) provides the appropriate scaling test as the theoretically preferred validation. The frequency dependence of \(\psi\) itself is not yet constrained: under the measurement model \(\psi = \omega_{\rm eff}\,H_{\rm resid}\) a delay-transport origin predicts \(\psi \propto \nu\), whereas the within-source sub-band samples are too sparse to measure \(d\psi/d\nu\) (Section 5.4.4). The two-sightline ψ and variance pattern discriminates the phase-domain observable from Rice-biased \(M_{\rm cl}\) scaling at the precision of the present catalog.</p>
+<p><em>Scaling Analysis and Systematic Constraints:</em> The scaling ratios in Table 4.9.5 compare J1603/J0437 \(M_{\rm cl}\) magnitudes. The raw absolute magnitude \(M_{\rm cl}\) for J0437 (79.5\(\sigma\) at the internal measurement-noise SEM; \(\approx 31\sigma\) at the declared epoch-level SEM) is quantitatively saturated by the Rice noise floor; the Phase Closure \(\psi\) provides the appropriate scaling test as the theoretically preferred validation. The frequency dependence of \(\psi\) is partially constrained by the registered sub-band discriminator (Step 061): the sb0/sb1 circular means are statistically consistent (separation \(46^\circ\), \(p=0.64\)) and the delay-domain band ratio \(1.015\pm0.161\) favours an achromatic equivalent delay over \(\nu^{-2}\) plasma scaling at \(1.2\sigma\), within the modest \(10\%\) band separation available (Section 5.4.4). The two-sightline ψ and variance pattern discriminates the phase-domain observable from Rice-biased \(M_{\rm cl}\) scaling at the precision of the present catalog.</p>
 
 <p><em>Phase Closure as the Primary Metric:</em> By transitioning to the noise-immune Phase Closure \(\psi\), the analysis establishes a defensible baseline for scaling tests. J0437 provides the robust circular detection; J1603 provides directionally consistent geometric structure with bipolar decomposition consistent with Stokes-aligned holonomy. The Jiamusi sample's noise-limited bound status is consistent with TEP's predicted environmental suppression in distant, noise-limited sightlines. A precise power-law fit for the environment-dependent coupling constant \(\gamma\) is anchored on \(\psi\) rather than Rice-biased \(M_{\rm cl}\); expanding the phase-detected census tightens the numerical exponent beyond the current two-pulsar directional agreement.</p>
 
@@ -939,7 +939,7 @@ M_{\rm cl} = C \times \eta \times D \times v \times \left(\frac{D}{D_0}\right)^{
 \end{equation}
 </div>
 
-<p>where \(C\) is a dimensionless coupling constant, \(\eta\) is the arc curvature, \(D\) is the pulsar distance, \(v\) is the effective velocity, and \(D_0\), \(\gamma\) are empirically determined parameters from the 15-pulsar ensemble fit: \(D_0 \approx 150\) pc (reference distance) and \(\gamma \approx 1.02\) (power-law exponent). Because the raw \(M_{\rm cl}\) values are saturated by their respective Rice noise floors, \(\gamma \approx 1.02\) is indistinguishable from the noise-floor artifact described in the methodological note below. Inference therefore proceeds through the noise-immune Phase Closure \(\psi\) as the primary scaling variable. Alternative simple scalings (distance-only: \(R^2 = 0.13\), velocity-only: \(R^2 = 0.21\)) perform similarly poorly because all are dominated by the noise floor.</p>
+<p>where \(C\) is a dimensionless coupling constant, \(\eta\) is the arc curvature, \(D\) is the pulsar distance, \(v\) is the effective velocity, and \(D_0\), \(\gamma\) are the reference-scale parameters of the scaling form: \(D_0 \approx 150\) pc (reference distance) and \(\gamma \approx 1.02\) (power-law exponent). The ensemble scaling analysis (Step 018) could not constrain these parameters with the present catalog — fewer than the required three phase-detected pulsars are available — so they are retained as nominal working values rather than fit results. Because the raw \(M_{\rm cl}\) values are saturated by their respective Rice noise floors, \(\gamma \approx 1.02\) is in any case indistinguishable from the noise-floor artifact described in the methodological note below. Inference therefore proceeds through the noise-immune Phase Closure \(\psi\) as the primary scaling variable. Alternative simple scalings (distance-only: \(R^2 = 0.13\), velocity-only: \(R^2 = 0.21\)) perform similarly poorly because all are dominated by the noise floor.</p>
 
 <div class="note-box">
     <em>Methodological Note on Noise Floor Artifacts:</em> 
@@ -956,7 +956,12 @@ M_{\rm cl} = C \times \eta \times D \times v \times \left(\frac{D}{D_0}\right)^{
     The cross-pulsar fit places the free frequency exponent at \(\delta = 2.0\) on the optimizer upper
     boundary, so \(\delta\) is not interpretable as a physical chromatic measurement from that row set.
     The within-source J0437 sub-band comparison (three receiver bands) is the cleaner frequency test and
-    remains directional because of sparse band sampling and large sub-band uncertainties.
+    remains directional because of sparse band sampling and large sub-band uncertainties; the registered
+    phase-channel discriminator on the per-epoch sub-band products is Step 061
+    (<code>results/step_061_subband_chromaticity_discriminator.json</code>),
+    which finds the sub-band circular means statistically consistent (separation \(46^\circ\),
+    epoch-permutation \(p=0.64\)), an achromatic-consistent delay-domain band ratio
+    \(1.015\pm0.161\), and no arc-morphology covariance.
     The consolidated claim hierarchy is in <code>results/step_049_evidence_ledger.json</code>
     under <code>explicit_non_claims.chromaticity</code>.
 </div>
@@ -1061,8 +1066,8 @@ M_{\rm cl} = C \times \eta \times D \times v \times \left(\frac{D}{D_0}\right)^{
         </tr>
         <tr>
             <td>J0437 measured \(M_{\rm cl}\) (raw)</td>
-            <td>\(8.100 \pm 0.102 \text{ ns}\)</td>
-            <td>Rice floor 6.810 ns; excess 1.290 ns (12.7σ)</td>
+            <td>\(8.100 \pm 0.26 \text{ ns}\)</td>
+            <td>Rice floor 6.810 ns; excess 1.290 ns (≈12.2σ)</td>
         </tr>
         <tr>
             <td>Environmental dependence</td>
@@ -1128,7 +1133,7 @@ H_{\text{aligned}} = C_{ijk} \cdot s_{\text{geom}} \cdot \frac{v_{\perp}}{v_0}
         </tr>
         <tr>
             <td>Signed mean (validation)</td>
-            <td>\(-0.184 \pm 0.102 \text{ ns}\) (-1.80σ)</td>
+            <td>\(-0.184 \pm 0.157 \text{ ns}\) (-1.17σ)</td>
             <td>PASS</td>
         </tr>
         <tr>
@@ -1163,7 +1168,7 @@ H_{\text{aligned}} = C_{ijk} \cdot s_{\text{geom}} \cdot \frac{v_{\perp}}{v_0}
         </tr>
         <tr>
             <td>Annual modulation (Phase Closure \(\psi\))</td>
-            <td>Phase Closure \(\psi\) significant in both halves; raw \(M_{\rm cl}\) near Rice noise floor in both halves with noise-subtracted excess consistent with zero; sinusoidal annual fit (step_054): ψ amplitude \(0.037 \pm 0.090\) rad, p = 0.853 — no detected annual term</td>
+            <td>Phase Closure \(\psi\) significant in both halves; raw \(M_{\rm cl}\) near Rice noise floor in both halves with paired noise-subtracted excess positive in each (≈1.6 and ≈1.1 ns; \(t \approx 8.9\) and \(8.7\), step_060); sinusoidal annual fit (step_054): ψ amplitude \(0.037 \pm 0.090\) rad, p = 0.853 — no detected annual term</td>
             <td>PASS</td>
         </tr>
         <tr>
@@ -1225,7 +1230,7 @@ H_{\text{aligned}} = C_{ijk} \cdot s_{\text{geom}} \cdot \frac{v_{\perp}}{v_0}
         <tr>
             <td>5</td>
             <td>Signed-mean bipolar cancellation (validation)<br/>\(|t_{\text{signed}}| &lt; 3\)</td>
-            <td>Signed mean \(= -0.184 \pm 0.102\) ns<br/>\(|t| = 1.87\)</td>
+            <td>Signed mean \(= -0.184 \pm 0.157\) ns<br/>\(|t| = 1.17\)</td>
             <td>PASS</td>
         </tr>
     </tbody>
@@ -1235,7 +1240,7 @@ H_{\text{aligned}} = C_{ijk} \cdot s_{\text{geom}} \cdot \frac{v_{\perp}}{v_0}
 
 <p>Overall result: the primary phase gate and the listed validations match the step_013 ledger (four PASS rows and criterion 4 DOCUMENTED as the expected N=2 score degeneracy). The TEP interpretation is supported for J0437’s phase detection, with J1603 providing complementary geometry and Jiamusi rows acting as environmental bounding controls.</p>
 
-<p>The analysis passes the applicable phase-domain validation tests, with the velocity-label permutation documenting a tied score at \(N=2\) and the wrong-velocity control not applicable to phase extraction. The Gaussian magnitude null in step_007 rejects the simple iid Gaussian model for independent epoch-mean \(M_{\rm cl}\) (\(p \approx 5.9 \times 10^{-76}\)): observed mean \(M_{\rm cl} = 12.008\) ns lies below the null expectation 19.141 ns, consistent with bipolar cancellation at that aggregation level. The pipeline specificity test shows no false positives on pure noise data (\(t = -0.51\sigma\)). The J1603 geometry is consistent with the velocity prediction; its high circular variance is the expected TEP signature for a slow pulsar with high \(D/v\), and its bipolar decomposition provides complementary geometric evidence of Stokes-aligned holonomy. The temporal continuity across independent single-epoch observations argues against simple aggregation artifacts. The Jiamusi data provide noise-limited bound bounding checks consistent with TEP's predicted environmental suppression in distant, noise-limited sightlines. These results constitute evidence for non-zero synchronization holonomy in the J0437 sightline.</p>
+<p>The analysis passes the applicable phase-domain validation tests, with the velocity-label permutation documenting a tied score at \(N=2\) and the wrong-velocity control not applicable to phase extraction. The Gaussian magnitude null in step_007 rejects the simple iid Gaussian model for independent epoch-mean \(M_{\rm cl}\) (\(p \approx 1.4 \times 10^{-75}\)): observed mean \(M_{\rm cl} = 12.008\) ns lies below the null expectation 19.141 ns, consistent with bipolar cancellation at that aggregation level. The pipeline specificity test shows no false positives on pure noise data (\(t = -0.51\sigma\)). The J1603 geometry is consistent with the velocity prediction; its high circular variance is the expected TEP signature for a slow pulsar with high \(D/v\), and its bipolar decomposition provides complementary geometric evidence of Stokes-aligned holonomy. The temporal continuity across independent single-epoch observations argues against simple aggregation artifacts. The Jiamusi data provide noise-limited bound bounding checks consistent with TEP's predicted environmental suppression in distant, noise-limited sightlines. These results constitute evidence for non-zero synchronization holonomy in the J0437 sightline.</p>
 
 <h3>4.13 CMB Dipole Frame Analysis</h3>
 
@@ -1359,8 +1364,8 @@ H_{\text{aligned}} = C_{ijk} \cdot s_{\text{geom}} \cdot \frac{v_{\perp}}{v_0}
         <tr>
             <td>J0437-4715</td>
             <td>Heliocentric</td>
-            <td>8.100 ± 0.102</td>
-            <td>-0.184 ± 0.102</td>
+            <td>8.100 ± 0.26</td>
+            <td>-0.184 ± 0.157</td>
         </tr>
         <tr>
             <td>J0437-4715</td>
@@ -1371,8 +1376,8 @@ H_{\text{aligned}} = C_{ijk} \cdot s_{\text{geom}} \cdot \frac{v_{\perp}}{v_0}
         <tr>
             <td>J1603-7202</td>
             <td>Heliocentric</td>
-            <td>2.557 ± 0.120</td>
-            <td>+0.151 ± 0.120</td>
+            <td>2.557 ± 0.225</td>
+            <td>+0.151 ± 0.092</td>
         </tr>
         <tr>
             <td>J1603-7202</td>
@@ -1383,7 +1388,7 @@ H_{\text{aligned}} = C_{ijk} \cdot s_{\text{geom}} \cdot \frac{v_{\perp}}{v_0}
     </tbody>
 </table>
 
-<p>The \(M_{\rm cl}\) magnitude scales linearly with |v_proj| because the Stokes alignment weight is proportional to v_proj/50 km/s. In the CMB frame, where |v_proj| is larger by a factor of ~2–3 for both pulsars, \(M_{\rm cl}\) increases correspondingly. For J0437, \(M_{\rm cl}\) rises from 8.1 ns to 25.9 ns; for J1603, from 2.6 ns to 35.9 ns. In all cases, the noise-subtracted excess remains consistent with zero when the per-epoch folded-normal noise floor is subtracted, showing that \(M_{\rm cl}\) behaves as a Rice-noise-floor-dominated validation regardless of frame.</p>
+<p>The \(M_{\rm cl}\) magnitude scales linearly with |v_proj| because the Stokes alignment weight is proportional to v_proj/50 km/s. In the CMB frame, where |v_proj| is larger by a factor of ~2–3 for both pulsars, \(M_{\rm cl}\) increases correspondingly. For J0437, \(M_{\rm cl}\) rises from 8.1 ns to 25.9 ns; for J1603, from 2.6 ns to 35.9 ns. The noise-subtracted excess remains positive in both frames and grows with |v_proj| (J0437: \(1.29 \to 5.93\) ns; J1603: \(0.23 \to 3.58\) ns; internal measurement-noise \(t \approx 20.4\) and \(4.2\), step_048), so \(M_{\rm cl}\) remains a Rice-floor-dominated quantity whose residual above the floor scales with the kinematic weight — consistent with the velocity-projected Stokes alignment construction.</p>
 
 <h4>4.13.4 Interpretation</h4>
 

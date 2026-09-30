@@ -1,0 +1,9 @@
+[2026-09-28 23:09:01] [INFO] ================================================================================
+[2026-09-28 23:09:01] [INFO] STEP step_060_mcl_epoch_sem_audit STARTED
+[2026-09-28 23:09:01] [INFO] Description: Epoch-level SEM audit for M_cl and its noise-subtracted excess
+[2026-09-28 23:09:01] [INFO] Physics: Estimate the epoch-level standard error of the inverse-variance-weighted magnitude and of the paired mean-minus-floor excess by epoch resampling
+[2026-09-28 23:09:01] [INFO] Method: iid and moving-block epoch bootstrap of the paired (mean, floor, weight) triples; block scan to 240 epochs; MAD- and std-floor variants
+[2026-09-28 23:09:01] [INFO] ================================================================================
+[2026-09-28 23:09:05] [INFO] ================================================================================
+[2026-09-28 23:09:05] [INFO] STEP COMPLETED SUCCESSFULLY (3.3 seconds)
+[2026-09-28 23:09:05] [INFO] ================================================================================

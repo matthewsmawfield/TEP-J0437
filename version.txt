@@ -3,3 +3,4 @@ v0.4 (Sintra) — 13 September 2026
 - Aligned theoretical language with the TEP corpus and standardized epistemic claims across abstract, discussion, and conclusion
 - Resolved conflicting trimmed-amplitude estimators and fixed LaTeX rendering errors throughout the manuscript
 - Corrected multi-screen, multi-messenger, and environmental-suppression wording to distinguish tested null implementations
+- Scoped abstract and metadata: J1603-7202 bipolar structure no longer presented as an independent phase closure

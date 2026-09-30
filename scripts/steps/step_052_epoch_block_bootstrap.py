@@ -74,6 +74,7 @@ def load_epoch_data(pulsar_file: str, min_triplets: int = 5):
                 "h_mean": h_mean,
                 "within_orient_sigma": within_orient_sigma,
                 "n_triplets": len(triplets),
+                "mjd": float(epoch.get("mjd", 0.0)),
             }
         )
     return epoch_data
@@ -106,37 +107,56 @@ def compute_trim_excess(epoch_data):
     }
 
 
-def epoch_block_bootstrap(epoch_data, n_bootstrap=10000, seed=RNG_SEED):
-    """Epoch-block bootstrap: resample complete epochs, recompute excess."""
+def _trim_excess_from(h_resampled, sigma_resampled):
+    """Recompute trimmed magnitude, floor, and paired excess for a resample."""
+    n = len(h_resampled)
+    sorted_h = np.sort(h_resampled)
+    n_trim = int(0.1 * n)
+    h_trim = float(np.mean(sorted_h[n_trim : n - n_trim]))
+    floor = float(np.mean(sigma_resampled) * np.sqrt(2.0 / np.pi))
+    return h_trim, floor, h_trim - floor
+
+
+def epoch_block_bootstrap(
+    epoch_data, n_bootstrap=10000, seed=RNG_SEED, block_len=None, order=None
+):
+    """Epoch bootstrap: resample complete epochs, recompute excess.
+
+    block_len=None draws epochs iid; an integer block_len draws contiguous
+    blocks in MJD order (moving-block bootstrap), ceil(n/blk) blocks
+    truncated to n per resample, absorbing residual epoch-to-epoch
+    correlation.
+    """
     rng = np.random.default_rng(seed)
     n = len(epoch_data)
-    h_means = np.array([e["h_mean"] for e in epoch_data])
-    within_sigmas = np.array([e["within_orient_sigma"] for e in epoch_data])
+    if order is None:
+        order = np.arange(n)
+    h_means = np.array([epoch_data[i]["h_mean"] for i in order])
+    within_sigmas = np.array([epoch_data[i]["within_orient_sigma"] for i in order])
 
     excess_samples = np.zeros(n_bootstrap)
     h_trim_samples = np.zeros(n_bootstrap)
     floor_samples = np.zeros(n_bootstrap)
 
+    nb = int(np.ceil(n / block_len)) if block_len else n
     for b in range(n_bootstrap):
-        idx = rng.integers(0, n, size=n)
-        h_resampled = h_means[idx]
-        sigma_resampled = within_sigmas[idx]
-
-        # 10% trimmed mean
-        sorted_h = np.sort(h_resampled)
-        n_trim = int(0.1 * n)
-        trimmed = sorted_h[n_trim : n - n_trim]
-        h_trim_samples[b] = np.mean(trimmed)
-
-        # Noise floor
-        floor_samples[b] = np.mean(sigma_resampled) * np.sqrt(2.0 / np.pi)
-
-        excess_samples[b] = h_trim_samples[b] - floor_samples[b]
+        if block_len:
+            starts = rng.integers(0, n - block_len + 1, nb)
+            idx = np.concatenate(
+                [np.arange(s, s + block_len) for s in starts]
+            )[:n]
+        else:
+            idx = rng.integers(0, n, size=n)
+        h_trim_samples[b], floor_samples[b], excess_samples[b] = (
+            _trim_excess_from(h_means[idx], within_sigmas[idx])
+        )
 
     return excess_samples, h_trim_samples, floor_samples
 
 
-def run_bootstrap_for_pulsar(pulsar_name, pulsar_file, n_bootstrap=10000):
+def run_bootstrap_for_pulsar(
+    pulsar_name, pulsar_file, n_bootstrap=10000, block_lengths=(15, 30, 60, 120, 240)
+):
     """Run the full bootstrap analysis for one pulsar."""
     print(f"\n{'='*60}")
     print(f"  Epoch-Block Bootstrap: {pulsar_name}")
@@ -186,6 +206,35 @@ def run_bootstrap_for_pulsar(pulsar_name, pulsar_file, n_bootstrap=10000):
     print(f"  Empirical p-value:     {p_value_str}")
     print(f"  Empirical significance: {empirical_sigma:.1f}σ")
 
+    # Contiguous moving-block scan (MJD order): absorbs epoch-to-epoch
+    # correlation that iid resampling discards. Blocks near n/3 or larger
+    # leave too few blocks for stable resampling and are excluded.
+    mjd_order = np.argsort([e.get("mjd", 0.0) for e in epoch_data])
+    block_scan = {}
+    for blk in block_lengths:
+        if n_epochs // blk < 4:
+            continue
+        exc_b, ht_b, fl_b = epoch_block_bootstrap(
+            epoch_data,
+            n_bootstrap=2000,
+            seed=RNG_SEED + blk,
+            block_len=blk,
+            order=mjd_order,
+        )
+        sem_exc = float(np.std(exc_b, ddof=1))
+        block_scan[str(blk)] = {
+            "h_trim_std_ns": float(np.std(ht_b, ddof=1)),
+            "floor_std_ns": float(np.std(fl_b, ddof=1)),
+            "excess_std_ns": sem_exc,
+            "excess_empirical_sigma": float(obs["excess"] / sem_exc)
+            if sem_exc > 0
+            else None,
+        }
+        print(
+            f"  block={blk:4d}: excess SEM {sem_exc:.3f} ns "
+            f"-> {obs['excess']/sem_exc:.1f}σ"
+        )
+
     return {
         "pulsar": pulsar_name,
         "n_epochs": n_epochs,
@@ -204,6 +253,7 @@ def run_bootstrap_for_pulsar(pulsar_name, pulsar_file, n_bootstrap=10000):
             "floor_mean_ns": float(np.mean(floor_samples)),
             "floor_std_ns": float(np.std(floor_samples, ddof=1)),
         },
+        "block_scan_mjd_order": block_scan,
     }
 
 
@@ -228,6 +278,7 @@ def main():
         "J1603-7202",
         RESULTS_DIR / "step_003_closure_final_per_epoch_j1603.json",
         n_bootstrap=10000,
+        block_lengths=(5, 10, 15, 30),
     )
     if j1603:
         results["J1603-7202"] = j1603

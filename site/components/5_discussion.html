@@ -3,7 +3,7 @@
 <h3>5.1 Interpretation of the Detection</h3>
 
 <p>
-    The results reported in Section 4 report evidence consistent with non-zero Stokes-aligned phase closure ψ, with a high-significance J0437 phase detection and a J1603 geometric complement. J0437-4715 yields the robust circular detection (Section 4.1). In the delay domain, the raw folded-magnitude proxy \(M_{\rm cl}\) = 8.100 ± 0.102 ns is quantitatively saturated by the Rice noise floor \(E[M_{\rm cl}]\) = 6.810 ns (excess 1.290 ns at 12.7σ); this is expected because folded magnitudes are intrinsically noise-floor biased. The symmetric estimator \(M_{{\rm cl,sym10}} = 21.991 \pm 0.483\) ns (45.5σ) reduces sensitivity to both tails of the per-epoch folded-amplitude distribution. It serves as a secondary robustness diagnostic and is not itself a signed-holonomy estimate. J1603-7202 provides complementary bipolar geometry. Its larger distance-to-velocity ratio (7.89 versus 1.50 pc/(km/s)) produces the larger phase dispersion TEP predicts for slower scintillation evolution; the high circular variance (7.25 rad² versus 2.36 rad² for J0437) is not a failure of detection but the expected scaling of signal-to-noise with environmental parameters. The two-pulsar variance decomposition σ<sub>circ</sub>² = σ<sub>signal</sub>² + k·(D/v) is directionally consistent with the observed variances and matches the ordering expected from environmental scaling (2.36 rad² versus 7.25 rad² at D/v = 1.50 versus 7.89 pc/(km/s)).
+    The results reported in Section 4 report evidence consistent with non-zero Stokes-aligned phase closure ψ, with a high-significance J0437 phase detection and a J1603 geometric complement. J0437-4715 yields the robust circular detection (Section 4.1). In the delay domain, the raw folded-magnitude proxy \(M_{\rm cl}\) = 8.100 ± 0.26 ns (epoch-level bootstrap SEM) is quantitatively saturated by the Rice noise floor \(E[M_{\rm cl}]\) = 6.810 ns (excess 1.290 ns at ≈12σ independent-epoch, ≈7.6–10.8σ under 15–240-epoch contiguous blocks); this is expected because folded magnitudes are intrinsically noise-floor biased. The symmetric estimator \(M_{\rm cl,sym10} = 21.991 \pm 0.75\) ns (epoch-level iid; ≈2.0–4.9 ns SEM under 15–240-epoch blocks) reduces sensitivity to both tails of the per-epoch folded-amplitude distribution. It serves as a secondary robustness diagnostic and is not itself a signed-holonomy estimate. J1603-7202 provides complementary bipolar geometry. Its larger distance-to-velocity ratio (7.89 versus 1.50 pc/(km/s)) produces the larger phase dispersion TEP predicts for slower scintillation evolution; the high circular variance (7.25 rad² versus 2.36 rad² for J0437) is not a failure of detection but the expected scaling of signal-to-noise with environmental parameters. The two-pulsar variance decomposition σ<sub>circ</sub>² = σ<sub>signal</sub>² + k·(D/v) is directionally consistent with the observed variances and matches the ordering expected from environmental scaling (2.36 rad² versus 7.25 rad² at D/v = 1.50 versus 7.89 pc/(km/s)).
 </p>
 
 <p>
@@ -26,7 +26,7 @@
 </p>
 
 <p>
-    Epoch-level cross-validation in step_007 uses two complementary constructions on the same J0437 epoch ledger. Shuffle-split five-fold cross-validation on independent epoch-mean \(M_{\rm cl}\) magnitudes shows every holdout fold at a positive fold-mean \(M_{\rm cl}\) with large fold-wise t-scores, so the amplitude validation is not driven by a small epoch cluster. Separately, <code>phase_closure_epoch_cv</code> performs a 5-fold shuffle split (dedicated RNG seed in the JSON) on the Step 003–consistent epoch ψ stack: 5/5 holdouts reject circular uniformity at Rayleigh p &lt; 0.05 and keep the same open half-plane as the global mean, while full-sample circular inference remains anchored to the Rayleigh/V/bootstrap pipeline in step_003 (Section 4.1). The Gaussian magnitude null in step_007 rejects the simple iid Gaussian model for the tested epoch-mean \(M_{\rm cl}\) aggregation (\(p < 10^{-16}\)): the observed mean \(M_{\rm cl}\) = 12.008 ns lies below the noise-null expectation of 19.141 ns, consistent with the bipolar cancellation predicted by TEP. The per-epoch folded-normal noise floor \(E[M_{\rm cl}]\) = 6.810 ns quantitatively explains the raw epoch-level magnitude proxy \(M_{\rm cl}\) = 8.100 ns, yielding a small noise-subtracted excess for that estimator. The central detection claim is anchored to the frame-invariant circular statistic ψ, while amplitude inference is supported by robust \(M_{\rm cl}\)-based estimators (notably \(M_{{\rm cl,sym10}}\)) with explicit bias control.
+    Epoch-level cross-validation uses two complementary constructions on the same J0437 epoch ledger. Shuffle-split five-fold cross-validation on independent epoch-mean \(M_{\rm cl}\) magnitudes shows every holdout fold at a positive fold-mean \(M_{\rm cl}\) with large fold-wise t-scores, so the amplitude validation is not driven by a small epoch cluster. Separately, cross-validation on the epoch ψ stack confirms that 5/5 holdouts reject circular uniformity at Rayleigh p &lt; 0.05 and keep the same open half-plane as the global mean, while full-sample circular inference remains anchored to the Rayleigh/V/bootstrap pipeline (Section 4.1). The Gaussian magnitude null rejects the simple iid Gaussian model for the tested epoch-mean \(M_{\rm cl}\) aggregation (\(p < 10^{-16}\)): the observed mean \(M_{\rm cl}\) = 12.008 ns lies below the noise-null expectation of 19.141 ns, consistent with the bipolar cancellation predicted by TEP. The per-epoch folded-normal noise floor \(E[M_{\rm cl}]\) = 6.810 ns quantitatively explains the raw epoch-level magnitude proxy \(M_{\rm cl}\) = 8.100 ns, yielding a small noise-subtracted excess for that estimator. The central detection claim is anchored to the frame-invariant circular statistic ψ, while amplitude inference is supported by robust \(M_{\rm cl}\)-based estimators (notably \(M_{\rm cl,sym10}\)) with explicit bias control.
 </p>
 
 <p>
@@ -59,7 +59,7 @@
     \(\psi = \kappa_\psi \,\mathcal{I}_B(C)\). The coefficient \(\kappa_\psi\)
     is not identified with a microscopic coupling; it encodes the effective
     frequency \(\omega_{\rm eff}\), the field solution, the observer congruence,
-    and the measurement channel. This is consistent with the Paper 0 (v0.14) PPN mapping:
+    and the measurement channel. This is consistent with the Paper 0 (v0.15) PPN mapping:
     near massive bodies, the suppression of Temporal Shear reduces the effective
     coupling, cleanly preserving Cassini bounds (\(|\gamma - 1| < 2.3 \times 10^{-5}\)),
     while in the diffuse ISM the field gradient remains active.
@@ -171,7 +171,7 @@
             <td>Cepheid distance ladder</td>
             <td>\(H_0\)–\(\sigma\) correlation</td>
             <td>\(\kappa_{\rm Cep}\) (Cepheid response coefficient)</td>
-            <td>\((9.6 \pm 4.0) \times 10^5\) mag</td>
+            <td>\((9.6 \pm 4.0) \times 10^5\) mag canonical benchmark (Paper-11 joint fit; measured Cepheid-channel recovery \(\sim 0.37 \times 10^6\) mag)</td>
         </tr>
         <tr>
             <td>GNSS clock networks</td>
@@ -660,17 +660,41 @@
 
 <p>
     The decisive chromatic test on the phase channel — \(d\psi/d\nu\) — is
-    presently underpowered. Under the measurement model
+    now registered in Step 061
+    (<code>results/step_061_subband_chromaticity_discriminator.json</code>),
+    which works on the per-epoch sub-band products with band centres derived
+    from the parent frequency axes (sb0 ≈ 1436 MHz, sb1 ≈ 1305 MHz;
+    \(\nu_0/\nu_1 = 1.10\)). Under the measurement model
     \(\psi = \omega_{\rm eff} H_{\rm resid}\), a delay-transport origin predicts
     \(\psi \propto \nu\), not achromaticity; the J0437 detection at
     \(\omega_{\rm eff} = 2\pi \times 1380\) MHz therefore implies
-    \(H_{\rm resid} \approx 1.1 \times 10^{-10}\) s per loop. The two usable
-    sub-band reductions (1089 MHz: \(\psi = +1.72\) rad, Rayleigh p = 0.50;
-    1476 MHz: \(\psi = -0.67\) rad, p = 0.55) each contain only \(\sim 5\)
-    independent samples and are individually consistent with circular noise, so
-    no meaningful derivative can be fitted between them and the main band.
-    The chromatic structure of \(\psi\) thus remains an open measurement rather
-    than an established achromatic property.
+    \(H_{\rm resid} \approx 1.1 \times 10^{-10}\) s per loop. Three
+    discriminators are evaluated on the 17-epoch sb0 and 9-epoch sb1 samples.
+    First, the band circular means (\(\bar\psi_{0} = +1.72\) rad,
+    \(\bar\psi_{1} = -0.67\) rad) are separated by \(46^\circ\) at the
+    epoch-mean level; an epoch-label permutation null places that separation at
+    \(p = 0.64\), and the pooled-triplet Watson–Williams test gives
+    \(p = 0.14\) — the sub-band phase structure is consistent with a common
+    circular mean, i.e. no measurable chromatic rotation over the available
+    \(10\%\) band separation. Second, the delay-domain amplitude ratio
+    \(\langle|\psi/2\pi\nu|\rangle_{\rm sb1}/\langle|\psi/2\pi\nu|\rangle_{\rm sb0}
+    = 1.015 \pm 0.161\) (epoch bootstrap) favours an achromatic equivalent
+    delay (\(0.09\sigma\)), with plasma dispersive scaling (\(\nu^{-2}\),
+    predicted ratio 1.21) disfavoured at \(1.2\sigma\) and phase-fixed scaling
+    (\(\nu^{-1}\), predicted 1.10) accommodated at \(0.5\sigma\). Third, the
+    epoch-level \(|\psi|\) shows no correlation with arc morphology —
+    Spearman \(\rho = 0.18\) (\(p = 0.38\)) against mean \(|f_D|\) and
+    \(\rho = 0.07\) (\(p = 0.73\)) against arc-model delay mismatch on the
+    pooled 26-epoch sample. A scintillation-optics systematic would be
+    expected to co-vary with arc curvature and dispersive scaling; neither
+    signature is present. The result is therefore achromatic-consistent on
+    the phase channel, with the residual caveat that the two sub-bands are
+    separated by only \(\sim 10\%\) in frequency: decisive discrimination
+    between achromatic delay and \(\nu^{-2}\) transport requires a wider
+    fractional band (e.g. a 10-cm/20-cm cross-band closure) or the deeper
+    sub-band samples that the MeerKAT and multi-band follow-ups provide.
+    Per-epoch dispersion-measure series are not carried in-repo, so direct
+    \(\psi\)-versus-DM regression remains a registered open item.
 </p>
 
 <p>

@@ -1,0 +1,88 @@
+{
+  "step": "061",
+  "title": "Sub-band chromaticity and arc-geometry discriminator",
+  "timestamp": "2026-09-30T19:01:23.511189Z",
+  "bands": {
+    "sb0": {
+      "n_epochs": 17,
+      "nu_ref_mhz_mean": 1435.7904124705883,
+      "psi_circ_mean_rad": -2.43770994601839,
+      "rbar": 0.2975971815432368,
+      "mean_abs_phase_delta_ns": 0.19494090878631068
+    },
+    "sb1": {
+      "n_epochs": 9,
+      "nu_ref_mhz_mean": 1304.888888888889,
+      "psi_circ_mean_rad": -1.6328916107092648,
+      "rbar": 0.1427268107569328,
+      "mean_abs_phase_delta_ns": 0.19782923921293064
+    },
+    "nu_ratio_nu0_over_nu1": 1.10031622209088
+  },
+  "T1_psi_chromaticity": {
+    "angular_separation_deg": 46.112693887957604,
+    "epoch_permutation_p": 0.6384680765961702,
+    "n_permutations": 20000,
+    "triplet_watson_williams_F": 2.212616988833979,
+    "triplet_watson_williams_p": 0.13927120808238913
+  },
+  "T2_delay_frequency_scaling": {
+    "ratio_sb1_over_sb0": 1.0148164407594205,
+    "bootstrap_se": 0.16118988553211003,
+    "bootstrap_ci95": [
+      0.7241341670453166,
+      1.3608563504813498
+    ],
+    "template_predictions": {
+      "achromatic_delay": 1.0,
+      "phase_fixed_holonomy_nu^-1": 1.10031622209088,
+      "plasma_dispersive_nu^-2": 1.2106957885963467
+    },
+    "signed_tensions_sigma": {
+      "achromatic_delay": 0.09191917166830502,
+      "phase_fixed_holonomy_nu^-1": -0.5304289475063089,
+      "plasma_dispersive_nu^-2": -1.215208678821885
+    },
+    "note": "ratio near 1.0 = achromatic delay; near nu0/nu1 = 1.098 = phase-fixed (psi constant, delay ~ 1/nu); near 1.206 = plasma dispersive nu^-2"
+  },
+  "T3_arc_geometry_correlations": {
+    "sb0": {
+      "n_epochs": 17,
+      "spearman_abspsi_vs_absfD": {
+        "rho": 0.3744634956601738,
+        "p": 0.13864462554289222
+      },
+      "spearman_abspsi_vs_arc_mismatch": {
+        "rho": 0.21568627450980393,
+        "p": 0.40574068863392776
+      }
+    },
+    "sb1": {
+      "n_epochs": 9,
+      "spearman_abspsi_vs_absfD": {
+        "rho": 0.08333333333333334,
+        "p": 0.831214097710308
+      },
+      "spearman_abspsi_vs_arc_mismatch": {
+        "rho": 0.016666666666666666,
+        "p": 0.9660548039946861
+      }
+    },
+    "pooled": {
+      "n_epochs": 26,
+      "spearman_abspsi_vs_absfD": {
+        "rho": 0.1802634066590242,
+        "p": 0.3782034012718444
+      },
+      "spearman_abspsi_vs_arc_mismatch": {
+        "rho": 0.07145299145299144,
+        "p": 0.7286924784090694
+      }
+    }
+  },
+  "scope": "Sub-band chromaticity on the 20-cm parent band only; per-epoch DM series and secondary-spectrum arc-curvature catalogues are not carried in-repo, so DM scaling and arc-curvature regression remain registered open items.",
+  "headline": [
+    "Sub-band psi means separated by 46 deg (epoch permutation p=0.638; Watson-Williams p=0.139)",
+    "Delay-domain band ratio 1.015 +/- 0.161: achromatic tension 0.09 sigma, nu^-2 tension 1.22 sigma, nu^-1 tension 0.53 sigma"
+  ]
+}

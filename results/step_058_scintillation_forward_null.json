@@ -37,9 +37,9 @@
       "rayleigh_z_uw": 0.8717385618335074,
       "rayleigh_p_uw": 0.6467022567365588,
       "epoch_direction_mean_rad": -2.5829431127635902,
-      "epoch_direction_rbar": 0.05381439714264786,
-      "epoch_direction_rayleigh_z": 1.3205711389609414,
-      "epoch_direction_rayleigh_p": 0.5167037585972166,
+      "epoch_direction_rbar": 0.05381439714264785,
+      "epoch_direction_rayleigh_z": 1.3205711389609411,
+      "epoch_direction_rayleigh_p": 0.5167037585972165,
       "n_epoch_means": 228,
       "psi_hist_12bin": [
         244,
@@ -58,13 +58,13 @@
       "sign_pattern_breakdown": {
         "+++": {
           "n": 2713,
-          "psi_uw": -1.7471747810978757,
-          "rbar": 0.014287731735233134
+          "psi_uw": -1.7471747810978755,
+          "rbar": 0.014287731735233131
         },
         "-++": {
           "n": 127,
           "psi_uw": -2.8004956748570544,
-          "rbar": 0.035579155580728286
+          "rbar": 0.03557915558072829
         },
         "+-+": {
           "n": 89,
@@ -77,7 +77,7 @@
         "reproduces_concentration_magnitude": false,
         "reproduces_direction_persistence": false,
         "rbar_ratio_model_to_observed": 0.04002961019684904,
-        "dir_rbar_ratio_model_to_observed": 0.1728286031759197
+        "dir_rbar_ratio_model_to_observed": 0.17282860317591967
       }
     },
     "single_screen": {
@@ -87,14 +87,14 @@
       "yield_fraction": 0.4553333333333333,
       "n_errors": 0,
       "n_triplets": 12011,
-      "psi_uw_rad": -0.3095216517260678,
-      "rbar_uw": 0.015339142628422035,
-      "rayleigh_z_uw": 5.6521194823264285,
-      "rayleigh_p_uw": 0.0592458382960335,
-      "epoch_direction_mean_rad": -0.06837369768286645,
-      "epoch_direction_rbar": 0.04701235679812296,
-      "epoch_direction_rayleigh_z": 3.019080870881349,
-      "epoch_direction_rayleigh_p": 0.22101152368767146,
+      "psi_uw_rad": -0.30952165172606777,
+      "rbar_uw": 0.015339142628422031,
+      "rayleigh_z_uw": 5.652119482326427,
+      "rayleigh_p_uw": 0.05924583829603355,
+      "epoch_direction_mean_rad": -0.06837369768286639,
+      "epoch_direction_rbar": 0.047012356798122976,
+      "epoch_direction_rayleigh_z": 3.019080870881351,
+      "epoch_direction_rayleigh_p": 0.2210115236876713,
       "n_epoch_means": 683,
       "psi_hist_12bin": [
         989,
@@ -113,17 +113,17 @@
       "sign_pattern_breakdown": {
         "+++": {
           "n": 8723,
-          "psi_uw": -0.4496063910197274,
-          "rbar": 0.009083897536544983
+          "psi_uw": -0.4496063910197273,
+          "rbar": 0.00908389753654498
         },
         "-++": {
           "n": 1626,
-          "psi_uw": -0.2495676428199848,
-          "rbar": 0.03398189618220304
+          "psi_uw": -0.2495676428199847,
+          "rbar": 0.033981896182203035
         },
         "+-+": {
           "n": 1080,
-          "psi_uw": 0.1480334547852512,
+          "psi_uw": 0.14803345478525123,
           "rbar": 0.04372985095132004
         },
         "--+": {
@@ -139,16 +139,16 @@
         "+--": {
           "n": 93,
           "psi_uw": -1.8039589299115946,
-          "rbar": 0.12322267698694754
+          "rbar": 0.12322267698694757
         },
         "-+-": {
           "n": 88,
           "psi_uw": 1.1748582764518793,
-          "rbar": 0.06006382225995067
+          "rbar": 0.06006382225995066
         },
         "---": {
           "n": 80,
-          "psi_uw": -0.21931922496978187,
+          "psi_uw": -0.21931922496978198,
           "rbar": 0.15044512602054502
         }
       },
@@ -156,8 +156,8 @@
       "verdict": {
         "reproduces_concentration_magnitude": false,
         "reproduces_direction_persistence": false,
-        "rbar_ratio_model_to_observed": 0.05045444656408222,
-        "dir_rbar_ratio_model_to_observed": 0.15098338713876303
+        "rbar_ratio_model_to_observed": 0.050454446564082205,
+        "dir_rbar_ratio_model_to_observed": 0.15098338713876305
       }
     },
     "two_screens": {
@@ -167,14 +167,14 @@
       "yield_fraction": 0.43333333333333335,
       "n_errors": 0,
       "n_triplets": 11725,
-      "psi_uw_rad": -0.4604998098110038,
-      "rbar_uw": 0.013929423163299783,
-      "rayleigh_z_uw": 4.5499760555802915,
-      "rayleigh_p_uw": 0.10279813914881372,
-      "epoch_direction_mean_rad": -0.23792560509189747,
-      "epoch_direction_rbar": 0.02883496686948867,
-      "epoch_direction_rayleigh_z": 1.0808919086738618,
-      "epoch_direction_rayleigh_p": 0.5824884312019998,
+      "psi_uw_rad": -0.4604998098110039,
+      "rbar_uw": 0.013929423163299788,
+      "rayleigh_z_uw": 4.549976055580294,
+      "rayleigh_p_uw": 0.10279813914881354,
+      "epoch_direction_mean_rad": -0.23792560509189764,
+      "epoch_direction_rbar": 0.028834966869488672,
+      "epoch_direction_rayleigh_z": 1.0808919086738622,
+      "epoch_direction_rayleigh_p": 0.5824884312019996,
       "n_epoch_means": 650,
       "psi_hist_12bin": [
         942,
@@ -193,27 +193,27 @@
       "sign_pattern_breakdown": {
         "+++": {
           "n": 8152,
-          "psi_uw": -0.48472095844733154,
+          "psi_uw": -0.4847209584473315,
           "rbar": 0.0155361590343459
         },
         "-++": {
           "n": 1747,
-          "psi_uw": 0.7884222039858343,
-          "rbar": 0.021374109905709676
+          "psi_uw": 0.7884222039858342,
+          "rbar": 0.021374109905709673
         },
         "+-+": {
           "n": 1177,
-          "psi_uw": -0.2203716160116483,
-          "rbar": 0.006921211566896632
+          "psi_uw": -0.22037161601164795,
+          "rbar": 0.0069212115668966364
         },
         "--+": {
           "n": 264,
-          "psi_uw": -1.817414805048311,
-          "rbar": 0.10061350347756469
+          "psi_uw": -1.8174148050483112,
+          "rbar": 0.10061350347756473
         },
         "++-": {
           "n": 84,
-          "psi_uw": -0.3895598627478831,
+          "psi_uw": -0.38955986274788307,
           "rbar": 0.12247589337188983
         },
         "+--": {
@@ -236,8 +236,8 @@
       "verdict": {
         "reproduces_concentration_magnitude": false,
         "reproduces_direction_persistence": false,
-        "rbar_ratio_model_to_observed": 0.0458175110360452,
-        "dir_rbar_ratio_model_to_observed": 0.09260546082989052
+        "rbar_ratio_model_to_observed": 0.04581751103604522,
+        "dir_rbar_ratio_model_to_observed": 0.09260546082989053
       }
     },
     "curved_arc": {
@@ -247,10 +247,10 @@
       "yield_fraction": 0.4613333333333333,
       "n_errors": 0,
       "n_triplets": 12144,
-      "psi_uw_rad": 0.027162371749119934,
-      "rbar_uw": 0.02389832317435877,
-      "rayleigh_z_uw": 13.871601810063517,
-      "rayleigh_p_uw": 0.0009723440015734848,
+      "psi_uw_rad": 0.027162371749120062,
+      "rbar_uw": 0.02389832317435876,
+      "rayleigh_z_uw": 13.871601810063504,
+      "rayleigh_p_uw": 0.0009723440015734909,
       "epoch_direction_mean_rad": 0.25563305333196645,
       "epoch_direction_rbar": 0.04878070924744733,
       "epoch_direction_rayleigh_z": 3.2933077110426474,
@@ -273,32 +273,32 @@
       "sign_pattern_breakdown": {
         "+++": {
           "n": 8331,
-          "psi_uw": 0.06746529461505367,
-          "rbar": 0.017524279705027814
+          "psi_uw": 0.06746529461505386,
+          "rbar": 0.017524279705027818
         },
         "-++": {
           "n": 1817,
-          "psi_uw": -0.020675837031979418,
+          "psi_uw": -0.0206758370319794,
           "rbar": 0.050104438158070835
         },
         "+-+": {
           "n": 1281,
-          "psi_uw": 0.4516077311695773,
+          "psi_uw": 0.45160773116957725,
           "rbar": 0.031963427630900744
         },
         "--+": {
           "n": 318,
-          "psi_uw": -1.9495543437820473,
+          "psi_uw": -1.949554343782047,
           "rbar": 0.02582192203675002
         },
         "++-": {
           "n": 74,
-          "psi_uw": -0.8720415950383293,
+          "psi_uw": -0.8720415950383292,
           "rbar": 0.08842410037806483
         },
         "+--": {
           "n": 97,
-          "psi_uw": 0.5927121723288212,
+          "psi_uw": 0.5927121723288211,
           "rbar": 0.13395922796140308
         },
         "-+-": {
@@ -316,7 +316,7 @@
       "verdict": {
         "reproduces_concentration_magnitude": false,
         "reproduces_direction_persistence": false,
-        "rbar_ratio_model_to_observed": 0.0786078269679596,
+        "rbar_ratio_model_to_observed": 0.07860782696795955,
         "dir_rbar_ratio_model_to_observed": 0.156662571520023
       }
     },
@@ -327,14 +327,14 @@
       "yield_fraction": 0.41333333333333333,
       "n_errors": 0,
       "n_triplets": 10813,
-      "psi_uw_rad": 0.8740732591147843,
+      "psi_uw_rad": 0.8740732591147844,
       "rbar_uw": 0.016755106160721234,
       "rayleigh_z_uw": 6.071144454215918,
       "rayleigh_p_uw": 0.04804716111966735,
-      "epoch_direction_mean_rad": 0.7757171393963858,
-      "epoch_direction_rbar": 0.06908572510760318,
-      "epoch_direction_rayleigh_z": 5.918318392917707,
-      "epoch_direction_rayleigh_p": 0.05186250502362487,
+      "epoch_direction_mean_rad": 0.7757171393963859,
+      "epoch_direction_rbar": 0.06908572510760316,
+      "epoch_direction_rayleigh_z": 5.918318392917705,
+      "epoch_direction_rayleigh_p": 0.05186250502362492,
       "n_epoch_means": 620,
       "psi_hist_12bin": [
         915,
@@ -353,18 +353,18 @@
       "sign_pattern_breakdown": {
         "+++": {
           "n": 8031,
-          "psi_uw": 1.305727926306357,
+          "psi_uw": 1.3057279263063573,
           "rbar": 0.023121581497400404
         },
         "-++": {
           "n": 1355,
-          "psi_uw": -1.4503514270793367,
-          "rbar": 0.010050864792413081
+          "psi_uw": -1.4503514270793365,
+          "rbar": 0.01005086479241308
         },
         "+-+": {
           "n": 934,
-          "psi_uw": -0.5530393979074757,
-          "rbar": 0.048667529545174976
+          "psi_uw": -0.5530393979074759,
+          "rbar": 0.04866752954517497
         },
         "--+": {
           "n": 226,
@@ -383,8 +383,8 @@
         },
         "-+-": {
           "n": 63,
-          "psi_uw": -0.6759441273167149,
-          "rbar": 0.14902071384279317
+          "psi_uw": -0.6759441273167148,
+          "rbar": 0.14902071384279314
         },
         "---": {
           "n": 70,
@@ -397,7 +397,7 @@
         "reproduces_concentration_magnitude": false,
         "reproduces_direction_persistence": false,
         "rbar_ratio_model_to_observed": 0.055111920459963736,
-        "dir_rbar_ratio_model_to_observed": 0.22187351347805384
+        "dir_rbar_ratio_model_to_observed": 0.22187351347805379
       }
     },
     "interior_fill": {
@@ -482,11 +482,11 @@
       "yield_fraction": 0.4646666666666667,
       "n_errors": 0,
       "n_triplets": 12542,
-      "psi_uw_rad": 0.4423638189226457,
-      "rbar_uw": 0.014320636481205429,
-      "rayleigh_z_uw": 5.14424250352585,
-      "rayleigh_p_uw": 0.07637336633540653,
-      "epoch_direction_mean_rad": 0.8219766685833051,
+      "psi_uw_rad": 0.4423638189226455,
+      "rbar_uw": 0.014320636481205433,
+      "rayleigh_z_uw": 5.144242503525851,
+      "rayleigh_p_uw": 0.07637336633540646,
+      "epoch_direction_mean_rad": 0.8219766685833053,
       "epoch_direction_rbar": 0.04689439626088577,
       "epoch_direction_rayleigh_z": 3.06552365453813,
       "epoch_direction_rayleigh_p": 0.21593845827900074,
@@ -508,27 +508,27 @@
       "sign_pattern_breakdown": {
         "+++": {
           "n": 8552,
-          "psi_uw": 0.5896978086539792,
-          "rbar": 0.010478175239643022
+          "psi_uw": 0.5896978086539794,
+          "rbar": 0.010478175239643017
         },
         "-++": {
           "n": 2005,
-          "psi_uw": 0.06561651942741295,
-          "rbar": 0.02050364362048239
+          "psi_uw": 0.06561651942741285,
+          "rbar": 0.020503643620482393
         },
         "+-+": {
           "n": 1258,
-          "psi_uw": -0.057354511871029024,
-          "rbar": 0.034573925637437254
+          "psi_uw": -0.057354511871028906,
+          "rbar": 0.03457392563743726
         },
         "--+": {
           "n": 303,
-          "psi_uw": -2.464521406953454,
+          "psi_uw": -2.4645214069534536,
           "rbar": 0.013713033117598519
         },
         "++-": {
           "n": 78,
-          "psi_uw": -2.3720476158367467,
+          "psi_uw": -2.3720476158367463,
           "rbar": 0.10689672710848888
         },
         "+--": {
@@ -538,20 +538,20 @@
         },
         "-+-": {
           "n": 128,
-          "psi_uw": 0.7507009475633948,
-          "rbar": 0.07933089976812285
+          "psi_uw": 0.7507009475633949,
+          "rbar": 0.07933089976812287
         },
         "---": {
           "n": 119,
           "psi_uw": 1.7368253900257191,
-          "rbar": 0.07995521212323464
+          "rbar": 0.07995521212323466
         }
       },
       "median_n_arclets": 16.0,
       "verdict": {
         "reproduces_concentration_magnitude": false,
         "reproduces_direction_persistence": false,
-        "rbar_ratio_model_to_observed": 0.04710431382037124,
+        "rbar_ratio_model_to_observed": 0.04710431382037125,
         "dir_rbar_ratio_model_to_observed": 0.15060454883594704
       }
     },
@@ -562,11 +562,11 @@
       "yield_fraction": 0.452,
       "n_errors": 0,
       "n_triplets": 12887,
-      "psi_uw_rad": -0.19530183120671438,
+      "psi_uw_rad": -0.19530183120671435,
       "rbar_uw": 0.016869131283279753,
       "rayleigh_z_uw": 7.334445071168647,
       "rayleigh_p_uw": 0.02554732829311093,
-      "epoch_direction_mean_rad": -0.12741652073389112,
+      "epoch_direction_mean_rad": -0.12741652073389137,
       "epoch_direction_rbar": 0.0456344871848094,
       "epoch_direction_rayleigh_z": 2.8238787063614432,
       "epoch_direction_rayleigh_p": 0.24367026192656838,
@@ -588,8 +588,8 @@
       "sign_pattern_breakdown": {
         "+++": {
           "n": 8132,
-          "psi_uw": 0.530975979082687,
-          "rbar": 0.014622286396009423
+          "psi_uw": 0.5309759790826871,
+          "rbar": 0.014622286396009421
         },
         "-++": {
           "n": 2228,
@@ -603,7 +603,7 @@
         },
         "--+": {
           "n": 404,
-          "psi_uw": 0.16692235170416586,
+          "psi_uw": 0.16692235170416597,
           "rbar": 0.056277497092754314
         },
         "++-": {
@@ -613,18 +613,18 @@
         },
         "+--": {
           "n": 147,
-          "psi_uw": 0.3283935355106658,
+          "psi_uw": 0.3283935355106659,
           "rbar": 0.12631335190207402
         },
         "-+-": {
           "n": 171,
-          "psi_uw": 0.6395933994399715,
-          "rbar": 0.16539534749868132
+          "psi_uw": 0.6395933994399717,
+          "rbar": 0.16539534749868137
         },
         "---": {
           "n": 191,
-          "psi_uw": 1.331407170246132,
-          "rbar": 0.009311406935356663
+          "psi_uw": 1.3314071702461323,
+          "rbar": 0.00931140693535667
         }
       },
       "median_n_arclets": 21.0,
@@ -642,11 +642,11 @@
       "yield_fraction": 0.41770833333333335,
       "n_errors": 0,
       "n_triplets": 7437,
-      "psi_uw_rad": 0.5917517073280983,
+      "psi_uw_rad": 0.5917517073280985,
       "rbar_uw": 0.043115670475159795,
       "rayleigh_z_uw": 27.650186516732646,
       "rayleigh_p_uw": 9.904630673618568e-07,
-      "epoch_direction_mean_rad": -0.001219891235794462,
+      "epoch_direction_mean_rad": -0.0012198912357942217,
       "epoch_direction_rbar": 0.07381054715008394,
       "epoch_direction_rayleigh_z": 4.369293490217001,
       "epoch_direction_rayleigh_p": 0.11251747398270717,
@@ -668,7 +668,7 @@
       "sign_pattern_breakdown": {
         "+++": {
           "n": 5196,
-          "psi_uw": 0.7258744470697562,
+          "psi_uw": 0.7258744470697565,
           "rbar": 0.059799312349818834
         },
         "-++": {
@@ -678,13 +678,13 @@
         },
         "+-+": {
           "n": 627,
-          "psi_uw": -0.1315452858881632,
+          "psi_uw": -0.13154528588816322,
           "rbar": 0.13086000506768017
         },
         "--+": {
           "n": 248,
-          "psi_uw": -3.114506556124384,
-          "rbar": 0.08104822451223309
+          "psi_uw": -3.1145065561243843,
+          "rbar": 0.08104822451223308
         },
         "++-": {
           "n": 48,
@@ -698,13 +698,13 @@
         },
         "-+-": {
           "n": 86,
-          "psi_uw": 0.42203587613304194,
-          "rbar": 0.38254038880177715
+          "psi_uw": 0.4220358761330419,
+          "rbar": 0.3825403888017772
         },
         "---": {
           "n": 118,
-          "psi_uw": 1.954747598674422,
-          "rbar": 0.3456571727421034
+          "psi_uw": 1.9547475986744218,
+          "rbar": 0.34565717274210345
         }
       },
       "median_n_arclets": null,
@@ -712,8 +712,8 @@
         {
           "geometry": 0,
           "n_triplets": 460,
-          "psi_uw": -2.4653246343207225,
-          "rbar": 0.22515709024655742
+          "psi_uw": -2.465324634320723,
+          "rbar": 0.22515709024655745
         },
         {
           "geometry": 1,
@@ -730,14 +730,14 @@
         {
           "geometry": 3,
           "n_triplets": 600,
-          "psi_uw": -1.6424529990769186,
-          "rbar": 0.045705153218547866
+          "psi_uw": -1.6424529990769188,
+          "rbar": 0.04570515321854785
         },
         {
           "geometry": 4,
           "n_triplets": 1220,
-          "psi_uw": 0.06173420438581635,
-          "rbar": 0.07966824838917251
+          "psi_uw": 0.06173420438581636,
+          "rbar": 0.0796682483891725
         },
         {
           "geometry": 5,
@@ -772,17 +772,17 @@
         {
           "geometry": 10,
           "n_triplets": 904,
-          "psi_uw": 0.8361164448410375,
-          "rbar": 0.33574726648727665
+          "psi_uw": 0.8361164448410376,
+          "rbar": 0.33574726648727654
         },
         {
           "geometry": 11,
           "n_triplets": 611,
           "psi_uw": 1.3667214159833148,
-          "rbar": 0.2458643532445242
+          "rbar": 0.24586435324452413
         }
       ],
-      "geometry_direction_rbar": 0.27997804687611727,
+      "geometry_direction_rbar": 0.2799780468761172,
       "verdict": {
         "reproduces_concentration_magnitude": false,
         "reproduces_direction_persistence": false,
@@ -793,56 +793,81 @@
     "two_screens_scrambled": {
       "model": "two_screens_scrambled",
       "n_epochs_submitted": 1500,
-      "n_viable_epochs": 30,
-      "yield_fraction": 0.02,
+      "n_viable_epochs": 668,
+      "yield_fraction": 0.44533333333333336,
       "n_errors": 0,
-      "n_triplets": 473,
-      "psi_uw_rad": 2.2616591079149195,
-      "rbar_uw": 0.08728672266544199,
-      "rayleigh_z_uw": 7.207547468175401,
-      "rayleigh_p_uw": 0.02722080429949034,
-      "epoch_direction_mean_rad": 2.2296497425190775,
-      "epoch_direction_rbar": 0.23465217055236137,
-      "epoch_direction_rayleigh_z": 3.3036984686960693,
-      "epoch_direction_rayleigh_p": 0.19169509150430825,
-      "n_epoch_means": 30,
+      "n_triplets": 11660,
+      "psi_uw_rad": -2.6605598835757367,
+      "rbar_uw": 0.0026974325589952577,
+      "rayleigh_z_uw": 0.16967964100884206,
+      "rayleigh_p_uw": 0.9186594230198362,
+      "epoch_direction_mean_rad": -2.687404764259107,
+      "epoch_direction_rbar": 0.03538608731720645,
+      "epoch_direction_rayleigh_z": 1.6729060346296016,
+      "epoch_direction_rayleigh_p": 0.43324451208803716,
+      "n_epoch_means": 668,
       "psi_hist_12bin": [
-        35,
-        33,
-        46,
-        25,
-        33,
-        51,
-        24,
-        32,
-        50,
-        56,
-        34,
-        54
+        960,
+        951,
+        1051,
+        960,
+        929,
+        953,
+        990,
+        955,
+        980,
+        985,
+        959,
+        987
       ],
       "sign_pattern_breakdown": {
         "+++": {
-          "n": 436,
-          "psi_uw": 2.256237369718843,
-          "rbar": 0.07388120645263553
+          "n": 8210,
+          "psi_uw": -1.9868629754521128,
+          "rbar": 0.002582516493150731
         },
         "-++": {
-          "n": 27,
-          "psi_uw": 2.1685930927219177,
-          "rbar": 0.21725004605754777
+          "n": 1803,
+          "psi_uw": 1.8505111054916779,
+          "rbar": 0.003220689417002968
         },
         "+-+": {
-          "n": 10,
-          "psi_uw": 2.4806160042714485,
-          "rbar": 0.3313634645746357
+          "n": 1106,
+          "psi_uw": 2.0471910406634604,
+          "rbar": 0.02618915786038447
+        },
+        "--+": {
+          "n": 224,
+          "psi_uw": -1.143012314301845,
+          "rbar": 0.00893375423912428
+        },
+        "++-": {
+          "n": 81,
+          "psi_uw": -1.904145754161294,
+          "rbar": 0.08393905873448475
+        },
+        "+--": {
+          "n": 76,
+          "psi_uw": 1.400610892722671,
+          "rbar": 0.05707839710039393
+        },
+        "-+-": {
+          "n": 83,
+          "psi_uw": -1.6671235322471332,
+          "rbar": 0.15943722294484938
+        },
+        "---": {
+          "n": 77,
+          "psi_uw": -1.8318737765023256,
+          "rbar": 0.12552807533264154
         }
       },
-      "median_n_arclets": 10.0,
+      "median_n_arclets": 14.0,
       "verdict": {
         "reproduces_concentration_magnitude": false,
-        "reproduces_direction_persistence": true,
-        "rbar_ratio_model_to_observed": 0.28710882942813176,
-        "dir_rbar_ratio_model_to_observed": 0.7536014342270277
+        "reproduces_direction_persistence": false,
+        "rbar_ratio_model_to_observed": 0.008872560233964157,
+        "dir_rbar_ratio_model_to_observed": 0.11364483052151875
       }
     }
   }

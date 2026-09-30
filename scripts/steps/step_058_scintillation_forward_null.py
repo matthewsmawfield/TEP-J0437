@@ -310,7 +310,13 @@ def _simulate_epoch(
         F = (np.abs(F) * np.exp(1j * rng_s.uniform(0, 2 * np.pi, F.shape))).astype(
             np.complex64
         )
-        S = np.abs(F) ** 2
+        # S = |F|^2 is IDENTICAL under an arg scramble -- and the pipeline's
+        # `secondary` additionally carries the post-darkening factor that the
+        # raw |F|^2 lacks. Recomputing S here would strip post-darkening,
+        # suppress the low-delay arc power, and collapse detection yield (~2%),
+        # creating a selection-biased subset rather than a clean phase null.
+        # Leave S untouched: detection and triplet selection are then exactly
+        # as in the unscrambled run, isolating phase information only.
 
     arcs = detect_arcs(S, tau_us, fD_mHz)
     arclets = detect_arclets(S, tau_us, fD_mHz, arcs, min_snr=1.5)

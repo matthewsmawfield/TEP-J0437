@@ -1,42 +1,42 @@
-[2026-09-26 19:57:40] [INFO] ======================================================================
-[2026-09-26 19:57:40] [INFO] TEP-J0437: TEMPORAL EQUIVALENCE PRINCIPLE DETECTION PIPELINE
-[2026-09-26 19:57:40] [INFO] ======================================================================
-[2026-09-26 19:57:40] [INFO] Execution started: 2026-09-26 19:57:40
-[2026-09-26 19:57:40] [INFO] Working directory: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437
-[2026-09-26 19:57:40] [INFO] CPU cores available: 15
-[2026-09-26 19:57:40] [INFO] 
+[2026-09-28 23:25:25] [INFO] ======================================================================
+[2026-09-28 23:25:25] [INFO] TEP-J0437: TEMPORAL EQUIVALENCE PRINCIPLE DETECTION PIPELINE
+[2026-09-28 23:25:25] [INFO] ======================================================================
+[2026-09-28 23:25:25] [INFO] Execution started: 2026-09-28 23:25:25
+[2026-09-28 23:25:25] [INFO] Working directory: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437
+[2026-09-28 23:25:25] [INFO] CPU cores available: 15
+[2026-09-28 23:25:25] [INFO] 
 Pipeline configuration: 1 steps
-[2026-09-26 19:57:40] [INFO]   • Step 057 - Canonical Holonomy Amplitude on the Screen Loop
-[2026-09-26 19:57:40] [INFO] ================================================================================
-[2026-09-26 19:57:40] [INFO] PIPELINE STEP: Step 057 - Canonical Holonomy Amplitude on the Screen Loop
-[2026-09-26 19:57:40] [INFO] ================================================================================
-[2026-09-26 19:57:40] [INFO] 
-[2026-09-26 19:57:40] [INFO] DESCRIPTION:
-[2026-09-26 19:57:40] [INFO]     Canonical-connection holonomy amplitude budget on the measured screen-triangle loop
-[2026-09-26 19:57:40] [INFO] 
-[2026-09-26 19:57:40] [INFO] PHYSICS CONTEXT:
-[2026-09-26 19:57:40] [INFO]     Evaluate the admissible-branch (B>=0) disformal synchronization holonomy on the J0437 scattering-screen triangle; compare with the narrowband-equivalent delay implied by psi = omega_eff H and with the delay-channel bound
-[2026-09-26 19:57:40] [INFO] 
-[2026-09-26 19:57:40] [INFO] METHODOLOGY:
-[2026-09-26 19:57:40] [INFO]     Numerically integrate the Paper 0 connection sigma_i = f(x) grad u over screen triangles sized by the measured leg-delay distribution, under stated field/drift conventions, with eta=0 exactness, B0=0, and traversal-reversal controls
-[2026-09-26 19:57:40] [INFO] 
-[2026-09-26 19:57:40] [INFO] EXECUTING...
-[2026-09-26 19:57:40] [INFO] 
-[2026-09-26 19:57:40] [INFO] ================================================================================
-[2026-09-26 19:57:40] [INFO] STEP COMPLETED SUCCESSFULLY (0.2 seconds)
-[2026-09-26 19:57:40] [INFO] ================================================================================
-[2026-09-26 19:57:40] [INFO] 
+[2026-09-28 23:25:25] [INFO]   • Step 052 - Epoch Block Bootstrap of Trimmed Magnitude
+[2026-09-28 23:25:25] [INFO] ================================================================================
+[2026-09-28 23:25:25] [INFO] PIPELINE STEP: Step 052 - Epoch Block Bootstrap of Trimmed Magnitude
+[2026-09-28 23:25:25] [INFO] ================================================================================
+[2026-09-28 23:25:25] [INFO] 
+[2026-09-28 23:25:25] [INFO] DESCRIPTION:
+[2026-09-28 23:25:25] [INFO]     Epoch-level bootstrap of the symmetric 10% trimmed folded magnitude and its paired excess
+[2026-09-28 23:25:25] [INFO] 
+[2026-09-28 23:25:25] [INFO] PHYSICS CONTEXT:
+[2026-09-28 23:25:25] [INFO]     Quantify epoch-level sampling uncertainty of the trimmed magnitude channel
+[2026-09-28 23:25:25] [INFO] 
+[2026-09-28 23:25:25] [INFO] METHODOLOGY:
+[2026-09-28 23:25:25] [INFO]     iid and contiguous moving-block resampling of paired (magnitude, floor) epoch triples in MJD order
+[2026-09-28 23:25:25] [INFO] 
+[2026-09-28 23:25:25] [INFO] EXECUTING...
+[2026-09-28 23:25:25] [INFO] 
+[2026-09-28 23:25:26] [INFO] ================================================================================
+[2026-09-28 23:25:26] [INFO] STEP COMPLETED SUCCESSFULLY (1.3 seconds)
+[2026-09-28 23:25:26] [INFO] ================================================================================
+[2026-09-28 23:25:26] [INFO] 
 ======================================================================
-[2026-09-26 19:57:40] [INFO] PIPELINE EXECUTION SUMMARY
-[2026-09-26 19:57:40] [INFO] ======================================================================
-[2026-09-26 19:57:40] [INFO] [PASS] - Step 057 - Canonical Holonomy Amplitude on the Screen Loop
-[2026-09-26 19:57:40] [INFO] 
-Total execution time: 0.2 seconds
-[2026-09-26 19:57:40] [INFO] Orchestration log: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/logs/pipeline.log
-[2026-09-26 19:57:40] [INFO] Per-step detail logs: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/logs/<step_module>.log (e.g. /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/logs/step_001_parse_dynspec.log)
-[2026-09-26 19:57:40] [INFO] 
+[2026-09-28 23:25:26] [INFO] PIPELINE EXECUTION SUMMARY
+[2026-09-28 23:25:26] [INFO] ======================================================================
+[2026-09-28 23:25:26] [INFO] [PASS] - Step 052 - Epoch Block Bootstrap of Trimmed Magnitude
+[2026-09-28 23:25:26] [INFO] 
+Total execution time: 1.3 seconds
+[2026-09-28 23:25:26] [INFO] Orchestration log: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/logs/pipeline.log
+[2026-09-28 23:25:26] [INFO] Per-step detail logs: /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/logs/<step_module>.log (e.g. /Users/matthewsmawfield/www/Temporal Equivalence Principle/TEP-J0437/logs/step_001_parse_dynspec.log)
+[2026-09-28 23:25:26] [INFO] 
 ======================================================================
-[2026-09-26 19:57:40] [SUCCESS] PIPELINE COMPLETED SUCCESSFULLY
-[2026-09-26 19:57:40] [INFO] Results available in data/secondary/ and results/
-[2026-09-26 19:57:40] [INFO] Review results/step_003_closure_final_summary.json for statistical verdict.
-[2026-09-26 19:57:40] [INFO] ======================================================================
+[2026-09-28 23:25:26] [SUCCESS] PIPELINE COMPLETED SUCCESSFULLY
+[2026-09-28 23:25:26] [INFO] Results available in data/secondary/ and results/
+[2026-09-28 23:25:26] [INFO] Review results/step_003_closure_final_summary.json for statistical verdict.
+[2026-09-28 23:25:26] [INFO] ======================================================================

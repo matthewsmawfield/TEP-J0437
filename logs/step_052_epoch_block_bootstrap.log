@@ -1,0 +1,9 @@
+[2026-09-28 23:25:25] [INFO] ================================================================================
+[2026-09-28 23:25:25] [INFO] STEP step_052_epoch_block_bootstrap STARTED
+[2026-09-28 23:25:25] [INFO] Description: Epoch-level bootstrap of the symmetric 10% trimmed folded magnitude and its paired excess
+[2026-09-28 23:25:25] [INFO] Physics: Quantify epoch-level sampling uncertainty of the trimmed magnitude channel
+[2026-09-28 23:25:25] [INFO] Method: iid and contiguous moving-block resampling of paired (magnitude, floor) epoch triples in MJD order
+[2026-09-28 23:25:25] [INFO] ================================================================================
+[2026-09-28 23:25:26] [INFO] ================================================================================
+[2026-09-28 23:25:26] [INFO] STEP COMPLETED SUCCESSFULLY (1.3 seconds)
+[2026-09-28 23:25:26] [INFO] ================================================================================

@@ -21,6 +21,38 @@
       "h_trim_std_ns": 0.7502271583682687,
       "floor_mean_ns": 13.524125846105784,
       "floor_std_ns": 0.5034351647890729
+    },
+    "block_scan_mjd_order": {
+      "15": {
+        "h_trim_std_ns": 1.9578618424535215,
+        "floor_std_ns": 1.1765122084382402,
+        "excess_std_ns": 0.9369977955856396,
+        "excess_empirical_sigma": 9.020121292357627
+      },
+      "30": {
+        "h_trim_std_ns": 2.5728584933614136,
+        "floor_std_ns": 1.4955959067000388,
+        "excess_std_ns": 1.2018428371179293,
+        "excess_empirical_sigma": 7.0323951733340175
+      },
+      "60": {
+        "h_trim_std_ns": 3.1859490443786345,
+        "floor_std_ns": 1.7543251841756258,
+        "excess_std_ns": 1.5107270715918732,
+        "excess_empirical_sigma": 5.594547106346865
+      },
+      "120": {
+        "h_trim_std_ns": 3.931347670795232,
+        "floor_std_ns": 2.1591030415209476,
+        "excess_std_ns": 1.8287573769898307,
+        "excess_empirical_sigma": 4.6216266155361
+      },
+      "240": {
+        "h_trim_std_ns": 4.8725588638052075,
+        "floor_std_ns": 2.6923943589287846,
+        "excess_std_ns": 2.239777352411823,
+        "excess_empirical_sigma": 3.7735151477235616
+      }
     }
   },
   "J1603-7202": {
@@ -45,6 +77,32 @@
       "h_trim_std_ns": 1.2880118692052418,
       "floor_mean_ns": 7.919569949644478,
       "floor_std_ns": 0.7261645878853923
+    },
+    "block_scan_mjd_order": {
+      "5": {
+        "h_trim_std_ns": 2.3346247579817967,
+        "floor_std_ns": 1.2641685064480244,
+        "excess_std_ns": 1.1927001440944731,
+        "excess_empirical_sigma": 3.469057307622964
+      },
+      "10": {
+        "h_trim_std_ns": 2.894379412473916,
+        "floor_std_ns": 1.5818217691750662,
+        "excess_std_ns": 1.4276766173172764,
+        "excess_empirical_sigma": 2.8980968802645846
+      },
+      "15": {
+        "h_trim_std_ns": 3.3219000135231687,
+        "floor_std_ns": 1.8617465225141836,
+        "excess_std_ns": 1.5568926712911217,
+        "excess_empirical_sigma": 2.6575660782336734
+      },
+      "30": {
+        "h_trim_std_ns": 3.059567797628072,
+        "floor_std_ns": 1.8224162200951939,
+        "excess_std_ns": 1.3373904721603258,
+        "excess_empirical_sigma": 3.093745048138706
+      }
     }
   }
 }

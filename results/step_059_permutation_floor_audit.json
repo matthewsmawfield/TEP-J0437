@@ -1,0 +1,26 @@
+{
+  "audit": "leg_permutation_floor_extension",
+  "mode": "xepoch (strictest null of step_055)",
+  "n_perm_replicates": 5000,
+  "real": {
+    "psi_mean": 0.9840494974502261,
+    "rbar": 0.30759394013167146,
+    "n_epochs": 1093
+  },
+  "permuted_xepoch": {
+    "rbar_mean": 0.06584390266872156,
+    "rbar_std": 0.031923900529188136,
+    "rbar_max": 0.190449029661909,
+    "n_ge_real": 0,
+    "p_ge_real_empirical": 0.0001999600079984003,
+    "z_parametric": 7.572697366411005,
+    "p_gaussian_tail": 1.8318679906315083e-14
+  },
+  "step_055_prior": {
+    "rbar_mean": 0.06604830896131571,
+    "rbar_std": 0.03290047445300609,
+    "psi_mean_of_means": 1.1377189008551356,
+    "p_ge_real": 0.0024937655860349127
+  },
+  "note": "step_055 reported p=0.0025, the resolution floor of 400 reps. With 5000 replicates the empirical bound is p < 2.0e-04; the observed Rbar sits 7.6 null-std above the xepoch null mean (Gaussian-tail p ~ 1.8e-14)."
+}

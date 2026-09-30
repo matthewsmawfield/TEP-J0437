@@ -420,6 +420,24 @@ def run_step(step_name: str, step_module: str, verbose: bool = True, force: bool
             "method": "Reload Step 003 per-epoch triplets; recompute geometric delays; Earth velocity projected onto 3D CMB dipole for annual regressions; wrong-direction and random-direction controls",
             "output": "results/step_048_cmb_dipole_frame_analysis.json",
         },
+        "step_052_epoch_block_bootstrap": {
+            "description": "Epoch-level bootstrap of the symmetric 10% trimmed folded magnitude and its paired excess",
+            "physics": "Quantify epoch-level sampling uncertainty of the trimmed magnitude channel",
+            "method": "iid and contiguous moving-block resampling of paired (magnitude, floor) epoch triples in MJD order",
+            "output": "results/step_052_epoch_block_bootstrap.json",
+        },
+        "step_053_j1603_bipolarity_permutation": {
+            "description": "Permutation null for the J1603 bipolar decomposition",
+            "physics": "Test whether the observed monopole/bipole separation and ratio exceed angle-shuffled baselines",
+            "method": "Circular permutation of epoch phases; recompute bipolar decomposition and compare observed statistics to the null distribution",
+            "output": "results/step_053_j1603_bipolarity_permutation.json",
+        },
+        "step_054_annual_modulation_psi": {
+            "description": "Sinusoidal annual-modulation fit on per-epoch psi and signed delays",
+            "physics": "Bound the kinematic orbital-projection channel on Earth's ~30 km/s annual velocity",
+            "method": "Regress epoch series on {1, sin 2*pi*t, cos 2*pi*t}; nested F-test against the constant model for both pulsars",
+            "output": "results/step_054_annual_modulation_psi.json",
+        },
         "step_055_leg_permutation_null": {
             "description": "Leg-permutation closure null and realistic non-factorizable screen simulation",
             "physics": "Destroy loop-level phase association while preserving leg marginals; test chi^2-field scintillation cross-terms on the measured J0437 arc geometry",
@@ -437,6 +455,24 @@ def run_step(step_name: str, step_module: str, verbose: bool = True, force: bool
             "physics": "Test whether thin-screen scintillation physics (multi-screen propagation, non-quadratic arc curvature, discrete arclet families, interior fill, persistent arclet structure) can concentrate closure phases mundanely",
             "method": "Simulate additive-image thin-screen dynamic spectra on empirical epoch grids and push through the unchanged step_002->step_003 chain (Hough arcs, arclet detection, cross-screen triplet requirement, sub-pixel cross-term measurement, complex-patch phase extraction); report pooled and epoch-direction circular statistics per model",
             "output": "results/step_058_scintillation_forward_null.json",
+        },
+        "step_059_permutation_floor_audit": {
+            "description": "Extended cross-epoch leg-permutation floor audit for phase-closure concentration",
+            "physics": "Resolve the empirical floor of the strictest leg-permutation null mode at 5000 replicates",
+            "method": "Cross-epoch leg permutation on the cached Step 055 leg phases; empirical and Gaussian-tail p for the observed concentration",
+            "output": "results/step_059_permutation_floor_audit.json",
+        },
+        "step_060_mcl_epoch_sem_audit": {
+            "description": "Epoch-level SEM audit for M_cl and its noise-subtracted excess",
+            "physics": "Estimate the epoch-level standard error of the inverse-variance-weighted magnitude and of the paired mean-minus-floor excess by epoch resampling",
+            "method": "iid and moving-block epoch bootstrap of the paired (mean, floor, weight) triples; block scan to 240 epochs; MAD- and std-floor variants",
+            "output": "results/step_060_mcl_epoch_sem_audit.json",
+        },
+        "step_061_subband_chromaticity_discriminator": {
+            "description": "Sub-band psi chromaticity, delay-domain frequency scaling, and arc-geometry correlation discriminators",
+            "physics": "Distinguish non-exact transport from scintillation-optics systematics via band-to-band psi rotation, delay scaling vs nu^{-2}, and arc-morphology covariance",
+            "method": "Epoch-label permutation on the sb0/sb1 circular-mean separation; epoch-bootstrap of the delay-domain band ratio; Spearman regression of |psi| on |f_D| and arc-model mismatch",
+            "output": "results/step_061_subband_chromaticity_discriminator.json",
         },
         "step_049_evidence_ledger": {
             "description": "Evidence ledger, claim hierarchy, and per-pulsar evidence tier table",
@@ -768,10 +804,16 @@ def run_pipeline(
         ("Step 047 - Velocity Direction Controls", "step_047_velocity_direction_controls"),
         ("Step 048 - CMB Dipole Frame Analysis", "step_048_cmb_dipole_frame_analysis"),
         ("Step 013 - Falsification Criteria Automation", "step_013_falsification_criteria"),
+        ("Step 052 - Epoch Block Bootstrap of Trimmed Magnitude", "step_052_epoch_block_bootstrap"),
+        ("Step 053 - J1603 Bipolarity Permutation", "step_053_j1603_bipolarity_permutation"),
+        ("Step 054 - Annual Modulation of psi and Signed Delay", "step_054_annual_modulation_psi"),
         ("Step 055 - Leg-Permutation and Non-Factorizable Screen Nulls", "step_055_leg_permutation_null"),
         ("Step 056 - Closure-Phase Parity and Geometric-Circulation Tests", "step_056_parity_geometry"),
         ("Step 057 - Canonical Holonomy Amplitude on the Screen Loop", "step_057_holonomy_amplitude_closure"),
         ("Step 058 - Standard-Scintillation Forward Null", "step_058_scintillation_forward_null"),
+        ("Step 059 - Extended Cross-Epoch Leg-Permutation Floor Audit", "step_059_permutation_floor_audit"),
+        ("Step 060 - Epoch-Level SEM Audit for M_cl Excess", "step_060_mcl_epoch_sem_audit"),
+        ("Step 061 - Sub-band Chromaticity and Arc-Geometry Discriminator", "step_061_subband_chromaticity_discriminator"),
         ("Step 049 - Evidence Ledger", "step_049_evidence_ledger"),
     ]
 

@@ -1,0 +1,207 @@
+{
+  "audit": "epoch_level_sem_for_mcl_excess",
+  "n_bootstrap": 10000,
+  "rng_seed": 20251015,
+  "pulsars": {
+    "J0437-4715": {
+      "n_epochs": 1093,
+      "n_bootstrap": 10000,
+      "replicated_H_mean_ns": 8.100162219444181,
+      "pipeline_H_mean_ns": 8.100162219444181,
+      "replicated_noise_floor_ns": 6.810334179171245,
+      "pipeline_noise_floor_ns": 6.810334179171245,
+      "excess_mad_floor_ns": 1.2898280402729358,
+      "excess_std_floor_ns": 0.31934669968319235,
+      "pipeline_sem_ns_ivw": 0.10194563966559812,
+      "pipeline_excess_t": 12.652115818820965,
+      "corr_epoch_mean_vs_floor": 0.9098517583662935,
+      "epoch_sem_iid_ns": 0.2595230757892576,
+      "epoch_sem_iid_floor_ns": 0.2395843228936547,
+      "epoch_sem_iid_excess_ns": 0.10555533101248792,
+      "epoch_sem_iid_excess_std_floor_ns": 0.06809313413466377,
+      "epoch_sem_block_ns": {
+        "15": 0.3944711397392947,
+        "30": 0.45989123779429186,
+        "60": 0.4935909906442017,
+        "120": 0.5471762828259212,
+        "240": 0.5435624809829696
+      },
+      "epoch_sem_block_floor_ns": {
+        "15": 0.34243585839715157,
+        "30": 0.39322917346113345,
+        "60": 0.41130765851924933,
+        "120": 0.42889856035497587,
+        "240": 0.40184389887931965
+      },
+      "epoch_sem_block_excess_ns": {
+        "15": 0.11985859755700316,
+        "30": 0.1248871123108226,
+        "60": 0.1429124692038514,
+        "120": 0.1646984149597317,
+        "240": 0.16932335083672775
+      },
+      "epoch_sem_block_excess_std_floor_ns": {
+        "15": 0.07091345807051803,
+        "30": 0.0749244080091079,
+        "60": 0.0761029245017556,
+        "120": 0.06821092092950101,
+        "240": 0.058862847481242604
+      },
+      "block_span_days_median": {
+        "15": 76.80557860684712,
+        "30": 151.63796293300402,
+        "60": 304.0345232658001,
+        "120": 593.2973367839004,
+        "240": 1200.7480555301008
+      },
+      "acf_epoch_mean_index_lag": {
+        "1": 0.41811544400503503,
+        "5": 0.4200016360217513,
+        "15": 0.28853185467499365,
+        "30": 0.17640633247039014,
+        "60": 0.2001466036095574,
+        "120": 0.1476113391074828,
+        "200": 0.19691870527973315
+      },
+      "acf_epoch_excess_index_lag": {
+        "1": 0.0451279053619771,
+        "5": 0.053038838659770784,
+        "15": 0.018046709181152663,
+        "30": 0.006355714978168885,
+        "60": 0.07508059523329792,
+        "120": -0.0015018837309000782,
+        "200": 0.054227952042378215
+      },
+      "seasonal_halves": {
+        "jan_jun": {
+          "n_epochs": 566,
+          "magnitude_ns": 10.640233953183072,
+          "floor_ns": 9.053925985341731,
+          "excess_ns": 1.586307967841342,
+          "excess_sem_iid_ns": 0.17843826691910566,
+          "excess_t_iid": 8.889953905237654
+        },
+        "jul_dec": {
+          "n_epochs": 527,
+          "magnitude_ns": 6.82633768455345,
+          "floor_ns": 5.685191825505119,
+          "excess_ns": 1.1411458590483312,
+          "excess_sem_iid_ns": 0.1306269703461071,
+          "excess_t_iid": 8.73591308153875
+        }
+      },
+      "excess_t_iid": 12.219449533253233,
+      "excess_t_block": {
+        "15": 10.761247558061163,
+        "30": 10.327951510823432,
+        "60": 9.025300923414287,
+        "120": 7.831453876397628,
+        "240": 7.617543793570855
+      },
+      "excess_t_iid_std_floor": 4.689851682427178,
+      "excess_t_block_std_floor": {
+        "15": 4.503329951356009,
+        "30": 4.262251890523742,
+        "60": 4.196247408019457,
+        "120": 4.681753234401442,
+        "240": 5.425267606786373
+      },
+      "mean_t_iid_reference": 31.211722482904815
+    },
+    "J1603-7202": {
+      "n_epochs": 215,
+      "n_bootstrap": 10000,
+      "replicated_H_mean_ns": 2.5572479699421744,
+      "pipeline_H_mean_ns": 2.5572479699421744,
+      "replicated_noise_floor_ns": 2.331948534977354,
+      "pipeline_noise_floor_ns": 2.331948534977354,
+      "excess_mad_floor_ns": 0.22529943496482022,
+      "excess_std_floor_ns": 0.14805749684348524,
+      "pipeline_sem_ns_ivw": 0.11971575916092857,
+      "pipeline_excess_t": 1.8819530239286233,
+      "corr_epoch_mean_vs_floor": 0.9576481750099957,
+      "epoch_sem_iid_ns": 0.22381192762425942,
+      "epoch_sem_iid_floor_ns": 0.2110790446354848,
+      "epoch_sem_iid_excess_ns": 0.05053688873339103,
+      "epoch_sem_iid_excess_std_floor_ns": 0.027863515704905997,
+      "epoch_sem_block_ns": {
+        "5": 0.352237740174322,
+        "10": 0.3631592840591794,
+        "15": 0.36321530109194733,
+        "30": 0.3227862878967334
+      },
+      "epoch_sem_block_floor_ns": {
+        "5": 0.3258180569018611,
+        "10": 0.3325381650794091,
+        "15": 0.33009065771718815,
+        "30": 0.2877845433379854
+      },
+      "epoch_sem_block_excess_ns": {
+        "5": 0.05376986081470398,
+        "10": 0.0574932403575972,
+        "15": 0.06049481208813703,
+        "30": 0.05897045226738178
+      },
+      "epoch_sem_block_excess_std_floor_ns": {
+        "5": 0.03404473243537497,
+        "10": 0.0372226286905257,
+        "15": 0.03934981448038429,
+        "30": 0.03595557618762216
+      },
+      "block_span_days_median": {
+        "5": 93.95866148119967,
+        "10": 204.28437540050072,
+        "15": 323.7143661590999,
+        "30": 698.8651620724049
+      },
+      "acf_epoch_mean_index_lag": {
+        "1": 0.6660160698669451,
+        "5": 0.363378020946282,
+        "15": -0.05473330454605782,
+        "30": 0.07872866786165174,
+        "60": 0.05197243520239221
+      },
+      "acf_epoch_excess_index_lag": {
+        "1": 0.14786979080130427,
+        "5": 0.0014335121104684424,
+        "15": 0.04209045596785384,
+        "30": 0.0013832239234451284,
+        "60": 0.0968309787961565
+      },
+      "seasonal_halves": {
+        "jan_jun": {
+          "n_epochs": 106,
+          "magnitude_ns": 11.813428777584347,
+          "floor_ns": 10.811287699078349,
+          "excess_ns": 1.0021410785059983,
+          "excess_sem_iid_ns": 0.31079717554878045,
+          "excess_t_iid": 3.2244214469983485
+        },
+        "jul_dec": {
+          "n_epochs": 109,
+          "magnitude_ns": 1.7137617729525705,
+          "floor_ns": 1.5592534360865153,
+          "excess_ns": 0.15450833686605506,
+          "excess_sem_iid_ns": 0.04566407609122311,
+          "excess_t_iid": 3.383586181780921
+        }
+      },
+      "excess_t_iid": 4.458118428172233,
+      "excess_t_block": {
+        "5": 4.1900691493553115,
+        "10": 3.918711722691222,
+        "15": 3.7242769617429925,
+        "30": 3.8205478557850516
+      },
+      "excess_t_iid_std_floor": 5.313668899916187,
+      "excess_t_block_std_floor": {
+        "5": 4.348910573009604,
+        "10": 3.9776206585100855,
+        "15": 3.7625970744357953,
+        "30": 4.117789576529011
+      },
+      "mean_t_iid_reference": 11.425878848759753
+    }
+  },
+  "note": "pipeline t uses 1/sqrt(sum w_i) (measurement noise only). Epoch resampling gives the raw-mean SEM and, for the excess, the SEM of the paired difference m_i - f_i (the floor is an IVW mean over the same epochs, corr ~0.9). Contiguous moving blocks in MJD order absorb campaign/screen-state correlation; the raw-mean blocked SEM is a lower envelope (epoch-mean ACF ~0.15-0.2 to lag 200 for J0437; resampling collapses for blocks ~n/3 or larger), while the paired-excess SEM stabilizes. The std-floor variant bounds the folded-normal floor-convention sensitivity. Supersedes the step_058 audit, which divided the excess by the raw-mean SEM while holding the correlated floor fixed."
+}
