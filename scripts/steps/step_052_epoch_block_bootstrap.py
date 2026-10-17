@@ -190,9 +190,9 @@ def run_bootstrap_for_pulsar(
     excess_mean = float(np.mean(excess_samples))
     excess_std = float(np.std(excess_samples, ddof=1))
 
-    # Empirical p-value: fraction of bootstrap excess <= 0
-    p_value = float(np.mean(excess_samples <= 0))
-    if p_value == 0:
+    # Empirical p-value: add-one corrected fraction of bootstrap excess <= 0
+    p_value = float((np.sum(excess_samples <= 0) + 1) / (n_bootstrap + 1))
+    if np.sum(excess_samples <= 0) == 0:
         p_value_str = f"< {1.0/n_bootstrap:.1e}"
     else:
         p_value_str = f"{p_value:.4e}"

@@ -60,6 +60,7 @@ from scripts.utils.config import (
     C_LIGHT_KM_S,
     J0437_A1_LC,
     J0437_ECC,
+    J0437_DEC_RAD,
     J0437_INC_DEG,
     J0437_KOM_DEG,
     J0437_OM_DEG,
@@ -166,12 +167,13 @@ def compute_reflex_velocity_projection(mjd):
             float(J0437_DEC_RAD),
         )
     except Exception as e:
-        print_status(f"WARNING: Failed to compute reflex velocity: {e}", "WARN")
-        return 0.0
+        raise RuntimeError(f"Cannot evaluate orbital velocity at MJD {mjd}") from e
     
     # Project onto scattering axis (J0437: 128°)
     rad_psi = np.radians(J0437_PSI_DEG)
     v_proj = v_orbit[0] * np.cos(rad_psi) + v_orbit[1] * np.sin(rad_psi)
+    if not np.isfinite(v_proj):
+        raise ValueError(f"Nonfinite orbital velocity at MJD {mjd}")
     return float(v_proj)
 
 
@@ -257,7 +259,7 @@ def fit_model_m1(epochs):
         A, B, kappa = result.x
         # Convert A back to original scale
         A_orig = A / v_std
-        B_orig = B + A * v_mean / v_std
+        B_orig = B - A * v_mean / v_std
         ll = -result.fun
         n = len(epochs)
         bic = -2 * ll + 3 * np.log(n)
@@ -323,7 +325,7 @@ def fit_model_m2(epochs):
         if kappa <= 0:
             return 1e10
         
-        mu = A * v_stdz + B + K @ w
+        mu = A * v_stdz + B + np.einsum("ij,j->i", K, w, optimize=False)
         return -von_mises_log_likelihood(psi, mu, kappa)
     
     # Initialize
@@ -346,7 +348,7 @@ def fit_model_m2(epochs):
     if result.success:
         A, B, w, kappa = result.x[0], result.x[1], result.x[2:-1], result.x[-1]
         A_orig = A / v_std
-        B_orig = B + A * v_mean / v_std
+        B_orig = B - A * v_mean / v_std
         ll = -result.fun
         bic = -2 * ll + n_params_gp * np.log(n)
         
@@ -377,7 +379,7 @@ def fit_model_m2(epochs):
 
 
 def compute_bayes_factor(bic1, bic2):
-    """Approximate log_10(BF) from ΔBIC."""
+    """Approximate log10 evidence(model 1) / evidence(model 2) from BIC."""
     delta_bic = bic1 - bic2
     log10_bf = -0.5 * delta_bic / np.log(10)
     return float(log10_bf)
@@ -416,6 +418,7 @@ def main():
         bayes_factors[name] = {
             "log10_bf_vs_best": float(log10_bf),
             "interpretation": (
+                "Reference (best BIC)" if name == best_model else
                 "Strongly preferred" if log10_bf > 2 else
                 "Moderately preferred" if log10_bf > 1 else
                 "Weakly preferred" if log10_bf > 0.5 else
@@ -424,9 +427,9 @@ def main():
         }
     
     # Key comparisons
-    log10_bf_m1_vs_m0 = compute_bayes_factor(m0["bic"], m1["bic"])
-    log10_bf_m2_vs_m0 = compute_bayes_factor(m0["bic"], m2["bic"])
-    log10_bf_m2_vs_m1 = compute_bayes_factor(m1["bic"], m2["bic"])
+    log10_bf_m1_vs_m0 = compute_bayes_factor(m1["bic"], m0["bic"])
+    log10_bf_m2_vs_m0 = compute_bayes_factor(m2["bic"], m0["bic"])
+    log10_bf_m2_vs_m1 = compute_bayes_factor(m2["bic"], m1["bic"])
     
     print_status(f"Model comparison:", "INFO")
     for name, model in models.items():
@@ -445,14 +448,15 @@ def main():
         recommendation = (
             f"The orbital modulation model is preferred over the null "
             f"(log10 BF = {max(log10_bf_m2_vs_m0, log10_bf_m1_vs_m0):.2f}). "
-            f"Retain the orbital channel as a primary validation check."
+            f"This supports orbital dependence in this epoch-phase model comparison."
         )
     else:
         recommendation = (
             f"The orbital modulation model is not preferred over the null "
             f"(log10 BF = {max(log10_bf_m2_vs_m0, log10_bf_m1_vs_m0):.2f}). "
-            f"Downgrade the orbital channel from primary validation to "
-            f"exploratory diagnostic in the manuscript."
+            f"The constant nonzero-phase model is favored in this comparison. "
+            f"This does not replace the separate triplet-level mixed-effects test "
+            f"or imply an absence of phase closure."
         )
     
     results = {
@@ -494,7 +498,7 @@ def main():
         "best_model": best_model,
         "recommendation": {
             "orbital_significant": bool(orbital_significant),
-            "action": "retain_as_validation" if orbital_significant else "downgrade_to_exploratory",
+            "action": "orbital_preference_in_this_model" if orbital_significant else "no_orbital_preference_in_this_model",
             "interpretation": recommendation,
         },
     }
@@ -503,7 +507,7 @@ def main():
         json.dump(results, f, indent=2, cls=NpEncoder)
     
     print_status(f"\nResults saved to {OUTPUT_FILE}", "INFO")
-    print_status(f"Recommendation: {'retain as validation' if orbital_significant else 'downgrade to exploratory'}", "INFO")
+    print_status(f"Recommendation: {'orbital preference in this model' if orbital_significant else 'no orbital preference in this model'}", "INFO")
     print_status("STEP 051 V2 COMPLETED", "INFO")
     return True
 

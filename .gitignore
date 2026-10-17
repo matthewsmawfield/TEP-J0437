@@ -67,3 +67,8 @@ credentials.json
 .windsurf/
 
 manuscripts/
+
+.cursor/
+
+# Editor workspace state
+*.code-workspace

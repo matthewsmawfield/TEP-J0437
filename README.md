@@ -1,26 +1,38 @@
 # Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19454620.svg)](https://doi.org/10.5281/zenodo.19454620)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19454619.svg)](https://doi.org/10.5281/zenodo.19454619)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-
 ![TEP-J0437: Pulsar Scintillation](site/public/image.webp)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.4 (Sintra)  
-**First published:** 17 May 2026 · **Last updated:** 30 September 2026
-**Status:** Preprint (Open for Collaboration)  
-**DOI:** [10.5281/zenodo.19454620](https://doi.org/10.5281/zenodo.19454620)  
+**Version:** v0.5 (Sintra)  
+**First published:** 17 May 2026 · **Last updated:** 17 October 2026  
+**Status:** Preprint  
+**DOI:** [10.5281/zenodo.19454619](https://doi.org/10.5281/zenodo.19454619)  
 **Website:** [https://mlsmawfield.com/tep/j0437/](https://mlsmawfield.com/tep/j0437/)  
-**Paper Series:** TEP Series: Paper 16 (Pulsar Scintillation)
+**Paper Series:** TEP Series · Group E (V. Pulsars, Astrophysical Clocks & Distance-Ladder Tests) · Paper 16 (`E16`)
 
 ## Abstract
 
+<!-- Generated from site/components/0_abstract.html; update the manuscript source, then run tools/sync_current_corpus_readmes.py. -->
 
+The scalar-factorizable thin-screen delay model tested here assigns each scattered ray an additive scalar delay, so differential delays around a closed triplet cancel identically: \(\tau_{ij}+\tau_{jk}+\tau_{ki}=0\). The Temporal Equivalence Principle (TEP) instead predicts that proper-time transport is path-dependent in dilute, unscreened environments, producing a non-zero synchronization holonomy. This paper reports the rejection of the scalar-delay null hypothesis in pulsar scintillation using the phase-domain closure statistic \(\psi\), a zero-centered circular observable that separates geometric phase from folded-noise bias.
 
+The primary target is PSR J0437-4715, analyzed with 19,167 scintillation triplets from 1,391 closure-capable Parkes/PPTA epochs; 1,093 epochs form the independent sample. The broader 15-pulsar catalog includes PSR J1603-7202, ten Jiamusi pulsars, and three MeerKAT pulsars. While J0437-4715 provides the primary phase-domain rejection of the \(\psi=0\) null, PSR J1603-7202 contributes complementary bipolar geometric structure from a distinct line of sight at different velocity geometry. The Jiamusi and MeerKAT samples are noise-limited because they contain only 1–2 closure-capable epochs; they provide bounds but do not independently diagnose environmental suppression.
 
+J0437-4715 shows a non-zero Phase Closure signal. Because the Rayleigh and V-test statistics measure circular concentration against uniformity (and are rotation-invariant with respect to the mean angle), circular concentration and zero-mean rejection are reported separately: the unweighted circular mean is \(\psi=1.120\) rad (95% bootstrap CI \([+0.988,+1.254]\) rad excluding zero; circular concentration Rayleigh \(p=1.34\times10^{-44}\)), and the weighted circular mean is \(\bar{\psi}=0.984\pm0.046\) rad with 95% circular-bootstrap confidence interval \([0.737,1.235]\) rad excluding zero (\(>15\sigma\) circular mean offset from zero, corroborated in the delay domain by the MJD-ordered 15–240-epoch block-bootstrap noise-subtracted excess at \(3.8\sigma\)–\(10.8\sigma\), Steps 052 and 060; circular concentration \(\bar{R}=0.308\), Rayleigh \(p=1.39\times10^{-13}\), V-test \(p=1.02\times10^{-5}\) relative to \(\mu_0 = 0\)). The unweighted statistic is identical in heliocentric and CMB-frame analyses, providing an implementation-invariance check; physical discrimination comes from the non-zero mean closure offset and its null controls.
 
-Standard scintillation theory treats each scattered ray as carrying a scalar delay, so differential delays around a closed triplet cancel identically: τ_ij+τ_jk+τ_ki=0. The Temporal Equivalence Principle (TEP) instead predicts that proper-time transport is path-dependent in dilute, unscreened environments, producing a non-zero synchronization holonomy. This paper reports the rejection of the scalar-delay null hypothesis in pulsar scintillation using the phase-domain closure statistic ψ, a zero-centered circular observable that separates geometric phase from folded-noise bias. The primary target is PSR J0437-4715, analyzed with 19,167 scintillation triplets from 1,391 closure-capable Parkes/PPTA epochs; 1,093 epochs form the independent sample. The broader 15-pulsar catalog includes PSR J1603-7202, ten Jiamusi pulsars, and three MeerKAT pulsars. While J0437-4715 provides the primary phase-domain rejection of the ψ=0 null, PSR J1603-7202 contributes complementary bipolar geometric structure from a distinct line of sight at different velocity geometry. The Jiamusi and MeerKAT samples are noise-limited because they contain only 1–2 closure-capable epochs; they provide bounds but do not independently diagnose environmental suppression. J0437-4715 shows a non-zero Phase Closure signal. The unweighted circular mean is ψ=1.120 rad with Rayleigh p=1.34 × 10⁻⁴⁴. The weighted circular mean is ψ̄=0.984 ± 0.046 rad with R̄=0.308 (Rayleigh p=1.39 × 10⁻¹³); the directional V-test shows significant concentration relative to the specified reference direction μ_0 = 0 at p=1.02 × 10⁻⁵, and the 95% bootstrap confidence interval [0.737,1.235] rad excludes zero. The unweighted statistic is identical in heliocentric and CMB-frame analyses, providing an implementation-invariance check; physical discrimination comes from the phase-closure statistic and its null controls. PSR J1603-7202 has a 73.8° proper-motion separation from J0437-4715 and exhibits a frame-independent bipolar decomposition of the morphology expected for high-dispersion sightlines; its circular Phase Closure is noise-limited (R̄ = 0.019, Rayleigh p = 0.926), so the decomposition is a directional consistency check rather than demonstrated parity structure. The raw unsigned delay magnitude for J0437-4715, M_cl=8.100 ± 0.26 ns (epoch-level SEM), operates at the expected folded-normal noise floor E[M_cl]=6.810 ns (see Section 2.1.1). A symmetric 10% trimmed amplitude M_cl,sym10=21.991 ± 0.75 ns (epoch-level bootstrap SEM) serves as a secondary robustness diagnostic; it does not carry primary inferential weight. Multiple independent checks support the phase-domain result. Phase-scramble and pre-alignment controls pass, unweighted ψ is strictly frame-invariant, signed-delay cancellation behaves as expected for a bipolar signal, and rigorous synthetic noise tests yielded zero false positives in 100 synthetic null trials. A signed-delay orbital diagnostic shows phase-locked structure directionally consistent with TEP kinematic coupling, though the hierarchical mixed-effects amplitude is not independently significant (p = 0.372, 2 df), as expected for a partially screened orbital channel. Multi-pulsar scaling, chromaticity, cross-telescope environmental bounds, and orbital structure provide multiscale consistency checks on the TEP framework. The observation rejects the tested scalar-factorizable cross-term null. Within the TEP measurement model, the non-zero Phase Closure is a synchronization-holonomy candidate sourced by the non-exact disformal sector — with an explicit amplitude caveat: the canonical disformal connection's ceiling on this sightline is ≈ 1.5 × 10⁻¹² s, roughly two orders below the implied 1.1 × 10⁻¹⁰ s, so the closure attests the non-exactness of the transport, not a canonical holonomy amplitude (the delay-domain holonomy channel itself is consistent with zero at ≲ 0.9 ns). The tested scalar-factorizable implementations of thin-screen, multi-screen, refractive, chromatic-plasma and Doppler-delay models do not reproduce the observed coherent non-zero Phase Closure. The geometric structure from J1603-7202 is directionally consistent with the Temporal Equivalence Principle's non-integrable time transport. Code Availability: All data and analysis code required to reproduce the results presented in this work, including the full 15-pulsar scintillation catalog compilation, are available in the public repository at https://github.com/matthewsmawfield/TEP-J0437 .
+PSR J1603-7202 has a 73.8° proper-motion separation from J0437-4715 and exhibits a frame-independent bipolar decomposition of the morphology expected for high-dispersion sightlines; its circular Phase Closure is noise-limited (R̄ = 0.019, Rayleigh p = 0.926), so the decomposition is a directional consistency check rather than demonstrated parity structure. Delay-domain unsigned amplitude estimators (\(M_{\rm cl}\)) and their folded-normal Rice noise-floor bounds are documented in Appendix B.
 
+Multiple independent checks support the phase-domain result. Phase-scramble and pre-alignment controls pass, unweighted \(\psi\) is strictly frame-invariant, signed-delay cancellation behaves as expected for a bipolar signal, and rigorous synthetic noise tests yielded zero false positives in 100 synthetic null trials. A signed-delay orbital diagnostic shows phase-locked structure directionally consistent with TEP kinematic coupling, though the hierarchical mixed-effects amplitude is not independently significant (\(p = 0.372\), 2 df), as expected for a partially screened orbital channel. Multi-pulsar scaling, chromaticity, cross-telescope environmental bounds, and orbital structure provide multiscale consistency checks on the TEP framework.
+
+The observation rejects the tested scalar-factorizable cross-term null. Within the TEP measurement model, the non-zero Phase Closure is a synchronization-holonomy candidate sourced by the non-exact disformal sector: on the measured screen-triangle geometry (Step 057), the canonical disformal connection yields \(\approx 1.5\times10^{-12}\) s as a ceiling at order-unity drift inhomogeneity, with the \(B_0=+1\) unit benchmark (\(1.3\%\) of the narrowband-equivalent \(H_{\rm implied}\approx 1.13\times10^{-10}\) s on the median leg, \(5.0\%\) on the 95th-percentile leg) and reaches \(1.14\times10^{-10}\) s (\(100.5\%\) on the median leg; \(B_0^{\rm req}=20.1\) on the \(p_{95}\) leg) at the corpus's GW170817 galactic-profile envelope \(B_0\lesssim 77.7\) (Paper 0, Step 50), while remaining within the delay-domain bound (\(\lesssim 0.46\) ns). The tested scalar-factorizable implementations of thin-screen, multi-screen, refractive, chromatic-plasma and Doppler-delay models do not reproduce the observed coherent non-zero Phase Closure. The geometric structure from J1603-7202 is directionally consistent with the Temporal Equivalence Principle's non-integrable time transport.
+
+Code Availability: All data and analysis code required to reproduce the results presented in this work, including the full 15-pulsar scintillation catalog compilation, are available in the public repository at https://github.com/matthewsmawfield/TEP-J0437.
+
+Keywords: Temporal Equivalence Principle, pulsar scintillation, synchronization holonomy, closure delays, modified gravity, interstellar medium, multi-pulsar analysis, PSR J0437-4715, PSR J1603-7202, arc curvature scaling, scattering strength
+
+Current manuscript source: [0_abstract.html](site/components/0_abstract.html).
 
 ## Evidence Ledger
 
@@ -57,7 +69,7 @@ The pipeline now writes an explicit evidence ledger at `results/step_049_evidenc
 | **Paper 12** | [TEP-JWST](https://github.com/matthewsmawfield/TEP-JWST) | The Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies | [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) |
 | **Paper 13** | [TEP-WB](https://github.com/matthewsmawfield/TEP-WB) | The Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries | [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) |
 | **Paper 15** | [TEP-EFA](https://github.com/matthewsmawfield/TEP-EFA) | Temporal Equivalence Principle: Temporal Shear in the Earth Flyby Anomaly | [10.5281/zenodo.19454862](https://doi.org/10.5281/zenodo.19454862) |
-| **Paper 16** | **TEP-J0437** (This repo) | Synchronization Holonomy in Pulsar Scintillation | [10.5281/zenodo.19454620](https://doi.org/10.5281/zenodo.19454620) |
+| **Paper 16** | **TEP-J0437** (This repo) | Synchronization Holonomy in Pulsar Scintillation | [10.5281/zenodo.19454619](https://doi.org/10.5281/zenodo.19454619) |
 | **Paper 17** | [TEP-LLR](https://github.com/matthewsmawfield/TEP-LLR) | Lunar Laser Ranging and the Nordtvedt Effect | [10.5281/zenodo.19446028](https://doi.org/10.5281/zenodo.19446028) |
 
 ## Directory Structure
@@ -151,9 +163,9 @@ python scripts/steps/step_003_closure_delays_final.py
   title={Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation},
   author={Smawfield, Matthew Lukin},
   year={2026},
-  doi={10.5281/zenodo.19454620},
-  url={https://doi.org/10.5281/zenodo.19454620},
-  note={Preprint v0.4 (Sintra)}
+  doi={10.5281/zenodo.19454619},
+  url={https://doi.org/10.5281/zenodo.19454619},
+  note={Preprint v0.5 (Sintra)}
 }
 ```
 

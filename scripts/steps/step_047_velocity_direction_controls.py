@@ -344,7 +344,8 @@ def control_2_angle_scramble(datasets: Dict[str, Dict[str, Any]]) -> Dict[str, A
         scrambled_rbars.append(circular_mean_and_rbar(scrambled)["rbar"])
     
     scrambled_rbars = np.array(scrambled_rbars)
-    p_value = float(np.mean(scrambled_rbars >= observed["rbar"]))
+    # Add-one (Davison-Hinkley) corrected empirical p: (count+1)/(N+1)
+    p_value = float((np.sum(scrambled_rbars >= observed["rbar"]) + 1) / (n_scrambles + 1))
     frac_below_mean = float(np.mean(scrambled_rbars < observed["rbar"]))
     
     result = {

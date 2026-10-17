@@ -1,13 +1,13 @@
 {
   "check_type": "Replication Readiness",
-  "check_date": "2026-05-17T16:12:14.669352",
+  "check_date": "2026-10-17T18:05:51.359869",
   "data_availability": {
-    "all_data_available": true,
+    "all_data_available": false,
     "files": {
       "raw_data_catalog": {
-        "exists": true,
+        "exists": false,
         "path": "data/raw/scintools_catalog.json",
-        "size_bytes": 244
+        "size_bytes": 0
       },
       "processed_data": {
         "exists": true,
@@ -17,7 +17,7 @@
       "closure_results_summary_j0437": {
         "exists": true,
         "path": "results/step_003_closure_final_summary_j0437.json",
-        "size_bytes": 3929
+        "size_bytes": 4056
       },
       "closure_results_per_epoch_j0437": {
         "exists": true,
@@ -27,7 +27,7 @@
       "closure_results_summary_legacy": {
         "exists": true,
         "path": "results/step_003_closure_final_summary.json",
-        "size_bytes": 4797
+        "size_bytes": 4924
       },
       "closure_results_per_epoch_legacy": {
         "exists": true,
@@ -37,10 +37,12 @@
       "pipeline_documentation": {
         "exists": true,
         "path": "scripts/README.md",
-        "size_bytes": 1638
+        "size_bytes": 1639
       }
     },
-    "missing_files": []
+    "missing_files": [
+      "raw_data_catalog"
+    ]
   },
   "code_reproducibility": {
     "fixed_seeds_implemented": true,
@@ -142,7 +144,7 @@
       "step": 7,
       "action": "Compare results with reference values",
       "expected_time": "15 minutes",
-      "verification": "\u03c8 \u2248 0.984 +/- 0.046 rad; Rayleigh p \u2248 1.3864824207812638e-13; V-test p \u2248 2.0406376031625597e-05; bootstrap CI \u2248 [0.7370524717286076, 1.2348591465016003]"
+      "verification": "\u03c8 \u2248 0.984 +/- 0.046 rad; Rayleigh p \u2248 1.3864824207812638e-13; V-test p \u2248 1.0203188015812799e-05; bootstrap CI \u2248 [0.7370524717286076, 1.2348591465016003]"
     }
   ],
   "expected_results": {
@@ -150,7 +152,7 @@
       "phase_closure_mean_rad": 0.9840495457197855,
       "phase_closure_circ_se_rad": 0.04644694692483575,
       "phase_closure_rayleigh_p": 1.3864824207812638e-13,
-      "phase_closure_v_p": 2.0406376031625597e-05,
+      "phase_closure_v_p": 1.0203188015812799e-05,
       "phase_closure_bootstrap_ci_95": [
         0.7370524717286076,
         1.2348591465016003
@@ -167,6 +169,6 @@
       "all_should_pass": true
     }
   },
-  "ready_for_replication": true,
+  "ready_for_replication": false,
   "estimated_time_hours": 20
 }

@@ -57,7 +57,7 @@
 </p>
 
 <p>
-    The primary detection statistic is the <em>Phase Closure</em> \(\psi\), constructed from the geometric phase of the closure delay triplet. The absolute magnitude \(M_{\rm cl}\) is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation \(\sigma\), the expectation of the absolute value is \(\sigma\sqrt{2/\pi}\). For J0437-4715 the per-epoch noise floor is quantified at \(E[M_{\rm cl}] = 6.810\) ns, which saturates the raw unsigned mean (\(8.100 \pm 0.26\) ns, epoch-level bootstrap SEM), leaving a noise-subtracted excess of \(1.290 \pm 0.11\) ns (paired epoch-level SEM; \(t \approx 12.2\sigma\); \(\approx 7.6\)–\(10.8\sigma\) under 15–240-epoch contiguous-block resampling). The Phase Closure \(\psi\) is an odd-parity metric that cancels to zero in the absence of path-dependent proper time and is immune to this bias:
+    The primary detection statistic is the <em>Phase Closure</em> \(\psi\), constructed directly from the geometric phase of the complex secondary-spectrum cross-term triplet. Unlike unsigned delay-domain amplitude estimators (\(M_{\rm cl}\), Appendix B), which are strictly positive under folded-normal Rice noise, the Phase Closure \(\psi\) is a zero-centered, odd-parity circular observable that cancels identically in the absence of path-dependent synchronization transport:
 </p>
 
 <div class="equation">
@@ -212,14 +212,21 @@
 
 <p>
     The Phase Closure \(\psi\) is therefore the appropriate zero-centered test
-    statistic: it cancels to zero for additive delays regardless of noise level,
-    while any physical mechanism producing correlated delay-Doppler structure
-    (including but not limited to TEP) yields \(\langle \psi \rangle \neq 0\).
-    The Rayleigh Z = 59.21 (p = 1.39 × 10^{-13}) detection of non-zero \(\psi\) reported in this work
-    constitutes a model-independent rejection of the additive-delay null
-    hypothesis. The interpretation of this rejection as synchronization holonomy
-    follows from the TEP framework, but the statistical significance of the
-    rejection itself does not depend on TEP.
+    statistic: it cancels to zero for rank-one scalar-factorizable delays,
+    while any physical mechanism producing non-factorizable delay-Doppler
+    cross-term phase structure yields \(\langle \psi \rangle \neq 0\).
+    Because the Rayleigh statistic \(Z=2n_{\rm eff}\bar{R}^2\) measures circular
+    concentration (rejecting circular uniformity) and is invariant under rotating
+    all angles by a constant offset, rejection of \(\langle\psi\rangle = 0\) is
+    established by the circular mean and its bootstrap confidence interval
+    (\(\bar{\psi}=0.984\pm0.046\) rad, 95% CI \([0.737,1.235]\) rad; unweighted
+    \(\psi=1.120\) rad, 95% CI \([0.990,1.253]\) rad, both excluding zero), while
+    Rayleigh \(Z=59.21\) (\(p=1.39\times10^{-13}\) weighted; \(p=1.34\times10^{-44}\)
+    unweighted) establishes that the phase distribution is sharply concentrated
+    rather than uniform circular noise. The interpretation of this non-zero
+    mean offset as a synchronization-holonomy candidate follows from the TEP
+    measurement model (Appendix A.4–A.5), while the statistical exclusion of
+    \(\langle\psi\rangle=0\) under the tested estimator is model-independent.
 </p>
 
 <h3>2.2 TEP Predictions for Closure Delays</h3>
@@ -352,8 +359,8 @@
 
 <p>
     These kinematic ingredients enter the theoretical prediction through the
-    $u \cdot \nabla\phi$ factor in equations \eqref{eq:disformal_sigma} and
-    \eqref{eq:disformal_3plus1}, not merely through the later Stokes-alignment
+    $u \cdot \nabla\phi$ factor in equations $\eqref{eq:disformal_sigma}$ and
+    $\eqref{eq:disformal_3plus1}$, not merely through the later Stokes-alignment
     algorithm. The predicted holonomy is therefore a function of the pulsar's
     proper motion, the Earth's orbital phase, and the screen kinematics — all of
     which are independently measured. The Stokes-aligned analysis (Section 4.7)
@@ -390,7 +397,7 @@
 </p>
 
 <p>
-    Key distinction: TEP predicts a <em>bipolar</em> signal where the holonomy sign flips with velocity projection. The primary detection statistic is the Phase Closure $\psi$, which represents the physical holonomy phase and is immune to noise-floor bias. The absolute magnitude $M_{\rm cl}$ is susceptible to Rice-distribution noise-floor bias: for zero-mean Gaussian noise with standard deviation $\sigma$, the folded-normal expectation is $E[|X|] = \sigma\sqrt{2/\pi}$. For J0437-4715 the per-epoch noise floor is quantified at $E[M_{\rm cl}] = 6.810$ ns, which saturates the raw unsigned mean ($8.100 \pm 0.26$ ns, epoch-level bootstrap SEM), leaving a noise-subtracted excess of $1.290 \pm 0.11$ ns (paired epoch-level SEM; $t \approx 12.2\sigma$; $\approx 7.6$–$10.8\sigma$ under 15–240-epoch contiguous blocks). The signed mean serves as a physical metric expected near zero due to bipolar cancellation, but the Phase Closure provides the primary test of TEP.
+    Key distinction: TEP predicts a <em>bipolar</em> signal where the holonomy sign flips with velocity projection. The primary detection statistic is the Phase Closure $\psi$, which represents the physical holonomy phase and is immune to folded-magnitude noise-floor bias (Appendix B), corroborated in the delay domain by the paired noise-subtracted closure excess ($1.290 \pm 0.11$ ns, $t \approx 12.2\sigma$; $\approx 7.6$–$10.8\sigma$ under 15–240-epoch contiguous blocks). The signed mean serves as a parity metric expected near zero due to bipolar cancellation across orientations.
 </p>
 
 <h3>2.3 The ISM as an Unscreened Laboratory</h3>

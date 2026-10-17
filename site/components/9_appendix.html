@@ -25,15 +25,16 @@
 <p>
     In the weak-field, static limit the gravitational metric is \(g_{00}=-(1+2\Phi)\),
     \(g_{ij}=(1-2\Phi)\delta_{ij}\) with \(|\Phi|\ll 1\). Assuming the scalar field
-    is time-independent (\(\nabla_0\phi=0\)), the matter-metric components are
+    is time-independent (\(\nabla_0\phi=0\)) at fixed cosmic epoch (\(A_{\rm sp}(t_0)=1\)), the canonical matter-metric components are \(\tilde g_{00}=-A_{\rm loc}^2(u_{\rm grav})(1+2\Phi)\) and \(\tilde g_{ij}=(1-2\Phi)\delta_{ij}+B(\phi)\partial_i\phi\partial_j\phi\) (or in the isotropic-conformal shorthand,
 </p>
 
 <div class="equation">
     \begin{align}
     \tilde{g}_{00} &= -A^2(\phi)\,(1+2\Phi), \\
-    \tilde{g}_{ij} &= A^2(\phi)\,(1-2\Phi)\,\delta_{ij} + B(\phi)\,\partial_i\phi\,\partial_j\phi .
+    \tilde{g}_{ij} &= A^2(\phi)\,(1-2\Phi)\,\delta_{ij} + B(\phi)\,\partial_i\phi\,\partial_j\phi ,
     \end{align}
 </div>
+<p>both sharing the identical leading projected disformal synchronization connection \(\delta\tilde\sigma_i\) below).</p>
 
 <h3>A.2 Residual synchronization connection and projected disformal correction</h3>
 
@@ -123,7 +124,7 @@
     Earth's orbital motion (\(v_{\rm orb} \simeq 30\) km/s), and screen motion
     provide the kinematic ingredients that generate \(u \cdot \nabla\phi \neq 0\).
     These enter the theoretical prediction through the
-    \(u \cdot \nabla\phi\) factor in equation \eqref{eq:app_disformal_sigma},
+    \(u \cdot \nabla\phi\) factor in equation $\eqref{eq:app_disformal_sigma}$,
     not merely through the later Stokes-alignment algorithm.
 </p>
 
@@ -139,7 +140,7 @@
 </div>
 
 <p>
-    Equation&nbsp;\ref{eq:app_holonomy_final} is the central result:
+    Equation&nbsp;$\ref{eq:app_holonomy_final}$ is the central result:
     <em>the residual holonomy vanishes in the conformal-only subclass</em>
     (\(B = 0\)), where the scalar contribution is exact. A non-zero
     \(H_{\rm resid}^{(\tau)}\) at leading order is possible when
@@ -177,15 +178,24 @@
 </p>
 
 <p>
-    For three ordinary complex ray amplitudes \(X_i, X_j, X_k\) at the observer,
-    the pairwise cross-terms are \(Q_{ab} = X_a X_b^*\), and their closure
-    product is \(Q_{ij}Q_{jk}Q_{ki} = |X_i X_j X_k|^2\), whose phase is exactly
-    zero. Equivalently, if each ray carries any scalar accumulated phase
-    \(\Theta_a\), then \((\Theta_i - \Theta_j) + (\Theta_j - \Theta_k) +
-    (\Theta_k - \Theta_i) = 0\). This is precisely the scalar-delay null tested
-    in this paper. The cancellation holds regardless of whether \(\Theta_a\)
-    is path-dependent, because the endpoint phases are state functions of the
-    ray.
+    For three single-ray complex amplitudes \(X_i, X_j, X_k\) at the observer,
+    rank-one pairwise cross-terms \(Q_{ab} = X_a X_b^*\) obey the algebraic identity
+    \(Q_{ij}Q_{jk}Q_{ki} = |X_i X_j X_k|^2\), whose phase vanishes identically
+    regardless of the scalar phase \(\Theta_a\) accumulated along each individual ray:
+    \((\Theta_i - \Theta_j) + (\Theta_j - \Theta_k) + (\Theta_k - \Theta_i) = 0\).
+    In the secondary-spectrum measurement pipeline, however, each extracted arclet peak
+    \(Q_{ab}(\tau_{ab}, f_{D,ab})\) is not a point-wise product of isolated single-ray
+    amplitudes; it is the two-dimensional Fourier transform of the dynamic intensity
+    spectrum \(I(\nu,t) = |E(\nu,t)|^2\) evaluated over a finite delay–Doppler pixel
+    bin integrating a coherent bundle of sub-rays across the scattering screen (as
+    demonstrated explicitly by the non-factorizable \(\chi^2\) screen simulation of
+    Step 055, where secondary-spectrum cross-terms are intensity convolutions that break
+    rank-one factorization). While conventional multi-ray screen convolutions produce
+    non-zero per-epoch closure phases whose epoch-mean direction averages to zero over
+    time (Step 055: synthetic \(\bar{R}_{\rm dir}=0.09\), Rayleigh \(p=0.55\)), a
+    stationary non-exact spacetime synchronization connection \(\Delta\sigma^{(\tau)}\)
+    couples to the finite-baseline interference transport across each screen-pair link
+    \(\Gamma_{ab}\), breaking rank-one factorization with a persistent directional bias.
 </p>
 
 <p>
@@ -280,22 +290,23 @@
 </p>
 
 <p>
-    Amplitude closure of the measurement model is evaluated separately (Step
-    057; Section 5.4.3): the canonical connection integrated over the measured
-    screen-triangle geometry on the admissible \(B \geq 0\) branch yields a
-    loop-holonomy ceiling \(\sim 10^{-12}\) s, two orders below the
-    narrowband-equivalent delay implied by \(\psi = \omega_{\rm eff}H\) at the
-    band centre. The postulate therefore functions as a non-factorizability
-    statement — whether the leg products carry non-exact transport — rather
-    than as a literal delay-amplitude identification; the time-domain holonomy
-    bound is supplied by the delay channel (Section 4.4).
+    Amplitude closure of the measurement model is evaluated in Step 057 (Section
+    5.4.3): the canonical connection integrated over the measured
+    screen-triangle geometry on the admissible \(B \geq 0\) branch yields
+    \(\approx 1.47\times10^{-12}\) s at the \(B_0=+1\) unit benchmark (\(1.3\%\)
+    of \(H_{\rm implied}\approx 1.135\times10^{-10}\) s on the median leg,
+    \(5.0\%\) on the \(p_{95}\) leg) and reaches \(1.141\times10^{-10}\) s
+    (\(100.5\%\) on the median leg; \(B_0^{\rm req}=20.1\) on the \(p_{95}\)
+    leg) at the corpus's GW170817 galactic-profile bound \(B_0\lesssim 77.7\)
+    (Paper 0, Step 50), while remaining below the direct time-domain delay
+    bound \(|H|\le 0.459\) ns (Section 4.4).
 </p>
 
 <h3>A.5 Mapping to the measured closure observables</h3>
 
 <p>
     The measured Phase Closure is the complex cross-term closure product
-    \(\mathcal{B}_{ijk} = Q_{ij} Q_{jk} Q_{ik}^*\) (Equation&nbsp;\ref{eq:closure_product}),
+    \(\mathcal{B}_{ijk} = Q_{ij} Q_{jk} Q_{ik}^*\) (Equation&nbsp;$\ref{eq:closure_product}$),
     where each \(Q_{ab}\) is extracted from the complex secondary spectrum at
     the cross-term peak position. The TEP measurement operator modifies each
     cross-term:
@@ -337,7 +348,7 @@
     Under the additive-delay null
     hypothesis (\(\Delta\sigma^{(\tau)} = 0\)), \(\psi_{ijk} = 0\) up to measurement
     noise. When \(B(\phi)\neq 0\) and the curvature condition
-    (Equation&nbsp;\ref{eq:app_curvature_condition}) is satisfied, the
+    (Equation&nbsp;$\ref{eq:app_curvature_condition}$) is satisfied, the
     nonfactorizable synchronization transport imprints a non-zero mean on
     \(\psi\), providing the circular statistic used as the primary detection
     test in this work. The delay-domain folded magnitude \(M_{\rm cl}\) is a
@@ -345,3 +356,164 @@
     \(\tau_{\text{closure}}\); it is not the real part of a complex
     delay-Doppler vector and is not used to define \(\psi\).
 </p>
+
+<h2>Appendix B. Limitations of Delay-Domain Amplitude Estimators</h2>
+
+<p>
+    While the Phase Closure \(\psi\) is a zero-centered odd-parity circular statistic,
+    unsigned delay-domain amplitude estimators of the form
+    \(M_{\rm cl} = |\langle \tau_{\text{closure}} \rangle_{\text{aligned}}|\) are strictly non-negative
+    and therefore subject to folded-normal (Rice-distribution) noise-floor bias. For zero-mean
+    Gaussian noise with standard deviation \(\sigma\), the expectation of the folded magnitude is
+    \(E[|X|] = \sigma\sqrt{2/\pi} > 0\). Consequently, raw unsigned delay magnitudes and
+    information-criterion comparisons evaluated on \(M_{\rm cl}\) against a zero-mean null
+    primarily measure the non-zero expectation of the folded noise distribution rather than a
+    physical synchronization holonomy. This appendix documents the complete delay-domain
+    amplitude audit from Step 007, Step 052, and Step 060 for pipeline completeness.
+</p>
+
+<h3>B.1 Raw, Noise-Subtracted, and Symmetrically Trimmed Delay Estimators</h3>
+
+<p>
+    In the primary PSR J0437-4715 dataset (1,093 independent epochs), the inverse-variance-weighted
+    epoch-level unsigned closure magnitude is \(M_{\rm cl} = 8.100 \pm 0.26\) ns (epoch-level bootstrap
+    SEM; the internal measurement-noise SEM is \(0.102\) ns). Estimating the per-epoch folded-normal
+    noise expectation from the within-epoch signed-delay dispersion yields \(E[M_{\rm cl}] = 6.810 \pm 0.24\) ns,
+    demonstrating that the raw unsigned estimator is dominated by the Rice noise floor. Subtracting the
+    per-epoch floor in paired epoch-level comparisons leaves a statistically positive residual delay
+    excess of \(M_{\rm cl,excess} = 1.290 \pm 0.11\) ns (\(t \approx 12.2\sigma\) under independent-epoch
+    resampling, and \(3.8\sigma\)–\(10.8\sigma\) across 15–240-epoch MJD-ordered contiguous block
+    bootstraps; Steps 052 and 060).
+</p>
+
+<p>
+    A secondary delay-domain diagnostic, the symmetric 10% trimmed amplitude
+    \(M_{\rm cl,sym10} = 21.991 \pm 0.75\) ns (epoch-level iid bootstrap SEM, rising to \(\pm 2.0\text{--}4.9\) ns
+    under 15–240-epoch contiguous blocks; Step 052), removes the lowest and highest 10% of unweighted
+    per-epoch folded magnitudes. Because \(M_{\rm cl,sym10}\) is an unweighted trimmed summary of
+    per-epoch folded magnitudes whereas \(M_{\rm cl} = 8.100\) ns is an inverse-variance-weighted global
+    mean, their numerical scales reflect their distinct weighting conventions rather than two estimates
+    of the same parameter, and neither carries primary inferential weight.
+</p>
+
+<table class="data-table">
+    <caption>Summary of delay-domain amplitude estimators and folded-normal noise-floor diagnostics for PSR J0437-4715.</caption>
+    <thead>
+        <tr>
+            <th>Delay-Domain Quantity</th>
+            <th>Estimate</th>
+            <th>Nominal Quotient</th>
+            <th>Diagnostic Interpretation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Raw Delay Magnitude \(M_{\rm cl}\)</td>
+            <td>8.100 ± 0.26 ns</td>
+            <td>31.2σ (epoch SEM)</td>
+            <td>Dominated by folded-normal Rice noise floor; not a standalone signal detection</td>
+        </tr>
+        <tr>
+            <td>Rice Noise Floor \(E[M_{\rm cl}]\)</td>
+            <td>6.810 ± 0.24 ns</td>
+            <td>66.9σ (internal)</td>
+            <td>Folded-normal expectation \(\sigma\sqrt{2/\pi}\) from per-epoch signed-delay dispersion</td>
+        </tr>
+        <tr>
+            <td>Paired Noise-Subtracted Excess \(M_{\rm cl,excess}\)</td>
+            <td>1.290 ± 0.11 ns</td>
+            <td>≈12.2σ iid (3.8–10.8σ blocked)</td>
+            <td>Paired epoch-level excess above the Rice floor (Steps 052, 060)</td>
+        </tr>
+        <tr>
+            <td>Symmetric 10% Trimmed Magnitude \(M_{\rm cl,sym10}\)</td>
+            <td>21.991 ± 0.75 ns (±2.0–4.9 ns blocked)</td>
+            <td>≈29σ iid</td>
+            <td>Unweighted trimmed epoch-magnitude diagnostic (Step 052)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>B.2 Step 007 Delay-Amplitude Validation Ledger</h3>
+
+<p>
+    Step 007 applied seven validation checks to the unweighted independent-epoch \(M_{\rm cl}\)
+    summary prior to the adoption of circular Phase Closure \(\psi\) as the primary test statistic:
+</p>
+
+<table class="data-table">
+    <thead>
+        <tr>
+            <th>Test</th>
+            <th>Result</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Effect size: \(M_{\rm cl}\) magnitude</td>
+            <td>\(d = 0.393\) (epoch-mean \(M_{\rm cl}\); small standardized separation in step_007)</td>
+            <td>PASS</td>
+        </tr>
+        <tr>
+            <td>Effect size: signed mean (validation)</td>
+            <td>\(d \approx -10^{-3}\) (negligible; bipolar cancellation in signed channel)</td>
+            <td>PASS</td>
+        </tr>
+        <tr>
+            <td>Robust statistics (\(M_{\rm cl}\) estimators)</td>
+            <td>All estimators positive (mean, median, trimmed; \(M_{\rm cl,trim007} = 7.489\) ns symmetric 10% trimmed mean of \(|\)signed epoch means\(|\))</td>
+            <td>PASS</td>
+        </tr>
+        <tr>
+            <td>Per-epoch Bonferroni threshold check</td>
+            <td>46.2% of epochs (643/1,391) exceed \(5\sigma\) uncorrected and 32.7% (455/1,391) pass Bonferroni correction (\(\alpha = 0.05/1,391\)) on raw \(M_{\rm cl}\), confirming a stationary Rice noise-floor distribution across epochs</td>
+            <td>Stationary Rice floor</td>
+        </tr>
+        <tr>
+            <td>Gaussian noise null test (validation)</td>
+            <td>\(p &lt; 10^{-16}\) (\(z = -18.40\sigma\)): observed unweighted epoch mean \(M_{\rm cl} = 12.008\) ns lies below the uncancelled iid Gaussian expectation of 19.141 ns due to within-epoch bipolar cancellation</td>
+            <td>Consistent with TEP bipolar cancellation</td>
+        </tr>
+        <tr>
+            <td>Cross-validation (5-fold, epoch-mean \(M_{\rm cl}\) holdouts)</td>
+            <td>Step 007: 5/5 folds yield positive fold-mean epoch \(M_{\rm cl}\) (mean across folds 12.02 ns; Table B.3)</td>
+            <td>PASS</td>
+        </tr>
+        <tr>
+            <td>Bayesian model comparison (epoch-level \(M_{\rm cl}\) vs zero)</td>
+            <td>\(\Delta\text{BIC} = 393.9\), \(\log_{10} \text{BF} = 85.5\); reflects the non-zero mean of the folded-normal Rice noise floor rather than TEP signal evidence</td>
+            <td>Rice-floor artifact (non-inferential)</td>
+        </tr>
+        <tr>
+            <td>Half-year raw \(M_{\rm cl}\) partition</td>
+            <td>Jan–Jun (5,176 triplets): \(14.20 \pm 0.69\) ns (20.57σ Rice floor); Jul–Dec (5,714 triplets): \(10.05 \pm 0.56\) ns (17.85σ Rice floor). The ~23.8% seasonal difference tracks the ~29% kinematic modulation of the folded noise floor from Earth's ~30 km/s orbital motion against J0437's ~104 km/s transverse velocity</td>
+            <td>Noise-floor modulation (paired excess positive in both halves: 1.59 ns and 1.14 ns)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>B.3 Five-Fold Holdout Cross-Validation of Epoch-Mean \(M_{\rm cl}\)</h3>
+
+<p>
+    In the Step 007 <code>cross_validation</code> block (<code>results/step_007_independent_statistical_validation_results.json</code>),
+    a 5-fold shuffle split on unweighted epoch-mean \(M_{\rm cl}\) values confirms that the delay-amplitude
+    scale (\(\mathcal{O}(10\text{--}15)\) ns before inverse-variance weighting) is uniform across epoch subsets:
+</p>
+
+<table class="data-table">
+    <thead>
+        <tr>
+            <th>Fold</th>
+            <th>Test mean \(M_{\rm cl}\) (ns)</th>
+            <th>Fold-wise \(t\)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>0</td><td>10.792</td><td>10.40\(\sigma\)</td></tr>
+        <tr><td>1</td><td>15.065</td><td>8.28\(\sigma\)</td></tr>
+        <tr><td>2</td><td>11.078</td><td>10.99\(\sigma\)</td></tr>
+        <tr><td>3</td><td>11.807</td><td>10.32\(\sigma\)</td></tr>
+        <tr><td>4</td><td>11.339</td><td>11.13\(\sigma\)</td></tr>
+    </tbody>
+</table>

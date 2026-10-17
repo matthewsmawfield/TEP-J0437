@@ -1,12 +1,12 @@
 {
-  "version": "0.4",
+  "version": "0.5",
   "codename": "Sintra",
   "paper": "16",
   "series": 16,
   "status": "Preprint",
   "title": "Temporal Equivalence Principle: Synchronization Holonomy in Pulsar Scintillation",
   "description": "Pulsar Scintillation Tests of TEP",
-  "doi": "10.5281/zenodo.19454620",
+  "doi": "10.5281/zenodo.19454619",
   "results": {
     "pulsars_processed": 15,
     "primary_pulsar": "J0437-4715",
@@ -38,6 +38,6 @@
       "J1603-7202"
     ]
   },
-  "date": "2026-09-13",
-  "previous_version": "0.3"
+  "date": "2026-10-17",
+  "previous_version": "0.4"
 }

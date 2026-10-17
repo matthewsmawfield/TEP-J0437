@@ -237,7 +237,7 @@ def fit_model_m2(psi, X):
         kappa = params[-1]
         if kappa <= 0:
             return 1e10
-        mu = X @ beta
+        mu = np.einsum("ij,j->i", X, beta, optimize=False)
         return -von_mises_log_likelihood(psi, mu, kappa)
     
     # Initialize with circular mean and zero coefficients
@@ -264,14 +264,14 @@ def fit_model_m2(psi, X):
         beta = result.x[:-1]
         kappa = result.x[-1]
         ll = -result.fun
-        bic = -2 * ll + p * np.log(n)
+        bic = -2 * ll + (p + 1) * np.log(n)  # beta coefficients plus fitted kappa
         
         return {
             "beta": beta.tolist(),
             "kappa": float(kappa),
             "log_likelihood": float(ll),
             "bic": float(bic),
-            "n_params": p,
+            "n_params": p + 1,
             "converged": True,
         }
     else:
@@ -279,8 +279,8 @@ def fit_model_m2(psi, X):
             "beta": beta_init.tolist(),
             "kappa": float(kappa_init),
             "log_likelihood": float(-neg_log_likelihood(x0)),
-            "bic": float(-2 * (-neg_log_likelihood(x0)) + p * np.log(n)),
-            "n_params": p,
+            "bic": float(-2 * (-neg_log_likelihood(x0)) + (p + 1) * np.log(n)),
+            "n_params": p + 1,
             "converged": False,
             "error": str(result.message),
         }
@@ -304,7 +304,7 @@ def fit_model_m3(psi, X):
 
 
 def compute_bayes_factor(bic1, bic2):
-    """Approximate log_10(BF) from ΔBIC."""
+    """Approximate log10 evidence(model 1) / evidence(model 2) from BIC."""
     delta_bic = bic1 - bic2
     log10_bf = -0.5 * delta_bic / np.log(10)
     return float(log10_bf)
@@ -331,7 +331,7 @@ def test_coefficient_significance(psi, X, fit_result):
             kappa_r = params[-1]
             if kappa_r <= 0:
                 return 1e10
-            mu_r = X_restricted @ beta_r
+            mu_r = np.einsum("ij,j->i", X_restricted, beta_r, optimize=False)
             return -von_mises_log_likelihood(psi, mu_r, kappa_r)
         
         beta_r_init = np.delete(beta_full, j)
@@ -375,7 +375,7 @@ def main():
     psi, X, standardization = prepare_design_matrix(epochs)
     n = len(psi)
     
-    print_status(f"Fitting {n} epochs with {X.shape[1]} parameters", "INFO")
+    print_status(f"Fitting {n} epochs with {X.shape[1]} mean coefficients plus concentration", "INFO")
     
     # Fit all models
     m0 = fit_model_m0(psi)
@@ -400,6 +400,7 @@ def main():
         bayes_factors[name] = {
             "log10_bf_vs_best": float(log10_bf),
             "interpretation": (
+                "Reference (best BIC)" if name == best_model else
                 "Strongly preferred" if log10_bf > 2 else
                 "Moderately preferred" if log10_bf > 1 else
                 "Weakly preferred" if log10_bf > 0.5 else
@@ -408,10 +409,10 @@ def main():
         }
     
     # Key comparison: M1 (TEP constant) vs M2 (ISM systematic)
-    log10_bf_tep_vs_ism = compute_bayes_factor(m2["bic"], m1["bic"])
+    log10_bf_tep_vs_ism = compute_bayes_factor(m1["bic"], m2["bic"])
     
     # TEP interpretation: M1 should be preferred over M2, and M3 should not improve over M1
-    log10_bf_m3_vs_m1 = compute_bayes_factor(m1["bic"], m3["bic"])
+    log10_bf_m3_vs_m1 = compute_bayes_factor(m3["bic"], m1["bic"])
     
     print_status(f"Model comparison results:", "INFO")
     for name, model in models.items():
@@ -420,6 +421,10 @@ def main():
     print_status(f"  log10 BF (TEP vs ISM systematic): {log10_bf_tep_vs_ism:.2f}", "INFO")
     print_status(f"  log10 BF (M3 vs M1): {log10_bf_m3_vs_m1:.2f}", "INFO")
     
+    # Observed likelihood curvature in mu, not the concentration kappa.
+    mu_information = float(m1["kappa"] * np.sum(np.cos(psi - m1["mu"])))
+    mu_se = float(1.0 / np.sqrt(mu_information)) if mu_information > 0 else None
+
     # Build output
     results = {
         "n_epochs": n,
@@ -458,15 +463,17 @@ def main():
         "conclusion": {
             "tep_preferred": bool(log10_bf_tep_vs_ism > 1 and log10_bf_m3_vs_m1 < 0.5),
             "tep_mu_rad": float(m1["mu"]),
-            "tep_mu_se_rad": float(m1["kappa"]),
+            "tep_mu_se_rad": mu_se,
+            "tep_mu_se_method": "Observed-curvature approximation under the independent-epoch von Mises model",
             "interpretation": (
-                f"The constant-ψ TEP model (M1, μ = {m1['mu']:.4f} rad) is preferred over "
-                f"any linear combination of observables (M2) by log10(BF) = {log10_bf_tep_vs_ism:.2f}. "
-                f"Adding ISM systematic terms to TEP (M3) does not improve the fit "
-                f"(log10(BF) = {log10_bf_m3_vs_m1:.2f}). This parametric exclusion supports "
-                f"the interpretation that the observed non-zero Phase Closure arises from "
-                f"a non-additive time-transport mechanism rather than standard ISM or "
-                f"instrumental systematics."
+                f"The constant-phase model M1 has BIC {m1['bic']:.3f}; "
+                f"the tested linear-covariate model M2 has BIC {m2['bic']:.3f}. "
+                f"The BIC approximation gives log10 BF(M1/M2) = {log10_bf_tep_vs_ism:.3f} "
+                f"and log10 BF(M3/M1) = {log10_bf_m3_vs_m1:.3f}. "
+                "Positive log10 BF favors the numerator model. M2 and M3 "
+                "have the same fitted family because both include an intercept. "
+                "This compares the specified phase models, not every physical "
+                "ISM mechanism or a unique microscopic TEP prediction."
             ),
         },
     }

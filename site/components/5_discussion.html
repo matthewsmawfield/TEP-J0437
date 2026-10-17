@@ -26,7 +26,7 @@
 </p>
 
 <p>
-    Epoch-level cross-validation uses two complementary constructions on the same J0437 epoch ledger. Shuffle-split five-fold cross-validation on independent epoch-mean \(M_{\rm cl}\) magnitudes shows every holdout fold at a positive fold-mean \(M_{\rm cl}\) with large fold-wise t-scores, so the amplitude validation is not driven by a small epoch cluster. Separately, cross-validation on the epoch ψ stack confirms that 5/5 holdouts reject circular uniformity at Rayleigh p &lt; 0.05 and keep the same open half-plane as the global mean, while full-sample circular inference remains anchored to the Rayleigh/V/bootstrap pipeline (Section 4.1). The Gaussian magnitude null rejects the simple iid Gaussian model for the tested epoch-mean \(M_{\rm cl}\) aggregation (\(p < 10^{-16}\)): the observed mean \(M_{\rm cl}\) = 12.008 ns lies below the noise-null expectation of 19.141 ns, consistent with the bipolar cancellation predicted by TEP. The per-epoch folded-normal noise floor \(E[M_{\rm cl}]\) = 6.810 ns quantitatively explains the raw epoch-level magnitude proxy \(M_{\rm cl}\) = 8.100 ns, yielding a small noise-subtracted excess for that estimator. The central detection claim is anchored to the frame-invariant circular statistic ψ, while amplitude inference is supported by robust \(M_{\rm cl}\)-based estimators (notably \(M_{\rm cl,sym10}\)) with explicit bias control.
+    Epoch-level cross-validation uses two complementary constructions on the same J0437 epoch ledger. Shuffle-split five-fold cross-validation on independent epoch-mean \(M_{\rm cl}\) magnitudes shows every holdout fold at a positive fold-mean \(M_{\rm cl}\) with large fold-wise t-scores, so the amplitude validation is not driven by a small epoch cluster. Separately, cross-validation on the epoch ψ stack confirms that 5/5 holdouts reject circular uniformity at Rayleigh p &lt; 0.05 and keep the same open half-plane as the global mean, while full-sample circular inference remains anchored to the Rayleigh/V/bootstrap pipeline (Section 4.1). The Gaussian magnitude null rejects the simple iid Gaussian model for the tested epoch-mean \(M_{\rm cl}\) aggregation (\(p &lt; 10^{-16}\)): the observed mean \(M_{\rm cl}\) = 12.008 ns lies below the noise-null expectation of 19.141 ns, consistent with the bipolar cancellation predicted by TEP. The per-epoch folded-normal noise floor \(E[M_{\rm cl}]\) = 6.810 ns quantitatively explains the raw epoch-level magnitude proxy \(M_{\rm cl}\) = 8.100 ns, yielding a small noise-subtracted excess for that estimator. The central detection claim is anchored to the frame-invariant circular statistic ψ, while amplitude inference is supported by robust \(M_{\rm cl}\)-based estimators (notably \(M_{\rm cl,sym10}\)) with explicit bias control.
 </p>
 
 <p>
@@ -59,9 +59,9 @@
     \(\psi = \kappa_\psi \,\mathcal{I}_B(C)\). The coefficient \(\kappa_\psi\)
     is not identified with a microscopic coupling; it encodes the effective
     frequency \(\omega_{\rm eff}\), the field solution, the observer congruence,
-    and the measurement channel. This is consistent with the Paper 0 (v0.15) PPN mapping:
+    and the measurement channel. This is consistent with the Paper 0 (v0.16) PPN mapping:
     near massive bodies, the suppression of Temporal Shear reduces the effective
-    coupling, cleanly preserving Cassini bounds (\(|\gamma - 1| < 2.3 \times 10^{-5}\)),
+    coupling, cleanly preserving Cassini bounds (\(|\gamma - 1| &lt; 2.3 \times 10^{-5}\)),
     while in the diffuse ISM the field gradient remains active.
 </p>
 
@@ -116,7 +116,7 @@
 <p>
     The TEP bi-metric framework relates the observed holonomy to fundamental
     coupling parameters. The metric structure (introduced in Section 1, Equation
-    \ref{eq:tep_metric}) is:
+    $\ref{eq:tep_metric}$) is:
 </p>
 
 <div class="equation">
@@ -708,39 +708,43 @@
     legs — median \(|\tau_{\rm leg}| = 0.018\) \(\mu\)s mapping to angular
     offsets \(\theta = (2c\tau/D_{\rm eff})^{1/2} \approx 3.1\times10^{-9}\) rad,
     i.e. screen-plane separations \(\approx 0.06\) AU at \(D_s \approx 94\) pc —
-    gives, on the admissible \(B \geq 0\) branch with the Paper-28 normalization
-    \(B_0 = +1\), the galactic field depth \(u \approx 6\times10^{-7}\), the
-    galactic gradient, and the drift partition \(u\cdot\nabla\phi \sim H_0\) on
-    matter-hosting field values, a loop-holonomy ceiling of
-    \(\approx 1.5\times10^{-12}\) s at order-unity drift inhomogeneity — roughly
-    two orders below the implied \(1.1\times10^{-10}\) s. At the calibrated
-    magnitude \(|B_0| \approx 3.2\times10^{-3}\) the ceiling is
-    \(\approx 4.7\times10^{-15}\) s, and under the ambient-referenced field
-    convention selected by the terrestrial-loop consistency argument of Paper 0
-    the ceiling falls by a further \(\sim 18\) orders. Closing the gap would
-    require a drift inhomogeneity \(\sim 77\times\) the Hubble scale across a
-    \(0.1\) AU loop — inconsistent with the landscape smoothness implied by the
-    redshift-scatter bound — or a coupling \(B_0 \sim 77\), two orders beyond
-    either admissible normalization. The exactness controls verify the
-    bookkeeping: with a spatially uniform drift field the loop integral returns
-    numerical zero, and traversal reversal flips the sign exactly.
+    gives, on the admissible \(B \geq 0\) branch with the galactic field depth
+    \(u \approx 6\times10^{-7}\), the galactic gradient, and the drift partition
+    \(u\cdot\nabla\phi \sim H_0\) on matter-hosting field values, a
+    unit-benchmark (\(B_0 = +1\)) loop-holonomy ceiling of
+    \(\approx 1.47\times10^{-12}\) s at order-unity drift inhomogeneity on the
+    median leg (\(\approx 5.65\times10^{-12}\) s on the 95th-percentile leg that
+    dominates SNR\(^2\)-weighted triplets). Matching the narrowband-equivalent
+    \(H_{\rm implied} \approx 1.135\times10^{-10}\) s requires
+    \(B_0^{\rm req} = 77.3\) on the median leg and \(B_0^{\rm req} = 20.1\) on
+    the \(p_{95}\) leg — both inside the corpus's GW170817 galactic-profile
+    bound \(B_0 \lesssim 77.7\) (Paper 0, Step 50; at \(B_0 = 77.7\) the
+    median-leg ceiling is \(1.141\times10^{-10}\) s, \(100.5\%\) of
+    \(H_{\rm implied}\), and the \(p_{95}\)-leg ceiling is
+    \(4.39\times10^{-10}\) s, still below the direct time-domain delay bound
+    \(|H| \le 4.59\times10^{-10}\) s). At the smaller Paper-0 calibrated
+    reference \(|B_0| \approx 3.2\times10^{-3}\) the ceiling is
+    \(\approx 4.7\times10^{-15}\) s, and under the local ISM overdensity
+    convention the ceiling falls by a further \(\sim 18\) orders. The exactness
+    controls verify the bookkeeping: with a spatially uniform drift field the
+    loop integral returns numerical zero, and traversal reversal flips the sign
+    exactly.
 </p>
 
 <p>
-    The narrowband-equivalent conversion therefore over-shoots the canonical
-    transport amplitude on this geometry at every stated convention — the same
-    conclusion reached independently by the parity measurement of Section
-    5.4.2, where the phase is orientation-even and shows no Stokes-flux
+    The canonical disformal connection therefore spans from \(1.3\%\) of
+    \(H_{\rm implied}\) at the \(B_0=+1\) unit benchmark to \(100.5\%\)
+    (median leg) and \(387\%\) (\(p_{95}\) leg) at the GW170817 galactic-profile
+    envelope \(B_0 = 77.7\), while the parity measurement of Section 5.4.2 shows
+    that the observed phase is orientation-even and shows no Stokes-flux
     scaling. The coherent phase is a loop-ordered non-factorizability signature
     of the ordered leg product: it attests the non-exactness of the transport
-    that produced the measured cross-terms, not the amplitude of a delay-domain
-    circulation. The direct holonomy bound on this sightline is carried by the
-    delay channel, whose orientation-aligned amplitude is consistent with zero
-    (\(0.000 \pm 0.459\) ns, 95% interval \(\lesssim 0.9\) ns) and accommodates
-    the admissible-branch ceiling with margin. The phase-to-delay conversion is
-    retained only as the narrowband-equivalent figure of merit, and the subband
-    derivative \(d\psi/d\nu\) remains the decisive discriminant for any future
-    claim of a literal transport-delay origin.
+    that produced the measured cross-terms, with its narrowband-equivalent
+    amplitude accommodated within the GW170817-permitted galactic-profile
+    disformal envelope and bounded from above by the direct time-domain delay
+    channel (\(0.000 \pm 0.459\) ns, 95% interval \(\lesssim 0.9\) ns). The
+    subband derivative \(d\psi/d\nu\) (Step 061) provides the companion
+    chromaticity test.
 </p>
 
 <p>
@@ -864,7 +868,7 @@
     Stokes-aligned phase closure, and the current control suite removes several
     simple alternatives: branch-cut artifacts, heliocentric velocity-sign
     artifacts, simple epoch-complexity selection, and raw \(M_{\rm cl}\) noise-floor
-    misinterpretation. A residual local-ISM explanation is ruled out by
+    misinterpretation. The specific localized anisotropic-filament and scalar phase-screen explanations tested here are ruled out by
     dedicated simulation (step_008, Test 8): a Gaussian filament oriented
     along the J0437 proper motion vector with aspect ratios up to 50:1 and
     turbulence strengths up to 5× the background produces identically zero
@@ -872,7 +876,7 @@
     12,800 parameter combinations, because the scalar phase-screen closure
     identity \(\tau_{ij} + \tau_{jk} + \tau_{ki} \equiv 0\) is a geometric
     invariant. J1603's bipolar geometry and the orbital-phase structure are
-    therefore strong exclusions of generic alternatives, not merely
+    therefore strong exclusions of the tested generic alternatives, not merely
     supportive validations.
 </p>
 
@@ -965,7 +969,8 @@
     the signed delay channel, while Cohen’s \(d \approx 0.39\) on epoch-mean
     \(M_{\rm cl}\) is a moderate standardized separation for that magnitude channel—not
     the primary circular ψ detection. For ψ itself, step_007’s
-    <code>phase_closure_epoch_cv</code> block (Section 4.5.3.2) provides a
+    <code>phase_closure_epoch_cv</code> block (Section 4.5.1; with the delay-amplitude
+    CV documented in Appendix B.3) provides a
     complementary epoch-holdout audit (Rayleigh on each fold plus half-plane
     consistency); the headline circular significance and bootstrap CI remain in
     step_003 (Section 4.1).
@@ -997,14 +1002,9 @@
     criteria are also identified that would genuinely falsify the TEP interpretation:
 </p>
 <ul>
-    <li><em>Distance inversion:</em> If a distant pulsar in a dilute environment
-        shows Phase Closure significantly stronger than J0437, the environmental dependence
-        model is challenged.</li>
-    <li><em>Velocity uncorrelation:</em> If a pulsar with near-zero transverse velocity
-        shows Phase Closure comparable to J0437, the kinematic coupling prediction fails.</li>
-    <li><em>Null nearby pulsar:</em> If a nearby pulsar in ISM conditions similar to
-        J0437 yields \(\psi\) consistent with zero at comparable statistical power, the
-        detection would be undermined.</li>
+    <li><em>Distance inversion:</em> If an ensemble of distant pulsars in high-density/screened environments systematically shows stronger Phase Closure than nearby pulsars in dilute environments at matched scattering-screen geometry, the environmental dependence model is challenged.</li>
+    <li><em>Velocity uncorrelation:</em> Across pulsars with resolved multi-path scintillation screens, if Phase Closure shows no correlation with the total effective screen-transverse velocity $\mathbf{v}_{\rm eff}$ (combining pulsar proper motion, Earth orbital motion, and interstellar screen velocity), the kinematic coupling prediction fails.</li>
+    <li><em>Null nearby ensemble at matched screen geometry:</em> Because closed-loop holonomy requires both an unscreened disformal gradient and a non-degenerate multi-path scattering triangle on the sky (an isotropic or single-1D screen has zero enclosed loop area $\Sigma_{\rm loop}\to0$ by Stokes' theorem), a single nearby pulsar with unresolved screen geometry can be geometrically null; however, if nearby pulsars with confirmed multi-path/two-screen scintillation arcs in ISM conditions comparable to J0437 systematically yield \(\psi\) consistent with zero at comparable statistical power, the detection would be undermined.</li>
     <li><em>Independent replication failure:</em> If an independent group applying
         the same pipeline to the same data cannot reproduce \(\psi > 5\sigma\), the
         detection is not robust.</li>
@@ -1019,12 +1019,12 @@
 <p>This observation has direct implications for fundamental physics:</p>
 
 <p>
-    Einstein's simultaneity: The observed closure delays demonstrate that
-    Einstein's assumption of globally integrable simultaneity breaks down at the
-    sub-nanosecond level in dilute environments where Temporal Shear is
-    unsuppressed. The speed of light remains locally invariant (as required by
-    Lorentz invariance), but global synchronization is path-dependent, exactly
-    as TEP predicts.
+    Einstein's simultaneity: Within the TEP interpretation, the observed
+    phase-closure signal is consistent with a breakdown of globally integrable
+    simultaneity at the sub-nanosecond level in dilute environments where
+    Temporal Shear is unsuppressed. The speed of light remains locally invariant
+    (as required by Lorentz invariance), while global synchronization transport
+    is path-dependent, matching the TEP prediction.
 </p>
 
 <p>
@@ -1147,8 +1147,8 @@
 <p>
     None of the tested instrumental, scalar-factorizable multi-screen, filament or selection-bias models reproduces the observed coherent Phase Closure — an orientation-independent (monopolar) component of the loop-ordered product (Step 056). The frame invariance, velocity-dependent bipolar structure, and
     D/v-dependent phase dispersion all constrain <em>generic</em>
-    alternatives. A dedicated simulation (step_008, Test 8) rules out a
-    local-ISM explanation: a Gaussian filament oriented along the J0437 proper
+    alternatives. A dedicated simulation (step_008, Test 8) rules out the specific localized
+    Gaussian-filament and scalar phase-screen local-ISM explanation tested here: a Gaussian filament oriented along the J0437 proper
     motion vector produces identically zero closure magnitude across all tested
     parameter combinations, because the scalar phase-screen closure identity is a
     geometric invariant.
@@ -1216,14 +1216,9 @@
 </p>
 
 <ul>
-    <li><em>Distance inversion:</em> If a distant pulsar in a dilute environment
-        shows Phase Closure significantly stronger than J0437, the environmental dependence
-        model is challenged.</li>
-    <li><em>Velocity uncorrelation:</em> If a pulsar with near-zero transverse velocity
-        shows Phase Closure comparable to J0437, the kinematic coupling prediction fails.</li>
-    <li><em>Null nearby pulsar:</em> If a nearby pulsar in ISM conditions similar to
-        J0437 yields ψ consistent with zero at comparable statistical power, the
-        detection would be undermined.</li>
+    <li><em>Distance inversion:</em> If an ensemble of distant pulsars in high-density/screened environments systematically shows stronger Phase Closure than nearby pulsars in dilute environments at matched scattering-screen geometry, the environmental dependence model is challenged.</li>
+    <li><em>Velocity uncorrelation:</em> Across pulsars with resolved multi-path scintillation screens, if Phase Closure shows no correlation with the total effective screen-transverse velocity $\mathbf{v}_{\rm eff}$ (combining pulsar proper motion, Earth orbital motion, and interstellar screen velocity), the kinematic coupling prediction fails.</li>
+    <li><em>Null nearby ensemble at matched screen geometry:</em> If nearby pulsars with confirmed non-degenerate multi-path/two-screen scintillation geometry in ISM conditions comparable to J0437 systematically yield ψ consistent with zero at comparable statistical power, the detection would be undermined.</li>
     <li><em>Independent replication failure:</em> If an independent group applying
         the same pipeline to the same data cannot reproduce ψ > 5σ, the
         detection is not robust.</li>
