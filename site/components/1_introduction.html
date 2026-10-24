@@ -54,7 +54,7 @@
     The TEP framework is a two-metric scalar-tensor theory defined on a single
     spacetime manifold endowed with two metrics: a gravitational metric
     \(g_{\mu\nu}\) (governing gravitational interactions) and a canonical causal matter
-    metric \(\tilde{g}_{\mu\nu} = -A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu + A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu} + B(\phi)\Pi_\mu^\alpha\Pi_\nu^\beta\nabla_\alpha\phi\nabla_\beta\phi\) (\(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\), \(\Pi_{\mu\nu}=g_{\mu\nu}+U_\mu U_\nu\); Paper 0, §2.2, Step 80) to which all non-gravitational fields and
+    metric \(\tilde{g}_{\mu\nu} = -A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu + A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu} + B(\phi)\bigl(\Pi_\mu^\alpha\Pi_\nu^\beta\nabla_\alpha\phi\nabla_\beta\phi - 2(U\cdot\nabla\phi)U_{(\mu}\Pi_{\nu)}{}^\alpha\nabla_\alpha\phi\bigr)\) (\(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\), \(\Pi_{\mu\nu}=g_{\mu\nu}+U_\mu U_\nu\); Paper 0, §2.2, Step 80) to which all non-gravitational fields and
     clocks universally couple. In conformal–disformal shorthand, the metrics are related by the
     map:
 </p>
@@ -175,7 +175,8 @@
     Signed mean vs. Phase Closure \(\psi\): The signed mean (average of
     signed delays) serves as a physical metric and is expected to be near
     zero due to bipolar partial cancellation. The Phase Closure \(\psi\) is the
-    primary detection statistic representing the physical holonomy phase.
+    primary zero-centered circular detection statistic (measuring the loop
+    holonomy phase within the TEP measurement model).
 </p>
 
 <p>
@@ -197,7 +198,7 @@
     <li><strong>Primary Phase Falsification:</strong> PSR J0437-4715 rejects the additive scalar path-delay null through a non-zero Phase Closure \(\psi\) (\(\bar{\psi}=0.984 \pm 0.046\) rad, 95% circular-bootstrap CI \([0.737,1.235]\) rad excluding zero; unweighted \(\psi=1.120\) rad, 95% CI \([0.990,1.253]\) rad excluding zero; circular concentration confirmed by Rayleigh \(p=1.39\times10^{-13}\) weighted and \(1.34\times10^{-44}\) unweighted, V-test \(p=1.02\times10^{-5}\)).</li>
     <li><strong>Geometric Corroboration:</strong> PSR J1603-7202 exhibits a frame-independent bipolar decomposition and elevated circular variance directionally consistent with the high-dispersion pattern; its Phase Closure is noise-limited, so the decomposition is a consistency check rather than demonstrated parity structure.</li>
     <li><strong>Environmental Bounds:</strong> Jiamusi and MeerKAT pulsars are noise-limited, consistent with TEP's predicted environmental suppression on distant, noise-limited sightlines where Temporal Shear is suppressed.</li>
-    <li><strong>Orbital Kinematics:</strong> A hierarchical mixed-effects model reveals triplet-level orbital structure (amplitude 1.11 ± 0.79 ns, LR p = 0.372) consistent with partial screening of orbital-scale shear by the white dwarf companion.</li>
+    <li><strong>Orbital Kinematics:</strong> While the naive signed-delay orbital mean is attenuated by within-epoch bipolar cancellation (amplitude \(1.11 \pm 0.79\) ns, LR \(p = 0.372\)), the identical REML mixed-effects model resolves significant orbital modulation on the unsigned magnitude \(M_{\rm cl}\) (\(A = 5.71 \pm 1.10\) ns, LR \(p = 1.70 \times 10^{-6}\); \(6.42 \pm 1.19\) ns, \(p = 5.86 \times 10^{-7}\) on the 1,093 independent epochs) and on the paired noise-subtracted excess \(M_{\rm cl} - E[M_{\rm cl}]\) (\(A = 1.14 \pm 0.45\) ns, \(\sigma_\alpha = 10.60\) ns, LR \(p = 0.0425\), Step 046b), corroborated in the phase domain by the Thiele–Innes binary reflex velocity projection onto the \(128^\circ\) scattering axis (\(2\Delta\ln L = 5.70\), 1 df \(p = 0.0170\), \(\Delta\mathrm{AIC} = -3.70\), Step 051).</li>
 </ul>
 
 <p>

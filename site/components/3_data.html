@@ -210,7 +210,7 @@
 
 <h3>3.2 Data Processing Pipeline</h3>
 
-<p>Dynamic spectra are processed through a standardized, automated pipeline comprising 49 sequential steps organized into validation stages:</p>
+<p>Dynamic spectra are processed through a standardized, automated pipeline comprising 60 sequential steps (Steps 000–061) organized into validation stages:</p>
 
 <table class="data-table">
     <thead>
@@ -238,8 +238,8 @@
         </tr>
         <tr>
             <td>Advanced Analysis</td>
-            <td>015-048</td>
-            <td>Extended validation including blind analysis, control pulsar analysis, orientation specification, systematic Monte Carlo, replication readiness, epoch-level significance, multi-pulsar scaling, bootstrap resampling, selection bias analysis, SNR correlation, alternative selection criteria, Bayesian hierarchical modeling, TEP scaling analysis, theoretical predictions, eta extraction, Parkes analysis, synthetic injection, arclet-based eta extraction, Jiamusi analysis, multi-pulsar scaling, temporal evolution, higher-order closures, and chromatic testing.</td>
+            <td>015-061</td>
+            <td>Extended validation including blind analysis, control pulsar analysis, orientation specification, systematic Monte Carlo, replication readiness, epoch-level significance, multi-pulsar scaling, bootstrap resampling, selection bias analysis, SNR correlation, alternative selection criteria, Bayesian hierarchical modeling, TEP scaling analysis, theoretical predictions, eta extraction, Parkes analysis, synthetic injection, arclet-based eta extraction, Jiamusi analysis, multi-pulsar scaling, temporal evolution, higher-order closures, binary orbital REML/Thiele–Innes modulation, 10-model forward thin-screen nulls, 3-leg loop amplification, and 4.45× wideband chromaticity testing.</td>
         </tr>
     </tbody>
 </table>
@@ -345,7 +345,7 @@
 
 <p>Global Stokes-aligned Phase Closure: The primary TEP detection statistic is the Phase Closure \(\psi\), computed with circular statistics on the 1,093-epoch sample. The circular mean is \(\bar{\psi} = 0.984 \pm 0.046 \text{ rad}\) (circular SE, \(\bar{R}\) = 0.308, Rayleigh p = 1.39 × 10⁻¹³, V-test p = 1.02 × 10⁻⁵). An epoch-level circular bootstrap (10,000 iterations) yields a 95% CI of [+0.737, +1.235] rad, which excludes zero. The raw absolute magnitude is \(M_{\rm cl} = 8.100 \pm 0.26 \text{ ns}\) (epoch-level bootstrap SEM; the internal inverse-variance SEM \(1/\sqrt{\sum_i w_i} = 0.102\) ns counts triplet measurement noise only and understates the epoch-to-epoch scatter), but a per-epoch folded-normal noise floor \(E[M_{\rm cl}]\) = 6.810 ns quantitatively saturates this value, leaving a noise-subtracted excess of \(1.290 \pm 0.11\) ns (paired epoch-level SEM of the mean-minus-floor difference, \(t \approx 12.2\sigma\); \(\approx 7.6\)–\(10.8\sigma\) under 15–240-epoch contiguous-block resampling, step_060 audit). The Phase Closure \(\psi\) is therefore the primary TEP validation; \(M_{\rm cl}\) remains a noise-floor-dominated validation in the current dataset.</p>
 
-<p>The signed mean ($-0.184 \pm 0.157 \text{ ns}$ epoch-level, $-1.17\sigma$)—computed on Stokes-aligned closure delays—shows minimal bipolar bias, consistent with nearly isotropic sampling of the scattering geometry. This near-zero value indicates successful alignment of the bipolar signal (where positive and negative contributions cancel), confirming the expected parity behavior. The Phase Closure \(\psi\) measures the physical holonomy phase and is the primary detection metric.</p>
+<p>The signed mean ($-0.184 \pm 0.157 \text{ ns}$ epoch-level, $-1.17\sigma$)—computed on Stokes-aligned closure delays—shows minimal bipolar bias, consistent with nearly isotropic sampling of the scattering geometry. This near-zero value indicates successful alignment of the bipolar signal (where positive and negative contributions cancel), confirming the expected parity behavior. The Phase Closure \(\psi\) is the primary zero-centered circular detection statistic (measuring the loop holonomy phase within the TEP measurement model).</p>
 
 <p>The total standard deviation (\(\sigma_{\text{total}} \approx 16 \text{ ns}\) for raw \(M_{\rm cl}\)) reflects measurement uncertainty, ISM variability, and the heavy-tailed noise distribution. The frequentist MAD-based folded-normal subtraction reported above (\(1.290 \pm 0.11\) ns epoch-level, \(t \approx 12.2\sigma\)) and the hierarchical Bayesian posterior for triplet-level holonomy amplitude \(H\) (\(0.000 \pm 0.459\) ns; 95% CI [0.000, 0.899] ns) answer different questions and must not be conflated: the former subtracts a per-epoch Rice floor from the inverse-variance-weighted epoch mean, whereas the latter marginalizes triplet delays under a generative \(\text{Normal}(s_i H, \sigma_i)\) model with inverse-variance weights and a HalfNormal prior, testing whether latent \(H\) exceeds zero after probabilistic weighting. Because the orientation sign is included in the model, \(H\) estimates the orientation-aligned amplitude. The posterior near zero shows that this particular signed Gaussian model does not recover a coherent delay-domain amplitude. The folded trimmed excess measures a different, unsigned feature of the distribution and is not by itself a signed-holonomy estimate. Phase Closure \(\psi\) remains the primary detection statistic.</p>
 

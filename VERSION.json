@@ -1,5 +1,5 @@
 {
-  "version": "0.5",
+  "version": "0.6",
   "codename": "Sintra",
   "paper": "16",
   "series": 16,
@@ -38,6 +38,6 @@
       "J1603-7202"
     ]
   },
-  "date": "2026-10-17",
-  "previous_version": "0.4"
+  "date": "2026-10-24",
+  "previous_version": "0.5"
 }

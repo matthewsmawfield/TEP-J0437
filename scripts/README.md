@@ -40,4 +40,4 @@ The generic `step_003_closure_final_summary.json` is a legacy alias written alon
 
 ## Manuscript source
 
-Edit `site/components/*.html` only (not the generated `E16-TEP-J0437-v0.5-Sintra.md`). Rebuild with `npm run build:markdown`.
+Edit `site/components/*.html` only (not the generated `E16-TEP-J0437-v0.6-Sintra.md`). Rebuild with `npm run build:markdown`.

@@ -2,11 +2,11 @@
   "name": "TEP-J0437",
   "short_name": "TEP-J0437",
   "paper_number": 16,
-  "version": "v0.5 (Sintra)",
+  "version": "v0.6 (Sintra)",
   "codename": "Sintra",
   "author": "Matthew Lukin Smawfield",
   "first_published": "17 May 2026",
-  "date": "17 October 2026",
+  "date": "24 October 2026",
   "description": "The primary J0437-4715 phase-closure analysis uses 19,167 scintillation triplets and a weighted circular mean of 0.984 +/- 0.046 rad, with Rayleigh p = 1.39e-13, V-test p = 1.02e-5, and a 95% bootstrap interval of [0.737, 1.235] rad. J1603-7202 supplies complementary bipolar geometric structure but does not provide an independently significant phase closure; the broader catalogue remains noise-limited.",
   "doi": "10.5281/zenodo.19454619",
   "start_url": ".",
@@ -88,5 +88,5 @@
       "order": 10
     }
   ],
-  "last_updated": "17 October 2026"
+  "last_updated": "24 October 2026"
 }

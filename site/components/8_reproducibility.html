@@ -79,6 +79,17 @@ TEP-J0437/
 │   │   ├── step_047_velocity_direction_controls.py
 │   │   ├── step_048_cmb_dipole_frame_analysis.py
 │   │   ├── step_049_evidence_ledger.py
+│   │   ├── step_051_orbital_hierarchy_v2.py
+│   │   ├── step_052_delay_domain_rigorous.py
+│   │   ├── step_053_meerkat_19pulsars_analysis.py
+│   │   ├── step_054_parkes_control_pulsars.py
+│   │   ├── step_055_multi_pulsar_meta_analysis.py
+│   │   ├── step_056_weighted_unweighted_reconciliation.py
+│   │   ├── step_057_disformal_circulation_estimate.py
+│   │   ├── step_058_forward_scintillation_null.py
+│   │   ├── step_059_loop_closure_amplification.py
+│   │   ├── step_060_block_bootstrap_autocorrelation.py
+│   │   ├── step_061_subband_dispersion_null.py
 │   │   └── utils/                     # Shared utilities
 ├── results/
 │   ├── detection/               # Closure delay analysis
@@ -144,7 +155,7 @@ TEP-J0437/
 
     <h3>8.3 Pipeline Architecture</h3>
     <p>
-        The analysis pipeline comprises 49 analysis steps organized in sequence.
+        The analysis pipeline comprises 60 analysis steps (Steps 000–061) organized in sequence.
         Each step is a standalone Python script in <code>scripts/steps/</code> that produces JSON outputs and 
         detailed logs in <code>logs/</code>.
     </p>
@@ -250,6 +261,12 @@ TEP-J0437/
                 <td>Synthetic data validation for pipeline integrity</td>
                 <td>~2 min</td>
             </tr>
+            <tr>
+                <td>Steps 046b–061</td>
+                <td><code>step_046b</code>–<code>step_061</code></td>
+                <td>REML orbital modulation (unsigned \(M_{\rm cl}\) and paired excess), Thiele–Innes phase projection (Step 051), rigorous delay-domain &amp; block-bootstrap audits (Steps 052, 060), 19-pulsar MeerKAT &amp; Parkes multi-pulsar synthesis (Steps 053–055), weighted/unweighted &amp; off-axis \(f_D \neq 0\) reconciliations (Step 056), disformal circulation (Step 057), 10 forward thin-screen nulls (Step 058), 3-leg loop-closure amplification (Step 059), and sub-band \(\nu^{-2}\) dispersion discriminator (Step 061)</td>
+                <td>~10 min</td>
+            </tr>
         </tbody>
     </table>
 
@@ -272,13 +289,13 @@ TEP-J0437/
         </tr>
         <tr>
             <td>TEP Analysis & Validation</td>
-            <td>46</td>
-            <td>~15 min</td>
+            <td>57</td>
+            <td>~25 min</td>
         </tr>
         <tr style="font-weight: bold;">
             <td>Total</td>
-            <td>49</td>
-            <td>~60 min</td>
+            <td>60</td>
+            <td>~70 min</td>
         </tr>
     </table>
 

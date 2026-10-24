@@ -16,11 +16,143 @@
     "z_parametric": 7.572697366411005,
     "p_gaussian_tail": 1.8318679906315083e-14
   },
+  "loop_amplification_and_subsamples": {
+    "all_triplets": {
+      "n_triplets": 19167,
+      "rbar_phi01": 0.10713332045257247,
+      "rbar_phi12": 0.07656786683846761,
+      "rbar_phi02": 0.014494587850081637,
+      "mean_phi01_plus_phi12_rad": -0.029985241076308924,
+      "rbar_phi01_plus_phi12": 0.036401756841986634,
+      "independent_product_rbar": 0.0005276284624434856,
+      "closure_mean_rad": 1.0058608364512482,
+      "closure_rbar": 0.12196133508472785,
+      "loop_amplification_ratio": 231.1500303071523,
+      "rayleigh_Z_pooled": 570.2016611780591,
+      "rayleigh_p_pooled": 1.5215368996785924e-124
+    },
+    "with_fD0_leg": {
+      "n_triplets": 13849,
+      "rbar_phi01": 0.1298905790937595,
+      "rbar_phi12": 0.09347378523813743,
+      "rbar_phi02": 0.01253224736139299,
+      "mean_phi01_plus_phi12_rad": -0.1957737003535288,
+      "rbar_phi01_plus_phi12": 0.035389754089145166,
+      "independent_product_rbar": 0.0004435131523040363,
+      "closure_mean_rad": 1.0423102438341862,
+      "closure_rbar": 0.14365007906984348,
+      "loop_amplification_ratio": 323.8913622371423,
+      "rayleigh_Z_pooled": 571.5577918141587,
+      "rayleigh_p_pooled": 7.72329214799725e-125
+    },
+    "no_fD0_leg_off_axis": {
+      "n_triplets": 5318,
+      "rbar_phi01": 0.04953764221657719,
+      "rbar_phi12": 0.03742584619646807,
+      "rbar_phi02": 0.03146229151959342,
+      "mean_phi01_plus_phi12_rad": 0.33088368452713446,
+      "rbar_phi01_plus_phi12": 0.043075316750420915,
+      "independent_product_rbar": 0.0013552481729005683,
+      "closure_mean_rad": 0.8013566623389602,
+      "closure_rbar": 0.06712734701809832,
+      "loop_amplification_ratio": 49.53140565718609,
+      "rayleigh_Z_pooled": 47.926674513331626,
+      "rayleigh_p_pooled": 3.9161098124469154e-11
+    },
+    "no_shared_pixel_triplets": {
+      "n_triplets": 16587,
+      "rbar_phi01": 0.0755455976095789,
+      "rbar_phi12": 0.05255044873998342,
+      "rbar_phi02": 0.014510857016554747,
+      "mean_phi01_plus_phi12_rad": -0.10286829736010006,
+      "rbar_phi01_plus_phi12": 0.042810976341856315,
+      "independent_product_rbar": 0.000621223956435785,
+      "closure_mean_rad": 1.0708705348537555,
+      "closure_rbar": 0.0639856907486589,
+      "loop_amplification_ratio": 102.99939351304299,
+      "rayleigh_Z_pooled": 135.81994981922085,
+      "rayleigh_p_pooled": 3.214198029947068e-30
+    },
+    "n_shared_pixel_triplets_excluded": 2580
+  },
+  "psi_mjd_block_bootstrap": {
+    "n_epochs": 1093,
+    "n_eff_weighted": 312.92227128277904,
+    "n_bootstrap": 10000,
+    "unweighted": {
+      "iid": {
+        "mean_rad": 1.1203686778534654,
+        "se_rad": 0.06687847961215063,
+        "z_sigma": 16.752304842317535
+      },
+      "blocks": {
+        "15": {
+          "mean_rad": 1.1203686778534654,
+          "se_rad": 0.08839733212277334,
+          "z_sigma": 12.674236325338496
+        },
+        "30": {
+          "mean_rad": 1.1203686778534654,
+          "se_rad": 0.102430816819937,
+          "z_sigma": 10.937808685280329
+        },
+        "60": {
+          "mean_rad": 1.1203686778534654,
+          "se_rad": 0.1235327953092635,
+          "z_sigma": 9.069402785297864
+        },
+        "120": {
+          "mean_rad": 1.1203686778534654,
+          "se_rad": 0.160445498805357,
+          "z_sigma": 6.982861384055594
+        },
+        "240": {
+          "mean_rad": 1.1203686778534654,
+          "se_rad": 0.19485719625828807,
+          "z_sigma": 5.749691052561327
+        }
+      }
+    },
+    "weighted": {
+      "iid": {
+        "mean_rad": 0.9840494974502261,
+        "se_rad": 0.12442793911075077,
+        "z_sigma": 7.908589537711009
+      },
+      "blocks": {
+        "15": {
+          "mean_rad": 0.9840494974502261,
+          "se_rad": 0.14825978683704427,
+          "z_sigma": 6.637332471898246
+        },
+        "30": {
+          "mean_rad": 0.9840494974502261,
+          "se_rad": 0.15961371115740505,
+          "z_sigma": 6.165194019452335
+        },
+        "60": {
+          "mean_rad": 0.9840494974502261,
+          "se_rad": 0.1743439035493549,
+          "z_sigma": 5.6443011623383335
+        },
+        "120": {
+          "mean_rad": 0.9840494974502261,
+          "se_rad": 0.1909890737204444,
+          "z_sigma": 5.152386355308495
+        },
+        "240": {
+          "mean_rad": 0.9840494974502261,
+          "se_rad": 0.18657137171857563,
+          "z_sigma": 5.274386356201352
+        }
+      }
+    }
+  },
   "step_055_prior": {
     "rbar_mean": 0.06604830896131571,
     "rbar_std": 0.03290047445300609,
     "psi_mean_of_means": 1.1377189008551356,
     "p_ge_real": 0.0024937655860349127
   },
-  "note": "step_055 reported p=0.0025, the resolution floor of 400 reps. With 5000 replicates the empirical bound is p < 2.0e-04; the observed Rbar sits 7.6 null-std above the xepoch null mean (Gaussian-tail p ~ 1.8e-14)."
+  "note": "step_055 reported p=0.0025, the resolution floor of 400 reps. With 5000 replicates the empirical bound is p < 2.0e-04; the observed Rbar sits 7.6 null-std above the xepoch null mean (Gaussian-tail p ~ 1.8e-14). Also records 3-leg loop-closure amplification (231x over the independent product R(phi01+phi12)*R(phi02), 324x on-axis, 49.5x off-axis), distinct-pixel and off-axis subsample Rayleigh tests, and MJD block-bootstrap SEs for psi."
 }

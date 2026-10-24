@@ -13,32 +13,32 @@
     },
     "M1_kinematic_sinusoid": {
       "parameters": {
-        "A": -0.0037607815378297546,
-        "B": 1.0993959237372775,
-        "kappa": 0.6192853382095982
+        "A": -0.014684400043314026,
+        "B": 1.105364294849075,
+        "kappa": 0.6272586870504875
       },
-      "log_likelihood": -2133.0908747064714,
-      "bic": 4287.501567826124,
+      "log_likelihood": -2130.457853365995,
+      "bic": 4282.235525145172,
       "n_params": 3,
       "converged": true
     },
     "M2_kinematic_plus_GP": {
       "parameters": {
-        "A": -0.004044045420499723,
-        "B": 1.1267474362110437,
+        "A": -0.013455363994752079,
+        "B": 1.1267525863022438,
         "gp_weights": [
-          -0.04692070130307761,
-          0.00021585835299276862,
-          0.11121676165890408,
-          0.22040069874891416,
-          -0.04597123338482841,
-          -0.12776152638340868
+          -0.00429044244568655,
+          0.0002258658570545305,
+          0.11120891343568819,
+          0.026544560981894345,
+          -0.04594197593210439,
+          -0.12777597166981564
         ],
-        "kappa": 0.6321470594187744,
+        "kappa": 0.6321465021207737,
         "n_harmonics": 3
       },
-      "log_likelihood": -2128.831377099349,
-      "bic": 4321.622209438244,
+      "log_likelihood": -2128.831377135184,
+      "bic": 4321.622209509914,
       "n_params": 9,
       "converged": true
     }
@@ -49,25 +49,28 @@
       "interpretation": "Reference (best BIC)"
     },
     "M1_kinematic_sinusoid": {
-      "log10_bf_vs_best": -1.4494073325417154,
+      "log10_bf_vs_best": -0.3059006936393717,
       "interpretation": "Not preferred"
     },
     "M2_kinematic_plus_GP": {
-      "log10_bf_vs_best": -8.858610518112695,
+      "log10_bf_vs_best": -8.858610533675638,
       "interpretation": "Not preferred"
     }
   },
   "key_comparisons": {
     "M1_vs_M0": {
-      "log10_bf": -1.4494073325417154,
-      "interpretation": "Null preferred"
+      "log10_bf": -0.3059006936393717,
+      "lr_statistic_1df": 5.697881383505774,
+      "lr_pvalue_1df": 0.01698540362211938,
+      "delta_aic": -3.6978813835057736,
+      "interpretation": "Kinematic sinusoid preferred by LRT (p=0.017) and AIC (DeltaAIC=-3.70); BIC nearly neutral (log10 BF=-0.31)"
     },
     "M2_vs_M0": {
-      "log10_bf": -8.858610518112695,
+      "log10_bf": -8.858610533675638,
       "interpretation": "Null preferred"
     },
     "M2_vs_M1": {
-      "log10_bf": -7.40920318557098,
+      "log10_bf": -8.552709840036266,
       "interpretation": "GP does not improve fit"
     }
   },
@@ -75,6 +78,6 @@
   "recommendation": {
     "orbital_significant": false,
     "action": "no_orbital_preference_in_this_model",
-    "interpretation": "The orbital modulation model is not preferred over the null (log10 BF = -1.45). The constant nonzero-phase model is favored in this comparison. This does not replace the separate triplet-level mixed-effects test or imply an absence of phase closure."
+    "interpretation": "The orbital modulation model is not preferred over the null (log10 BF = -0.31). The constant nonzero-phase model is favored in this comparison. This does not replace the separate triplet-level mixed-effects test or imply an absence of phase closure."
   }
 }

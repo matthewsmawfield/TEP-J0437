@@ -196,7 +196,7 @@ class HTMLToMarkdownConverter {
             // Load citation metadata for header
             const citationPath = path.join(__dirname, '..', 'CITATION.cff');
             let author = 'Matthew Lukin Smawfield';
-            let version = 'v0.5 (Sintra)';
+            let version = 'v0.6 (Sintra)';
             let dateReleased = '2026-05-17';
             let doi = '';
             

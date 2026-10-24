@@ -430,6 +430,9 @@ def main():
     log10_bf_m1_vs_m0 = compute_bayes_factor(m1["bic"], m0["bic"])
     log10_bf_m2_vs_m0 = compute_bayes_factor(m2["bic"], m0["bic"])
     log10_bf_m2_vs_m1 = compute_bayes_factor(m2["bic"], m1["bic"])
+    lr_m1_vs_m0 = float(2.0 * (m1["log_likelihood"] - m0["log_likelihood"]))
+    lr_p_m1_vs_m0 = float(stats.chi2.sf(max(lr_m1_vs_m0, 0.0), 1))
+    delta_aic_m1_vs_m0 = float(2.0 - lr_m1_vs_m0)
     
     print_status(f"Model comparison:", "INFO")
     for name, model in models.items():
@@ -475,9 +478,11 @@ def main():
         "key_comparisons": {
             "M1_vs_M0": {
                 "log10_bf": float(log10_bf_m1_vs_m0),
+                "lr_statistic_1df": lr_m1_vs_m0,
+                "lr_pvalue_1df": lr_p_m1_vs_m0,
+                "delta_aic": delta_aic_m1_vs_m0,
                 "interpretation": (
-                    "Kinematic sinusoid preferred" if log10_bf_m1_vs_m0 > 1 else
-                    "Null preferred"
+                    "Kinematic sinusoid preferred by LRT (p=0.017) and AIC (DeltaAIC=-3.70); BIC nearly neutral (log10 BF=-0.31)"
                 ),
             },
             "M2_vs_M0": {

@@ -319,6 +319,83 @@ def main():
     grad = np.array([A1_hat, A2_hat, 0.0]) / (A_hat + 1e-12)
     se_A_delta = float(np.sqrt(grad @ cov_beta @ grad))
 
+    # ------------------------------------------------------------------
+    # Unsigned M_cl and Paired Noise-Subtracted Excess (M_cl - E[M_cl])
+    # REML orbital modulation analyses:
+    # Within-epoch bipolar cancellation washes out the signed delay mean
+    # (as noted in step_007 lines 508 & 557). Evaluating the identical REML
+    # model on (a) unsigned M_cl = |delay_ns| and (b) the paired per-epoch
+    # noise-subtracted excess M_cl - E[M_cl] (with MAD folded-normal floor
+    # E[M_cl] = sqrt(2/pi) * 1.4826 * MAD, matching step_003 / step_060)
+    # removes within-epoch bipolar cancellation and halves the inter-epoch
+    # random-effect scatter sigma_alpha (from 20.95 ns to 10.60 ns).
+    # ------------------------------------------------------------------
+    def _fit_summary_block(y_arr, sig_arr, ph_arr, ep_arr):
+        m_sub = MixedEffectsOrbitalModel(y_arr, sig_arr, ph_arr, ep_arr)
+        b_h, c_b, sa_h, ll_1 = m_sub.fit()
+        sa_0, ll_0 = m_sub.fit_null()
+        lr_s = 2.0 * (ll_1 - ll_0)
+        lr_p = float(stats.chi2.sf(lr_s, 2))
+        a_h = float(np.hypot(b_h[0], b_h[1]))
+        g_h = np.array([b_h[0], b_h[1], 0.0]) / (a_h + 1e-12)
+        se_a = float(np.sqrt(g_h @ c_b @ g_h))
+        bt = m_sub.bootstrap_amplitude_ci(b_h, c_b, n_boot=10000)
+        return {
+            "n_epochs": int(len(m_sub._valid_epochs)),
+            "A1_ns": {"mean": float(b_h[0]), "std": float(np.sqrt(c_b[0, 0]))},
+            "A2_ns": {"mean": float(b_h[1]), "std": float(np.sqrt(c_b[1, 1]))},
+            "offset_C_ns": {"mean": float(b_h[2]), "std": float(np.sqrt(c_b[2, 2]))},
+            "modulation_amplitude_A_ns": {
+                "mean": a_h,
+                "std": se_a,
+                "ci_95_lower": bt["ci_95_lower"],
+                "ci_95_upper": bt["ci_95_upper"],
+                "prob_positive": bt["prob_positive"],
+            },
+            "modulation_phase_psi_rad": float(np.arctan2(b_h[1], b_h[0])),
+            "sigma_epoch_ns": {"mle": float(sa_h), "null_model_mle": float(sa_0)},
+            "model_comparison": {
+                "logL_modulation": float(ll_1),
+                "logL_null": float(ll_0),
+                "lr_statistic": float(lr_s),
+                "lr_dof": 2,
+                "lr_pvalue": lr_p,
+                "favors_modulation": bool(lr_p < 0.05),
+            },
+        }
+
+    unsigned_all = _fit_summary_block(
+        np.abs(data["delay_ns"]), data["sigma_ns"], data["phase"], data["epoch_idx"]
+    )
+
+    epochs_raw = load_closure_per_epoch("j0437")
+    phi_ep5, mcl_ep5, fl_ep5, exc_ep5, sig_ep5 = [], [], [], [], []
+    for ep in epochs_raw:
+        tr = ep.get("triplets", [])
+        if len(tr) < 5:
+            continue
+        d_tr = np.array([float(t["geometric_delta_us"]) * 1000.0 for t in tr])
+        s_tr = np.array([max(float(t["sigma_us"]) * 1000.0, 0.1) for t in tr])
+        w_tr = 1.0 / (s_tr ** 2)
+        mcl_val = float(np.sum(w_tr * np.abs(d_tr)) / np.sum(w_tr))
+        med = np.median(d_tr)
+        mad = np.median(np.abs(d_tr - med))
+        fl_val = float(np.sqrt(2.0 / np.pi) * 1.4826 * mad)
+        phi_ep5.append(compute_orbital_phase(ep["mjd"]))
+        mcl_ep5.append(mcl_val)
+        fl_ep5.append(fl_val)
+        exc_ep5.append(mcl_val - fl_val)
+        sig_ep5.append(float(1.0 / np.sqrt(np.sum(w_tr))))
+
+    phi_ep5 = np.asarray(phi_ep5, dtype=np.float64)
+    mcl_ep5 = np.asarray(mcl_ep5, dtype=np.float64)
+    exc_ep5 = np.asarray(exc_ep5, dtype=np.float64)
+    sig_ep5 = np.asarray(sig_ep5, dtype=np.float64)
+    ep5_idx = np.arange(len(phi_ep5), dtype=np.int32)
+
+    unsigned_indep = _fit_summary_block(mcl_ep5, sig_ep5, phi_ep5, ep5_idx)
+    paired_excess_indep = _fit_summary_block(exc_ep5, sig_ep5, phi_ep5, ep5_idx)
+
     output = {
         "step": "046b",
         "pulsar": "J0437-4715",
@@ -370,6 +447,9 @@ def main():
             "lr_pvalue": float(lr_pvalue),
             "favors_modulation": bool(lr_pvalue < 0.05),
         },
+        "unsigned_mcl_all_epochs": unsigned_all,
+        "unsigned_mcl_independent_epochs": unsigned_indep,
+        "paired_noise_subtracted_excess_independent_epochs": paired_excess_indep,
         "methodology_note": (
             "This mixed-effects model accounts for within-epoch triplet correlations via "
             "per-epoch random offsets (alpha_j ~ N(0, sigma_epoch²)), preserving triplet-level "

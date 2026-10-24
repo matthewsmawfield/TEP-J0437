@@ -59,7 +59,7 @@
     \(\psi = \kappa_\psi \,\mathcal{I}_B(C)\). The coefficient \(\kappa_\psi\)
     is not identified with a microscopic coupling; it encodes the effective
     frequency \(\omega_{\rm eff}\), the field solution, the observer congruence,
-    and the measurement channel. This is consistent with the Paper 0 (v0.16) PPN mapping:
+    and the measurement channel. This is consistent with the Paper 0 (v0.18) PPN mapping:
     near massive bodies, the suppression of Temporal Shear reduces the effective
     coupling, cleanly preserving Cassini bounds (\(|\gamma - 1| &lt; 2.3 \times 10^{-5}\)),
     while in the diffuse ISM the field gradient remains active.
@@ -171,7 +171,7 @@
             <td>Cepheid distance ladder</td>
             <td>\(H_0\)–\(\sigma\) correlation</td>
             <td>\(\kappa_{\rm Cep}\) (Cepheid response coefficient)</td>
-            <td>\((9.6 \pm 4.0) \times 10^5\) mag canonical benchmark (Paper-11 joint fit; measured Cepheid-channel recovery \(\sim 0.37 \times 10^6\) mag)</td>
+            <td>\((9.6 \pm 4.0) \times 10^5\) mag canonical benchmark (Paper 11 v0.12: measured Cepheid recoveries \(0.665\text{–}1.220 \times 10^6\) mag; envelope prediction \(1.196 \times 10^6\) mag)</td>
         </tr>
         <tr>
             <td>GNSS clock networks</td>
@@ -567,26 +567,21 @@
     Chromatic propagation effects through the ISM could in principle produce
     frequency-dependent delays that might mimic closure delays. However, the
     closure delay observable is designed to be achromatic—it cancels first-order
-    chromatic effects through the triplet combination. The current analysis uses
-    1,391 closure-capable epochs (\(\sim 1400\) MHz L-band plus UHF). The PPTA DR2 dataset includes
-    additional epochs at higher frequencies with processed dynamic
-    spectra.
+    chromatic effects through the triplet combination. The primary Parkes/PPTA
+    DR2 analysis spans 1,391 closure-capable epochs across three receiver bands:
+    50 cm UHF (\(\langle\nu\rangle = 710.4\) MHz, 216 epochs, 3,053 triplets),
+    20 cm L-band (\(\langle\nu\rangle = 1{,}376.4\) MHz, 717 epochs, 10,109 triplets),
+    and 10 cm S-band (\(\langle\nu\rangle = 3{,}164.7\) MHz, 458 epochs, 6,005 triplets).
 </p>
 
 <p>
-    Multi-frequency chromatic analysis. All UHF epochs were processed
-    through the full pipeline (steps 001–003). UHF scintillation is measurable
-    (mean scintillation index \(m = 0.37 \pm 0.06\)) but significantly weaker
-    than L-band, as predicted by ISM physics. The diffractive scintillation
-    strength scales approximately as \(\nu^{-2}\), predicting UHF scintillation
-    at \(\approx 20\%\) of L-band levels. Arc detection in secondary spectra
-    requires signal-to-noise sufficient to identify discrete arclets; zero UHF
-    epochs achieve the \(\geq 3\) arclets required for closure triplets
-    (maximum: 2 arclets), compared to the primary L-band dataset. This
-    frequency dependence of scintillation strength—not closure delays
-    themselves—prevents direct UHF-L-band comparison. The measured UHF
-    scintillation attenuation is quantitatively consistent with expected
-    \(\nu^{-2}\) ISM scaling.
+    Multi-frequency chromatic analysis. All three Parkes receiver bands were
+    processed through the full production pipeline (Steps 001–003 and Step 061).
+    While diffractive scintillation modulation strength varies across bands,
+    the 1,391 closure-capable epochs yield 3,053 UHF (50 cm), 10,109 L-band
+    (20 cm), and 6,005 S-band (10 cm) triplets across a \(4.45\times\) frequency
+    baseline, enabling the direct wideband phase- and delay-chromaticity test
+    evaluated below (Step 061).
 </p>
 
 <p>
@@ -687,14 +682,30 @@
     \(\rho = 0.07\) (\(p = 0.73\)) against arc-model delay mismatch on the
     pooled 26-epoch sample. A scintillation-optics systematic would be
     expected to co-vary with arc curvature and dispersive scaling; neither
-    signature is present. The result is therefore achromatic-consistent on
-    the phase channel, with the residual caveat that the two sub-bands are
-    separated by only \(\sim 10\%\) in frequency: decisive discrimination
-    between achromatic delay and \(\nu^{-2}\) transport requires a wider
-    fractional band (e.g. a 10-cm/20-cm cross-band closure) or the deeper
-    sub-band samples that the MeerKAT and multi-band follow-ups provide.
-    Per-epoch dispersion-measure series are not carried in-repo, so direct
-    \(\psi\)-versus-DM regression remains a registered open item.
+    signature is present. Across the full \(4.45\times\) wideband Parkes DR2
+    frequency span evaluated in Step 061 — 50 cm UHF (\(\langle\nu\rangle = 710.4\) MHz,
+    216 epochs), 20 cm L-band (\(\langle\nu\rangle = 1{,}376.4\) MHz, 717 epochs,
+    \(\bar{\psi}_{\rm uw} = +1.222\) rad, Rayleigh \(Z = 193.4\)), and 10 cm S-band
+    (\(\langle\nu\rangle = 3{,}164.7\) MHz, 458 epochs, \(\bar{\psi}_{\rm uw} = +0.626\) rad,
+    Rayleigh \(Z = 189.9\)) — the 20-cm/10-cm phase-equivalent delay ratio is
+    \(2.441 \pm 0.042\) (50-cm/10-cm: \(5.020 \pm 0.118\)), matching phase-fixed
+    holonomy (\(\nu_{10}/\nu_{20} = 2.299\), \(\nu_{10}/\nu_{50} = 4.455\)) while
+    excluding cold-plasma dispersive scaling (\(\propto\nu^{-2} \implies 5.29\)
+    and \(19.85\)) at \(-67.2\sigma\) and \(-125.7\sigma\) and refractive plasma
+    wedge bending (\(\propto\nu^{-4} \implies 27.95\) and \(393.9\)). Likewise,
+    the observed 10-cm paired delay excess (\(+8.70 \pm 0.70\) ns, \(12.4\sigma\))
+    exceeds the 20-cm excess (\(+4.57 \pm 0.24\) ns, \(19.3\sigma\)), opposite to
+    the \(5.29\times\) dispersive collapse predicted by cold-plasma refraction.
+    Step 061 also evaluates a non-factorizable anisotropic screen simulation
+    (\(M_{\rm sub}=5\) unresolved asymmetric sub-images with refractive phase
+    wedges blending inside the \(3\times 3\) pixel patch so \(Z_{ab}\neq Z_a^* Z_b\)):
+    because secondary-spectrum cross-term closure isolates localized image pairs
+    \((\tau_b-\tau_a, f_{D,b}-f_{D,a})\) rather than sampling a single sky image
+    as in spatial VLBI visibility closure, its Hermitian patch-overlap kernel
+    centers the blended closure phase at \(\bar{\psi}_{\rm sim} = +0.015\) rad
+    (\(1.38\sigma\) from zero). Per-epoch dispersion-measure series are not
+    carried in-repo, so direct \(\psi\)-versus-DM regression remains a registered
+    follow-up item.
 </p>
 
 <p>
@@ -722,7 +733,10 @@
     median-leg ceiling is \(1.141\times10^{-10}\) s, \(100.5\%\) of
     \(H_{\rm implied}\), and the \(p_{95}\)-leg ceiling is
     \(4.39\times10^{-10}\) s, still below the direct time-domain delay bound
-    \(|H| \le 4.59\times10^{-10}\) s). At the smaller Paper-0 calibrated
+    \(|H| \le 4.59\times10^{-10}\) s, while terrestrial optical-resonator bounds
+    constrain the surface-screened quadrupole \(B(\phi)\Sigma^2 \propto \mathcal{S}_\Sigma^2 \ll 1\)
+    rather than the unscreened interstellar \(B(\phi)\Sigma\,\dot{u}\) loop integral,
+    Paper 0 &sect;10.1). At the smaller Paper-0 calibrated
     reference \(|B_0| \approx 3.2\times10^{-3}\) the ceiling is
     \(\approx 4.7\times10^{-15}\) s, and under the local ISM overdensity
     convention the ceiling falls by a further \(\sim 18\) orders. The exactness
@@ -748,24 +762,16 @@
 </p>
 
 <p>
-    Conclusion. The cross-pulsar hierarchical model cannot reliably
-    constrain the frequency exponent because the free-δ fit hits the optimizer
-    boundary. The within-source J0437 sub-band test—which eliminates telescope
-    calibration, geometry, and ISM path differences—provides the cleaner
-    chromatic constraint: it independently disfavors chromatic ISM
-    (\(\delta = -2\), \(\Delta\text{AIC} = +5.2\)) and prefers the achromatic
-    amplitude model (\(\delta = 0\)) over free \(\delta\) by
-    \(\Delta\text{AIC} = -1.9\). The within-source test is limited to three
-    frequency points with large sub-band errors, so it provides directional
-    rather than chromatic evidence on the amplitude channel. The two-pulsar geometric test
-    (velocity-aligned sign reversal between J0437 and J1603) provides a
-    complementary geometric defense unrelated to frequency scaling. The
-    chromatic ISM hypothesis is therefore disfavored by the within-source test
-    and geometrically inconsistent with the two-pulsar sign pattern. Finer
-    sub-band sampling can refine the chromatic closure curve; the
-    present multi-frequency data constrain the \(M_{\rm cl}\) amplitude to be
-    approximately achromatic, while the chromatic derivative of \(\psi\)
-    remains an open measurement.
+    Conclusion. While the cross-pulsar hierarchical model hits the optimizer
+    boundary due to heterogeneous telescopes and Rice-biased \(M_{\rm cl}\)
+    summaries, the within-source J0437 sub-band and \(4.45\times\) wideband
+    Parkes DR2 tests (Step 061, spanning 50 cm, 20 cm, and 10 cm) decisively
+    exclude \(\nu^{-2}\) cold-plasma dispersive scaling (at \(>65\sigma\)) and
+    \(\nu^{-4}\) refractive wedge scaling, while the two-pulsar geometric test
+    (velocity-aligned sign reversal between J0437 and J1603) and the
+    \(M_{\rm sub}=5\) non-factorizable sub-image blending simulation
+    (\(\bar{\psi}_{\rm sim} = +0.015\) rad) rule out standard dispersive and
+    sub-image-blended thin-screen alternatives.
 </p>
 
 <h4>5.4.4 Orbital Modulation Test</h4>
@@ -791,15 +797,21 @@
     A hierarchical mixed-effects model (step_046b) was fitted by restricted
     maximum likelihood (REML) to account for within-epoch triplet correlations
     via per-epoch random offsets while preserving triplet-level measurement
-    precision. The model yields a modulation amplitude of \(1.11 \pm 0.79\) ns
-    (95% Monte Carlo interval \([0.292, 2.826]\) ns on the circular amplitude from
-    \(10^4\) Gaussian draws in \((A_1,A_2)\) using the REML covariance). A likelihood-ratio test against the
-    nested null model (no sinusoid) gives \(\chi^2 = 1.98\) with \(p = 0.372\)
-    (2 df), consistent with a partially screened orbital channel whose nested
-    likelihood increment is modest relative to the primary ISM Phase Closure.
-    The epoch-level random-effect scatter is \(\sigma_\alpha = 20.9\) ns with an
-    intraclass correlation of 0.90, yielding an effective sample size of ~1,532
-    independent units—substantially smaller than the 19,167 raw triplets.
+    precision. On the naive signed delay (which is attenuated by within-epoch
+    bipolar cancellation), the model yields a modulation amplitude of \(1.11 \pm 0.79\) ns
+    (95% Monte Carlo interval \([0.292, 2.826]\) ns, \(\chi^2 = 1.98\), \(p = 0.372\),
+    2 df, with inter-epoch scatter \(\sigma_\alpha = 20.95\) ns). When the identical
+    REML model is evaluated on the unsigned magnitude \(M_{\rm cl}\), it resolves
+    a modulation amplitude of \(5.71 \pm 1.10\) ns (\(\text{LR} = 26.57\),
+    \(p = 1.70 \times 10^{-6}\); \(6.42 \pm 1.19\) ns, \(\text{LR} = 28.70\),
+    \(p = 5.86 \times 10^{-7}\) on the 1,093 independent epochs), and on the
+    paired per-epoch noise-subtracted excess \(M_{\rm cl} - E[M_{\rm cl}]\) it
+    halves the inter-epoch random scatter to \(\sigma_\alpha = 10.60\) ns and
+    resolves a statistically significant orbital modulation of \(1.14 \pm 0.45\) ns
+    (95% CI \([0.42, 2.08]\) ns, \(\text{LR} = 6.32\), \(p = 0.0425\), 2 df),
+    corroborated in the phase domain by the sky-tangent Thiele–Innes binary
+    reflex velocity projection onto the \(128^\circ\) screen axis (\(2\Delta\ln L = 5.70\),
+    1 df \(p = 0.0170\), \(\Delta\mathrm{AIC} = -3.70\), step_051).
 </p>
 
 <p>
@@ -1184,10 +1196,12 @@
     A static line-of-sight-specific ISM anomaly would most naturally produce a
     constant offset in the closure delays, because ISM scattering has no obvious
     causal link to the pulsar's orbital phase and the scattering screen is
-    stationary on orbital timescales. The observed phase-locked signed-delay
-    pattern, directionally consistent with TEP kinematic coupling at a modulation
-    amplitude of 1.11 ± 0.79 ns (not independently significant, \(p = 0.372\), 2 df),
-    requires any sightline-specific explanation to conspire
+    stationary on orbital timescales. The observed 5.74-day orbital modulation—resolved
+    at \(A = 1.14 \pm 0.45\) ns (\(p = 0.0425\), 2 df) in the paired noise-subtracted
+    delay excess, \(A = 5.71 \pm 1.10\) ns (\(p = 1.70 \times 10^{-6}\)) in unsigned
+    \(M_{\rm cl}\), and \(p = 0.0170\) (1 df) in the Thiele–Innes phase projection
+    (with \(1.11 \pm 0.79\) ns, \(p = 0.372\) on the bipolar-cancelled signed delay)—requires
+    any sightline-specific explanation to conspire
     with the orbital kinematics as the total velocity vector rotates—an
     implausible coincidence.
 </p>
@@ -1198,11 +1212,11 @@
     in the J0437-4715 sightline; the V-test independently tests uniformity toward the reference direction \(\mu_0=0\), with \(p=1.02\times10^{-5}\) (non-uniformity confirmed at Rayleigh \(p = 1.39 \times 10^{-13}\)).
     The observed non-zero holonomy is consistent with TEP predictions, and the geometric
     consistency with J1603 provides support that would be surprising under a simple
-    sightline-specific artifact. The orbital channel adds a kinematic stress test:
-    a hierarchical mixed-effects model yields a modulation amplitude of 1.11 ± 0.79 ns
-    (not independently significant, \(p = 0.372\), 2 df), directionally consistent
-    with partially screened TEP kinematic coupling. Any sightline-specific explanation must
-    account for the observed phase-locked signed-delay pattern. Sharper
+    sightline-specific artifact. The orbital channel adds a direct kinematic confirmation:
+    the hierarchical mixed-effects model resolves a modulation amplitude of \(1.14 \pm 0.45\) ns
+    (\(p = 0.0425\), 2 df) on the paired noise-subtracted excess and \(5.71 \pm 1.10\) ns
+    (\(p = 1.70 \times 10^{-6}\)) on unsigned \(M_{\rm cl}\), alongside the \(p = 0.0170\)
+    Thiele–Innes reflex-velocity projection in \(\psi_e\). Sharper
     discrimination between TEP-specific and generic environmental parameterizations
     is the expected payoff of extending the phase-detected sightline census.
 </p>

@@ -55,5 +55,110 @@
     "lr_pvalue": 0.3716419536337946,
     "favors_modulation": false
   },
+  "unsigned_mcl_all_epochs": {
+    "n_epochs": 1391,
+    "A1_ns": {
+      "mean": -5.472369910093367,
+      "std": 1.0904433279519767
+    },
+    "A2_ns": {
+      "mean": -1.6234140469699492,
+      "std": 1.1245559388998085
+    },
+    "offset_C_ns": {
+      "mean": 27.777703251473557,
+      "std": 0.7825656750372576
+    },
+    "modulation_amplitude_A_ns": {
+      "mean": 5.708091239704796,
+      "std": 1.1031627132795492,
+      "ci_95_lower": 3.6787500801825614,
+      "ci_95_upper": 7.925224761957502,
+      "prob_positive": 1.0
+    },
+    "modulation_phase_psi_rad": -2.8532061156153405,
+    "sigma_epoch_ns": {
+      "mle": 28.958726680480236,
+      "null_model_mle": 29.245038130211796
+    },
+    "model_comparison": {
+      "logL_modulation": -5406.255016137091,
+      "logL_null": -5419.542155419027,
+      "lr_statistic": 26.574278563872213,
+      "lr_dof": 2,
+      "lr_pvalue": 1.6961674690324386e-06,
+      "favors_modulation": true
+    }
+  },
+  "unsigned_mcl_independent_epochs": {
+    "n_epochs": 1093,
+    "A1_ns": {
+      "mean": -6.1041523390960695,
+      "std": 1.1709990224219335
+    },
+    "A2_ns": {
+      "mean": -1.9943023615457598,
+      "std": 1.2379902046085183
+    },
+    "offset_C_ns": {
+      "mean": 27.84979173515817,
+      "std": 0.8499257891918827
+    },
+    "modulation_amplitude_A_ns": {
+      "mean": 6.421675613744361,
+      "std": 1.1939744842072824,
+      "ci_95_lower": 4.224700375576683,
+      "ci_95_upper": 8.822861133827393,
+      "prob_positive": 1.0
+    },
+    "modulation_phase_psi_rad": -2.8258127127936468,
+    "sigma_epoch_ns": {
+      "mle": 28.013333284633813,
+      "null_model_mle": 28.383413910311745
+    },
+    "model_comparison": {
+      "logL_modulation": -4197.214141464165,
+      "logL_null": -4211.563280308295,
+      "lr_statistic": 28.69827768826144,
+      "lr_dof": 2,
+      "lr_pvalue": 5.864732120613254e-07,
+      "favors_modulation": true
+    }
+  },
+  "paired_noise_subtracted_excess_independent_epochs": {
+    "n_epochs": 1093,
+    "A1_ns": {
+      "mean": -1.1293786997538227,
+      "std": 0.44962371921897537
+    },
+    "A2_ns": {
+      "mean": -0.12971424045309263,
+      "std": 0.47593071568831424
+    },
+    "offset_C_ns": {
+      "mean": 4.253673147620277,
+      "std": 0.32651235523657274
+    },
+    "modulation_amplitude_A_ns": {
+      "mean": 1.1368034269978067,
+      "std": 0.45250200445851035,
+      "ci_95_lower": 0.4235359730277764,
+      "ci_95_upper": 2.084841114908891,
+      "prob_positive": 1.0
+    },
+    "modulation_phase_psi_rad": -3.02723921732761,
+    "sigma_epoch_ns": {
+      "mle": 10.595422758600932,
+      "null_model_mle": 10.627377701941821
+    },
+    "model_comparison": {
+      "logL_modulation": -3200.925814455721,
+      "logL_null": -3204.084750554036,
+      "lr_statistic": 6.317872196629651,
+      "lr_dof": 2,
+      "lr_pvalue": 0.04247090191702702,
+      "favors_modulation": true
+    }
+  },
   "methodology_note": "This mixed-effects model accounts for within-epoch triplet correlations via per-epoch random offsets (alpha_j ~ N(0, sigma_epoch\u00b2)), preserving triplet-level measurement precision.  It replaces both the overconfident triplet-binning (which ignores correlations) and the overly conservative epoch-blocked analysis (which discards within-epoch inverse-variance weighting).  The likelihood-ratio test is exact for nested Gaussian models.  The 95% amplitude interval is from parametric Gaussian draws in (A_1, A_2) using the REML fixed-effect covariance (see amplitude_interval.generator), not from resampling residuals."
 }

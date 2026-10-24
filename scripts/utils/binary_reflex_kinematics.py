@@ -21,23 +21,33 @@ from typing import Tuple
 import numpy as np
 
 
-def pq_unit_vectors(omega_deg: float, inc_deg: float, kom_deg: float) -> Tuple[np.ndarray, np.ndarray]:
-    """Thiele–Innes orthonormal basis (P, Q) in equatorial Cartesian coordinates."""
+def pq_sky_tangent_vectors(omega_deg: float, inc_deg: float, kom_deg: float) -> Tuple[np.ndarray, np.ndarray]:
+    """
+    Thiele–Innes unit vectors (P, Q) directly in the local sky tangent basis
+    (East = increasing RA * cos(dec), North = increasing Dec, LOS).
+
+    In pulsar timing / visual-binary conventions (Murray & Dermott 1999;
+    Reardon et al. 2024), KOM (Omega) is the position angle of the ascending
+    node measured East of North on the sky plane:
+      P_North =  cos(Omega)*cos(omega) - sin(Omega)*sin(omega)*cos(i)
+      P_East  =  sin(Omega)*cos(omega) + cos(Omega)*sin(omega)*cos(i)
+      Q_North = -cos(Omega)*sin(omega) - sin(Omega)*cos(omega)*cos(i)
+      Q_East  = -sin(Omega)*sin(omega) + cos(Omega)*cos(omega)*cos(i)
+    Returns 2D sky-plane vectors (East, North) = (mu_alpha*, mu_delta).
+    """
     om = math.radians(omega_deg)
     i = math.radians(inc_deg)
     Om = math.radians(kom_deg)
-    si, ci = math.sin(i), math.cos(i)
+    ci = math.cos(i)
     so, co = math.sin(om), math.cos(om)
     SO, CO = math.sin(Om), math.cos(Om)
-    Px = CO * co - SO * so * ci
-    Py = SO * co + CO * so * ci
-    Pz = so * si
-    Qx = -CO * so - SO * co * ci
-    Qy = -SO * so + CO * co * ci
-    Qz = co * si
-    P = np.array([Px, Py, Pz], dtype=float)
-    Q = np.array([Qx, Qy, Qz], dtype=float)
-    return P, Q
+    P_north = CO * co - SO * so * ci
+    P_east = SO * co + CO * so * ci
+    Q_north = -CO * so - SO * co * ci
+    Q_east = -SO * so + CO * co * ci
+    P_en = np.array([P_east, P_north], dtype=float)
+    Q_en = np.array([Q_east, Q_north], dtype=float)
+    return P_en, Q_en
 
 
 def _solve_kepler(M: float, e: float, max_iter: int = 40, tol: float = 1e-14) -> float:
@@ -114,6 +124,5 @@ def reflex_binary_transverse_velocity_kms(
     vx_orb = -a_km * n_orb * se / den
     vy_orb = a_km * n_orb * sqrt_1me2 * ce / den
 
-    P, Q = pq_unit_vectors(omega_deg, inc_deg, kom_deg)
-    v_xyz = vx_orb * P + vy_orb * Q
-    return equatorial_xyz_to_pm_kms(v_xyz, ra_rad, dec_rad)
+    P_en, Q_en = pq_sky_tangent_vectors(omega_deg, inc_deg, kom_deg)
+    return vx_orb * P_en + vy_orb * Q_en
